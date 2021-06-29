@@ -1,6 +1,0 @@
-[submodule "themes/Flex"]
-	path = themes/Flex
-	url = git@github.com:alexandrevicenzi/Flex.git
-[submodule "output"]
-	path = output
-	url = git@github.com:QianPeili/qianpeili.github.io.git

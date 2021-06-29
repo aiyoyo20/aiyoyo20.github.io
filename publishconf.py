@@ -10,15 +10,16 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'https://github.com/QianPeili'
+SITEURL = 'https://www.njcx.bid/share'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
+STATIC_PATHS = ['images']
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
+#DISQUS_SITENAME = "https://njcx-github-io.disqus.com"
 #GOOGLE_ANALYTICS = ""
