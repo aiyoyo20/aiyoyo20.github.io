@@ -50,7 +50,7 @@ BOOTSTRAPIFY = {
 
 # Theme settings --------------------------------------------------------------
 
-THEME = '/Users/njcx/peppa_blog/alchemy'
+THEME = '/home/fiki/Desktop/fiki/alchemy'
 
 SITESUBTITLE = '生而不忧，死而不怖。得其时横刀天下，不得其时蓬头而行'
 SITEIMAGE = '/images/profile.png width=200 height=200'

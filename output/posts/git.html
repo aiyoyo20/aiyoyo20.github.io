@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="google-site-verification" content="GgupatpoZgdqsBlxEZoMqGAy3aXAFtXIrYged3SB6EA" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Git | nJcx's Blog
+</title>
+  <link rel="canonical" href="https://www.njcx.bid/share/posts/git.html">
+
+
+  <link rel="apple-touch-icon" href="https://www.njcx.bid/share/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" type="image/png" href="https://www.njcx.bid/share/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://www.njcx.bid/share/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://www.njcx.bid/share/manifest.json">
+  <meta name="theme-color" content="#333333">
+
+  <link rel="stylesheet" href="https://www.njcx.bid/share/theme/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.njcx.bid/share/theme/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.njcx.bid/share/theme/css/pygments/emacs.min.css">
+  <link rel="stylesheet" href="https://www.njcx.bid/share/theme/css/style.css">
+
+
+<meta name="description" content="Git 的使用 并传送文件至github 注册github帐号 github.com 去注册一个自己的帐号 安装Git yay -S git 初始化配置GIT 配置用户信息 git config --global user.name "your name" git config --global user.email "your email" 上传文件 进入要传送的文件夹内， 初始化本地仓库 git init 添加拟上传的对象 //上传文件夹1 git add f1 //上传指定文件 git add *.* //上传所有修改的文件 git add . or Git add -A 将修改后的文件提交到本地仓库 git commit …">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a34c7a96ae9745547c373575407c521f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="https://www.njcx.bid/share">
+            <img class="img-fluid" src=https://www.njcx.bid/share/images/profile.png width=200 height=200 alt="nJcx's Blog">
+          </a>
+        </div>
+        <div class="col-sm-8">
+          <h1 class="title">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.njcx.bid/share">nJcx's Blog</a></h1>
+          <p class="text-muted">生而不忧，死而不怖。得其时横刀天下，不得其时蓬头而行</p>
+          <ul class="list-inline">
+                    <li class="list-inline-item">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.zhihu.com/people/njcxs" target="_blank">知乎</a></li>
+                <li class="list-inline-item"><a href="https://www.facebook.com/nJcx1" target="_blank">FaceBook</a></li>
+                <li class="list-inline-item"><a href="https://github.com/njcx" target="_blank">Github</a></li>
+            <li class=" list-inline-item text-muted">|</li>
+            <li class="list-inline-item"><a class="fa fa-github" href="https://github.com/njcx" target="_blank"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <h1>Git
+</h1>
+      <hr>
+<article class="article">
+  <header>
+    <ul class="list-inline">
+      <li class="list-inline-item text-muted" title="2020-09-03T10:20:00+03:00">
+        <i class="fa fa-clock-o"></i>
+        Thu 03 September 2020
+      </li>
+      <li class="list-inline-item">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="https://www.njcx.bid/share/category/tools.html">Tools</a>
+      </li>
+      <li class="list-inline-item">
+        <i class="fa fa-user-o"></i>
+        <a href="https://www.njcx.bid/share/author/njcx.html">nJcx</a>      </li>
+      <li class="list-inline-item">
+        <i class="fa fa-files-o"></i>
+        <a href="https://www.njcx.bid/share/tag/linux.html">#linux</a>      </li>
+    </ul>
+  </header>
+  <div class="content">
+    <h1>Git 的使用 并传送文件至github</h1>
+<h2>注册github帐号</h2>
+<p>github.com 去注册一个自己的帐号</p>
+<h2>安装Git</h2>
+<div class="highlight"><pre><span></span><code>yay -S git
+</code></pre></div>
+
+<h2>初始化配置GIT</h2>
+<h3>配置用户信息</h3>
+<div class="highlight"><pre><span></span><code>git config --global user.name &quot;your name&quot;
+git config --global user.email &quot;your email&quot;
+</code></pre></div>
+
+<h2>上传文件</h2>
+<p>进入要传送的文件夹内，</p>
+<h3>初始化本地仓库</h3>
+<div class="highlight"><pre><span></span><code>git init
+</code></pre></div>
+
+<h3>添加拟上传的对象</h3>
+<div class="highlight"><pre><span></span><code>//上传文件夹1
+git add f1
+
+//上传指定文件
+git add *.*
+
+//上传所有修改的文件
+git add .
+or
+Git add -A
+</code></pre></div>
+
+<h3>将修改后的文件提交到本地仓库</h3>
+<div class="highlight"><pre><span></span><code>git commit -m ‘增加README.md说明文档’
+</code></pre></div>
+
+<p><img alt="" src="git_tip.png"></p>
+<h3>连接到远程仓库</h3>
+<div class="highlight"><pre><span></span><code>git remote add origin 远程仓库地址
+</code></pre></div>
+
+<h3>推送</h3>
+<div class="highlight"><pre><span></span><code>git push -u origin master
+</code></pre></div>
+
+<p>ssh-keygen -t rsa -C "aiyoyo20@gmail.com@github.com"
+生成.ssh 文件夹
+进入打开其 id_rsa.pub 复制其送有内容，github 打开设置找到 'Add SSH Key' 添加即可</p>
+<h2>Git</h2>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">--</span><span class="k">global</span><span class="w"> </span><span class="k">user</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="ss">&quot;Michael728&quot;</span><span class="w"></span>
+<span class="n">git</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">--</span><span class="k">global</span><span class="w"> </span><span class="k">user</span><span class="p">.</span><span class="n">email</span><span class="w"> </span><span class="ss">&quot;649168982@qq.com&quot;</span><span class="w"></span>
+<span class="n">ssh</span><span class="o">-</span><span class="n">keygen</span><span class="w"> </span><span class="o">-</span><span class="n">t</span><span class="w"> </span><span class="n">rsa</span><span class="w"> </span><span class="o">-</span><span class="n">C</span><span class="w"> </span><span class="ss">&quot;649168982@qq.com&quot;</span><span class="w"></span>
+<span class="n">复制代码</span><span class="w"></span>
+</code></pre></div>
+
+<p>[fish@fish-pc<strong> </strong>etc<strong>**]$</strong> ssh-keygen -t rsa -C "aiyoyo2729@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/fish/.ssh/id_rsa):
+Created directory '/home/fish/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/fish/.ssh/id_rsa
+Your public key has been saved in /home/fish/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:lspSTHzElY/EvDXaxmGHw7je12DCQI4cGu6S/Cx4H68 aiyoyo2729@gmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|    ..o=o+ .  |
+|   o =.+B O .  |
+|    = +..&amp; =  |
+|  . = . .= B o  |
+|   + + S. o o o |
+|  . * o  . . . .|
+|  . + *    .  |
+|  . + o     |
+|    E..     |
++----[SHA256]-----+</p>
+  </div>
+</article>
+<div id="cyReward" role="cylabs" data-use="reward" style="text-align:center;"></div>
+<!--PC和WAP自适应版-->
+<div id="SOHUCS" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = 'cysYUIjwy'; 
+var conf = 'prod_71b5e53cad0d27b5ed44fa5219b069b5'; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+
+<script type="text/javascript" charset="utf-8" src="https://changyan.itc.cn/js/lib/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://changyan.sohu.com/js/changyan.labs.https.js?appid=cysYUIjwy"></script>    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+       <ul class="col-sm-6 list-inline">
+          <li class="list-inline-item"><a href="https://www.njcx.bid/share/authors.html">Authors</a></li>
+          <li class="list-inline-item"><a href="https://www.njcx.bid/share/archives.html">Archives</a></li>
+          <li class="list-inline-item"><a href="https://www.njcx.bid/share/categories.html">Categories</a></li>
+          <li class="list-inline-item"><a href="https://www.njcx.bid/share/tags.html">Tags</a></li>
+        </ul>
+        <p class="col-sm-6 text-sm-right text-muted">
+          本站由 <a href="https://github.com/getpelican/pelican" target="_blank">Pelican 生成</a> 后续 by <a href="https://github.com/njcx" target="_blank">nJcx</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

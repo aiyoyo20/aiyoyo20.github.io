@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="google-site-verification" content="GgupatpoZgdqsBlxEZoMqGAy3aXAFtXIrYged3SB6EA" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Manjaro proxy | nJcx's Blog
+</title>
+  <link rel="canonical" href="https://www.njcx.bid/share/posts/manjaro-proxy.html">
+
+
+  <link rel="apple-touch-icon" href="https://www.njcx.bid/share/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" type="image/png" href="https://www.njcx.bid/share/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://www.njcx.bid/share/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://www.njcx.bid/share/manifest.json">
+  <meta name="theme-color" content="#333333">
+
+  <link rel="stylesheet" href="https://www.njcx.bid/share/theme/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.njcx.bid/share/theme/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.njcx.bid/share/theme/css/pygments/emacs.min.css">
+  <link rel="stylesheet" href="https://www.njcx.bid/share/theme/css/style.css">
+
+
+<meta name="description" content="一、（图形化软件）Qv2ray 全平台： linux、win 、mac 都可有可使用的版本 是开源的的第三方图形化界面，可以直接使用v2ray，在而且在添加插件后可使用 ssr、torjan 等其他，现在在使用的就是这个，还可以查看速度以及使用量，但是其默认监听端口不是1080,需要的可以自己改动一下。 项目地址： https://github.com/Qv2ray/Qv2ray/releases 1、安装： 直接去项目地址下载 AppImage 包， 直接双击打开就能使用，但是会提示缺少核心文件 去查看核心文件的所在位置，两种解决方法，一是去安装v2ray后更改路径，二是把去下载相应的vcore文件复制移动到其默认路径下 去 https://github.com/v2ray/v2ray-core/releases/下载v2ray-linux-64.zip文件，解压位置自定，然后改路径 2、注意： 留意这个设置 …">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a34c7a96ae9745547c373575407c521f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="https://www.njcx.bid/share">
+            <img class="img-fluid" src=https://www.njcx.bid/share/images/profile.png width=200 height=200 alt="nJcx's Blog">
+          </a>
+        </div>
+        <div class="col-sm-8">
+          <h1 class="title">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.njcx.bid/share">nJcx's Blog</a></h1>
+          <p class="text-muted">生而不忧，死而不怖。得其时横刀天下，不得其时蓬头而行</p>
+          <ul class="list-inline">
+                    <li class="list-inline-item">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.zhihu.com/people/njcxs" target="_blank">知乎</a></li>
+                <li class="list-inline-item"><a href="https://www.facebook.com/nJcx1" target="_blank">FaceBook</a></li>
+                <li class="list-inline-item"><a href="https://github.com/njcx" target="_blank">Github</a></li>
+            <li class=" list-inline-item text-muted">|</li>
+            <li class="list-inline-item"><a class="fa fa-github" href="https://github.com/njcx" target="_blank"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <h1>Manjaro proxy
+</h1>
+      <hr>
+<article class="article">
+  <header>
+    <ul class="list-inline">
+      <li class="list-inline-item text-muted" title="2020-09-03T10:20:00+03:00">
+        <i class="fa fa-clock-o"></i>
+        Thu 03 September 2020
+      </li>
+      <li class="list-inline-item">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="https://www.njcx.bid/share/category/tools.html">Tools</a>
+      </li>
+      <li class="list-inline-item">
+        <i class="fa fa-user-o"></i>
+        <a href="https://www.njcx.bid/share/author/njcx.html">nJcx</a>      </li>
+      <li class="list-inline-item">
+        <i class="fa fa-files-o"></i>
+        <a href="https://www.njcx.bid/share/tag/linux.html">#linux</a>      </li>
+    </ul>
+  </header>
+  <div class="content">
+    <h1>一、（图形化软件）Qv2ray</h1>
+<p>全平台： linux、win 、mac 都可有可使用的版本
+是开源的的第三方图形化界面，可以直接使用v2ray，在而且在添加插件后可使用 ssr、torjan 等其他，现在在使用的就是这个，还可以查看速度以及使用量，但是其默认监听端口不是1080,需要的可以自己改动一下。
+项目地址：  <a href="https://github.com/Qv2ray/Qv2ray/releases%0A">https://github.com/Qv2ray/Qv2ray/releases
+</a></p>
+<h2>1、安装：</h2>
+<p>直接去项目地址下载 AppImage 包， 直接双击打开就能使用，但是会提示缺少核心文件</p>
+<p><img alt="pic_1 qv2ray_error" src="images/M_P_qv2ray_error.png"></p>
+<p>去查看核心文件的所在位置，两种解决方法，一是去安装v2ray后更改路径，二是把去下载相应的vcore文件复制移动到其默认路径下</p>
+<p>去 <a href="https://github.com/v2ray/v2ray-core/releases/">https://github.com/v2ray/v2ray-core/releases/</a>下载v2ray-linux-64.zip文件，解压位置自定，然后改路径</p>
+<p><img alt="pic_2 qv2ray_path" src="images/M_P_qv2ray_path.png">
+<img alt="pic_3 qv2ray_show" src="images/M_P_qv2ray_show.png"></p>
+<h2>2、注意：</h2>
+<p>留意这个设置，该客户端的默认端口不是1080，需要改的自己修改下才能使用</p>
+<p><img alt="pic_4 qv2ray_port" src="images/M_P_qv2ray_port.png"></p>
+<h1>二、代理的应用：</h1>
+<h2>1、Firefox</h2>
+<p><img alt="pic_5 " src="images/M_P_firefox.png">
+填入代理端口：（例如：1080）
+然后可以正常爬墙，不过是全局代理</p>
+<h2>2、Chrome （插件）（ SwitchOmega ）</h2>
+<p>(1)、把情景模式下的 proxy 和 auto switch 都删除</p>
+<p>(2)、新建情景模式：
+1 )名称：Proxy；类型：代理服务器。
+<img alt="pic_6 SwitchOmega" src="images/M_P_SwitchOmega.png">
+ 2) 名称：Auto；类型：自动切换模式。
+<img alt="pic_7 auto" src="images/M_P_auto.png">
+3). 设置 Proxy
+   代理协议：HTTP；代理服务器：127.0.0.1；代理端口：1080
+   <img alt="pic_8 proxy_example" src="images/M_P_proxy_example.png">
+4). 设置 Auto
+个人感觉：实际应用中并不是很好用。所以自己在后期都不设置这项了。就直接连接和使用代理总有一个是能用的。</p>
+<p>在上面规则列表规则的情景模式里选择 proxy
+规则列表格式选 AutoProxy
+在 <strong>添加规则列表</strong> 里面输入如下网址</p>
+<p><code>https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt</code></p>
+<p>并点击下载链接里面的内容到本地</p>
+<p><img alt="pic_9 auto_example" src="images/M_P_auto_example.png"></p>
+<p>5). 应用选项，测试
+   <strong>上面有一个细节，在点击下载文件的时候需要事先去SwitchOmega切换到代理，链接是被墙的，没有先开代理的话会一直提示下载失败（无法连接到网络）</strong></p>
+<h2>3、Telegram的使用：</h2>
+<p>telegram 也是需要手动去配置代理，上面说的什么方法对它都不管用，使用是必须使用代理的。</p>
+<p><img alt="pic_10 telegram" src="images/M_P_telegram.png"></p>
+<p>这样就可以正常的使用了。</p>
+<h2>4、终端代理</h2>
+<p>终端需要额外配置：
+以上面的 qv2ray 为例，该客户端有两种方法，一个是 socket 通信,一个是 http 通信,两个方式对应的端口不同</p>
+<h3>(1)一次性的：</h3>
+<p>如果有想要 http 通信，http 的代理端口设置 12333，想执行 wget 或者 curl来下载国外的东西，可以使用如下命令：</p>
+<div class="highlight"><pre><span></span><code><span class="k">export</span> <span class="n">http_proxy</span><span class="o">=</span><span class="s2">&quot;http://127.0.0.1:12333&quot;</span>
+<span class="k">export</span> <span class="n">https_proxy</span><span class="o">=</span><span class="s2">&quot;http://127.0.0.1:12333&quot;</span>
+<span class="err">或者直接：</span>
+<span class="k">export</span> <span class="n">ALL_PROXY</span><span class="o">=</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">12333</span>
+</code></pre></div>
+
+<p>或者走 socket5 协议的话，代理端口设置 1080</p>
+<div class="highlight"><pre><span></span><code><span class="k">export</span> <span class="n">http_proxy</span><span class="o">=</span><span class="s2">&quot;socks5://127.0.0.1:1080&quot;</span>
+<span class="k">export</span> <span class="n">https_proxy</span><span class="o">=</span><span class="s2">&quot;socks5://127.0.0.1:1080&quot;</span>
+<span class="err">或者：</span>
+<span class="k">export</span> <span class="n">ALL_PROXY</span><span class="o">=</span><span class="s2">&quot;socks5://127.0.0.1:1080&quot;</span>
+</code></pre></div>
+
+<h3>(2)永久的：</h3>
+<p>把代理服务器地址写入shell配置文件.bashrc或者.zshrc 直接在.bashrc或者.zshrc添加下面内容</p>
+<div class="highlight"><pre><span></span><code><span class="k">export</span> <span class="n">http_proxy</span><span class="o">=</span><span class="s2">&quot;http://127.0.0.1:12333&quot;</span>
+<span class="k">export</span> <span class="n">https_proxy</span><span class="o">=</span><span class="s2">&quot;http://127.0.0.1:12333&quot;</span>
+</code></pre></div>
+
+<p>或者走socket5协议的话，代理端口是1080</p>
+<div class="highlight"><pre><span></span><code><span class="k">export</span> <span class="n">http_proxy</span><span class="o">=</span><span class="s2">&quot;socks5://127.0.0.1:1080&quot;</span>
+<span class="k">export</span> <span class="n">https_proxy</span><span class="o">=</span><span class="s2">&quot;socks5://127.0.0.1:1080&quot;</span>
+</code></pre></div>
+
+<p>然后刷新设置</p>
+<div class="highlight"><pre><span></span><code>source ~/.bashrc
+或者：
+source ~/.zshrc
+</code></pre></div>
+
+<h3>(3)自动开启关闭：</h3>
+<p>或者通过设置 alias 简写来简化操作，每次要用的时候输入setproxy，不用了就unsetproxy。</p>
+<div class="highlight"><pre><span></span><code><span class="n">alias</span> <span class="n">setSocks</span><span class="o">=</span><span class="s2">&quot;export ALL_PROXY=socks5://127.0.0.1:1080&quot;</span>
+<span class="n">alias</span> <span class="n">setHttp</span><span class="o">=</span><span class="s2">&quot;export ALL_PROXY=&quot;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">12333</span><span class="s2">&quot;</span>
+<span class="n">alias</span> <span class="n">unsetproxy</span><span class="o">=</span><span class="s2">&quot;unset ALL_PROXY&quot;</span>
+</code></pre></div>
+
+<p>或在~/.zshrc中添加如下脚本后刷新</p>
+<div class="highlight"><pre><span></span><code><span class="p">[[</span><span class="err">设置</span><span class="n">socks5</span><span class="p">]]</span><span class="err">代理</span>
+<span class="n">function</span> <span class="n">setsocks5</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">export</span> <span class="n">ALL_PROXY</span><span class="o">=</span><span class="s2">&quot;socks5://127.0.0.1:1080&quot;</span>
+<span class="p">}</span>
+
+<span class="p">[[</span><span class="err">设置</span><span class="n">http</span><span class="p">]]</span><span class="err">代理</span>
+<span class="n">function</span> <span class="n">http</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">export</span> <span class="n">ALL_PROXY</span><span class="o">=</span><span class="s2">&quot;http://127.0.0.1:12333&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># 取消终端代理</span>
+<span class="n">function</span> <span class="n">unsetProxy</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">unset</span> <span class="n">ALL_PROXY</span>
+<span class="p">}</span>
+<span class="c1"># 测试终端代理</span>
+<span class="n">function</span> <span class="n">testProxy</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">curl</span> <span class="o">-</span><span class="n">i</span> <span class="s1">&#39;http://ip.cn&#39;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h1>通常端口号是固定的，不过如果有需要随时变换的参考如下脚本</h1>
+<div class="highlight"><pre><span></span><code><span class="n">function</span> <span class="n">setProxy</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">export</span> <span class="n">ALL_PROXY</span><span class="o">=</span><span class="s2">&quot;socks5://127.0.0.1:${1}&quot;</span>
+<span class="p">}</span>
+
+<span class="err">启动为：</span>
+<span class="n">setProxy</span> <span class="o">&lt;</span><span class="n">port</span><span class="o">&gt;</span>   <span class="c1"># 启动终端代理连接</span>
+</code></pre></div>
+
+<p>可以使用<code>curl -i httpbin.org/get</code>来查看自己的 ip，如果确实发生了改变，那应该就是成功地设置代理了。</p>
+<h2>5、git加速</h2>
+<p>git很明显是被墙的额而且经常使用，直接配置git的命令。使用 ss/ssr ( socks5 类的都可以)来加快 git 的速度
+分辨需要设置的代理</p>
+<ul>
+<li>HTTP 形式：<blockquote>
+<p>git clone https://github.com/owner/git.git</p>
+</blockquote>
+</li>
+<li>SSH 形式：<blockquote>
+<p>git clone git@github.com/owner/git.git</p>
+</blockquote>
+</li>
+</ul>
+<h3>一、HTTP 形式</h3>
+<h4>法一：</h4>
+<p>走 HTTP 代理</p>
+<div class="highlight"><pre><span></span><code>git config --global http.proxy &quot;http://127.0.0.1:12333&quot;
+git config --global https.proxy &quot;http://127.0.0.1:12333&quot;
+</code></pre></div>
+
+<p>走 socks5 代理（如 Shadowsocks）</p>
+<div class="highlight"><pre><span></span><code>git config --global http.proxy &quot;socks5://127.0.0.1:1080&quot;
+git config --global https.proxy &quot;socks5://127.0.0.1:1080&quot;
+</code></pre></div>
+
+<p>取消设置</p>
+<div class="highlight"><pre><span></span><code>git config --global --unset http.proxy
+git config --global --unset https.proxy
+</code></pre></div>
+
+<h4>法二：</h4>
+<p>在 ~/.gitconfig 文件中加入以下配置:</p>
+<div class="highlight"><pre><span></span><code><span class="k">[http]</span>
+    <span class="na">proxy</span> <span class="o">=</span> <span class="s">socks5://127.0.0.1:1080</span>
+</code></pre></div>
+
+<p>注意，上明配置等同于命令 <code>git config --global http.proxy 'socks5://127.0.0.1:1080'</code></p>
+<p>Git不认https.proxy，设置http.proxy就可以支持 https 了。</p>
+<h3>二、SSH 形式</h3>
+<p>在 ~/.ssh/config 文件中加入以下配置:</p>
+<div class="highlight"><pre><span></span><code>Host github.com
+HostName github.com
+User git
+Port 22
+ProxyCommand /usr/bin/ncat --proxy 127.0.0.1:1080 --proxy-type socks5 %h %p
+</code></pre></div>
+
+<h3>端口被占用解决方法：</h3>
+<p>有时候会出现弹窗警告1080端口被占用提示：
+manjaro的端口管理工具：net-tools是</p>
+<div class="highlight"><pre><span></span><code><span class="n">yay</span> <span class="o">-</span><span class="n">S</span> <span class="n">net</span><span class="o">-</span><span class="n">tools</span>
+</code></pre></div>
+
+<p>查看相应的端口号占用的程序：</p>
+<div class="highlight"><pre><span></span><code>netstat -lnp<span class="p">|</span>grep <span class="m">1080</span>
+</code></pre></div>
+
+<p><img alt="pic_11 port_error" src="images/M_P_port_error.png"></p>
+<p>关闭应用：</p>
+<div class="highlight"><pre><span></span><code>kill -9 [42058]
+</code></pre></div>
+
+<p>不知道这个原因的出现是bug还是什么的吧，切换节点但是端口释放不成功需要像上面那样，有时候退出后也会有端口释放不成功，被长期占用的情况，而且使用会导致电脑卡，在退出的时候尤为明显，有个3、5秒的卡顿。</p>
+<h1>二、 脚本安装</h1>
+<h1>1、ssr</h1>
+<div class="highlight"><pre><span></span><code>cd /opt
+# 下载
+curl https://raw.githubusercontent.com/the0demiurge/CharlesScripts/master/charles/bin/ssr -o &quot;ssr&quot;
+# 或者
+wget https://raw.githubusercontent.com/the0demiurge/CharlesScripts/master/charles/bin/ssr -O &quot;ssr&quot;
+# 添加执行权限
+chmod a+x ssr
+# 为脚本创造软链接
+sudo ln -s /home/fish/opt/ssr /usr/bin/ssr
+# 安装依赖
+yaourt -S jq tsocks
+# 安装ssr客户端
+ssr install
+# 配置
+ssr config  # 详细配置见ssr配置文件说明
+# 启动
+ssr start
+# 停止
+ssr stop
+# 重启
+ssr restart
+# 卸载
+ssr uninstall
+</code></pre></div>
+
+<h1>2、v2ray</h1>
+  </div>
+</article>
+<div id="cyReward" role="cylabs" data-use="reward" style="text-align:center;"></div>
+<!--PC和WAP自适应版-->
+<div id="SOHUCS" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = 'cysYUIjwy'; 
+var conf = 'prod_71b5e53cad0d27b5ed44fa5219b069b5'; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+
+<script type="text/javascript" charset="utf-8" src="https://changyan.itc.cn/js/lib/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://changyan.sohu.com/js/changyan.labs.https.js?appid=cysYUIjwy"></script>    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+       <ul class="col-sm-6 list-inline">
+          <li class="list-inline-item"><a href="https://www.njcx.bid/share/authors.html">Authors</a></li>
+          <li class="list-inline-item"><a href="https://www.njcx.bid/share/archives.html">Archives</a></li>
+          <li class="list-inline-item"><a href="https://www.njcx.bid/share/categories.html">Categories</a></li>
+          <li class="list-inline-item"><a href="https://www.njcx.bid/share/tags.html">Tags</a></li>
+        </ul>
+        <p class="col-sm-6 text-sm-right text-muted">
+          本站由 <a href="https://github.com/getpelican/pelican" target="_blank">Pelican 生成</a> 后续 by <a href="https://github.com/njcx" target="_blank">nJcx</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
