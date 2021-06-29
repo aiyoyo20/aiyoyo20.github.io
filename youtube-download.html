@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+
+
+  
+
+
+ 
+
+<meta name="author" content="KFING" />
+<meta name="description" content="起因： 自己有存视频的习惯，因为网上的资源总会因为一些例如，服务器被攻击，博主进行了删除，因种种原因不符合平台要求等等人为的的或者不可抗拒的原因造成自己收藏的资源失效，为了防止这些情况的发生，所以往往会下载到本地，进行归类处理。 以往自己下载的视频都是都是零零散散的，也就使用了最简单的方法，油猴脚本或者插件，忘记使用的插件叫什么了，前一阵子弹出因为被官方制裁所以停止提供服务就给删除了，脚本挺多的可以自己找找看，但无论是脚本还是插件，在使用的时候都有同样的问题，在下载高清晰度的视频时，由于官方给音、频分离了，所以要想下载的话只能分开下载再去合成。 今天自己下载的是一个博主的所有视频，量大，不想去慢慢依次打开每个视频去逐一下载，在网上搜索了，基本都是通过第三方网站，这个速度基本都不是很理想；或者是软件，分为免费的和付费的，免费的有量的限制，付费的大可不必，因为打开软件在很长一段时间内可能就这一次。 最后发现了youtube-dl，python 编写的，运行使用也不是很复杂，但可能没有或者是极少使用命令行的小伙伴来说比较头疼 安装及使用： 项目地址https://github.com/ytdl-org/youtube-dl 具体的安装方式去看挑选一个适合且可用的即可，我在这使用的是 pip 安装 pip3 install …" />
+<meta name="keywords" content="linux">
+
+
+  <meta property="og:site_name" content="AIYOYO"/>
+  <meta property="og:title" content="youtube download"/>
+  <meta property="og:description" content="起因： 自己有存视频的习惯，因为网上的资源总会因为一些例如，服务器被攻击，博主进行了删除，因种种原因不符合平台要求等等人为的的或者不可抗拒的原因造成自己收藏的资源失效，为了防止这些情况的发生，所以往往会下载到本地，进行归类处理。 以往自己下载的视频都是都是零零散散的，也就使用了最简单的方法，油猴脚本或者插件，忘记使用的插件叫什么了，前一阵子弹出因为被官方制裁所以停止提供服务就给删除了，脚本挺多的可以自己找找看，但无论是脚本还是插件，在使用的时候都有同样的问题，在下载高清晰度的视频时，由于官方给音、频分离了，所以要想下载的话只能分开下载再去合成。 今天自己下载的是一个博主的所有视频，量大，不想去慢慢依次打开每个视频去逐一下载，在网上搜索了，基本都是通过第三方网站，这个速度基本都不是很理想；或者是软件，分为免费的和付费的，免费的有量的限制，付费的大可不必，因为打开软件在很长一段时间内可能就这一次。 最后发现了youtube-dl，python 编写的，运行使用也不是很复杂，但可能没有或者是极少使用命令行的小伙伴来说比较头疼 安装及使用： 项目地址https://github.com/ytdl-org/youtube-dl 具体的安装方式去看挑选一个适合且可用的即可，我在这使用的是 pip 安装 pip3 install …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/youtube-download.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2020-09-03 10:20:00+02:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="/author/kfing.html">
+  <meta property="article:section" content="Tools"/>
+  <meta property="article:tag" content="linux"/>
+  <meta property="og:image" content="">
+
+  <title>AIYOYO &ndash; youtube download</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="/">
+        <img src="/theme/img/profile.png" alt="" title="">
+      </a>
+
+      <h1>
+        <a href="/"></a>
+      </h1>
+
+
+
+
+      <ul class="social">
+          <li>
+            <a  class="sc-You can add links in your config file" href="#" target="_blank">
+              <i class="fab fa-You can add links in your config file"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-Another social link" href="#" target="_blank">
+              <i class="fab fa-Another social link"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="youtube-download">youtube download</h1>
+    <p>
+      Posted on Thu 03 September 2020 in <a href="/category/tools.html">Tools</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <h1>起因：</h1>
+<p>自己有存视频的习惯，因为网上的资源总会因为一些例如，服务器被攻击，博主进行了删除，因种种原因不符合平台要求等等人为的的或者不可抗拒的原因造成自己收藏的资源失效，为了防止这些情况的发生，所以往往会下载到本地，进行归类处理。</p>
+<p>以往自己下载的视频都是都是零零散散的，也就使用了最简单的方法，油猴脚本或者插件，忘记使用的插件叫什么了，前一阵子弹出因为被官方制裁所以停止提供服务就给删除了，脚本挺多的可以自己找找看，但无论是脚本还是插件，在使用的时候都有同样的问题，在下载高清晰度的视频时，由于官方给音、频分离了，所以要想下载的话只能分开下载再去合成。</p>
+<p>今天自己下载的是一个博主的所有视频，量大，不想去慢慢依次打开每个视频去逐一下载，在网上搜索了，基本都是通过第三方网站，这个速度基本都不是很理想；或者是软件，分为免费的和付费的，免费的有量的限制，付费的大可不必，因为打开软件在很长一段时间内可能就这一次。</p>
+<p>最后发现了youtube-dl，python 编写的，运行使用也不是很复杂，但可能没有或者是极少使用命令行的小伙伴来说比较头疼</p>
+<h1>安装及使用：</h1>
+<p>项目地址<a href="https://github.com/ytdl-org/youtube-dl">https://github.com/ytdl-org/youtube-dl</a>
+具体的安装方式去看挑选一个适合且可用的即可，我在这使用的是 pip 安装</p>
+<div class="highlight"><pre><span></span><code>pip3 install youtube-dl
+</code></pre></div>
+
+<p>最简单的使用
+<code>youtube-dl url</code>即可下载，但是默认下载的是最高画质，这时候可以使用 -F 参数查看可供下载的格式，</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/linux.html">linux</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " AIYOYO ",
+  "url" : "",
+  "image": "",
+  "description": ""
+}
+</script>
+
+</body>
+</html>
