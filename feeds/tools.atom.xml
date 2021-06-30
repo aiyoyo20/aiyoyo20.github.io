@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>AIYOYO - Tools</title><link href="http://aiyoyo20.github.io/" rel="alternate"></link><link href="http://aiyoyo20.github.io/feeds/tools.atom.xml" rel="self"></link><id>http://aiyoyo20.github.io/</id><updated>2020-09-03T10:20:00+08:00</updated><entry><title>笔记软件对比</title><link href="http://aiyoyo20.github.io/articles/bi-ji-ruan-jian-dui-bi.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/bi-ji-ruan-jian-dui-bi.html</id><summary type="html">&lt;p&gt;陆陆续续使用了不少软件记录笔记，从最初的记事本，word 再到现在用过的各种 markdown 软件，各有特色，做个总结吧，希望对没有接触过的有个直观的了解。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>AIYOYO - Tools</title><link href="https://aiyoyo20.github.io/" rel="alternate"></link><link href="https://aiyoyo20.github.io/feeds/tools.atom.xml" rel="self"></link><id>https://aiyoyo20.github.io/</id><updated>2020-09-03T10:20:00+08:00</updated><entry><title>笔记软件对比</title><link href="https://aiyoyo20.github.io/articles/bi-ji-ruan-jian-dui-bi.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/bi-ji-ruan-jian-dui-bi.html</id><summary type="html">&lt;p&gt;陆陆续续使用了不少软件记录笔记，从最初的记事本，word 再到现在用过的各种 markdown 软件，各有特色，做个总结吧，希望对没有接触过的有个直观的了解。&lt;/p&gt;
 &lt;p&gt;有的软件是早期的时候使用的，所以可能会出现上面写的一些问题在下载的最新版本中解决了优化了的情况。仅为自己当时的主观感受，不代表产品的实际，毕竟，每个人的喜好不一样。&lt;/p&gt;
 &lt;h1&gt;Markdown&lt;/h1&gt;
 &lt;h2&gt;1. Typora&lt;/h2&gt;
@@ -109,7 +109,7 @@ Github项目地址:  &lt;a href="https://github.com/getgridea/gridea/"&gt;https:
 可以记一些自己的临时想法，也可以随手贴上自己看到的一篇好文，自己对一部剧的理解，等等等等。&lt;/p&gt;
 &lt;p&gt;全平台：Windows、Mac、Linux
 语言：目前只有英文的，有个人用户对win64的做了简单的汉化并打包了的，可以自行搜索
-Github项目地址:  &lt;a href="https://github.com/zadam/trilium"&gt;https://github.com/zadam/trilium&lt;/a&gt;&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>博客使用经历</title><link href="http://aiyoyo20.github.io/articles/bo-ke-shi-yong-jing-li.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/bo-ke-shi-yong-jing-li.html</id><content type="html">&lt;h1&gt;wordpress&lt;/h1&gt;
+Github项目地址:  &lt;a href="https://github.com/zadam/trilium"&gt;https://github.com/zadam/trilium&lt;/a&gt;&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>博客使用经历</title><link href="https://aiyoyo20.github.io/articles/bo-ke-shi-yong-jing-li.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/bo-ke-shi-yong-jing-li.html</id><content type="html">&lt;h1&gt;wordpress&lt;/h1&gt;
 &lt;h1&gt;Github Page&lt;/h1&gt;
 &lt;h2&gt;静态模板系统选择&lt;/h2&gt;
 &lt;p&gt;Ruby 编写的 Jekyll
@@ -117,7 +117,7 @@ Node.js 编写的 Hexo
 Go 编写的 Hugo
 Python 编写的 Pelican&lt;/p&gt;
 &lt;h3&gt;Gridea&lt;/h3&gt;
-&lt;p&gt;更人性化的 Gridea，在 windows 下能够全局代理还好，在 linux 下同步因为墙的原因，常常同步失败&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>chrome</title><link href="http://aiyoyo20.github.io/articles/chrome.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/chrome.html</id><summary type="html">&lt;h1&gt;插件&lt;/h1&gt;
+&lt;p&gt;更人性化的 Gridea，在 windows 下能够全局代理还好，在 linux 下同步因为墙的原因，常常同步失败&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>chrome</title><link href="https://aiyoyo20.github.io/articles/chrome.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/chrome.html</id><summary type="html">&lt;h1&gt;插件&lt;/h1&gt;
 &lt;h2&gt;Adblock&lt;/h2&gt;
 &lt;p&gt;屏蔽广告&lt;/p&gt;
 &lt;h2&gt;AdGuard AdBlocker&lt;/h2&gt;
@@ -175,7 +175,7 @@ Python 编写的 Pelican&lt;/p&gt;
 &lt;h2&gt;百度去广告，blur(毛玻璃)搜索框，美化&lt;/h2&gt;
 &lt;p&gt;在百度搜索的时候，为整个画面提供美化&lt;/p&gt;
 &lt;h2&gt;百度热点搜索屏蔽&lt;/h2&gt;
-&lt;p&gt;屏蔽点搜索后右侧的百度热点新闻，之前使用的，后来使用 Adblock 手动选择屏蔽就不用了&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>Docker</title><link href="http://aiyoyo20.github.io/articles/docker.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/docker.html</id><content type="html"></content><category term="Tools"></category><category term="linux"></category></entry><entry><title>服务器选择</title><link href="http://aiyoyo20.github.io/articles/fu-wu-qi-xuan-ze.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/fu-wu-qi-xuan-ze.html</id><summary type="html">&lt;h1&gt;ME&lt;/h1&gt;
+&lt;p&gt;屏蔽点搜索后右侧的百度热点新闻，之前使用的，后来使用 Adblock 手动选择屏蔽就不用了&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>Docker</title><link href="https://aiyoyo20.github.io/articles/docker.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/docker.html</id><content type="html"></content><category term="Tools"></category><category term="linux"></category></entry><entry><title>服务器选择</title><link href="https://aiyoyo20.github.io/articles/fu-wu-qi-xuan-ze.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/fu-wu-qi-xuan-ze.html</id><summary type="html">&lt;h1&gt;ME&lt;/h1&gt;
 &lt;p class='ind'&gt;自己当初在选的时候主要对比了阿里的和百度的服务器，价格其实都还可以，但是中间是出了一个小插曲，自己在完成注册百度云后浏览了一下，但是并没有下单，然后过了几天有个小姐姐，说是销售经理，看我有这个意向就问了下我的需求，大概聊了一下，我给忘了聊了啥了然后加了微信，一看微信头像，嗯！还挺漂亮。我给细说了下我的需求然后给我推荐了一个，当时其实也不确定服务器自己拿来干啥就说再考虑几天，然后过了几天又来咨询，自己错过了几通电话但还是打过来，最后就买了一年的。记得那会花了178吧。&lt;/p&gt;
 &lt;p class='ind'&gt;然后那会自己对linux并不熟悉，加上那会用ubuntu爱瞎鼓捣老是把系统弄崩溃，三天两头重装系统。就一直没怎么使用上，一直搁置了小半年。害，女人误事啊！&lt;/p&gt;
 
@@ -332,7 +332,7 @@ aliyun3.wezhan.cn
 .ind {
 text-indent: 2em;
 }
-/style&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>Git</title><link href="http://aiyoyo20.github.io/articles/git.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/git.html</id><summary type="html">&lt;h1&gt;Git 的使用 并传送文件至github&lt;/h1&gt;
+/style&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>Git</title><link href="https://aiyoyo20.github.io/articles/git.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/git.html</id><summary type="html">&lt;h1&gt;Git 的使用 并传送文件至github&lt;/h1&gt;
 &lt;h2&gt;注册github帐号&lt;/h2&gt;
 &lt;p&gt;github.com 去注册一个自己的帐号&lt;/p&gt;
 &lt;h2&gt;安装Git&lt;/h2&gt;
@@ -441,7 +441,7 @@ The key's randomart image is:
 |  . + *    .  |
 |  . + o     |
 |    E..     |
-+----[SHA256]-----+&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>解、压缩</title><link href="http://aiyoyo20.github.io/articles/jie-ya-suo.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/jie-ya-suo.html</id><summary type="html">&lt;h1&gt;1. tar&lt;/h1&gt;
++----[SHA256]-----+&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>解、压缩</title><link href="https://aiyoyo20.github.io/articles/jie-ya-suo.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/jie-ya-suo.html</id><summary type="html">&lt;h1&gt;1. tar&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;参数说明：&lt;/p&gt;
 &lt;p&gt;-c: 建立压缩档案
@@ -680,7 +680,7 @@ tar.bz2&amp;gt;tar.gz&amp;gt;zip&amp;gt;tar
 &lt;/blockquote&gt;
 &lt;p&gt;参考：
 &lt;a href="https://juejin.im/post/6844903923132694536#heading-18"&gt;看完这篇Linux下的解压缩你还不会吗？&lt;/a&gt;
-&lt;a href="https://www.cnblogs.com/nhdlb/p/11568991.html#_label2"&gt;Linux：linux下解压*压缩tar.xz、等文件方法&lt;/a&gt;&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>Manjaro proxy</title><link href="http://aiyoyo20.github.io/articles/manjaro-proxy.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/manjaro-proxy.html</id><summary type="html">&lt;h1&gt;一、（图形化软件）Qv2ray&lt;/h1&gt;
+&lt;a href="https://www.cnblogs.com/nhdlb/p/11568991.html#_label2"&gt;Linux：linux下解压*压缩tar.xz、等文件方法&lt;/a&gt;&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>Manjaro proxy</title><link href="https://aiyoyo20.github.io/articles/manjaro-proxy.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/manjaro-proxy.html</id><summary type="html">&lt;h1&gt;一、（图形化软件）Qv2ray&lt;/h1&gt;
 &lt;p&gt;全平台： linux、win 、mac 都可有可使用的版本
 是开源的的第三方图形化界面，可以直接使用v2ray，在而且在添加插件后可使用 ssr、torjan 等其他，现在在使用的就是这个，还可以查看速度以及使用量，但是其默认监听端口不是1080,需要的可以自己改动一下。
 项目地址：  &lt;a href="https://github.com/Qv2ray/Qv2ray/releases%0A"&gt;https://github.com/Qv2ray/Qv2ray/releases
@@ -900,7 +900,7 @@ ssr restart
 ssr uninstall
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h1&gt;2、v2ray&lt;/h1&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>酸酸乳配置</title><link href="http://aiyoyo20.github.io/articles/suan-suan-ru-pei-zhi.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/suan-suan-ru-pei-zhi.html</id><summary type="html">&lt;h1&gt;1. 配置文件各项说明&lt;/h1&gt;
+&lt;h1&gt;2、v2ray&lt;/h1&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>酸酸乳配置</title><link href="https://aiyoyo20.github.io/articles/suan-suan-ru-pei-zhi.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/suan-suan-ru-pei-zhi.html</id><summary type="html">&lt;h1&gt;1. 配置文件各项说明&lt;/h1&gt;
 &lt;p&gt;各选项说明（注意，你应该修改使用initcfg.sh脚本初始化后的user-config.json）：&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -1166,7 +1166,7 @@ ssr uninstall
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;按格式修改端口、密码以及混淆协议。也可以和以前的格式混合使用，如果某个端口不配置混淆协 议，则会使用下面的默认"obfs"配置。&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>sublime</title><link href="http://aiyoyo20.github.io/articles/sublime.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/sublime.html</id><summary type="html">&lt;h1&gt;一、安装&lt;/h1&gt;
+&lt;p&gt;按格式修改端口、密码以及混淆协议。也可以和以前的格式混合使用，如果某个端口不配置混淆协 议，则会使用下面的默认"obfs"配置。&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>sublime</title><link href="https://aiyoyo20.github.io/articles/sublime.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/sublime.html</id><summary type="html">&lt;h1&gt;一、安装&lt;/h1&gt;
 &lt;p&gt;官网下载压缩包 :   &lt;a href="https://www.sublimetext.com/3"&gt;https://www.sublimetext.com/3&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;win&lt;/h2&gt;
 &lt;h3&gt;正常安装&lt;/h3&gt;
@@ -1643,7 +1643,7 @@ https://github.com/DisposaBoy/GoSublime
 &lt;span class="n"&gt;鼠标的前进后退键可切换Tab文件&lt;/span&gt;
 &lt;span class="n"&gt;按Ctrl&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="n"&gt;依次点击或选取&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="n"&gt;可需要编辑的多个位置&lt;/span&gt;
 &lt;span class="n"&gt;按Ctrl&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;Shift&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;上下键&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="n"&gt;可替换行&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>Vim、Nvim</title><link href="http://aiyoyo20.github.io/articles/vim-nvim.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/vim-nvim.html</id><summary type="html">&lt;h1&gt;Vim&lt;/h1&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>Vim、Nvim</title><link href="https://aiyoyo20.github.io/articles/vim-nvim.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/vim-nvim.html</id><summary type="html">&lt;h1&gt;Vim&lt;/h1&gt;
 &lt;h2&gt;安装&lt;/h2&gt;
 &lt;p&gt;win：gvim
 没有去window下折腾的想法，比较麻烦，但还是放一个介绍安装的&lt;a href="https://zhuanlan.zhihu.com/p/64856646"&gt;网址&lt;/a&gt;吧，如果挂了网上找找，很多的&lt;/p&gt;
@@ -2050,7 +2050,7 @@ src/digraph.c: text/x-c; charset=unknown-8bit&lt;font&gt;&lt;/font&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;但是这篇文章发表在15 Jan 2015，现在已经过去五年了，在此期间vim也做了大版本的更新，没有就文中的和现在的进行详细的对比，但就得到的资料来看应该很多问题是解决了的，vim有压力才会有动力&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>youtube download</title><link href="http://aiyoyo20.github.io/articles/youtube-download.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/youtube-download.html</id><summary type="html">&lt;h1&gt;起因：&lt;/h1&gt;
+&lt;p&gt;但是这篇文章发表在15 Jan 2015，现在已经过去五年了，在此期间vim也做了大版本的更新，没有就文中的和现在的进行详细的对比，但就得到的资料来看应该很多问题是解决了的，vim有压力才会有动力&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>youtube download</title><link href="https://aiyoyo20.github.io/articles/youtube-download.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/youtube-download.html</id><summary type="html">&lt;h1&gt;起因：&lt;/h1&gt;
 &lt;p&gt;自己有存视频的习惯，因为网上的资源总会因为一些例如，服务器被攻击，博主进行了删除，因种种原因不符合平台要求等等人为的的或者不可抗拒的原因造成自己收藏的资源失效，为了防止这些情况的发生，所以往往会下载到本地，进行归类处理。&lt;/p&gt;
 &lt;p&gt;以往自己下载的视频都是都是零零散散的，也就使用了最简单的方法，油猴脚本或者插件，忘记使用的插件叫什么了，前一阵子弹出因为被官方制裁所以停止提供服务就给删除了，脚本挺多的可以自己找找看，但无论是脚本还是插件，在使用的时候都有同样的问题，在下载高清晰度的视频时，由于官方给音、频分离了，所以要想下载的话只能分开下载再去合成。&lt;/p&gt;
 &lt;p&gt;今天自己下载的是一个博主的所有视频，量大，不想去慢慢依次打开每个视频去逐一下载，在网上搜索了，基本都是通过第三方网站，这个速度基本都不是很理想；或者是软件，分为免费的和付费的，免费的有量的限制，付费的大可不必，因为打开软件在很长一段时间内可能就这一次。&lt;/p&gt;
