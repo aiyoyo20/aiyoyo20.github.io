@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+          <title>AIYOYO - sublime</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+
+
+
+
+    <meta name="tags" content="linux" />
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://aiyoyo20.github.io/">AIYOYO</a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="http://aiyoyo20.github.io/category/android.html">Android</a></li>
+            <li><a href="http://aiyoyo20.github.io/category/database.html">Database</a></li>
+            <li><a href="http://aiyoyo20.github.io/category/others.html">Others</a></li>
+            <li><a href="http://aiyoyo20.github.io/category/system.html">System</a></li>
+            <li class="active"><a href="http://aiyoyo20.github.io/category/tools.html">Tools</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="http://aiyoyo20.github.io/articles/sublime.html" rel="bookmark"
+         title="Permalink to sublime">sublime</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2020-09-03T10:20:00+08:00">
+      Thu 03 September 2020
+    </time>
+    <address class="vcard author">
+      By           <a class="url fn" href="http://aiyoyo20.github.io/author/fing.html">FING</a>
+    </address>
+    <div class="category">
+        Category: <a href="http://aiyoyo20.github.io/category/tools.html">Tools</a>
+    </div>
+    <div class="tags">
+        Tags:
+            <a href="http://aiyoyo20.github.io/tag/linux.html">linux</a>
+    </div>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <h1>一、安装</h1>
+<p>官网下载压缩包 :   <a href="https://www.sublimetext.com/3">https://www.sublimetext.com/3</a></p>
+<h2>win</h2>
+<h3>正常安装</h3>
+<p>windows 的安装下载包然后双击安装就好了，如果有自己之前的配置文件备份的话，复制到<code>C:\Users\aiyoy\AppData\Roaming\Sublime Text 3</code>即可。</p>
+<h3>便携版本</h3>
+<p>安装的时候选择一个比较容易找到的位置，默认的也可以，不过得去找到安装的位置，安装好之后先不要打开，在 Sublime Text 3 文件夹下新建一个  Data (注意大小写) 文件夹并删除 <code>C:\Users\aiyoy\AppData\Roaming\</code>下的 Sublime Text 3 文件夹，这时候启动安装插件就会在Data目录中了，也可以直接复制自己的配置文件到Data目录中</p>
+<p>然后这个文件夹就可以复制进u盘随身带着了</p>
+<h2>linux（manjaro）</h2>
+<h3>（1）手动下载安装</h3>
+<p>解压缩，将目录名改为sublime_text，移动到 <code>/opt/</code>目录下</p>
+<div class="highlight"><pre><span></span><code>sudo mv sublime_text_3 sublime_text
+sudo mv sublime_text /opt/
+</code></pre></div>
+
+<p>打开解压目录找到 .desktop 文件打开修改路径然后复制到相应的位置，或者电脑快捷方式所在的<code>/usr/share/applications</code>即可在应用管理器里面找到。</p>
+<h3>（2）通过命令行安装</h3>
+<div class="highlight"><pre><span></span><code>yay -S sublime-text-3
+</code></pre></div>
+
+<h2>mac</h2>
+<h1>二、配置</h1>
+<h2>安装 Package Control (插件管理工具)：</h2>
+<p>按 ctrl + ` 或者 View &gt; Show Console ，打开 Console 一次性输入如下代码，回车：</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">urllib.request</span><span class="o">,</span><span class="nn">os</span><span class="o">,</span><span class="nn">hashlib</span><span class="p">;</span> <span class="n">h</span> <span class="o">=</span> <span class="s1">&#39;6f4c264a24d933ce70df5dedcf1dcaee&#39;</span> <span class="o">+</span> <span class="s1">&#39;ebe013ee18cced0ef93d5f746d80ef60&#39;</span><span class="p">;</span> <span class="n">pf</span> <span class="o">=</span> <span class="s1">&#39;Package Control.sublime-package&#39;</span><span class="p">;</span> <span class="n">ipp</span> <span class="o">=</span> <span class="n">sublime</span><span class="o">.</span><span class="n">installed_packages_path</span><span class="p">();</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">install_opener</span><span class="p">(</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">build_opener</span><span class="p">(</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">ProxyHandler</span><span class="p">())</span> <span class="p">);</span> <span class="n">by</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span> <span class="s1">&#39;http://packagecontrol.io/&#39;</span> <span class="o">+</span> <span class="n">pf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;%20&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">();</span> <span class="n">dh</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">by</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">();</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Error validating download (got </span><span class="si">%s</span><span class="s1"> instead of </span><span class="si">%s</span><span class="s1">), please try manual install&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">dh</span><span class="p">,</span> <span class="n">h</span><span class="p">))</span> <span class="k">if</span> <span class="n">dh</span> <span class="o">!=</span> <span class="n">h</span> <span class="k">else</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span> <span class="n">ipp</span><span class="p">,</span> <span class="n">pf</span><span class="p">),</span> <span class="s1">&#39;wb&#39;</span> <span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">by</span><span class="p">)</span>
+</code></pre></div>
+
+<h3>为 Package Control 设置代理</h3>
+<p>（不设置也可以正常使用，但是在安装插件及更新插件的时候会比较慢）</p>
+<p>Prefrences --&gt; Packages Settings  --&gt; Package Control  --&gt; Settngs 增添下面的代码</p>
+<div class="highlight"><pre><span></span><code>{
+    &quot;auto_upgrade&quot;: false,
+    &quot;bootstrapped&quot;: true,
+    // proxy setting
+    &quot;http_proxy&quot;:&quot;http://127.0.0.1:12333&quot;,
+    &quot;https_proxy&quot;:&quot;http://127.0.0.1:12333&quot;,
+    &quot;in_process_packages&quot;:
+    [
+    ],
+    &quot;install_missing&quot;: false,
+    &quot;installed_packages&quot;:
+    [
+        &quot;Anaconda&quot;,
+        &quot;AutoPEP8&quot;,
+        &quot;Git&quot;,
+        &quot;Git blame&quot;,
+        &quot;Godef&quot;,
+        &quot;HTML-CSS-JS Prettify&quot;,
+        &quot;Package Control&quot;,
+        &quot;PackageResourceViewer&quot;,
+        &quot;SublimeCodeIntel&quot;
+    ],
+    &quot;remove_orphaned&quot;: false,
+}
+</code></pre></div>
+
+<h2>插件：</h2>
+<h3>安装方法：</h3>
+<h4>1、自动安装：</h4>
+<p><code>Ctrl+Shift+P</code> 打开命令行模式，输入 pci（习惯性问题，输入 Package Control: Install Package 里面的有的字母的简写都会模糊匹配出来的），然后回车选择：<code>Package Control: Install Package</code> 。搜索插件名称即可自动安装，注意留意底部的安装进程，如果安装失败的话可以选择手动安装。</p>
+<h4>2、手动安装</h4>
+<p>去 github 上或者你能找到的渠道下载相应的包。
+如果插件是打包好的话复制到 Installed Packages下，是文件目录的话复制到 Packages文件夹下。</p>
+<h3>1、Web</h3>
+<h4>emmet：</h4>
+<p>前端神器。一个可以极大提高 web 开发者 HTML 和 CSS 工作效率的工具箱组件。
+在开发前端项目时，常常需要编写大量的 HTML/CSS代码，标签、属性等使用常规方式一个一个敲打效率极低。
+还好有 Emmet，它提供了相对简单的语法规则。使得编写很少的代码就能生成预期，极大的提高了代码的编写效率，并且它还支持觉得多数的编辑器，查看更多。
+<a href="https://packagecontrol.io/packages/Emmet">查看介绍</a></p>
+<h5>问题一：</h5>
+<p>如下报错：</p>
+<p><img alt="pic_1 sublime_pyV8_error" src="images/sublime_pyV8_error.png"></p>
+<p>因为下载下来的 PyV8 的包是一个文件夹，按照正常情况是放在 packages 下的，但是安装之后一直无法使用，以为是快捷键冲突，又是改快捷键、又是删除其余的包、又是重装、又是更换不同版本的 PyV8 的包的都没有解决，然后想着是不是包管理器给安装错误了，调出命令面板想重装一下，然后留意到加载emmet包然后加载 PyV8 插件的时候是报错，也就是包未加载成功。
+<img alt="pic_2 sublime_pyV8_error_tip" src="images/sublime_pyv8_error_tip.png"></p>
+<p>最后终于找到解决方法：PyV8 包的位置应该是在与 emmet 包同级目录下。也就是<code>.config/sublime-text-3/Installed Packages/</code>下，而不是reference－－Browser Packages指定的<code>.config/sublime-text-3/Packages/</code>下。
+解决方法：
+    去提示的网址：https://github.com/emmetio/pyv8-binaries 下载相应的包，解压到里面的文件 <code>/home/fish/.config/sublime-text-3/Packages/PyV8</code>下，没有PyV8文件夹就创建一个（比如我的 <code>pyv8-linux64-p3</code>，或者我在测试的时候发现把里面的文件复制到 PyV8 里面也是可以的，但直接复制比较方便快捷，也易于下次区分是什么系统的文件），然后重启解决。</p>
+<p>做完这些后不会弹窗报错了，但是启动的时候地下的任务栏都会提示加载 PyV8,调出命令板也是每次都会有提示，但那不是错误，而是其默认会在启动时检查并更新 PyV8，阻止PyV8 的更新设置方法是：Preferences-&gt;Packages Settings--&gt;Emmet--&gt;Settings User，修改 Emmet 的配置文件即可，内容是：</p>
+<div class="highlight"><pre><span></span><code>{&quot;disable_pyv8_update&quot;:true}
+</code></pre></div>
+
+<p>使用方法：
+https://docs.emmet.io/cheat-sheet/
+https://code.z01.com/Emmet/</p>
+<h4>ColorHighLight</h4>
+<p>它可以展示你所选择的颜色代码（
+像 “FFFFFF”, “rgb(255,255,255)”, “white”）的真正颜色。同时它还包含一个颜色选择器让你可以方便地更改颜色。</p>
+<h4>HTML-CSS-JS Prettify</h4>
+<p>有时候会报错
+<img alt="20201003192502711_7297" src="images/sublime_node_path_error.png">
+安装后需要配合nodejs使用所以需要安装nodejs并设置node的位置
+<img alt="屏幕截图(6)" src="images/sublime_node_setting.png">
+如果想要改快捷键
+Preferences-&gt;Key Bindings–User”里新增：</p>
+<div class="highlight"><pre><span></span><code>{
+&quot;keys&quot;: [&quot;ctrl+shift+o&quot;],
+&quot;command&quot;: &quot;htmlprettify&quot;
+}
+</code></pre></div>
+
+<p>为了正常使用建议更改后测试一下是否有效，防止与其他的互相冲突</p>
+<h4>SideBarEnhancements</h4>
+<p>右键菜单增强插件
+SideBarEnhancements是一款很实用的右键菜单增强插件，有以 diff 形式显示未保存的修改、在文件管理器中显示该文件、复制文件路径、在侧边栏中定位该文件等功能，也有基础的诸如新建文件/目录，编辑，打开/运行，显示，在选择中/上级目录/项目中查找，剪切，复制，粘贴，重命名，删除，刷新等常见功能。</p>
+<p>Copy as Text... 是 SideBarEnhancements 的又一个特色功能，可以复制包含各种形式的路径、URL（甚至包括 base64 的 data:uri）、转码后的文件名、各种 HTML Tag（a、img、script、style）等</p>
+<p>编辑快捷键在浏览器打开
+Preferences-&gt;Key Bindings–User”里新增：</p>
+<div class="highlight"><pre><span></span><code>[
+    // side_bar 设置快速在浏览器打开
+    // chrome，请根据个人电脑修改浏览器路径
+    {
+        &quot;keys&quot;: [&quot;f1&quot;],
+        &quot;command&quot;: &quot;side_bar_files_open_with&quot;,
+        &quot;args&quot;: { &quot;paths&quot;: [], &quot;application&quot;:&quot;C:/Program Files (x86)/Google/Chrome/Application/chrome.exe&quot;, &quot;extensions&quot;:&quot;.*&quot; }
+    },
+    // firefox
+    {
+        &quot;keys&quot;: [&quot;f2&quot;],
+        &quot;command&quot;: &quot;side_bar_files_open_with&quot;,
+        &quot;args&quot;: { &quot;paths&quot;: [], &quot;application&quot;: &quot;C:/Program Files (x86)/Mozilla Firefox/firefox.exe&quot;, &quot;extensions&quot;:&quot;.*&quot; }
+    },
+    // Edge
+    {
+        &quot;keys&quot;: [&quot;f3&quot;],
+        &quot;command&quot;: &quot;side_bar_files_open_with&quot;,
+        &quot;args&quot;: { &quot;paths&quot;: [], &quot;application&quot;: &quot;C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe&quot;, &quot;extensions&quot;:&quot;.*&quot; }
+    },
+    // IE
+     {
+        &quot;keys&quot;: [&quot;f4&quot;],
+        &quot;command&quot;: &quot;side_bar_files_open_with&quot;,
+        &quot;args&quot;: { &quot;paths&quot;: [], &quot;application&quot;: &quot;C:/Program Files/Internet Explorer/iexplore.exe&quot;, &quot;extensions&quot;:&quot;.*&quot; }
+    },
+]
+</code></pre></div>
+
+<p>个人习惯不太喜欢这个，虽然增加了很多功能，但是很多实际上并不需要，且在linux的命令行下移动、改名、删除会更方便，就放弃使用了</p>
+<h4>AdvancedNewFile</h4>
+<p>用 Sublime text 新建文件的快捷键是，ctrl+ N会新建一个名为untitled的文件，CTRL+S 保存，然后在弹出的 Finder 中填写真正需要的文件名，然后点击 Save 。可谓很是麻烦，而且如果需要新建多层次的文件夹，则需要转换到 Finder 进入到相应的工程目录下，一层一层新建，操作步骤十分繁琐而且费事。</p>
+<p>然而，如果用 AdvancedNewFile，一切将会变得十分简单。</p>
+<p>ctrl+ art + N 即新建，然后 sublime text 底部会弹出一个文本输入框，只要在里面输入文件名，或多层次的路径，然后回车即可。
+相应文件或多层次的路径就会立刻在工程目录下新建完成。
+另外再输入的时候也支持tab补全操作。</p>
+<h4>AlignTab</h4>
+<p>使用正则表达式来帮助代码对齐，比如几行代码以=号对齐。
+<a href="https://packagecontrol.io/packages/AlignTab">查看介绍</a></p>
+<p>以上插件覆盖HTML，CSS，JavaScript，jQuery，CSS颜色显示，代码块级高亮，代码格式化，代码对齐，满足绝大多数前端的需求。</p>
+<p>至于用Sass就装Sass，Sassbuild，git就下sublimeGit，git Gutter，想用某个主题就下主题，想扩展侧边栏就扩展侧边栏，这毕竟不是每个人必须的。</p>
+<h4>All Autocomplete</h4>
+<p>Sublime Text 默认的 Autocomplete 功能只考虑当前的文件，而 AllAutocomplete 插件会搜索所有打开的文件来寻找匹配的提示词。</p>
+<hr>
+<h4>CSS3：</h4>
+<p>CSS3语法高亮、CSS语法提示，美中不足的是缺少游览器私有属性高亮。
+<a href="https://packagecontrol.io/packages/CSS3">查看介绍</a></p>
+<h4>CSS Extended Completions：</h4>
+<p>关联CSS文件，智能提示css文件中的类名，非常好用。
+<a href="https://packagecontrol.io/packages/CSS Extended Completions">查看介绍</a></p>
+<h4>JavaScript Completions</h4>
+<p>支持javascript原生语法提示，妈妈再也不用担心我输入document.getElementById(id)。
+<a href="https://packagecontrol.io/packages/JavaScript Completions">查看介绍</a></p>
+<h4>jQuery</h4>
+<p>为jQuery的大部分方法提供了示例代码段，让jQuery的API更加容易使用。
+<a href="https://packagecontrol.io/packages/jQuery">查看介绍</a></p>
+<h4>BracketHighlighter</h4>
+<p>括号以及标签层级显示，不用担心选中的代码属于哪个代码块，一目了然。
+<a href="https://packagecontrol.io/packages/BracketHighlighter">查看介绍</a></p>
+<p>这里再推荐一个主题插件，主题库比较丰富，感觉大多数人都能用上，避免视觉疲劳：</p>
+<h3>2、Markdown</h3>
+<p>不建议使用，无论是在软件中，还是在浏览器中打开的效果都不是很好。</p>
+<table>
+<thead>
+<tr>
+<th>插件</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MarkdownEditing</td>
+<td>一个提高Sublime中Markdown编辑特性的插件</td>
+</tr>
+<tr>
+<td>MarkdownPreview</td>
+<td>Markdown转HTML，提供在浏览器中的预览功能</td>
+</tr>
+<tr>
+<td>MarkdownLivePreview</td>
+<td>提供在编辑框中实时预览的功能</td>
+</tr>
+<tr>
+<td>LiveReload</td>
+<td>一个提供md/html等文档的实时刷新预览的的插件</td>
+</tr>
+</tbody>
+</table>
+<p>记笔记需要用到markdown，但是单独打开一个应用的话没有必要也麻烦，干脆就配置sublime的环境吧
+本次使用了 MarkdownEditing 和 MarkdownLivePreview 实现实时预览，其他的都需要在网页预览，与自己的需求不符</p>
+<p>MarkdownEditing安装后无需配置
+ MarkdownLivePreview看以前的说是要改设置，但这次没有看到，官方给出的是添加快捷键去实现弹出窗口预览</p>
+<div class="highlight"><pre><span></span><code> [
+ // markdown预览
+    {
+    &quot;keys&quot;: [&quot;alt+m&quot;],
+    &quot;command&quot;: &quot;open_markdown_preview&quot;
+    }
+]
+</code></pre></div>
+
+<h3>Python</h3>
+<h4>AutoPep8：</h4>
+<p>python 开发规范 pep8
+SublimeCodeIntel: 代码提示插件，可根据是python、java等自动代码提示（安装后没有找到合适的配置方法，感觉好像没生效，先搁置吧，提示补充代码anaconda感觉足够了）</p>
+<h3>Go</h3>
+<h3>4、Golang</h3>
+<p>目前只安装了Golang build和GoSublime，在都安装后在配置的时候先去配置了gosublime，但是无论怎么调都会报错，gopath无法被加载，后来删除了gosublime还存在这个问题才知道是golang build引起的，但是不知道是不是因为之前配置的gosubime的一些文件遗留下来了，单独golang build也会存在一些问题，目前也没办法也懒得去慢慢重置整个sublime环境去重现错误去一一解决了，等下一次找个其他的电脑或者啥的再去慢慢解决吧</p>
+<h4>Golang build</h4>
+<p>Preferences -&gt; package settings -&gt; Golang config-&gt; Settings - Uesr，配置GOPATH，GOROOT</p>
+<div class="highlight"><pre><span></span><code><span class="err">{</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;osx&quot;</span><span class="err">:</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="ss">&quot;PATH&quot;</span><span class="err">:</span><span class="w"> </span><span class="ss">&quot;/Users/jsmith/go/bin&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="ss">&quot;GOPATH&quot;</span><span class="err">:</span><span class="w"> </span><span class="ss">&quot;/Users/jsmith/go&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;windows&quot;</span><span class="err">:</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="ss">&quot;PATH&quot;</span><span class="err">:</span><span class="w"> </span><span class="ss">&quot;C:\\Users\\jsmith\\go\\bin&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="ss">&quot;GOPATH&quot;</span><span class="err">:</span><span class="w"> </span><span class="ss">&quot;C:\\Users\\jsmith\\go&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;linux&quot;</span><span class="err">:</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="ss">&quot;PATH&quot;</span><span class="err">:</span><span class="w"> </span><span class="ss">&quot;/usr/lib/go/bin&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="ss">&quot;GOPATH&quot;</span><span class="err">:</span><span class="w"> </span><span class="ss">&quot;/home/fish/go&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="p">,</span><span class="w"></span>
+<span class="err">}</span><span class="w"></span>
+</code></pre></div>
+
+<h4>GoSublime</h4>
+<p>不知道什么原因直接在sublime搜索不到这个插件，只能手动安装
+https://github.com/DisposaBoy/GoSublime
+下载后将整个目录复制到/home/fish/.config/sublime-text-3/Packages/下，将其Packages/GoSublime/src/margo.sh/extension-example/下的extension-example.go文件复制到GoSublime/src/margo/目录下，没有margo文件夹就创建一个</p>
+<p>Preferences -&gt; package settings -&gt; GoSublime-&gt; Settings - Uesr</p>
+<div class="highlight"><pre><span></span><code><span class="err">{</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;env&quot;</span><span class="err">:</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="ss">&quot;GOPATH&quot;</span><span class="err">:</span><span class="w"> </span><span class="ss">&quot;/home/fish/go&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="ss">&quot;GOROOT&quot;</span><span class="err">:</span><span class="w"> </span><span class="ss">&quot;/usr/lib/go&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="err">}</span><span class="w"></span>
+<span class="err">}</span><span class="w"></span>
+</code></pre></div>
+
+<h1>三、美化：</h1>
+<p>@ 安装图标和主题的方式和安装插件一样</p>
+<p>图标：A File Icon
+主题：material theme</p>
+<p>安装后preferences &gt;&gt; settings user输入配置</p>
+<div class="highlight"><pre><span></span><code>{
+    // 主题、配色相关
+    &quot;theme&quot;: &quot;Material-Theme.sublime-theme&quot;, // 整体界面
+    &quot;color_scheme&quot;: &quot;Packages/Material Theme/schemes/Material-Theme.tmTheme&quot;, // 配色方案
+    // &quot;sidebar_no_icon&quot;: true,
+    &quot;sidebar_size_13&quot;: true,
+    &quot;sidebar_row_padding_medium&quot;: true,
+    &quot;folder_no_icon&quot;: true,
+    &quot;tabs_small&quot;: true,
+    &quot;tabs_padding_small&quot;: true,
+    &quot;tabs_padding_medium&quot;: true,
+    // &quot;tabs_label_not_italic&quot;: true,
+    &quot;status_bar_brighter&quot;: true,
+    &quot;color_inactive_tabs&quot;: true,
+
+    // 整体设置
+    // &quot;font_face&quot;: &quot;YaHei Consolas Hybrid&quot;,
+    // &quot;font_face&quot;: &quot;Microsoft Yahei Mono&quot;, // 字体类型
+    &quot;font_size&quot;: 12.5, // 字号
+    // &quot;font_options&quot;: [ &quot;gray_antialias&quot; ], // On retina Mac
+    &quot;highlight_line&quot;: true, // 高亮当前行
+    // &quot;line_numbers&quot;: true, // 显示行号
+    // &quot;gutter&quot;: false, // 显示行号边栏
+    // &quot;margin&quot;: 0, // 行号边栏和文字的间距
+    &quot;line_padding_top&quot;: 2, // 行的上间距
+    &quot;line_padding_bottom&quot;: 2, // 行的下间距
+    // &quot;draw_white_space&quot;: &quot;all&quot;, // 显示空白符
+    &quot;show_encoding&quot;: true, // 状态栏显示当前文件编码
+    &quot;always_show_minimap_viewport&quot;: true, // 右侧总是显示代码地图可视区域
+    // &quot;draw_minimap_border&quot;: true, // 显示可视区域部分的边框
+    // &quot;bold_folder_labels&quot;: true, // 左侧边栏文字加粗
+    &quot;indent_guide_options&quot;: [ &quot;draw_normal&quot;, &quot;draw_active&quot; ], // 制表位的对齐线
+    &quot;remember_open_files&quot;: true, // 记忆之前打开的文件
+    // &quot;overlay_scroll_bars&quot;: &quot;system&quot;,
+    &quot;dpi_scale&quot;: 1.0, // 高分屏必须调整此设置
+    &quot;show_full_path&quot;: true, // 标题栏显示打开文件的完整路径
+
+    // 删除你想要忽略的插件，需要重启
+    &quot;ignored_packages&quot;:
+    [
+        &quot;Vintage&quot; // 是否禁用 vim 模式
+    ],
+
+    // 编辑行为
+    &quot;default_encoding&quot;: &quot;UTF-8&quot;, // 默认编码格式
+    &quot;tab_size&quot;: 4,  // Tab键制表符宽度
+    &quot;translate_tabs_to_spaces&quot;: true, // 设为true时，缩进和遇到Tab键时使用空格替代
+    &quot;scroll_past_end&quot;: false, // 设置为false时，滚动到文本的最下方时，没有缓冲区
+    // &quot;highlight_modified_tabs&quot;: true, // 高亮内容有修改的标签
+    // &quot;find_selected_text&quot;: true, // 匹配选中的文本
+    &quot;trim_trailing_white_space_on_save&quot;: true, // 保存文件时是否删除每行结束后多余的空格
+    // &quot;ensure_newline_at_eof_on_save&quot;: false,  // 保存文件时光标是否在文件的最后向下换一行
+    // &quot;save_on_focus_lost&quot;: false, // 切换到其它文件标签或点击其它非本软件区域，文件是否自动保存
+    // &quot;auto_close_tags&quot;: true, // 自动闭合标签
+    // &quot;tab_completion&quot;: true,
+    // &quot;auto_complete&quot;: true, // 代码提示
+    // &quot;auto_complete_delay&quot;: 50, // 代码提示延迟显示
+    &quot;auto_complete_triggers&quot;: [ // 设置触发代码提醒的关键字
+        {
+            &quot;selector&quot;: &quot;text.html&quot;,
+            &quot;characters&quot;: &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.&lt;&quot;
+        },
+        {
+            &quot;selector&quot;: &quot;text.xml&quot;,
+            &quot;characters&quot;: &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.&lt;&quot;
+        },
+        {
+            &quot;selector&quot;: &quot;text.php&quot;,
+            &quot;characters&quot;: &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.&lt;&quot;
+        },
+        {
+            &quot;selector&quot;: &quot;text.css&quot;,
+            &quot;characters&quot;: &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.&lt;&quot;
+        },
+        {
+            &quot;selector&quot;: &quot;text.js&quot;,
+            &quot;characters&quot;: &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.&lt;&quot;
+        }
+    ],
+    // &quot;auto_match_enabled&quot;: true, // 自动匹配引号，括号等
+
+    // 光标样式
+    &quot;caret_style&quot;: &quot;smooth&quot;, // 光标闪动方式 &quot;smooth&quot;, &quot;phase&quot;, &quot;blink&quot;, &quot;wide&quot; and &quot;solid&quot;
+    &quot;caret_extra_bottom&quot;: 1,
+    &quot;caret_extra_top&quot;: 1,
+    &quot;caret_extra_width&quot;: 1,
+
+    // Word wrapping - follow PEP 8 recommendations
+    // &quot;rulers&quot;: [ 82, 92 ],
+    // &quot;wrap_width&quot;: 80, // 设置窗口内文字区域的宽度
+    &quot;word_wrap&quot;: false, // true | false | auto
+
+    // 禁止自动更新
+    &quot;update_check&quot;: false
+}
+</code></pre></div>
+
+<h1>四、汉化：</h1>
+<p>​Ctrl+Shift+P打开命令行模式，输入pci，然后回车选择：Package Control: Install Package。</p>
+<p>​稍等一会，在弹出的下拉菜单输入”ChineseLocalization”,help &gt;&gt; language 进行语言切换</p>
+<h1>五、破解</h1>
+<h2>1、</h2>
+<p>2020-6-6日测试可用。</p>
+<div class="highlight"><pre><span></span><code>sudo nano /etc/hosts  #添加如下内容到文件里面
+127.0..0.1 www.sublimetext.com
+127.0.0.1 license.sublimehq.com
+127.0.0.1 45.55.255.55
+127.0.0.1 45.55.41.223
+</code></pre></div>
+
+<p>注册码：</p>
+<div class="highlight"><pre><span></span><code>  ZYNGA INC.
+  50 User License
+  EA7E-811825
+  927BA117 84C9300F 4A0CCBC4 34A56B44
+  985E4562 59F2B63B CCCFF92F 0E646B83
+  0FD6487D 1507AE29 9CC4F9F5 0A6F32E3
+  0343D868 C18E2CD5 27641A71 25475648
+  309705B3 E468DDC4 1B766A18 7952D28C
+  E627DDBA 960A2153 69A2D98A C87C0607
+  45DC6049 8C04EC29 D18DFA40 442C680B
+  1342224D 44D90641 33A3B9F2 46AADB8F
+</code></pre></div>
+
+<p>由于这个是一个Sublime Text 2的验证码，注册成功后会弹出提示说这个注册码是Sublime Text 2的，是否要升级之类的，选择取消就好了，接下来就可以正常使用了。
+    最后的最后，我觉得还是应该支持正版，拒绝盗版，条件允许的情况下还是建议购买官方注册码。</p>
+<h2>2、</h2>
+<p>上面的方法在linux的时候可用，但是在 win 的时候不成功，找了另一个方法</p>
+<h3>改hosts：</h3>
+<p>加上下面这段代码：</p>
+<div class="highlight"><pre><span></span><code><span class="mf">127.0.0.1</span>    <span class="n">www</span><span class="mf">.</span><span class="n">sublimetext</span><span class="mf">.</span><span class="n">com</span>
+<span class="mf">127.0.0.1</span>    <span class="n">sublimetext</span><span class="mf">.</span><span class="n">com</span>
+<span class="mf">127.0.0.1</span>    <span class="n">sublimehq</span><span class="mf">.</span><span class="n">com</span>
+<span class="mf">127.0.0.1</span>    <span class="n">license</span><span class="mf">.</span><span class="n">sublimehq</span><span class="mf">.</span><span class="n">com</span>
+<span class="mf">127.0.0.1</span>    <span class="mf">45.55.255.55</span>
+<span class="mf">127.0.0.1</span>    <span class="mf">45.55.41.223</span>
+<span class="mf">0.0.0.0</span>     <span class="n">license</span><span class="mf">.</span><span class="n">sublimehq</span><span class="mf">.</span><span class="n">com</span>
+</code></pre></div>
+
+<h3>输入注册码：</h3>
+<p>一定要改一下hosts在输入注册码，否则可能失败。Help-&gt;enter license,复制粘贴下列全部粘贴至打开的对话框。</p>
+<div class="highlight"><pre><span></span><code><span class="o">-----</span> <span class="kr">BEGIN</span> <span class="n">LICENSE</span> <span class="o">-----</span>
+<span class="n">Member</span> <span class="n">J2TeaM</span>
+<span class="n">Single</span> <span class="n">User</span> <span class="n">License</span>
+<span class="n">EA7E</span><span class="o">-</span><span class="mi">1011316</span>
+<span class="n">D7DA350E</span> <span class="mi">1</span><span class="n">B8B0760</span> <span class="mi">972</span><span class="n">F8B60</span> <span class="n">F3E64036</span>
+<span class="n">B9B4E234</span> <span class="n">F356F38F</span> <span class="mi">0</span><span class="n">AD1E3B7</span> <span class="mi">0</span><span class="n">E9C5FAD</span>
+<span class="n">FA0A2ABE</span> <span class="mi">25</span><span class="n">F65BD8</span> <span class="n">D51458E5</span> <span class="mi">3923</span><span class="n">CE80</span>
+<span class="mi">87428428</span> <span class="mi">79079</span><span class="n">A01</span> <span class="n">AA69F319</span> <span class="n">A1AF29A4</span>
+<span class="n">A684C2DC</span> <span class="mi">0</span><span class="n">B1583D4</span> <span class="mi">19</span><span class="n">CBD290</span> <span class="mi">217618</span><span class="n">CD</span>
+<span class="mi">5653</span><span class="n">E0A0</span> <span class="n">BACE3948</span> <span class="n">BB2EE45E</span> <span class="mi">422</span><span class="n">D2C87</span>
+<span class="n">DD9AF44B</span> <span class="mi">99</span><span class="n">C49590</span> <span class="n">D2DBDEE1</span> <span class="mi">75860</span><span class="n">FD2</span>
+<span class="mi">8</span><span class="n">C8BB2AD</span> <span class="n">B2ECE5A4</span> <span class="n">EFC08AF2</span> <span class="mi">25</span><span class="n">A9B864</span>
+<span class="o">------</span> <span class="kr">END</span> <span class="n">LICENSE</span> <span class="o">------</span>
+</code></pre></div>
+
+<p>接下来应该是显示激活成功，激活成功后可将之前hosts文件添加内容删掉</p>
+<h3>设置软件不更新：</h3>
+<p>菜单栏-&gt;preferences-&gt;settings,在右侧代码框里添加下面这句代码</p>
+<p>"update_check":false</p>
+<h1>六、其他：</h1>
+<p>包管理自定义设置：Preferences &gt; Package Setting &gt; Package Control &gt; Setting User
+主要是禁止自动删除手动安装的包</p>
+<div class="highlight"><pre><span></span><code>{
+    <span class="o">//</span> 是否自动更新
+    <span class="s2">&quot;</span><span class="s">auto_upgrade</span><span class="s2">&quot;</span>: <span class="nv">false</span>,
+
+    <span class="o">//</span> 暂时不知道这个是干嘛的，先留着吧
+    <span class="s2">&quot;</span><span class="s">bootstrapped</span><span class="s2">&quot;</span>: <span class="nv">true</span>,
+
+    <span class="o">//</span> 包丢失自动下载安装
+    <span class="s2">&quot;</span><span class="s">install_missing</span><span class="s2">&quot;</span>: <span class="nv">false</span>,
+
+    <span class="o">//</span> <span class="k">If</span> <span class="nv">a</span> <span class="nv">package</span> <span class="nv">was</span> <span class="nv">installed</span> <span class="nv">by</span> <span class="nv">Package</span> <span class="nv">Control</span> <span class="ss">(</span><span class="nv">has</span> <span class="nv">a</span>
+    <span class="o">//</span> <span class="nv">package</span><span class="o">-</span><span class="nv">metadata</span>.<span class="nv">json</span> <span class="nv">file</span><span class="ss">)</span> <span class="nv">but</span> <span class="nv">is</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">installed_packages</span>, <span class="nv">remove</span> <span class="nv">it</span>
+    <span class="o">//</span> <span class="nv">based</span> <span class="nv">upon</span> <span class="nv">the</span> <span class="nv">assumption</span> <span class="nv">that</span> <span class="nv">it</span> <span class="nv">was</span> <span class="nv">removed</span> <span class="nv">on</span> <span class="nv">another</span> <span class="nv">machine</span> <span class="nv">and</span>
+    <span class="o">//</span> <span class="nv">the</span> <span class="nv">Package</span> <span class="nv">Control</span>.<span class="nv">sublime</span><span class="o">-</span><span class="nv">settings</span> <span class="nv">file</span> <span class="nv">was</span> <span class="nv">synced</span> <span class="nv">to</span> <span class="nv">this</span> <span class="nv">machine</span>.
+    <span class="s2">&quot;</span><span class="s">remove_orphaned</span><span class="s2">&quot;</span>: <span class="nv">false</span>
+}
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">4</span><span class="err">、</span><span class="n">常用快捷键</span><span class="err">（</span><span class="n">默认</span><span class="err">）</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">Shift</span><span class="o">+</span><span class="n">P</span><span class="err">：</span><span class="n">打开命令面板</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">P</span><span class="err">：</span><span class="n">搜索项目中的文件</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">G</span><span class="err">：</span><span class="n">跳转到第几行</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">W</span><span class="err">：</span><span class="n">关闭当前打开文件</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">Shift</span><span class="o">+</span><span class="n">W</span><span class="err">：</span><span class="n">关闭所有打开文件</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">Shift</span><span class="o">+</span><span class="n">V</span><span class="err">：</span><span class="n">粘贴并格式化</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">D</span><span class="err">：</span><span class="n">选择单词</span><span class="err">，</span><span class="n">重复可增加选择下一个相同的单词</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">L</span><span class="err">：</span><span class="n">选择行</span><span class="err">，</span><span class="n">重复可依次增加选择下一行</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">Shift</span><span class="o">+</span><span class="n">L</span><span class="err">：</span><span class="n">选择多行</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">Shift</span><span class="o">+</span><span class="n">Enter</span><span class="err">：</span><span class="n">在当前行前插入新行</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">X</span><span class="err">：</span><span class="n">删除当前行</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">M</span><span class="err">：</span><span class="n">跳转到对应括号</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">U</span><span class="err">：</span><span class="n">软撤销</span><span class="err">，</span><span class="n">撤销光标位置</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">J</span><span class="err">：</span><span class="n">选择标签内容</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">F</span><span class="err">：</span><span class="n">查找内容</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">Shift</span><span class="o">+</span><span class="n">F</span><span class="err">：</span><span class="n">查找并替换</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">H</span><span class="err">：</span><span class="n">替换</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">R</span><span class="err">：</span><span class="n">前往</span> <span class="n">method</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">N</span><span class="err">：</span><span class="n">新建窗口</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">K</span><span class="o">+</span><span class="n">B</span><span class="err">：</span><span class="n">开关侧栏</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">Shift</span><span class="o">+</span><span class="n">M</span><span class="err">：</span><span class="n">选中当前括号内容</span><span class="err">，</span><span class="n">重复可选着括号本身</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">F2</span><span class="err">：</span><span class="n">设置</span><span class="o">/</span><span class="n">删除标记</span>
+<span class="n">Ctrl</span><span class="o">+/</span><span class="err">：</span><span class="n">注释当前行</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">Shift</span><span class="o">+/</span><span class="err">：</span><span class="n">当前位置插入注释</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">Alt</span><span class="o">+/</span><span class="err">：</span><span class="n">块注释</span><span class="err">，</span><span class="n">并Focus到首行</span><span class="err">，</span><span class="n">写注释说明用的</span>
+<span class="n">Ctrl</span><span class="o">+</span><span class="n">Shift</span><span class="o">+</span><span class="n">A</span><span class="err">：</span><span class="n">选择当前标签前后</span><span class="err">，</span><span class="n">修改标签用的</span>
+<span class="n">F11</span><span class="err">：</span><span class="n">全屏</span>
+<span class="n">Shift</span><span class="o">+</span><span class="n">F11</span><span class="err">：</span><span class="n">全屏免打扰模式</span><span class="err">，</span><span class="n">只编辑当前文件</span>
+<span class="n">Alt</span><span class="o">+</span><span class="n">F3</span><span class="err">：</span><span class="n">选择所有相同的词</span>
+<span class="n">Alt</span><span class="o">+</span><span class="mf">.</span><span class="err">：</span><span class="n">闭合标签</span>
+<span class="n">Alt</span><span class="o">+</span><span class="n">Shift</span><span class="o">+</span><span class="n">数字</span><span class="err">：</span><span class="n">分屏显示</span>
+<span class="n">Alt</span><span class="o">+</span><span class="n">数字</span><span class="err">：</span><span class="n">切换打开第N个文件</span>
+<span class="n">Shift</span><span class="o">+</span><span class="n">右键拖动</span><span class="err">：</span><span class="n">光标多不</span><span class="err">，</span><span class="n">用来更改或插入列内容</span>
+<span class="n">鼠标的前进后退键可切换Tab文件</span>
+<span class="n">按Ctrl</span><span class="err">，</span><span class="n">依次点击或选取</span><span class="err">，</span><span class="n">可需要编辑的多个位置</span>
+<span class="n">按Ctrl</span><span class="o">+</span><span class="n">Shift</span><span class="o">+</span><span class="n">上下键</span><span class="err">，</span><span class="n">可替换行</span>
+</code></pre></div>
+  </div><!-- /.entry-content -->
+</section>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+          <title>AIYOYO - 酸酸乳配置</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+
+
+
+
+    <meta name="tags" content="linux" />
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://aiyoyo20.github.io/">AIYOYO</a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="http://aiyoyo20.github.io/category/android.html">Android</a></li>
+            <li><a href="http://aiyoyo20.github.io/category/database.html">Database</a></li>
+            <li><a href="http://aiyoyo20.github.io/category/others.html">Others</a></li>
+            <li><a href="http://aiyoyo20.github.io/category/system.html">System</a></li>
+            <li class="active"><a href="http://aiyoyo20.github.io/category/tools.html">Tools</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="http://aiyoyo20.github.io/articles/suan-suan-ru-pei-zhi.html" rel="bookmark"
+         title="Permalink to 酸酸乳配置">酸酸乳配置</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2020-09-03T10:20:00+08:00">
+      Thu 03 September 2020
+    </time>
+    <address class="vcard author">
+      By           <a class="url fn" href="http://aiyoyo20.github.io/author/fing.html">FING</a>
+    </address>
+    <div class="category">
+        Category: <a href="http://aiyoyo20.github.io/category/tools.html">Tools</a>
+    </div>
+    <div class="tags">
+        Tags:
+            <a href="http://aiyoyo20.github.io/tag/linux.html">linux</a>
+    </div>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <h1>1. 配置文件各项说明</h1>
+<p>各选项说明（注意，你应该修改使用initcfg.sh脚本初始化后的user-config.json）：</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Explanation</th>
+<th>中文说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>server</td>
+<td>the address your server listens</td>
+<td>监听地址</td>
+</tr>
+<tr>
+<td>server_ipv6</td>
+<td>the ipv6 address your server listens</td>
+<td>ipv6地址</td>
+</tr>
+<tr>
+<td>server_port</td>
+<td>server port</td>
+<td>监听端口</td>
+</tr>
+<tr>
+<td>local_address</td>
+<td>the address your local listens</td>
+<td>本地地址</td>
+</tr>
+<tr>
+<td>local_port</td>
+<td>local port</td>
+<td>本地端口</td>
+</tr>
+<tr>
+<td>password</td>
+<td>password used for encryption</td>
+<td>密码</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>in seconds</td>
+<td>超时时间</td>
+</tr>
+<tr>
+<td>udp_timeout</td>
+<td>in seconds</td>
+<td>UDP链超时时间</td>
+</tr>
+<tr>
+<td>udp_cache</td>
+<td>cache size</td>
+<td>UDP链缓冲区大小</td>
+</tr>
+<tr>
+<td>method</td>
+<td>default: "aes-256-cfb", see Encryption</td>
+<td>加密方式</td>
+</tr>
+<tr>
+<td>protocol</td>
+<td>default："origin"</td>
+<td>协议插件，默认"origin"</td>
+</tr>
+<tr>
+<td>protocol_param</td>
+<td>default：""</td>
+<td>协议插件参数，默认""</td>
+</tr>
+<tr>
+<td>obfs</td>
+<td>default："tls1.2_ticket_auth_compatible"</td>
+<td>混淆插件，默认"tls1.2_ticket_auth_compatible"</td>
+</tr>
+<tr>
+<td>obfs_param</td>
+<td>default：""</td>
+<td>混淆插件参数，默认""</td>
+</tr>
+<tr>
+<td>redirect</td>
+<td>default：""</td>
+<td>重定向参数，默认""</td>
+</tr>
+<tr>
+<td>dns_ipv6</td>
+<td>default:false</td>
+<td>是否优先使用IPv6地址，有IPv6时可开启</td>
+</tr>
+<tr>
+<td>fast_open</td>
+<td>use TCP_FASTOPEN, true / false</td>
+<td>快速打开(仅限linux客户端)</td>
+</tr>
+<tr>
+<td>workers</td>
+<td>number of workers, available on Unix/Linux</td>
+<td>线程（仅限linux客户端）</td>
+</tr>
+<tr>
+<td>verbose</td>
+<td>display verbose debug info</td>
+<td>显示调试信息</td>
+</tr>
+<tr>
+<td>connect_verbose_info</td>
+<td>display connection verbose info</td>
+<td>显示连接信息</td>
+</tr>
+<tr>
+<td>forbidden_ip</td>
+<td>forbidden IP set for outbound</td>
+<td>阻止连接到此IP列表</td>
+</tr>
+<tr>
+<td>forbidden_port</td>
+<td>forbidden port set for outbound</td>
+<td>阻止连接到此端口列表</td>
+</tr>
+<tr>
+<td>ignore_bind</td>
+<td>not bind the IP set</td>
+<td>不绑定的IP列表</td>
+</tr>
+<tr>
+<td>out_bind</td>
+<td>force bind this IPv4 IP</td>
+<td>强制绑定此IPv4地址</td>
+</tr>
+<tr>
+<td>out_bindv6</td>
+<td>force bind this IPv6 IP</td>
+<td>强制绑定此IPv6地址</td>
+</tr>
+<tr>
+<td>additional_ports</td>
+<td>additional ports for multiuser mode</td>
+<td>多用户模式下配置额外端口</td>
+</tr>
+<tr>
+<td>speed_limit_per_con</td>
+<td>rate limit for each connection</td>
+<td>单连接限速，单位KB</td>
+</tr>
+<tr>
+<td>speed_limit_per_user</td>
+<td>rate limit for each user</td>
+<td>单用户限速，单位KB</td>
+</tr>
+</tbody>
+</table>
+<p>其中各protocol与obfs介绍参见：<a href="https://github.com/shadowsocksr-backup/shadowsocks-rss/wiki/obfs">混淆插件说明</a></p>
+<p>注：客户端的protocol和obfs配置必须与服务端的一致，除非服务端配置为兼容插件。</p>
+<p>redirect参数说明：</p>
+<p>值为空字符串或一个列表，若为列表示例如</p>
+<p>"redirect":["bing.com", "cloudflare.com:443"],</p>
+<p>作用是在连接方的数据不正确的时候，把数据重定向到列表中的其中一个地址和端口（不写端口则 视为80），以伪装为目标服务器。</p>
+<p>dns_ipv6参数说明：</p>
+<p>为true则指定服务器优先使用IPv6地址。仅当服务器能访问IPv6地址时可以用，否则会导致有IPv6地 址的网站无法打开。</p>
+<p>一般情况下，只需要修改以下五项即可：</p>
+<div class="highlight"><pre><span></span><code>&quot;server_port&quot;:8388,        //端口
+&quot;password&quot;:&quot;password&quot;,     //密码
+&quot;protocol&quot;:&quot;origin&quot;,       //协议插件
+&quot;obfs&quot;:&quot;http_simple&quot;,      //混淆插件
+&quot;method&quot;:&quot;aes-256-cfb&quot;,    //加密方式
+</code></pre></div>
+
+<h2>1.1. 多端口配置</h2>
+<div class="highlight"><pre><span></span><code>{
+    &quot;server&quot;:&quot;0.0.0.0&quot;,
+    &quot;server_ipv6&quot;: &quot;[::]&quot;,
+    &quot;local_address&quot;:&quot;127.0.0.1&quot;,
+    &quot;local_port&quot;:1080,
+    &quot;port_password&quot;:{
+        &quot;80&quot;:&quot;password1&quot;,
+        &quot;443&quot;:&quot;password2&quot;
+    },
+    &quot;timeout&quot;:300,
+    &quot;method&quot;:&quot;aes-256-cfb&quot;,
+    &quot;protocol&quot;: &quot;auth_sha1_compatible&quot;,
+    &quot;protocol_param&quot;: &quot;&quot;,
+    &quot;obfs&quot;: &quot;http_simple_compatible&quot;,
+    &quot;obfs_param&quot;: &quot;&quot;,
+    &quot;redirect&quot;: &quot;&quot;,
+    &quot;dns_ipv6&quot;: false,
+    &quot;fast_open&quot;: false,
+    &quot;workers&quot;: 1
+}
+</code></pre></div>
+
+<p>按照格式修改端口和密码：</p>
+<div class="highlight"><pre><span></span><code>    &quot;port_password&quot;:{
+        &quot;80&quot;:&quot;password1&quot;,       //端口和密码1
+        &quot;443&quot;:&quot;password2&quot;       //端口和密码2
+    },
+</code></pre></div>
+
+<p>如果要为每个端口配置不同的混淆协议，请写入以下配置：</p>
+<div class="highlight"><pre><span></span><code>{
+    &quot;server&quot;:&quot;0.0.0.0&quot;,
+    &quot;server_ipv6&quot;:&quot;::&quot;,
+    &quot;local_address&quot;:&quot;127.0.0.1&quot;,
+    &quot;local_port&quot;:1080,
+    &quot;port_password&quot;:{
+        &quot;8388&quot;:{&quot;protocol&quot;:&quot;auth_simple&quot;, &quot;password&quot;:&quot;abcde&quot;, &quot;obfs&quot;:&quot;http_simple&quot;, &quot;obfs_param&quot;:&quot;&quot;},
+        &quot;8389&quot;:{&quot;protocol&quot;:&quot;origin&quot;, &quot;password&quot;:&quot;abcde&quot;}
+    },
+    &quot;timeout&quot;:300,
+    &quot;method&quot;:&quot;aes-256-cfb&quot;,
+    &quot;protocol&quot;: &quot;auth_sha1_compatible&quot;,
+    &quot;protocol_param&quot;: &quot;&quot;,
+    &quot;obfs&quot;: &quot;http_simple_compatible&quot;,
+    &quot;obfs_param&quot;: &quot;&quot;,
+    &quot;redirect&quot;: &quot;&quot;,
+    &quot;dns_ipv6&quot;: false,
+    &quot;fast_open&quot;: false,
+    &quot;workers&quot;: 1
+}
+</code></pre></div>
+
+<p>按格式修改端口、密码以及混淆协议。也可以和以前的格式混合使用，如果某个端口不配置混淆协 议，则会使用下面的默认"obfs"配置。</p>
+  </div><!-- /.entry-content -->
+</section>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

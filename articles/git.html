@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+          <title>AIYOYO - Git</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+
+
+
+
+    <meta name="tags" content="linux" />
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://aiyoyo20.github.io/">AIYOYO</a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="http://aiyoyo20.github.io/category/android.html">Android</a></li>
+            <li><a href="http://aiyoyo20.github.io/category/database.html">Database</a></li>
+            <li><a href="http://aiyoyo20.github.io/category/others.html">Others</a></li>
+            <li><a href="http://aiyoyo20.github.io/category/system.html">System</a></li>
+            <li class="active"><a href="http://aiyoyo20.github.io/category/tools.html">Tools</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="http://aiyoyo20.github.io/articles/git.html" rel="bookmark"
+         title="Permalink to Git">Git</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2020-09-03T10:20:00+08:00">
+      Thu 03 September 2020
+    </time>
+    <address class="vcard author">
+      By           <a class="url fn" href="http://aiyoyo20.github.io/author/fing.html">FING</a>
+    </address>
+    <div class="category">
+        Category: <a href="http://aiyoyo20.github.io/category/tools.html">Tools</a>
+    </div>
+    <div class="tags">
+        Tags:
+            <a href="http://aiyoyo20.github.io/tag/linux.html">linux</a>
+    </div>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <h1>Git 的使用 并传送文件至github</h1>
+<h2>注册github帐号</h2>
+<p>github.com 去注册一个自己的帐号</p>
+<h2>安装Git</h2>
+<div class="highlight"><pre><span></span><code>yay -S git
+</code></pre></div>
+
+<h2>初始化配置GIT</h2>
+<h3>配置用户信息</h3>
+<div class="highlight"><pre><span></span><code>git config --global user.name &quot;your name&quot;
+git config --global user.email &quot;your email&quot;
+</code></pre></div>
+
+<h2>上传文件</h2>
+<p>进入要传送的文件夹内，</p>
+<h3>初始化本地仓库</h3>
+<div class="highlight"><pre><span></span><code>git init
+</code></pre></div>
+
+<h3>添加拟上传的对象</h3>
+<div class="highlight"><pre><span></span><code>//上传文件夹1
+git add f1
+
+//上传指定文件
+git add *.*
+
+//上传所有修改的文件
+git add .
+or
+Git add -A
+</code></pre></div>
+
+<h3>将修改后的文件提交到本地仓库</h3>
+<div class="highlight"><pre><span></span><code>git commit -m ‘增加README.md说明文档’
+</code></pre></div>
+
+<p><img alt="" src="git_tip.png"></p>
+<h3>连接到远程仓库</h3>
+<div class="highlight"><pre><span></span><code>git remote add origin 远程仓库地址
+</code></pre></div>
+
+<h3>推送</h3>
+<div class="highlight"><pre><span></span><code>git push -u origin master
+</code></pre></div>
+
+<p>ssh-keygen -t rsa -C "aiyoyo20@gmail.com@github.com"
+生成.ssh 文件夹
+进入打开其 id_rsa.pub 复制其送有内容，github 打开设置找到 'Add SSH Key' 添加即可</p>
+<h2>Git</h2>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">--</span><span class="k">global</span><span class="w"> </span><span class="k">user</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="ss">&quot;Michael728&quot;</span><span class="w"></span>
+<span class="n">git</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">--</span><span class="k">global</span><span class="w"> </span><span class="k">user</span><span class="p">.</span><span class="n">email</span><span class="w"> </span><span class="ss">&quot;649168982@qq.com&quot;</span><span class="w"></span>
+<span class="n">ssh</span><span class="o">-</span><span class="n">keygen</span><span class="w"> </span><span class="o">-</span><span class="n">t</span><span class="w"> </span><span class="n">rsa</span><span class="w"> </span><span class="o">-</span><span class="n">C</span><span class="w"> </span><span class="ss">&quot;649168982@qq.com&quot;</span><span class="w"></span>
+<span class="n">复制代码</span><span class="w"></span>
+</code></pre></div>
+
+<p>[fish@fish-pc<strong> </strong>etc<strong>**]$</strong> ssh-keygen -t rsa -C "aiyoyo2729@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/fish/.ssh/id_rsa):
+Created directory '/home/fish/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/fish/.ssh/id_rsa
+Your public key has been saved in /home/fish/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:lspSTHzElY/EvDXaxmGHw7je12DCQI4cGu6S/Cx4H68 aiyoyo2729@gmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|    ..o=o+ .  |
+|   o =.+B O .  |
+|    = +..&amp; =  |
+|  . = . .= B o  |
+|   + + S. o o o |
+|  . * o  . . . .|
+|  . + *    .  |
+|  . + o     |
+|    E..     |
++----[SHA256]-----+</p>
+  </div><!-- /.entry-content -->
+</section>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

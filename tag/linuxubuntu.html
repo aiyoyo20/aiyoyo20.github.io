@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+        <title>AIYOYO - linux，ubuntu tag</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://aiyoyo20.github.io/">AIYOYO</a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="http://aiyoyo20.github.io/category/android.html">Android</a></li>
+            <li><a href="http://aiyoyo20.github.io/category/database.html">Database</a></li>
+            <li><a href="http://aiyoyo20.github.io/category/others.html">Others</a></li>
+            <li><a href="http://aiyoyo20.github.io/category/system.html">System</a></li>
+            <li><a href="http://aiyoyo20.github.io/category/tools.html">Tools</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content">
+<h2>Articles tagged with linux，ubuntu</h2>
+
+<ol id="post-list">
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="http://aiyoyo20.github.io/articles/ubuntu_server.html" rel="bookmark" title="Permalink to ubuntu_server">ubuntu_server</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2020-09-03T10:20:00+08:00"> Thu 03 September 2020 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="http://aiyoyo20.github.io/author/fing.html">FING</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>想要运行一个python脚本，但是忘记了没有相应的库，去安装库时发现没有python3-pip，去安装python3-pip时由于没有换源导致没有搜索到相应的包去进行安装，就去换源，换源没有留意版本号换了不对的源，更新报错，去换了相应版本的源去下载安装了python3-pip，在pip3安装库的时候又报了一个错误，
+<img alt="image-20200625115912400" src="Ubuntu_error.png"></p>
+<p>去查了资料那个给的安装方法挺复杂下载解压再安装，下载的链接还无法直接下载，直接尝试pip3安装，第一次由于网络问题中断报错，再尝试成功了，最后成功安装库</p>
+<h1>查看ubuntu的内核版本和发行版本号</h1>
+<div class="highlight"><pre><span></span><code>cat /etc/issue  # 查看当前正在运行的 Ubuntu 的版本号
+# 或者使用 lsb_release 命令也可以查看 Ubuntu 的版本号，与方法一相比，内容更为详细。
+sudo lsb_release -a
+</code></pre></div>
+
+<h1>换源：</h1>
+<div class="highlight"><pre><span></span><code>sudo cp /etc/apt/sources.list /etc/apt/sources.list/bak  # 养成习惯，以备不时之需
+sudo vim /etc/apt …</code></pre></div> </div><!-- /.entry-content -->
+        </article></li>
+</ol><!-- /#posts-list -->
+</section><!-- /#content -->
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>
