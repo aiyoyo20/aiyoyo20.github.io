@@ -1,51 +1,106 @@
+
 <!DOCTYPE html>
 <html lang="zh_cn">
 <head>
-          <title>AIYOYO - ubuntu_server</title>
-        <meta charset="utf-8" />
-        <meta name="generator" content="Pelican" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="http://aiyoyo20.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="http://aiyoyo20.github.io/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="http://aiyoyo20.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="http://aiyoyo20.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="http://aiyoyo20.github.io/theme/font-awesome/css/solid.css">
+
+
+    <link href="http://aiyoyo20.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="AIYOYO Atom">
 
 
 
+  
 
-    <meta name="tags" content="linux，ubuntu" />
+
+ 
+
+<meta name="author" content="FING" />
+<meta name="description" content="想要运行一个python脚本，但是忘记了没有相应的库，去安装库时发现没有python3-pip，去安装python3-pip时由于没有换源导致没有搜索到相应的包去进行安装，就去换源，换源没有留意版本号换了不对的源，更新报错，去换了相应版本的源去下载安装了python3-pip，在pip3安装库的时候又报了一个错误， 去查了资料那个给的安装方法挺复杂下载解压再安装，下载的链接还无法直接下载，直接尝试pip3安装，第一次由于网络问题中断报错，再尝试成功了，最后成功安装库 查看ubuntu的内核版本和发行版本号 cat /etc/issue # 查看当前正在运行的 Ubuntu 的版本号 # 或者使用 lsb_release 命令也可以查看 Ubuntu 的版本号，与方法一相比，内容更为详细。 sudo lsb_release -a 换源： sudo cp /etc/apt/sources.list /etc/apt/sources.list/bak # 养成习惯，以备不时之需 sudo vim /etc/apt …" />
+<meta name="keywords" content="linux，ubuntu">
+
+
+  <meta property="og:site_name" content="AIYOYO"/>
+  <meta property="og:title" content="ubuntu_server"/>
+  <meta property="og:description" content="想要运行一个python脚本，但是忘记了没有相应的库，去安装库时发现没有python3-pip，去安装python3-pip时由于没有换源导致没有搜索到相应的包去进行安装，就去换源，换源没有留意版本号换了不对的源，更新报错，去换了相应版本的源去下载安装了python3-pip，在pip3安装库的时候又报了一个错误， 去查了资料那个给的安装方法挺复杂下载解压再安装，下载的链接还无法直接下载，直接尝试pip3安装，第一次由于网络问题中断报错，再尝试成功了，最后成功安装库 查看ubuntu的内核版本和发行版本号 cat /etc/issue # 查看当前正在运行的 Ubuntu 的版本号 # 或者使用 lsb_release 命令也可以查看 Ubuntu 的版本号，与方法一相比，内容更为详细。 sudo lsb_release -a 换源： sudo cp /etc/apt/sources.list /etc/apt/sources.list/bak # 养成习惯，以备不时之需 sudo vim /etc/apt …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="http://aiyoyo20.github.io/articles/ubuntu_server.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2020-09-03 10:20:00+08:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="http://aiyoyo20.github.io/author/fing.html">
+  <meta property="article:section" content="System"/>
+  <meta property="article:tag" content="linux，ubuntu"/>
+  <meta property="og:image" content="">
+
+  <title>AIYOYO &ndash; ubuntu_server</title>
 
 </head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="http://aiyoyo20.github.io/">
+        <img src="http://aiyoyo20.github.io/theme/img/profile.png" alt="" title="">
+      </a>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://aiyoyo20.github.io/">AIYOYO</a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-            <li><a href="http://aiyoyo20.github.io/category/android.html">Android</a></li>
-            <li><a href="http://aiyoyo20.github.io/category/database.html">Database</a></li>
-            <li><a href="http://aiyoyo20.github.io/category/others.html">Others</a></li>
-            <li class="active"><a href="http://aiyoyo20.github.io/category/system.html">System</a></li>
-            <li><a href="http://aiyoyo20.github.io/category/tools.html">Tools</a></li>
-        </ul></nav><!-- /#menu -->
-<section id="content" class="body">
+      <h1>
+        <a href="http://aiyoyo20.github.io/"></a>
+      </h1>
+
+
+
+      <nav>
+        <ul class="list">
+
+
+
+            <li>
+              <a target="_self" href="http://www-01.ibm.com/support/knowledgecenter" >IBM知识中心</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-aiyoyo20@Github" href="https://github.com/aiyoyo20" target="_blank">
+              <i class="fab fa-aiyoyo20@Github"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+<article class="single">
   <header>
-    <h2 class="entry-title">
-      <a href="http://aiyoyo20.github.io/articles/ubuntu_server.html" rel="bookmark"
-         title="Permalink to ubuntu_server">ubuntu_server</a></h2>
- 
+      
+    <h1 id="ubuntu_server">ubuntu_server</h1>
+    <p>
+      Posted on 2020-09-03 in <a href="http://aiyoyo20.github.io/category/system.html">System</a>
+
+    </p>
   </header>
-  <footer class="post-info">
-    <time class="published" datetime="2020-09-03T10:20:00+08:00">
-      Thu 03 September 2020
-    </time>
-    <address class="vcard author">
-      By           <a class="url fn" href="http://aiyoyo20.github.io/author/fing.html">FING</a>
-    </address>
-    <div class="category">
-        Category: <a href="http://aiyoyo20.github.io/category/system.html">System</a>
-    </div>
-    <div class="tags">
-        Tags:
-            <a href="http://aiyoyo20.github.io/tag/linuxubuntu.html">linux，ubuntu</a>
-    </div>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
+
+
+  <div>
     <p>想要运行一个python脚本，但是忘记了没有相应的库，去安装库时发现没有python3-pip，去安装python3-pip时由于没有换源导致没有搜索到相应的包去进行安装，就去换源，换源没有留意版本号换了不对的源，更新报错，去换了相应版本的源去下载安装了python3-pip，在pip3安装库的时候又报了一个错误，
 <img alt="image-20200625115912400" src="Ubuntu_error.png"></p>
 <p>去查了资料那个给的安装方法挺复杂下载解压再安装，下载的链接还无法直接下载，直接尝试pip3安装，第一次由于网络问题中断报错，再尝试成功了，最后成功安装库</p>
@@ -117,13 +172,39 @@ sudo vim /etc/apt/sources.list  # 可以全删除或者全注释后添加下面�
 <div class="highlight"><pre><span></span><code>sudo apt-get update
 sudo apt-get upgrade
 </code></pre></div>
-  </div><!-- /.entry-content -->
-</section>
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="https://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="https://www.python.org/">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="http://aiyoyo20.github.io/tag/linuxubuntu.html">linux，ubuntu</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " AIYOYO ",
+  "url" : "http://aiyoyo20.github.io",
+  "image": "",
+  "description": ""
+}
+</script>
+
 </body>
 </html>

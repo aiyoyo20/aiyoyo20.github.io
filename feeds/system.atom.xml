@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>AIYOYO - System</title><link href="http://aiyoyo20.github.io/" rel="alternate"></link><link href="http://aiyoyo20.github.io/feeds/system.atom.xml" rel="self"></link><id>http://aiyoyo20.github.io/</id><updated>2020-09-03T10:20:00+08:00</updated><entry><title>Kali</title><link href="http://aiyoyo20.github.io/articles/kali.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/kali.html</id><summary type="html">&lt;h1&gt;1. 一、介绍&lt;/h1&gt;
+&lt;p&gt;Kali 并不是适用于普通用户的系统，由于他是基于 Debian 的 Linux 发行版，而且现在经过不断的发展，现在可以安装很多软件，可以用做一个桌面系统使用，但是由于其特殊性,其内核是修改过的，不能保证其安全性，所以使用 Kali 用做于主系统是非常危险的，应该非常小心地进行，如果你被入侵了，你将丢失所有数据，并且可能会暴露给更多的人。如果你在做一些不合法的事情，你的个人信息也可用于跟踪你。如果你不小心使用这些工具，那么你甚至可能会毁掉自己的数据。&lt;/p&gt;
+&lt;p&gt;如果是想要学习使用linux的话，不建议使用 Kali 。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Kali Linux是一个高级渗透测试和安全审计Linux发行版。作为使用者，你可以把它理解为一个特殊的Linux发行版，集成了精心挑选的渗透测试和安全审计的工具，供渗透测试和安全设计人员使用，也可称之为平台或者框架。&lt;/p&gt;
+&lt;p&gt;Kali Linux自带安全工具集，它将所带的工具集划分为十四个大类，这些大类中，很多工具会重复出现，因为这些工具同时具有多种功能，比如nmap既能作为信息搜集工具也能作为漏洞探测工具。另外，除了这些系统推荐的工具，我们也可以自行添加新的工具源，丰富工具集。不过对于新手来说，系统推荐的工具已经足够使用了 …&lt;/p&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;h1&gt;1. 一、介绍&lt;/h1&gt;
+&lt;p&gt;Kali 并不是适用于普通用户的系统，由于他是基于 Debian 的 Linux 发行版，而且现在经过不断的发展，现在可以安装很多软件，可以用做一个桌面系统使用，但是由于其特殊性,其内核是修改过的，不能保证其安全性，所以使用 Kali 用做于主系统是非常危险的，应该非常小心地进行，如果你被入侵了，你将丢失所有数据，并且可能会暴露给更多的人。如果你在做一些不合法的事情，你的个人信息也可用于跟踪你。如果你不小心使用这些工具，那么你甚至可能会毁掉自己的数据。&lt;/p&gt;
+&lt;p&gt;如果是想要学习使用linux的话，不建议使用 Kali 。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Kali Linux是一个高级渗透测试和安全审计Linux发行版。作为使用者，你可以把它理解为一个特殊的Linux发行版，集成了精心挑选的渗透测试和安全审计的工具，供渗透测试和安全设计人员使用，也可称之为平台或者框架。&lt;/p&gt;
+&lt;p&gt;Kali Linux自带安全工具集，它将所带的工具集划分为十四个大类，这些大类中，很多工具会重复出现，因为这些工具同时具有多种功能，比如nmap既能作为信息搜集工具也能作为漏洞探测工具。另外，除了这些系统推荐的工具，我们也可以自行添加新的工具源，丰富工具集。不过对于新手来说，系统推荐的工具已经足够使用了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kali官网：&lt;a href="https://www.kali.org/"&gt;https://www.kali.org/&lt;/a&gt;（下载镜像很慢，几十k）
+&lt;img alt="官网下载预览" src="images/Kali_version.png"&gt;
+可以看到，很贴心的准备了很多版本，自行选择安装&lt;/p&gt;
+&lt;p&gt;第三方kali镜像网站：&lt;a href="http://old.kali.org/kali-images/"&gt;http://old.kali.org/kali-images/&lt;/a&gt;
+&lt;img alt="" src="images/Kali_other_download.png"&gt;
+这是第三方的下载源的镜像，下载速度会快很多，但是自己在第一次下载的时候看到有点懵，名字和官网的有些不一样，amd64和i386不清楚代表什么，是只限制于这两种型号吗，去查了一下不是&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;i386 简单理解就是是32位的, amd64 是64位的版本，因为是amd把64位率先引进桌面系统的，英特尔也是要追随amd并且保持兼容，一般在软件包里包含这样的字符。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;2. 二、安装&lt;/h1&gt;
+&lt;h2&gt;2.1. 1、正常安装&lt;/h2&gt;
+&lt;p&gt;目前没有安装，但是先预留一个位置吧&lt;/p&gt;
+&lt;h2&gt;2.2. 2、Live_USB&lt;/h2&gt;
+&lt;p&gt;以前都不知道有 live 版本这样神奇的方式，在 想要安装 kali 的时候了解到了这种方式，但是没有仔细去看资料，导致一开始下载的镜像文件并不是live版本的，导致多次刻录启动盘得到的效果和教学是不一样的，后来去仔细了解了才知道自己的错误。并最终成功安装了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;LUKS:Linux Unified Key Setup
+制作live USB盘，因为ISO只有3G大小，以块的形式逐块的形式复制到U盘上，占据的只有3G的空间，剩余的U盘空间未利用，持久加密USB就是把剩余空间拿出一部分，通过Linux下通用的加密标准LUKS，将剩下的空间进行加密，通过后续系统配置，将系统目录转移到加密的分区里。对系统的更改都会保存到U盘加密的分区内。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;LUKS：Linux统一的密钥安装，对磁盘级加密技术。囊括很多加密技术的优点。与操作系统无关，加密信息还在磁盘内，就必须相应密钥或证书才能打开磁盘，可以对硬盘分区和U盘分区进行加密。&lt;/p&gt;
+&lt;p&gt;区别于文件级加密技术。Windows下NTFS分区efs加密（加密文件系统） 文件从efs从加密分区copy出去，加密就失效了。以管理员身份，可以查看所有加密文件内容。&lt;/p&gt;
+&lt;h3&gt;2.2.1. 准备材料：&lt;/h3&gt;
+&lt;h4&gt;2.2.1.1. 设备:&lt;/h4&gt;
+&lt;p&gt;下面的操作均以Manjaro 20.1 为开发环境进行。&lt;/p&gt;
+&lt;h4&gt;2.2.1.2. U盘：&lt;/h4&gt;
+&lt;p&gt;由于可能会频繁使用，而且对数据的稳定性等等都是有要求的，尽量选择大厂的U盘，大小的话个人建议大于32G，太大的话也没必要，不过也不影响，可以通过拆分磁盘的方式让多余的部分依旧作为普通U盘使用。目前使用128G的，感觉不会很浪费，后续增加软件也有足够的空间。&lt;/p&gt;
+&lt;h4&gt;2.2.1.3. 镜像：&lt;/h4&gt;
+&lt;p&gt;由于自己出错过，所以特意列出来
+需要下载的是带live的版本，其他的无法制作live盘。&lt;/p&gt;
+&lt;h3&gt;2.2.2. 制作：&lt;/h3&gt;
+&lt;h4&gt;2.2.2.1. 方法一、linux下命令行完成&lt;/h4&gt;
+&lt;h5&gt;2.2.2.1.1. 写入镜像&lt;/h5&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo fdisk -l  # 查看磁盘确定外部u盘的名称，防止写入错误
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h5&gt;2.2.2.1.2. 分区并写入镜像&lt;/h5&gt;
+&lt;p&gt;使用parted或者图形化工具gparted删除分区,使磁盘为空&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo parted
+print devices
+select /dev/sdc
+print
+rm 1
+print
+quit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;然后使用dd命令写入镜像，格式如下：sudo dd if=xxx.iso of=U盘路径，此次演示示例：sudo dd if=path/mirror_name.iso of=/dev/sdb，回车执行，系统就开始制作启动盘了，期间终端命令窗口不会有任何反馈.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;sudo&lt;/span&gt; &lt;span class="nv"&gt;dd&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;Kali&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;linux&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;.&lt;span class="mi"&gt;1&lt;/span&gt;.&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="nv"&gt;a&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;amd64&lt;/span&gt;.&lt;span class="nv"&gt;iso&lt;/span&gt; &lt;span class="nv"&gt;of&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="nv"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;sdc&lt;/span&gt; &lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="nv"&gt;M&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo parted  # 使用parted进行分区，这个是进入分区工具
+print devices  # 查看磁盘情况，并为下面的做一个确认
+select /dev/sdc  # 选择需要分区的磁盘
+print  # 查看分区情况
+mkpart primary 3021 125000  # 分区，默认的单位是MB
+print  # 再次查看分区情况并检查自己分区是否成功
+quit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="" src="images/Kali_print_devices.png"&gt;
+&lt;img alt="" src="images/Kali_parted_print.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5&gt;2.2.2.1.3. 对分区进行加密&lt;/h5&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo cryptsetup --verbose --verify-passphrase luksFormat /dev/sdc3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;没有使用超级用户运行命令会出错
+&lt;img alt="" src="images/Kali_sudo_error.png"&gt;
+确认时输入的必须为大写的YES
+&lt;img alt="" src="images/Kali_YES.png"&gt;
+输入密码并再次输入确认密码后完成加密
+&lt;img alt="" src="images/Kali_confirm_password.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5&gt;2.2.2.1.4. 文件系统级的格式化&lt;/h5&gt;
+&lt;p&gt;还未对分区进行文件系统级格式化，还未能进行文件写入读写。
+用加密方式luksOpen打开并挂载在一个可读的目录下，目录名为fiki_usb(可自定义)
+期间需要输入密码，密码为刚才设置的密码&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo cryptsetup luksOpen /dev/sdc3 fiki_usb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ls /dev/mapper/fiki_usb  # 查看挂载情况
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo mkfs.ext4 /dev/mapper/fiki_usb  # 格式化为ext4（Linux最新版本日志类型的文件级系统）
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;同样也需要超级权限
+&lt;img alt="" src="images/Kali_mkfs_error.png"&gt;
+由于自己设定的分区较大，所以需要等待一些时间
+&lt;img alt="" src="images/Kali_mkfs.png"&gt;&lt;/p&gt;
+&lt;h5&gt;2.2.2.1.5. 指定卷标&amp;amp;其他&lt;/h5&gt;
+&lt;p&gt;指定卷标为persistence ,kali官方对持久USB设备规定的操作，卷标必须为persistence。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo e2label /dev/mapper/fiki_usb  persistence
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo mkdir -p /mnt/usb # 在/mnt目录下 ，新建一个usb目录，用来mount /dev 设备
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo mount /dev/mapper/fiki_usb /mnt/usb  # 把USB设备的加密分区mount到目录里，这样可以往USB里写文件
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;输出一串字符 到/mnt/usb 目录下的 persistence.conf .会在持久USB启动时被读取，已确认这是加密的USB分区。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo sh -c &amp;#39;echo “/ union” &amp;gt; /mnt/usb/persistence.conf&amp;#39; # 创建persistence.conf文件
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;一直权限错误，最终采用了一些方法解决了
+&lt;img alt="" src="images/Kali_persistence_error.png"&gt;
+&lt;img alt="" src="images/Kali_persistence.png"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;利用 “sh -c” 命令，它可以让 bash 将一个字串作为完整的命令来执行，这样就可以将 sudo 的影响范围扩展到整条命令&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo umount /dev/mapper/fiki_usb  # 卸载挂载的分区
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo cryptsetup luksClose /dev/mapper/fiki_usb # 关闭通过cryptsetup open加密的分区
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;持久加密USB制作完成。重启进入bios后选择Live USB Encrypted Persistence ，输入磁盘分区密码后进入kali操作系统。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;收尾
+官方源修改
+官方源位于国外服务器，下载速度往往比较慢。我们可以将其替换为国内镜像源，提高软件下载、更新的速度，修改 /etc/apt/sources.list：&lt;/p&gt;
+&lt;p&gt;修改为中科大的源提交下载速度
+deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+部分软件包缺失，可以使用上一个版本的源
+deb http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib&lt;/p&gt;
+&lt;p&gt;修改为中科大的源提交下载速度
+deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib&lt;/p&gt;
+&lt;p&gt;部分软件包缺失，可以使用上一个版本的源
+deb http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib&lt;/p&gt;
+&lt;p&gt;疑难杂症
+Q：Parallels 下无法安装 paralles tools，报错如下：&lt;/p&gt;
+&lt;p&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:220:1: warning: data definition has no type or storage class
+ DEFINE_TIMER(thaw_timer, thaw_timer_fn, 0, (unsigned long)&amp;amp;(thaw_work));
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:220:1: error: type defaults to ‘int’ in declaration of ‘DEFINE_TIMER’ [-Werror=implicit-int]
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c: In function ‘schedule_thaw_work’:
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:224:21: error: ‘thaw_timer’ undeclared (first use in this function); did you mean ‘thaw_timer_fn’?
+  if (timer_pending(&amp;amp;thaw_timer))
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:224:21: note: each undeclared identifier is reported only once for each function it appears in
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c: In function ‘cancel_timeout’:
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:233:18: error: ‘thaw_timer’ undeclared (first use in this function); did you mean ‘thaw_timer_fn’?
+  del_timer_sync(&amp;amp;thaw_timer);
+cc1: some warnings being treated as errors
+/usr/src/linux-headers-4.15.0-kali2-common/scripts/Makefile.build:335: recipe for target '/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.o' failed
+make[5]: &lt;strong&gt;&lt;em&gt; [/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.o] Error 1
+/usr/src/linux-headers-4.15.0-kali2-common/Makefile:1528: recipe for target '&lt;em&gt;module&lt;/em&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze' failed
+make[4]: &lt;/em&gt;&lt;/strong&gt; [&lt;em&gt;module&lt;/em&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze] Error 2
+Makefile:146: recipe for target 'sub-make' failed
+make[3]: &lt;strong&gt;&lt;em&gt; [sub-make] Error 2
+Makefile:8: recipe for target 'all' failed
+make[2]: &lt;/em&gt;&lt;/strong&gt; [all] Error 2
+make[2]: Leaving directory '/usr/src/linux-headers-4.15.0-kali2-amd64'
+Makefile:20: recipe for target 'modules' failed
+make[1]: &lt;strong&gt;&lt;em&gt; [modules] Error 2
+make[1]: Leaving directory '/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze'
+Makefile.kmods:34: recipe for target 'installme' failed
+make: &lt;/em&gt;&lt;/strong&gt; [installme] Error 2
+make: Leaving directory '/usr/lib/parallels-tools/kmods'
+Error: could not build kernel modules
+Error: failed to install kernel modules
+Error: failed to install Parallels Guest Tools!&lt;/p&gt;
+&lt;p&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:220:1: warning: data definition has no type or storage class
+ DEFINE_TIMER(thaw_timer, thaw_timer_fn, 0, (unsigned long)&amp;amp;(thaw_work));
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:220:1: error: type defaults to ‘int’ in declaration of ‘DEFINE_TIMER’ [-Werror=implicit-int]
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c: In function ‘schedule_thaw_work’:
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:224:21: error: ‘thaw_timer’ undeclared (first use in this function); did you mean ‘thaw_timer_fn’?
+  if (timer_pending(&amp;amp;thaw_timer))
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:224:21: note: each undeclared identifier is reported only once for each function it appears in
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c: In function ‘cancel_timeout’:
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:233:18: error: ‘thaw_timer’ undeclared (first use in this function); did you mean ‘thaw_timer_fn’?
+cc1: some warnings being treated as errors
+/usr/src/linux-headers-4.15.0-kali2-common/scripts/Makefile.build:335: recipe for target '/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.o' failed
+make[5]: &lt;strong&gt;&lt;em&gt; [/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.o] Error 1
+/usr/src/linux-headers-4.15.0-kali2-common/Makefile:1528: recipe for target '&lt;em&gt;module&lt;/em&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze' failed
+make[4]: &lt;/em&gt;&lt;/strong&gt; [&lt;em&gt;module&lt;/em&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze] Error 2
+Makefile:146: recipe for target 'sub-make' failed
+make[3]: &lt;strong&gt;&lt;em&gt; [sub-make] Error 2
+Makefile:8: recipe for target 'all' failed
+make[2]: &lt;/em&gt;&lt;/strong&gt; [all] Error 2
+make[2]: Leaving directory '/usr/src/linux-headers-4.15.0-kali2-amd64'
+Makefile:20: recipe for target 'modules' failed
+make[1]: &lt;strong&gt;&lt;em&gt; [modules] Error 2
+make[1]: Leaving directory '/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze'
+Makefile.kmods:34: recipe for target 'installme' failed
+make: &lt;/em&gt;&lt;/strong&gt; [installme] Error 2
+make: Leaving directory '/usr/lib/parallels-tools/kmods'
+Error: could not build kernel modules
+Error: failed to install kernel modules
+Error: failed to install Parallels Guest Tools!&lt;/p&gt;
+&lt;p&gt;A：因为Paralleles Tools（暂时）与 Linux Kernel 4.15 不兼容导致，可以考虑手动安装 linux kernel 4.14。&lt;/p&gt;
+&lt;p&gt;Q：部分软件版本不匹配，无法从官方源找到合适的包？&lt;/p&gt;
+&lt;p&gt;A：官方源维护偶有bug，可以考虑添加上一次快照的源（kali-last-snapshot），修改 /etc/apt/sources.list：&lt;/p&gt;
+&lt;p&gt;deb http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib&lt;/p&gt;
+&lt;p&gt;deb http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib&lt;/p&gt;
+&lt;/blockquote&gt;</content><category term="System"></category><category term="linux"></category><category term="kali"></category></entry><entry><title>ubuntu_server</title><link href="http://aiyoyo20.github.io/articles/ubuntu_server.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/ubuntu_server.html</id><summary type="html">&lt;p&gt;想要运行一个python脚本，但是忘记了没有相应的库，去安装库时发现没有python3-pip，去安装python3-pip时由于没有换源导致没有搜索到相应的包去进行安装，就去换源，换源没有留意版本号换了不对的源，更新报错，去换了相应版本的源去下载安装了python3-pip，在pip3安装库的时候又报了一个错误，
+&lt;img alt="image-20200625115912400" src="Ubuntu_error.png"&gt;&lt;/p&gt;
+&lt;p&gt;去查了资料那个给的安装方法挺复杂下载解压再安装，下载的链接还无法直接下载，直接尝试pip3安装，第一次由于网络问题中断报错，再尝试成功了，最后成功安装库&lt;/p&gt;
+&lt;h1&gt;查看ubuntu的内核版本和发行版本号&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cat /etc/issue  # 查看当前正在运行的 Ubuntu 的版本号
+# 或者使用 lsb_release 命令也可以查看 Ubuntu 的版本号，与方法一相比，内容更为详细。
+sudo lsb_release -a
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;换源：&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo cp /etc/apt/sources.list /etc/apt/sources.list/bak  # 养成习惯，以备不时之需
+sudo vim /etc/apt …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;想要运行一个python脚本，但是忘记了没有相应的库，去安装库时发现没有python3-pip，去安装python3-pip时由于没有换源导致没有搜索到相应的包去进行安装，就去换源，换源没有留意版本号换了不对的源，更新报错，去换了相应版本的源去下载安装了python3-pip，在pip3安装库的时候又报了一个错误，
+&lt;img alt="image-20200625115912400" src="Ubuntu_error.png"&gt;&lt;/p&gt;
+&lt;p&gt;去查了资料那个给的安装方法挺复杂下载解压再安装，下载的链接还无法直接下载，直接尝试pip3安装，第一次由于网络问题中断报错，再尝试成功了，最后成功安装库&lt;/p&gt;
+&lt;h1&gt;查看ubuntu的内核版本和发行版本号&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cat /etc/issue  # 查看当前正在运行的 Ubuntu 的版本号
+# 或者使用 lsb_release 命令也可以查看 Ubuntu 的版本号，与方法一相比，内容更为详细。
+sudo lsb_release -a
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;换源：&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo cp /etc/apt/sources.list /etc/apt/sources.list/bak  # 养成习惯，以备不时之需
+sudo vim /etc/apt/sources.list  # 可以全删除或者全注释后添加下面的源
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;# 阿里源&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.aliyun.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.aliyun.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-security&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.aliyun.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-updates&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.aliyun.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-proposed&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.aliyun.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-backports&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.aliyun.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.aliyun.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-security&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.aliyun.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-updates&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.aliyun.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-proposed&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.aliyun.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-backports&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;# 清华源&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.tuna.tsinghua.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.tuna.tsinghua.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.tuna.tsinghua.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-updates&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.tuna.tsinghua.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-updates&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.tuna.tsinghua.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-backports&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.tuna.tsinghua.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-backports&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.tuna.tsinghua.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-security&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.tuna.tsinghua.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-security&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.tuna.tsinghua.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-proposed&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.tuna.tsinghua.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-proposed&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;# 中科大源&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.ustc.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.ustc.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.ustc.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-updates&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.ustc.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-updates&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.ustc.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-backports&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.ustc.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-backports&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.ustc.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-security&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.ustc.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-security&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.ustc.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-proposed&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.ustc.edu.cn/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-proposed&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;# 163（ 网易）源&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.163.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.163.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-security&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.163.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-updates&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.163.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-proposed&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.163.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-backports&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.163.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.163.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-security&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.163.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-updates&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.163.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-proposed&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;http://mirrors.163.com/ubuntu/&lt;/span&gt; &lt;span class="kp"&gt;bionic-backports&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;restricted&lt;/span&gt; &lt;span class="kp"&gt;universe&lt;/span&gt; &lt;span class="kp"&gt;multiverse&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;随便选一个就可以了，推荐阿里的吧，原生百度简直垃圾，源数据不知道多少年没更新了，自己有服务器，还默认使用自己的源，但却不更新&lt;/p&gt;
+&lt;h1&gt;更新：&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get update
+sudo apt-get upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="System"></category><category term="linux，ubuntu"></category></entry></feed>

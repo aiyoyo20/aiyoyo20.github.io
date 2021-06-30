@@ -1,53 +1,106 @@
+
 <!DOCTYPE html>
 <html lang="zh_cn">
 <head>
-          <title>AIYOYO - ['Manjaro 的选择、安装、配置', 'Manjaro 的选择、安装、配置']</title>
-        <meta charset="utf-8" />
-        <meta name="generator" content="Pelican" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="../theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/solid.css">
+
+
+    <link href="http://aiyoyo20.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="AIYOYO Atom">
 
 
 
+  
 
-    <meta name="tags" content="linux" />
-    <meta name="tags" content="manjaro" />
+
+ 
+
+<meta name="author" content="mainframer" />
+<meta name="description" content=".ind { text-indent: 2em; } .col { color: red; } ！！！ 如何选择manajro 现在有 Xfce 、GNOME 和 KDE Plasma 作为默认桌面环境的3个版本，桌面环境差异不是很大，主要差异为如果按照桌面的轻量级排序 Xfce &gt; GNOME &gt; KDE Plasma 。 Xfce 是最轻量的，比较老的电脑可以选择这个。 GNOME 是以前使用比较多的桌面环境，但随着硬件设备的发展，基本都有在向着 KDE 发展。 KDE 版本 最明显的当然是它的华丽了，很多的桌面修改不用额外去安装、直接在设置里面修改就有很惊艳的效果。 以下就以我自己的配置为例 此次安装的为 KDE 版本，正常使用的话没有问题，但是在后期设置了不少软件自启，以及桌面装饰 dock 和其他一些美化后，整个使用体验就大幅下降，时不时就卡顿一下，去掉了不必要的配置能够保证正常的使用了，而且虽然 dock 的软件只有几M，但是在运行后是很占空间的 …" />
+<meta name="keywords" content="linux, manjaro">
+
+
+  <meta property="og:site_name" content="AIYOYO"/>
+  <meta property="og:title" content="[&#39;Manjaro 的选择、安装、配置&#39;, &#39;Manjaro 的选择、安装、配置&#39;]"/>
+  <meta property="og:description" content=".ind { text-indent: 2em; } .col { color: red; } ！！！ 如何选择manajro 现在有 Xfce 、GNOME 和 KDE Plasma 作为默认桌面环境的3个版本，桌面环境差异不是很大，主要差异为如果按照桌面的轻量级排序 Xfce &gt; GNOME &gt; KDE Plasma 。 Xfce 是最轻量的，比较老的电脑可以选择这个。 GNOME 是以前使用比较多的桌面环境，但随着硬件设备的发展，基本都有在向着 KDE 发展。 KDE 版本 最明显的当然是它的华丽了，很多的桌面修改不用额外去安装、直接在设置里面修改就有很惊艳的效果。 以下就以我自己的配置为例 此次安装的为 KDE 版本，正常使用的话没有问题，但是在后期设置了不少软件自启，以及桌面装饰 dock 和其他一些美化后，整个使用体验就大幅下降，时不时就卡顿一下，去掉了不必要的配置能够保证正常的使用了，而且虽然 dock 的软件只有几M，但是在运行后是很占空间的 …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="http://aiyoyo20.github.io/articles/Manjaro 的选择、安装、配置.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2020-09-03 10:20:00+08:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="http://aiyoyo20.github.io/author/mainframer.html">
+  <meta property="article:section" content="Others"/>
+  <meta property="article:tag" content="linux"/>
+  <meta property="article:tag" content="manjaro"/>
+  <meta property="og:image" content="">
+
+  <title>AIYOYO &ndash; [&#39;Manjaro 的选择、安装、配置&#39;, &#39;Manjaro 的选择、安装、配置&#39;]</title>
 
 </head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="http://aiyoyo20.github.io/">
+        <img src="http://aiyoyo20.github.io/theme/img/profile.png" alt="" title="">
+      </a>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://aiyoyo20.github.io/">AIYOYO</a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-            <li><a href="http://aiyoyo20.github.io/category/android.html">Android</a></li>
-            <li><a href="http://aiyoyo20.github.io/category/database.html">Database</a></li>
-            <li class="active"><a href="http://aiyoyo20.github.io/category/others.html">Others</a></li>
-            <li><a href="http://aiyoyo20.github.io/category/system.html">System</a></li>
-            <li><a href="http://aiyoyo20.github.io/category/tools.html">Tools</a></li>
-        </ul></nav><!-- /#menu -->
-<section id="content" class="body">
+      <h1>
+        <a href="http://aiyoyo20.github.io/"></a>
+      </h1>
+
+
+
+      <nav>
+        <ul class="list">
+
+
+
+            <li>
+              <a target="_self" href="http://www-01.ibm.com/support/knowledgecenter" >IBM知识中心</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-aiyoyo20@Github" href="https://github.com/aiyoyo20" target="_blank">
+              <i class="fab fa-aiyoyo20@Github"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+<article class="single">
   <header>
-    <h2 class="entry-title">
-      <a href="http://aiyoyo20.github.io/articles/Manjaro 的选择、安装、配置.html" rel="bookmark"
-         title="Permalink to ['Manjaro 的选择、安装、配置', 'Manjaro 的选择、安装、配置']">['Manjaro 的选择、安装、配置', 'Manjaro 的选择、安装、配置']</a></h2>
- 
+      
+    <h1 id="Manjaro 的选择、安装、配置">['Manjaro 的选择、安装、配置', 'Manjaro 的选择、安装、配置']</h1>
+    <p>
+      Posted on 2020-09-03 in <a href="http://aiyoyo20.github.io/category/others.html">Others</a>
+
+    </p>
   </header>
-  <footer class="post-info">
-    <time class="published" datetime="2020-09-03T10:20:00+08:00">
-      Thu 03 September 2020
-    </time>
-    <address class="vcard author">
-      By           <a class="url fn" href="http://aiyoyo20.github.io/author/mainframer.html">mainframer</a>
-    </address>
-    <div class="category">
-        Category: <a href="http://aiyoyo20.github.io/category/others.html">Others</a>
-    </div>
-    <div class="tags">
-        Tags:
-            <a href="http://aiyoyo20.github.io/tag/linux.html">linux</a>
-            <a href="http://aiyoyo20.github.io/tag/manjaro.html">manjaro</a>
-    </div>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
+
+
+  <div>
     <style>
 .ind {
 text-indent: 2em;
@@ -984,13 +1037,40 @@ sudo pacman -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-se
 <p><mark>## TODO</mark>
 在一次使用 kali_live 的时候，manjaro 的家目录被挂载了，以前其他的也会这样，但是这次进去后可以有权限打开、浏览、修改里面的文件。
 为什么以及如何避免。</p>
-  </div><!-- /.entry-content -->
-</section>
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="https://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="https://www.python.org/">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="http://aiyoyo20.github.io/tag/linux.html">linux</a>
+      <a href="http://aiyoyo20.github.io/tag/manjaro.html">manjaro</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " AIYOYO ",
+  "url" : "http://aiyoyo20.github.io",
+  "image": "",
+  "description": ""
+}
+</script>
+
 </body>
 </html>

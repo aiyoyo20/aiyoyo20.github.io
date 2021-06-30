@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>AIYOYO - Others</title><link href="http://aiyoyo20.github.io/" rel="alternate"></link><link href="http://aiyoyo20.github.io/feeds/others.atom.xml" rel="self"></link><id>http://aiyoyo20.github.io/</id><updated>2020-09-03T10:20:00+08:00</updated><entry><title>['Manjaro 的选择、安装、配置', 'Manjaro 的选择、安装、配置']</title><link href="http://aiyoyo20.github.io/articles/Manjaro%20%E7%9A%84%E9%80%89%E6%8B%A9%E3%80%81%E5%AE%89%E8%A3%85%E3%80%81%E9%85%8D%E7%BD%AE.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>mainframer</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/Manjaro 的选择、安装、配置.html</id><summary type="html">&lt;style&gt;
+.ind {
+text-indent: 2em;
+}
+.col {
+color: red;
+}
+&lt;/style&gt;
+
+&lt;h1&gt;！！！ 如何选择manajro&lt;/h1&gt;
+&lt;p class='ind'&gt; 现在有 Xfce 、GNOME 和 KDE Plasma 作为默认桌面环境的3个版本，桌面环境差异不是很大，主要差异为如果按照桌面的轻量级排序 Xfce &gt; GNOME &gt; KDE Plasma 。&lt;/p&gt;
+&lt;p class='ind'&gt; Xfce 是最轻量的，比较老的电脑可以选择这个。&lt;/p&gt;
+&lt;p class='ind'&gt;GNOME 是以前使用比较多的桌面环境，但随着硬件设备的发展，基本都有在向着 KDE 发展。 &lt;/p&gt;
+&lt;p class='ind'&gt; KDE 版本 最明显的当然是它的华丽了，很多的桌面修改不用额外去安装、直接在设置里面修改就有很惊艳的效果。&lt;/p&gt;
+
+&lt;p&gt;以下就以我自己的配置为例
+&lt;img src="images/manjaro_screenfetch.png" alt="pic_1 manjaro_screenfetch"  width=900px /&gt;&lt;/p&gt;
+&lt;p class='ind'&gt;此次安装的为 KDE 版本，正常使用的话没有问题，但是在后期设置了不少软件自启，以及桌面装饰 dock 和其他一些美化后，整个使用体验就大幅下降，时不时就卡顿一下，去掉了不必要的配置能够保证正常的使用了，而且虽然 dock 的软件只有几M，但是在运行后是很占空间的 …&lt;/p&gt;</summary><content type="html">&lt;style&gt;
+.ind {
+text-indent: 2em;
+}
+.col {
+color: red;
+}
+&lt;/style&gt;
+
+&lt;h1&gt;！！！ 如何选择manajro&lt;/h1&gt;
+&lt;p class='ind'&gt; 现在有 Xfce 、GNOME 和 KDE Plasma 作为默认桌面环境的3个版本，桌面环境差异不是很大，主要差异为如果按照桌面的轻量级排序 Xfce &gt; GNOME &gt; KDE Plasma 。&lt;/p&gt;
+&lt;p class='ind'&gt; Xfce 是最轻量的，比较老的电脑可以选择这个。&lt;/p&gt;
+&lt;p class='ind'&gt;GNOME 是以前使用比较多的桌面环境，但随着硬件设备的发展，基本都有在向着 KDE 发展。 &lt;/p&gt;
+&lt;p class='ind'&gt; KDE 版本 最明显的当然是它的华丽了，很多的桌面修改不用额外去安装、直接在设置里面修改就有很惊艳的效果。&lt;/p&gt;
+
+&lt;p&gt;以下就以我自己的配置为例
+&lt;img src="images/manjaro_screenfetch.png" alt="pic_1 manjaro_screenfetch"  width=900px /&gt;&lt;/p&gt;
+&lt;p class='ind'&gt;此次安装的为 KDE 版本，正常使用的话没有问题，但是在后期设置了不少软件自启，以及桌面装饰 dock 和其他一些美化后，整个使用体验就大幅下降，时不时就卡顿一下，去掉了不必要的配置能够保证正常的使用了，而且虽然 dock 的软件只有几M，但是在运行后是很占空间的。&lt;/p&gt;
+
+&lt;p&gt;找了一些更为详细的介绍，可以参考一下。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;KDE 是一个容易使用的现代桌面环境。 KDE 有很多很好的特性：
+一个美丽的现代的桌面。
+一个集合了完美网络环境的桌面。
+一个集成的帮助系统，能够方便、高效地帮助您使用 KDE 桌面和它的应用程序。
+所有的 KDE 应用程序具有一致的所见即所得界面。
+标准的菜单和工具栏，键盘布局，颜色配置等。
+国际化：KDE 可以使用超过40种语言。
+集中化、 统一的对话框驱动的桌面配置
+许多有用的 KDE 应用程序。
+Ubuntu 默认桌面环境采用 unity, Kubuntu 则是 KDE（K桌面环境，K Desktop Environment)。Kubuntu 项目为 Ubuntu 用户提供了一个默认 unity 桌面环境之外的选择。感谢 Kubuntu 项目小组的努力，Ubuntu 用户现在可以在自己的系统上轻易安装和使用 KDE 桌面。欲在 Ubuntu 基础上安装上一个可用的 Kubuntu，您须安装kubuntu-desktop 软件包。安装该软件包后，您就可以任意选择使用 Gnome 和 KDE 桌面环境。&lt;/p&gt;
+&lt;p&gt;GNOME 是 The GNU Network Object Model Environment 的缩写，意思是 GNU 网络对象模型环境，1997年8月，GNU GNOME 计划正式启动，之后经过大约一年的发展，在整个世界范围内估计有二百名程序员参与了这个计划的开发工作。最初召集开发者的通告通过多个讨论组规划了 GNOME 计划。GNOME 计划的目标是完全基于自由软件，构造一个功能完善、操作简单以及界面友好的桌面环境，而不必面对毫无生气的文本环境。GNOME 是 GNU 计划的一部分，同时也是 Open Source（开放源码）运动一个重要的组成部分，GNOME 以GTK+ 作为 GUI 图形开发工具包开发了许多小工具和大量的应用软件，GNOME 努力以真正自由的 GTK 作底层去实现与 KDE 相同的功能，并努力超越 KDE。
+严格来说 GNOME 不仅仅是一个简单的窗口管理器，它为用户提供了一个功能强大、界面友好的桌面操作环境，GNOME 包括一个面板、桌面以及一系列标准的桌面工具和很多功能强大的应用软件，这些应用软件包括：文件管理器 GMC、能和 PhotoShop 相媲美的 GNU 图像处理软件 GIMP、电子表格处理软件 Gnumeric、字处理软件 AbiWord 等。现在开放源码的 StarOffice 办公套装已经融入 GNOME 中，成为其办公软件套装的核心部分。此外，GNOME 也提供传统的应用软件，像邮件阅读器、MP3 播放器以及简单的编辑器等。这些应用软件大大提高了 Linux 系统的可操作性，并且 GNOME 支持鼠标拖放机制，以最大限度实现与其它应用程序的交互性操作。
+虽然 GNOME 是一个独立运行的桌面环境，并不需要其它窗口管理器来控制应用程序以及其它交互式的操作，但 GNOME 可以和其它窗口管理器协作使用，使用户感觉到这些窗口管理器能更好地融入桌面，发挥它们最大的功能。GNOME 默认的窗口管理器是 Enlightenment，最近推出的GNOME 默认窗口管理器是 Sawfish（也就是以前的 Sawmill ），因为 GNOME + Enlightenment 将占用很大的资源，而且 GNOME 和 Enlightenment 之间有很多相同的功能。&lt;/p&gt;
+&lt;p&gt;Xfce 是一个运行在各类Unix下的轻量级桌面环境，它类似于商业图形环境 CDE。它的作者是 Olivier Fourdan。两年以前，Olivier Fourdan 试图寻找一个快速、友好、高效的Linux 桌面，于是 XFce 就这样诞生了。XFce 最先是基于 XForms 三维图形库，随后又开发了一些后续版本。Olivier Fourdan 将其工作转移到 GNOME 的核心工具 GTK+ 上。
+XFce 最主要的特色是容易配置，整个过程都可以使用鼠标来完成，而不需要修改配置文件的代码。最新版本的 XFce还支持鼠标拖放、系统任务管理、多字节在内的多国语言以及其它特征。
+XFce 桌面环境包括一个叫 XFwm 的窗口管理器、主面板、文件管理器、背景管理器、声音管理器以及 GNOME 兼容模块等。XFce 的窗口管理器( xfwm )、页面管理器( xfpager )、文件管理器( XFTree )和 GNOME 模块一样是基于早期程序员的工作，其他人贡献了一些补丁程序。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;壹、Manjaro-KDE&lt;/h1&gt;
+&lt;h1&gt;一、安装&lt;/h1&gt;
+&lt;p&gt;1.启动盘制作使用的是官方网站推荐的写入软件 rufus 写入镜像。
+分区和之前 ubuntu 的差不多，个人觉得几乎所有的 linux 分区都可以这样做。
+以我自己的100G为例：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;boot/efi分区&lt;/th&gt;
+&lt;th&gt;300M&lt;/th&gt;
+&lt;th&gt;fat32格式&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;交换分区(swap)&lt;/td&gt;
+&lt;td&gt;8G&lt;/td&gt;
+&lt;td&gt;ext4格式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;主分区(/)&lt;/td&gt;
+&lt;td&gt;40G&lt;/td&gt;
+&lt;td&gt;ext4格式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;home&lt;/td&gt;
+&lt;td&gt;others&lt;/td&gt;
+&lt;td&gt;ext4格式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;然后按照提示一步一步正常走完程序然后重启进行一些配置：&lt;/p&gt;
+&lt;h1&gt;二、配置&lt;/h1&gt;
+&lt;h2&gt;1.更新源&lt;/h2&gt;
+&lt;p&gt;1.配置国内源
+&lt;code&gt;sudo  pacman-mirrors -i -c China -m rank&lt;/code&gt;
+选择目前网络环境下最快的一个&lt;/p&gt;
+&lt;p&gt;2.增加 archlinuxcn 源
+&lt;code&gt;sudo nano /etc/pacman.conf&lt;/code&gt;
+添加如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;[archlinuxcn]&lt;/span&gt;
+&lt;span class="na"&gt;Server&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;3.安装签名秘钥和升级系统&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -Sy
+sudo pacman -S archlinuxcn-keyring
+sudo pacman -Syyu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;2.安装 yay&lt;/h2&gt;
+&lt;p&gt;yay 和 pacman 差不多，但是其软件资源要更丰富更新也更快。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S yay
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;3.安装软件&lt;/h2&gt;
+&lt;h3&gt;(1)输入法( googlepinyin )&lt;/h3&gt;
+&lt;p class='ind'&gt;可自行安装搜狗输入法，manjaro 软件管理软件中也可以直接安装谷歌输入法。（目前用 googlepinyin，之前用搜狗有乱码，不知道为什么）&lt;/p&gt;
+
+&lt;p&gt;安装&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;pacman&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;noconfirm&lt;/span&gt; &lt;span class="n"&gt;fcitx&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;im&lt;/span&gt; &lt;span class="n"&gt;kcm&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fcitx&lt;/span&gt; &lt;span class="n"&gt;fcitx&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;googlepinyin&lt;/span&gt;  &lt;span class="n"&gt;fcitx&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;configtool&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;配置 fcitx&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;export GTK_IM_MODULE=fcitx&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s2"&gt;export QT_IM_MODULE=fcitx&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s2"&gt;export XMODIFIERS=@im=fcitx&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;~/.&lt;/span&gt;&lt;span class="n"&gt;xprofile&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class='ind'&gt;
+重启后在状态栏找到键盘右键 --&gt; config --&gt; input method --&gt; 添加后确认应用生效，默认的切换输入法快捷键为ctrl + 空格&lt;/p&gt;
+
+&lt;h3&gt;(2)梯子，爬墙必备&lt;/h3&gt;
+&lt;p&gt;方案较多，另外起个文章写，详情看 &lt;a href="Tools/manjaro_proxy.md"&gt;manjaro_proxy&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;(3)命令行利器&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S htop  # 进程监控,top 命令的美化版
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S screen  # 命令行终端切换
+yay -S tmux  # 和screen类似
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class='ind'&gt;主要用于服务器端，在本地有图形化界面可以不断的多开，但是服务器就只有一个窗口，有的任务需要的时间比较长，而又不能一直停留在这个界面等待，或者需要退出服务器的连接，而退出连接会导致运行终止，想要退出也继续维持这个会话， 就可以使用 screen/tmux 搭配相应的命令去运行。&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;yay&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt; &lt;span class="n"&gt;net&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tools&lt;/span&gt;  &lt;span class="c1"&gt;# ifconfig、route、arp和netstat等命令行工具&lt;/span&gt;
+&lt;span class="n"&gt;yay&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt; &lt;span class="n"&gt;iproute2&lt;/span&gt;  &lt;span class="c1"&gt;# 由于manjaro是基于arch的，所以自带了，并且没有net-tools&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class='col ind'&gt;由于自己最开始学的 linux 知道的配置网络的命令就是这个，最开始使用的 ubuntu，那个版本是自带的，然后摒弃了换到 manajro，使用这些命令的时候发现没有，去搜索发现需要安装一下这个，但同时也得知了一些新的知识，详细如下&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;net-tools 和 iproute2 对比&lt;/p&gt;
+&lt;p&gt;如今很多系统管理员依然通过组合使用诸如 ifconfig、route、arp 和 netstat 等命令行工具（统称为 net-tools ）来配置网络功能，解决网络故障。net-tools 起源于 BSD 的 TCP/IP 工具箱，后来成为老版本 Linux内核中配置网络功能的工具。但自2001年起，Linux 社区已经对其停止维护。同时，一些 Linux 发行版比如 Arch Linux 和 CentOS/RHEL 7 则已经完全抛弃了 net-tools，只支持 iproute2。&lt;/p&gt;
+&lt;p&gt;作为网络配置工具的一份子，iproute2 是 linux 下管理控制 TCP/IP 网络和流量控制的新一代工具包，旨在替代老派的工具链 net-tools，即大家比较熟悉的 ifconfig，arp，route，netstat 等命令。net-tools 通过 procfs( /proc ) 和 ioctl 系统调用去访问和改变内核网络配置，而iproute2 则通过 netlink 套接字接口与内核通讯。抛开性能而言，net-tools 的用法给人的感觉是比较乱，而 iproute2 的用户接口相对 net-tools 来说相对来说，更加直观。比如，各种网络资源（如 link、IP 地址、路由和隧道等）均使用合适的对象抽象去定义，使得用户可使用一致的语法去管理不同的对象。更重要的是，到目前为止，iproute2 仍处在持续开发中。&lt;/p&gt;
+&lt;p&gt;所以，net-tools 和iproute2 都需要去学习掌握了。&lt;/p&gt;
+&lt;p&gt;来源：https://yiricheng.com/2004/&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S tree
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;以树状图列出目录的内容。执行 tree 指令，它会列出指定目录下的所有文件，包括子目录里的文件。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;目前还没有去着重了解的几个，但是先留着吧&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S bat  # cat 命令的一个克隆版，具有一些例如语法高亮,Git集成和自动分页等非常酷的特性
+
+yay -S tig  # 一款优化 git 命令行的工具
+
+yay -S ncdu  # 命令行下的磁盘分析器，支持Vim操作
+
+yay -S mosh  # 一款速度更快的 ssh 工具，网络不稳定时使用有奇效
+
+yay -S thefuck  # 可快速修正（注意不是修复）前一条命令的用法错误，使报错的命令能够正常运行
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S tldr
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;全称 too long, Don't read，翻译成中文就是太长不想阅读，
+这个工具就是解决 --help 或者 man 出来一大串的手册。
+man 的简化版，给出一些经常使用的建议，而不必去看完冗长的介绍，
+虽然那些建议很有用，但平时却很少或者根本用不到。&lt;/p&gt;
+&lt;h3&gt;(4)日常软件&lt;/h3&gt;
+&lt;h4&gt;娱乐：&lt;/h4&gt;
+&lt;h5&gt;音乐&lt;/h5&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S netease-cloud-music # 网易云音乐
+
+yay -S spotify # 资源较少
+
+yay -S clementine  # 可以用做本地播放器，也可以对接spotify,目前在用的
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class='ind'&gt;以前用的网易云，但是后来有段时间没有使用了，再回来打开我的收藏列表至少有一半的歌是灰色，就很难受。&lt;/p&gt;
+&lt;p&gt;续：现在如果有在线听的需要的话，基本用一个浏览器插件 Listen1 ，集合了多个平台 ，下载的话在搜索一下就基本能找到，免费的。&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S cmus # 一个命令行播放音乐的小工具
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;使用方便，打开迅速，占用的资源少，有什么理由不用呢&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5&gt;浏览器&lt;/h5&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S google-chrome  # 谷歌浏览器
+yay -S firefox  # 火狐浏览器(不过好像有自带，升级一下吧)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;还有一个 Tor 浏览器 yay 没有找到相应的包，可自行下载安装：
+下载地址： &lt;a href="https://www.torproject.org/download/"&gt;https://www.torproject.org/download/&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5&gt;视频&lt;/h5&gt;
+&lt;h6&gt;1、VLC&lt;/h6&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S vlc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+已弃
+&lt;br /&gt;
+虽然搜索 linux 的视频播放器多数推荐的是这个，但是自己在使用中还是出现了一些问题。
+&lt;br /&gt;
+1、首先是它的文件列表通过快捷键呼出后会将原画面缩小，跳转到其另一个界面，习惯了 potplayer 那样的悬挂式，不影响观看，且又能了解到具体的播放内容，在看课程的时候很有用。
+&lt;br /&gt;
+2、用的时候打开多个文件后会卡住，无法打开新的文件，已经打开的窗口也无法在图形化的退出，只能通过命令行强行杀死进程才能结束。
+&lt;br /&gt;
+3、而且打开一些视频播放不流畅，有花屏等等。
+&lt;/p&gt;
+
+&lt;h6&gt;2、MPV&lt;/h6&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S mpv  # 简单版本的视频播放器,简单播放的话功能够用
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;仅仅是作为 vlc 容易卡死的一个临时替代品，能播放的视频种类不是很清楚，但是只有很简单的功能，没有列表等其他的，打开一个视频后正常的播放，暂停，快进仅此而已。&lt;/p&gt;
+&lt;h6&gt;3、Qmplay2&lt;/h6&gt;
+&lt;p&gt;界面设计很好看，功能也符合其要求，目前在使用的。&lt;/p&gt;
+&lt;p&gt;项目地址： [ &lt;a href="https://github.com/zaps166/QMPlay2"&gt; https://github.com/zaps166/QMPlay2 &lt;/a&gt; ]&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay  -S flameshot # 截图工具：flameshot，截图后还有多种方式对图片简单处理
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;yay&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;deepin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;qq&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;im&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;QQ&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;安装后不能启动看后续问题归纳&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;yay&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;deepin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;qq&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;im&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;light&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;[qq&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="err"&gt;]&lt;/span&gt;&lt;span class="n"&gt;轻聊版&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;（&lt;/span&gt;&lt;span class="n"&gt;感觉就是老版的qq&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="n"&gt;不过喜欢&lt;/span&gt;&lt;span class="err"&gt;）&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;yay&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;electronic&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;wechat&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;微信&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;yay&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;telegram&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;desktop&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Telegram&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="n"&gt;电报需要做小小的配置才能使用&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="n"&gt;详见代理配置&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;qq 和 qq-lite 的对比图
+&lt;img alt="pic_2 qq_compared" src="images/manjaro_qq_compared.png"&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S simplescreenrecorder # 录屏软件：SimpleScreenRecorder
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S peek  # 简单录制工具，可录制gif
+yay -S deepin-screen-recorder  # 另一个简单录制工具，可录制gif
+&amp;amp;&amp;amp; 后面的美化效果的gif就是分别用其录制的，效果都差不多，需要注意的是保存的文件名是有空格的，有些不太方便
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;区别：
+&lt;img src="images/manajro_peek&amp;deepin-screen.png" alt="pic_3 peek&amp;deepin-screen"  width=900px /&gt;
+左为 peek，右为 deepin-screen-recorder
+peek 是先打开一个窗口，通过拖动边缘可调节大小
+deepin-screen-recorder 为打开像截图那样给出截选框先选择大小再录制&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S filezilla  # 传输工具
+&amp;amp;&amp;amp; 在与服务器用于传输文件或文件夹时很有用
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h4&gt;下载：&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;yay&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt;  &lt;span class="n"&gt;uget&lt;/span&gt;  &lt;span class="c1"&gt;# bt下载工具&lt;/span&gt;
+
+&lt;span class="n"&gt;yay&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt; &lt;span class="n"&gt;axel&lt;/span&gt;
+&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="err"&gt;另外一个多线程下载工具，命令行的，相当于&lt;/span&gt;&lt;span class="n"&gt;wget加强版&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;
+&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="err"&gt;使用&lt;/span&gt;&lt;span class="n"&gt;wget命令下载容易断线&lt;/span&gt;&lt;span class="err"&gt;，因为&lt;/span&gt;&lt;span class="n"&gt;wget是单线程的&lt;/span&gt;
+&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="err"&gt;使用方法&lt;/span&gt;
+&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;axel&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;download&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sublimetext&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;sublime&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;text&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;3211&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pkg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xz&lt;/span&gt;
+&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="err"&gt;注：&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt; &lt;span class="err"&gt;表示开&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="err"&gt;个线程数下载&lt;/span&gt;
+&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="err"&gt;还有其他参数可选，想要了解更多的自行搜索&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S aria2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;下载利器,需要进行配置，配置方法见新篇,详情&lt;a href="Tools/aria2配置.md"&gt;aria2配置&lt;/a&gt;
+轻型的，多协议支持的下载工具，而且还拥有很多实用的扩展工具&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S ariang-allinone  # 一个在浏览器中图形化显示的aria2的WebUI工具
+&amp;amp;&amp;amp; 运行以后再打开图形界面，就会变成已连接啦。图形界面有中文，大部分参数有解释，是不是很良心～
+&amp;amp;&amp;amp; 另外，这个WebUI与命令行是分开的，因此即使你关闭了WebUI，只要不终止命令，那么下载将继续运行；
+&amp;amp;&amp;amp; 你可以过一会儿重新启动WebUI，仍可以看到正在下载的文件。
+&amp;amp;&amp;amp; (这个 WebUI 是一个 htm l文件，甚至可以加到 chrome 的收藏里，从 chrome 启动，不用从命令行启动啦，
+&amp;amp;&amp;amp; 不过aria2的监听仍然要通过命令启动，可以吧这个命令写到一个sh文件里，下次直接运行这个文件，就不用去背这么长的命令了）
+
+yay -S webui-aria2  # 看名字就明显了吧，另一个 aria2 的图形化工具，
+
+yay -Si yaaw-git  # 又一个，觉得都差不多，看个人喜好吧
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;编辑工具：&lt;/h4&gt;
+&lt;h5&gt;word、pdf、excel&lt;/h5&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S wps-office ttf-wps-fonts # WPS，后面的为中文字体
+sudo pacman -S wps-office-mui-zh-cn # 中文字体包
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h5&gt;笔记：&lt;/h5&gt;
+&lt;p&gt;以前总想要找到一个最好的，所以在笔记软件这块做了很多尝试，但是大多数都是本地的，同步性考虑隐私问题所以基本用 U 盘 或者 github 或者压缩包加密上传云。
+具体的一些使用体验感兴趣的话：&lt;a href="Tools/Note_Editor_Compared.md"&gt;Note_Editor_Compared&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S foxitreader  # pdf阅读器，但是感觉自带的Okular挺不错够用了，这个看个人喜好吧。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S mindmaster  # 思维导图工具
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class='ind'&gt;以前在 windows 用的是 xmind，也有 linux版本，但试试新的吧&lt;/p&gt;
+&lt;p class='ind'&gt;不推荐这样安装，安装后去对比官方的这个是好几年前的版本7，log老旧，没有汉化,而现在最新的版本8，建议去官网下载相应的包自行解压安装&lt;/p&gt;
+&lt;p class='ind'&gt;后期使用效果：mindmaster 在 linux没用找到破解的，但是很多功能是可以使用的，目前发现的 pro 用户可使用的模板要多几个，导出时没用水印，zmind 有幸找到破解的，但是对比之下功能要少很多，如果不是很专业的要求的话是值得一用的，当然能使用 mindmanager 是更好的，毕竟可以与 office 对接是一个很大的优势，但是目前好像没有 linux 的版本&lt;/p&gt;
+
+&lt;p&gt;xmind与mindmaster简单对比
+&lt;img src="images/manjaro_xmind.png" alt="pic_4 xmind"  width=900px /&gt;
+&lt;img src="images/manjaro_mindmaster.png" alt="pic_5 mindmaster"  width=900px /&gt;&lt;/p&gt;
+&lt;h3&gt;(5)开发工具&lt;/h3&gt;
+&lt;h4&gt;[ 1 ] 、JetBrains 全家桶系列&lt;/h4&gt;
+&lt;p&gt;以下是基于版本2019.3
+(1)、去官网 ( https://www.jetbrains.com/ ) 下载自己所需的 linux 的 tar,gz 压缩包，命令行移动到自己安装的目录，个人习惯选择 /opt/&lt;/p&gt;
+&lt;p&gt;(2)、解压包 解压全部命令参考：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar –xvf file.tar  解压 tar
+tar -xzvf file.tar.gz 解压tar.gz
+tar -xjvf file.tar.bz2   解压 tar.bz2
+tar –xZvf file.tar.Z   解压tar.Z
+unrar e file.rar 解压rar
+unzip file.zip 解压zip
+可能因为权限不够导致解压失败，建议以超级用户解压
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;(3)、把 jetbrains-agent.jar 破解包移动到其bin目录下。&lt;/p&gt;
+&lt;p&gt;(4)、修改&lt;em&gt; .vmoptions 和 &lt;/em&gt;64.vmoptions 这两个文件， 在文件最后加入。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;-javaagent:安装目录/jetbrains-agent.jar
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;(5)、启动 切换到 bin 目录下或写入绝对路径 cd /opt/soft_name/bin sh name.sh。&lt;/p&gt;
+&lt;p&gt;(6)、进入正常配置界面，选择 Activation code 找到能用的从code添加注册即可破解。&lt;/p&gt;
+&lt;p&gt;(7)、可能会没有快捷方式： 附上快捷方式制作：
+创建快捷方式：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo vim /usr/share/applications/Pycharm.desktop
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;粘贴模板：
+第一个是最基本的能够获取到工作目录以及添加图标的，以前在 ubuntu 可以正常使用，但是在 manjaro 的时候缺少一些东西，不能对图标进行编辑，而且用的是 svg 那个图，不能被识别，添加到桌面后图标为灰色，所以用的是第二个，&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;[Desktop Entry]&lt;/span&gt;
+&lt;span class="na"&gt;Version&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;1.0&lt;/span&gt;
+&lt;span class="na"&gt;Type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Application&lt;/span&gt;
+&lt;span class="na"&gt;Name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Pycharm&lt;/span&gt;
+&lt;span class="na"&gt;Icon&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;/opt/pycharm-2019.3.1/bin/pycharm.svg&lt;/span&gt;
+&lt;span class="na"&gt;Exec&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;/opt/pycharm-2019.3.1/bin/pycharm.sh&amp;quot; %f&lt;/span&gt;
+&lt;span class="na"&gt;Comment&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Lightning-smart Python IDE&lt;/span&gt;
+&lt;span class="na"&gt;Categories&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Development;IDE;&lt;/span&gt;
+&lt;span class="na"&gt;Terminal&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;false&lt;/span&gt;
+&lt;span class="na"&gt;StartupWMClass&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;jetbrains-pycharm&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;[Desktop Entry]&lt;/span&gt;
+&lt;span class="na"&gt;Categories&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Development;IDE;&lt;/span&gt;
+&lt;span class="na"&gt;Comment[en_US]&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;The smartest Python IDE&lt;/span&gt;
+&lt;span class="na"&gt;Comment&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;The smartest Python IDE&lt;/span&gt;
+&lt;span class="na"&gt;Exec&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;/opt/pycharm-anaconda-2019.3.1/bin/pycharm.sh&amp;quot; %f&lt;/span&gt;
+&lt;span class="na"&gt;GenericName[en_US]&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
+&lt;span class="na"&gt;GenericName&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
+&lt;span class="na"&gt;Icon&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;/opt/pycharm-anaconda-2019.3.1/bin/pycharm.png&lt;/span&gt;
+&lt;span class="na"&gt;MimeType&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
+&lt;span class="na"&gt;Name[en_US]&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Pycharm&lt;/span&gt;
+&lt;span class="na"&gt;Name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Pycharm&lt;/span&gt;
+&lt;span class="na"&gt;Path&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
+&lt;span class="na"&gt;StartupNotify&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;true&lt;/span&gt;
+&lt;span class="na"&gt;StartupWMClass&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;jetbrains-pycharm&lt;/span&gt;
+&lt;span class="na"&gt;Terminal&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;false&lt;/span&gt;
+&lt;span class="na"&gt;TerminalOptions&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
+&lt;span class="na"&gt;Type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;Application&lt;/span&gt;
+&lt;span class="na"&gt;Version&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;1.0&lt;/span&gt;
+&lt;span class="na"&gt;X-DBUS-ServiceName&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
+&lt;span class="na"&gt;X-DBUS-StartupType&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
+&lt;span class="na"&gt;X-KDE-RunOnDiscreteGpu&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;false&lt;/span&gt;
+&lt;span class="na"&gt;X-KDE-SubstituteUID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;false&lt;/span&gt;
+&lt;span class="na"&gt;X-KDE-Username&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class='ind'&gt;我们需要替换掉两个地方：Exec="xx" 和Icon= ,这里要替换掉我们的 pycharm 解压的目录， 然后保存退出之后 打开 搜索 找到图标 pycharm 然后将其拖到需要放置的位置即可&lt;/p&gt;
+&lt;p&gt;后期有了更方便的方法，直接使用后将破解插件拖拽进去安装完成重启即可破解。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;[ 2-3 ] Python 开发环境&lt;/h4&gt;
+&lt;p&gt;&lt;a href="Python_Development_Environment.md"&gt;Python_Development_Environment&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;[ 4 ]、Sublime&lt;/h4&gt;
+&lt;p&gt;由于东西较多，主题以及一些插件等等，开新篇吧。
+详情：  &lt;a href="Tools/sublime配置.md"&gt;sublime配置&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;[ 5 ] 、Mysql&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -Si mysql # 查看软件仓库版本
+yay -S mysql # 安装mysql
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;初始化数据库&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;mysqld&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;initialize&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;mysql&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;basedir&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;datadir&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="k"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mysql&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;这时会输出密码，记下
+&lt;img  src="images/manjaro_mysql_init_password.png" alt="pic_7 mysql_init_password" width=900px /&gt;&lt;/p&gt;
+&lt;p&gt;需要留意安装过程中的警告和报错，这次运气好没有遇到，不过看别人的有，留个链接吧，以备不时之需：
+https://blog.csdn.net/uniondong/article/details/98392738&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo systemctl status mysqld # 查看MySql状态
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo systemctl enable mysqld # 开机自启
+sudo systemctl start mysqld # 启动MySql服务
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;mysql&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;u&lt;/span&gt; &lt;span class="nv"&gt;root&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;p&lt;/span&gt; # 登录&lt;span class="nv"&gt;mysql&lt;/span&gt;
+&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; 如果报错：&lt;span class="nv"&gt;ERROR&lt;/span&gt; &lt;span class="mi"&gt;1045&lt;/span&gt; &lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;28000&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt;: &lt;span class="nv"&gt;Access&lt;/span&gt; &lt;span class="nv"&gt;denied&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;user&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="s"&gt;root&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;@&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="s"&gt;localhost&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt; &lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;using&lt;/span&gt; &lt;span class="nv"&gt;password&lt;/span&gt;: &lt;span class="nv"&gt;YES&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt; 请再三检查是不是密码不对，或者用户名不对
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;alter user &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; identified with mysql_native_password by &amp;#39;新密码&amp;#39;;
+&amp;amp;&amp;amp; 修改密码，密码必改，不改初始密码是随机的很难记，而且进入后不改密码也不让进行操作
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S mysql-workbench # 安装mysql可视化管理平台
+&amp;amp;&amp;amp; 然后在连接的时候报错：Could not store password: The name org.freedesktop.secrets was not provided by any .service files，解决方案是安装 gnome-keyring包。
+yay -S gnome-keyring
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h4&gt;[ 6 ] 、Vim &amp;amp; Neovim&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;yay -S vim&lt;/code&gt;   # 编码利器
+&lt;code&gt;yay -S neovim&lt;/code&gt;   # 和 vim 差不多的命令行编辑器&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;[ 7 ] 、SSH&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S openssh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;ssh&lt;/span&gt; &lt;span class="n"&gt;username&lt;/span&gt;&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="n"&gt;server_ip&lt;/span&gt;  &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="err"&gt;正常连接服务器&lt;/span&gt;
+
+&lt;span class="n"&gt;ssh&lt;/span&gt; &lt;span class="n"&gt;server_ip&lt;/span&gt;  &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="err"&gt;如果客户机的用户名和服务器的用户名相同，登录时可以省略用户名。&lt;/span&gt;
+
+&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;SSH服务的默认端口是22&lt;/span&gt;&lt;span class="err"&gt;，上面的都认为&lt;/span&gt;&lt;span class="mi"&gt;22&lt;/span&gt;&lt;span class="err"&gt;，如果你不设置端口的话登录请求会自动送到远程主机的&lt;/span&gt;&lt;span class="mi"&gt;22&lt;/span&gt;&lt;span class="err"&gt;端口。我们可以使用&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="err"&gt;选项来修改端口号。&lt;/span&gt;
+&lt;span class="n"&gt;ssh&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="n"&gt;port&lt;/span&gt; &lt;span class="n"&gt;ldz&lt;/span&gt;&lt;span class="mf"&gt;@192.168.0.1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;第一次连接时会出现下面的情况，输入 yes 即可
+&lt;img alt="pic_8 ssh" src="images/manjaro_ssh.png"&gt;&lt;/p&gt;
+&lt;h5&gt;公钥登录(免密登录)&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每次登录远程主机都需要输入密码是很不方便的，如果想要省去这一步骤，可以利用密钥对进行连接，还可以提高安全性。&lt;/p&gt;
+&lt;p&gt;1、在本机生成密钥对&lt;/p&gt;
+&lt;p&gt;使用 ssh-keygen 命令生成密钥对：&lt;/p&gt;
+&lt;p&gt;ssh-keygen -t rsa   [[-t表示类型选项，这里采用rsa]]加密算法
+然后根据提示一步步的按enter键即可（其中有一个提示是要求设置私钥口令passphrase，不设置则为空，这里看心情吧，如果不放心私钥的安全可以设置一下），执行结束以后会在 /home/username/ 目录下生成一个 .ssh 文件夹,其中包含私钥文件 id_rsa 和公钥文件 id_rsa.pub。&lt;/p&gt;
+&lt;p&gt;2、将公钥复制到远程主机中&lt;/p&gt;
+&lt;p&gt;使用 ssh-copy-id 命令将公钥复制到远程主机。ssh-copy-id 会将公钥写到远程主机的 ~/ .ssh/authorized_key 文件中&lt;/p&gt;
+&lt;p&gt;ssh-copy-id userbname@server_ip
+经过以上两个步骤，以后再登录这个远程主机就不用再输入密码了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h4&gt;[ 8 ] 、Redis&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S redis
+
+yay -S redis-desktop-maganer  # 数据可视化工具
+&amp;amp;&amp;amp; 支持: Windows 7+, Mac OS X 10.10+, Ubuntu 14+
+&amp;amp;&amp;amp; 特点： C++ 编写，响应迅速，性能好。但不支持数据库备份与恢复。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h4&gt;[ 9 ] 、Dbeaver 企业版@破解&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;多平台数据库可视化工具，目前的redis，mysql，mongodb等等都有
+不要使用yay或者pacman安装，安装的是社区版，社区版的功能有限，比如不支持mnongodb，redis
+DBeaverEE &lt;strong&gt;7.0.0&lt;/strong&gt;及以下版本（理论上适用于目前所有新老版本）的破解
+下载相应的包并安装，这里就不给出地址了，网上应该能找到。
+破解方法:
+(1). 解压DBeaverEE到自己想要安装的位置。
+(2). 将下载压缩包解压后得到dbeaver-agent.jar，把它放到你认为合适的文件夹内。为了方便管理，就放在解压的/opt/dbeaver/目录下
+(3). 在DBeaverEE安装目录下找到Eclipse\dbeaver.ini文件
+(4). 在打开的dbeaver.ini编辑窗口末行添加："-javaagent:/opt/dbeaver//dbeaver-agent.jar"
+    一定要自己确认好路径，填错会导致DBeaverEE打不开！！！最好使用绝对路径。
+(5). 启动DBeaverEE即可。注意快捷方式里面的默认指定位置是不对的，所以打不开，自己去修改下复制到快捷方式所在的目录即可。
+(6). 如果提示错误:
+    "Error opening zip file or JAR manifest missing : dbeaver-agent.jar"
+    这种情况请试着填上jar文件的绝对路径.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h4&gt;[ 10 ] 、Git &amp;amp; Gitkraken破解&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S git
+yay -S gitkraken  # github桌面版（没破解成功，后面也几乎没用上这个软件）
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h5&gt;1、下载安装&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;Win&lt;/strong&gt; : &lt;code&gt;https://release.axocdn.com/win64/GitKrakenSetup-6.5.1.exe&lt;/code&gt;
+&lt;strong&gt;Linux-deb&lt;/strong&gt; : &lt;code&gt;https://release.axocdn.com/linux/GitKraken-v6.5.1.deb&lt;/code&gt;
+&lt;strong&gt;Linux-rpm&lt;/strong&gt; : &lt;code&gt;https://release.axocdn.com/linux/GitKraken-v6.5.1.rpm&lt;/code&gt;
+&lt;strong&gt;Linux-tar.gz&lt;/strong&gt; : &lt;code&gt;https://release.axocdn.com/linux/GitKraken-v6.5.1.tar.gz&lt;/code&gt;
+&lt;strong&gt;Mac&lt;/strong&gt; : &lt;code&gt;https://release.axocdn.com/darwin/GitKraken-v6.5.1.zip&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;浏览器或者 wget 下载都可以，速度会比较慢，开不开代理都一样，今天2020-6-30能下，后面如果不能下去找找应该有小伙伴会分享的，，不过如果资金充裕，还是建议支持正版。&lt;/p&gt;
+&lt;h5&gt;2、打开并登录&lt;/h5&gt;
+&lt;h5&gt;3、破解&lt;/h5&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S yarn
+yay -S nodejs
+
+git clone https://github.com/5cr1pt/GitCracken.git
+cd GitCracken/GitCracken
+rm yarn.lock  # 文件里面没有yarn.lock这个文件的话可以省略，后期会生成
+yarn install
+yarn build
+# 4. windows gitbash
+node dist/bin/gitcracken.js patcher --asar ~/AppData/Local/gitkraken/app-6.5.0/resources/app.asar
+# 5. mac&amp;amp;linux
+node dist/bin/gitcracken.js patcher --asar 你的gitkraken的目录/resources/app.asar
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h4&gt;[ 11 ] 、Docker &amp;amp; Docker-compose&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S docker
+yay -S docker-compose
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;other&lt;/h3&gt;
+&lt;h4&gt;airdroid&lt;/h4&gt;
+&lt;p&gt;一款可以在局域网下互相传送文件的工具，android，win下有软件，其他平台有网页版，可惜的是剪贴板同步功能受android10及以上系统的限制无法使用&lt;/p&gt;
+&lt;p&gt;其他的一些软件，要么只有传送文件的功能，实际传输效果好的其实不多，要么只有剪贴板，单剪贴板的个人感觉怪怪的，通过telegram传输需要手机开启代理，日常是不开启的，国内的软件（QQ，WeChat），还是算了吧，最后找到的的方法是在浏览器安装二位码生成插件，手机再扫码&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;三、美化&lt;/h1&gt;
+&lt;h2&gt;1、dock栏&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S latte-dock
+(1)去掉多余的图标
+(2)背调节阴影效果（我觉得没有好看些）
+(3)图标调节大小（可据显示器大小调节）
+(4)光标移动到相应图标上时的放大效果
+(5)设置自动隐藏
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src="images/manjaro_dock.gif" alt="pic_9"  width=900px /&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;2、状态栏&lt;/h2&gt;
+&lt;p&gt;（1）原来的状态栏是通栏且在下面，调节为在左边，因为有 dock 栏之后，dock 栏我是放在下面的，尝试把状态栏放在右边，但是鼠标滑动滚动条的时候会带出来，影响较大
+（2）调节大小不为通栏且居中
+&lt;img src="images/manjaro_Status_Bar.gif" alt="pic_10 Status_Bar"  width=900px /&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;3、文件管理器半透明&lt;/h2&gt;
+&lt;p class='ind'&gt; win + e 打开文件管理器--&gt;定位到顶栏右键--&gt;more actions--&gt;configure special application setting--&gt;appearance fixes--&gt;active opacity--&gt;force,我调到79%，感觉还不错&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="images/manjaro_Dolphin_beautify.png" alt="pic_11 Dolphin_beautify"  width=900px /&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;4、终端(konsole)半透明&lt;/h2&gt;
+&lt;p &gt; ctrl + alt + t 打开终端--&gt;定位到顶栏右键--&gt;more actions--&gt;configure special application setting--&gt;appearance fixes--&gt;active opacity--&gt;force 同样调到79&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/manjaro_konsole_beautify.png" alt="pic_12 konsole__beautify"  width=900px /&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;5、yakuake下拉终端&lt;/h2&gt;
+&lt;p&gt;第一种是直接换一个透明的终端主题就可以了，比如 KDE-story
+第二种是选中主题后点击编辑，去添加透明度
+&lt;img src="images/manjaro_yakuake_beautify.png" alt="pic_13 yakuake_beautify"  width=900px /&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;6、终端内容美化(zsh)&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;echo $SHELL # 查看当前使用的shell
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cat /etc/shells # 查看有哪些自带的shell，发现有了，没有的话下面命令安装，manjaro自带了所以可以不用安装
+yay -S zsh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;chsh -s /bin/zsh # 修改默认shell，这个是修改当前用户的终端，如果要修改root账户，需要切换到root用户
+这里遇到一个问题，在执行切换shell命令后显示失败，重启终端尝试也是失败，但是在重启后显示用的是zsh，也就是说切换成功了的
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;安装 oh-my-zsh&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;wget&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;robbyrussell&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;oh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;my&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;zsh&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;raw&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="k"&gt;master&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tools&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;O&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="c1"&gt;#下载包并且完成安装&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;如果终端没有搞定代理的话上面的命令无法下载包，链接被墙。可以手动安装，方法下&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;上面的直接在浏览器打开那个链接去下载也行，然后再复制过去&lt;/p&gt;
+&lt;p&gt;通过如下命令可以查看可用的&lt;code&gt;Theme&lt;/code&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ls ~/.oh-my-zsh/themes
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;不确定安装的时候是否包含了所有的主题，但是查看还是有挺多的。
+查看主题具体效果            https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+如何修改zsh主题呢？
+编辑&lt;code&gt;~/.zshrc&lt;/code&gt;文件，将&lt;code&gt;ZSH_THEME="jonathan"&lt;/code&gt;,即将主题修改为&lt;code&gt;jonathan&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;安装插件：zsh不仅可以美观还很强大，&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="s s-Atom"&gt;sudo&lt;/span&gt; &lt;span class="s s-Atom"&gt;pacman&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;S&lt;/span&gt; &lt;span class="s s-Atom"&gt;autojump&lt;/span&gt;
+&lt;span class="s s-Atom"&gt;git&lt;/span&gt; &lt;span class="s s-Atom"&gt;clone&lt;/span&gt; &lt;span class="nn"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="s s-Atom"&gt;github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="s s-Atom"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;zsh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;users&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;zsh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;syntax&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;highlighting&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="s s-Atom"&gt;git&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;ZSH_CUSTOM&lt;/span&gt;&lt;span class="p"&gt;:-&lt;/span&gt;&lt;span class="s s-Atom"&gt;~/.oh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;my&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;zsh&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;custom&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;plugins&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;zsh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;syntax&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;highlighting&lt;/span&gt;
+&lt;span class="s s-Atom"&gt;git&lt;/span&gt; &lt;span class="s s-Atom"&gt;clone&lt;/span&gt; &lt;span class="nn"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="s s-Atom"&gt;github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="s s-Atom"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;zsh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;users&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;zsh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;autosuggestions&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;ZSH_CUSTOM&lt;/span&gt;&lt;span class="p"&gt;:-&lt;/span&gt;&lt;span class="s s-Atom"&gt;~/.oh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;my&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;zsh&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;custom&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;plugins&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;zsh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;autosuggestions&lt;/span&gt;
+&lt;span class="s s-Atom"&gt;sudo&lt;/span&gt; &lt;span class="s s-Atom"&gt;nano&lt;/span&gt; &lt;span class="s s-Atom"&gt;~/.zshrc&lt;/span&gt;  &lt;span class="s s-Atom"&gt;#&lt;/span&gt; &lt;span class="s s-Atom"&gt;编辑该文件添加入插件名称启用&lt;/span&gt;
+&lt;span class="s s-Atom"&gt;plugins=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s s-Atom"&gt;其他的插件&lt;/span&gt; &lt;span class="s s-Atom"&gt;zsh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;autosuggestions&lt;/span&gt; &lt;span class="s s-Atom"&gt;zsh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;syntax&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;highlighting&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="s s-Atom"&gt;source&lt;/span&gt; &lt;span class="s s-Atom"&gt;～/.zshrc&lt;/span&gt;
+&lt;span class="s s-Atom"&gt;重启完美&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;效果展示：
+&lt;img alt="zsh_jonathan_show" src="vx_imagess/5355834158896.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/manjaro_oh_my_zsh.gif" alt="pic_14  zsh_candy"  width=900px /&gt;&lt;/p&gt;
+&lt;p&gt;关闭自动更新
+在使用的过程中，如果最新的版本发生变更在新开的命令行窗口中会提示更新，但是往往因为网络问题（未使用代理）而导致更新失败，可以选择关闭自动更新。
+&lt;code&gt;cat ～/.zshrc&lt;/code&gt; 查看配置文件，
+在文件中有&lt;code&gt;# DISABLE_AUTO_UPDATE="true"&lt;/code&gt;，默认是注释的，
+取消注释&lt;code&gt;DISABLE_AUTO_UPDATE="true"&lt;/code&gt;即可，
+如果想要体验新版可以开启代理后&lt;code&gt;omz update&lt;/code&gt;更新即可&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;7、壁纸&lt;/h2&gt;
+&lt;p&gt;进入图片目录将图片拖拽到桌面然后会有提示，选择set images便是设置壁纸，要注意的是这相当与指定壁纸文件在哪，当壁纸文件移动或者删除就会恢复为默认的壁纸，也不要是 u盘 和 windows 盘里面的图片，在当次可以读取但是关机重启后默认是读取不了非系统所在分区外的其他分区.&lt;/p&gt;
+&lt;p&gt;SHOW：
+&lt;img src="images/manjaro_wallpaper.jpg" alt="pic_15 wallpaper"  width=900px /&gt;&lt;/p&gt;
+&lt;p&gt;或者使用本地的壁纸其实也挺不错的。&lt;/p&gt;
+&lt;h2&gt;8、字体&lt;/h2&gt;
+&lt;p&gt;由于是用做开发环境，对于各个字符的区分就格外重要，像一些字体里面的 [ I (大写的i) 、1、 l (小写的L) ]、[ 0、O (大写的o) ] 等一度让人崩溃。
+JetBrainsMono,下载后解压到 /usr/share/fonts 下重启即可。
+&lt;img src="images/manjaro_font.png" alt="pic_16 font" width=900px /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;JetBrains 最近也专门为开发人员设计了一种全新的编程专用字体——JetBrains Mono！代码显示效果非常出色，字体辨识度很高，而且这款字体是完全开源免费、可商用！
+JetBrains 表示：“在对 JetBrains Mono 字体进行开发时，曾重点研究了长时间阅读代码期间可能导致眼睛疲劳的问题”。他们考虑了字母的大小和形状、字体之间的空间量、等宽字体设计的平衡、移除不必要的细节、连字显示问题、以及难以区分的字母和符号 (例如 I 和 l 的显示区别) 等等。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;下载地址：&lt;a href="https://download.jetbrains.com/fonts/JetBrainsMono-2.001.zip"&gt;https://download.jetbrains.com/fonts/JetBrainsMono-2.001.zip&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;9、其他&lt;/h2&gt;
+&lt;p&gt;还有如放大缩小的标改为mac的样子、启动后加载等待的动画、登录页面的样式、图标的更换、整体系统的颜色样式等等、由于精力有限且电脑不太允许，喜欢的可以自行摸索。&lt;/p&gt;
+&lt;h1&gt;四、时间设置&lt;/h1&gt;
+&lt;p&gt;&lt;mark&gt;## TODO&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;这里有些乱。有时间补齐全&lt;/p&gt;
+&lt;h2&gt;硬件时钟和系统时钟&lt;/h2&gt;
+&lt;p&gt;系统用两个时钟保存时间：硬件时钟和系统时钟。&lt;/p&gt;
+&lt;p&gt;硬件时钟(即实时时钟 RTC 或 CMOS 时钟)仅能保存：年、月、日、时、分、秒这些时间数值，无法保存时间标准(UTC 或 localtime)和是否使用夏令时调节。&lt;/p&gt;
+&lt;p&gt;系统时钟(即软件时间) 与硬件时间分别维护，保存了：时间、时区和夏令时设置。Linux 内核保存为自 UTC 时间 1970 年1月1日经过的秒数。初始系统时钟是从硬件时间计算得来，计算时会考虑/etc/adjtime的设置。系统启动之后，系统时钟与硬件时钟独立运行，Linux 通过时钟中断计数维护系统时钟。&lt;/p&gt;
+&lt;p&gt;因为系统时间是按 32 位整数保存的，最大只能记到 2038 年，所以 32 位 Linux 系统将在 2038 年停止工作。&lt;/p&gt;
+&lt;p&gt;大部分操作系统的时间管理包括如下方面：&lt;/p&gt;
+&lt;p&gt;启动时根据硬件时钟设置系统时间
+运行时通过时间同步联网校正时间
+关机时根据系统时间设置硬件时间&lt;/p&gt;
+&lt;h2&gt;时间标准&lt;/h2&gt;
+&lt;p&gt;时间表示有两个标准：localtime 和 UTC(Coordinated Universal Time) 。UTC 是与时区无关的全球时间标准。尽管概念上有差别，UTC 和 GMT (格林威治时间) 是一样的。localtime 标准则依赖于当前时区。&lt;/p&gt;
+&lt;p&gt;时间标准由操作系统设定，Windows 默认使用 localtime，Mac OS 默认使用 UTC 而 UNIX 系列的操作系统两者都有。使用 Linux 时，最好将硬件时钟设置为 UTC 标准，并在所有操作系统中使用。这样 Linux 系统就可以自动调整夏令时设置，而如果使用 localtime 标准那么系统时间不会根据夏令时自动调整。&lt;/p&gt;
+&lt;p&gt;修改Linux方案：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;timedatectl set-local-rtc 1 --adjust-system-clock
+timedatectl set-ntp 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;修改Windows方案：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]&lt;/span&gt;
+   &lt;span class="na"&gt;&amp;quot;RealTimeIsUniversal&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;dword:00000001&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;五、启动项设置&lt;/h1&gt;
+&lt;h2&gt;1、refind（Win + Mac + Linux）&lt;/h2&gt;
+&lt;p&gt;windows10 + manjaro双系统，先有的 win10后安装manjaro，manjaro 的 grub 启动项会替代 win10 原来的并且能识别 win10,界面也不错，不挑剔的话改一下选择系统的等待时间就可以了&lt;/p&gt;
+&lt;p&gt;自己的笔记本有大神几乎完美安装了黑苹果，自己也学着黑了下，目前除蓝牙不能用以外其他的几乎完美，虽然不怎么用，但毕竟是一次大胆的探索，占用的空间也不是很大，就当做个纪念(主要看着牛啊😁)&lt;/p&gt;
+&lt;p&gt;然后就出现了很尴尬的情况，manjaro 的引导只能识别windows 和manjaro，黑苹果的 Clover 只能识别 Mac 和windows，这时候 refind 就完美的解决了这个问题，把manjaro 的启动选项固定时间设为0,就可以跳过选择进入manjaro，win10 本来就没有等待直接进入，Clover 也是一样跳过等待就可以。&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;## TODO&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;对于如何在linux使用 efibootmgr 命令去设置启动项的先后顺序以及删除不必要的等等未添加&lt;/p&gt;
+&lt;h2&gt;2、grub主题修改（Win + Linux）&lt;/h2&gt;
+&lt;p&gt;现在有很多好看的主题可以修改了，而且修改相对简单，如果没有 Mac 的话建议使用这个,下载的时候注意选择合适的分辨率(1080P、2K、4K)&lt;/p&gt;
+&lt;h3&gt;第一步：&lt;/h3&gt;
+&lt;p&gt;在 &lt;a href="https://www.gnome-look.org/browse/cat/109/ord/rating/"&gt;https://www.gnome-look.org/browse/cat/109/ord/rating/&lt;/a&gt; 下载自己喜欢的主题，已经测试，墙内可以使用，但可能会慢些&lt;/p&gt;
+&lt;h4&gt;现在比较热门的两个主题:&lt;/h4&gt;
+&lt;h5&gt;Tela grub themeOriginal&lt;/h5&gt;
+&lt;p&gt;&lt;img src="images/manjaro_grub_Tela.png" alt="pic_17 grub_Tela"  width=900px /&gt;&lt;/p&gt;
+&lt;h5&gt;Grub-theme-vimixOriginal&lt;/h5&gt;
+&lt;p&gt;&lt;img src="images/manjaro_grub_vimixOriginal.png" alt="pic_18 grub_vimixOriginal"  width=900px /&gt;&lt;/p&gt;
+&lt;h3&gt;第二步、&lt;/h3&gt;
+&lt;p&gt;解压下载的文件，切换到解压的目录里面，查看文件会发现有一个 install.sh 文件，运行该文件即可&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -xvJf Tela-1080p.tar.gz
+cd Tela-1080p
+sudo ./install.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;如果觉得不满意，可以自己去查资料去调整配置文件的参数区打造一个适合自己的grub启动项。&lt;/p&gt;
+&lt;h1&gt;六、问题：&lt;/h1&gt;
+&lt;h2&gt;1、改快捷方式&lt;/h2&gt;
+&lt;p&gt;去system setting 里面修改move to trash的快捷方式时，一直报错：
+[ The key sequence Ctrl+D is ambiguous. Use 'Configure Shortcuts' from the 'Settings' menu to solve the ambiguity.  ]
+解决方法：系统里面设置的和在文件管理器里面的不是同一个快捷键，可用于桌面，文件管理器里面的在文件管理器里面设置这样就不冲突了。&lt;/p&gt;
+&lt;h2&gt;2、Yakuake&lt;/h2&gt;
+&lt;p&gt;下拉命令行的快捷键原来是f12,和浏览器的有冲突，记得修改。&lt;/p&gt;
+&lt;h2&gt;3、kde-connect&lt;/h2&gt;
+&lt;p&gt;中间在使用 kde-connect 传东西的时候传的不完整，会缺少文件，想着换一个类似的，在搜索后下载了一个sendanywhere，然后自动给浏览器也添加了一个插件，然后系统就变得很卡很卡，其实也不确定是不是，明天测试一下。结果证明不是。详细原因看下面。&lt;/p&gt;
+&lt;h2&gt;4、系统卡顿原因&lt;/h2&gt;
+&lt;p&gt;在开机的时候挺流畅的，运行几分种后就特别卡，点击文件打开需要很长时间，鼠标移动也特别卡，去 htop 看了一下，最开始只关注 cpu 的情况，但是占用不是很大，就怀疑是不是硬盘的问题(硬盘是二手的)，尝试删除了一些新安装的软件，也没有用，去看了驱动的情况，也没有问题，后来再去仔细看了下 htop 的结果，结果发现了一个叫 baloo_file_extractor 的进程竟然占用着256G的磁盘空间，自己当初给 manjaro 的总空间都不足100G，kill 后速度明显恢复了，但是很快又卡了，再看，这个进程竟然又自己启动了，去网上查了下资料，没有的到一个很好的结果，有一个说法说这是 KDE 桌面留下来的bug，但是一直没有给解决，他会在你开机后疯狂的往磁盘里面写入，从而造成系统卡顿。网上解决的方法挺多的，但我采取了最简单的一种，立刻停止并禁止启用，不知道禁止启用会不会在一些方面造成影响，有的话后续再补充。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;balooctl suspend  # 立即停止
+balooctl disable  # 禁止启用
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;5、mysql问题&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="pic_19 mysql-problem" src="images/manjaro_mysql-problem.png"&gt;&lt;/p&gt;
+&lt;p&gt;mysql服务没有启动。&lt;/p&gt;
+&lt;h2&gt;6、qq安装后无法启动（deein-wine-tim）&lt;/h2&gt;
+&lt;p&gt;Manjaro-KDE 桌面安装 TIM/QQ 的时候经常出现无法启动，其主要原因是 deein-wine-tim 打包了 Gnome 桌面部分内容，因此在 KDE 桌面环境下需要安装相应的 Gnome 桌面设置环境&lt;/p&gt;
+&lt;p&gt;安装gnome-settings-daemon&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S gnome-settings-daemon
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;依次进入system settings--&amp;gt;&amp;gt;autostar---&amp;gt;&amp;gt;add program 选择文件目录输入/usr/lib/gsd-xsettings 回车确定添加然后开启就可以了，如果没有 gsd-xsettings 就先重启一下就有了，然后再重启一下就可以打开了，第一次打开可能会提示更新wine，稍微等待一下就可以了&lt;/p&gt;
+&lt;h2&gt;7、使用ping命令无法验证自己的socks代理是否正确启用&lt;/h2&gt;
+&lt;p&gt;最常用的 &lt;code&gt;ping&lt;/code&gt; 网络检测命令即是使用的 &lt;code&gt;ICMP&lt;/code&gt; 协议&lt;/p&gt;
+&lt;p&gt;在 OSI 七层网络模型中，&lt;code&gt;ICMP&lt;/code&gt; 协议工作在第三层 - &lt;strong&gt;网络层&lt;/strong&gt;，&lt;code&gt;SOCKS&lt;/code&gt;（非套接字 socket）协议工作在第五层 - &lt;strong&gt;会话层&lt;/strong&gt;，&lt;code&gt;HTTP/HTTPS&lt;/code&gt; 协议工作在第七层 - &lt;strong&gt;应用层&lt;/strong&gt;，SSH 工作在第七层 - &lt;strong&gt;应用层&lt;/strong&gt;，它们在模型中不同的层次位置，决定了 HTTP/HTTPS 和 SSH 协议可以直接走 SOCKS 代理，而 ICMP 无法直接走 SOCKS 代理。&lt;/p&gt;
+&lt;p&gt;模型中不同协议的位置如下图：
+&lt;img src="images/manjaro_TCP&amp;IP.gif" alt="pic_20 TCP/IP"  width=900px /&gt;&lt;/p&gt;
+&lt;p&gt;HTTP 代理-仅有网页需求，访问Google，YouTube等网站
+Socks 代理-需要使用npm,brew等访问国外源下载软件，以及在Android Studio等软件中下载SDK等需要代理
+VPN-网游加速，访问自己公司内的内网。&lt;/p&gt;
+&lt;h2&gt;8、deb包的安装&lt;/h2&gt;
+&lt;p&gt;有时候去获得的软件源的得到的包不是 manajro 可以直接双击安装的
+而今天去下载的mindmaster的包格式便是 deb 的
+法一：
+、、、、 我在使用本方法的时候没有成功 、、、、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S debtap   # 安装第三方转换软件
+sudo debtap -u     # 更新，这步无法解决，挂代理还是不挂都失败
+debtap package_name.deb  # 对包进行转换
+sudo pacman -U package  # 安装
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="pic_21 debtap_error" src="images/manjaro_debtap_error.png"&gt;&lt;/p&gt;
+&lt;p&gt;法二：
+直接解压 deb 文件，然后再解压包到根目录下
+也不一定，但是目前遇到的两个包解压后都是软件在/opt下，快捷方式在正常快捷方式的/usr/share/applications/下，可以先去查看是不是这些目录再解压到相应的目录下（最好是，这样可以不用去更改快捷方式里面的指定目录），或者先解压再复制过去也行。
+后期实际使用情况，有的可行，有的不行。&lt;/p&gt;
+&lt;h2&gt;9、pycharm的快捷键问题&lt;/h2&gt;
+&lt;p&gt;设置无法通过以往习惯的（ctrl+alt+s）呼出，估计有其他应用占用了这个快捷键，尝试去查找具体是哪一个占用了，目前没有找到，先改为alt+s将就用着吧。&lt;/p&gt;
+&lt;h2&gt;10、更新问题&lt;/h2&gt;
+&lt;p&gt;前期把 manjaro 的启动时间设置为0了，然后一段时间又恢复成默认的10s了，以为是系统bug导致的，今天有一个大版本的更新，包括内核，更新完成之后没有重启，电脑特别卡，重启后发现启动时间又变回去了，大版本的更新会重置之前的设置。&lt;/p&gt;
+&lt;h2&gt;11、启动器其找不到应用快捷方式&lt;/h2&gt;
+&lt;p&gt;有些自己通过解压安装的软件在启动器找不到相应的快捷方式，有点类似于解压安装的没有去写入注册表那样，
+大多数快捷方式是在‘/usr/share/applications/’下，第三方解压安装的也会解压到这，如果找不到，复制其快捷方式到
+‘/home/fish/.local/share/applications/’即可&lt;/p&gt;
+&lt;h2&gt;12、大版本更新启动等待时间变为默认&lt;/h2&gt;
+&lt;p&gt;这个没法解决，更新时会默认强制把boot/grub里面的文件更新，不能随便删除替换，只能更新一次去更改一次 /boot/grub/grub.cfg文件，而且是重启后更改。&lt;/p&gt;
+&lt;h2&gt;13、Appimages软件创建桌面图标&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;您是否曾经下载过Appimages文件，却不知道如何使用它；或者也许您知道如何使用它，但是每次运行该文件时，都必须导航到下载.Appimages文件的文件夹，或者手动为其创建启动器。
+用 AppimagesLauncher，这些都是过去的问题。该应用程序可让您轻松运行Appimages文件，而无需使其可执行文件，但其最有趣的功能是轻松将Appimages与系统集成：AppimagesLauncher可以自动将Appimages应用程序快捷方式添加到桌面环境的应用程序中启动器/菜单（包括应用程序图标和正确的说明）。&lt;/p&gt;
+&lt;p&gt;这是一个例子，我想用 肯登利夫 在Ubuntu中，但是我不想从存储库中安装它，因为它具有大量的KDE依赖关系，并且我不希望它们在我的Gnome系统上。由于没有Flatpak或Snap映像，因此我’继续下载Kdenlive Appimages。
+在没有手动使下载的Kdenline Appimages可执行文件的情况下，我第一次双击它（安装了AppimagesLauncher），AppimagesLauncher提供了两个选项：一次运行或集成并运行。&lt;/p&gt;
+&lt;p&gt;单击集成并运行，将Appimages复制到〜/ Applications文件夹（在主目录中）并添加到菜单中，然后启动该应用程序。更新或删除Appimages文件就像在桌面上一样简单您使用的环境支持桌面操作。例如，在Gnome Shell中，只需右键单击“活动概述”中的应用程序图标，然后选择“更新Appimages”或“从系统中删除：”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;下载地址：&lt;a href="https://github.com/TheAssassin/AppimagesLauncher/releases"&gt;https://github.com/TheAssassin/AppimagesLauncher/releases&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;14、无法连接到 Tor&lt;/h2&gt;
+&lt;p&gt;开始直接使用的是本地的网络，但是无法进入，后切换使用代理后成功进入，再根据查找的资料，大概原因可能是所用的网络可能存在封锁。&lt;/p&gt;
+&lt;p&gt;如果本地网络没法进入请使用代理。&lt;/p&gt;
+&lt;h2&gt;15 、.run文件的运行&lt;/h2&gt;
+&lt;p&gt;下载后检查有没有权限，没有的话为其添加权限&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;chmod 755 test.run
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;然后双击或者命令行
+./test.run运行，避免后期权限问题报错，加sudo吧。&lt;/p&gt;
+&lt;h2&gt;16、无意切换到终端模式&lt;/h2&gt;
+&lt;p&gt;之前有在使用快捷键的时候摁错了导致进入了全命令行的终端模式，当时一点头绪都没有，只有强行关机重启。&lt;/p&gt;
+&lt;p&gt;今天在使用 ctrl + alt + f5 的时候进入了，就去查询了一下相关的：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;终端模式又称作命令行模式或者字符模式，默认情况下linux提供六个终端，使用组合键ctrl+alt+F1进入第一个终端，使用组合键ctrl+alt+F2进入第二个终端，其他终端的组合键以此类推.&lt;/p&gt;
+&lt;p&gt;终端又叫做tty，linux定义了六个tty，分别从tty1到tty6，tty是teletype的简写。从tty1到tty6被称为虚拟终端，如果想要切换回桌面，只需要使用组合键ctrl+alt+F7即可。&lt;/p&gt;
+&lt;p&gt;注意，如果系统设定默认启动的时候不启动图形界面，则tty7是不可用的。
+此时，若想从终端字符界面进入图形界面就需要使用命令startx
+命令如下# startx
+'#'是一个提示符，表示当前登陆的用户是root用户，也就是超级用户
+$ 也是一个提示符，表示当前登陆的用户是一个普通用户。
+超级用户拥有对系统的全部权限，可实现所有的功能。普通用户只有部分功能。这就是区别，看词就可以定义。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;17、开机自动挂载windows分区&lt;/h2&gt;
+&lt;p&gt;没有任何配置的话 linux 开机默认是不会挂载 windows 分区的，只有比如进入文件管理器点击相应的分区后才会挂载，并且只会在本次有效，重启后恢复默认，这就造成了例如上一次导入的 windows 分区内的歌曲，视频，文件等等都会显示文件不存在或者无法找到等情况。&lt;/p&gt;
+&lt;p&gt;KDE 暂时不清楚，在 XFCE 下无论是通过在 /etc/fstab 里写入挂载的盘还是通过开机即执行挂载命令均为成功。先这样吧。&lt;/p&gt;
+&lt;h2&gt;18、Chrome 浏览器强制使用安全搜索模式&lt;/h2&gt;
+&lt;p&gt;不清楚是自己使用的代理的问题还是说最近 google 在上次更新后加入了这项机制，在设置账户为中文的情况下会默认打开安全搜索模式且无法关闭（关闭保存退出后也会自动打开），解决方法是切换到其他语言如英语就可以关闭了。&lt;/p&gt;
+&lt;h2&gt;19、Chrome更新后的Reading List 取消&lt;/h2&gt;
+&lt;p&gt;自上次无意更新 Chrome 后在标签栏的位置增加了一个新条目（功能）Reading List，功能感觉像是之前使用的插件 onetab，在添加书签会多一个选择，在打开书签目录的时候由于最右边的位置被占用了，使用习惯就很别扭。&lt;/p&gt;
+&lt;p&gt;取消方法：
+地址栏输入：&lt;code&gt;chrome://flags/#read-later&lt;/code&gt;
+把 default 改为 disabled     后 relaunch 后即可&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;贰、Manjaro-XFCE&lt;/h1&gt;
+&lt;p&gt;之前的 manajaro-kde 为18版本，当时分区/boot/efi并没有出错，但是在这次的 manjaro-xfce-20.1 如此分区时安装到后期报错，大概看后解释说是因为先安装有 win10,win10已经存在一个/boot/efi分区，因此造成冲突，将win10的分区挂载但是保持不格式化，然后分区/boot就可以了。
+美化什么的就不要有太多期望了，可操作性很小，但是其本身虽然是很轻巧的，但是从同图标到整体风格都刚刚好，没有任何粗糙的感觉。
+安装的东西过程大多相同，但也有些差异。
+代理的全局设置一直是一个很头疼的问题，以前在 ubuntu 没有解决，在 manjaro-kde 前期也一直在寻找合适的方法，后面在系统里面有设置全局代理解决了，但这个因为是轻量级所以没有了。&lt;/p&gt;
+&lt;h2&gt;软件&lt;/h2&gt;
+&lt;p&gt;这次大多软件采用手动安装了&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;redis&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mongodb&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mysql&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;nodejs&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;wps&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;tor&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;telegram&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;appimageslauncher&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;vnote&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sublime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;go&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;qv2ray&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;filezilla&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S geeqie 看图
+yay -S ark 解压，自带的engrampa解压速度快但是解压的类型很少
+sudo pacman -R midori mousepad
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;之前配置过zsh，为了方便留了文件，直接本地安装吧
+&lt;a href="https://github.com/ohmyzsh/ohmyzsh"&gt;https://github.com/ohmyzsh/ohmyzsh&lt;/a&gt;下载oh-my-zsh:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cp oh-my-zsh/ ~/.oh--my-zsh
+cp oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;插件：
+&lt;a href="https://github.com/wting/autojump"&gt;autojump:&lt;/a&gt;
+&lt;a href="https://github.com/zsh-users/zsh-autosuggestions"&gt;zsh-autosuggestions&lt;/a&gt;
+&lt;a href="https://github.com/zsh-users/zsh-syntax-highlighting"&gt;zsh-syntax-highlighting&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;问题&lt;/h2&gt;
+&lt;h3&gt;1、.Appimages文件无法打开&lt;/h3&gt;
+&lt;p&gt;不知道是不是动了什么东西，导致最开始能打开的 .Appimages 文件无法打开了，报错忘记截图了，大概意思是 linux 的 fuse 模块没有自动加载，&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo vim /etc/rc.moudules
+添加 modprobe fuse
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;2、快捷方式&lt;/h3&gt;
+&lt;p&gt;在一开始的时候 win 键盘可以正常使用，但是后来可能是更新了还是什么的，不起作用了，而且之前设置的 xfce4-terminal 下拉终端也 不起作用了，去快捷方式里面找，直接不见之前的一些设置了，而且重置也和最开始配置的那会不一样，最后查询了终于补齐了，但是有新的问题，比如调用文件夹的是&lt;code&gt;WIN + E&lt;/code&gt; ，会先打开开始模块再打开文件夹，相当于是个bug吧，只能用右边的 WIN 键，但是不方便，只好改一个键。&lt;/p&gt;
+&lt;p&gt;而且有两个设置快捷键的地方，都去改动一下。删除不需要的，以免是全局的影响了其他软件的使用
+&lt;img alt="pic_22 Keyboard" src="images/manjaro_keyboard.png"&gt;&lt;/p&gt;
+&lt;h3&gt;3、pycharm  中 md 文件预览乱码 &amp;amp; 一些中文字体的不正常(如门，画等)&lt;/h3&gt;
+&lt;p&gt;方法来自&lt;a href="http://panqiincs.me/2019/06/05/after-installing-manjaro/"&gt;http://panqiincs.me/2019/06/05/after-installing-manjaro/&lt;/a&gt;，应该大多数linux都可以用吧&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S ttf-roboto noto-fonts ttf-dejavu
+# 文泉驿
+sudo pacman -S wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei
+# 思源字体
+sudo pacman -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;创建文件~/.config/fontconfig/fonts.conf，加入下面的配置：&lt;/p&gt;
+&lt;p&gt;```&amp;lt;?xml&lt;/p&gt;
+&lt;!DOCTYPE fontconfig SYSTEM "fonts.dtd"&gt;
+
+&lt;p&gt;&lt;fontconfig&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;its:rules&lt;/span&gt; &lt;span class="na"&gt;xmlns:its=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/2005/11/its&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;version=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;1.0&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;its:translateRule&lt;/span&gt; &lt;span class="na"&gt;translate=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;no&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;selector=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;/fontconfig/*[not(self::description)]&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/its:rules&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;description&amp;gt;&lt;/span&gt;Manjaro Font Config&lt;span class="nt"&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+
+&lt;span class="c"&gt;&amp;lt;!-- Font directory list --&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;dir&amp;gt;&lt;/span&gt;/usr/share/fonts&lt;span class="nt"&gt;&amp;lt;/dir&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;dir&amp;gt;&lt;/span&gt;/usr/local/share/fonts&lt;span class="nt"&gt;&amp;lt;/dir&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;dir&lt;/span&gt; &lt;span class="na"&gt;prefix=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;xdg&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;fonts&lt;span class="nt"&gt;&amp;lt;/dir&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;dir&amp;gt;&lt;/span&gt;~/.fonts&lt;span class="nt"&gt;&amp;lt;/dir&amp;gt;&lt;/span&gt; &lt;span class="c"&gt;&amp;lt;!-- this line will be removed in the future --&amp;gt;&lt;/span&gt;
+
+&lt;span class="c"&gt;&amp;lt;!-- 自动微调 微调 抗锯齿 内嵌点阵字体 --&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;match&lt;/span&gt; &lt;span class="na"&gt;target=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;font&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;edit&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;autohint&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;bool&amp;gt;&lt;/span&gt;false&lt;span class="nt"&gt;&amp;lt;/bool&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;edit&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hinting&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;bool&amp;gt;&lt;/span&gt;true&lt;span class="nt"&gt;&amp;lt;/bool&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;edit&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;antialias&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;bool&amp;gt;&lt;/span&gt;true&lt;span class="nt"&gt;&amp;lt;/bool&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;edit&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;embeddedbitmap&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;mode=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;assign&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;bool&amp;gt;&lt;/span&gt;false&lt;span class="nt"&gt;&amp;lt;/bool&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
+
+&lt;span class="c"&gt;&amp;lt;!-- 英文默认字体使用 Roboto 和 Noto Serif ,终端使用 DejaVu Sans Mono. --&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;match&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;test&lt;/span&gt; &lt;span class="na"&gt;qual=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;any&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;serif&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/test&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;edit&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;mode=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;prepend&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;binding=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;strong&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;Noto Serif&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;match&lt;/span&gt; &lt;span class="na"&gt;target=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;pattern&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;test&lt;/span&gt; &lt;span class="na"&gt;qual=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;any&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;sans-serif&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/test&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;edit&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;mode=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;prepend&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;binding=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;strong&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;Roboto&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;match&lt;/span&gt; &lt;span class="na"&gt;target=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;pattern&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;test&lt;/span&gt; &lt;span class="na"&gt;qual=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;any&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;monospace&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/test&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;edit&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;mode=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;prepend&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;binding=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;strong&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;DejaVu Sans Mono&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
+
+&lt;span class="c"&gt;&amp;lt;!-- 中文默认字体使用思源宋体,不使用 Noto Sans CJK SC 是因为这个字体会在特定情况下显示片假字. --&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;match&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;test&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;lang&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;compare=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;contains&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;zh&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/test&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;test&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;serif&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/test&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;edit&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;mode=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;prepend&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;Source Han Serif CN&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;match&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;test&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;lang&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;compare=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;contains&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;zh&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/test&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;test&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;sans-serif&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/test&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;edit&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;mode=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;prepend&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;Source Han Sans CN&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;match&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;test&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;lang&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;compare=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;contains&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;zh&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/test&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;test&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;monospace&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/test&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;edit&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;mode=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;prepend&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;Noto Sans Mono CJK SC&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
+
+&lt;span class="c"&gt;&amp;lt;!-- 把Linux没有的中文字体映射到已有字体，这样当这些字体未安装时会有替代字体 --&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;match&lt;/span&gt; &lt;span class="na"&gt;target=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;pattern&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;test&lt;/span&gt; &lt;span class="na"&gt;qual=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;any&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;SimHei&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/test&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;edit&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;mode=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;assign&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;binding=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;same&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;Source Han Sans CN&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;match&lt;/span&gt; &lt;span class="na"&gt;target=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;pattern&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;test&lt;/span&gt; &lt;span class="na"&gt;qual=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;any&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;SimSun&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/test&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;edit&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;mode=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;assign&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;binding=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;same&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;Source Han Serif CN&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;match&lt;/span&gt; &lt;span class="na"&gt;target=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;pattern&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;test&lt;/span&gt; &lt;span class="na"&gt;qual=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;any&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;SimSun-18030&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/test&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;edit&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;mode=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;assign&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;binding=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;same&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;Source Han Serif CN&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
+
+&lt;span class="c"&gt;&amp;lt;!-- Load local system customization file --&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;include&lt;/span&gt; &lt;span class="na"&gt;ignore_missing=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;yes&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;conf.d&lt;span class="nt"&gt;&amp;lt;/include&amp;gt;&lt;/span&gt;
+&lt;span class="c"&gt;&amp;lt;!-- Font cache directory list --&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;cachedir&amp;gt;&lt;/span&gt;/var/cache/fontconfig&lt;span class="nt"&gt;&amp;lt;/cachedir&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;cachedir&lt;/span&gt; &lt;span class="na"&gt;prefix=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;xdg&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;fontconfig&lt;span class="nt"&gt;&amp;lt;/cachedir&amp;gt;&lt;/span&gt;
+&lt;span class="c"&gt;&amp;lt;!-- will be removed in the future --&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;cachedir&amp;gt;&lt;/span&gt;~/.fontconfig&lt;span class="nt"&gt;&amp;lt;/cachedir&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;config&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- Rescan in every 30s when FcFontSetList is called --&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;rescan&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;int&amp;gt;&lt;/span&gt;30&lt;span class="nt"&gt;&amp;lt;/int&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;/rescan&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/config&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;/fontconfig&gt;
+```&lt;/p&gt;
+&lt;h3&gt;4、fcitx-googlepinyin 也就是谷歌输入法打不出顿号&lt;/h3&gt;
+&lt;p&gt;前一次在 pycharm 编辑的时候记得就出现了，但是自己当时只不过是当作是一些小问题，没准重启能够解决，但是今天在编辑markdown文本的时候，迫切的需要，但是已经明确切换到中文输入法状态下，点击回车键上的反斜杠“\”，出来的还是反斜杆，一直查不出什么原因，无论是重启还是修改一些配置，最终在网上找到了解决方法。&lt;/p&gt;
+&lt;p&gt;使用中英文标点切换快捷键（ctrl+.）[ 以前不知道这个快捷键]&lt;/p&gt;
+&lt;p&gt;估计是在pycharm使用快捷方式时不小心给触碰到了导致的。&lt;/p&gt;
+&lt;h3&gt;5、Qv2ray代理突然无法使用&lt;/h3&gt;
+&lt;p&gt;以前在代理失效时会有类似的情况，但是在更换了手机上测试可以使用的代理，确定其端口没有被占用，使用的网络没有问题，其 v2ray 启动成功 等等等等之后，还是无法使用代理。&lt;/p&gt;
+&lt;p&gt;最后想到自己在前一晚切换到 Win 环境下，而那时 Win 的时间被自己修改过，回想起自己最初使用 Linux 时候由于没有配置时间导致其使用斗鱼无法使用，于是乎去修改了自己的时间，重启代理，问题就解决了。&lt;/p&gt;
+&lt;h2&gt;使用体验&lt;/h2&gt;
+&lt;p&gt;卡顿的情况缓解了很多，其次很明显的是在更新，不会两三天就提醒更新一次，以前更新的大多是 KDE 的配置文件以及一些自带的软件但是自己没有区使用或者不清楚其用处而又不敢轻易删除的软件。&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;## TODO&lt;/mark&gt;
+在一次使用 kali_live 的时候，manjaro 的家目录被挂载了，以前其他的也会这样，但是这次进去后可以有权限打开、浏览、修改里面的文件。
+为什么以及如何避免。&lt;/p&gt;</content><category term="Others"></category><category term="linux"></category><category term="manjaro"></category></entry></feed>
