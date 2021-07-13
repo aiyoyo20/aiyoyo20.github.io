@@ -5,44 +5,37 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://aiyoyo20.github.io/</loc>
-<lastmod>2021-06-30T10:47:27-00:00</lastmod>
+<lastmod>2021-07-13T18:56:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
 <loc>https://aiyoyo20.github.io/tags.html</loc>
-<lastmod>2021-06-30T10:47:27-00:00</lastmod>
+<lastmod>2021-07-13T18:56:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
 <loc>https://aiyoyo20.github.io/categories.html</loc>
-<lastmod>2021-06-30T10:47:27-00:00</lastmod>
+<lastmod>2021-07-13T18:56:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
 <loc>https://aiyoyo20.github.io/authors.html</loc>
-<lastmod>2021-06-30T10:47:27-00:00</lastmod>
+<lastmod>2021-07-13T18:56:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
 <loc>https://aiyoyo20.github.io/archives.html</loc>
-<lastmod>2021-06-30T10:47:27-00:00</lastmod>
+<lastmod>2021-07-13T18:56:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
-</url>
-
-<url>
-<loc>https://aiyoyo20.github.io/articles/Manjaro 的选择、安装、配置.html</loc>
-<lastmod>2020-09-03T10:20:00+08:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1</priority>
 </url>
 
 <url>
@@ -103,6 +96,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://aiyoyo20.github.io/articles/kali.html</loc>
+<lastmod>2020-09-03T10:20:00+08:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>https://aiyoyo20.github.io/articles/manjaro-de-xuan-ze-an-zhuang-pei-zhi.html</loc>
 <lastmod>2020-09-03T10:20:00+08:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
@@ -207,20 +207,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://aiyoyo20.github.io/tag/linux.html</loc>
-<lastmod>2020-09-03T10:20:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.8</priority>
-</url>
-
-<url>
-<loc>https://aiyoyo20.github.io/tag/manjaro.html</loc>
-<lastmod>2020-09-03T10:20:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.8</priority>
-</url>
-
-<url>
 <loc>https://aiyoyo20.github.io/tag/android.html</loc>
 <lastmod>2020-09-03T10:20:00+08:06</lastmod>
 <changefreq>daily</changefreq>
@@ -228,7 +214,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://aiyoyo20.github.io/tag/linux.html</loc>
+<lastmod>2020-09-03T10:20:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
 <loc>https://aiyoyo20.github.io/tag/kali.html</loc>
+<lastmod>2020-09-03T10:20:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://aiyoyo20.github.io/tag/manjaro.html</loc>
 <lastmod>2020-09-03T10:20:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>

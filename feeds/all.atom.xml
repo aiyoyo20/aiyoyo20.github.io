@@ -1,5 +1,900 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>AIYOYO</title><link href="https://aiyoyo20.github.io/" rel="alternate"></link><link href="https://aiyoyo20.github.io/feeds/all.atom.xml" rel="self"></link><id>https://aiyoyo20.github.io/</id><updated>2020-09-03T10:20:00+08:00</updated><entry><title>['Manjaro 的选择、安装、配置', 'Manjaro 的选择、安装、配置']</title><link href="https://aiyoyo20.github.io/articles/Manjaro%20%E7%9A%84%E9%80%89%E6%8B%A9%E3%80%81%E5%AE%89%E8%A3%85%E3%80%81%E9%85%8D%E7%BD%AE.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>mainframer</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/Manjaro 的选择、安装、配置.html</id><summary type="html">&lt;style&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>AIYOYO</title><link href="https://aiyoyo20.github.io/" rel="alternate"></link><link href="https://aiyoyo20.github.io/feeds/all.atom.xml" rel="self"></link><id>https://aiyoyo20.github.io/</id><updated>2020-09-03T10:20:00+08:00</updated><entry><title>Android 推荐</title><link href="https://aiyoyo20.github.io/articles/android-tui-jian.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/android-tui-jian.html</id><content type="html">&lt;h1&gt;Mobile&lt;/h1&gt;
+&lt;p&gt;airdroid&lt;/p&gt;
+&lt;p&gt;神奇浏览器&lt;/p&gt;</content><category term="Android"></category><category term="Android"></category></entry><entry><title>笔记软件对比</title><link href="https://aiyoyo20.github.io/articles/bi-ji-ruan-jian-dui-bi.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/bi-ji-ruan-jian-dui-bi.html</id><summary type="html">&lt;p&gt;陆陆续续使用了不少软件记录笔记，从最初的记事本，word 再到现在用过的各种 markdown 软件，各有特色，做个总结吧，希望对没有接触过的有个直观的了解。&lt;/p&gt;
+&lt;p&gt;有的软件是早期的时候使用的，所以可能会出现上面写的一些问题在下载的最新版本中解决了优化了的情况。仅为自己当时的主观感受，不代表产品的实际，毕竟，每个人的喜好不一样。&lt;/p&gt;
+&lt;h1&gt;Markdown&lt;/h1&gt;
+&lt;h2&gt;1. Typora&lt;/h2&gt;
+&lt;p&gt;使用的第一款 markdown 编辑器，使用过程还是挺舒适的，在最开始不太熟悉 markdown 语法又想要 markdwon 格式的时候使用的，但也由于这样，在较长一段时间内才完全熟练 markdwon 的语法，可以说在一定程度上的依赖反而造成了拖累。&lt;/p&gt;
+&lt;p&gt;而且这种所见即所得的在其他的很多产品里都没有，最后还是放弃了。&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/Note_typora.png" alt="pic_1_typora" width=900px /&gt;&lt;/p&gt;
+&lt;p&gt;使用感受：
+主题多样可切换，
+'所见即所得'，写作时直接预览，这个各有看法吧，有的人说是简单主义，是个优点，而我更喜欢从代码编写。
+只能创建md文件，主要阅读的是md文件和一些文本文件，其他的无法读取或打开为乱码。
+可以打开多级文件夹，但是无法在软件内创建文件夹。&lt;/p&gt;
+&lt;p&gt;总结：如果单单作为一个 markdown …&lt;/p&gt;</summary><content type="html">&lt;p&gt;陆陆续续使用了不少软件记录笔记，从最初的记事本，word 再到现在用过的各种 markdown 软件，各有特色，做个总结吧，希望对没有接触过的有个直观的了解。&lt;/p&gt;
+&lt;p&gt;有的软件是早期的时候使用的，所以可能会出现上面写的一些问题在下载的最新版本中解决了优化了的情况。仅为自己当时的主观感受，不代表产品的实际，毕竟，每个人的喜好不一样。&lt;/p&gt;
+&lt;h1&gt;Markdown&lt;/h1&gt;
+&lt;h2&gt;1. Typora&lt;/h2&gt;
+&lt;p&gt;使用的第一款 markdown 编辑器，使用过程还是挺舒适的，在最开始不太熟悉 markdown 语法又想要 markdwon 格式的时候使用的，但也由于这样，在较长一段时间内才完全熟练 markdwon 的语法，可以说在一定程度上的依赖反而造成了拖累。&lt;/p&gt;
+&lt;p&gt;而且这种所见即所得的在其他的很多产品里都没有，最后还是放弃了。&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/Note_typora.png" alt="pic_1_typora" width=900px /&gt;&lt;/p&gt;
+&lt;p&gt;使用感受：
+主题多样可切换，
+'所见即所得'，写作时直接预览，这个各有看法吧，有的人说是简单主义，是个优点，而我更喜欢从代码编写。
+只能创建md文件，主要阅读的是md文件和一些文本文件，其他的无法读取或打开为乱码。
+可以打开多级文件夹，但是无法在软件内创建文件夹。&lt;/p&gt;
+&lt;p&gt;总结：如果单单作为一个 markdown 编辑器是很优秀的，大多数的功能都有，但是如果想要当作一个笔记，管理一个系列的文件显然是不够的，而这也正是我放弃的原因，后期的东西原来越多，日记，笔记等等，同步性等等，typora 已不能满足这些。&lt;/p&gt;
+&lt;p&gt;全平台：Windows、Mac、Linux
+语言：多语言，中英日等
+官网：&lt;a href="https://typora.io/"&gt;https://typora.io/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;2、Obsidian&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Obsidian 是一个功能强大的知识管理软件,是一款功能强大的带有关系图谱功能的双向链笔记。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="images/Note_obsidian.png" alt="pic_2_obsidian" width=900px /&gt;&lt;/p&gt;
+&lt;p&gt;可以安装一些插件，比如字数统计啥的。
+建立了社区进行交流，所以主题很多，各种使用也是满意的。
+关键在同时打开代码模式和预览模式的时候，滑动是同步的，需要修改的话很方便。
+但是某天我发现我在系统设置了利于编写代码的字体，里面却没有任何变化。仔细寻找了半天也没有发现可以自定义的地方。&lt;/p&gt;
+&lt;p&gt;全平台：Windows、Mac、Linux
+语言：语言挺多的，主要的语言都有
+官网：https://obsidian.md/
+Github项目地址：&lt;a href="https://github.com/obsidianmd/obsidian-releases/releases"&gt;https://github.com/obsidianmd/obsidian-releases/releases&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;3、Joplin&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Joplin 是一款全平台的开源且完全免费的笔记应用，同时也是一个高效的 To-Do 待办事项工具和生产力工具。你可以用标签或笔记本进行分类整理，笔记支持 Markdown，可实现全文搜索，并且你还可以使用自己喜欢的第三方外置编辑器如 Typora、VIM 来编辑笔记，以获得更好的写作体验。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="images/Note_Joplin.png" alt="pic_3_joplin" width=900px /&gt;&lt;/p&gt;
+&lt;p&gt;商业产品，7、8个主题可切换，支持多种云，保存更方便。
+可以免费使用，不影响。
+看着都挺好的，但不知道为什么就是没有心动的感觉。&lt;/p&gt;
+&lt;p&gt;多平台：Windows、macOS、Linux、iOS、Android 等主流桌面平台和手机平台都提供有客户端，甚至还提供了命令行版本
+语言：很多
+官网：&lt;a href="https://joplinapp.org/"&gt;https://joplinapp.org/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;4、Marktext&lt;/h2&gt;
+&lt;p&gt;有人将其称之为未来的 markdown 软件。&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/Note_marktext.png" alt="marktext" width=900px /&gt;&lt;/p&gt;
+&lt;p&gt;即可所见即所得，也可通过快捷键切换预览与编辑。
+关键可在里面为其编辑与预览指定字体。&lt;/p&gt;
+&lt;p&gt;初使用是不错的，但是在 mac 和 windows 上没有测试，在现在的linux上会有卡顿的情况，快捷键的延迟很高，甚至于没有响应。只能期待于以后的优化了再使用。&lt;/p&gt;
+&lt;p&gt;全平台：Windows、Mac、Linux
+语言：目前只有英语
+官网：&lt;a href="https://marktext.app/"&gt;https://marktext.app/&lt;/a&gt;
+Github项目地址：&lt;a href="https://github.com/marktext/marktext/releases"&gt;https://github.com/marktext/marktext/releases&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;5. Vnote&lt;/h2&gt;
+&lt;p&gt;免费的开源笔记软件。VNote 专注于 Markdown 的编辑与阅读，以提供舒适的编辑体验为设计目标。
+Vnote是一个大神也是市面上找不到很满足于自己的需求的软件，利用自己的闲余时间自己做的。
+作者自己也说了，借鉴了不少其他优秀的软件，所以整体的界面是很美观优雅的。&lt;/p&gt;
+&lt;p&gt;老版本：
+&lt;img src="images/Note_vnote_old.png" alt="pic_old_Vnote" width=900px /&gt;&lt;/p&gt;
+&lt;p&gt;新版本：
+&lt;img src="images/Note_vnote_new.png" alt="pic_new_Vnote" width=900px /&gt;&lt;/p&gt;
+&lt;p&gt;可定制性较强，界面支持小部件拖拽移动，放在自己喜欢的地方，调整为自己喜欢、习惯的布局。
+支持图片预览，且插入图片的图片可以通过内定的方式设置大小。方式为在写入图片地址后添加一个空格后写上设置的大小，如（=900x），但是这种方式仅仅对于使用了相同内置环境的编辑器有效，为了更兼容，在后期将所有需要设置大小的图片都改为了使用&lt;code&gt;&amp;lt;img /&amp;gt;&lt;/code&gt;标签去设置。但是需要注意这种方式不是 它的默认检测图片的范围内，所以修改完之后提示有图片不再使用，是否放入回收站，而实际上是使用的。&lt;/p&gt;
+&lt;p&gt;整个使用过程从 typora 迁移过来并没有很费劲，反而觉得在使用中由于是从代码编写，所以对 markdown 的语法有了更深刻的理解，也为了一些排版啥的去逐渐学习使用一些更为高级的语法使得自己的笔记更加美观与实用。
+如果有添加在目录下但是不使用的照片会提示是否删除，删除也不是直接删除，他自己会创建一个以日期为名的文件夹为回收站去另存，这个其实感觉可以定义为自己检查而不是自动检查，有时候由于编写打乱了图片链接的代码便会马上提示显得很麻烦，比较影响使用体验。&lt;/p&gt;
+&lt;p&gt;在后期版本更新的时候对界面做了大改，精简很多，但是这时自己的笔记已经较多了，最最最明显的一个问题暴露出来，早期的版本不支持目录，当较多的时候需要分类就不够用了，后期的版本可以了，但是在导入其他的笔记时，没有办法导入目录中的目录。&lt;/p&gt;
+&lt;p&gt;新版本修复了这个问题。所以又回来使用了。&lt;/p&gt;
+&lt;p&gt;全平台：Windows、Mac、Linux
+语言：中英日三种语言可选择
+官网:  &lt;a href="https://tamlok.github.io/vnote"&gt;https://tamlok.github.io/vnote&lt;/a&gt;
+Github项目地址:  &lt;a href="https://github.com/tamlok/vnote"&gt;https://github.com/tamlok/vnote&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Others&lt;/h1&gt;
+&lt;h2&gt;1  . Gridea&lt;/h2&gt;
+&lt;p&gt;Gridea 是一个静态博客写作客户端，帮助你更容易地构建并管理博客或任何静态站点。
+想要体验博客那种感觉？没有服务器？懒得在本地搭建环境？这个软件可以让你在客户端写作然后在本地网页可以预览效果。&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/Note_Gridea.png" alt="pic_3_Gridea" width=900px /&gt;&lt;/p&gt;
+&lt;p&gt;Markdown：知道你钟爱 Markdown 写作，我们也是
+快且安全：Gridea 所有文件都在你的本地，构建为更快更安全的静态网站，无需管理数据库，向 Wordpress 说拜拜
+简而不凡：简单几步即可搭建网站。无论博客抑或企业站点，强大的自定义能力，轻松驾驭&lt;/p&gt;
+&lt;p&gt;全平台：Windows、Mac、Linux
+语言：中英两种语言
+Github项目地址:  &lt;a href="https://github.com/getgridea/gridea/"&gt;https://github.com/getgridea/gridea/&lt;/a&gt;
+官网地址:  &lt;a href="https://gridea.dev/docs/"&gt;https://gridea.dev/docs/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;2. Trilium&lt;/h2&gt;
+&lt;p&gt;超高自由度的个人知识库&lt;/p&gt;
+&lt;p&gt;一开始自己看到他的演示文档中有目录存在，正常理解也应该是存在目录的，所以一开始尝试去添加一个自己的根文件夹，但是一直没找到，后来仔细去看了官方文档才了解到，他是没有明确指明目录结构的，但是构建的每一个（文档、代码、日记等等）都可以有无限的子节点，其实也就是相当于是有目录的，而且每个目录还都可以去详细的介绍是用来做什么的，更容易理解，去除了担心时间太久而忘记这个'目录是用来做什么的'，不用去多写一个介绍文档&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/Note_Trilium.png" alt="pic_4_Trilium" width=900px /&gt;&lt;/p&gt;
+&lt;p&gt;可加密，轻盈简洁，能让信息不受阻碍直接呈现在眼前，高自由度
+并且有一个配套的插件可以在网页中截图保存、保存整个网页、即时创建文本写入想要记下的。
+另外有一个服务器端的，有需要的可以布置到自己的服务器或者自己额外的电脑设备上，就可以通过网页访问了，在保障同步性的情况下完全不用担忧隐私安全问题。
+插件地址：&lt;a href="https://github.com/zadam/trilium-web-clipper/"&gt;https://github.com/zadam/trilium-web-clipper/&lt;/a&gt;
+使用的人并不是很多，除官网有介绍外，目前只找到一片日文的教程，且为19年的，配合谷歌翻译插件基本能了解大概怎么使用。
+&lt;a href="https://gigazine.net/news/20190118-trilium/"&gt;使用教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;以前用 markdown 去记笔记什么的，即时快捷方便，
+但是后期越来越多之后弊端也开始体验出来，单个文件不可能完整的去记录下所有的东西，而且不断的填充也不利于阅读，而不断的开新篇的话相互之间的关联很难做到完美
+也用于写日记，但是由于种种原因加密这一块是必须的，单弄一个软件来加密显得很笨拙而且麻烦，每一次编写但得反复的解密加密
+而 Trilium 很好的解决了上面的问题，且项目开源，安全性应该是有保障的。
+打造一个个人的知识库，在写作时可以不断加深巩固，也利于查缺补漏。
+可以记一些自己的临时想法，也可以随手贴上自己看到的一篇好文，自己对一部剧的理解，等等等等。&lt;/p&gt;
+&lt;p&gt;全平台：Windows、Mac、Linux
+语言：目前只有英文的，有个人用户对win64的做了简单的汉化并打包了的，可以自行搜索
+Github项目地址:  &lt;a href="https://github.com/zadam/trilium"&gt;https://github.com/zadam/trilium&lt;/a&gt;&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>博客使用经历</title><link href="https://aiyoyo20.github.io/articles/bo-ke-shi-yong-jing-li.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/bo-ke-shi-yong-jing-li.html</id><content type="html">&lt;h1&gt;wordpress&lt;/h1&gt;
+&lt;h1&gt;Github Page&lt;/h1&gt;
+&lt;h2&gt;静态模板系统选择&lt;/h2&gt;
+&lt;p&gt;Ruby 编写的 Jekyll
+Node.js 编写的 Hexo
+Go 编写的 Hugo
+Python 编写的 Pelican&lt;/p&gt;
+&lt;h3&gt;Gridea&lt;/h3&gt;
+&lt;p&gt;更人性化的 Gridea，在 windows 下能够全局代理还好，在 linux 下同步因为墙的原因，常常同步失败&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>chrome</title><link href="https://aiyoyo20.github.io/articles/chrome.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/chrome.html</id><summary type="html">&lt;h1&gt;插件&lt;/h1&gt;
+&lt;h2&gt;Adblock&lt;/h2&gt;
+&lt;p&gt;屏蔽广告&lt;/p&gt;
+&lt;h2&gt;AdGuard AdBlocker&lt;/h2&gt;
+&lt;p&gt;屏蔽广告&lt;/p&gt;
+&lt;h2&gt;Bookmark Sidebar&lt;/h2&gt;
+&lt;p&gt;收藏夹侧边栏显示，且打开可设置为在新标签打开
+原来的收藏夹在上面会占用一定的空间，且如果一直显示有时候在给别人展示的时候，会比较尴尬，快捷键去打开也比较麻烦&lt;/p&gt;
+&lt;h2&gt;Clean Master&lt;/h2&gt;
+&lt;p&gt;每次进入 Setting 去清除缓存以及一些垃圾的时候总是很繁琐，这个插件可以简化这些操作，一键清理&lt;/p&gt;
+&lt;h2&gt;Explain and Send Screenshots&lt;/h2&gt;
+&lt;p&gt;页面截图工具，可截取整个网页或者部分（如视频的暂停）&lt;/p&gt;
+&lt;h2&gt;fatkun图片批量下载&lt;/h2&gt;
+&lt;p&gt;很强大的图片下载器，一张张的图片下载很麻烦，这个可以快速选择下载图片并且保存位置可修改，选择时可以按自己设定的大小选择，快速去除不符合要求的图片&lt;/p&gt;
+&lt;h2&gt;fehelpr(前端助手)&lt;/h2&gt;
+&lt;p&gt;里面有很多小工具很实用&lt;/p&gt;
+&lt;h2&gt;onetab&lt;/h2&gt;
+&lt;p&gt;标签打开太多，占用大量运行空间，但是暂时用不到，或者看不完，又不必完全保存为收藏标签，这个插件可以很好的保存标签页，且可导出导入，很方便&lt;/p&gt;
+&lt;h2&gt;Print Friendly &amp;amp; PDF&lt;/h2&gt;
+&lt;p&gt;自带的print输出pdf时在遇到大网页时加载预览时常卡住 …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;插件&lt;/h1&gt;
+&lt;h2&gt;Adblock&lt;/h2&gt;
+&lt;p&gt;屏蔽广告&lt;/p&gt;
+&lt;h2&gt;AdGuard AdBlocker&lt;/h2&gt;
+&lt;p&gt;屏蔽广告&lt;/p&gt;
+&lt;h2&gt;Bookmark Sidebar&lt;/h2&gt;
+&lt;p&gt;收藏夹侧边栏显示，且打开可设置为在新标签打开
+原来的收藏夹在上面会占用一定的空间，且如果一直显示有时候在给别人展示的时候，会比较尴尬，快捷键去打开也比较麻烦&lt;/p&gt;
+&lt;h2&gt;Clean Master&lt;/h2&gt;
+&lt;p&gt;每次进入 Setting 去清除缓存以及一些垃圾的时候总是很繁琐，这个插件可以简化这些操作，一键清理&lt;/p&gt;
+&lt;h2&gt;Explain and Send Screenshots&lt;/h2&gt;
+&lt;p&gt;页面截图工具，可截取整个网页或者部分（如视频的暂停）&lt;/p&gt;
+&lt;h2&gt;fatkun图片批量下载&lt;/h2&gt;
+&lt;p&gt;很强大的图片下载器，一张张的图片下载很麻烦，这个可以快速选择下载图片并且保存位置可修改，选择时可以按自己设定的大小选择，快速去除不符合要求的图片&lt;/p&gt;
+&lt;h2&gt;fehelpr(前端助手)&lt;/h2&gt;
+&lt;p&gt;里面有很多小工具很实用&lt;/p&gt;
+&lt;h2&gt;onetab&lt;/h2&gt;
+&lt;p&gt;标签打开太多，占用大量运行空间，但是暂时用不到，或者看不完，又不必完全保存为收藏标签，这个插件可以很好的保存标签页，且可导出导入，很方便&lt;/p&gt;
+&lt;h2&gt;Print Friendly &amp;amp; PDF&lt;/h2&gt;
+&lt;p&gt;自带的print输出pdf时在遇到大网页时加载预览时常卡住，且可定制的内容太少，该插件提供更好的pdf输出&lt;/p&gt;
+&lt;h2&gt;Proxy SwitchyOmega&lt;/h2&gt;
+&lt;p&gt;很好用的代理切换插件&lt;/p&gt;
+&lt;h2&gt;Tampermonkey&lt;/h2&gt;
+&lt;p&gt;不解释，提供了很多其他丰富的脚本，不用每一种功能去装一个插件了&lt;/p&gt;
+&lt;h2&gt;划词翻译&lt;/h2&gt;
+&lt;p&gt;单词悬浮翻译，选中翻译，监听剪切板等，不错的翻译工具&lt;/p&gt;
+&lt;h2&gt;Vimium&lt;/h2&gt;
+&lt;p&gt;让操作浏览器像 vim 一样
+使用教程：&lt;a href="https://xiaoheidiannao.com/articles/Vim-For-Chrome.html#link-operation"&gt;https://xiaoheidiannao.com/articles/Vim-For-Chrome.html#link-operation&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;脚本&lt;/h1&gt;
+&lt;p&gt;脚本的使用是在安装了 Tampermonkey 的基础上&lt;/p&gt;
+&lt;h2&gt;all-search 全搜&lt;/h2&gt;
+&lt;p&gt;一个搜索引擎快捷跳转菜单, 支持图形界面自定义
+除了支持谷歌、百度、duck搜索等搜索引擎外，还支持图片、翻译、开发工具（github）等的快速跳转&lt;/p&gt;
+&lt;h2&gt;Search By Image&lt;/h2&gt;
+&lt;p&gt;通过ctrl开启热键后在想要搜索的图片右键即可跳出搜索图片的选择，多种搜索可选&lt;/p&gt;
+&lt;h2&gt;百度去广告，blur(毛玻璃)搜索框，美化&lt;/h2&gt;
+&lt;p&gt;在百度搜索的时候，为整个画面提供美化&lt;/p&gt;
+&lt;h2&gt;百度热点搜索屏蔽&lt;/h2&gt;
+&lt;p&gt;屏蔽点搜索后右侧的百度热点新闻，之前使用的，后来使用 Adblock 手动选择屏蔽就不用了&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>Docker</title><link href="https://aiyoyo20.github.io/articles/docker.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/docker.html</id><content type="html"></content><category term="Tools"></category><category term="linux"></category></entry><entry><title>服务器选择</title><link href="https://aiyoyo20.github.io/articles/fu-wu-qi-xuan-ze.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/fu-wu-qi-xuan-ze.html</id><summary type="html">&lt;h1&gt;ME&lt;/h1&gt;
+&lt;p class='ind'&gt;自己当初在选的时候主要对比了阿里的和百度的服务器，价格其实都还可以，但是中间是出了一个小插曲，自己在完成注册百度云后浏览了一下，但是并没有下单，然后过了几天有个小姐姐，说是销售经理，看我有这个意向就问了下我的需求，大概聊了一下，我给忘了聊了啥了然后加了微信，一看微信头像，嗯！还挺漂亮。我给细说了下我的需求然后给我推荐了一个，当时其实也不确定服务器自己拿来干啥就说再考虑几天，然后过了几天又来咨询，自己错过了几通电话但还是打过来，最后就买了一年的。记得那会花了178吧。&lt;/p&gt;
+&lt;p class='ind'&gt;然后那会自己对linux并不熟悉，加上那会用ubuntu爱瞎鼓捣老是把系统弄崩溃，三天两头重装系统。就一直没怎么使用上，一直搁置了小半年。害，女人误事啊！&lt;/p&gt;
+
+&lt;p class='ind'&gt;后来终于有时间了，就去鼓捣了wordpress博客，服务器配置、通过ip去访问的时候都挺好的，但是自己在注册域名的时候选择了一个国外的（1块钱1年），解析域名后过了一天提示域名不符合要求，意思就是这个域名是国外的，无法备案，又通过百度自己的注册了一个（也是1块钱1年），但是去解析的时候需要备案。自己是打算把这个博客当作一半日记本一半笔记本的，了解到一些其他的资料，对一些事有着自己的看法，可能会触及敏感，而且，国内的备案说白了就像让你脱了裤子在街上裸奔，虽然日常也差不多那样。而且近些年审查越来越让人摸不着头脑，写个东西还得去查查有没有敏感词汇，索性算了。自己存一个书签访问也没啥的 …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;ME&lt;/h1&gt;
+&lt;p class='ind'&gt;自己当初在选的时候主要对比了阿里的和百度的服务器，价格其实都还可以，但是中间是出了一个小插曲，自己在完成注册百度云后浏览了一下，但是并没有下单，然后过了几天有个小姐姐，说是销售经理，看我有这个意向就问了下我的需求，大概聊了一下，我给忘了聊了啥了然后加了微信，一看微信头像，嗯！还挺漂亮。我给细说了下我的需求然后给我推荐了一个，当时其实也不确定服务器自己拿来干啥就说再考虑几天，然后过了几天又来咨询，自己错过了几通电话但还是打过来，最后就买了一年的。记得那会花了178吧。&lt;/p&gt;
+&lt;p class='ind'&gt;然后那会自己对linux并不熟悉，加上那会用ubuntu爱瞎鼓捣老是把系统弄崩溃，三天两头重装系统。就一直没怎么使用上，一直搁置了小半年。害，女人误事啊！&lt;/p&gt;
+
+&lt;p class='ind'&gt;后来终于有时间了，就去鼓捣了wordpress博客，服务器配置、通过ip去访问的时候都挺好的，但是自己在注册域名的时候选择了一个国外的（1块钱1年），解析域名后过了一天提示域名不符合要求，意思就是这个域名是国外的，无法备案，又通过百度自己的注册了一个（也是1块钱1年），但是去解析的时候需要备案。自己是打算把这个博客当作一半日记本一半笔记本的，了解到一些其他的资料，对一些事有着自己的看法，可能会触及敏感，而且，国内的备案说白了就像让你脱了裤子在街上裸奔，虽然日常也差不多那样。而且近些年审查越来越让人摸不着头脑，写个东西还得去查查有没有敏感词汇，索性算了。自己存一个书签访问也没啥的。&lt;/p&gt;
+
+&lt;p class='ind'&gt;快要到期的时候又打电话来询问使用情况，大概是看要不要续费吧，虽然这次是个男的，不过说话也很客气，就直说了备案的事，过了会来说其实有可以不用备案的服务器，但是自己还是想脱离这种情况，又聊了下审查的事，这些事大家都是心知肚明的，就也没有说啥了，让我记得备份数据以免到期影响不必要的损失。&lt;/p&gt;
+&lt;p class='ind'&gt;国内的价格可能不是最低的，但是服务态度是很好的，如果不是那啥的话选择国内的服务器的话还是很好的，ping会更低，出了问题沟通也更方便。可惜了可惜了。&lt;/p&gt;
+
+&lt;p class='ind'&gt;近期因为要再选择一个服务器，就去查了一些资料，下面的两篇资料都来源于知乎。&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h1&gt;国外和国内性价比比较高的云服务器对比：&lt;/h1&gt;
+&lt;p&gt;&lt;img alt="" src="server_compare.png"&gt;&lt;/p&gt;
+&lt;h2&gt;一、国外性价比较高的云服务器的厂商&lt;/h2&gt;
+&lt;h3&gt;1、google云&lt;/h3&gt;
+&lt;p&gt;官网：https://cloud.google.com/
+优势：注册即送300美元的免费试用赠金，有效期是1年
+&lt;img alt="" src="server_google.png"&gt;&lt;/p&gt;
+&lt;p&gt;创建一个最低配的实例【1 vCPU；0.6GB内存；10GB硬盘】（我注册下来后，从来没用过，每个月大约花费1.14美元），
+使用1年绝对是绰绰有余的。谷歌在这块还是挺良心的。
+&lt;img alt="" src="server_google_price.png"&gt;
+有两点需要注意一下：
+1、注册的时候，需要填写一个美国地址。在这个http://www.shenfendaquan.com/网站可随机生成一个地址
+2、需要持有一张双币信用卡去注册，有网友说visa不能注册，但是我的就是招商银行的visa信用卡，也是能正常注册的。&lt;/p&gt;
+&lt;h3&gt;2、AWS&lt;/h3&gt;
+&lt;p&gt;官网：https://amazonaws-china.com/cn/&lt;/p&gt;
+&lt;p&gt;首页上的大Banner就挺吸引人的。
+&lt;img alt="" src="server_aws.png"&gt;
+对性能没有什么要求的同学，可以看
+&lt;img alt="" src="server_aws_price.png"&gt;
+申请EC2，12个月内，每个月可以免费使用750个小时（31天），如果不追求服务器的性能，这个性价比还是很高的。&lt;/p&gt;
+&lt;h3&gt;3、Vultr&lt;/h3&gt;
+&lt;p&gt;官网：https://www.vultr.com/
+使用的Vultr的人还是挺多的，稳定性也还行，关键还可以支持支付宝支付。
+以前注册时好像还有优惠码，但是现在好久没有用Vultr了，也不知道还有没有优惠。
+&lt;img alt="" src="server_vultr.png"&gt;&lt;/p&gt;
+&lt;h3&gt;4、搬瓦工&lt;/h3&gt;
+&lt;p&gt;官网：https://www.bwh88.net/
+配置和价格大概是这样婶的。
+&lt;img alt="412e_720w" src="server_bwh.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;总结：&lt;/p&gt;
+&lt;p&gt;如果要买国外的服务器，推荐用谷歌云和AWS，白嫖即艺术。&lt;/p&gt;
+&lt;h2&gt;二、国内比较好的云服务器的厂商（腾讯云、阿里云）&lt;/h2&gt;
+&lt;p&gt;虽然国外有限时免费的云服务器，但是我还是不推荐买国外的厂商，有点经济实力的，还是用国内的云服务器厂商比较靠谱。&lt;/p&gt;
+&lt;p&gt;优势在于：
+&lt;img alt="" src="server_home.png"&gt;&lt;/p&gt;
+&lt;h3&gt;1、腾讯云&lt;/h3&gt;
+&lt;p&gt;国内的云服务器厂商，稳定性、安全性、工单响应速度、性价比等方面，都还算不错，而腾讯云的性价比又是一大卖点，对于初级玩家来说，算是相当不错的了。&lt;/p&gt;
+&lt;p&gt;现在恰逢618，腾讯云这么喜欢搞活动，肯定是少不了促销的啦！&lt;/p&gt;
+&lt;p&gt;一年才95元，每天约等于0.26元，对于学生党来说，是相当友好的了。试想一下，去网咖开黑，一个小时好像都得10元了吧，如果拿这些钱省下来买个服务器，岂不美哉。&lt;/p&gt;
+&lt;h3&gt;2、阿里云&lt;/h3&gt;
+&lt;p&gt;口碑最佳，机器性能也十分不错，好多企业也都在用阿里云，毕竟阿里的技术真的没得黑。&lt;/p&gt;
+&lt;p&gt;最令我敬佩的是，之前加了一个阿里云的销售，咨询阿里云服务器的问题，当时因为没有什么活动，就没有买。&lt;/p&gt;
+&lt;p&gt;没想到每当阿里云有活动的时候，那个销售总会亲自通知我，云服务器搞优惠，这种敬业精神也是值得我们学习的。&lt;/p&gt;
+&lt;p&gt;目前阿里云也是有活动的。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="v2-82f7ce8147a" src="server_ali.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;总结：如果是学习和工作的话，还是建议买国内的服务器，毕竟稳定、好用、售后服务更好。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;服务器有关知识&lt;/h1&gt;
+&lt;p&gt;不知道大家是不是跟我一样，刚入行时总是搞不清物理服务器（独立服务器）、VPS服务器（虚拟专用）、云服务器、虚拟主机、裸金属服务器这些概念。说实话，我刚开始接触的时候也有点头大。后来随着了解地不断加深，逐渐清楚了这些服务器之间的区别，并且学会了如何挑选服务器。今天，我就将自己掌握的服务器有关知识全部分享给大家！希望对大家以后识别服务器、选购服务器能有帮助。&lt;/p&gt;
+&lt;p&gt;既然提到了上面这些概念，那就先从区别这些服务器开始吧！&lt;/p&gt;
+&lt;p&gt;物理服务器：又叫独立服务器或者传统服务器。顾名思义，物理服务器就是一台台看得见摸得着，摆在机房的实实在在的服务器。可以理解为是一台具有高计算能力、高性能、高安全性、高稳定性、高可控性，独立又完整的电脑。有硬盘、内存、CPU，可以自行分配实行多种网络功能服务，将各种软硬件资源集于一身。&lt;/p&gt;
+&lt;p&gt;应用场景：适合大型网站及应用。&lt;/p&gt;
+&lt;p&gt;优劣势：优点在于性能稳定、安全性高、更可控；缺点是需要专业的服务器运维人员管理，价格高，灵活性弱，扩展限制大。&lt;/p&gt;
+&lt;p&gt;价格：高。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;VPS服务器：又叫虚拟专用服务器。VPS服务器是用虚拟技术把物理服务器划分成若干个独立空间，每一个独立的空间都是虚拟专用服务器，也就是VPS服务器。由于是从物理服务器上虚拟出来的产品，因此没有物理服务器稳定，运算速度也要慢一些，性能不高，适合对配置要求不高的客户。&lt;/p&gt;
+&lt;p&gt;应用场景：适合预算不多的网站和应用。&lt;/p&gt;
+&lt;p&gt;优劣势：最主要的优势就是价格了，价格比物理服务器便宜很多，比虚拟主机贵不了多少，管理起来比较方便；缺点是在扩容、存储、稳定性方面都不及云服务器，这也是为什么大多数企业选择云服务器的原因。&lt;/p&gt;
+&lt;p&gt;价格：便宜。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;云服务器：又叫云主机，简称ECS。在一组集群服务器上虚拟出多个类似独立服务器的部分。云服务器不是单个的物理服务器，它们之间通过网络技术连接起来形成一台超级计算机，拥有独立的宽带和IP。云服务器具有安全可靠性高、易部署、扩展性高（即时扩展，按需扩展）、性价比高等特点。因为是多个服务器的集群，云服务器还具有硬件独享、资源独享、风险共享的优势。云服务器还具备容错性，故障恢复快，操作系统和软件环境皆可备份，恢复后无需重新配置软件环境。&lt;/p&gt;
+&lt;p&gt;应用场景：适用于中小型网站和应用。&lt;/p&gt;
+&lt;p&gt;优劣势：优点相比物理服务器更灵活，弹性伸缩管理，价格可按需实时制定，避免造成网络资源的浪费，降低了运营成本；缺点在安全性能方面，用户缺乏对云服务器的控制，因此出于企业数据安全层面考虑，建议选择大厂商。&lt;/p&gt;
+&lt;p&gt;价格：低。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;虚拟主机：又叫虚拟服务器或共享主机。是一种在单一主机或主机群上，比如物理服务器、VPS服务器或者云服务器上安装例如CPanel、Plesk等面板搭建而成的。虚拟主机市场比较混乱，使用云服务器最好（推荐阿里云），物理服务器也可以，但一般不推荐VPS作为虚拟主机的服务器。如果说用租房来比喻VPS和虚拟主机之间的区别，那VPS相当于整租，虚拟主机就是合租。但整租是毛坯房，合租是精装房。&lt;/p&gt;
+&lt;p&gt;应用场景：适用于非Java项目，且流量、内存较小的网站应用。&lt;/p&gt;
+&lt;p&gt;优劣势：优点在于价格便宜，和物理服务器相比降低了不少运营成本；缺点是稳定性、安全性等都很弱，网站在应对大流量访问时性能不足，对速度和流量有非常大的限制。&lt;/p&gt;
+&lt;p&gt;价格：最便宜。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;裸金属服务器：类似云上的专属物理服务器，在拥有弹性灵活的基础上，具有高性能的计算能力。计算性能与传统物理机无差别，具有安全物理隔离的特点。相当于传统物理服务器的“变态版”。裸金属服务器是集物理服务器的稳定性能，和云服务器高度弹性的资源优势于一身的超级平台。兼具超高计算性能的同时，满足用户对核心应用场景和服务器稳定性的要求。比如，阿里云弹性裸金属服务器-神龙，就具备这样的特点。&lt;/p&gt;
+&lt;p&gt;应用场景：适用于对数据安全、性能配置、安全监管等都要求非常严格的Web网站、中大型企业等重量级数据库应用、游戏和金融等高性能网站和应用。&lt;/p&gt;
+&lt;p&gt;优劣势：集合了物理服务器的稳定性和云服务器云上资源高度弹性的优势，性能更高，更灵活；缺点是价格相对较高。&lt;/p&gt;
+&lt;p&gt;价格：较高。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;讲完上面几种服务器的区别，可能有人会说还不知道服务器是什么呢，能不能系统地讲一下服务器到底是个什么东东啊？OK，继续往下看。&lt;/p&gt;
+&lt;p&gt;服务器是指能向网络用户提供特定服务的软件和硬件。&lt;/p&gt;
+&lt;p&gt;服务器的作用：&lt;/p&gt;
+&lt;p&gt;是为网络提供特定的服务，人们通常用服务器所能提供的主要服务来命名服务器，比如提供文件共享服务的服务器称为文件服务器，提供打印队列共享服务的服务器称为打印服务器等。&lt;/p&gt;
+&lt;p&gt;服务器工作原理：&lt;/p&gt;
+&lt;p&gt;如果把服务器比作人，处理器就是服务器的大脑，各种总线就像是分布于全身肌肉中的神经。芯片组有点像骨架，I/O设备就像是通过神经系统支配的人的手、眼睛、耳朵和嘴。电源系统相当于血液循环系统，将能量输送到身体的各个地方。&lt;/p&gt;
+&lt;p&gt;服务器作为软件，有很多形式的服务器：文件服务器、数据库服务器、Web服务器、邮件服务器、网页服务器、FTP服务器、域名服务器、应用程序服务器、代理服务器、游戏服务器等。&lt;/p&gt;
+&lt;p&gt;服务器系统的硬件构成包括中央处理器、硬盘、内存、芯片组、I/O总线、I/O设备、电源、机箱和相关软件等，和我们平时所接触的电脑有诸多相似之处。但是由于需要提供高可靠的服务，因此在处理能力、稳定性、可靠性、安全性、可扩展性、可管理性等方面要求较高。&lt;/p&gt;
+&lt;p&gt;作为服务器大脑的中央处理器，即服务器CPU，是衡量服务器性能的首要指标。接触过局域网络的朋友一定知道，服务器是网络中的重要设备，承载着成千上万用户的访问。因此对服务器有大数据量的快速吞吐、超强稳定性、长时间运行等严格要求。目前，服务器CPU仍按CPU的指令系统来区分，通常分为CISC型CPU和RISC型CPU。后来又出现了一种64位的VLIM指令系统的CPU。&lt;/p&gt;
+&lt;p&gt;服务器常见的外型有四种：塔式服务器（又称台式服务器）、机架服务器（rack）、刀片服务器（blade server）、机柜式服务器。&lt;/p&gt;
+&lt;p&gt;根据不同的计算能力，按网络规模划分，服务器又分为：工作组级服务器，部门级服务器和企业级服务器。这三者之间的关系是，由工作组级服务器到部门级服务器，再到企业级服务器，对所要服务的联网计算机的数量、处理速度和数据安全性、硬件配置、系统可靠性等要求依次递增。并且对应服务的是小型网络、中型网络、大型网络。&lt;/p&gt;
+&lt;p&gt;按架构划分，服务器可分为：CISC架构服务器和RISC架构服务器。&lt;/p&gt;
+&lt;p&gt;按用途划分，服务器又可分为通用型服务器和专用型（又称功能型）服务器。通用型服务器，顾名思义就是可以提供各种服务功能的服务器。当前大多数服务器属于通用型服务器。专用型服务器是为某一种或某几种功能专门设计的服务器，在某些方面与通用型服务器不同，比如光盘镜像服务器是用来存放光盘镜像的，就需要配置大容量、高速的硬盘以及光盘镜像软件。&lt;/p&gt;
+&lt;p&gt;科普了这么多，可能大家最关心的还是如何选择适合自己的服务器。一般来说，选用服务器需要从以下几个维度来衡量性能指标：&lt;/p&gt;
+&lt;p&gt;1.可用性&lt;/p&gt;
+&lt;p&gt;可用性是指在一段时间内服务器可供访问者正常使用的时间的百分比。提高可用性可从两方面着手：减少硬件平均故障时间和利用专用功能机制。专用功能机制可在出现故障时自动执行系统或部件切换机制，避免或减少意外停机。&lt;/p&gt;
+&lt;p&gt;2.高性能&lt;/p&gt;
+&lt;p&gt;顾名思义，指服务器综合性能指标要高。主要要求在运行速度、磁盘空间、容错能力、扩展能力、稳定性、监测功能及电源等方面具有较高的性能指标。尤其是硬盘和电源的热插拔性能、网卡的自适应能力等性能指标要高。&lt;/p&gt;
+&lt;p&gt;3.模块化&lt;/p&gt;
+&lt;p&gt;模块化是指电源、网卡、SCSI卡、硬盘等部件为模块化结构，且都具有热插拔功能，可在线维护，从而使系统停机的可能性大大减小。特别是分布式电源技术可使每个重要的部件都有独立的电源。&lt;/p&gt;
+&lt;p&gt;4.可扩展性&lt;/p&gt;
+&lt;p&gt;为了使服务器随负荷的增加可以平稳升级，并保证服务器工作的安全性与稳定性，必须将服务器的可扩展性能作为一项重要衡量指标。首先，在机架上要有为硬盘和电源的增加而预留充分的空间。其次主机上的插槽不但要种类齐全，而且要有一定的余量。&lt;/p&gt;
+&lt;p&gt;5.可管理性&lt;/p&gt;
+&lt;p&gt;可管理性是指服务器的管理是否方便、快捷，应用软件是否丰富。在可管理性方面，基于Windows NT／2000平台的个人计算机服务器要优于Unix服务器。&lt;/p&gt;
+&lt;p&gt;当然，除了以上这些因素是在选购服务器时需要重点考虑的之外。品牌、价格、售后服务以及厂商实力等因素也是需要考虑在内的。&lt;/p&gt;
+&lt;p&gt;讲到这里，相信大家对服务器的种类区别，以及如何选择适合自己的服务器已经心里有数了。但我最近也收到一些用户的反馈，他们对另外一些服务器相关的问题还存在疑惑，希望我能帮忙解答一下。借此机会，我也一并分享下。&lt;/p&gt;
+&lt;p&gt;问题一：一个网站需要多少服务器？&lt;/p&gt;
+&lt;p&gt;这个问题没法直接给出具体数字，因为影响一个网站所需服务器数量的因素有很多，最简单的比如网站源代码。事实上源代码写得越牛，需要的服务器数量就可以越少。反之，则越多。其次，网站业务量越大，整体架构就会越复杂。服务器数量的评估，需要根据不同业务系统的特点具体分析。&lt;/p&gt;
+&lt;p&gt;中小型企业需要多少服务器：&lt;/p&gt;
+&lt;p&gt;情况一：企业自研发网站，就可以根据业务规模以及业务系统特点，选用不同配置的云服务器。比如阿里云服务器常用的配置有1核1G、1核2G、2核4G、2核8G、4核8G、4核16G、16核32G等，这些都是中小企业用户购买最多的，可以说是爆款云服务器配置。至于数量，这个需要根据网站的实际情况而定。&lt;/p&gt;
+&lt;p&gt;情况二：如果企业是购买的阿里云模板建站、半定制化建站产品，则不需要购买服务器。比如阿里云速成美站和云企业官网，服务器是包含在建站费用里的。拥有云服务器（ECS）、负载匀衡(SLB)、云数据库（RDS）、云存储（OSS）、网络加速（CDN）等云计算资源集群，以SaaS的方式提供给用户，让每一个网页都能秒开，同时确保网站稳定。&lt;/p&gt;
+&lt;p&gt;阿里云建站“速美”，高性价比，价格低至500元
+​
+aliyun3.wezhan.cn
+图标&lt;/p&gt;
+&lt;p&gt;大型网站需要多少服务器：&lt;/p&gt;
+&lt;p&gt;对于电商网站来说，每天都会有大量用户访问，进行购买操作。所以服务器需要进行大量的数据请求处理，因此用于电商网站的服务器在CPU、内存上的要求会比较高。对于视频类网站，除了用户访问请求和下载数据外，还需要有大硬盘、大带宽的配置，才能保障用户在观看视频时不会出现卡顿。&lt;/p&gt;
+&lt;p&gt;对于大型网站来说，无论是图片网站、视频网站、门户网站、企业网站、还是电商网站，在租用服务器时，需要注意基本的配置标准。比如CPU、硬盘、内存、带宽、防御上的配置都是需要我们考虑的。通常情况下，CPU建议最好是选择8核以上的，视频网站的话，内存不要低于16G，硬盘至少要1T，带宽独享100M会更好些。&lt;/p&gt;
+&lt;p&gt;问题二：有没有便宜好用的云服务器推荐？&lt;/p&gt;
+&lt;p&gt;现在买云服务器，大多数用户优先考虑的都是阿里云服务器。阿里云服务器以稳定、安全、方便以及高性价比等优势，一直以来都深受用户欢迎。阿里云服务器是一种高效，计算能力可弹性伸缩的云计算服务，用户可根据业务需要，随时创建、修改、释放云服务器ECS配置。&lt;/p&gt;
+&lt;p&gt;运行于阿里云自研的飞天操作系统，具有计算性能可弹性伸缩，存储空间可扩展，网络配置可自定义的低耦合特性。实例规格、磁盘、网络、操作系统等作为云服务器ECS的组成部分，可以像搭积木一样任意组合卸载，满足用户多样化的需求。&lt;/p&gt;
+&lt;p&gt;价格方面，阿里云服务器有各种各样便宜到爆的特惠活动。比如：个人新用户低至1折（限购1-2台）。企业新用户低至2.6折（限购3-5台）。每日10点限量抢爆款产品，先到先得。此外还有新注册用户专享，爆款云服务器免费试用12个月等优惠活动，0成本上云，0元试用18+款产品。了解详情可咨询阿里云官网。&lt;/p&gt;
+&lt;p&gt;问题三：阿里云服务器怎么样？腾讯云与阿里云，哪个更好些？&lt;/p&gt;
+&lt;p&gt;腾讯云，和青云、景安云、UCloud这几家比。平心而论，腾讯云是有一些优势的。但是和阿里云比，腾讯云目前还处于推广阶段，优惠比较多。但是性能方面，我没用过，所以特意问了一些用过的朋友，据他们反馈不是很好。&lt;/p&gt;
+&lt;p&gt;阿里云，作为毫无争议的中国云服务第一品牌。从2009年创立，发展至今已有11个年头。拥有弹性计算10年的深厚技术积淀，技术领先，性能优异，稳如磐石。阿里云目前的服务范围已经覆盖200多个国家和地区，在全球18个地域开放了49个可用区，在全球部署了200多个飞天数据中心。&lt;/p&gt;
+&lt;p&gt;阿里云服务全面覆盖IaaS、PaaS、SaaS三大云服务类型，产品涉及云计算基础、安全、大数据、人工智能、企业应用、物联网等众多领域。自主研发的超大规模通用计算操作系统飞天系统，已经全面服务于全球范围内的客户。飞天系统能够将遍布全球的百万级服务器连成一台超级计算机，以在线公共服务的方式提供计算能力。&lt;/p&gt;
+&lt;p&gt;云服务器方面，阿里云目前从云服务器ECS已经衍生出了多个云服务器系列，包括适用于初级用户的轻量应用服务器、适合高性能场景的多种云服务器等。为中小型企业提供一站式互联网服务，专注于云计算领域的研究和研发，在全球云计算领域构建起强大的技术及市场优势。多年来一直保持着高增长，增速已经超越亚马逊云计算的业务增速，成为全球增速最快的云计算服务商。&lt;/p&gt;
+&lt;p&gt;在云服务器市场，阿里云服务器占据近五成的国内市场份额，国内市场排名第一无可争议。阿里云服务器成为企业在部署各种应用场景的时候考虑云计算服务商的首选。跟其他云服务器厂商比，阿里云服务器有什么优势？&lt;/p&gt;
+&lt;p&gt;1.弹性计算服务ECS：支持分钟级别创建1000台实例，多种弹性付费选择更贴合业务现状，同时带来弹性的扩容能力，实例与带宽均可随时升降配，云盘可扩容。帮助用户构建更稳定、更安全的应用。提升运维效率，降低IT整体成本，使用户更专注于核心业务创新。提供GPU和FPGA等异构计算服务器、弹性裸金属服务器以及通用的x86架构服务器。&lt;/p&gt;
+&lt;p&gt;2.稳定可靠：同地域多可用区（机房）可为用户提供超高的容灾能力。单实例可用性达99.975%，多可用区多实例可用性达99.995%，云盘可靠性达99.9999999%。可实现自动宕机迁移、快照备份，进一步保障企业服务和数据安全。&lt;/p&gt;
+&lt;p&gt;3.高安全性：提供虚拟防火墙、角色权限控制、内网隔离、防病毒攻击及流量监控等多重安全方案。免费提供 DDoS 防护、木马查杀、防暴力破解等服务，通过多方国际安全认证，ECS云盘支持数据加密功能等。&lt;/p&gt;
+&lt;p&gt;4.高性能：单实例最高可选88vCPU，内存704GB，单实例性能最高可达到700万PPS网络收发包，35Gbps带宽。提供性能监控框架和主动运维体系。&lt;/p&gt;
+&lt;p&gt;5.易部署：分钟级交付，快速部署，缩短应用上线周期。快速接入部署在全球范围内的数据中心和BGP机房。&lt;/p&gt;
+&lt;p&gt;6.高性价：成本透明，按需使用，支持根据业务波动随时扩展和释放资源。支持包年月预付费，按需计费，满足不同用户场景需求。无需自建机房，无需采购以及配置硬件设施，无需服务器、网络和硬件等维护，零成本运维。提供10大类、40多个不同版本的免费基础操作系统。&lt;/p&gt;
+&lt;p&gt;7.可扩展性：支持通过内网访问其他阿里云服务，形成丰富的行业解决方案，降低公网流量成本。ECS 可与阿里云各种丰富的云产品无缝衔接，可持续为业务发展提供完整的计算、存储、安全等解决方案。&lt;/p&gt;
+&lt;p&gt;8.易用性：丰富的操作系统和应用软件，通过镜像可一键简单部署，同一镜像可在多台 ECS 中快速复制环境，轻松扩展。提供行业通用标准API，提高易用性和适用性。&lt;/p&gt;
+&lt;p&gt;（配图来源于网络，侵删）&lt;/p&gt;
+&lt;p&gt;参考资料：&lt;/p&gt;
+&lt;p&gt;1.计算机网络与应用技术&lt;/p&gt;
+&lt;p&gt;2.电子商务师、高级电子商务师&lt;/p&gt;
+&lt;p&gt;3.大学计算机基础&lt;/p&gt;
+&lt;hr&gt;
+&lt;style&gt;
+.ind {
+text-indent: 2em;
+}
+/style&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>Git</title><link href="https://aiyoyo20.github.io/articles/git.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/git.html</id><summary type="html">&lt;h1&gt;Git 的使用 并传送文件至github&lt;/h1&gt;
+&lt;h2&gt;注册github帐号&lt;/h2&gt;
+&lt;p&gt;github.com 去注册一个自己的帐号&lt;/p&gt;
+&lt;h2&gt;安装Git&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;初始化配置GIT&lt;/h2&gt;
+&lt;h3&gt;配置用户信息&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global user.name &amp;quot;your name&amp;quot;
+git config --global user.email &amp;quot;your email&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;上传文件&lt;/h2&gt;
+&lt;p&gt;进入要传送的文件夹内，&lt;/p&gt;
+&lt;h3&gt;初始化本地仓库&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;添加拟上传的对象&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;//上传文件夹1
+git add f1
+
+//上传指定文件
+git add *.*
+
+//上传所有修改的文件
+git add .
+or
+Git add -A
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;将修改后的文件提交到本地仓库&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git commit …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1&gt;Git 的使用 并传送文件至github&lt;/h1&gt;
+&lt;h2&gt;注册github帐号&lt;/h2&gt;
+&lt;p&gt;github.com 去注册一个自己的帐号&lt;/p&gt;
+&lt;h2&gt;安装Git&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;初始化配置GIT&lt;/h2&gt;
+&lt;h3&gt;配置用户信息&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global user.name &amp;quot;your name&amp;quot;
+git config --global user.email &amp;quot;your email&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;上传文件&lt;/h2&gt;
+&lt;p&gt;进入要传送的文件夹内，&lt;/p&gt;
+&lt;h3&gt;初始化本地仓库&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;添加拟上传的对象&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;//上传文件夹1
+git add f1
+
+//上传指定文件
+git add *.*
+
+//上传所有修改的文件
+git add .
+or
+Git add -A
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;将修改后的文件提交到本地仓库&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git commit -m ‘增加README.md说明文档’
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="" src="git_tip.png"&gt;&lt;/p&gt;
+&lt;h3&gt;连接到远程仓库&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git remote add origin 远程仓库地址
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;推送&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;ssh-keygen -t rsa -C "aiyoyo20@gmail.com@github.com"
+生成.ssh 文件夹
+进入打开其 id_rsa.pub 复制其送有内容，github 打开设置找到 'Add SSH Key' 添加即可&lt;/p&gt;
+&lt;h2&gt;Git&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;user&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;Michael728&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;user&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;649168982@qq.com&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;ssh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;keygen&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rsa&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;649168982@qq.com&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;复制代码&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;[fish@fish-pc&lt;strong&gt; &lt;/strong&gt;etc&lt;strong&gt;**]$&lt;/strong&gt; ssh-keygen -t rsa -C "aiyoyo2729@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/fish/.ssh/id_rsa):
+Created directory '/home/fish/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/fish/.ssh/id_rsa
+Your public key has been saved in /home/fish/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:lspSTHzElY/EvDXaxmGHw7je12DCQI4cGu6S/Cx4H68 aiyoyo2729@gmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|    ..o=o+ .  |
+|   o =.+B O .  |
+|    = +..&amp;amp; =  |
+|  . = . .= B o  |
+|   + + S. o o o |
+|  . * o  . . . .|
+|  . + *    .  |
+|  . + o     |
+|    E..     |
++----[SHA256]-----+&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>解、压缩</title><link href="https://aiyoyo20.github.io/articles/jie-ya-suo.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/jie-ya-suo.html</id><summary type="html">&lt;h1&gt;1. tar&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参数说明：&lt;/p&gt;
+&lt;p&gt;-c: 建立压缩档案
+-x：解压
+-t：查看内容
+-r：向压缩归档文件末尾追加文件
+-u：更新原压缩包中的文件&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩或解压档案时可选的。&lt;/p&gt;
+&lt;p&gt;-z：有gzip属性的
+-j：有bz2属性的
+-Z：有compress属性的
+-v：显示所有过程
+-O：将文件解开到标准输出&lt;/p&gt;
+&lt;p&gt;下面的参数-f是必须的&lt;/p&gt;
+&lt;p&gt;-f: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;1.1. tar&lt;/h2&gt;
+&lt;p&gt;严格来说，tar文件只是归档但并未压缩&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -cvf test.tar test1.log test2.log #归档多个文件
+tar -cvf test …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1&gt;1. tar&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参数说明：&lt;/p&gt;
+&lt;p&gt;-c: 建立压缩档案
+-x：解压
+-t：查看内容
+-r：向压缩归档文件末尾追加文件
+-u：更新原压缩包中的文件&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩或解压档案时可选的。&lt;/p&gt;
+&lt;p&gt;-z：有gzip属性的
+-j：有bz2属性的
+-Z：有compress属性的
+-v：显示所有过程
+-O：将文件解开到标准输出&lt;/p&gt;
+&lt;p&gt;下面的参数-f是必须的&lt;/p&gt;
+&lt;p&gt;-f: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;1.1. tar&lt;/h2&gt;
+&lt;p&gt;严格来说，tar文件只是归档但并未压缩&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -cvf test.tar test1.log test2.log #归档多个文件
+tar -cvf test.tar test/* &amp;amp;emsp;[[归档test]]目录下所有文件
+tar -cvf test.tar *.log &amp;amp;emsp;#归档所有以.log结尾的文件
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -xvf file.tar        //解压 tar包
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h2&gt;1.2. tar.gz&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -zxvf file.tar.gz     //解压tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -zcvf test.tar.gz file1 file2 [[打包，并以gzip]]压缩
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;1.3. tar.bz2&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -jxvf test.tar.bz2 file1 file2 [[打包，并以bzip2]]压缩
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -jcvf test.tar.bz2 file1 file2 [[打包，并以bzip2]]压缩
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;1.4. tar.Z&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -xZvf file.tar.Z    //解压tar.Z
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -cZvf file.tar.Z    //压缩tar.Z
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;1.5. tar.xz&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;压缩tar.xz包
+先创建xxx.tar文件
+
+tar -cvf xxx.tar xxx
+再创建xxx.tar.xz文件
+
+xz -z xxx.tar
+如果要保留被压缩的文件，需要加上参数-k
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;解压tar.xz包
+这是两层压缩，外面是xz压缩，里层是tar压缩，所以分两步实现解压。
+
+xz -d filename.tar.xz
+tar -xvf filename.tar.xz
+
+也可以直接解压
+tar -xvJf filename.tar.xz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;2. zip/unzip&lt;/h1&gt;
+&lt;p&gt;zip和unzip命令主要用于处理zip包。记得linux默认也是没有的，需要额外安装。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;zip
+功能说明：压缩文件。
+语　　法：zip [-AcdDfFghjJKlLmoqrSTuvVwXyz$][-b &amp;lt;工 作目录&amp;gt;][-ll][-n &amp;lt;字 尾字符串&amp;gt;][-t &amp;lt;日 期时间&amp;gt;][-&amp;lt;压 缩效率&amp;gt;][压 缩文件][文件...][-i &amp;lt;范本样式&amp;gt;][-x &amp;lt;范本样式&amp;gt;]
+补充说明：zip是个使用广泛的压缩程序，文件经它压缩后会另外产生具 有".zip"扩展名 的压缩文件。
+参　　数：
+-A   调 整可执行的自动解压缩文件。
+-b&amp;lt;工作目录&amp;gt;   指 定暂时存放文件的目录。
+-c   替 每个被压缩的文件加上注释。
+-d   从 压缩文件内删除指定的文件。
+-D   压 缩文件内不建立目录名称。
+-f   此 参数的效果和指定"-u"参 数类似，但不仅更新既有文件，如果某些文件原本不存在于压缩文件内，使用本参数会一并将其加入压缩文件中。
+-F   尝 试修复已损坏的压缩文件。
+-g   将 文件压缩后附加在既有的压缩文件之后，而非另行建立新的压缩文件。
+-h   在 线帮助。
+-i&amp;lt;范本样式&amp;gt;   只 压缩符合条件的文件。
+-j   只 保存文件名称及其内容，而不存放任何目录名称。
+-J   删 除压缩文件前面不必要的数据。
+-k   使 用MS-DOS兼容格 式的文件名称。
+-l   压 缩文件时，把LF字符 置换成LF+CR字 符。
+-ll   压 缩文件时，把LF+CR字 符置换成LF字符。
+-L   显 示版权信息。
+-m   将 文件压缩并加入压缩文件后，删除原始文件，即把文件移到压缩文件中。
+-n&amp;lt;字尾字符串&amp;gt;   不 压缩具有特定字尾字符串的文件。
+-o   以 压缩文件内拥有最新更改时间的文件为准，将压缩文件的更改时间设成和该文件相同。
+-q   不显 示指令执行过程。
+-r   递 归处理，将指定目录下的所有文件和子目录一并处理。
+-S   包 含系统和隐藏文件。
+-t&amp;lt;日期时间&amp;gt;   把 压缩文件的日期设成指定的日期。
+-T   检 查备份文件内的每个文件是否正确无误。
+-u   更 换较新的文件到压缩文件内。
+-v   显 示指令执行过程或显示版本信息。
+-V   保 存VMS操作系统的文 件属性。
+-w   在 文件名称里假如版本编号，本参数仅在VMS操 作系统下有效。
+-x&amp;lt;范本样式&amp;gt;   压 缩时排除符合条件的文件。
+-X   不 保存额外的文件属性。
+-y   直 接保存符号连接，而非该连接所指向的文件，本参数仅在UNIX之 类的系统下有效。
+-z   替 压缩文件加上注释。
+-$   保 存第一个被压缩文件所在磁盘的卷册名称。
+-&amp;lt;压缩效率&amp;gt;   压 缩效率是一个介于1-9的 数值。&lt;/p&gt;
+&lt;p&gt;unzip
+功 能说明：解压缩zip文 件
+语　　法：unzip [-cflptuvz][-agCjLMnoqsVX][-P &amp;lt;密 码&amp;gt;][.zip文 件][文件][-d &amp;lt;目录&amp;gt;][-x &amp;lt;文件&amp;gt;] 或 unzip [-Z]
+补充说明：unzip为.zip压缩文件的解压缩程序。
+参　　数：
+-c   将 解压缩的结果显示到屏幕上，并对字符做适当的转换。
+-f   更 新现有的文件。
+-l   显 示压缩文件内所包含的文件。
+-p   与-c参数类似，会将解压缩的结果显示到屏幕上，但不会执行任 何的转换。
+-t   检 查压缩文件是否正确。，但不解压。
+-u   与-f参数类似，但是除了更新现有的文件外，也会将压缩文件中 的其他文件解压缩到目录中。
+-v   执 行是时显示详细的信息。或查看压缩文件目录，但不解压。
+-z   仅 显示压缩文件的备注文字。
+-a   对 文本文件进行必要的字符转换。
+-b   不 要对文本文件进行字符转换。
+-C   压 缩文件中的文件名称区分大小写。
+-j   不 处理压缩文件中原有的目录路径。
+-L   将 压缩文件中的全部文件名改为小写。
+-M   将 输出结果送到more程 序处理。
+-n   解 压缩时不要覆盖原有的文件。
+-o   不 必先询问用户，unzip执 行后覆盖原有文件。
+-P&amp;lt;密码&amp;gt;   使 用zip的密码选项。
+-q   执 行时不显示任何信息。
+-s   将 文件名中的空白字符转换为底线字符。
+-V   保 留VMS的文件版本信 息。
+-X   解 压缩时同时回存文件原来的UID/GID。
+[.zip文件]   指定.zip压缩文件。
+[文件]   指定 要处理.zip压缩文 件中的哪些文件。
+-d&amp;lt;目录&amp;gt;   指 定文件解压缩后所要存储的目录。
+-x&amp;lt;文件&amp;gt;   指 定不要处理.zip压 缩文件中的哪些文件。
+-Z   unzip -Z等 于执行zipinfo指 令。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;2.1. 压缩&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;zip test.zip filename # 压缩文件
+zip -r test.zip test/ # 打包test目录下的文件
+zip -rj test.zip test/ # 打包test目录下文件，且压缩包不带test目录
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;压缩时如果需要对压缩包进行加密，可使用-P参数：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;zip -r test.zip test1 test -P 66666 # 使用密码66666加密
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;2.2. 解压&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;unzip test.zips # 解压文件
+unzip -o test.zip -d dir # 将test.zip解压到dir目录
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;2.3. jar包&lt;/h2&gt;
+&lt;p&gt;jar包是java归档包，但同样可用unzip解压查看里面的文件：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;unzip -o java.jar -d dir
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;3. gzip&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;涉及参数说明：
+-k 保留源文件
+-d 解开压缩文件
+-r 递归处理，将指定目录下的所有文件及子目录一并处理
+-v 显示指令执行过程&lt;/p&gt;
+&lt;p&gt;tar命令带有-z参数，并且打包成tar.gz文件时，便调用gzip进行了压缩。gzip对文本的压缩率约有60%~70%，压缩包文件常以gz为后缀。使用-k参数保留源文件：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gzip -k ./* [[当前目录下所有文件进行压缩，每个文件一个gz]]包
+gzip -rkv ./* 递归压缩
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;解压也很简单：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gzip -dv test.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;4. bzip2&lt;/h1&gt;
+&lt;p&gt;tar命令使用-j参数将文件打包为tar.bz2时，便调用了bzip2进行压缩。bzip2压缩或解压后，会将源文件删除。如果需要保留源文件，可使用-k参数:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;bzip2 -zk test  [[压缩test]]文件
+bzip2 -dk test.bz2  #解压
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;5. rar/unrar&lt;/h1&gt;
+&lt;p&gt;rar和unrar命令并非linux发行版自带命令，需要另外安装。常见用法如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;rar a test.tar test  [[将test文件压缩为test]].tar
+unrar e test.rar     [[解压test]].tar
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;6. war&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;jar
+-c   创建war包
+-v   显示过程信息
+-f    指定归档文件名
+-M  不创建条目的清单文件
+-0   这个是阿拉伯数字，只打包不压缩的意思&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;jar -xvf game.war # 解压war包并存储在当前目录下
+jar -cvf filename.war filename  压缩
+jar -cvfM0 game.war ./      # 把当前目录下的所有文件打包成game.war
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;7. 压缩率比较&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;压缩率一般来说：
+tar.bz2&amp;gt;tar.gz&amp;gt;zip&amp;gt;tar
+压缩率越高，压缩以及解压的时间也就越长。
+总结
+对文件进行压缩能够节省磁盘空间，进行网络传输时，也能节省带宽，但是需要注意的是，空间和时间是需要根据实际应用进行权衡的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;参考：
+&lt;a href="https://juejin.im/post/6844903923132694536#heading-18"&gt;看完这篇Linux下的解压缩你还不会吗？&lt;/a&gt;
+&lt;a href="https://www.cnblogs.com/nhdlb/p/11568991.html#_label2"&gt;Linux：linux下解压*压缩tar.xz、等文件方法&lt;/a&gt;&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>Kali</title><link href="https://aiyoyo20.github.io/articles/kali.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/kali.html</id><summary type="html">&lt;h1&gt;1. 一、介绍&lt;/h1&gt;
+&lt;p&gt;Kali 并不是适用于普通用户的系统，由于他是基于 Debian 的 Linux 发行版，而且现在经过不断的发展，现在可以安装很多软件，可以用做一个桌面系统使用，但是由于其特殊性,其内核是修改过的，不能保证其安全性，所以使用 Kali 用做于主系统是非常危险的，应该非常小心地进行，如果你被入侵了，你将丢失所有数据，并且可能会暴露给更多的人。如果你在做一些不合法的事情，你的个人信息也可用于跟踪你。如果你不小心使用这些工具，那么你甚至可能会毁掉自己的数据。&lt;/p&gt;
+&lt;p&gt;如果是想要学习使用linux的话，不建议使用 Kali 。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Kali Linux是一个高级渗透测试和安全审计Linux发行版。作为使用者，你可以把它理解为一个特殊的Linux发行版，集成了精心挑选的渗透测试和安全审计的工具，供渗透测试和安全设计人员使用，也可称之为平台或者框架。&lt;/p&gt;
+&lt;p&gt;Kali Linux自带安全工具集，它将所带的工具集划分为十四个大类，这些大类中，很多工具会重复出现，因为这些工具同时具有多种功能，比如nmap既能作为信息搜集工具也能作为漏洞探测工具。另外，除了这些系统推荐的工具，我们也可以自行添加新的工具源，丰富工具集。不过对于新手来说，系统推荐的工具已经足够使用了 …&lt;/p&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;h1&gt;1. 一、介绍&lt;/h1&gt;
+&lt;p&gt;Kali 并不是适用于普通用户的系统，由于他是基于 Debian 的 Linux 发行版，而且现在经过不断的发展，现在可以安装很多软件，可以用做一个桌面系统使用，但是由于其特殊性,其内核是修改过的，不能保证其安全性，所以使用 Kali 用做于主系统是非常危险的，应该非常小心地进行，如果你被入侵了，你将丢失所有数据，并且可能会暴露给更多的人。如果你在做一些不合法的事情，你的个人信息也可用于跟踪你。如果你不小心使用这些工具，那么你甚至可能会毁掉自己的数据。&lt;/p&gt;
+&lt;p&gt;如果是想要学习使用linux的话，不建议使用 Kali 。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Kali Linux是一个高级渗透测试和安全审计Linux发行版。作为使用者，你可以把它理解为一个特殊的Linux发行版，集成了精心挑选的渗透测试和安全审计的工具，供渗透测试和安全设计人员使用，也可称之为平台或者框架。&lt;/p&gt;
+&lt;p&gt;Kali Linux自带安全工具集，它将所带的工具集划分为十四个大类，这些大类中，很多工具会重复出现，因为这些工具同时具有多种功能，比如nmap既能作为信息搜集工具也能作为漏洞探测工具。另外，除了这些系统推荐的工具，我们也可以自行添加新的工具源，丰富工具集。不过对于新手来说，系统推荐的工具已经足够使用了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Kali官网：&lt;a href="https://www.kali.org/"&gt;https://www.kali.org/&lt;/a&gt;（下载镜像很慢，几十k）
+&lt;img alt="官网下载预览" src="images/Kali_version.png"&gt;
+可以看到，很贴心的准备了很多版本，自行选择安装&lt;/p&gt;
+&lt;p&gt;第三方kali镜像网站：&lt;a href="http://old.kali.org/kali-images/"&gt;http://old.kali.org/kali-images/&lt;/a&gt;
+&lt;img alt="" src="images/Kali_other_download.png"&gt;
+这是第三方的下载源的镜像，下载速度会快很多，但是自己在第一次下载的时候看到有点懵，名字和官网的有些不一样，amd64和i386不清楚代表什么，是只限制于这两种型号吗，去查了一下不是&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;i386 简单理解就是是32位的, amd64 是64位的版本，因为是amd把64位率先引进桌面系统的，英特尔也是要追随amd并且保持兼容，一般在软件包里包含这样的字符。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;2. 二、安装&lt;/h1&gt;
+&lt;h2&gt;2.1. 1、正常安装&lt;/h2&gt;
+&lt;p&gt;目前没有安装，但是先预留一个位置吧&lt;/p&gt;
+&lt;h2&gt;2.2. 2、Live_USB&lt;/h2&gt;
+&lt;p&gt;以前都不知道有 live 版本这样神奇的方式，在 想要安装 kali 的时候了解到了这种方式，但是没有仔细去看资料，导致一开始下载的镜像文件并不是live版本的，导致多次刻录启动盘得到的效果和教学是不一样的，后来去仔细了解了才知道自己的错误。并最终成功安装了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;LUKS:Linux Unified Key Setup
+制作live USB盘，因为ISO只有3G大小，以块的形式逐块的形式复制到U盘上，占据的只有3G的空间，剩余的U盘空间未利用，持久加密USB就是把剩余空间拿出一部分，通过Linux下通用的加密标准LUKS，将剩下的空间进行加密，通过后续系统配置，将系统目录转移到加密的分区里。对系统的更改都会保存到U盘加密的分区内。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;LUKS：Linux统一的密钥安装，对磁盘级加密技术。囊括很多加密技术的优点。与操作系统无关，加密信息还在磁盘内，就必须相应密钥或证书才能打开磁盘，可以对硬盘分区和U盘分区进行加密。&lt;/p&gt;
+&lt;p&gt;区别于文件级加密技术。Windows下NTFS分区efs加密（加密文件系统） 文件从efs从加密分区copy出去，加密就失效了。以管理员身份，可以查看所有加密文件内容。&lt;/p&gt;
+&lt;h3&gt;2.2.1. 准备材料：&lt;/h3&gt;
+&lt;h4&gt;2.2.1.1. 设备:&lt;/h4&gt;
+&lt;p&gt;下面的操作均以Manjaro 20.1 为开发环境进行。&lt;/p&gt;
+&lt;h4&gt;2.2.1.2. U盘：&lt;/h4&gt;
+&lt;p&gt;由于可能会频繁使用，而且对数据的稳定性等等都是有要求的，尽量选择大厂的U盘，大小的话个人建议大于32G，太大的话也没必要，不过也不影响，可以通过拆分磁盘的方式让多余的部分依旧作为普通U盘使用。目前使用128G的，感觉不会很浪费，后续增加软件也有足够的空间。&lt;/p&gt;
+&lt;h4&gt;2.2.1.3. 镜像：&lt;/h4&gt;
+&lt;p&gt;由于自己出错过，所以特意列出来
+需要下载的是带live的版本，其他的无法制作live盘。&lt;/p&gt;
+&lt;h3&gt;2.2.2. 制作：&lt;/h3&gt;
+&lt;h4&gt;2.2.2.1. 方法一、linux下命令行完成&lt;/h4&gt;
+&lt;h5&gt;2.2.2.1.1. 写入镜像&lt;/h5&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo fdisk -l  # 查看磁盘确定外部u盘的名称，防止写入错误
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h5&gt;2.2.2.1.2. 分区并写入镜像&lt;/h5&gt;
+&lt;p&gt;使用parted或者图形化工具gparted删除分区,使磁盘为空&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo parted
+print devices
+select /dev/sdc
+print
+rm 1
+print
+quit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;然后使用dd命令写入镜像，格式如下：sudo dd if=xxx.iso of=U盘路径，此次演示示例：sudo dd if=path/mirror_name.iso of=/dev/sdb，回车执行，系统就开始制作启动盘了，期间终端命令窗口不会有任何反馈.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;sudo&lt;/span&gt; &lt;span class="nv"&gt;dd&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;Kali&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;linux&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;.&lt;span class="mi"&gt;1&lt;/span&gt;.&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="nv"&gt;a&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;amd64&lt;/span&gt;.&lt;span class="nv"&gt;iso&lt;/span&gt; &lt;span class="nv"&gt;of&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="nv"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;sdc&lt;/span&gt; &lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="nv"&gt;M&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo parted  # 使用parted进行分区，这个是进入分区工具
+print devices  # 查看磁盘情况，并为下面的做一个确认
+select /dev/sdc  # 选择需要分区的磁盘
+print  # 查看分区情况
+mkpart primary 3021 125000  # 分区，默认的单位是MB
+print  # 再次查看分区情况并检查自己分区是否成功
+quit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="" src="images/Kali_print_devices.png"&gt;
+&lt;img alt="" src="images/Kali_parted_print.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5&gt;2.2.2.1.3. 对分区进行加密&lt;/h5&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo cryptsetup --verbose --verify-passphrase luksFormat /dev/sdc3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;没有使用超级用户运行命令会出错
+&lt;img alt="" src="images/Kali_sudo_error.png"&gt;
+确认时输入的必须为大写的YES
+&lt;img alt="" src="images/Kali_YES.png"&gt;
+输入密码并再次输入确认密码后完成加密
+&lt;img alt="" src="images/Kali_confirm_password.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5&gt;2.2.2.1.4. 文件系统级的格式化&lt;/h5&gt;
+&lt;p&gt;还未对分区进行文件系统级格式化，还未能进行文件写入读写。
+用加密方式luksOpen打开并挂载在一个可读的目录下，目录名为fiki_usb(可自定义)
+期间需要输入密码，密码为刚才设置的密码&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo cryptsetup luksOpen /dev/sdc3 fiki_usb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ls /dev/mapper/fiki_usb  # 查看挂载情况
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo mkfs.ext4 /dev/mapper/fiki_usb  # 格式化为ext4（Linux最新版本日志类型的文件级系统）
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;同样也需要超级权限
+&lt;img alt="" src="images/Kali_mkfs_error.png"&gt;
+由于自己设定的分区较大，所以需要等待一些时间
+&lt;img alt="" src="images/Kali_mkfs.png"&gt;&lt;/p&gt;
+&lt;h5&gt;2.2.2.1.5. 指定卷标&amp;amp;其他&lt;/h5&gt;
+&lt;p&gt;指定卷标为persistence ,kali官方对持久USB设备规定的操作，卷标必须为persistence。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo e2label /dev/mapper/fiki_usb  persistence
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo mkdir -p /mnt/usb # 在/mnt目录下 ，新建一个usb目录，用来mount /dev 设备
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo mount /dev/mapper/fiki_usb /mnt/usb  # 把USB设备的加密分区mount到目录里，这样可以往USB里写文件
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;输出一串字符 到/mnt/usb 目录下的 persistence.conf .会在持久USB启动时被读取，已确认这是加密的USB分区。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo sh -c &amp;#39;echo “/ union” &amp;gt; /mnt/usb/persistence.conf&amp;#39; # 创建persistence.conf文件
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;一直权限错误，最终采用了一些方法解决了
+&lt;img alt="" src="images/Kali_persistence_error.png"&gt;
+&lt;img alt="" src="images/Kali_persistence.png"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;利用 “sh -c” 命令，它可以让 bash 将一个字串作为完整的命令来执行，这样就可以将 sudo 的影响范围扩展到整条命令&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo umount /dev/mapper/fiki_usb  # 卸载挂载的分区
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo cryptsetup luksClose /dev/mapper/fiki_usb # 关闭通过cryptsetup open加密的分区
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;持久加密USB制作完成。重启进入bios后选择Live USB Encrypted Persistence ，输入磁盘分区密码后进入kali操作系统。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;收尾
+官方源修改
+官方源位于国外服务器，下载速度往往比较慢。我们可以将其替换为国内镜像源，提高软件下载、更新的速度，修改 /etc/apt/sources.list：&lt;/p&gt;
+&lt;p&gt;修改为中科大的源提交下载速度
+deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+部分软件包缺失，可以使用上一个版本的源
+deb http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib&lt;/p&gt;
+&lt;p&gt;修改为中科大的源提交下载速度
+deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib&lt;/p&gt;
+&lt;p&gt;部分软件包缺失，可以使用上一个版本的源
+deb http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib&lt;/p&gt;
+&lt;p&gt;疑难杂症
+Q：Parallels 下无法安装 paralles tools，报错如下：&lt;/p&gt;
+&lt;p&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:220:1: warning: data definition has no type or storage class
+ DEFINE_TIMER(thaw_timer, thaw_timer_fn, 0, (unsigned long)&amp;amp;(thaw_work));
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:220:1: error: type defaults to ‘int’ in declaration of ‘DEFINE_TIMER’ [-Werror=implicit-int]
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c: In function ‘schedule_thaw_work’:
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:224:21: error: ‘thaw_timer’ undeclared (first use in this function); did you mean ‘thaw_timer_fn’?
+  if (timer_pending(&amp;amp;thaw_timer))
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:224:21: note: each undeclared identifier is reported only once for each function it appears in
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c: In function ‘cancel_timeout’:
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:233:18: error: ‘thaw_timer’ undeclared (first use in this function); did you mean ‘thaw_timer_fn’?
+  del_timer_sync(&amp;amp;thaw_timer);
+cc1: some warnings being treated as errors
+/usr/src/linux-headers-4.15.0-kali2-common/scripts/Makefile.build:335: recipe for target '/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.o' failed
+make[5]: &lt;strong&gt;&lt;em&gt; [/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.o] Error 1
+/usr/src/linux-headers-4.15.0-kali2-common/Makefile:1528: recipe for target '&lt;em&gt;module&lt;/em&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze' failed
+make[4]: &lt;/em&gt;&lt;/strong&gt; [&lt;em&gt;module&lt;/em&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze] Error 2
+Makefile:146: recipe for target 'sub-make' failed
+make[3]: &lt;strong&gt;&lt;em&gt; [sub-make] Error 2
+Makefile:8: recipe for target 'all' failed
+make[2]: &lt;/em&gt;&lt;/strong&gt; [all] Error 2
+make[2]: Leaving directory '/usr/src/linux-headers-4.15.0-kali2-amd64'
+Makefile:20: recipe for target 'modules' failed
+make[1]: &lt;strong&gt;&lt;em&gt; [modules] Error 2
+make[1]: Leaving directory '/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze'
+Makefile.kmods:34: recipe for target 'installme' failed
+make: &lt;/em&gt;&lt;/strong&gt; [installme] Error 2
+make: Leaving directory '/usr/lib/parallels-tools/kmods'
+Error: could not build kernel modules
+Error: failed to install kernel modules
+Error: failed to install Parallels Guest Tools!&lt;/p&gt;
+&lt;p&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:220:1: warning: data definition has no type or storage class
+ DEFINE_TIMER(thaw_timer, thaw_timer_fn, 0, (unsigned long)&amp;amp;(thaw_work));
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:220:1: error: type defaults to ‘int’ in declaration of ‘DEFINE_TIMER’ [-Werror=implicit-int]
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c: In function ‘schedule_thaw_work’:
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:224:21: error: ‘thaw_timer’ undeclared (first use in this function); did you mean ‘thaw_timer_fn’?
+  if (timer_pending(&amp;amp;thaw_timer))
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:224:21: note: each undeclared identifier is reported only once for each function it appears in
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c: In function ‘cancel_timeout’:
+/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:233:18: error: ‘thaw_timer’ undeclared (first use in this function); did you mean ‘thaw_timer_fn’?
+cc1: some warnings being treated as errors
+/usr/src/linux-headers-4.15.0-kali2-common/scripts/Makefile.build:335: recipe for target '/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.o' failed
+make[5]: &lt;strong&gt;&lt;em&gt; [/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.o] Error 1
+/usr/src/linux-headers-4.15.0-kali2-common/Makefile:1528: recipe for target '&lt;em&gt;module&lt;/em&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze' failed
+make[4]: &lt;/em&gt;&lt;/strong&gt; [&lt;em&gt;module&lt;/em&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze] Error 2
+Makefile:146: recipe for target 'sub-make' failed
+make[3]: &lt;strong&gt;&lt;em&gt; [sub-make] Error 2
+Makefile:8: recipe for target 'all' failed
+make[2]: &lt;/em&gt;&lt;/strong&gt; [all] Error 2
+make[2]: Leaving directory '/usr/src/linux-headers-4.15.0-kali2-amd64'
+Makefile:20: recipe for target 'modules' failed
+make[1]: &lt;strong&gt;&lt;em&gt; [modules] Error 2
+make[1]: Leaving directory '/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze'
+Makefile.kmods:34: recipe for target 'installme' failed
+make: &lt;/em&gt;&lt;/strong&gt; [installme] Error 2
+make: Leaving directory '/usr/lib/parallels-tools/kmods'
+Error: could not build kernel modules
+Error: failed to install kernel modules
+Error: failed to install Parallels Guest Tools!&lt;/p&gt;
+&lt;p&gt;A：因为Paralleles Tools（暂时）与 Linux Kernel 4.15 不兼容导致，可以考虑手动安装 linux kernel 4.14。&lt;/p&gt;
+&lt;p&gt;Q：部分软件版本不匹配，无法从官方源找到合适的包？&lt;/p&gt;
+&lt;p&gt;A：官方源维护偶有bug，可以考虑添加上一次快照的源（kali-last-snapshot），修改 /etc/apt/sources.list：&lt;/p&gt;
+&lt;p&gt;deb http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib&lt;/p&gt;
+&lt;p&gt;deb http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib&lt;/p&gt;
+&lt;/blockquote&gt;</content><category term="System"></category><category term="linux"></category><category term="kali"></category></entry><entry><title>Manjaro 的选择、安装、配置</title><link href="https://aiyoyo20.github.io/articles/manjaro-de-xuan-ze-an-zhuang-pei-zhi.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>mainframer</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/manjaro-de-xuan-ze-an-zhuang-pei-zhi.html</id><summary type="html">&lt;style&gt;
 .ind {
 text-indent: 2em;
 }
@@ -951,902 +1846,7 @@ sudo pacman -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-se
 &lt;p&gt;卡顿的情况缓解了很多，其次很明显的是在更新，不会两三天就提醒更新一次，以前更新的大多是 KDE 的配置文件以及一些自带的软件但是自己没有区使用或者不清楚其用处而又不敢轻易删除的软件。&lt;/p&gt;
 &lt;p&gt;&lt;mark&gt;## TODO&lt;/mark&gt;
 在一次使用 kali_live 的时候，manjaro 的家目录被挂载了，以前其他的也会这样，但是这次进去后可以有权限打开、浏览、修改里面的文件。
-为什么以及如何避免。&lt;/p&gt;</content><category term="Others"></category><category term="linux"></category><category term="manjaro"></category></entry><entry><title>Android 推荐</title><link href="https://aiyoyo20.github.io/articles/android-tui-jian.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/android-tui-jian.html</id><content type="html">&lt;h1&gt;Mobile&lt;/h1&gt;
-&lt;p&gt;airdroid&lt;/p&gt;
-&lt;p&gt;神奇浏览器&lt;/p&gt;</content><category term="Android"></category><category term="Android"></category></entry><entry><title>笔记软件对比</title><link href="https://aiyoyo20.github.io/articles/bi-ji-ruan-jian-dui-bi.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/bi-ji-ruan-jian-dui-bi.html</id><summary type="html">&lt;p&gt;陆陆续续使用了不少软件记录笔记，从最初的记事本，word 再到现在用过的各种 markdown 软件，各有特色，做个总结吧，希望对没有接触过的有个直观的了解。&lt;/p&gt;
-&lt;p&gt;有的软件是早期的时候使用的，所以可能会出现上面写的一些问题在下载的最新版本中解决了优化了的情况。仅为自己当时的主观感受，不代表产品的实际，毕竟，每个人的喜好不一样。&lt;/p&gt;
-&lt;h1&gt;Markdown&lt;/h1&gt;
-&lt;h2&gt;1. Typora&lt;/h2&gt;
-&lt;p&gt;使用的第一款 markdown 编辑器，使用过程还是挺舒适的，在最开始不太熟悉 markdown 语法又想要 markdwon 格式的时候使用的，但也由于这样，在较长一段时间内才完全熟练 markdwon 的语法，可以说在一定程度上的依赖反而造成了拖累。&lt;/p&gt;
-&lt;p&gt;而且这种所见即所得的在其他的很多产品里都没有，最后还是放弃了。&lt;/p&gt;
-&lt;p&gt;&lt;img src="images/Note_typora.png" alt="pic_1_typora" width=900px /&gt;&lt;/p&gt;
-&lt;p&gt;使用感受：
-主题多样可切换，
-'所见即所得'，写作时直接预览，这个各有看法吧，有的人说是简单主义，是个优点，而我更喜欢从代码编写。
-只能创建md文件，主要阅读的是md文件和一些文本文件，其他的无法读取或打开为乱码。
-可以打开多级文件夹，但是无法在软件内创建文件夹。&lt;/p&gt;
-&lt;p&gt;总结：如果单单作为一个 markdown …&lt;/p&gt;</summary><content type="html">&lt;p&gt;陆陆续续使用了不少软件记录笔记，从最初的记事本，word 再到现在用过的各种 markdown 软件，各有特色，做个总结吧，希望对没有接触过的有个直观的了解。&lt;/p&gt;
-&lt;p&gt;有的软件是早期的时候使用的，所以可能会出现上面写的一些问题在下载的最新版本中解决了优化了的情况。仅为自己当时的主观感受，不代表产品的实际，毕竟，每个人的喜好不一样。&lt;/p&gt;
-&lt;h1&gt;Markdown&lt;/h1&gt;
-&lt;h2&gt;1. Typora&lt;/h2&gt;
-&lt;p&gt;使用的第一款 markdown 编辑器，使用过程还是挺舒适的，在最开始不太熟悉 markdown 语法又想要 markdwon 格式的时候使用的，但也由于这样，在较长一段时间内才完全熟练 markdwon 的语法，可以说在一定程度上的依赖反而造成了拖累。&lt;/p&gt;
-&lt;p&gt;而且这种所见即所得的在其他的很多产品里都没有，最后还是放弃了。&lt;/p&gt;
-&lt;p&gt;&lt;img src="images/Note_typora.png" alt="pic_1_typora" width=900px /&gt;&lt;/p&gt;
-&lt;p&gt;使用感受：
-主题多样可切换，
-'所见即所得'，写作时直接预览，这个各有看法吧，有的人说是简单主义，是个优点，而我更喜欢从代码编写。
-只能创建md文件，主要阅读的是md文件和一些文本文件，其他的无法读取或打开为乱码。
-可以打开多级文件夹，但是无法在软件内创建文件夹。&lt;/p&gt;
-&lt;p&gt;总结：如果单单作为一个 markdown 编辑器是很优秀的，大多数的功能都有，但是如果想要当作一个笔记，管理一个系列的文件显然是不够的，而这也正是我放弃的原因，后期的东西原来越多，日记，笔记等等，同步性等等，typora 已不能满足这些。&lt;/p&gt;
-&lt;p&gt;全平台：Windows、Mac、Linux
-语言：多语言，中英日等
-官网：&lt;a href="https://typora.io/"&gt;https://typora.io/&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;2、Obsidian&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Obsidian 是一个功能强大的知识管理软件,是一款功能强大的带有关系图谱功能的双向链笔记。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="images/Note_obsidian.png" alt="pic_2_obsidian" width=900px /&gt;&lt;/p&gt;
-&lt;p&gt;可以安装一些插件，比如字数统计啥的。
-建立了社区进行交流，所以主题很多，各种使用也是满意的。
-关键在同时打开代码模式和预览模式的时候，滑动是同步的，需要修改的话很方便。
-但是某天我发现我在系统设置了利于编写代码的字体，里面却没有任何变化。仔细寻找了半天也没有发现可以自定义的地方。&lt;/p&gt;
-&lt;p&gt;全平台：Windows、Mac、Linux
-语言：语言挺多的，主要的语言都有
-官网：https://obsidian.md/
-Github项目地址：&lt;a href="https://github.com/obsidianmd/obsidian-releases/releases"&gt;https://github.com/obsidianmd/obsidian-releases/releases&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;3、Joplin&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Joplin 是一款全平台的开源且完全免费的笔记应用，同时也是一个高效的 To-Do 待办事项工具和生产力工具。你可以用标签或笔记本进行分类整理，笔记支持 Markdown，可实现全文搜索，并且你还可以使用自己喜欢的第三方外置编辑器如 Typora、VIM 来编辑笔记，以获得更好的写作体验。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="images/Note_Joplin.png" alt="pic_3_joplin" width=900px /&gt;&lt;/p&gt;
-&lt;p&gt;商业产品，7、8个主题可切换，支持多种云，保存更方便。
-可以免费使用，不影响。
-看着都挺好的，但不知道为什么就是没有心动的感觉。&lt;/p&gt;
-&lt;p&gt;多平台：Windows、macOS、Linux、iOS、Android 等主流桌面平台和手机平台都提供有客户端，甚至还提供了命令行版本
-语言：很多
-官网：&lt;a href="https://joplinapp.org/"&gt;https://joplinapp.org/&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;4、Marktext&lt;/h2&gt;
-&lt;p&gt;有人将其称之为未来的 markdown 软件。&lt;/p&gt;
-&lt;p&gt;&lt;img src="images/Note_marktext.png" alt="marktext" width=900px /&gt;&lt;/p&gt;
-&lt;p&gt;即可所见即所得，也可通过快捷键切换预览与编辑。
-关键可在里面为其编辑与预览指定字体。&lt;/p&gt;
-&lt;p&gt;初使用是不错的，但是在 mac 和 windows 上没有测试，在现在的linux上会有卡顿的情况，快捷键的延迟很高，甚至于没有响应。只能期待于以后的优化了再使用。&lt;/p&gt;
-&lt;p&gt;全平台：Windows、Mac、Linux
-语言：目前只有英语
-官网：&lt;a href="https://marktext.app/"&gt;https://marktext.app/&lt;/a&gt;
-Github项目地址：&lt;a href="https://github.com/marktext/marktext/releases"&gt;https://github.com/marktext/marktext/releases&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;5. Vnote&lt;/h2&gt;
-&lt;p&gt;免费的开源笔记软件。VNote 专注于 Markdown 的编辑与阅读，以提供舒适的编辑体验为设计目标。
-Vnote是一个大神也是市面上找不到很满足于自己的需求的软件，利用自己的闲余时间自己做的。
-作者自己也说了，借鉴了不少其他优秀的软件，所以整体的界面是很美观优雅的。&lt;/p&gt;
-&lt;p&gt;老版本：
-&lt;img src="images/Note_vnote_old.png" alt="pic_old_Vnote" width=900px /&gt;&lt;/p&gt;
-&lt;p&gt;新版本：
-&lt;img src="images/Note_vnote_new.png" alt="pic_new_Vnote" width=900px /&gt;&lt;/p&gt;
-&lt;p&gt;可定制性较强，界面支持小部件拖拽移动，放在自己喜欢的地方，调整为自己喜欢、习惯的布局。
-支持图片预览，且插入图片的图片可以通过内定的方式设置大小。方式为在写入图片地址后添加一个空格后写上设置的大小，如（=900x），但是这种方式仅仅对于使用了相同内置环境的编辑器有效，为了更兼容，在后期将所有需要设置大小的图片都改为了使用&lt;code&gt;&amp;lt;img /&amp;gt;&lt;/code&gt;标签去设置。但是需要注意这种方式不是 它的默认检测图片的范围内，所以修改完之后提示有图片不再使用，是否放入回收站，而实际上是使用的。&lt;/p&gt;
-&lt;p&gt;整个使用过程从 typora 迁移过来并没有很费劲，反而觉得在使用中由于是从代码编写，所以对 markdown 的语法有了更深刻的理解，也为了一些排版啥的去逐渐学习使用一些更为高级的语法使得自己的笔记更加美观与实用。
-如果有添加在目录下但是不使用的照片会提示是否删除，删除也不是直接删除，他自己会创建一个以日期为名的文件夹为回收站去另存，这个其实感觉可以定义为自己检查而不是自动检查，有时候由于编写打乱了图片链接的代码便会马上提示显得很麻烦，比较影响使用体验。&lt;/p&gt;
-&lt;p&gt;在后期版本更新的时候对界面做了大改，精简很多，但是这时自己的笔记已经较多了，最最最明显的一个问题暴露出来，早期的版本不支持目录，当较多的时候需要分类就不够用了，后期的版本可以了，但是在导入其他的笔记时，没有办法导入目录中的目录。&lt;/p&gt;
-&lt;p&gt;新版本修复了这个问题。所以又回来使用了。&lt;/p&gt;
-&lt;p&gt;全平台：Windows、Mac、Linux
-语言：中英日三种语言可选择
-官网:  &lt;a href="https://tamlok.github.io/vnote"&gt;https://tamlok.github.io/vnote&lt;/a&gt;
-Github项目地址:  &lt;a href="https://github.com/tamlok/vnote"&gt;https://github.com/tamlok/vnote&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Others&lt;/h1&gt;
-&lt;h2&gt;1  . Gridea&lt;/h2&gt;
-&lt;p&gt;Gridea 是一个静态博客写作客户端，帮助你更容易地构建并管理博客或任何静态站点。
-想要体验博客那种感觉？没有服务器？懒得在本地搭建环境？这个软件可以让你在客户端写作然后在本地网页可以预览效果。&lt;/p&gt;
-&lt;p&gt;&lt;img src="images/Note_Gridea.png" alt="pic_3_Gridea" width=900px /&gt;&lt;/p&gt;
-&lt;p&gt;Markdown：知道你钟爱 Markdown 写作，我们也是
-快且安全：Gridea 所有文件都在你的本地，构建为更快更安全的静态网站，无需管理数据库，向 Wordpress 说拜拜
-简而不凡：简单几步即可搭建网站。无论博客抑或企业站点，强大的自定义能力，轻松驾驭&lt;/p&gt;
-&lt;p&gt;全平台：Windows、Mac、Linux
-语言：中英两种语言
-Github项目地址:  &lt;a href="https://github.com/getgridea/gridea/"&gt;https://github.com/getgridea/gridea/&lt;/a&gt;
-官网地址:  &lt;a href="https://gridea.dev/docs/"&gt;https://gridea.dev/docs/&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;2. Trilium&lt;/h2&gt;
-&lt;p&gt;超高自由度的个人知识库&lt;/p&gt;
-&lt;p&gt;一开始自己看到他的演示文档中有目录存在，正常理解也应该是存在目录的，所以一开始尝试去添加一个自己的根文件夹，但是一直没找到，后来仔细去看了官方文档才了解到，他是没有明确指明目录结构的，但是构建的每一个（文档、代码、日记等等）都可以有无限的子节点，其实也就是相当于是有目录的，而且每个目录还都可以去详细的介绍是用来做什么的，更容易理解，去除了担心时间太久而忘记这个'目录是用来做什么的'，不用去多写一个介绍文档&lt;/p&gt;
-&lt;p&gt;&lt;img src="images/Note_Trilium.png" alt="pic_4_Trilium" width=900px /&gt;&lt;/p&gt;
-&lt;p&gt;可加密，轻盈简洁，能让信息不受阻碍直接呈现在眼前，高自由度
-并且有一个配套的插件可以在网页中截图保存、保存整个网页、即时创建文本写入想要记下的。
-另外有一个服务器端的，有需要的可以布置到自己的服务器或者自己额外的电脑设备上，就可以通过网页访问了，在保障同步性的情况下完全不用担忧隐私安全问题。
-插件地址：&lt;a href="https://github.com/zadam/trilium-web-clipper/"&gt;https://github.com/zadam/trilium-web-clipper/&lt;/a&gt;
-使用的人并不是很多，除官网有介绍外，目前只找到一片日文的教程，且为19年的，配合谷歌翻译插件基本能了解大概怎么使用。
-&lt;a href="https://gigazine.net/news/20190118-trilium/"&gt;使用教程&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;以前用 markdown 去记笔记什么的，即时快捷方便，
-但是后期越来越多之后弊端也开始体验出来，单个文件不可能完整的去记录下所有的东西，而且不断的填充也不利于阅读，而不断的开新篇的话相互之间的关联很难做到完美
-也用于写日记，但是由于种种原因加密这一块是必须的，单弄一个软件来加密显得很笨拙而且麻烦，每一次编写但得反复的解密加密
-而 Trilium 很好的解决了上面的问题，且项目开源，安全性应该是有保障的。
-打造一个个人的知识库，在写作时可以不断加深巩固，也利于查缺补漏。
-可以记一些自己的临时想法，也可以随手贴上自己看到的一篇好文，自己对一部剧的理解，等等等等。&lt;/p&gt;
-&lt;p&gt;全平台：Windows、Mac、Linux
-语言：目前只有英文的，有个人用户对win64的做了简单的汉化并打包了的，可以自行搜索
-Github项目地址:  &lt;a href="https://github.com/zadam/trilium"&gt;https://github.com/zadam/trilium&lt;/a&gt;&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>博客使用经历</title><link href="https://aiyoyo20.github.io/articles/bo-ke-shi-yong-jing-li.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/bo-ke-shi-yong-jing-li.html</id><content type="html">&lt;h1&gt;wordpress&lt;/h1&gt;
-&lt;h1&gt;Github Page&lt;/h1&gt;
-&lt;h2&gt;静态模板系统选择&lt;/h2&gt;
-&lt;p&gt;Ruby 编写的 Jekyll
-Node.js 编写的 Hexo
-Go 编写的 Hugo
-Python 编写的 Pelican&lt;/p&gt;
-&lt;h3&gt;Gridea&lt;/h3&gt;
-&lt;p&gt;更人性化的 Gridea，在 windows 下能够全局代理还好，在 linux 下同步因为墙的原因，常常同步失败&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>chrome</title><link href="https://aiyoyo20.github.io/articles/chrome.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/chrome.html</id><summary type="html">&lt;h1&gt;插件&lt;/h1&gt;
-&lt;h2&gt;Adblock&lt;/h2&gt;
-&lt;p&gt;屏蔽广告&lt;/p&gt;
-&lt;h2&gt;AdGuard AdBlocker&lt;/h2&gt;
-&lt;p&gt;屏蔽广告&lt;/p&gt;
-&lt;h2&gt;Bookmark Sidebar&lt;/h2&gt;
-&lt;p&gt;收藏夹侧边栏显示，且打开可设置为在新标签打开
-原来的收藏夹在上面会占用一定的空间，且如果一直显示有时候在给别人展示的时候，会比较尴尬，快捷键去打开也比较麻烦&lt;/p&gt;
-&lt;h2&gt;Clean Master&lt;/h2&gt;
-&lt;p&gt;每次进入 Setting 去清除缓存以及一些垃圾的时候总是很繁琐，这个插件可以简化这些操作，一键清理&lt;/p&gt;
-&lt;h2&gt;Explain and Send Screenshots&lt;/h2&gt;
-&lt;p&gt;页面截图工具，可截取整个网页或者部分（如视频的暂停）&lt;/p&gt;
-&lt;h2&gt;fatkun图片批量下载&lt;/h2&gt;
-&lt;p&gt;很强大的图片下载器，一张张的图片下载很麻烦，这个可以快速选择下载图片并且保存位置可修改，选择时可以按自己设定的大小选择，快速去除不符合要求的图片&lt;/p&gt;
-&lt;h2&gt;fehelpr(前端助手)&lt;/h2&gt;
-&lt;p&gt;里面有很多小工具很实用&lt;/p&gt;
-&lt;h2&gt;onetab&lt;/h2&gt;
-&lt;p&gt;标签打开太多，占用大量运行空间，但是暂时用不到，或者看不完，又不必完全保存为收藏标签，这个插件可以很好的保存标签页，且可导出导入，很方便&lt;/p&gt;
-&lt;h2&gt;Print Friendly &amp;amp; PDF&lt;/h2&gt;
-&lt;p&gt;自带的print输出pdf时在遇到大网页时加载预览时常卡住 …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;插件&lt;/h1&gt;
-&lt;h2&gt;Adblock&lt;/h2&gt;
-&lt;p&gt;屏蔽广告&lt;/p&gt;
-&lt;h2&gt;AdGuard AdBlocker&lt;/h2&gt;
-&lt;p&gt;屏蔽广告&lt;/p&gt;
-&lt;h2&gt;Bookmark Sidebar&lt;/h2&gt;
-&lt;p&gt;收藏夹侧边栏显示，且打开可设置为在新标签打开
-原来的收藏夹在上面会占用一定的空间，且如果一直显示有时候在给别人展示的时候，会比较尴尬，快捷键去打开也比较麻烦&lt;/p&gt;
-&lt;h2&gt;Clean Master&lt;/h2&gt;
-&lt;p&gt;每次进入 Setting 去清除缓存以及一些垃圾的时候总是很繁琐，这个插件可以简化这些操作，一键清理&lt;/p&gt;
-&lt;h2&gt;Explain and Send Screenshots&lt;/h2&gt;
-&lt;p&gt;页面截图工具，可截取整个网页或者部分（如视频的暂停）&lt;/p&gt;
-&lt;h2&gt;fatkun图片批量下载&lt;/h2&gt;
-&lt;p&gt;很强大的图片下载器，一张张的图片下载很麻烦，这个可以快速选择下载图片并且保存位置可修改，选择时可以按自己设定的大小选择，快速去除不符合要求的图片&lt;/p&gt;
-&lt;h2&gt;fehelpr(前端助手)&lt;/h2&gt;
-&lt;p&gt;里面有很多小工具很实用&lt;/p&gt;
-&lt;h2&gt;onetab&lt;/h2&gt;
-&lt;p&gt;标签打开太多，占用大量运行空间，但是暂时用不到，或者看不完，又不必完全保存为收藏标签，这个插件可以很好的保存标签页，且可导出导入，很方便&lt;/p&gt;
-&lt;h2&gt;Print Friendly &amp;amp; PDF&lt;/h2&gt;
-&lt;p&gt;自带的print输出pdf时在遇到大网页时加载预览时常卡住，且可定制的内容太少，该插件提供更好的pdf输出&lt;/p&gt;
-&lt;h2&gt;Proxy SwitchyOmega&lt;/h2&gt;
-&lt;p&gt;很好用的代理切换插件&lt;/p&gt;
-&lt;h2&gt;Tampermonkey&lt;/h2&gt;
-&lt;p&gt;不解释，提供了很多其他丰富的脚本，不用每一种功能去装一个插件了&lt;/p&gt;
-&lt;h2&gt;划词翻译&lt;/h2&gt;
-&lt;p&gt;单词悬浮翻译，选中翻译，监听剪切板等，不错的翻译工具&lt;/p&gt;
-&lt;h2&gt;Vimium&lt;/h2&gt;
-&lt;p&gt;让操作浏览器像 vim 一样
-使用教程：&lt;a href="https://xiaoheidiannao.com/articles/Vim-For-Chrome.html#link-operation"&gt;https://xiaoheidiannao.com/articles/Vim-For-Chrome.html#link-operation&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;脚本&lt;/h1&gt;
-&lt;p&gt;脚本的使用是在安装了 Tampermonkey 的基础上&lt;/p&gt;
-&lt;h2&gt;all-search 全搜&lt;/h2&gt;
-&lt;p&gt;一个搜索引擎快捷跳转菜单, 支持图形界面自定义
-除了支持谷歌、百度、duck搜索等搜索引擎外，还支持图片、翻译、开发工具（github）等的快速跳转&lt;/p&gt;
-&lt;h2&gt;Search By Image&lt;/h2&gt;
-&lt;p&gt;通过ctrl开启热键后在想要搜索的图片右键即可跳出搜索图片的选择，多种搜索可选&lt;/p&gt;
-&lt;h2&gt;百度去广告，blur(毛玻璃)搜索框，美化&lt;/h2&gt;
-&lt;p&gt;在百度搜索的时候，为整个画面提供美化&lt;/p&gt;
-&lt;h2&gt;百度热点搜索屏蔽&lt;/h2&gt;
-&lt;p&gt;屏蔽点搜索后右侧的百度热点新闻，之前使用的，后来使用 Adblock 手动选择屏蔽就不用了&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>Docker</title><link href="https://aiyoyo20.github.io/articles/docker.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/docker.html</id><content type="html"></content><category term="Tools"></category><category term="linux"></category></entry><entry><title>服务器选择</title><link href="https://aiyoyo20.github.io/articles/fu-wu-qi-xuan-ze.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/fu-wu-qi-xuan-ze.html</id><summary type="html">&lt;h1&gt;ME&lt;/h1&gt;
-&lt;p class='ind'&gt;自己当初在选的时候主要对比了阿里的和百度的服务器，价格其实都还可以，但是中间是出了一个小插曲，自己在完成注册百度云后浏览了一下，但是并没有下单，然后过了几天有个小姐姐，说是销售经理，看我有这个意向就问了下我的需求，大概聊了一下，我给忘了聊了啥了然后加了微信，一看微信头像，嗯！还挺漂亮。我给细说了下我的需求然后给我推荐了一个，当时其实也不确定服务器自己拿来干啥就说再考虑几天，然后过了几天又来咨询，自己错过了几通电话但还是打过来，最后就买了一年的。记得那会花了178吧。&lt;/p&gt;
-&lt;p class='ind'&gt;然后那会自己对linux并不熟悉，加上那会用ubuntu爱瞎鼓捣老是把系统弄崩溃，三天两头重装系统。就一直没怎么使用上，一直搁置了小半年。害，女人误事啊！&lt;/p&gt;
-
-&lt;p class='ind'&gt;后来终于有时间了，就去鼓捣了wordpress博客，服务器配置、通过ip去访问的时候都挺好的，但是自己在注册域名的时候选择了一个国外的（1块钱1年），解析域名后过了一天提示域名不符合要求，意思就是这个域名是国外的，无法备案，又通过百度自己的注册了一个（也是1块钱1年），但是去解析的时候需要备案。自己是打算把这个博客当作一半日记本一半笔记本的，了解到一些其他的资料，对一些事有着自己的看法，可能会触及敏感，而且，国内的备案说白了就像让你脱了裤子在街上裸奔，虽然日常也差不多那样。而且近些年审查越来越让人摸不着头脑，写个东西还得去查查有没有敏感词汇，索性算了。自己存一个书签访问也没啥的 …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;ME&lt;/h1&gt;
-&lt;p class='ind'&gt;自己当初在选的时候主要对比了阿里的和百度的服务器，价格其实都还可以，但是中间是出了一个小插曲，自己在完成注册百度云后浏览了一下，但是并没有下单，然后过了几天有个小姐姐，说是销售经理，看我有这个意向就问了下我的需求，大概聊了一下，我给忘了聊了啥了然后加了微信，一看微信头像，嗯！还挺漂亮。我给细说了下我的需求然后给我推荐了一个，当时其实也不确定服务器自己拿来干啥就说再考虑几天，然后过了几天又来咨询，自己错过了几通电话但还是打过来，最后就买了一年的。记得那会花了178吧。&lt;/p&gt;
-&lt;p class='ind'&gt;然后那会自己对linux并不熟悉，加上那会用ubuntu爱瞎鼓捣老是把系统弄崩溃，三天两头重装系统。就一直没怎么使用上，一直搁置了小半年。害，女人误事啊！&lt;/p&gt;
-
-&lt;p class='ind'&gt;后来终于有时间了，就去鼓捣了wordpress博客，服务器配置、通过ip去访问的时候都挺好的，但是自己在注册域名的时候选择了一个国外的（1块钱1年），解析域名后过了一天提示域名不符合要求，意思就是这个域名是国外的，无法备案，又通过百度自己的注册了一个（也是1块钱1年），但是去解析的时候需要备案。自己是打算把这个博客当作一半日记本一半笔记本的，了解到一些其他的资料，对一些事有着自己的看法，可能会触及敏感，而且，国内的备案说白了就像让你脱了裤子在街上裸奔，虽然日常也差不多那样。而且近些年审查越来越让人摸不着头脑，写个东西还得去查查有没有敏感词汇，索性算了。自己存一个书签访问也没啥的。&lt;/p&gt;
-
-&lt;p class='ind'&gt;快要到期的时候又打电话来询问使用情况，大概是看要不要续费吧，虽然这次是个男的，不过说话也很客气，就直说了备案的事，过了会来说其实有可以不用备案的服务器，但是自己还是想脱离这种情况，又聊了下审查的事，这些事大家都是心知肚明的，就也没有说啥了，让我记得备份数据以免到期影响不必要的损失。&lt;/p&gt;
-&lt;p class='ind'&gt;国内的价格可能不是最低的，但是服务态度是很好的，如果不是那啥的话选择国内的服务器的话还是很好的，ping会更低，出了问题沟通也更方便。可惜了可惜了。&lt;/p&gt;
-
-&lt;p class='ind'&gt;近期因为要再选择一个服务器，就去查了一些资料，下面的两篇资料都来源于知乎。&lt;/p&gt;
-
-&lt;hr&gt;
-&lt;h1&gt;国外和国内性价比比较高的云服务器对比：&lt;/h1&gt;
-&lt;p&gt;&lt;img alt="" src="server_compare.png"&gt;&lt;/p&gt;
-&lt;h2&gt;一、国外性价比较高的云服务器的厂商&lt;/h2&gt;
-&lt;h3&gt;1、google云&lt;/h3&gt;
-&lt;p&gt;官网：https://cloud.google.com/
-优势：注册即送300美元的免费试用赠金，有效期是1年
-&lt;img alt="" src="server_google.png"&gt;&lt;/p&gt;
-&lt;p&gt;创建一个最低配的实例【1 vCPU；0.6GB内存；10GB硬盘】（我注册下来后，从来没用过，每个月大约花费1.14美元），
-使用1年绝对是绰绰有余的。谷歌在这块还是挺良心的。
-&lt;img alt="" src="server_google_price.png"&gt;
-有两点需要注意一下：
-1、注册的时候，需要填写一个美国地址。在这个http://www.shenfendaquan.com/网站可随机生成一个地址
-2、需要持有一张双币信用卡去注册，有网友说visa不能注册，但是我的就是招商银行的visa信用卡，也是能正常注册的。&lt;/p&gt;
-&lt;h3&gt;2、AWS&lt;/h3&gt;
-&lt;p&gt;官网：https://amazonaws-china.com/cn/&lt;/p&gt;
-&lt;p&gt;首页上的大Banner就挺吸引人的。
-&lt;img alt="" src="server_aws.png"&gt;
-对性能没有什么要求的同学，可以看
-&lt;img alt="" src="server_aws_price.png"&gt;
-申请EC2，12个月内，每个月可以免费使用750个小时（31天），如果不追求服务器的性能，这个性价比还是很高的。&lt;/p&gt;
-&lt;h3&gt;3、Vultr&lt;/h3&gt;
-&lt;p&gt;官网：https://www.vultr.com/
-使用的Vultr的人还是挺多的，稳定性也还行，关键还可以支持支付宝支付。
-以前注册时好像还有优惠码，但是现在好久没有用Vultr了，也不知道还有没有优惠。
-&lt;img alt="" src="server_vultr.png"&gt;&lt;/p&gt;
-&lt;h3&gt;4、搬瓦工&lt;/h3&gt;
-&lt;p&gt;官网：https://www.bwh88.net/
-配置和价格大概是这样婶的。
-&lt;img alt="412e_720w" src="server_bwh.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;总结：&lt;/p&gt;
-&lt;p&gt;如果要买国外的服务器，推荐用谷歌云和AWS，白嫖即艺术。&lt;/p&gt;
-&lt;h2&gt;二、国内比较好的云服务器的厂商（腾讯云、阿里云）&lt;/h2&gt;
-&lt;p&gt;虽然国外有限时免费的云服务器，但是我还是不推荐买国外的厂商，有点经济实力的，还是用国内的云服务器厂商比较靠谱。&lt;/p&gt;
-&lt;p&gt;优势在于：
-&lt;img alt="" src="server_home.png"&gt;&lt;/p&gt;
-&lt;h3&gt;1、腾讯云&lt;/h3&gt;
-&lt;p&gt;国内的云服务器厂商，稳定性、安全性、工单响应速度、性价比等方面，都还算不错，而腾讯云的性价比又是一大卖点，对于初级玩家来说，算是相当不错的了。&lt;/p&gt;
-&lt;p&gt;现在恰逢618，腾讯云这么喜欢搞活动，肯定是少不了促销的啦！&lt;/p&gt;
-&lt;p&gt;一年才95元，每天约等于0.26元，对于学生党来说，是相当友好的了。试想一下，去网咖开黑，一个小时好像都得10元了吧，如果拿这些钱省下来买个服务器，岂不美哉。&lt;/p&gt;
-&lt;h3&gt;2、阿里云&lt;/h3&gt;
-&lt;p&gt;口碑最佳，机器性能也十分不错，好多企业也都在用阿里云，毕竟阿里的技术真的没得黑。&lt;/p&gt;
-&lt;p&gt;最令我敬佩的是，之前加了一个阿里云的销售，咨询阿里云服务器的问题，当时因为没有什么活动，就没有买。&lt;/p&gt;
-&lt;p&gt;没想到每当阿里云有活动的时候，那个销售总会亲自通知我，云服务器搞优惠，这种敬业精神也是值得我们学习的。&lt;/p&gt;
-&lt;p&gt;目前阿里云也是有活动的。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="v2-82f7ce8147a" src="server_ali.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;总结：如果是学习和工作的话，还是建议买国内的服务器，毕竟稳定、好用、售后服务更好。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1&gt;服务器有关知识&lt;/h1&gt;
-&lt;p&gt;不知道大家是不是跟我一样，刚入行时总是搞不清物理服务器（独立服务器）、VPS服务器（虚拟专用）、云服务器、虚拟主机、裸金属服务器这些概念。说实话，我刚开始接触的时候也有点头大。后来随着了解地不断加深，逐渐清楚了这些服务器之间的区别，并且学会了如何挑选服务器。今天，我就将自己掌握的服务器有关知识全部分享给大家！希望对大家以后识别服务器、选购服务器能有帮助。&lt;/p&gt;
-&lt;p&gt;既然提到了上面这些概念，那就先从区别这些服务器开始吧！&lt;/p&gt;
-&lt;p&gt;物理服务器：又叫独立服务器或者传统服务器。顾名思义，物理服务器就是一台台看得见摸得着，摆在机房的实实在在的服务器。可以理解为是一台具有高计算能力、高性能、高安全性、高稳定性、高可控性，独立又完整的电脑。有硬盘、内存、CPU，可以自行分配实行多种网络功能服务，将各种软硬件资源集于一身。&lt;/p&gt;
-&lt;p&gt;应用场景：适合大型网站及应用。&lt;/p&gt;
-&lt;p&gt;优劣势：优点在于性能稳定、安全性高、更可控；缺点是需要专业的服务器运维人员管理，价格高，灵活性弱，扩展限制大。&lt;/p&gt;
-&lt;p&gt;价格：高。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;VPS服务器：又叫虚拟专用服务器。VPS服务器是用虚拟技术把物理服务器划分成若干个独立空间，每一个独立的空间都是虚拟专用服务器，也就是VPS服务器。由于是从物理服务器上虚拟出来的产品，因此没有物理服务器稳定，运算速度也要慢一些，性能不高，适合对配置要求不高的客户。&lt;/p&gt;
-&lt;p&gt;应用场景：适合预算不多的网站和应用。&lt;/p&gt;
-&lt;p&gt;优劣势：最主要的优势就是价格了，价格比物理服务器便宜很多，比虚拟主机贵不了多少，管理起来比较方便；缺点是在扩容、存储、稳定性方面都不及云服务器，这也是为什么大多数企业选择云服务器的原因。&lt;/p&gt;
-&lt;p&gt;价格：便宜。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;云服务器：又叫云主机，简称ECS。在一组集群服务器上虚拟出多个类似独立服务器的部分。云服务器不是单个的物理服务器，它们之间通过网络技术连接起来形成一台超级计算机，拥有独立的宽带和IP。云服务器具有安全可靠性高、易部署、扩展性高（即时扩展，按需扩展）、性价比高等特点。因为是多个服务器的集群，云服务器还具有硬件独享、资源独享、风险共享的优势。云服务器还具备容错性，故障恢复快，操作系统和软件环境皆可备份，恢复后无需重新配置软件环境。&lt;/p&gt;
-&lt;p&gt;应用场景：适用于中小型网站和应用。&lt;/p&gt;
-&lt;p&gt;优劣势：优点相比物理服务器更灵活，弹性伸缩管理，价格可按需实时制定，避免造成网络资源的浪费，降低了运营成本；缺点在安全性能方面，用户缺乏对云服务器的控制，因此出于企业数据安全层面考虑，建议选择大厂商。&lt;/p&gt;
-&lt;p&gt;价格：低。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;虚拟主机：又叫虚拟服务器或共享主机。是一种在单一主机或主机群上，比如物理服务器、VPS服务器或者云服务器上安装例如CPanel、Plesk等面板搭建而成的。虚拟主机市场比较混乱，使用云服务器最好（推荐阿里云），物理服务器也可以，但一般不推荐VPS作为虚拟主机的服务器。如果说用租房来比喻VPS和虚拟主机之间的区别，那VPS相当于整租，虚拟主机就是合租。但整租是毛坯房，合租是精装房。&lt;/p&gt;
-&lt;p&gt;应用场景：适用于非Java项目，且流量、内存较小的网站应用。&lt;/p&gt;
-&lt;p&gt;优劣势：优点在于价格便宜，和物理服务器相比降低了不少运营成本；缺点是稳定性、安全性等都很弱，网站在应对大流量访问时性能不足，对速度和流量有非常大的限制。&lt;/p&gt;
-&lt;p&gt;价格：最便宜。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;裸金属服务器：类似云上的专属物理服务器，在拥有弹性灵活的基础上，具有高性能的计算能力。计算性能与传统物理机无差别，具有安全物理隔离的特点。相当于传统物理服务器的“变态版”。裸金属服务器是集物理服务器的稳定性能，和云服务器高度弹性的资源优势于一身的超级平台。兼具超高计算性能的同时，满足用户对核心应用场景和服务器稳定性的要求。比如，阿里云弹性裸金属服务器-神龙，就具备这样的特点。&lt;/p&gt;
-&lt;p&gt;应用场景：适用于对数据安全、性能配置、安全监管等都要求非常严格的Web网站、中大型企业等重量级数据库应用、游戏和金融等高性能网站和应用。&lt;/p&gt;
-&lt;p&gt;优劣势：集合了物理服务器的稳定性和云服务器云上资源高度弹性的优势，性能更高，更灵活；缺点是价格相对较高。&lt;/p&gt;
-&lt;p&gt;价格：较高。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;讲完上面几种服务器的区别，可能有人会说还不知道服务器是什么呢，能不能系统地讲一下服务器到底是个什么东东啊？OK，继续往下看。&lt;/p&gt;
-&lt;p&gt;服务器是指能向网络用户提供特定服务的软件和硬件。&lt;/p&gt;
-&lt;p&gt;服务器的作用：&lt;/p&gt;
-&lt;p&gt;是为网络提供特定的服务，人们通常用服务器所能提供的主要服务来命名服务器，比如提供文件共享服务的服务器称为文件服务器，提供打印队列共享服务的服务器称为打印服务器等。&lt;/p&gt;
-&lt;p&gt;服务器工作原理：&lt;/p&gt;
-&lt;p&gt;如果把服务器比作人，处理器就是服务器的大脑，各种总线就像是分布于全身肌肉中的神经。芯片组有点像骨架，I/O设备就像是通过神经系统支配的人的手、眼睛、耳朵和嘴。电源系统相当于血液循环系统，将能量输送到身体的各个地方。&lt;/p&gt;
-&lt;p&gt;服务器作为软件，有很多形式的服务器：文件服务器、数据库服务器、Web服务器、邮件服务器、网页服务器、FTP服务器、域名服务器、应用程序服务器、代理服务器、游戏服务器等。&lt;/p&gt;
-&lt;p&gt;服务器系统的硬件构成包括中央处理器、硬盘、内存、芯片组、I/O总线、I/O设备、电源、机箱和相关软件等，和我们平时所接触的电脑有诸多相似之处。但是由于需要提供高可靠的服务，因此在处理能力、稳定性、可靠性、安全性、可扩展性、可管理性等方面要求较高。&lt;/p&gt;
-&lt;p&gt;作为服务器大脑的中央处理器，即服务器CPU，是衡量服务器性能的首要指标。接触过局域网络的朋友一定知道，服务器是网络中的重要设备，承载着成千上万用户的访问。因此对服务器有大数据量的快速吞吐、超强稳定性、长时间运行等严格要求。目前，服务器CPU仍按CPU的指令系统来区分，通常分为CISC型CPU和RISC型CPU。后来又出现了一种64位的VLIM指令系统的CPU。&lt;/p&gt;
-&lt;p&gt;服务器常见的外型有四种：塔式服务器（又称台式服务器）、机架服务器（rack）、刀片服务器（blade server）、机柜式服务器。&lt;/p&gt;
-&lt;p&gt;根据不同的计算能力，按网络规模划分，服务器又分为：工作组级服务器，部门级服务器和企业级服务器。这三者之间的关系是，由工作组级服务器到部门级服务器，再到企业级服务器，对所要服务的联网计算机的数量、处理速度和数据安全性、硬件配置、系统可靠性等要求依次递增。并且对应服务的是小型网络、中型网络、大型网络。&lt;/p&gt;
-&lt;p&gt;按架构划分，服务器可分为：CISC架构服务器和RISC架构服务器。&lt;/p&gt;
-&lt;p&gt;按用途划分，服务器又可分为通用型服务器和专用型（又称功能型）服务器。通用型服务器，顾名思义就是可以提供各种服务功能的服务器。当前大多数服务器属于通用型服务器。专用型服务器是为某一种或某几种功能专门设计的服务器，在某些方面与通用型服务器不同，比如光盘镜像服务器是用来存放光盘镜像的，就需要配置大容量、高速的硬盘以及光盘镜像软件。&lt;/p&gt;
-&lt;p&gt;科普了这么多，可能大家最关心的还是如何选择适合自己的服务器。一般来说，选用服务器需要从以下几个维度来衡量性能指标：&lt;/p&gt;
-&lt;p&gt;1.可用性&lt;/p&gt;
-&lt;p&gt;可用性是指在一段时间内服务器可供访问者正常使用的时间的百分比。提高可用性可从两方面着手：减少硬件平均故障时间和利用专用功能机制。专用功能机制可在出现故障时自动执行系统或部件切换机制，避免或减少意外停机。&lt;/p&gt;
-&lt;p&gt;2.高性能&lt;/p&gt;
-&lt;p&gt;顾名思义，指服务器综合性能指标要高。主要要求在运行速度、磁盘空间、容错能力、扩展能力、稳定性、监测功能及电源等方面具有较高的性能指标。尤其是硬盘和电源的热插拔性能、网卡的自适应能力等性能指标要高。&lt;/p&gt;
-&lt;p&gt;3.模块化&lt;/p&gt;
-&lt;p&gt;模块化是指电源、网卡、SCSI卡、硬盘等部件为模块化结构，且都具有热插拔功能，可在线维护，从而使系统停机的可能性大大减小。特别是分布式电源技术可使每个重要的部件都有独立的电源。&lt;/p&gt;
-&lt;p&gt;4.可扩展性&lt;/p&gt;
-&lt;p&gt;为了使服务器随负荷的增加可以平稳升级，并保证服务器工作的安全性与稳定性，必须将服务器的可扩展性能作为一项重要衡量指标。首先，在机架上要有为硬盘和电源的增加而预留充分的空间。其次主机上的插槽不但要种类齐全，而且要有一定的余量。&lt;/p&gt;
-&lt;p&gt;5.可管理性&lt;/p&gt;
-&lt;p&gt;可管理性是指服务器的管理是否方便、快捷，应用软件是否丰富。在可管理性方面，基于Windows NT／2000平台的个人计算机服务器要优于Unix服务器。&lt;/p&gt;
-&lt;p&gt;当然，除了以上这些因素是在选购服务器时需要重点考虑的之外。品牌、价格、售后服务以及厂商实力等因素也是需要考虑在内的。&lt;/p&gt;
-&lt;p&gt;讲到这里，相信大家对服务器的种类区别，以及如何选择适合自己的服务器已经心里有数了。但我最近也收到一些用户的反馈，他们对另外一些服务器相关的问题还存在疑惑，希望我能帮忙解答一下。借此机会，我也一并分享下。&lt;/p&gt;
-&lt;p&gt;问题一：一个网站需要多少服务器？&lt;/p&gt;
-&lt;p&gt;这个问题没法直接给出具体数字，因为影响一个网站所需服务器数量的因素有很多，最简单的比如网站源代码。事实上源代码写得越牛，需要的服务器数量就可以越少。反之，则越多。其次，网站业务量越大，整体架构就会越复杂。服务器数量的评估，需要根据不同业务系统的特点具体分析。&lt;/p&gt;
-&lt;p&gt;中小型企业需要多少服务器：&lt;/p&gt;
-&lt;p&gt;情况一：企业自研发网站，就可以根据业务规模以及业务系统特点，选用不同配置的云服务器。比如阿里云服务器常用的配置有1核1G、1核2G、2核4G、2核8G、4核8G、4核16G、16核32G等，这些都是中小企业用户购买最多的，可以说是爆款云服务器配置。至于数量，这个需要根据网站的实际情况而定。&lt;/p&gt;
-&lt;p&gt;情况二：如果企业是购买的阿里云模板建站、半定制化建站产品，则不需要购买服务器。比如阿里云速成美站和云企业官网，服务器是包含在建站费用里的。拥有云服务器（ECS）、负载匀衡(SLB)、云数据库（RDS）、云存储（OSS）、网络加速（CDN）等云计算资源集群，以SaaS的方式提供给用户，让每一个网页都能秒开，同时确保网站稳定。&lt;/p&gt;
-&lt;p&gt;阿里云建站“速美”，高性价比，价格低至500元
-​
-aliyun3.wezhan.cn
-图标&lt;/p&gt;
-&lt;p&gt;大型网站需要多少服务器：&lt;/p&gt;
-&lt;p&gt;对于电商网站来说，每天都会有大量用户访问，进行购买操作。所以服务器需要进行大量的数据请求处理，因此用于电商网站的服务器在CPU、内存上的要求会比较高。对于视频类网站，除了用户访问请求和下载数据外，还需要有大硬盘、大带宽的配置，才能保障用户在观看视频时不会出现卡顿。&lt;/p&gt;
-&lt;p&gt;对于大型网站来说，无论是图片网站、视频网站、门户网站、企业网站、还是电商网站，在租用服务器时，需要注意基本的配置标准。比如CPU、硬盘、内存、带宽、防御上的配置都是需要我们考虑的。通常情况下，CPU建议最好是选择8核以上的，视频网站的话，内存不要低于16G，硬盘至少要1T，带宽独享100M会更好些。&lt;/p&gt;
-&lt;p&gt;问题二：有没有便宜好用的云服务器推荐？&lt;/p&gt;
-&lt;p&gt;现在买云服务器，大多数用户优先考虑的都是阿里云服务器。阿里云服务器以稳定、安全、方便以及高性价比等优势，一直以来都深受用户欢迎。阿里云服务器是一种高效，计算能力可弹性伸缩的云计算服务，用户可根据业务需要，随时创建、修改、释放云服务器ECS配置。&lt;/p&gt;
-&lt;p&gt;运行于阿里云自研的飞天操作系统，具有计算性能可弹性伸缩，存储空间可扩展，网络配置可自定义的低耦合特性。实例规格、磁盘、网络、操作系统等作为云服务器ECS的组成部分，可以像搭积木一样任意组合卸载，满足用户多样化的需求。&lt;/p&gt;
-&lt;p&gt;价格方面，阿里云服务器有各种各样便宜到爆的特惠活动。比如：个人新用户低至1折（限购1-2台）。企业新用户低至2.6折（限购3-5台）。每日10点限量抢爆款产品，先到先得。此外还有新注册用户专享，爆款云服务器免费试用12个月等优惠活动，0成本上云，0元试用18+款产品。了解详情可咨询阿里云官网。&lt;/p&gt;
-&lt;p&gt;问题三：阿里云服务器怎么样？腾讯云与阿里云，哪个更好些？&lt;/p&gt;
-&lt;p&gt;腾讯云，和青云、景安云、UCloud这几家比。平心而论，腾讯云是有一些优势的。但是和阿里云比，腾讯云目前还处于推广阶段，优惠比较多。但是性能方面，我没用过，所以特意问了一些用过的朋友，据他们反馈不是很好。&lt;/p&gt;
-&lt;p&gt;阿里云，作为毫无争议的中国云服务第一品牌。从2009年创立，发展至今已有11个年头。拥有弹性计算10年的深厚技术积淀，技术领先，性能优异，稳如磐石。阿里云目前的服务范围已经覆盖200多个国家和地区，在全球18个地域开放了49个可用区，在全球部署了200多个飞天数据中心。&lt;/p&gt;
-&lt;p&gt;阿里云服务全面覆盖IaaS、PaaS、SaaS三大云服务类型，产品涉及云计算基础、安全、大数据、人工智能、企业应用、物联网等众多领域。自主研发的超大规模通用计算操作系统飞天系统，已经全面服务于全球范围内的客户。飞天系统能够将遍布全球的百万级服务器连成一台超级计算机，以在线公共服务的方式提供计算能力。&lt;/p&gt;
-&lt;p&gt;云服务器方面，阿里云目前从云服务器ECS已经衍生出了多个云服务器系列，包括适用于初级用户的轻量应用服务器、适合高性能场景的多种云服务器等。为中小型企业提供一站式互联网服务，专注于云计算领域的研究和研发，在全球云计算领域构建起强大的技术及市场优势。多年来一直保持着高增长，增速已经超越亚马逊云计算的业务增速，成为全球增速最快的云计算服务商。&lt;/p&gt;
-&lt;p&gt;在云服务器市场，阿里云服务器占据近五成的国内市场份额，国内市场排名第一无可争议。阿里云服务器成为企业在部署各种应用场景的时候考虑云计算服务商的首选。跟其他云服务器厂商比，阿里云服务器有什么优势？&lt;/p&gt;
-&lt;p&gt;1.弹性计算服务ECS：支持分钟级别创建1000台实例，多种弹性付费选择更贴合业务现状，同时带来弹性的扩容能力，实例与带宽均可随时升降配，云盘可扩容。帮助用户构建更稳定、更安全的应用。提升运维效率，降低IT整体成本，使用户更专注于核心业务创新。提供GPU和FPGA等异构计算服务器、弹性裸金属服务器以及通用的x86架构服务器。&lt;/p&gt;
-&lt;p&gt;2.稳定可靠：同地域多可用区（机房）可为用户提供超高的容灾能力。单实例可用性达99.975%，多可用区多实例可用性达99.995%，云盘可靠性达99.9999999%。可实现自动宕机迁移、快照备份，进一步保障企业服务和数据安全。&lt;/p&gt;
-&lt;p&gt;3.高安全性：提供虚拟防火墙、角色权限控制、内网隔离、防病毒攻击及流量监控等多重安全方案。免费提供 DDoS 防护、木马查杀、防暴力破解等服务，通过多方国际安全认证，ECS云盘支持数据加密功能等。&lt;/p&gt;
-&lt;p&gt;4.高性能：单实例最高可选88vCPU，内存704GB，单实例性能最高可达到700万PPS网络收发包，35Gbps带宽。提供性能监控框架和主动运维体系。&lt;/p&gt;
-&lt;p&gt;5.易部署：分钟级交付，快速部署，缩短应用上线周期。快速接入部署在全球范围内的数据中心和BGP机房。&lt;/p&gt;
-&lt;p&gt;6.高性价：成本透明，按需使用，支持根据业务波动随时扩展和释放资源。支持包年月预付费，按需计费，满足不同用户场景需求。无需自建机房，无需采购以及配置硬件设施，无需服务器、网络和硬件等维护，零成本运维。提供10大类、40多个不同版本的免费基础操作系统。&lt;/p&gt;
-&lt;p&gt;7.可扩展性：支持通过内网访问其他阿里云服务，形成丰富的行业解决方案，降低公网流量成本。ECS 可与阿里云各种丰富的云产品无缝衔接，可持续为业务发展提供完整的计算、存储、安全等解决方案。&lt;/p&gt;
-&lt;p&gt;8.易用性：丰富的操作系统和应用软件，通过镜像可一键简单部署，同一镜像可在多台 ECS 中快速复制环境，轻松扩展。提供行业通用标准API，提高易用性和适用性。&lt;/p&gt;
-&lt;p&gt;（配图来源于网络，侵删）&lt;/p&gt;
-&lt;p&gt;参考资料：&lt;/p&gt;
-&lt;p&gt;1.计算机网络与应用技术&lt;/p&gt;
-&lt;p&gt;2.电子商务师、高级电子商务师&lt;/p&gt;
-&lt;p&gt;3.大学计算机基础&lt;/p&gt;
-&lt;hr&gt;
-&lt;style&gt;
-.ind {
-text-indent: 2em;
-}
-/style&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>Git</title><link href="https://aiyoyo20.github.io/articles/git.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/git.html</id><summary type="html">&lt;h1&gt;Git 的使用 并传送文件至github&lt;/h1&gt;
-&lt;h2&gt;注册github帐号&lt;/h2&gt;
-&lt;p&gt;github.com 去注册一个自己的帐号&lt;/p&gt;
-&lt;h2&gt;安装Git&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;初始化配置GIT&lt;/h2&gt;
-&lt;h3&gt;配置用户信息&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global user.name &amp;quot;your name&amp;quot;
-git config --global user.email &amp;quot;your email&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;上传文件&lt;/h2&gt;
-&lt;p&gt;进入要传送的文件夹内，&lt;/p&gt;
-&lt;h3&gt;初始化本地仓库&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3&gt;添加拟上传的对象&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;//上传文件夹1
-git add f1
-
-//上传指定文件
-git add *.*
-
-//上传所有修改的文件
-git add .
-or
-Git add -A
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3&gt;将修改后的文件提交到本地仓库&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git commit …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1&gt;Git 的使用 并传送文件至github&lt;/h1&gt;
-&lt;h2&gt;注册github帐号&lt;/h2&gt;
-&lt;p&gt;github.com 去注册一个自己的帐号&lt;/p&gt;
-&lt;h2&gt;安装Git&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;初始化配置GIT&lt;/h2&gt;
-&lt;h3&gt;配置用户信息&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global user.name &amp;quot;your name&amp;quot;
-git config --global user.email &amp;quot;your email&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;上传文件&lt;/h2&gt;
-&lt;p&gt;进入要传送的文件夹内，&lt;/p&gt;
-&lt;h3&gt;初始化本地仓库&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3&gt;添加拟上传的对象&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;//上传文件夹1
-git add f1
-
-//上传指定文件
-git add *.*
-
-//上传所有修改的文件
-git add .
-or
-Git add -A
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3&gt;将修改后的文件提交到本地仓库&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git commit -m ‘增加README.md说明文档’
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img alt="" src="git_tip.png"&gt;&lt;/p&gt;
-&lt;h3&gt;连接到远程仓库&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git remote add origin 远程仓库地址
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3&gt;推送&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git push -u origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;ssh-keygen -t rsa -C "aiyoyo20@gmail.com@github.com"
-生成.ssh 文件夹
-进入打开其 id_rsa.pub 复制其送有内容，github 打开设置找到 'Add SSH Key' 添加即可&lt;/p&gt;
-&lt;h2&gt;Git&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;user&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;Michael728&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;user&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;649168982@qq.com&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="n"&gt;ssh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;keygen&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rsa&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;649168982@qq.com&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="n"&gt;复制代码&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;[fish@fish-pc&lt;strong&gt; &lt;/strong&gt;etc&lt;strong&gt;**]$&lt;/strong&gt; ssh-keygen -t rsa -C "aiyoyo2729@gmail.com"
-Generating public/private rsa key pair.
-Enter file in which to save the key (/home/fish/.ssh/id_rsa):
-Created directory '/home/fish/.ssh'.
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
-Your identification has been saved in /home/fish/.ssh/id_rsa
-Your public key has been saved in /home/fish/.ssh/id_rsa.pub
-The key fingerprint is:
-SHA256:lspSTHzElY/EvDXaxmGHw7je12DCQI4cGu6S/Cx4H68 aiyoyo2729@gmail.com
-The key's randomart image is:
-+---[RSA 3072]----+
-|    ..o=o+ .  |
-|   o =.+B O .  |
-|    = +..&amp;amp; =  |
-|  . = . .= B o  |
-|   + + S. o o o |
-|  . * o  . . . .|
-|  . + *    .  |
-|  . + o     |
-|    E..     |
-+----[SHA256]-----+&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>解、压缩</title><link href="https://aiyoyo20.github.io/articles/jie-ya-suo.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/jie-ya-suo.html</id><summary type="html">&lt;h1&gt;1. tar&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;参数说明：&lt;/p&gt;
-&lt;p&gt;-c: 建立压缩档案
--x：解压
--t：查看内容
--r：向压缩归档文件末尾追加文件
--u：更新原压缩包中的文件&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩或解压档案时可选的。&lt;/p&gt;
-&lt;p&gt;-z：有gzip属性的
--j：有bz2属性的
--Z：有compress属性的
--v：显示所有过程
--O：将文件解开到标准输出&lt;/p&gt;
-&lt;p&gt;下面的参数-f是必须的&lt;/p&gt;
-&lt;p&gt;-f: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;1.1. tar&lt;/h2&gt;
-&lt;p&gt;严格来说，tar文件只是归档但并未压缩&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -cvf test.tar test1.log test2.log #归档多个文件
-tar -cvf test …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1&gt;1. tar&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;参数说明：&lt;/p&gt;
-&lt;p&gt;-c: 建立压缩档案
--x：解压
--t：查看内容
--r：向压缩归档文件末尾追加文件
--u：更新原压缩包中的文件&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩或解压档案时可选的。&lt;/p&gt;
-&lt;p&gt;-z：有gzip属性的
--j：有bz2属性的
--Z：有compress属性的
--v：显示所有过程
--O：将文件解开到标准输出&lt;/p&gt;
-&lt;p&gt;下面的参数-f是必须的&lt;/p&gt;
-&lt;p&gt;-f: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;1.1. tar&lt;/h2&gt;
-&lt;p&gt;严格来说，tar文件只是归档但并未压缩&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -cvf test.tar test1.log test2.log #归档多个文件
-tar -cvf test.tar test/* &amp;amp;emsp;[[归档test]]目录下所有文件
-tar -cvf test.tar *.log &amp;amp;emsp;#归档所有以.log结尾的文件
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -xvf file.tar        //解压 tar包
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;h2&gt;1.2. tar.gz&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -zxvf file.tar.gz     //解压tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -zcvf test.tar.gz file1 file2 [[打包，并以gzip]]压缩
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;1.3. tar.bz2&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -jxvf test.tar.bz2 file1 file2 [[打包，并以bzip2]]压缩
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -jcvf test.tar.bz2 file1 file2 [[打包，并以bzip2]]压缩
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;1.4. tar.Z&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -xZvf file.tar.Z    //解压tar.Z
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tar -cZvf file.tar.Z    //压缩tar.Z
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;1.5. tar.xz&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;压缩tar.xz包
-先创建xxx.tar文件
-
-tar -cvf xxx.tar xxx
-再创建xxx.tar.xz文件
-
-xz -z xxx.tar
-如果要保留被压缩的文件，需要加上参数-k
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;解压tar.xz包
-这是两层压缩，外面是xz压缩，里层是tar压缩，所以分两步实现解压。
-
-xz -d filename.tar.xz
-tar -xvf filename.tar.xz
-
-也可以直接解压
-tar -xvJf filename.tar.xz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h1&gt;2. zip/unzip&lt;/h1&gt;
-&lt;p&gt;zip和unzip命令主要用于处理zip包。记得linux默认也是没有的，需要额外安装。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;zip
-功能说明：压缩文件。
-语　　法：zip [-AcdDfFghjJKlLmoqrSTuvVwXyz$][-b &amp;lt;工 作目录&amp;gt;][-ll][-n &amp;lt;字 尾字符串&amp;gt;][-t &amp;lt;日 期时间&amp;gt;][-&amp;lt;压 缩效率&amp;gt;][压 缩文件][文件...][-i &amp;lt;范本样式&amp;gt;][-x &amp;lt;范本样式&amp;gt;]
-补充说明：zip是个使用广泛的压缩程序，文件经它压缩后会另外产生具 有".zip"扩展名 的压缩文件。
-参　　数：
--A   调 整可执行的自动解压缩文件。
--b&amp;lt;工作目录&amp;gt;   指 定暂时存放文件的目录。
--c   替 每个被压缩的文件加上注释。
--d   从 压缩文件内删除指定的文件。
--D   压 缩文件内不建立目录名称。
--f   此 参数的效果和指定"-u"参 数类似，但不仅更新既有文件，如果某些文件原本不存在于压缩文件内，使用本参数会一并将其加入压缩文件中。
--F   尝 试修复已损坏的压缩文件。
--g   将 文件压缩后附加在既有的压缩文件之后，而非另行建立新的压缩文件。
--h   在 线帮助。
--i&amp;lt;范本样式&amp;gt;   只 压缩符合条件的文件。
--j   只 保存文件名称及其内容，而不存放任何目录名称。
--J   删 除压缩文件前面不必要的数据。
--k   使 用MS-DOS兼容格 式的文件名称。
--l   压 缩文件时，把LF字符 置换成LF+CR字 符。
--ll   压 缩文件时，把LF+CR字 符置换成LF字符。
--L   显 示版权信息。
--m   将 文件压缩并加入压缩文件后，删除原始文件，即把文件移到压缩文件中。
--n&amp;lt;字尾字符串&amp;gt;   不 压缩具有特定字尾字符串的文件。
--o   以 压缩文件内拥有最新更改时间的文件为准，将压缩文件的更改时间设成和该文件相同。
--q   不显 示指令执行过程。
--r   递 归处理，将指定目录下的所有文件和子目录一并处理。
--S   包 含系统和隐藏文件。
--t&amp;lt;日期时间&amp;gt;   把 压缩文件的日期设成指定的日期。
--T   检 查备份文件内的每个文件是否正确无误。
--u   更 换较新的文件到压缩文件内。
--v   显 示指令执行过程或显示版本信息。
--V   保 存VMS操作系统的文 件属性。
--w   在 文件名称里假如版本编号，本参数仅在VMS操 作系统下有效。
--x&amp;lt;范本样式&amp;gt;   压 缩时排除符合条件的文件。
--X   不 保存额外的文件属性。
--y   直 接保存符号连接，而非该连接所指向的文件，本参数仅在UNIX之 类的系统下有效。
--z   替 压缩文件加上注释。
--$   保 存第一个被压缩文件所在磁盘的卷册名称。
--&amp;lt;压缩效率&amp;gt;   压 缩效率是一个介于1-9的 数值。&lt;/p&gt;
-&lt;p&gt;unzip
-功 能说明：解压缩zip文 件
-语　　法：unzip [-cflptuvz][-agCjLMnoqsVX][-P &amp;lt;密 码&amp;gt;][.zip文 件][文件][-d &amp;lt;目录&amp;gt;][-x &amp;lt;文件&amp;gt;] 或 unzip [-Z]
-补充说明：unzip为.zip压缩文件的解压缩程序。
-参　　数：
--c   将 解压缩的结果显示到屏幕上，并对字符做适当的转换。
--f   更 新现有的文件。
--l   显 示压缩文件内所包含的文件。
--p   与-c参数类似，会将解压缩的结果显示到屏幕上，但不会执行任 何的转换。
--t   检 查压缩文件是否正确。，但不解压。
--u   与-f参数类似，但是除了更新现有的文件外，也会将压缩文件中 的其他文件解压缩到目录中。
--v   执 行是时显示详细的信息。或查看压缩文件目录，但不解压。
--z   仅 显示压缩文件的备注文字。
--a   对 文本文件进行必要的字符转换。
--b   不 要对文本文件进行字符转换。
--C   压 缩文件中的文件名称区分大小写。
--j   不 处理压缩文件中原有的目录路径。
--L   将 压缩文件中的全部文件名改为小写。
--M   将 输出结果送到more程 序处理。
--n   解 压缩时不要覆盖原有的文件。
--o   不 必先询问用户，unzip执 行后覆盖原有文件。
--P&amp;lt;密码&amp;gt;   使 用zip的密码选项。
--q   执 行时不显示任何信息。
--s   将 文件名中的空白字符转换为底线字符。
--V   保 留VMS的文件版本信 息。
--X   解 压缩时同时回存文件原来的UID/GID。
-[.zip文件]   指定.zip压缩文件。
-[文件]   指定 要处理.zip压缩文 件中的哪些文件。
--d&amp;lt;目录&amp;gt;   指 定文件解压缩后所要存储的目录。
--x&amp;lt;文件&amp;gt;   指 定不要处理.zip压 缩文件中的哪些文件。
--Z   unzip -Z等 于执行zipinfo指 令。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;2.1. 压缩&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;zip test.zip filename # 压缩文件
-zip -r test.zip test/ # 打包test目录下的文件
-zip -rj test.zip test/ # 打包test目录下文件，且压缩包不带test目录
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;压缩时如果需要对压缩包进行加密，可使用-P参数：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;zip -r test.zip test1 test -P 66666 # 使用密码66666加密
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;2.2. 解压&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;unzip test.zips # 解压文件
-unzip -o test.zip -d dir # 将test.zip解压到dir目录
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;2.3. jar包&lt;/h2&gt;
-&lt;p&gt;jar包是java归档包，但同样可用unzip解压查看里面的文件：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;unzip -o java.jar -d dir
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h1&gt;3. gzip&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;涉及参数说明：
--k 保留源文件
--d 解开压缩文件
--r 递归处理，将指定目录下的所有文件及子目录一并处理
--v 显示指令执行过程&lt;/p&gt;
-&lt;p&gt;tar命令带有-z参数，并且打包成tar.gz文件时，便调用gzip进行了压缩。gzip对文本的压缩率约有60%~70%，压缩包文件常以gz为后缀。使用-k参数保留源文件：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gzip -k ./* [[当前目录下所有文件进行压缩，每个文件一个gz]]包
-gzip -rkv ./* 递归压缩
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;解压也很简单：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gzip -dv test.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h1&gt;4. bzip2&lt;/h1&gt;
-&lt;p&gt;tar命令使用-j参数将文件打包为tar.bz2时，便调用了bzip2进行压缩。bzip2压缩或解压后，会将源文件删除。如果需要保留源文件，可使用-k参数:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;bzip2 -zk test  [[压缩test]]文件
-bzip2 -dk test.bz2  #解压
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h1&gt;5. rar/unrar&lt;/h1&gt;
-&lt;p&gt;rar和unrar命令并非linux发行版自带命令，需要另外安装。常见用法如下：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;rar a test.tar test  [[将test文件压缩为test]].tar
-unrar e test.rar     [[解压test]].tar
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h1&gt;6. war&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;jar
--c   创建war包
--v   显示过程信息
--f    指定归档文件名
--M  不创建条目的清单文件
--0   这个是阿拉伯数字，只打包不压缩的意思&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;jar -xvf game.war # 解压war包并存储在当前目录下
-jar -cvf filename.war filename  压缩
-jar -cvfM0 game.war ./      # 把当前目录下的所有文件打包成game.war
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h1&gt;7. 压缩率比较&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;压缩率一般来说：
-tar.bz2&amp;gt;tar.gz&amp;gt;zip&amp;gt;tar
-压缩率越高，压缩以及解压的时间也就越长。
-总结
-对文件进行压缩能够节省磁盘空间，进行网络传输时，也能节省带宽，但是需要注意的是，空间和时间是需要根据实际应用进行权衡的。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;参考：
-&lt;a href="https://juejin.im/post/6844903923132694536#heading-18"&gt;看完这篇Linux下的解压缩你还不会吗？&lt;/a&gt;
-&lt;a href="https://www.cnblogs.com/nhdlb/p/11568991.html#_label2"&gt;Linux：linux下解压*压缩tar.xz、等文件方法&lt;/a&gt;&lt;/p&gt;</content><category term="Tools"></category><category term="linux"></category></entry><entry><title>Kali</title><link href="https://aiyoyo20.github.io/articles/kali.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/kali.html</id><summary type="html">&lt;h1&gt;1. 一、介绍&lt;/h1&gt;
-&lt;p&gt;Kali 并不是适用于普通用户的系统，由于他是基于 Debian 的 Linux 发行版，而且现在经过不断的发展，现在可以安装很多软件，可以用做一个桌面系统使用，但是由于其特殊性,其内核是修改过的，不能保证其安全性，所以使用 Kali 用做于主系统是非常危险的，应该非常小心地进行，如果你被入侵了，你将丢失所有数据，并且可能会暴露给更多的人。如果你在做一些不合法的事情，你的个人信息也可用于跟踪你。如果你不小心使用这些工具，那么你甚至可能会毁掉自己的数据。&lt;/p&gt;
-&lt;p&gt;如果是想要学习使用linux的话，不建议使用 Kali 。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Kali Linux是一个高级渗透测试和安全审计Linux发行版。作为使用者，你可以把它理解为一个特殊的Linux发行版，集成了精心挑选的渗透测试和安全审计的工具，供渗透测试和安全设计人员使用，也可称之为平台或者框架。&lt;/p&gt;
-&lt;p&gt;Kali Linux自带安全工具集，它将所带的工具集划分为十四个大类，这些大类中，很多工具会重复出现，因为这些工具同时具有多种功能，比如nmap既能作为信息搜集工具也能作为漏洞探测工具。另外，除了这些系统推荐的工具，我们也可以自行添加新的工具源，丰富工具集。不过对于新手来说，系统推荐的工具已经足够使用了 …&lt;/p&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;h1&gt;1. 一、介绍&lt;/h1&gt;
-&lt;p&gt;Kali 并不是适用于普通用户的系统，由于他是基于 Debian 的 Linux 发行版，而且现在经过不断的发展，现在可以安装很多软件，可以用做一个桌面系统使用，但是由于其特殊性,其内核是修改过的，不能保证其安全性，所以使用 Kali 用做于主系统是非常危险的，应该非常小心地进行，如果你被入侵了，你将丢失所有数据，并且可能会暴露给更多的人。如果你在做一些不合法的事情，你的个人信息也可用于跟踪你。如果你不小心使用这些工具，那么你甚至可能会毁掉自己的数据。&lt;/p&gt;
-&lt;p&gt;如果是想要学习使用linux的话，不建议使用 Kali 。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Kali Linux是一个高级渗透测试和安全审计Linux发行版。作为使用者，你可以把它理解为一个特殊的Linux发行版，集成了精心挑选的渗透测试和安全审计的工具，供渗透测试和安全设计人员使用，也可称之为平台或者框架。&lt;/p&gt;
-&lt;p&gt;Kali Linux自带安全工具集，它将所带的工具集划分为十四个大类，这些大类中，很多工具会重复出现，因为这些工具同时具有多种功能，比如nmap既能作为信息搜集工具也能作为漏洞探测工具。另外，除了这些系统推荐的工具，我们也可以自行添加新的工具源，丰富工具集。不过对于新手来说，系统推荐的工具已经足够使用了。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Kali官网：&lt;a href="https://www.kali.org/"&gt;https://www.kali.org/&lt;/a&gt;（下载镜像很慢，几十k）
-&lt;img alt="官网下载预览" src="images/Kali_version.png"&gt;
-可以看到，很贴心的准备了很多版本，自行选择安装&lt;/p&gt;
-&lt;p&gt;第三方kali镜像网站：&lt;a href="http://old.kali.org/kali-images/"&gt;http://old.kali.org/kali-images/&lt;/a&gt;
-&lt;img alt="" src="images/Kali_other_download.png"&gt;
-这是第三方的下载源的镜像，下载速度会快很多，但是自己在第一次下载的时候看到有点懵，名字和官网的有些不一样，amd64和i386不清楚代表什么，是只限制于这两种型号吗，去查了一下不是&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;i386 简单理解就是是32位的, amd64 是64位的版本，因为是amd把64位率先引进桌面系统的，英特尔也是要追随amd并且保持兼容，一般在软件包里包含这样的字符。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1&gt;2. 二、安装&lt;/h1&gt;
-&lt;h2&gt;2.1. 1、正常安装&lt;/h2&gt;
-&lt;p&gt;目前没有安装，但是先预留一个位置吧&lt;/p&gt;
-&lt;h2&gt;2.2. 2、Live_USB&lt;/h2&gt;
-&lt;p&gt;以前都不知道有 live 版本这样神奇的方式，在 想要安装 kali 的时候了解到了这种方式，但是没有仔细去看资料，导致一开始下载的镜像文件并不是live版本的，导致多次刻录启动盘得到的效果和教学是不一样的，后来去仔细了解了才知道自己的错误。并最终成功安装了。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;LUKS:Linux Unified Key Setup
-制作live USB盘，因为ISO只有3G大小，以块的形式逐块的形式复制到U盘上，占据的只有3G的空间，剩余的U盘空间未利用，持久加密USB就是把剩余空间拿出一部分，通过Linux下通用的加密标准LUKS，将剩下的空间进行加密，通过后续系统配置，将系统目录转移到加密的分区里。对系统的更改都会保存到U盘加密的分区内。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;LUKS：Linux统一的密钥安装，对磁盘级加密技术。囊括很多加密技术的优点。与操作系统无关，加密信息还在磁盘内，就必须相应密钥或证书才能打开磁盘，可以对硬盘分区和U盘分区进行加密。&lt;/p&gt;
-&lt;p&gt;区别于文件级加密技术。Windows下NTFS分区efs加密（加密文件系统） 文件从efs从加密分区copy出去，加密就失效了。以管理员身份，可以查看所有加密文件内容。&lt;/p&gt;
-&lt;h3&gt;2.2.1. 准备材料：&lt;/h3&gt;
-&lt;h4&gt;2.2.1.1. 设备:&lt;/h4&gt;
-&lt;p&gt;下面的操作均以Manjaro 20.1 为开发环境进行。&lt;/p&gt;
-&lt;h4&gt;2.2.1.2. U盘：&lt;/h4&gt;
-&lt;p&gt;由于可能会频繁使用，而且对数据的稳定性等等都是有要求的，尽量选择大厂的U盘，大小的话个人建议大于32G，太大的话也没必要，不过也不影响，可以通过拆分磁盘的方式让多余的部分依旧作为普通U盘使用。目前使用128G的，感觉不会很浪费，后续增加软件也有足够的空间。&lt;/p&gt;
-&lt;h4&gt;2.2.1.3. 镜像：&lt;/h4&gt;
-&lt;p&gt;由于自己出错过，所以特意列出来
-需要下载的是带live的版本，其他的无法制作live盘。&lt;/p&gt;
-&lt;h3&gt;2.2.2. 制作：&lt;/h3&gt;
-&lt;h4&gt;2.2.2.1. 方法一、linux下命令行完成&lt;/h4&gt;
-&lt;h5&gt;2.2.2.1.1. 写入镜像&lt;/h5&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo fdisk -l  # 查看磁盘确定外部u盘的名称，防止写入错误
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;h5&gt;2.2.2.1.2. 分区并写入镜像&lt;/h5&gt;
-&lt;p&gt;使用parted或者图形化工具gparted删除分区,使磁盘为空&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo parted
-print devices
-select /dev/sdc
-print
-rm 1
-print
-quit
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;然后使用dd命令写入镜像，格式如下：sudo dd if=xxx.iso of=U盘路径，此次演示示例：sudo dd if=path/mirror_name.iso of=/dev/sdb，回车执行，系统就开始制作启动盘了，期间终端命令窗口不会有任何反馈.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;sudo&lt;/span&gt; &lt;span class="nv"&gt;dd&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;Kali&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;linux&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;.&lt;span class="mi"&gt;1&lt;/span&gt;.&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="nv"&gt;a&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;amd64&lt;/span&gt;.&lt;span class="nv"&gt;iso&lt;/span&gt; &lt;span class="nv"&gt;of&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="nv"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;sdc&lt;/span&gt; &lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="nv"&gt;M&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo parted  # 使用parted进行分区，这个是进入分区工具
-print devices  # 查看磁盘情况，并为下面的做一个确认
-select /dev/sdc  # 选择需要分区的磁盘
-print  # 查看分区情况
-mkpart primary 3021 125000  # 分区，默认的单位是MB
-print  # 再次查看分区情况并检查自己分区是否成功
-quit
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img alt="" src="images/Kali_print_devices.png"&gt;
-&lt;img alt="" src="images/Kali_parted_print.png"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h5&gt;2.2.2.1.3. 对分区进行加密&lt;/h5&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo cryptsetup --verbose --verify-passphrase luksFormat /dev/sdc3
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;没有使用超级用户运行命令会出错
-&lt;img alt="" src="images/Kali_sudo_error.png"&gt;
-确认时输入的必须为大写的YES
-&lt;img alt="" src="images/Kali_YES.png"&gt;
-输入密码并再次输入确认密码后完成加密
-&lt;img alt="" src="images/Kali_confirm_password.png"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h5&gt;2.2.2.1.4. 文件系统级的格式化&lt;/h5&gt;
-&lt;p&gt;还未对分区进行文件系统级格式化，还未能进行文件写入读写。
-用加密方式luksOpen打开并挂载在一个可读的目录下，目录名为fiki_usb(可自定义)
-期间需要输入密码，密码为刚才设置的密码&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo cryptsetup luksOpen /dev/sdc3 fiki_usb
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ls /dev/mapper/fiki_usb  # 查看挂载情况
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo mkfs.ext4 /dev/mapper/fiki_usb  # 格式化为ext4（Linux最新版本日志类型的文件级系统）
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;同样也需要超级权限
-&lt;img alt="" src="images/Kali_mkfs_error.png"&gt;
-由于自己设定的分区较大，所以需要等待一些时间
-&lt;img alt="" src="images/Kali_mkfs.png"&gt;&lt;/p&gt;
-&lt;h5&gt;2.2.2.1.5. 指定卷标&amp;amp;其他&lt;/h5&gt;
-&lt;p&gt;指定卷标为persistence ,kali官方对持久USB设备规定的操作，卷标必须为persistence。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo e2label /dev/mapper/fiki_usb  persistence
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo mkdir -p /mnt/usb # 在/mnt目录下 ，新建一个usb目录，用来mount /dev 设备
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo mount /dev/mapper/fiki_usb /mnt/usb  # 把USB设备的加密分区mount到目录里，这样可以往USB里写文件
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;输出一串字符 到/mnt/usb 目录下的 persistence.conf .会在持久USB启动时被读取，已确认这是加密的USB分区。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo sh -c &amp;#39;echo “/ union” &amp;gt; /mnt/usb/persistence.conf&amp;#39; # 创建persistence.conf文件
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;一直权限错误，最终采用了一些方法解决了
-&lt;img alt="" src="images/Kali_persistence_error.png"&gt;
-&lt;img alt="" src="images/Kali_persistence.png"&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;利用 “sh -c” 命令，它可以让 bash 将一个字串作为完整的命令来执行，这样就可以将 sudo 的影响范围扩展到整条命令&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo umount /dev/mapper/fiki_usb  # 卸载挂载的分区
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo cryptsetup luksClose /dev/mapper/fiki_usb # 关闭通过cryptsetup open加密的分区
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;持久加密USB制作完成。重启进入bios后选择Live USB Encrypted Persistence ，输入磁盘分区密码后进入kali操作系统。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;收尾
-官方源修改
-官方源位于国外服务器，下载速度往往比较慢。我们可以将其替换为国内镜像源，提高软件下载、更新的速度，修改 /etc/apt/sources.list：&lt;/p&gt;
-&lt;p&gt;修改为中科大的源提交下载速度
-deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
-deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
-部分软件包缺失，可以使用上一个版本的源
-deb http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib
-deb-src http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib&lt;/p&gt;
-&lt;p&gt;修改为中科大的源提交下载速度
-deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
-deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib&lt;/p&gt;
-&lt;p&gt;部分软件包缺失，可以使用上一个版本的源
-deb http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib
-deb-src http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib&lt;/p&gt;
-&lt;p&gt;疑难杂症
-Q：Parallels 下无法安装 paralles tools，报错如下：&lt;/p&gt;
-&lt;p&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:220:1: warning: data definition has no type or storage class
- DEFINE_TIMER(thaw_timer, thaw_timer_fn, 0, (unsigned long)&amp;amp;(thaw_work));
-/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:220:1: error: type defaults to ‘int’ in declaration of ‘DEFINE_TIMER’ [-Werror=implicit-int]
-/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c: In function ‘schedule_thaw_work’:
-/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:224:21: error: ‘thaw_timer’ undeclared (first use in this function); did you mean ‘thaw_timer_fn’?
-  if (timer_pending(&amp;amp;thaw_timer))
-/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:224:21: note: each undeclared identifier is reported only once for each function it appears in
-/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c: In function ‘cancel_timeout’:
-/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:233:18: error: ‘thaw_timer’ undeclared (first use in this function); did you mean ‘thaw_timer_fn’?
-  del_timer_sync(&amp;amp;thaw_timer);
-cc1: some warnings being treated as errors
-/usr/src/linux-headers-4.15.0-kali2-common/scripts/Makefile.build:335: recipe for target '/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.o' failed
-make[5]: &lt;strong&gt;&lt;em&gt; [/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.o] Error 1
-/usr/src/linux-headers-4.15.0-kali2-common/Makefile:1528: recipe for target '&lt;em&gt;module&lt;/em&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze' failed
-make[4]: &lt;/em&gt;&lt;/strong&gt; [&lt;em&gt;module&lt;/em&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze] Error 2
-Makefile:146: recipe for target 'sub-make' failed
-make[3]: &lt;strong&gt;&lt;em&gt; [sub-make] Error 2
-Makefile:8: recipe for target 'all' failed
-make[2]: &lt;/em&gt;&lt;/strong&gt; [all] Error 2
-make[2]: Leaving directory '/usr/src/linux-headers-4.15.0-kali2-amd64'
-Makefile:20: recipe for target 'modules' failed
-make[1]: &lt;strong&gt;&lt;em&gt; [modules] Error 2
-make[1]: Leaving directory '/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze'
-Makefile.kmods:34: recipe for target 'installme' failed
-make: &lt;/em&gt;&lt;/strong&gt; [installme] Error 2
-make: Leaving directory '/usr/lib/parallels-tools/kmods'
-Error: could not build kernel modules
-Error: failed to install kernel modules
-Error: failed to install Parallels Guest Tools!&lt;/p&gt;
-&lt;p&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:220:1: warning: data definition has no type or storage class
- DEFINE_TIMER(thaw_timer, thaw_timer_fn, 0, (unsigned long)&amp;amp;(thaw_work));
-/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:220:1: error: type defaults to ‘int’ in declaration of ‘DEFINE_TIMER’ [-Werror=implicit-int]
-/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c: In function ‘schedule_thaw_work’:
-/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:224:21: error: ‘thaw_timer’ undeclared (first use in this function); did you mean ‘thaw_timer_fn’?
-  if (timer_pending(&amp;amp;thaw_timer))
-/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:224:21: note: each undeclared identifier is reported only once for each function it appears in
-/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c: In function ‘cancel_timeout’:
-/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.c:233:18: error: ‘thaw_timer’ undeclared (first use in this function); did you mean ‘thaw_timer_fn’?
-cc1: some warnings being treated as errors
-/usr/src/linux-headers-4.15.0-kali2-common/scripts/Makefile.build:335: recipe for target '/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.o' failed
-make[5]: &lt;strong&gt;&lt;em&gt; [/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze/prl_fs_freeze.o] Error 1
-/usr/src/linux-headers-4.15.0-kali2-common/Makefile:1528: recipe for target '&lt;em&gt;module&lt;/em&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze' failed
-make[4]: &lt;/em&gt;&lt;/strong&gt; [&lt;em&gt;module&lt;/em&gt;/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze] Error 2
-Makefile:146: recipe for target 'sub-make' failed
-make[3]: &lt;strong&gt;&lt;em&gt; [sub-make] Error 2
-Makefile:8: recipe for target 'all' failed
-make[2]: &lt;/em&gt;&lt;/strong&gt; [all] Error 2
-make[2]: Leaving directory '/usr/src/linux-headers-4.15.0-kali2-amd64'
-Makefile:20: recipe for target 'modules' failed
-make[1]: &lt;strong&gt;&lt;em&gt; [modules] Error 2
-make[1]: Leaving directory '/usr/lib/parallels-tools/kmods/prl_fs_freeze/Snapshot/Guest/Linux/prl_freeze'
-Makefile.kmods:34: recipe for target 'installme' failed
-make: &lt;/em&gt;&lt;/strong&gt; [installme] Error 2
-make: Leaving directory '/usr/lib/parallels-tools/kmods'
-Error: could not build kernel modules
-Error: failed to install kernel modules
-Error: failed to install Parallels Guest Tools!&lt;/p&gt;
-&lt;p&gt;A：因为Paralleles Tools（暂时）与 Linux Kernel 4.15 不兼容导致，可以考虑手动安装 linux kernel 4.14。&lt;/p&gt;
-&lt;p&gt;Q：部分软件版本不匹配，无法从官方源找到合适的包？&lt;/p&gt;
-&lt;p&gt;A：官方源维护偶有bug，可以考虑添加上一次快照的源（kali-last-snapshot），修改 /etc/apt/sources.list：&lt;/p&gt;
-&lt;p&gt;deb http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib
-deb-src http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib&lt;/p&gt;
-&lt;p&gt;deb http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib
-deb-src http://mirrors.ustc.edu.cn/kali kali-last-snapshot main non-free contrib&lt;/p&gt;
-&lt;/blockquote&gt;</content><category term="System"></category><category term="linux"></category><category term="kali"></category></entry><entry><title>Manjaro proxy</title><link href="https://aiyoyo20.github.io/articles/manjaro-proxy.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/manjaro-proxy.html</id><summary type="html">&lt;h1&gt;一、（图形化软件）Qv2ray&lt;/h1&gt;
+为什么以及如何避免。&lt;/p&gt;</content><category term="Others"></category><category term="linux"></category><category term="manjaro"></category></entry><entry><title>Manjaro proxy</title><link href="https://aiyoyo20.github.io/articles/manjaro-proxy.html" rel="alternate"></link><published>2020-09-03T10:20:00+08:00</published><updated>2020-09-03T10:20:00+08:00</updated><author><name>FING</name></author><id>tag:aiyoyo20.github.io,2020-09-03:/articles/manjaro-proxy.html</id><summary type="html">&lt;h1&gt;一、（图形化软件）Qv2ray&lt;/h1&gt;
 &lt;p&gt;全平台： linux、win 、mac 都可有可使用的版本
 是开源的的第三方图形化界面，可以直接使用v2ray，在而且在添加插件后可使用 ssr、torjan 等其他，现在在使用的就是这个，还可以查看速度以及使用量，但是其默认监听端口不是1080,需要的可以自己改动一下。
 项目地址：  &lt;a href="https://github.com/Qv2ray/Qv2ray/releases%0A"&gt;https://github.com/Qv2ray/Qv2ray/releases
