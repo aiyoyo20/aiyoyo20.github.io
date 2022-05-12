@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Pillow</title>
+
+    <link rel="stylesheet" href="/theme/css/normalize.css" />
+    <link rel="stylesheet" href="/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="/theme/css/style.css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" />	
+    <script src="/theme/js/custom.modernizr.js"></script>
+
+    <!-- So Firefox can bookmark->"abo this site" -->
+
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="">gogogo</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="/pillow.html" rel="bookmark"
+        title="Permalink to Pillow">Pillow</a></h3>
+    </header>
+
+<h6 class="subheader" title="2022-05-12T18:44:44.925821+02:00">Thu 12 May 2022
+</h6>
+
+
+    <h1>Pillow</h1>
+<h2>调整大小</h2>
+<p>按宽度缩放
+这是一个使用 Pillow 模块来调整图片大小的基本脚本：</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="n">basewidth</span> <span class="o">=</span> <span class="mi">300</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;fullsized_image.jpg&#39;</span><span class="p">)</span>
+<span class="n">wpercent</span> <span class="o">=</span> <span class="p">(</span><span class="n">basewidth</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="n">hsize</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="nb">float</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">wpercent</span><span class="p">)))</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">resize</span><span class="p">((</span><span class="n">basewidth</span><span class="p">,</span> <span class="n">hsize</span><span class="p">),</span> <span class="n">Image</span><span class="o">.</span><span class="n">ANTIALIAS</span><span class="p">)</span>
+<span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;resized_image.jpg&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>这几行 Python 代码使用 Pillow 将一张图片 （fullsized_image.jpg） 调整为 300 像素的宽度，宽度在变量 basewidth 中设置，高度则与新的宽度成比例。比例高度的计算方法是：确定 300 像素占原宽度 （img.size[0]） 的百分比，然后将原高度（img.size[1]） 乘以该百分比。所得的高度值保存在变量 hsize 中。</p>
+<p>如果你需要不同的图片宽度，你可以将 basewidth 改为任何其他数字。另外，请注意，因为我想保留全尺寸的图片 （fullsized_image.jpg），因此我将调整后的图片以一个不同的名称 resized_image.jpg 保存。当然，你不必这么做。如果你想，你可以使用相同的文件名将调整后的图片覆盖全尺寸的图片。</p>
+<p>按高度缩放
+如果高度是固定的，而宽度是按比例变化的，那也基本差不多，你只需要把东西换一下：</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="n">baseheight</span> <span class="o">=</span> <span class="mi">560</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;fullsized_image.jpg&#39;</span><span class="p">)</span>
+<span class="n">hpercent</span> <span class="o">=</span> <span class="p">(</span><span class="n">baseheight</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+<span class="n">wsize</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="nb">float</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">hpercent</span><span class="p">)))</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">resize</span><span class="p">((</span><span class="n">wsize</span><span class="p">,</span> <span class="n">baseheight</span><span class="p">),</span> <span class="n">Image</span><span class="o">.</span><span class="n">ANTIALIAS</span><span class="p">)</span>
+<span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;resized_image.jpg&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>注意 basewidth 现在换成了 baseheight，因为高度是固定的。在第三行中，我们在计算高度百分比，所以我们需要 img.size[1] 而不是 img.size[0]。size 属性是一个元组，包含宽度和高度，单位是像素，size[0] 指的是第一个元组元素，也就是宽度，size[1] 是第二个元素，也就是高度。第 4 行也有这样的切换，size[0] 代表宽度，size[1] 代表高度。</p>
+<h2>灰度化</h2>
+<p>from PIL import Image
+Image.open(imgfile).convert('L')</p>
+<h2>二值化</h2>
+<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">get_bin_table</span><span class="ss">(</span><span class="nv">threshold</span><span class="o">=</span><span class="mi">115</span><span class="ss">)</span>:
+    # <span class="nv">threshold</span> 为设定的阀值，根据实际情况调节
+    <span class="s1">&#39;&#39;&#39;</span>
+    获取灰度转二值的映射<span class="nv">table</span>
+    <span class="mi">0</span>表示黑色,<span class="mi">1</span>表示白色
+    <span class="s1">&#39;&#39;&#39;</span>
+    <span class="nv">table</span> <span class="o">=</span> []
+    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">256</span><span class="ss">)</span>:
+        <span class="k">if</span> <span class="nv">i</span> <span class="o">&lt;</span> <span class="nv">threshold</span>:
+            <span class="nv">table</span>.<span class="nv">append</span><span class="ss">(</span><span class="mi">0</span><span class="ss">)</span>
+        <span class="k">else</span>:
+            <span class="nv">table</span>.<span class="nv">append</span><span class="ss">(</span><span class="mi">1</span><span class="ss">)</span>
+    <span class="k">return</span> <span class="nv">table</span>
+
+<span class="nv">def</span> <span class="nv">main</span><span class="ss">()</span>:
+<span class="nv">image</span> <span class="o">=</span> <span class="nv">Image</span>.<span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">RandomPicture.png</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="nv">imgry</span> <span class="o">=</span> <span class="nv">image</span>.<span class="nv">convert</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">L</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="nv">table</span> <span class="o">=</span> <span class="nv">get_bin_table</span><span class="ss">()</span>
+<span class="nv">binary</span> <span class="o">=</span> <span class="nv">imgry</span>.<span class="nv">point</span><span class="ss">(</span><span class="nv">table</span>, <span class="s1">&#39;</span><span class="s">1</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="nv">binary</span>.<span class="nv">save</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">binary.png</span><span class="s1">&#39;</span><span class="ss">)</span>
+</code></pre></div>
+
+<h2>去噪</h2>
+<p class="subheader">Category: <a href="/category/python.html">Python</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="/archives.html">Archives</a>
+            <li><a href="/tags.html">Tags</a>
+
+
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="/category/android.html">Android</a></li>
+            <li><a href="/category/database.html">DataBase</a></li>
+            <li><a href="/category/front-end.html">Front-end</a></li>
+            <li><a href="/category/golang.html">Golang</a></li>
+            <li><a href="/category/interview_questions.html">Interview_questions</a></li>
+            <li><a href="/category/linux.html">Linux</a></li>
+            <li><a href="/category/others.html">Others</a></li>
+            <li><a href="/category/python.html">Python</a></li>
+            <li><a href="/category/tools.html">Tools</a></li>
+            <li><a href="/category/windows.html">Windows</a></li>
+   
+        </ul>
+
+        <h5 class="sidebar-title">Links</h5>
+        <ul class="side-nav">
+            <li><a href="https://getpelican.com/">Pelican</a></li>
+            <li><a href="https://www.python.org/">Python.org</a></li>
+            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+            <li><a href="#">github</a></li>
+        </ul>
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="#">You can add links in your config file</a></li>
+            <li><a href="#">Another social link</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+                <p>gogogo by yoyo</p>
+            </div>
+            </div>
+    </div>
+</footer>

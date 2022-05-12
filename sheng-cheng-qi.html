@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>生成器</title>
+
+    <link rel="stylesheet" href="/theme/css/normalize.css" />
+    <link rel="stylesheet" href="/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="/theme/css/style.css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" />	
+    <script src="/theme/js/custom.modernizr.js"></script>
+
+    <!-- So Firefox can bookmark->"abo this site" -->
+
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="">gogogo</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="/sheng-cheng-qi.html" rel="bookmark"
+        title="Permalink to 生成器">生成器</a></h3>
+    </header>
+
+<h6 class="subheader" title="2022-05-12T18:44:44.925821+02:00">Thu 12 May 2022
+</h6>
+
+
+    <h1>yield 关键字初识</h1>
+<p>先看一个简单例子：</p>
+<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">yie</span><span class="ss">()</span>:
+    <span class="nv">n</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="nv">yield</span> <span class="nv">n</span>
+    <span class="nv">print</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>
+    <span class="nv">n</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nv">yield</span> <span class="nv">n</span>
+    <span class="nv">print</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>
+    <span class="nv">n</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nv">yield</span> <span class="nv">n</span>
+    <span class="nv">print</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>
+
+
+<span class="nv">a</span> <span class="o">=</span> <span class="nv">yie</span><span class="ss">()</span>
+<span class="nv">one</span> <span class="o">=</span> <span class="k">next</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">one  {one}</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="nv">two</span> <span class="o">=</span> <span class="k">next</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">two  {two}</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="nv">thr</span> <span class="o">=</span> <span class="k">next</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">thr  {thr}</span><span class="s1">&#39;</span><span class="ss">)</span>
+
+# <span class="nv">one</span>  <span class="mi">1</span>
+# <span class="mi">1</span>
+# <span class="nv">two</span>  <span class="mi">2</span>
+# <span class="mi">2</span>
+# <span class="nv">thr</span>  <span class="mi">3</span>
+</code></pre></div>
+
+<p>当调用时，遇到 yield 关键字时函数和遇到 return 用类似的结果，返回一个值，但不同的是并没有退出函数，当下一次运行时，继续函数里后面的代码。
+同时我们取值的方式比较特殊，通过 next() 去取对象的值，而这应该是属于迭代器的方法。</p>
+<h1>生成器函数（generator function）</h1>
+<p>如果函数包含至少一个 yield语句 (它可能包含其他 yield 或 return 语句)，那么它将成为一个生成器函数。</p>
+<p>生成器函数与正常函数的差异下面列出的是生成器函数与正常函数的区别 ：
+    当被调用时，它返回一个对象(迭代器)，但不会立即开始执行。
+    <strong>iter</strong>() 和 <strong>next</strong>() 之类的方法将自动实现。所以可以使用 next() 迭代项目。
+    一旦函数遇到 yield，该函数将被暂停，并将该控制权交给调用者。局部变量及其状态在连续调用之间被记住。
+    最后，当函数终止时，StopIteration会在进一步的调用时自动引发。</p>
+<p>上面例子中定义的 yie() 函数便是一个生成器函数。</p>
+<h1>生成器（generator）</h1>
+<p>而生成器即是生成器函数被调用后产生的对象。
+如例子中的 a 便是一个生成器。
+在每个调用之间函数会保持住变量n的值。与正常函数不同，当函数产生时，局部变量不会被销毁。 此外，生成器对象只能重复一次。
+要重新启动该过程，需要使用类似于 a = yie() 的方法创建另一个生成器对象。</p>
+<p>并且支持 for 循环遍历。</p>
+<h1>生成器推导式</h1>
+<p>使用生成器表达式，可以轻松创建简单的生成器。 它使构建生成器变得容易。
+与 lambda 函数一样创建一个匿名函数，生成器表达式创建一个匿名生成函数。生成器表达式的语法与 Python 中的列表解析类似。 但方圆 [] 替换为圆括号 ()。
+列表推导和生成器表达式之间的主要区别是：列表推导产生整个列表，生成器表达式一次生成一个项目。
+它们是处理方式是懒惰的，只有在被要求时才能生产项目。 因此，生成器表达式的存储器效率高于等效列表的值。</p>
+<div class="highlight"><pre><span></span><code><span class="nv">ge</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">10</span><span class="ss">))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">type</span><span class="ss">(</span><span class="nv">ge</span><span class="ss">))</span>
+
+# <span class="o">&lt;</span><span class="nv">class</span> <span class="s1">&#39;</span><span class="s">generator</span><span class="s1">&#39;</span><span class="o">&gt;</span>
+</code></pre></div>
+
+<h1>yield from</h1>
+<p>语法：
+    yield from generator</p>
+<p>yield from 后面可以跟的可以是“ 生成器 、元组、 列表、range（）函数产生的序列等可迭代对象”
+简单地说，yield from  generator 。实际上就是返回另外一个生成器。而yield只是返回一个元素。从这个层面来说，有下面的等价关系：yield from iterable本质上等于 for item in iterable: yield item 。</p>
+<h2>TODO</h2>
+<p>深入的看着有点晕，暂时放放吧，留两个链接
+https://blog.csdn.net/qq_27825451/article/details/85244237
+https://www.cnblogs.com/wongbingming/p/9085268.html</p>
+<h1>生成器专属方法 send、throw、close</h1>
+<h2>send 方法详解</h2>
+<p>generator.send(value)</p>
+<p>作用：向生成器发送一个值，随后恢复执行。
+value 参数是 send 方法向生成器发送的值，这个值会作为当前所在的 yield 表达式的结果。
+随后生成器恢复执行，直到下一个 yield，把它后面的值作为 send 方法的结果返回。</p>
+<p>如果恢复执行后再也没有 yield 语句，生成器退出，并抛出 StopIteration 异常。</p>
+<p>如果一开始使用 send 启动生成器，必须使用 None 作为参数，因为一开始没有可以接收值的 yield 表达式。</p>
+<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">gen</span><span class="ss">()</span>:
+    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">2</span><span class="ss">)</span>:
+        <span class="nv">x</span> <span class="o">=</span> <span class="nv">yield</span> <span class="nv">i</span>
+        <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">x:</span><span class="s1">&#39;</span>, <span class="nv">x</span><span class="ss">)</span>
+
+<span class="nv">a</span> <span class="o">=</span> <span class="nv">gen</span><span class="ss">()</span>
+<span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">a</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="nv">_</span><span class="ss">)</span>
+
+# <span class="mi">0</span>
+# <span class="nv">x</span>: <span class="nv">None</span>
+# <span class="mi">1</span>
+# <span class="nv">x</span>: <span class="nv">None</span>
+</code></pre></div>
+
+<p>不同于 return，yield 的值是可以进行赋值操作的，但是由于其特性，赋值在正常i情况下都为空。
+如上面的例子，<code>x = yield i</code> 等式是从右向左的，当遇到 yield 时就抛出值，而下一次调用时才进行赋值，这时值已经不存在的，便为 None 了。</p>
+<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">gen</span><span class="ss">()</span>:
+    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">2</span><span class="ss">)</span>:
+        <span class="nv">x</span> <span class="o">=</span> <span class="nv">yield</span> <span class="nv">i</span>
+        <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">x:</span><span class="s1">&#39;</span>, <span class="nv">x</span><span class="ss">)</span>
+
+<span class="nv">a</span> <span class="o">=</span> <span class="nv">gen</span><span class="ss">()</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">a</span>.<span class="k">send</span><span class="ss">(</span><span class="nv">None</span><span class="ss">))</span> # <span class="nv">a</span>.<span class="k">send</span><span class="ss">(</span><span class="nv">None</span><span class="ss">)</span> 等同于 <span class="k">next</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">a</span>.<span class="k">send</span><span class="ss">(</span><span class="mi">3</span><span class="ss">))</span>
+
+# <span class="mi">0</span>
+# <span class="nv">x</span>: <span class="mi">3</span>
+# <span class="mi">1</span>
+</code></pre></div>
+
+<p>这便是 send() 的用法，能够在使用生成器的使用根据需要传递值进去。</p>
+<h2>throw 方法详解</h2>
+<p>generator.throw(type[, value[, traceback]])</p>
+<p>作用：在生成器暂停的地方抛出类型为 type 的异常，并返回下一个 yield 的返回值。
+如果生成器函数没有捕获并处理传入的异常，或者说抛出了另一个异常，那么该异常会被传递给调用方。
+如果生成器退出时还没有 yield 新值，则会抛出 StopIteration 异常。</p>
+<h3>（第一种情况：捕获并处理传入的异常，得到下一个 yield 的返回值。</h3>
+<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">gen</span><span class="ss">()</span>:
+    <span class="nv">n</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="nv">True</span>:
+        <span class="nv">try</span>:
+            <span class="nv">yield</span> <span class="nv">n</span>
+            <span class="nv">n</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="nv">except</span> <span class="nv">ZeroDivisionError</span>:
+            <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">捕获到了 ZeroDivisionError</span><span class="s1">&#39;</span><span class="ss">)</span>
+            <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">此时的 n 为：%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="nv">n</span><span class="ss">)</span>
+
+<span class="nv">g</span> <span class="o">=</span> <span class="nv">gen</span><span class="ss">()</span>
+<span class="nv">ret</span> <span class="o">=</span> <span class="k">next</span><span class="ss">(</span><span class="nv">g</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">第一次 yield 的返回值：%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="nv">ret</span><span class="ss">)</span>
+<span class="nv">ret</span> <span class="o">=</span> <span class="nv">g</span>.<span class="nv">throw</span><span class="ss">(</span><span class="nv">ZeroDivisionError</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">ret</span><span class="ss">)</span>
+
+# 第一次 <span class="nv">yield</span> 的返回值：<span class="mi">0</span>
+# 捕获到了 <span class="nv">ZeroDivisionError</span>
+# 此时的 <span class="nv">n</span> 为：<span class="mi">0</span>
+# <span class="mi">0</span>
+</code></pre></div>
+
+<p>第一次调用时遇到 yield ,抛出值，第二次调用时接受到了异常，跳过了 n + 1，所以n保持为 0。
+如果通过 throw 传入的异常被捕获的话，生成器能够恢复执行直到下一个 yield。</p>
+<p>（1 如果捕获不准确的话</p>
+<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">gen</span><span class="ss">()</span>:
+    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">5</span><span class="ss">)</span>:
+        <span class="nv">try</span>:
+            <span class="nv">yield</span> <span class="nv">i</span>
+        <span class="nv">except</span> <span class="nv">Exception</span> <span class="nv">as</span> <span class="nv">e</span>:
+            <span class="nv">print</span><span class="ss">(</span><span class="nv">e</span><span class="ss">)</span>
+
+<span class="nv">a</span> <span class="o">=</span> <span class="nv">gen</span><span class="ss">()</span>
+<span class="nv">b</span> <span class="o">=</span> <span class="k">next</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span> # <span class="nv">a</span>.<span class="k">send</span><span class="ss">(</span><span class="nv">None</span><span class="ss">)</span> 等同于 <span class="k">next</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">b</span><span class="ss">)</span>
+<span class="nv">c</span> <span class="o">=</span> <span class="nv">a</span>.<span class="nv">throw</span><span class="ss">(</span><span class="nv">ZeroDivisionError</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">c</span><span class="ss">)</span>
+<span class="nv">d</span> <span class="o">=</span> <span class="k">next</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span> # <span class="nv">a</span>.<span class="k">send</span><span class="ss">(</span><span class="nv">None</span><span class="ss">)</span> 等同于 <span class="k">next</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">d</span><span class="ss">)</span>
+
+# <span class="mi">0</span>
+#   <span class="ss">(</span>这样是捕获不到异常的，所以为空<span class="ss">)</span>
+# <span class="mi">1</span>
+# <span class="mi">2</span>
+</code></pre></div>
+
+<p>后面的可以继续执行，捕获不到异常应该是throw的异常没有继承 excaption。</p>
+<p>（2 甚至于不做捕获</p>
+<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">gen</span><span class="ss">()</span>:
+    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">5</span><span class="ss">)</span>:
+        <span class="nv">try</span>:
+            <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">try</span><span class="s1">&#39;</span><span class="ss">)</span>
+            <span class="nv">yield</span> <span class="nv">i</span>
+        <span class="nv">except</span>:
+            <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">error</span><span class="s1">&#39;</span><span class="ss">)</span>
+
+<span class="nv">a</span> <span class="o">=</span> <span class="nv">gen</span><span class="ss">()</span>
+<span class="nv">b</span> <span class="o">=</span> <span class="k">next</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span> # <span class="nv">a</span>.<span class="k">send</span><span class="ss">(</span><span class="nv">None</span><span class="ss">)</span> 等同于 <span class="k">next</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">b</span><span class="ss">)</span>
+<span class="nv">c</span> <span class="o">=</span> <span class="nv">a</span>.<span class="nv">throw</span><span class="ss">(</span><span class="nv">ZeroDivisionError</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">c</span><span class="ss">)</span>
+<span class="nv">d</span> <span class="o">=</span> <span class="k">next</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span> # <span class="nv">a</span>.<span class="k">send</span><span class="ss">(</span><span class="nv">None</span><span class="ss">)</span> 等同于 <span class="k">next</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">d</span><span class="ss">)</span>
+
+# <span class="nv">try</span>
+# <span class="mi">0</span>
+# <span class="nv">error</span>
+# <span class="nv">try</span>
+# <span class="mi">1</span>
+# <span class="nv">try</span>
+# <span class="mi">2</span>
+# <span class="nv">error</span>
+# <span class="nv">try</span>
+# <span class="nv">Exception</span> <span class="nv">ignored</span> <span class="nv">in</span>: <span class="o">&lt;</span><span class="nv">generator</span> <span class="nv">object</span> <span class="nv">gen</span> <span class="nv">at</span> <span class="mi">0</span><span class="nv">x7fb5827ec2e0</span><span class="o">&gt;</span>
+# <span class="nv">RuntimeError</span>: <span class="nv">generator</span> <span class="nv">ignored</span> <span class="nv">GeneratorExit</span>
+</code></pre></div>
+
+<p>后续的依旧能执行，但每次执行完如果后续没有继续取值会多执行一次抛出生成器退出异常。</p>
+<h3>（第二种情况：没有捕获并处理 throw 传入的异常，异常会回传给调用方</h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="k">def</span> <span class="nf">gen</span><span class="p">():</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">yield</span> <span class="n">n</span>
+        <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="n">gen</span><span class="p">()</span>
+<span class="n">ret1</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;第一次 yield 的返回值：</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">ret1</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">ret2</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">throw</span><span class="p">(</span><span class="ne">ZeroDivisionError</span><span class="p">)</span>  <span class="c1"># ret2 并没有收到任何值</span>
+<span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;调用方捕获到 ZeroDivisionError 异常&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">())</span>
+
+<span class="c1"># 第一次 yield 的返回值：0</span>
+<span class="c1"># 调用方捕获到 ZeroDivisionError 异常</span>
+<span class="c1"># (&lt;class &#39;ZeroDivisionError&#39;&gt;, ZeroDivisionError(), &lt;traceback object at 0x7fd771bcf5c0&gt;)</span>
+</code></pre></div>
+
+<p>这个比较容易理解，类似于将 异常 yield 回来了
+而对于已经通过抛出异常而退出的生成器再使用 next(g) 会持续抛出 StopIteration 异常。</p>
+<h3>（第三种情况：生成器退出时没有 yield 新值，会抛出 StopIteration 异常。</h3>
+<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">gen</span><span class="ss">()</span>:
+    <span class="nv">try</span>:
+        # 注意是在当前暂停的 <span class="nv">yield</span> 处抛出异常
+        # 所以要在这里捕获
+        <span class="nv">yield</span> <span class="mi">1</span>
+    <span class="nv">except</span> <span class="nv">Exception</span> <span class="nv">as</span> <span class="nv">e</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">在生成器内部捕获了异常{e.args}</span><span class="s1">&#39;</span><span class="ss">)</span>
+        # <span class="nv">print</span><span class="ss">(</span><span class="nv">e</span>.<span class="nv">args</span><span class="ss">)</span>
+
+    # <span class="nv">yield</span> <span class="mi">2</span>
+
+<span class="nv">g</span> <span class="o">=</span> <span class="nv">gen</span><span class="ss">()</span>
+<span class="nv">print</span><span class="ss">(</span><span class="k">next</span><span class="ss">(</span><span class="nv">g</span><span class="ss">))</span>
+<span class="nv">g</span>.<span class="nv">throw</span><span class="ss">(</span><span class="nv">TypeError</span>, <span class="s1">&#39;</span><span class="s">类型错误</span><span class="s1">&#39;</span><span class="ss">)</span>
+
+# <span class="mi">1</span>
+# 在生成器内部捕获了异常<span class="ss">(</span><span class="s1">&#39;</span><span class="s">类型错误</span><span class="s1">&#39;</span>,<span class="ss">)</span>
+# <span class="nv">Traceback</span> <span class="ss">(</span><span class="nv">most</span> <span class="nv">recent</span> <span class="k">call</span> <span class="nl">last</span><span class="ss">)</span>:
+#   <span class="nv">File</span> <span class="s2">&quot;</span><span class="s">/home/fiki/Documents/PycharmProjects/thread_yy.py</span><span class="s2">&quot;</span>, <span class="nv">line</span> <span class="mi">54</span>, <span class="nv">in</span> <span class="o">&lt;</span><span class="nv">module</span><span class="o">&gt;</span>
+#     <span class="nv">g</span>.<span class="nv">throw</span><span class="ss">(</span><span class="nv">TypeError</span>, <span class="s1">&#39;</span><span class="s">类型错误</span><span class="s1">&#39;</span><span class="ss">)</span>
+# <span class="nv">StopIteration</span>
+</code></pre></div>
+
+<p>内部捕获到了异常，但是由于没有可迭代的了，又抛出 StopIteration 给显式覆盖了。</p>
+<h2>生成器的 close 方法</h2>
+<p>generator.close()</p>
+<p>作用：在生成器函数暂停的地方抛出一个 GeneratorExit 异常。
+这并不等价于 generator.throw(GeneratorExit)，后面会说原因。
+如果生成器抛出 StopIteration 异常（不管是由于正常退出还是因为该生成器已经关闭），或者抛出 GeneratorExit 异常（不捕获该异常即可），close 方法不传递该异常，直接返回到调用方。而生成器抛出的其他异常会传递给调用方。
+GeneratorExit 异常的产生意味着生成器对象的生命周期已经结束，因此生成器方法后续语句中不能再有 yield，否则会产生 RuntimeError。（而 throw 方法是期待一个 yield 返回值的，如果没有，则会抛出 StopIteration 异常。）
+对于已经正常退出或者因为异常退出的生成器对象，close 方法不会进行任何操作</p>
+<h3>（第一种情况：</h3>
+<p>不捕获 GeneratorExit 异常，close 方法返回调用方，不传递该异常。</p>
+<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">gen</span><span class="ss">()</span>:
+    <span class="nv">yield</span> <span class="mi">1</span>
+    <span class="nv">yield</span> <span class="mi">2</span>
+
+<span class="nv">g</span> <span class="o">=</span> <span class="nv">gen</span><span class="ss">()</span>
+<span class="nv">print</span><span class="ss">(</span><span class="k">next</span><span class="ss">(</span><span class="nv">g</span><span class="ss">))</span>
+<span class="nv">g</span>.<span class="nv">close</span><span class="ss">()</span>
+<span class="nv">print</span><span class="ss">(</span><span class="k">next</span><span class="ss">(</span><span class="nv">g</span><span class="ss">))</span>
+
+# <span class="mi">1</span>
+# <span class="nv">Traceback</span> <span class="ss">(</span><span class="nv">most</span> <span class="nv">recent</span> <span class="k">call</span> <span class="nl">last</span><span class="ss">)</span>:
+#   <span class="nv">File</span> <span class="s2">&quot;</span><span class="s">/home/fiki/Documents/PycharmProjects/thread_yy.py</span><span class="s2">&quot;</span>, <span class="nv">line</span> <span class="mi">50</span>, <span class="nv">in</span> <span class="o">&lt;</span><span class="nv">module</span><span class="o">&gt;</span>
+#     <span class="nv">print</span><span class="ss">(</span><span class="k">next</span><span class="ss">(</span><span class="nv">g</span><span class="ss">))</span>
+# <span class="nv">StopIteration</span>
+</code></pre></div>
+
+<p>注意：对已经关闭的生成器对象使用 next 会抛出 StopIteration 异常。</p>
+<h3>（第二种情况：</h3>
+<p>生成器自然退出抛出 StopIteration 异常，该异常不会传递给调用方，close 方法正常返回。</p>
+<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">gen</span><span class="ss">()</span>:
+    <span class="nv">try</span>:
+        <span class="nv">yield</span> <span class="mi">1</span>
+    <span class="nv">except</span> <span class="nv">GeneratorExit</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">捕获到GeneratorExit</span><span class="s1">&#39;</span><span class="ss">)</span>
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">生成器函数结束了</span><span class="s1">&#39;</span><span class="ss">)</span>
+
+<span class="nv">g</span> <span class="o">=</span> <span class="nv">gen</span><span class="ss">()</span>
+<span class="nv">print</span><span class="ss">(</span><span class="k">next</span><span class="ss">(</span><span class="nv">g</span><span class="ss">))</span>
+<span class="nv">g</span>.<span class="nv">close</span><span class="ss">()</span>
+
+# <span class="mi">1</span>
+# 捕获到<span class="nv">GeneratorExit</span>
+# 生成器函数结束了
+</code></pre></div>
+
+<h3>（第三种情况：</h3>
+<p>在 GeneratorExit 抛出后还有 yield 语句，会产生 RuntimeError。另外生成器对象被垃圾回收时，解释器会自动调用该对象的 close 方法（PEP 342），这意味着最好不要在相应的 except 和 finally 中写 yield 语句，否则不知道什么时候就会抛出 RuntimeError 异常。</p>
+<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">gen</span><span class="ss">()</span>:
+    <span class="nv">try</span>:
+        <span class="nv">yield</span> <span class="mi">1</span>
+    <span class="nv">except</span> <span class="nv">GeneratorExit</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">捕获到 GeneratorExit</span><span class="s1">&#39;</span><span class="ss">)</span>
+        <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">尝试在 GeneratorExit 产生后 yield 一个值</span><span class="s1">&#39;</span><span class="ss">)</span>
+        <span class="nv">yield</span> <span class="mi">2</span>
+
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">生成器结束</span><span class="s1">&#39;</span><span class="ss">)</span>
+
+
+<span class="nv">g</span> <span class="o">=</span> <span class="nv">gen</span><span class="ss">()</span>
+<span class="k">next</span><span class="ss">(</span><span class="nv">g</span><span class="ss">)</span>
+<span class="nv">g</span>.<span class="nv">close</span><span class="ss">()</span>
+<span class="s2">&quot;&quot;&quot;</span>
+捕获到 <span class="nv">GeneratorExit</span>
+尝试在 <span class="nv">GeneratorExit</span> 产生后 <span class="nv">yield</span> 一个值
+<span class="nv">Traceback</span> <span class="ss">(</span><span class="nv">most</span> <span class="nv">recent</span> <span class="k">call</span> <span class="nl">last</span><span class="ss">)</span>:
+  <span class="nv">File</span> <span class="s2">&quot;</span><span class="s">test.py</span><span class="s2">&quot;</span>, <span class="nv">line</span> <span class="mi">14</span>, <span class="nv">in</span> <span class="o">&lt;</span><span class="nv">module</span><span class="o">&gt;</span>
+    <span class="nv">g</span>.<span class="nv">close</span><span class="ss">()</span>
+<span class="nv">RuntimeError</span>: <span class="nv">generator</span> <span class="nv">ignored</span> <span class="nv">GeneratorExit</span>
+<span class="s2">&quot;&quot;&quot;</span>
+</code></pre></div>
+
+<p>一种防止抛出 RuntimeError 的安全生成器写法：设置一个布尔标识。</p>
+<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">safegen</span><span class="ss">()</span>:
+    <span class="nv">yield</span> <span class="s1">&#39;</span><span class="s">so far so good</span><span class="s1">&#39;</span>
+    <span class="nv">closed</span> <span class="o">=</span> <span class="nv">False</span>
+    <span class="nv">try</span>:
+        <span class="nv">yield</span> <span class="s1">&#39;</span><span class="s">yay</span><span class="s1">&#39;</span>
+    <span class="nv">except</span> <span class="nv">GeneratorExit</span>:
+        <span class="nv">closed</span> <span class="o">=</span> <span class="nv">True</span>
+        <span class="nv">raise</span>
+    <span class="nv">finally</span>:
+        <span class="k">if</span> <span class="nv">not</span> <span class="nv">closed</span>:
+            <span class="nv">yield</span> <span class="s1">&#39;</span><span class="s">boo</span><span class="s1">&#39;</span>
+</code></pre></div>
+
+<h3>（第四种情况：</h3>
+<p>对已经关闭的生成器对象调用 close() 方法，不会进行任何操作。</p>
+<div class="highlight"><pre><span></span><code>def gen():
+    yield 1
+    print(&#39;我不会被执行&#39;)
+    print(&#39;因为在 yield 1 就抛出了 GeneratorExit 异常&#39;)
+    print(&#39;未经捕获的 GeneratorExit 异常不会传递&#39;)
+    print(&#39;返回执行权给 close 的调用方&#39;)
+
+g = gen()
+g.close()
+g.close()
+g.close()  # 多次调用 close，什么效果都没有
+</code></pre></div>
+
+<p>补充：GeneratorExit 异常只有在生成器对象被激活后，才有可能产生。</p>
+<h1>生成器优点</h1>
+<h2>1. 容易实现</h2>
+<p>与其迭代器类相比，发生器可以以清晰简洁的方式实现。 
+以下是使用迭代器类来实现2的幂次序的例子。</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="n">PowTwo:</span>
+    <span class="n">def</span> <span class="n">__init__</span>(<span class="nb">self</span>, <span class="nb">max</span> = <span class="mi">0</span>):
+        <span class="nb">self</span>.<span class="nb">max</span> = <span class="nb">max</span>
+
+    <span class="n">def</span> <span class="n">__iter__</span>(<span class="nb">self</span>):
+        <span class="nb">self</span>.<span class="n">n</span> = <span class="mi">0</span>
+        <span class="k">return</span> <span class="nb">self</span>
+
+    <span class="n">def</span> <span class="n">__next__</span>(<span class="nb">self</span>):
+        <span class="k">if</span> <span class="nb">self</span>.<span class="n">n</span> &gt; <span class="nb">self</span>.<span class="o">max</span>:
+            <span class="n">raise</span> <span class="n">StopIteration</span>
+
+        <span class="nb">result</span> = <span class="mi">2</span> ** <span class="nb">self</span>.<span class="n">n</span>
+        <span class="nb">self</span>.<span class="n">n</span> += <span class="mi">1</span>
+        <span class="k">return</span> <span class="nb">result</span>
+</code></pre></div>
+
+<p>上面代码有点长，可以使用一个生成器函数实现同样的功能。</p>
+<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">PowTwoGen</span><span class="ss">(</span><span class="nv">max</span> <span class="o">=</span> <span class="mi">0</span><span class="ss">)</span>:
+    <span class="nv">n</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="nv">n</span> <span class="o">&lt;</span> <span class="nv">max</span>:
+        <span class="nv">yield</span> <span class="mi">2</span> <span class="o">**</span> <span class="nv">n</span>
+        <span class="nv">n</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+
+<p>因为，生成器自动跟踪的细节，它更简洁，更干净。</p>
+<h2>2.内存高效</h2>
+<p>返回序列的正常函数将在返回结果之前会在内存中的创建整个序列。如果序列中的项目数量非常大，这可是要消耗内存的。
+序列的生成器实现是内存友好的，并且是推荐使用的，因为它一次仅产生一个项目。</p>
+<h2>3. 表示无限流</h2>
+<p>生成器是表示无限数据流的绝佳媒介。 无限流不能存储在内存中，由于生成器一次只能生成一个项目，因此可以表示无限数据流。
+以下示例可以生成所有偶数(至少在理论上)。</p>
+<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">all_even</span><span class="ss">()</span>:
+    <span class="nv">n</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="nv">True</span>:
+        <span class="nv">yield</span> <span class="nv">n</span>
+        <span class="nv">n</span> <span class="o">+=</span> <span class="mi">2</span>
+</code></pre></div>
+
+<h2>4.管道生成器</h2>
+<p>生成器可用于管理一系列操作，下面使用一个例子说明。
+假设我们有一个快餐连锁店的日志文件。 日志文件有一列(第4列)，用于跟踪每小时销售的比萨饼数量，我们想算出在5年内销售的总萨饼数量。
+假设一切都是字符串，不可用的数字标记为“N / A”。 这样做的生成器实现可以如下。</p>
+<div class="highlight"><pre><span></span><code><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">sells.log</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">file</span>:
+    <span class="nv">pizza_col</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">line</span>[<span class="mi">3</span>] <span class="k">for</span> <span class="nv">line</span> <span class="nv">in</span> <span class="nv">file</span><span class="ss">)</span>
+    <span class="nv">per_hour</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">x</span> <span class="nv">in</span> <span class="nv">pizza_col</span> <span class="k">if</span> <span class="nv">x</span> <span class="o">!=</span> <span class="s1">&#39;</span><span class="s">N/A</span><span class="s1">&#39;</span><span class="ss">)</span>
+    <span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Total pizzas sold = </span><span class="s2">&quot;</span>,<span class="nv">sum</span><span class="ss">(</span><span class="nv">per_hour</span><span class="ss">))</span>
+</code></pre></div>
+
+<p>这种管道的方式是更高效和易于阅读的。</p>
+<h1>判断生成器、生成器函数</h1>
+<p>我们可以用inspect类里的isgeneratorfunction类方法判断是否是一个生成器函数，以及使用 isgenerator类方法判断是否是一个生成器。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">inspect</span> <span class="kn">import</span> <span class="n">isgeneratorfunction</span><span class="p">,</span> <span class="n">isgenerator</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;fibonacci is a generator function: </span><span class="si">{</span><span class="n">isgeneratorfunction</span><span class="p">(</span><span class="n">fibonacci</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>  
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;fib is a generator: </span><span class="si">{</span><span class="n">isgenerator</span><span class="p">(</span><span class="n">fib</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<h1>应用生成器的场景与好处</h1>
+<p>生成器可用于产生数据流，而且并不立刻产生返回值，而是等到被需要的时候才会产生返回值，相当于一个主动拉取的过程(pull)，比如现在有一个日志文件，每行产生一条记录，对于每一条记录，不同部门的人可能处理方式不同，但是我们可以提供一个公用的、按需生成的数据流。
+还有做爬虫的时候，爬取大量数据的时候如果使用生成器每次需要的时候执行输出也可以大大降低资源的消耗。
+使用生成器的好处当然不仅限于此，让我们来看一下下面的例子，我们打算读取小说《三国演义》的所有文字内容，如果直接对文件对象调用 read() 方法，会导致不可预测的内存占用。好的方法是利用固定长度的缓冲区来不断读取文件内容。而且同时通过 yield来执行每次输出，就可以轻松实现文件读取。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">file</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;三国演义.txt&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">read_file</span><span class="p">(</span><span class="n">fpath</span><span class="p">):</span>  
+   <span class="n">BLOCK_SIZE</span> <span class="o">=</span> <span class="mi">1024</span> 
+   <span class="k">with</span> <span class="n">file</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;GB18030&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> 
+       <span class="k">while</span> <span class="kc">True</span><span class="p">:</span> 
+           <span class="n">block_content</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">BLOCK_SIZE</span><span class="p">)</span> 
+           <span class="k">if</span> <span class="n">block_content</span><span class="p">:</span> 
+               <span class="k">yield</span> <span class="n">block_content</span> 
+           <span class="k">else</span><span class="p">:</span> 
+               <span class="k">return</span>
+
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">read_file</span><span class="p">(</span><span class="n">file</span><span class="p">):</span>  
+    <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</code></pre></div>
+
+<p><a href="https://www.yiibai.com/python/generator.html#article-start">Python生成器</a>
+<a href="https://blog.csdn.net/qq_27825451/article/details/85244237">python协程系列（三）——yield from原理详解</a>
+<a href="https://juejin.cn/post/6992917747973750821">Python 生成器与它的 send，throw，close 方法</a>
+<a href="http://anders.wang/python-yield/">用yield关键字创建生成器</a></p>
+<p class="subheader">Category: <a href="/category/python.html">Python</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="/archives.html">Archives</a>
+            <li><a href="/tags.html">Tags</a>
+
+
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="/category/android.html">Android</a></li>
+            <li><a href="/category/database.html">DataBase</a></li>
+            <li><a href="/category/front-end.html">Front-end</a></li>
+            <li><a href="/category/golang.html">Golang</a></li>
+            <li><a href="/category/interview_questions.html">Interview_questions</a></li>
+            <li><a href="/category/linux.html">Linux</a></li>
+            <li><a href="/category/others.html">Others</a></li>
+            <li><a href="/category/python.html">Python</a></li>
+            <li><a href="/category/tools.html">Tools</a></li>
+            <li><a href="/category/windows.html">Windows</a></li>
+   
+        </ul>
+
+        <h5 class="sidebar-title">Links</h5>
+        <ul class="side-nav">
+            <li><a href="https://getpelican.com/">Pelican</a></li>
+            <li><a href="https://www.python.org/">Python.org</a></li>
+            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+            <li><a href="#">github</a></li>
+        </ul>
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="#">You can add links in your config file</a></li>
+            <li><a href="#">Another social link</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+                <p>gogogo by yoyo</p>
+            </div>
+            </div>
+    </div>
+</footer>

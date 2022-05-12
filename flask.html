@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>flask</title>
+
+    <link rel="stylesheet" href="/theme/css/normalize.css" />
+    <link rel="stylesheet" href="/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="/theme/css/style.css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" />	
+    <script src="/theme/js/custom.modernizr.js"></script>
+
+    <!-- So Firefox can bookmark->"abo this site" -->
+
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="">gogogo</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="/flask.html" rel="bookmark"
+        title="Permalink to flask">flask</a></h3>
+    </header>
+
+<h6 class="subheader" title="2022-05-12T18:44:45.269152+02:00">Thu 12 May 2022
+</h6>
+
+
+    <ol>
+<li>
+<p>Flask框架的优点
+Flask框架是一个短小精悍、可扩展性强的web框架。html</p>
+</li>
+<li>
+<p>Flask框架依赖组件
+Flask依赖于werkzurg组件，实现wsgi使用的就是werkzurg。web</p>
+</li>
+<li>
+<p>Flask蓝图的做用
+实际项目中，须要进行项目目录结构的划分，蓝图就是用来帮助开发者进行目录结构的划分。redis</p>
+</li>
+<li>
+<p>列举使用过的Flask第三方组件
+werkzurg、DBUtils、wtforms、SQLAlchemy、jinjia二、redis……sql</p>
+</li>
+<li>
+<p>简述Flask上下文管理流程</p>
+</li>
+<li>
+<p>请求到来时，将session和request封装到ctx对象中；2.对session作补充；3.将包含了request和session的ctx对象放到一个容器中（每一个请求都会根据线程/协程加一个惟一标识）；4.视图函数使用的时候须要根据当前线程或协程的惟一标识，获取ctx对象，再取ctx对象中取request和session（视图函数使用的时候，须要根据当前线程获取数据。）5.请求结束时，根据当前线程/协程的惟一标记，将这个容器上的数据移除。数据库</p>
+</li>
+<li>
+<p>Flask中的g的做用</p>
+</li>
+<li>Flask中上下文管理主要涉及到了哪些相关的类，这些类的主要做用</li>
+<li>
+<p>LocalStack它帮助咱们在local中把一个列表维护成一个栈，方便咱们对列表中的数据进行添加和维护，有了LocalStack操做更加便捷。2. Local帮助咱们为每一个线程/协程开辟空间flask</p>
+</li>
+<li>
+<p>为何Flask要把Local对象中的值stack维护成一个列表</p>
+</li>
+<li>
+<p>Flask中多app应用是怎么完成
+使用Flask类建立不一样的app对象，而后借助DispatcherMiddleware类来实现。cookie</p>
+</li>
+<li>
+<p>在Flask中实现WebSocket须要什么组件</p>
+</li>
+<li>
+<p>wtforms组件的做用
+wtforms组件有两个做用，自动生成html标签和对用户请求数据进行校验。session</p>
+</li>
+<li>
+<p>Flask框架默认session的处理机制
+当请求刚进来时，Flask读取cookie中session对应的值，将该值解密并反序列化为字典，放入内存以便视图函数使用。 当请求结束时，Flask会读取内存中字典的值，进行序列化加密，写入到用户的cookie中。多线程</p>
+</li>
+<li>
+<p>解释Flask框架中的Local对象和threading.local对象的区别
+Local对象是根据threading.local作的。app</p>
+</li>
+<li>
+<p>Flask中 blinker 是什么</p>
+</li>
+<li>
+<p>SQLAlchemy中的session和scoped_session的区别
+使用的scoped_session是基于Threading.Local实现的，而session并非。</p>
+</li>
+<li>
+<p>SQLAlchemy如何执行原生SQL
+我只记住了两种SQLAlchemy能够执行原生sql的方式，第一种是经过session(会话)对象执行execute方法，第二种是经过cursor(游标)对象执行execute方法。</p>
+</li>
+</ol>
+<p>第一种是：
+session = scoped_session(SessionFactory)
+session.execute('insert users(name) values(:value)', params={'value': 'thanlon'})</p>
+<p>第二种是：
+conn = engine.raw_connection()
+cursor = conn.cursor()
+cursor.execute('select *from users')</p>
+<ol>
+<li>
+<p>ORM的实现原理</p>
+</li>
+<li>
+<p>DBUtils模块的做用
+DBUtils模块的做用是实现数据库链接池，是为了解决“多线程状况下请求比较多时性能下降”的问题。</p>
+</li>
+<li>
+<p>如下SQLAlchemy的字段是否正确，若是不正确请更正</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.ext.declarative</span>
+<span class="kn">import</span> <span class="n">declarative_base</span>
+
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">Column</span><span class="p">,</span> <span class="n">Integer</span><span class="p">,</span> <span class="n">String</span><span class="p">,</span> <span class="n">DateTime</span>
+
+<span class="n">Base</span> <span class="o">=</span> <span class="n">declarative_base</span><span class="p">()</span>
+
+<span class="k">class</span> <span class="nc">UserInfo</span><span class="p">(</span><span class="n">Base</span><span class="p">):</span>
+    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">&#39;userinfo&#39;</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">autoincrement</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">(</span><span class="mi">64</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">ctime</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">DateTime</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
+</code></pre></div>
+
+<ol>
+<li>
+<p>SQLAchemy中如何为表设置引擎和字符编码</p>
+</li>
+<li>
+<p>SQLAchemy中如何设置联合惟一索引
+首先在中间表(关联表)的类中加入__table_args__ 字段，而后实例化UniqueConstraint类并放入一个元组中，最后把这个元组赋值给__table_args__。用代码表示以下：</p>
+</li>
+</ol>
+<p><strong>table_args</strong> = (
+        UniqueConstraint('student_id', 'course_id', name='uc_student_course'),  # 联合惟一索引
+)</p>
+<ol>
+<li>
+<p>Flask请求相关的数据和Django的区别
+Flask是直接调用request对象来请求相关的数据，而Django是经过参数传递实现的。</p>
+</li>
+<li>
+<p>Flask和Django最大的区别
+对于request，falsk是导入进来的，而Django是参数传递的；对于session，flask也导入进来的，而Django是依附request对象传递过来的。</p>
+</li>
+<li>
+<p>Flask若是开了两个进程，有几个local对象</p>
+</li>
+</ol>
+<p class="subheader">Category: <a href="/category/interview_questions.html">Interview_questions</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="/archives.html">Archives</a>
+            <li><a href="/tags.html">Tags</a>
+
+
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="/category/android.html">Android</a></li>
+            <li><a href="/category/database.html">DataBase</a></li>
+            <li><a href="/category/front-end.html">Front-end</a></li>
+            <li><a href="/category/golang.html">Golang</a></li>
+            <li><a href="/category/interview_questions.html">Interview_questions</a></li>
+            <li><a href="/category/linux.html">Linux</a></li>
+            <li><a href="/category/others.html">Others</a></li>
+            <li><a href="/category/python.html">Python</a></li>
+            <li><a href="/category/tools.html">Tools</a></li>
+            <li><a href="/category/windows.html">Windows</a></li>
+   
+        </ul>
+
+        <h5 class="sidebar-title">Links</h5>
+        <ul class="side-nav">
+            <li><a href="https://getpelican.com/">Pelican</a></li>
+            <li><a href="https://www.python.org/">Python.org</a></li>
+            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+            <li><a href="#">github</a></li>
+        </ul>
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="#">You can add links in your config file</a></li>
+            <li><a href="#">Another social link</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+                <p>gogogo by yoyo</p>
+            </div>
+            </div>
+    </div>
+</footer>

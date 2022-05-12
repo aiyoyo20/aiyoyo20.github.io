@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>SSR_config</title>
+
+    <link rel="stylesheet" href="/theme/css/normalize.css" />
+    <link rel="stylesheet" href="/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="/theme/css/style.css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" />	
+    <script src="/theme/js/custom.modernizr.js"></script>
+
+    <!-- So Firefox can bookmark->"abo this site" -->
+
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="">gogogo</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="/ssr_config.html" rel="bookmark"
+        title="Permalink to SSR_config">SSR_config</a></h3>
+    </header>
+
+<h6 class="subheader" title="2022-05-12T18:44:45.172486+02:00">Thu 12 May 2022
+</h6>
+
+
+    <h1>1. 配置文件各项说明</h1>
+<p>各选项说明（注意，你应该修改使用initcfg.sh脚本初始化后的user-config.json）：</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Explanation</th>
+<th>中文说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>server</td>
+<td>the address your server listens</td>
+<td>监听地址</td>
+</tr>
+<tr>
+<td>server_ipv6</td>
+<td>the ipv6 address your server listens</td>
+<td>ipv6地址</td>
+</tr>
+<tr>
+<td>server_port</td>
+<td>server port</td>
+<td>监听端口</td>
+</tr>
+<tr>
+<td>local_address</td>
+<td>the address your local listens</td>
+<td>本地地址</td>
+</tr>
+<tr>
+<td>local_port</td>
+<td>local port</td>
+<td>本地端口</td>
+</tr>
+<tr>
+<td>password</td>
+<td>password used for encryption</td>
+<td>密码</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>in seconds</td>
+<td>超时时间</td>
+</tr>
+<tr>
+<td>udp_timeout</td>
+<td>in seconds</td>
+<td>UDP链超时时间</td>
+</tr>
+<tr>
+<td>udp_cache</td>
+<td>cache size</td>
+<td>UDP链缓冲区大小</td>
+</tr>
+<tr>
+<td>method</td>
+<td>default: "aes-256-cfb", see Encryption</td>
+<td>加密方式</td>
+</tr>
+<tr>
+<td>protocol</td>
+<td>default："origin"</td>
+<td>协议插件，默认"origin"</td>
+</tr>
+<tr>
+<td>protocol_param</td>
+<td>default：""</td>
+<td>协议插件参数，默认""</td>
+</tr>
+<tr>
+<td>obfs</td>
+<td>default："tls1.2_ticket_auth_compatible"</td>
+<td>混淆插件，默认"tls1.2_ticket_auth_compatible"</td>
+</tr>
+<tr>
+<td>obfs_param</td>
+<td>default：""</td>
+<td>混淆插件参数，默认""</td>
+</tr>
+<tr>
+<td>redirect</td>
+<td>default：""</td>
+<td>重定向参数，默认""</td>
+</tr>
+<tr>
+<td>dns_ipv6</td>
+<td>default:false</td>
+<td>是否优先使用IPv6地址，有IPv6时可开启</td>
+</tr>
+<tr>
+<td>fast_open</td>
+<td>use TCP_FASTOPEN, true / false</td>
+<td>快速打开(仅限linux客户端)</td>
+</tr>
+<tr>
+<td>workers</td>
+<td>number of workers, available on Unix/Linux</td>
+<td>线程（仅限linux客户端）</td>
+</tr>
+<tr>
+<td>verbose</td>
+<td>display verbose debug info</td>
+<td>显示调试信息</td>
+</tr>
+<tr>
+<td>connect_verbose_info</td>
+<td>display connection verbose info</td>
+<td>显示连接信息</td>
+</tr>
+<tr>
+<td>forbidden_ip</td>
+<td>forbidden IP set for outbound</td>
+<td>阻止连接到此IP列表</td>
+</tr>
+<tr>
+<td>forbidden_port</td>
+<td>forbidden port set for outbound</td>
+<td>阻止连接到此端口列表</td>
+</tr>
+<tr>
+<td>ignore_bind</td>
+<td>not bind the IP set</td>
+<td>不绑定的IP列表</td>
+</tr>
+<tr>
+<td>out_bind</td>
+<td>force bind this IPv4 IP</td>
+<td>强制绑定此IPv4地址</td>
+</tr>
+<tr>
+<td>out_bindv6</td>
+<td>force bind this IPv6 IP</td>
+<td>强制绑定此IPv6地址</td>
+</tr>
+<tr>
+<td>additional_ports</td>
+<td>additional ports for multiuser mode</td>
+<td>多用户模式下配置额外端口</td>
+</tr>
+<tr>
+<td>speed_limit_per_con</td>
+<td>rate limit for each connection</td>
+<td>单连接限速，单位KB</td>
+</tr>
+<tr>
+<td>speed_limit_per_user</td>
+<td>rate limit for each user</td>
+<td>单用户限速，单位KB</td>
+</tr>
+</tbody>
+</table>
+<p>其中各protocol与obfs介绍参见：<a href="https://github.com/shadowsocksr-backup/shadowsocks-rss/wiki/obfs">混淆插件说明</a></p>
+<p>注：客户端的protocol和obfs配置必须与服务端的一致，除非服务端配置为兼容插件。</p>
+<p>redirect参数说明：</p>
+<p>值为空字符串或一个列表，若为列表示例如</p>
+<p>"redirect":["bing.com", "cloudflare.com:443"],</p>
+<p>作用是在连接方的数据不正确的时候，把数据重定向到列表中的其中一个地址和端口（不写端口则 视为80），以伪装为目标服务器。</p>
+<p>dns_ipv6参数说明：</p>
+<p>为true则指定服务器优先使用IPv6地址。仅当服务器能访问IPv6地址时可以用，否则会导致有IPv6地 址的网站无法打开。</p>
+<p>一般情况下，只需要修改以下五项即可：</p>
+<div class="highlight"><pre><span></span><code>&quot;server_port&quot;:8388,        //端口
+&quot;password&quot;:&quot;password&quot;,     //密码
+&quot;protocol&quot;:&quot;origin&quot;,       //协议插件
+&quot;obfs&quot;:&quot;http_simple&quot;,      //混淆插件
+&quot;method&quot;:&quot;aes-256-cfb&quot;,    //加密方式
+</code></pre></div>
+
+<h2>1.1. 多端口配置</h2>
+<div class="highlight"><pre><span></span><code>{
+    &quot;server&quot;:&quot;0.0.0.0&quot;,
+    &quot;server_ipv6&quot;: &quot;[::]&quot;,
+    &quot;local_address&quot;:&quot;127.0.0.1&quot;,
+    &quot;local_port&quot;:1080,
+    &quot;port_password&quot;:{
+        &quot;80&quot;:&quot;password1&quot;,
+        &quot;443&quot;:&quot;password2&quot;
+    },
+    &quot;timeout&quot;:300,
+    &quot;method&quot;:&quot;aes-256-cfb&quot;,
+    &quot;protocol&quot;: &quot;auth_sha1_compatible&quot;,
+    &quot;protocol_param&quot;: &quot;&quot;,
+    &quot;obfs&quot;: &quot;http_simple_compatible&quot;,
+    &quot;obfs_param&quot;: &quot;&quot;,
+    &quot;redirect&quot;: &quot;&quot;,
+    &quot;dns_ipv6&quot;: false,
+    &quot;fast_open&quot;: false,
+    &quot;workers&quot;: 1
+}
+</code></pre></div>
+
+<p>按照格式修改端口和密码：</p>
+<div class="highlight"><pre><span></span><code>    &quot;port_password&quot;:{
+        &quot;80&quot;:&quot;password1&quot;,       //端口和密码1
+        &quot;443&quot;:&quot;password2&quot;       //端口和密码2
+    },
+</code></pre></div>
+
+<p>如果要为每个端口配置不同的混淆协议，请写入以下配置：</p>
+<div class="highlight"><pre><span></span><code>{
+    &quot;server&quot;:&quot;0.0.0.0&quot;,
+    &quot;server_ipv6&quot;:&quot;::&quot;,
+    &quot;local_address&quot;:&quot;127.0.0.1&quot;,
+    &quot;local_port&quot;:1080,
+    &quot;port_password&quot;:{
+        &quot;8388&quot;:{&quot;protocol&quot;:&quot;auth_simple&quot;, &quot;password&quot;:&quot;abcde&quot;, &quot;obfs&quot;:&quot;http_simple&quot;, &quot;obfs_param&quot;:&quot;&quot;},
+        &quot;8389&quot;:{&quot;protocol&quot;:&quot;origin&quot;, &quot;password&quot;:&quot;abcde&quot;}
+    },
+    &quot;timeout&quot;:300,
+    &quot;method&quot;:&quot;aes-256-cfb&quot;,
+    &quot;protocol&quot;: &quot;auth_sha1_compatible&quot;,
+    &quot;protocol_param&quot;: &quot;&quot;,
+    &quot;obfs&quot;: &quot;http_simple_compatible&quot;,
+    &quot;obfs_param&quot;: &quot;&quot;,
+    &quot;redirect&quot;: &quot;&quot;,
+    &quot;dns_ipv6&quot;: false,
+    &quot;fast_open&quot;: false,
+    &quot;workers&quot;: 1
+}
+</code></pre></div>
+
+<p>按格式修改端口、密码以及混淆协议。也可以和以前的格式混合使用，如果某个端口不配置混淆协 议，则会使用下面的默认"obfs"配置。</p>
+<p class="subheader">Category: <a href="/category/tools.html">Tools</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="/archives.html">Archives</a>
+            <li><a href="/tags.html">Tags</a>
+
+
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="/category/android.html">Android</a></li>
+            <li><a href="/category/database.html">DataBase</a></li>
+            <li><a href="/category/front-end.html">Front-end</a></li>
+            <li><a href="/category/golang.html">Golang</a></li>
+            <li><a href="/category/interview_questions.html">Interview_questions</a></li>
+            <li><a href="/category/linux.html">Linux</a></li>
+            <li><a href="/category/others.html">Others</a></li>
+            <li><a href="/category/python.html">Python</a></li>
+            <li><a href="/category/tools.html">Tools</a></li>
+            <li><a href="/category/windows.html">Windows</a></li>
+   
+        </ul>
+
+        <h5 class="sidebar-title">Links</h5>
+        <ul class="side-nav">
+            <li><a href="https://getpelican.com/">Pelican</a></li>
+            <li><a href="https://www.python.org/">Python.org</a></li>
+            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+            <li><a href="#">github</a></li>
+        </ul>
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="#">You can add links in your config file</a></li>
+            <li><a href="#">Another social link</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+                <p>gogogo by yoyo</p>
+            </div>
+            </div>
+    </div>
+</footer>

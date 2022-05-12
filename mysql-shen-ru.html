@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>MySQL 深入</title>
+
+    <link rel="stylesheet" href="/theme/css/normalize.css" />
+    <link rel="stylesheet" href="/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="/theme/css/style.css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" />	
+    <script src="/theme/js/custom.modernizr.js"></script>
+
+    <!-- So Firefox can bookmark->"abo this site" -->
+
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="">gogogo</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="/mysql-shen-ru.html" rel="bookmark"
+        title="Permalink to MySQL 深入">MySQL 深入</a></h3>
+    </header>
+
+<h6 class="subheader" title="2022-05-12T18:44:45.252486+02:00">Thu 12 May 2022
+</h6>
+
+
+    <p>视图
+事务
+索引
+用户管理
+主从</p>
+<p>MySQL优化插入数据速度
+C语言中文网推出辅导班啦，包括「C语言辅导班、C++辅导班、算法/数据结构辅导班」，全部都是一对一教学：一对一辅导 + 一对一答疑 + 布置作业 + 项目实践 + 永久学习。QQ在线，随时响应！</p>
+<p>在 MySQL 中，向数据表插入数据时，索引、唯一性检查、数据大小是影响插入速度的主要因素。本节将介绍优化插入数据速度的几种方法。</p>
+<p>根据不同情况，可以分别进行优化。</p>
+<p>对于 MyISAM 引擎的表，常见的优化方法如下：
+1. 禁用索引
+对非空表插入数据时，MySQL 会根据表的索引对插入的记录进行排序。插入大量数据时，这些排序会降低插入数据的速度。为了解决这种情况，可以在插入数据之前先禁用索引，等到数据都插入完毕后在开启索引。</p>
+<p>禁用索引的语句为：
+ALTER TABLE table_name DISABLE KEYS;</p>
+<p>重新开启索引的语句为：
+ALTER TABLE table_name ENABLE KEYS;</p>
+<p>对于新创建的表，可以先不创建索引，等到数据都导入以后再创建索引，这样可以提高导入数据的速度。
+2. 禁用唯一性检查
+插入数据时，MySQL 会对插入的数据进行唯一性检查。这种唯一性检验会降低插入数据的速度。为了降低这种情况对查询速度的影响，可以在插入数据前禁用唯一性检查，等到插入数据完毕后在开启。</p>
+<p>禁用唯一性检查的语句为：
+SET UNIQUE_CHECKS=0;</p>
+<p>开启唯一性检查的语句为：
+SET UNIQUE_CHECKS=1;</p>
+<ol>
+<li>使用批量插入
+在 MySQL 中，插入多条数据有 2 种方式。第一种是使用一个 INSERT 语句插入多条数据。INSERT 语句的情形如下：
+INSERT INTO items(name,city,price,number,picture) VALUES ('耐克运动鞋','广州',500,1000,'001.jpg'),('耐克运动鞋2','广州2',500,1000,'002.jpg');</li>
+</ol>
+<p>第二种是一个 INSERT 语句只插入一条数据，执行多个 INSERT 语句来插入多条数据。INSERT 语句的情形如下：
+INSERT INTO items(name,city,price,number,picture)  VALUES('耐克运动鞋','广州',500,1000,'001.jpg');
+INSERT INTO items(name,city,price,number,picture)  VALUES('耐克运动鞋2','广州',500,1000,'002.jpg');</p>
+<p>一次性插入多条数据和多次插入数据所耗费的时间是不一样的。第一种方式减少了与数据库之间的连接等操作，其速度比第二种方式要快一些。所以插入大量数据时，建议使用第一种方法。</p>
+<p>注意：如果能用 LOAD DATA INFILE 语句，就尽量用 LOAD DATA INFILE 语句。因为 LOAD DATA INFILE 语句导入数据的速度比 INSERT 语句的速度快。</p>
+<p>对于 InnoDB 引擎的表，常见的优化方法如下：
+1. 禁用唯一性检查
+同 MyISAM 引擎相同，插入数据之前先禁用索引，等到数据都插入完毕后在开启索引。
+2. 禁用外键检查
+使用外键时，在子表中插入一条数据，首先会检查主表中是否有相应的主键值，然后锁定主表的记录，在插入值。相比较，使用外键多了2步操作，速度会慢一些。</p>
+<p>所以我们可以在插入数据之前禁止对外键的检查，数据插入完成之后再恢复对外键的检查。不多对于数据完整性要求较高的系统不建议使用。</p>
+<p>禁用外键检查语句为：
+SET FOREIGN_KEY_CHECKS=0; </p>
+<p>恢复对外键的检查语句为：
+SET FOREIGN_KEY_CHECKS=1;</p>
+<ol>
+<li>禁止自动提交
+在《MySQL设置事务自动提交》一节我们提到 MySQL 的事务自动提交模式默认是开启的，其对 MySQL 的性能也有一定得影响。也就是说如果你插入了 1000 条数据，MySQL 就会提交 1000 次，这大大影响了插入数据的速度。而如果我们把自动提交关掉，通过程序来控制，只要一次提交就可以了。</li>
+</ol>
+<p>所以插入数据之前可以先禁止事务的自动提交，待数据导入完成之后，再恢复自动提交操作。</p>
+<p>禁止自动提交语句为：
+SET AUTOCOMMIT=0; </p>
+<p>恢复自动提交语句为：
+SET AUTOCOMMIT=1;</p>
+<p class="subheader">Category: <a href="/category/database.html">DataBase</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="/archives.html">Archives</a>
+            <li><a href="/tags.html">Tags</a>
+
+
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="/category/android.html">Android</a></li>
+            <li><a href="/category/database.html">DataBase</a></li>
+            <li><a href="/category/front-end.html">Front-end</a></li>
+            <li><a href="/category/golang.html">Golang</a></li>
+            <li><a href="/category/interview_questions.html">Interview_questions</a></li>
+            <li><a href="/category/linux.html">Linux</a></li>
+            <li><a href="/category/others.html">Others</a></li>
+            <li><a href="/category/python.html">Python</a></li>
+            <li><a href="/category/tools.html">Tools</a></li>
+            <li><a href="/category/windows.html">Windows</a></li>
+   
+        </ul>
+
+        <h5 class="sidebar-title">Links</h5>
+        <ul class="side-nav">
+            <li><a href="https://getpelican.com/">Pelican</a></li>
+            <li><a href="https://www.python.org/">Python.org</a></li>
+            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+            <li><a href="#">github</a></li>
+        </ul>
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="#">You can add links in your config file</a></li>
+            <li><a href="#">Another social link</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+                <p>gogogo by yoyo</p>
+            </div>
+            </div>
+    </div>
+</footer>

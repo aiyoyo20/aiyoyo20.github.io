@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>队列 & 栈</title>
+
+    <link rel="stylesheet" href="/theme/css/normalize.css" />
+    <link rel="stylesheet" href="/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="/theme/css/style.css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" />	
+    <script src="/theme/js/custom.modernizr.js"></script>
+
+    <!-- So Firefox can bookmark->"abo this site" -->
+
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="">gogogo</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="/dui-lie-zhan.html" rel="bookmark"
+        title="Permalink to 队列 & 栈">队列 & 栈</a></h3>
+    </header>
+
+<h6 class="subheader" title="2022-05-12T18:44:44.925821+02:00">Thu 12 May 2022
+</h6>
+
+
+    <p><a href="https://zhuanlan.zhihu.com/p/78060313">Python中栈、队列和优先级队列的实现</a></p>
+<h2>栈(Stack)</h2>
+<p>栈是一种LIFO(后进先出)的数据结构，有入栈(push)、出栈(pop)两种操作，且只能操作栈顶元素。</p>
+<h3>1、list</h3>
+<p>list是Python内置的列表数据结构，它支持栈的特性，有入栈和出栈操作。只不过用list实现栈性能不是特别好。
+因为list内部是通过一个动态扩容的数组来实现的。当增减元素时就有可能会触发扩容操作。如果在list的头部增减元素，也会移动整个列表。</p>
+<p>如要使用list来实现一个栈的话，可以使用list的append()(入栈)、pop()(出栈)方法。</p>
+<div class="highlight"><pre><span></span><code>stack_list = []
+stack_list.append(&#39;one&#39;)
+stack_list.append(&#39;two&#39;)
+stack_list.append(&#39;three&#39;)
+stack_list.pop()
+stack_list.pop()
+stack_list.pop()
+stack_list.pop()
+</code></pre></div>
+
+<h3>2、collections.deque</h3>
+<p>deque类是一种双端队列。在Python中它就是一个双向列表，可以以常用时间在两端执行添加和删除元素的操作，非常高效，所以它既可以实现栈也可以实现队列。</p>
+<p>如果要在Python实现一个栈，那么应该优先选择deque，而不是list。</p>
+<p>deque的入栈和出栈方法也分别是append()和pop()。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
+<span class="n">stack_deque</span> <span class="o">=</span> <span class="n">deque</span><span class="p">()</span>
+<span class="n">stack_deque</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;eat&#39;</span><span class="p">)</span>
+<span class="n">stack_deque</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;sleep&#39;</span><span class="p">)</span>
+<span class="n">stack_deque</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;code&#39;</span><span class="p">)</span>
+<span class="n">stack_deque</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="n">stack_deque</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="n">stack_deque</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="n">stack_deque</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+</code></pre></div>
+
+<h3>3、queue.LifoQueue</h3>
+<p>顾名思义，这个就是一个栈。不过它是线程安全的，如果要在并发的环境下使用，那么就可以选择使用LifoQueue。
+它入栈和出栈操作是使用put()和get()，其中get()在LifoQueue为空时会阻塞。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">queue</span> <span class="kn">import</span> <span class="n">LifoQueue</span>
+<span class="n">stack_queue</span> <span class="o">=</span> <span class="n">LifoQueue</span><span class="p">()</span>
+<span class="n">stack_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">&#39;eat&#39;</span><span class="p">)</span>
+<span class="n">stack_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">&#39;sleep&#39;</span><span class="p">)</span>
+<span class="n">stack_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">&#39;code&#39;</span><span class="p">)</span>
+<span class="n">stack_queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="n">stack_queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="n">stack_queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="n">stack_queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>   <span class="c1"># 阻塞并一直等待直到栈不为空</span>
+</code></pre></div>
+
+<h2>队列(Queue)</h2>
+<p>队列是一种FIFO(先进先出)的数据结构。它有入队(enqueue)、出队(dequeue)两种操作，而且也是常数时间的操作。</p>
+<p>在Python中可以使用哪些数据结构来实现一个队列呢？</p>
+<h3>1、list</h3>
+<p>list可以实现一个队列，但它的入队、出队操作就不是非常高效了。因为list是一个动态列表，在队列的头部执行出队操作时，会发生整个元素的移动。</p>
+<p>使用list来实现一个队列时，用append()执行入队操作，使用pop(0)方法在队列头部执行出队操作。由于在list的第一个元素进行操作，所以后续的元素都会向前移动一位。因此用list来实现队列是不推荐的。</p>
+<div class="highlight"><pre><span></span><code>queue_list = []
+queue_list.append(&#39;1&#39;)
+queue_list.append(&#39;2&#39;)
+queue_list.append(&#39;3&#39;)
+queue_list.pop(0)
+queue_list.pop(0)
+queue_list.pop(0)
+queue_list.pop(0)
+</code></pre></div>
+
+<h3>2、collections.deque</h3>
+<p>从上文我们已经知道deque是一个双向列表，它可以在列表两端以常数时间进行添加删除操作。所以用deque来实现一个队列是非常高效的。
+deque入队操作使用append()方法，出队操作使用popleft()方法。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
+<span class="n">queue_deque</span> <span class="o">=</span> <span class="n">deque</span><span class="p">()</span>
+<span class="n">queue_deque</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;eat&#39;</span><span class="p">)</span>
+<span class="n">queue_deque</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;sleep&#39;</span><span class="p">)</span>
+<span class="n">queue_deque</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;code&#39;</span><span class="p">)</span>
+<span class="c1"># 使用popleft出队</span>
+<span class="n">queue_deque</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>
+<span class="n">queue_deque</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>
+<span class="n">queue_deque</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>
+<span class="n">queue_deque</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>
+</code></pre></div>
+
+<h3>3、queue.Queue</h3>
+<p>同样地，如果要在并发环境下使用队列，那么选择线程安全的queue.Queue。
+与LifoQueue类似，入队和出队操作分别是put()和get()方法，get()在队列为空时会一直阻塞直到有元素入队。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">queue</span> <span class="kn">import</span> <span class="n">Queue</span>
+<span class="n">queue_queue</span> <span class="o">=</span> <span class="n">Queue</span><span class="p">()</span>
+<span class="n">queue_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">&#39;eat&#39;</span><span class="p">)</span>
+<span class="n">queue_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">&#39;sleep&#39;</span><span class="p">)</span>
+<span class="n">queue_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">&#39;code&#39;</span><span class="p">)</span>
+<span class="n">queue_queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="n">queue_queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="n">queue_queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="n">queue_queue</span><span class="o">.</span><span class="n">get_nowait</span><span class="p">()</span>  <span class="c1"># 队列为空不要执行等待</span>
+</code></pre></div>
+
+<h3>4、multiprocessing.Queue</h3>
+<p>多进程版本的队列。如果要在多进程环境下使用队列，那么应该选择multiprocessing.Queue。</p>
+<p>同样地，它的入队出队操作分别是put()和get()。get()方法在队列为空，会一直阻塞直到队列不为空。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Queue</span>
+<span class="n">queue_mq</span> <span class="o">=</span> <span class="n">Queue</span><span class="p">()</span>
+<span class="n">queue_mq</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">&#39;eat&#39;</span><span class="p">)</span>
+<span class="n">queue_mq</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">&#39;sleep&#39;</span><span class="p">)</span>
+<span class="n">queue_mq</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">&#39;code&#39;</span><span class="p">)</span>
+<span class="n">queue_mq</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="n">queue_mq</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="n">queue_mq</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="n">queue_mq</span><span class="o">.</span><span class="n">get_nowait</span><span class="p">()</span>
+<span class="c1"># 也会一直阻塞直到队列不为空</span>
+</code></pre></div>
+
+<h2>优先级队列(PriorityQueue)</h2>
+<p>一个近乎排序的序列里可以使用优先级队列这种数据结构，它能高效获取最大或最小的元素。</p>
+<p>在调度问题的场景中经常会用到优先级队列。它主要有获取最大值或最小值的操作和入队操作。</p>
+<h3>1、list</h3>
+<p>使用list可以实现一个优先级队列，但它并不高效。因为当要获取最值时需要排序，然后再获取最值。一旦有新的元素加入，再次获取最值时，又要重新排序。所以并推荐使用。</p>
+<h3>2、heapq</h3>
+<p>一般来说，优先级队列都是使用堆这种数据结构来实现。而heapq就是Python标准库中堆的实现。heapq默认情况下实现的是最小堆。</p>
+<p>入队操作使用heappush()，出队操作使用heappop()。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">heapq</span>
+<span class="n">pq_heapq</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">heapq</span><span class="o">.</span><span class="n">heappush</span><span class="p">(</span><span class="n">pq_heapq</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">))</span>
+<span class="n">heapq</span><span class="o">.</span><span class="n">heappush</span><span class="p">(</span><span class="n">pq_heapq</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;eat&#39;</span><span class="p">))</span>
+<span class="n">heapq</span><span class="o">.</span><span class="n">heappush</span><span class="p">(</span><span class="n">pq_heapq</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;sleep&#39;</span><span class="p">))</span>
+<span class="k">while</span> <span class="n">q</span><span class="p">:</span>
+    <span class="n">next_item</span> <span class="o">=</span> <span class="n">heapq</span><span class="o">.</span><span class="n">heappop</span><span class="p">(</span><span class="n">pq_heapq</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">next_item</span><span class="p">)</span>
+</code></pre></div>
+
+<h3>3、queue.PriorityQueue</h3>
+<p>queue.PriorityQueue内部封装了heapq，不同的是它是线程安全的。在并发环境下应该选择使用PriorityQueue。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">queue</span> <span class="kn">import</span> <span class="n">PriorityQueue</span>
+<span class="n">pq_qp</span> <span class="o">=</span> <span class="n">PriorityQueue</span><span class="p">()</span>
+<span class="n">pq_qp</span><span class="o">.</span><span class="n">put</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">))</span>
+<span class="n">pq_qp</span><span class="o">.</span><span class="n">put</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;eat&#39;</span><span class="p">))</span>
+<span class="n">pq_qp</span><span class="o">.</span><span class="n">put</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;sleep&#39;</span><span class="p">))</span>
+<span class="k">while</span> <span class="ow">not</span> <span class="n">pq_qp</span><span class="o">.</span><span class="n">empty</span><span class="p">():</span>
+    <span class="n">next_item</span> <span class="o">=</span> <span class="n">pq_qp</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">next_item</span><span class="p">)</span>
+</code></pre></div>
+
+<p>collections.deque 是一种双向链表，在单线程的情况下，它可以用来实现 Stack 和 Queue。而 heapq 模块可以帮我们实现高效的优先级队列。
+如果要在多并发的情况下使用 Stack、Queue 和 PriorityQueue 的话，那么应该选用queue模块下类：
+    实现 Stack的queue.LifoQueue
+    实现 Queue的queue.Queue 或 multiprocessing.Queue
+    实现 PriorityQueue的queue.PriorityQueue
+    以上这些类都有 put() 和 get() 方法，且 get() 会在栈/队列为空时阻塞。</p>
+<p class="subheader">Category: <a href="/category/python.html">Python</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="/archives.html">Archives</a>
+            <li><a href="/tags.html">Tags</a>
+
+
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="/category/android.html">Android</a></li>
+            <li><a href="/category/database.html">DataBase</a></li>
+            <li><a href="/category/front-end.html">Front-end</a></li>
+            <li><a href="/category/golang.html">Golang</a></li>
+            <li><a href="/category/interview_questions.html">Interview_questions</a></li>
+            <li><a href="/category/linux.html">Linux</a></li>
+            <li><a href="/category/others.html">Others</a></li>
+            <li><a href="/category/python.html">Python</a></li>
+            <li><a href="/category/tools.html">Tools</a></li>
+            <li><a href="/category/windows.html">Windows</a></li>
+   
+        </ul>
+
+        <h5 class="sidebar-title">Links</h5>
+        <ul class="side-nav">
+            <li><a href="https://getpelican.com/">Pelican</a></li>
+            <li><a href="https://www.python.org/">Python.org</a></li>
+            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+            <li><a href="#">github</a></li>
+        </ul>
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="#">You can add links in your config file</a></li>
+            <li><a href="#">Another social link</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+                <p>gogogo by yoyo</p>
+            </div>
+            </div>
+    </div>
+</footer>

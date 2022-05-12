@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>linux_practice</title>
+
+    <link rel="stylesheet" href="/theme/css/normalize.css" />
+    <link rel="stylesheet" href="/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="/theme/css/style.css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" />	
+    <script src="/theme/js/custom.modernizr.js"></script>
+
+    <!-- So Firefox can bookmark->"abo this site" -->
+
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="">gogogo</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="/linux_practice.html" rel="bookmark"
+        title="Permalink to linux_practice">linux_practice</a></h3>
+    </header>
+
+<h6 class="subheader" title="2022-05-12T18:44:44.939154+02:00">Thu 12 May 2022
+</h6>
+
+
+    <p>1、find / -name “test<em>” |xargs rm -rf 2、find / -name “test</em>” -exec rm -rf {} ; 3、rm -rf $(find / -name “test”)</p>
+<p>算法题： 一个长字符串，去除重复字符串，且保持字典序最小</p>
+<p>linux 题： 查找一个目录下的的某个类型的文件 find file_addr -name "*.type"</p>
+<p>一个文件中的内容是有规律的，比如以时间等等，现在想要获取其中某个时间段内的 http 状态码为200的次数 按照时间段取内容并输出为新文本： sed -n '/2021-04-05 02:27:25/,/2021-04-09 05:05:58/p' obsidian.log &gt; ob.txt 统计： grep -c count_word ob.txt 通过管道连接起来即可: sed -n '/2021-04-05 02:27:25/,/2021-04-09 05:05:58/p' obsidian.log | grep -c app grep -oE '[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}' /var/log/nginx/access.log |sort |uniq -c grep -oE '[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}' /var/log/nginx/access.log |sort |uniq -c #查看nginx访问IP数
+Linux截取文件指定行数之间的内容
+sed -n ‘开始行数，结束行数p’ 被截取文件 &gt; 另存为文件
+从ps aux的结果中提取pid
+ps aux | grep process_name | tr -s  | cut -d   -f 2
+首先应该使用tr命令压缩各个列之间的空格，将多个空格压缩为一个，接着使用cut命令根据空格对列进行分割并取出第二个位置的值，也就是PID</p>
+<p class="subheader">Category: <a href="/category/linux.html">Linux</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="/archives.html">Archives</a>
+            <li><a href="/tags.html">Tags</a>
+
+
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="/category/android.html">Android</a></li>
+            <li><a href="/category/database.html">DataBase</a></li>
+            <li><a href="/category/front-end.html">Front-end</a></li>
+            <li><a href="/category/golang.html">Golang</a></li>
+            <li><a href="/category/interview_questions.html">Interview_questions</a></li>
+            <li><a href="/category/linux.html">Linux</a></li>
+            <li><a href="/category/others.html">Others</a></li>
+            <li><a href="/category/python.html">Python</a></li>
+            <li><a href="/category/tools.html">Tools</a></li>
+            <li><a href="/category/windows.html">Windows</a></li>
+   
+        </ul>
+
+        <h5 class="sidebar-title">Links</h5>
+        <ul class="side-nav">
+            <li><a href="https://getpelican.com/">Pelican</a></li>
+            <li><a href="https://www.python.org/">Python.org</a></li>
+            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+            <li><a href="#">github</a></li>
+        </ul>
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="#">You can add links in your config file</a></li>
+            <li><a href="#">Another social link</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+                <p>gogogo by yoyo</p>
+            </div>
+            </div>
+    </div>
+</footer>
