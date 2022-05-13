@@ -1,61 +1,81 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="utf-8" />
-    <!-- Set the viewport width to device width for mobile -->
-    <meta name="viewport" content="width=device-width" />
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="一个网上看到的讨论，解释的非常好，收藏一下。 问题： &gt;&gt;&gt; [i for i in itertools.repeat(&#39;example&#39;, 5)] [&#39;example&#39;, &#39;example&#39;, &#39;example&#39;, &#39;example&#39;, &#39;example&#39;] &gt;&gt;&gt; [&#39;example&#39;] * 5 [&#39;example&#39;, &#39;example&#39;, &#39;example&#39;, &#39;example&#39;,...">
+        <meta name="keywords" content="">
+        <link rel="icon" href="./images/favicon.ico">
+        <!-- Canonical -->
+        <link rel="canonical" href="./itertoolsrepeat.html">
+        <!-- /Canonical -->
 
-    <title>itertools.repeat</title>
+        <title>itertools.repeat - Alfalfa</title>
 
-    <link rel="stylesheet" href="/theme/css/normalize.css" />
-    <link rel="stylesheet" href="/theme/css/foundation.min.css" />
-    <link rel="stylesheet" href="/theme/css/style.css" />
-    <link rel="stylesheet" href="/theme/css/pygments.css" />	
-    <script src="/theme/js/custom.modernizr.js"></script>
+        <!-- Stylesheets -->
+        <link href="./theme/css/all.min.css" rel="stylesheet">
+        <!-- /Stylesheets -->
 
-    <!-- So Firefox can bookmark->"abo this site" -->
+        <!-- RSS Feeds -->
+        <!-- /RSS Feeds -->
 
-</head>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-<body>
 
-<!-- Nav Bar -->
-<nav>
-<div class="top-bar">
-<div class="row">
-    <div class="large-9 large-centered columns">
-	    <h1><a href="">gogogo</a></h1>
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container gradient">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="./"><img class="mr20" src="./images/log.png" alt="logo">Alfalfa</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="./">Homepage</a>
+                                <a href="./categories.html">Categories</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">itertools.repeat</h1>
+                      <p class="header-date">By <a href="./author/alfalfa.html">Alfalfa</a>, Thu 12 May 2022, modified Thu 12 May 2022, in category <a href="./category/python.html">Python</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+                      </p>
+                  </div>
+              </div>
+        </div>
     </div>
-</div>
-</div>
+    <!-- /Header -->
+            <!-- /Header -->
 
-<!-- Show menu items and pages -->
-<div class="row">
-<div class="large-9 columns">
-    <ul class="button-group navigation">
-
-    </ul>
-</div>
-</div>
-</nav>
-<!-- End Nav -->
+        </div>
+        <!-- /Header -->
 
 
-<!-- Main Page Content and Sidebar -->
-<div class="row">
-
-    <!-- Main Blog Content -->
-    <div class="large-9 columns">
-<article>
-    <header>
-        <h3 class="article-title"><a href="/itertoolsrepeat.html" rel="bookmark"
-        title="Permalink to itertools.repeat">itertools.repeat</a></h3>
-    </header>
-
-<h6 class="subheader" title="2022-05-12T18:44:44.929154+02:00">Thu 12 May 2022
-</h6>
-
-
-    <p>一个网上看到的讨论，解释的非常好，收藏一下。</p>
+        <!-- Content -->
+    <div class="container content">
+        <p>一个网上看到的讨论，解释的非常好，收藏一下。</p>
 <h2>问题：</h2>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">itertools</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="s1">&#39;example&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">)]</span><span class="w"></span>
 <span class="p">[</span><span class="s1">&#39;example&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;example&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;example&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;example&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;example&#39;</span><span class="p">]</span><span class="w"></span>
@@ -128,70 +148,46 @@
 <p>但是，如果您编写itertools.repeat(foo, 100000)，解释器可以返回一个为同一个函数服务的迭代器，并且在您需要结果之前不需要计算结果——例如，通过在一个函数中使用它来知道序列中的每个结果。</p>
 <p>这是迭代器的主要优点：它们可以将列表的一部分（或全部）的计算推迟到您真正需要答案的时候。</p>
 <p><a href="https://www.cnpython.com/qa/60172">Python的itertools.repeat的目的是什么？</a></p>
-<p class="subheader">Category: <a href="/category/python.html">Python</a>
-
-</p>
 
 
-
-
-</article>
+        
     </div>
-    <!-- End Main Content -->
+        <!-- /Content --> 
 
-    <!-- Sidebar -->
-    <aside class="large-3 columns">
-        <h5 class="sidebar-title">Site</h5>
-        <ul class="side-nav">
-            <li><a href="/archives.html">Archives</a>
-            <li><a href="/tags.html">Tags</a>
-
-
-        </ul>
-
-		
-        <h5 class="sidebar-title">Categories</h5>
-        <ul class="side-nav">
-            <li><a href="/category/android.html">Android</a></li>
-            <li><a href="/category/database.html">DataBase</a></li>
-            <li><a href="/category/front-end.html">Front-end</a></li>
-            <li><a href="/category/golang.html">Golang</a></li>
-            <li><a href="/category/interview_questions.html">Interview_questions</a></li>
-            <li><a href="/category/linux.html">Linux</a></li>
-            <li><a href="/category/others.html">Others</a></li>
-            <li><a href="/category/python.html">Python</a></li>
-            <li><a href="/category/tools.html">Tools</a></li>
-            <li><a href="/category/windows.html">Windows</a></li>
-   
-        </ul>
-
-        <h5 class="sidebar-title">Links</h5>
-        <ul class="side-nav">
-            <li><a href="https://getpelican.com/">Pelican</a></li>
-            <li><a href="https://www.python.org/">Python.org</a></li>
-            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
-            <li><a href="#">github</a></li>
-        </ul>
-		
-        <h5 class="sidebar-title">Social</h5>
-        <ul class="side-nav">
-            <li><a href="#">You can add links in your config file</a></li>
-            <li><a href="#">Another social link</a></li>
-        </ul>
-
-    </aside> <!-- End Sidebar -->
-
-</div> <!-- End Main Content and Sidebar -->
-
-
-<!-- Footer -->
-<footer class="row">
-    <div class="large-12 columns">
-        <hr />
-        <div class="row">
-            <div class="large-6 columns">
-                <p>gogogo by yoyo</p>
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Sitemap</div>
+                        <ul class="list-unstyled">
+                            <li><a href="./archives.html">Archives</a></li>
+                            <li><a href="./tags.html">Tags</a></li>
+                            <li><a href="./authors.html">Authors</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Social</div>
+                        <ul class="list-unstyled">
+                            <li><a href="#" target="_blank">github</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Links</div>
+                        <ul class="list-unstyled">
+                            <li><a href="#" target="_blank">github</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small>&copy; blogname 2015</small>
+                        </p>
+                    </div>
+                </div>
             </div>
-            </div>
-    </div>
-</footer>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>
