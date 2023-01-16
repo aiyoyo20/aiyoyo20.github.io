@@ -202,7 +202,7 @@ source ~/.zshrc  # 刷新
 <p>貌似安装的是 Anaconda 是默认2,3整合的，整体的大小1G多，而官网的才仅仅500多M，不过最开始自己安装的时候也没怎么留意
 后面更新的时候一直报错，无法正常更新，虽然更新不是必要的，但是强迫症还是想更新下，索性换个安装方法吧
 最开始下载了Anaconda3-2020.07-Linux-ppc64le.sh，安装报错，版本不对无法进行编译
-<img src="images/manjaro_Anaconda_error.png" alt="pic_6 Anaconda_error"  width=900px />
+<img src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_Anaconda_error.png" alt="pic_6 Anaconda_error"  width=900px />
 下载了另一个版本Anaconda3-2020.07-Linux-x86_64.sh
 切换到下载的目录下执行<code>./Anaconda3-2020.07-Linux-x86_64.sh</code>按照提示编译即可
 同样安装之后也需要配置环境变量</p>
@@ -456,7 +456,7 @@ sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES,NO_ZERO_DATE,NO_ZERO_IN_DATE
 sudo mysqld --initialize --user=mysql --basedir=/opt/mysql-8.0.21-linux-glibc2.12-x86_64/ --datadir=/opt/mysql-8.0.21-linux-glibc2.12-x86_64/data
 </code></pre>
 <h4 id="报错">报错</h4>
-<p><img class="img-zoomable" src="images/py_mysql_error.png" alt="" />
+<p><img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/py_mysql_error.png" alt="" />
 </p>
 <p><code>yay -S numactl</code>后正常</p>
 <pre><code>启动
@@ -470,7 +470,7 @@ sudo mysql.server start
 sudo mysql.server stop 
 </code></pre>
 <h3 id="连接测试">连接测试</h3>
-<p><img class="img-zoomable" src="images/py_mysql_test.png" alt="" />
+<p><img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/py_mysql_test.png" alt="" />
 </p>
 <pre><code>Manjaro默认有libtinfo.so.6而没有libtinfo.so.5，软件如果需要可执行以下命令安装：
 sudo pacman -S ncurses5-compat-libs
@@ -570,10 +570,10 @@ npm i -g mjpeg-consumer
 </blockquote>
 <p>连接手机:
 手机连上电脑以后，打开手机开发人员选项。在电脑终端中运行以下命令查看手机的UDID
-<img class="img-zoomable" src="images/py_adb_devices.png" alt="" />
+<img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/py_adb_devices.png" alt="" />
 
 使用:
-<img class="img-zoomable" src="images/py_appium.png" alt="" />
+<img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/py_appium.png" alt="" />
 
 主要的四个参数:</p>
 <pre><code>{
@@ -600,7 +600,7 @@ npm i -g mjpeg-consumer
 <h3 id="chromedriver">ChromeDriver</h3>
 <p>Selenium 的对接 Chrome 的驱动 ChromeDriver
 下载的时候需要看chrom浏览器的版本号选择相应的版本，不清楚的去官方网站看详细介绍，下载后要么移动到/usr/bin中要么添加环境变量，个人习惯为了系统的整洁选择添加环境变量
-<img class="img-zoomable" src="images/py_ChromeDriver.png" alt="" />
+<img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/py_ChromeDriver.png" alt="" />
 
 官方网站：<a href="https://sites.google.com/a/chromium.org/chromedriver" target="_blank">https://sites.google.com/a/chromium.org/chromedriver</a>
 下载地址：<a href="https://chromedriver.storage.googleapis.com/index.html" target="_blank">https://chromedriver.storage.googleapis.com/index.html</a></p>
@@ -611,7 +611,7 @@ npm i -g mjpeg-consumer
 <p>PhantomJS 是一个无界面的、可脚本编程的 WebKit 浏览器引擎，它原生支持多种 Web 标准：DOM 操作、CSS 选择器、JSON、Canvas 以及 SVG。</p>
 <h3 id="问题">问题</h3>
 <p>使用会出一些问题：
-<img class="img-zoomable" src="images/py_PhantomJS_error.png" alt="" />
+<img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/py_PhantomJS_error.png" alt="" />
 
 大概意思是 selenium 经不支持 PhantomJS 了，解决方法有两个
 一、使用较老版本的 selenium ，同时也要使用较老版本的 python3

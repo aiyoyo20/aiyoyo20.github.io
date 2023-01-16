@@ -126,7 +126,7 @@
 网络层：负责路由以及把分组报文发送给目标网络或主机。
 传输层：负责对报文进行分组和重组，并以TCP或UDP协议格式封装报文。
 应用层：负责向用户提供应用程序，比如HTTP、FTP、Telnet、DNS、SMTP等。
-<img class="img-zoomable" src="images/tcp&amp;ip%e6%a8%a1%e5%9e%8b.png" alt="tcp/ip模型" />
+<img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/tcp&amp;ip%e6%a8%a1%e5%9e%8b.png" alt="tcp/ip模型" />
 </p>
 <p>在网络体系结构中网络通信的建立必须是在通信双方的对等层进行，不能交错。 在整个数据传输过程中，数据在发送端时经过各层时都要附加上相应层的协议头和协议尾（仅数据链路层需要封装协议尾）部分，也就是要对数据进行协议封装，以标识对应层所用的通信协议。接下去介绍TCP/IP 中有两个具有代表性的传输层协议&mdash;-TCP 和 UDP。</p>
 <p>二、UDP
@@ -169,7 +169,7 @@ UDP 不止支持一对一的传输方式，同样支持一对多，多对多，�
 <li>TCP连接过程
 如下图所示，可以看到建立一个TCP连接的过程为（三次握手的过程）:</li>
 </ol>
-<p><img class="img-zoomable" src="images/tcp%e4%b8%89%e6%ac%a1%e6%8f%a1%e6%89%8b.png" alt="" />
+<p><img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/tcp%e4%b8%89%e6%ac%a1%e6%8f%a1%e6%89%8b.png" alt="" />
 </p>
 <p>第一次握手</p>
 <p>客户端向服务端发送连接请求报文段。该报文段中包含自身的数据通讯初始序号。请求发送后，客户端便进入 SYN-SENT 状态。</p>
@@ -180,7 +180,7 @@ UDP 不止支持一对一的传输方式，同样支持一对多，多对多，�
 <p>这里可能大家会有个疑惑：为什么 TCP 建立连接需要三次握手，而不是两次？这是因为这是为了防止出现失效的连接请求报文段被服务端接收的情况，从而产生错误。</p>
 <ol start="2">
 <li>TCP断开链接
-<img class="img-zoomable" src="images/tcp%e5%9b%9b%e6%ac%a1%e6%8c%a5%e6%89%8b.png" alt="" />
+<img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/tcp%e5%9b%9b%e6%ac%a1%e6%8c%a5%e6%89%8b.png" alt="" />
 </li>
 </ol>
 <p>TCP 是全双工的，在断开连接时两端都需要发送 FIN 和 ACK。</p>

@@ -506,7 +506,7 @@ c) 执行事务
 </code></pre>
 <h4 id="缓存粒度控制">缓存粒度控制？</h4>
 <h3 id="锁">锁</h3>
-<h4 id="redis分布式锁实现原理学习httpsbbshuaweicloudcomblogs238821pdfimagesredis分布式锁实现原理学习pdf"><a href="https://bbs.huaweicloud.com/blogs/238821" target="_blank">redis分布式锁实现原理学习</a>|<a href="./images/redis%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%ad%a6%e4%b9%a0.pdf">PDF</a></h4>
+<h4 id="redis分布式锁实现原理学习httpsbbshuaweicloudcomblogs238821pdfhttpsrawgithubusercontentcomaiyoyo20aiyoyo20githubiogh-pagesimageredis分布式锁实现原理学习pdf"><a href="https://bbs.huaweicloud.com/blogs/238821" target="_blank">redis分布式锁实现原理学习</a>|<a href="./https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/redis%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%ad%a6%e4%b9%a0.pdf">PDF</a></h4>
 <h4 id="使用过-redis-分布式锁么它是怎么实现的">使用过 Redis 分布式锁么，它是怎么实现的？</h4>
 <p>先拿 setnx 来争抢锁，抢到之后，再用 expire 给锁加一个过期时间防止锁忘记了释放。</p>
 <h5 id="如果在-setnx-之后执行-expire-之前进程意外-crash-或者要重启维护了那会怎么样">如果在 setnx 之后执行 expire 之前进程意外 crash 或者要重启维护了，那会怎么样？</h5>

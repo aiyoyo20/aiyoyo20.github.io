@@ -369,7 +369,7 @@ print(a)
 实则不是，可以看作是 finally 的优先级更高，显式覆盖了前一个 return</p>
 <h1 id="抛出异常">抛出异常</h1>
 <h2 id="自定义异常类型">自定义异常类型</h2>
-<p><img class="img-zoomable" src="images/%e5%bc%82%e5%b8%b8%e7%bb%a7%e6%89%bf%e6%a0%91.png" alt="异常继承树" />
+<p><img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/%e5%bc%82%e5%b8%b8%e7%bb%a7%e6%89%bf%e6%a0%91.png" alt="异常继承树" />
 
 自定义异常类应该总是继承自内置的 Exception 类， 或者是继承自那些本身就是从 Exception 继承而来的类。 尽管所有类同时也继承自 BaseException ，但你不应该使用这个基类来定义新的异常。 BaseException 是为系统退出异常而保留的，比如 KeyboardInterrupt 或 SystemExit 以及其他那些会给应用发送信号而退出的异常。 因此，捕获这些异常本身没什么意义。 这样的话，假如你继承 BaseException 可能会导致你的自定义异常不会被捕获而直接发送信号退出程序运行。</p>
 <p>在程序中引入自定义异常可以使得你的代码更具可读性，能清晰显示谁应该阅读这个代码。 还有一种设计是将自定义异常通过继承组合起来。在复杂应用程序中， 使用基类来分组各种异常类也是很有用的。它可以让用户捕获一个范围很窄的特定异常，捕获更大范围的异常</p>

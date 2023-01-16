@@ -123,7 +123,7 @@
 Xfce 是最轻量的，比较老的电脑可以选择这个。
 GNOME 是以前使用比较多的桌面环境，但随着硬件设备的发展，基本都有在向着 KDE 发展。
 KDE 版本 最明显的当然是它的华丽了，很多的桌面修改不用额外去安装、直接在设置里面修改就有很惊艳的效果。</p>
-<p>以下就以我自己的配置为例 <img src="images/manjaro_screenfetch.png" alt="pic_1 manjaro_screenfetch"  width=900px /></p>
+<p>以下就以我自己的配置为例 <img src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_screenfetch.png" alt="pic_1 manjaro_screenfetch"  width=900px /></p>
 <p>此次安装的为 KDE 版本，正常使用的话没有问题，但是在后期设置了不少软件自启，以及桌面装饰 dock 和其他一些美化后，整个使用体验就大幅下降，时不时就卡顿一下，去掉了不必要的配置能够保证正常的使用了，而且虽然 dock 的软件只有几M，但是在运行后是很占空间的。</p>
 <h1 id="一安装">一、安装</h1>
 <p>1.启动盘制作使用的是官方网站推荐的写入软件 rufus 写入镜像。
@@ -243,14 +243,14 @@ yay -S electronic-wechat   # 微信
 yay -S telegram-desktop  # Telegram，电报需要做小小的配置才能使用，详见代理配置
 </code></pre>
 <p>qq 和 qq-lite 的对比图
-<img class="img-zoomable" src="images/manjaro_qq_compared.png" alt="pic_2 qq_compared" />
+<img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_qq_compared.png" alt="pic_2 qq_compared" />
 </p>
 <pre><code>yay -S simplescreenrecorder # 录屏软件：SimpleScreenRecorder
 yay  -S flameshot # 截图工具：flameshot，截图后还有多种方式对图片简单处理
 yay -S peek  # 简单录制工具，可录制 gif
 yay -S deepin-screen-recorder  # 另一个简单录制工具，可录制 gif 后面的美化效果的 gif 就是分别用其录制的，效果都差不多，需要注意的是保存的文件名是有空格的，有些不太方便
 </code></pre>
-<p>区别： <img src="images/manajro_peek&deepin-screen.png" alt="pic_3 peek&deepin-screen"  width=900px />
+<p>区别： <img src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manajro_peek&deepin-screen.png" alt="pic_3 peek&deepin-screen"  width=900px />
 左为 peek，右为 deepin-screen-recorder
 peek 是先打开一个窗口，通过拖动边缘可调节大小
 deepin-screen-recorder 为打开像截图那样给出截选框先选择大小再录制</p>
@@ -327,7 +327,7 @@ X-KDE-Username=
 yay -S mysql # 安装mysql
 </code></pre>
 <p>初始化数据库:<code>sudo mysqld --initialize --user=mysql --basedir=/usr --datadir=/var/lib/mysql</code></p>
-<p>这时会输出密码，记下: <img  src="images/manjaro_mysql_init_password.png" alt="pic_7 mysql_init_password" width=900px /></p>
+<p>这时会输出密码，记下: <img  src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_mysql_init_password.png" alt="pic_7 mysql_init_password" width=900px /></p>
 <p>需要留意安装过程中的警告和报错，这次运气好没有遇到，不过看别人的有，留个链接吧，以备不时之需：https://blog.csdn.net/uniondong/article/details/98392738</p>
 <pre><code>sudo systemctl status mysqld # 查看MySql状态
 sudo systemctl enable mysqld # 开机自启
@@ -361,7 +361,7 @@ ssh server_ip  # 如果客户机的用户名和服务器的用户名相同，登
 ssh -p port ldz@192.168.0.1
 </code></pre>
 <p>第一次连接时会出现下面的情况，输入 yes 即可
-<img class="img-zoomable" src="images/manjaro_ssh.png" alt="pic_8 ssh" />
+<img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_ssh.png" alt="pic_8 ssh" />
 </p>
 <h5 id="公钥登录免密登录">公钥登录(免密登录)</h5>
 <blockquote>
@@ -415,19 +415,19 @@ yay -S docker-compose
 (4) 光标移动到相应图标上时的放大效果
 (5) 设置自动隐藏
 </code></pre>
-<img src="images/manjaro_dock.gif" alt="pic_9"  width=900px />
+<img src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_dock.gif" alt="pic_9"  width=900px />
 <h2 id="2状态栏">2、状态栏</h2>
 <p>（1）原来的状态栏是通栏且在下面，调节为在左边，因为有 dock 栏之后，dock 栏我是放在下面的，尝试把状态栏放在右边，但是鼠标滑动滚动条的时候会带出来，影响较大
-（2）调节大小不为通栏且居中 <img src="images/manjaro_Status_Bar.gif" alt="pic_10 Status_Bar"  width=900px /></p>
+（2）调节大小不为通栏且居中 <img src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_Status_Bar.gif" alt="pic_10 Status_Bar"  width=900px /></p>
 <h2 id="3文件管理器半透明">3、文件管理器半透明</h2>
 <p class='ind'> win + e 打开文件管理器-->定位到顶栏右键-->more actions-->configure special application setting-->appearance fixes-->active opacity-->force,我调到79%，感觉还不错</p>
-<img src="images/manjaro_Dolphin_beautify.png" alt="pic_11 Dolphin_beautify"  width=900px />
+<img src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_Dolphin_beautify.png" alt="pic_11 Dolphin_beautify"  width=900px />
 <h2 id="4终端konsole半透明">4、终端(konsole)半透明</h2>
 <p > ctrl + alt + t 打开终端-->定位到顶栏右键-->more actions-->configure special application setting-->appearance fixes-->active opacity-->force 同样调到79</p>
-<img src="images/manjaro_konsole_beautify.png" alt="pic_12 konsole__beautify"  width=900px />
+<img src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_konsole_beautify.png" alt="pic_12 konsole__beautify"  width=900px />
 <h2 id="5yakuake下拉终端">5、yakuake下拉终端</h2>
 <p>第一种是直接换一个透明的终端主题就可以了，比如 KDE-story
-第二种是选中主题后点击编辑，去添加透明度 <img src="images/manjaro_yakuake_beautify.png" alt="pic_13 yakuake_beautify"  width=900px /></p>
+第二种是选中主题后点击编辑，去添加透明度 <img src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_yakuake_beautify.png" alt="pic_13 yakuake_beautify"  width=900px /></p>
 <h2 id="6终端内容美化zsh">6、终端内容美化(zsh)</h2>
 <pre><code>echo $SHELL # 查看当前使用的shell
 cat /etc/shells # 查看有哪些自带的shell，发现有了，没有的话下面命令安装，manjaro 自带了所以可以不用安装
@@ -455,17 +455,17 @@ plugins=(其他的插件 zsh-autosuggestions zsh-syntax-highlighting)
 source ～/.zshrc
 # 重启
 </code></pre>
-<p>效果展示： <img src="images/manjaro_oh_my_zsh.gif" alt="pic_14  zsh_candy"  width=900px /></p>
+<p>效果展示： <img src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_oh_my_zsh.gif" alt="pic_14  zsh_candy"  width=900px /></p>
 <p>关闭自动更新
 在使用的过程中，如果最新的版本发生变更在新开的命令行窗口中会提示更新，但是往往因为网络问题（未使用代理）而导致更新失败，可以选择关闭自动更新。<code>cat ～/.zshrc</code> 查看配置文件，在文件中有<code># DISABLE_AUTO_UPDATE=&quot;true&quot;</code>，默认是注释的，取消注释<code>DISABLE_AUTO_UPDATE=&quot;true&quot;</code>即可，如果想要体验新版可以开启代理后<code>omz update</code>更新即可</p>
 <hr>
 <h2 id="7壁纸">7、壁纸</h2>
 <p>进入图片目录将图片拖拽到桌面然后会有提示，设置即可，但当壁纸文件移动或者删除就会恢复为默认的壁纸。</p>
-<p>预览： <img src="images/manjaro_wallpaper.jpg" alt="pic_15 wallpaper"  width=900px /></p>
+<p>预览： <img src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_wallpaper.jpg" alt="pic_15 wallpaper"  width=900px /></p>
 <p>或者使用本地的壁纸其实也挺不错的。</p>
 <h2 id="8字体">8、字体</h2>
 <p>由于是用做开发环境，对于各个字符的区分就格外重要，像一些字体里面的 [ I (大写的i) 、1、 l (小写的L) ]、[ 0、O (大写的o) ] 等一度让人崩溃。
-JetBrainsMono,下载后解压到 <code>/usr/share/fonts</code> 下重启即可。 <img src="images/manjaro_font.png" alt="pic_16 font" width=900px /></p>
+JetBrainsMono,下载后解压到 <code>/usr/share/fonts</code> 下重启即可。 <img src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_font.png" alt="pic_16 font" width=900px /></p>
 <p>下载地址：<a href="https://download.jetbrains.com/fonts/JetBrainsMono-2.001.zip" target="_blank">JetBrainsMono-2.001.zip</a></p>
 <h2 id="9其他">9、其他</h2>
 <p>还有如放大缩小的标改为mac的样子、启动后加载等待的动画、登录页面的样式、图标的更换、整体系统的颜色样式等等、由于精力有限且电脑不太允许，喜欢的可以自行摸索。</p>
@@ -492,8 +492,8 @@ timedatectl set-ntp 0
 <h3 id="下载-1">下载：</h3>
 <p>在 <a href="https://www.gnome-look.org/browse/cat/109/ord/rating/" target="_blank">https://www.gnome-look.org/browse/cat/109/ord/rating/</a> 下载自己喜欢的主题，已经测试，墙内可以使用，但可能会慢些</p>
 <h4 id="现在比较热门的两个主题">现在比较热门的两个主题:</h4>
-<p>Tela grub themeOriginal <img src="images/manjaro_grub_Tela.png" alt="pic_17 grub_Tela"  width=900px />
-Grub-theme-vimixOriginal <img src="images/manjaro_grub_vimixOriginal.png" alt="pic_18 grub_vimixOriginal"  width=900px /></p>
+<p>Tela grub themeOriginal <img src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_grub_Tela.png" alt="pic_17 grub_Tela"  width=900px />
+Grub-theme-vimixOriginal <img src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_grub_vimixOriginal.png" alt="pic_18 grub_vimixOriginal"  width=900px /></p>
 <h3 id="安装">安装、</h3>
 <p>解压下载的文件，切换到解压的目录里面，查看文件会发现有一个 install.sh 文件，运行该文件即可</p>
 <pre><code>tar -xvJf Tela-1080p.tar.gz
@@ -515,7 +515,7 @@ sudo ./install.sh
 balooctl disable  # 禁止启用
 </code></pre>
 <h2 id="5mysql问题">5、mysql问题</h2>
-<p><img class="img-zoomable" src="images/manjaro_mysql-problem.png" alt="pic_19 mysql-problem" />
+<p><img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_mysql-problem.png" alt="pic_19 mysql-problem" />
 </p>
 <p>mysql服务没有启动。</p>
 <h2 id="6qq安装后无法启动deein-wine-tim">6、qq安装后无法启动（deein-wine-tim）</h2>
@@ -524,7 +524,7 @@ balooctl disable  # 禁止启用
 <p>依次进入system settings&ndash;&raquo;autostar&mdash;&raquo;add program 选择文件目录输入/usr/lib/gsd-xsettings 回车确定添加然后开启就可以了，如果没有 gsd-xsettings 就先重启一下就有了，然后再重启一下就可以打开了，第一次打开可能会提示更新wine，稍微等待一下就可以了</p>
 <h2 id="7使用ping命令无法验证自己的socks代理是否正确启用">7、使用ping命令无法验证自己的socks代理是否正确启用</h2>
 <p>最常用的 <code>ping</code> 网络检测命令即是使用的 <code>ICMP</code> 协议，在 OSI 七层网络模型中，<code>ICMP</code> 协议工作在第三层 - <strong>网络层</strong>，<code>SOCKS</code>（非套接字 socket）协议工作在第五层 - <strong>会话层</strong>，<code>HTTP/HTTPS</code> 协议工作在第七层 - <strong>应用层</strong>，SSH 工作在第七层 - <strong>应用层</strong>，它们在模型中不同的层次位置，决定了 HTTP/HTTPS 和 SSH 协议可以直接走 SOCKS 代理，而 ICMP 无法直接走 SOCKS 代理。</p>
-<p>模型中不同协议的位置如下图： <img src="images/manjaro_TCP&IP.gif" alt="pic_20 TCP/IP"  width=900px /></p>
+<p>模型中不同协议的位置如下图： <img src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_TCP&IP.gif" alt="pic_20 TCP/IP"  width=900px /></p>
 <h2 id="8deb包的安装">8、deb包的安装</h2>
 <p>有时候去获得的软件源的得到的包不是 manajro 可以直接安装的而是 <code>deb</code> 的
 法一：
@@ -534,7 +534,7 @@ sudo debtap -u     # 更新，这步无法解决，挂代理还是不挂都失�
 debtap package_name.deb  # 对包进行转换
 sudo pacman -U packagename  # 安装
 </code></pre>
-<p><img class="img-zoomable" src="images/manjaro_debtap_error.png" alt="pic_21 debtap_error" />
+<p><img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/manjaro_debtap_error.png" alt="pic_21 debtap_error" />
 </p>
 <p>法二：
 直接解压 deb 文件，然后再解压包到根目录下，或<code>/opt</code>下，快捷方式在正常快捷方式的<code>/usr/share/applications/</code>下，主要看包内部的结构。

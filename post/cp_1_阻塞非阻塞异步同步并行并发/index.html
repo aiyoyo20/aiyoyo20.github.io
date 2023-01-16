@@ -120,7 +120,7 @@
     <div class="post-content markdown-body">
         <h2 id="1-阻塞非阻塞">1. 阻塞，非阻塞</h2>
 <p>首先，阻塞这个词来自操作系统的线程/进程的状态模型中，如下图：
-<img class="img-zoomable" src="images/%e8%bf%9b%e7%a8%8b%e7%8a%b6%e6%80%81.webp" alt="进程状态" />
+<img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/%e8%bf%9b%e7%a8%8b%e7%8a%b6%e6%80%81.webp" alt="进程状态" />
 </p>
 <p>进程状态：
 一个线程/进程经历的5个状态，创建，就绪，运行，阻塞，终止。各个状态的转换条件如上图，其中有个阻塞状态，就是说当线程中调用某个函数，需要IO请求，或者暂时得不到竞争资源的，操作系统会把该线程阻塞起来，避免浪费CPU资源，等到得到了资源，再变成就绪状态，等待CPU调度运行。</p>
@@ -184,9 +184,9 @@ if __name__ == '__main__':
 <p>并发是指一个时间段内，有几个程序都在同一个CPU上运行，但任意一个时刻点上只有一个程序在处理机上运行。</p>
 <p>并行是指一个时间段内，有几个程序都在几个CPU上运行，任意一个时刻点上，有多个程序在同时运行，并且多道程序之间互不干扰。</p>
 <p>两者区别如下图：
-<img class="img-zoomable" src="images/%e5%b9%b6%e5%8f%91.webp" alt="并发" />
+<img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/%e5%b9%b6%e5%8f%91.webp" alt="并发" />
 
-<img class="img-zoomable" src="images/%e5%b9%b6%e8%a1%8c.webp" alt="并行" />
+<img class="img-zoomable" src="https://raw.githubusercontent.com/aiyoyo20/aiyoyo20.github.io/gh-pages/image/%e5%b9%b6%e8%a1%8c.webp" alt="并行" />
 </p>
 <p>并行是多个程序在多个CPU上同时运行，任意一个时刻可以有很多个程序同时运行，互不干扰。</p>
 <p>并发是多个程序在一个CPU上运行，CPU在多个程序之间快速切换，微观上不是同时运行，任意一个时刻只有一个程序在运行，但宏观上看起来就像多个程序同时运行一样，因为CPU切换速度非常快，时间片是64ms（每64ms切换一次，不同的操作系统有不同的时间），人类的反应速度是100ms，你还没反应过来，CPU已经切换了好几个程序了。</p>
