@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>mongo - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="InterviewQuestions, MongoDB" />
+
+
+<meta property="og:title" content="mongo" />
+<meta name="twitter:title" content="mongo" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/mongo/" /><meta property="og:description" content="数据库的一些基本操作命令（列举一些常用命令即可）？ MongoDB 的常见命令如下： db.help (); Help 查看命令提示 use yourDB; 切换 / 创建数据库 show dbs; 查询所有数据库 db.dropDatabase (); 删除当前使用数据库 db.getName (); 查看当前使用的数据库 db.version (); 当前 db 版本 db.addUser (&quot;name&quot;); 添加用户 db.addUser (&quot;userName&quot;," />
+<meta name="twitter:description" content="数据库的一些基本操作命令（列举一些常用命令即可）？ MongoDB 的常见命令如下： db.help (); Help 查看命令提示 use yourDB; 切换 / 创建数据库 show dbs; 查询所有数据库 db.dropDatabase (); 删除当前使用数据库 db.getName (); 查看当前使用的数据库 db.version (); 当前 db 版本 db.addUser (&quot;name&quot;); 添加用户 db.addUser (&quot;userName&quot;," /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2023-01-09T18:07:25+08:00" /><meta property="article:modified_time" content="2023-01-09T18:07:25+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/mongo/">mongo</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-01-09</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;2273 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/interviewquestions">InterviewQuestions</a>&nbsp;<a href="/tags/mongodb">MongoDB</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h4 id="数据库的一些基本操作命令列举一些常用命令即可">数据库的一些基本操作命令（列举一些常用命令即可）？</h4>
+<p>MongoDB 的常见命令如下：</p>
+<pre><code>db.help (); Help 查看命令提示
+use yourDB; 切换 / 创建数据库
+show dbs; 查询所有数据库
+db.dropDatabase (); 删除当前使用数据库
+db.getName (); 查看当前使用的数据库
+db.version (); 当前 db 版本
+db.addUser (&quot;name&quot;); 添加用户
+db.addUser (&quot;userName&quot;, &quot;pwd123&quot;, true);
+show users; 显示当前所有用户
+db.removeUser (&quot;userName&quot;); 删除用户
+db.yourColl.count (); 查询当前集合的数据条数
+</code></pre>
+<h3 id="mongodb-是什么-应用场景及优缺点">MongoDB 是什么？ 应用场景及优缺点？</h3>
+<p>MongoDB 是一个面向文档的数据库系统。使用 C++ 编写，不支持 SQL，但有自己功能强大的查询语法。</p>
+<p>MongoDB 使用 BSON 作为数据存储和传输的格式。BSON 是一种类似 JSON 的二进制序列化文档，支持嵌套对象和数组。</p>
+<p>MongoDB 很像 MySQL，document 对应 MySQL 的 row，collection 对应 MySQL 的 table</p>
+<p>应用场景：</p>
+<pre><code>a) 网站数据：mongo 非常适合实时的插入，更新与查询，并具备网站实时数据存储所需的复制及高度伸缩性。
+b) 缓存：由于性能很高，mongo 也适合作为信息基础设施的缓存层。在系统重启之后，由 mongo 搭建的持久化缓存可以避免下层的数据源过载。
+c) 大尺寸、低价值的数据：使用传统的关系数据库存储一些数据时可能会比较贵，在此之前，很多程序员往往会选择传统的文件进行存储。
+d) 高伸缩性的场景：mongo 非常适合由数十或者数百台服务器组成的数据库。
+e) 用于对象及 JSON 数据的存储：mongo 的 BSON 数据格式非常适合文档格式化的存储及查询。
+f) 重要数据：mysql，一般数据：mongodb，临时数据：memcache
+g) 对于关系数据表而言，mongodb 是提供了一个更快速的视图 view；而对于 PHP 程序而言，mongodb 可以作为一个持久化的数组来使用，并且这个持久化的数组还可以支持排序、条件、限制等功能。
+h) 将 mongodb 代替 mysql 的部分功能，主要一个思考点就是：把 mongodb 当作 mysql的一个 view（视图），view 是将表数据整合成业务数据的关键。比如说对原始数据进行报表，那么就要先把原始数据统计后生成 view，在对 view 进行查询和报表。
+</code></pre>
+<p>不适合的场景：</p>
+<pre><code>a) 高度事物性的系统：例如银行或会计系统。传统的关系型数据库目前还是更适用于需要大量原子性复杂事务的应用程序。
+b) 传统的商业智能应用：针对特定问题的 BI 数据库会对产生高度优化的查询方式。对于此类应用，数据仓库可能是更合适的选择。
+c) 需要 SQL 的问题
+d) 重要数据，关系数据
+</code></pre>
+<p>优点:
+1）弱一致性（最终一致），更能保证用户的访问速度
+2）文档结构的存储方式，能够更便捷的获取数
+3） 内置 GridFS，高效存储二进制大对象 (比如照片和视频)
+4） 支持复制集、主备、互为主备、自动分片等特性
+5） 动态查询
+6） 全索引支持，扩展到内部对象和内嵌数组</p>
+<p>缺点:
+1）不支持事务
+2）MongoDB 占用空间过大，维护工具不够成熟</p>
+<h4 id="mysql-与-mongodb-本质之间最基本的差别是什么">MySQL 与 MongoDB 本质之间最基本的差别是什么</h4>
+<p>差别在多方面，例如：数据的表示、查询、关系、事务、模式的设计和定义、速度和性能。</p>
+<p>MongoDB 是由 C++ 语言编写的，是一个基于分布式文件存储的开源数据库系统。在高负载的情况下，添加更多的节点，可以保证服务器性能。</p>
+<p>MongoDB 旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。</p>
+<p>MongoDB 将数据存储为一个文档，数据结构由键值 (key=&gt;value) 对组成。MongoDB 文档类似于 JSON 对象。字段值可以包含其他文档，数组及文档数组。</p>
+<p>MongoDB 是一个面向文档的数据库，目前由 10gen 开发并维护，它的功能丰富齐全，所以完全可以替代 MySQL。</p>
+<p>与 MySQL 等关系型数据库相比，MongoDB 的优点如下：</p>
+<pre><code>①弱一致性，更能保证用户的访问速度。
+②文档结构的存储方式，能够更便捷的获取数据。
+③内置 GridFS，支持大容量的存储。
+④内置 Sharding。
+⑤第三方支持丰富。(这是与其他的 NoSQL 相比，MongoDB 也具有的优势)
+⑥性能优越：MongoDB 本身它还算比较年轻的一个产品，所以它的问题，就是成熟度肯定没有传统 MySQL那么成熟稳定。所以在使用的时候，第一，尽量使用稳定版，不要在线上使用开发版，这是一个大原则；另外一点，备份很重要，MongoDB 如果出现一些异常情况，备份一定是要能跟上。除了通过传统的复制的方式来做备份，离线备份也还是要有，不管你是用什么方式，都要有一个完整的离线备份。往往最后出现了特殊情况，它能帮助到你；另外，MongoDB 性能的一个关键点就是索引，索引是不是能有比较好的使用效率，索引是不是能够放在内存中，这样能够提升随机读写的性能。如果你的索引不能完全放在内存中，一旦出现随机读写比较高的时候，它就会频繁地进行磁盘交换，这个时候，MongoDB 的性能就会急剧下降，会出现波动。另外，MongoDB 还有一个最大的缺点，就是它占用的空间很大，因为它属于典型空间换时间原则的类型。那么它的磁盘空间比普通数据库会浪费一些，而且到目前为止它还没有实现在线压缩功能， 在MongoDB 中频繁的进行数据增删改时，如果记录变了，例如数据大小发生了变化，这时候容易产生一些数据碎片，出现碎片引发的结果，一个是索引会出现性能问题,另外一个就是在一定的时间后，所占空间会莫明其妙地增大，所以要定期把数据库做修复，定期重新做索引，这样会提升 MongoDB 的稳定性和效率。在最新的版本里，它已经在实现在线压缩，估计应该在 2.0 版左右，应该能够实现在线压缩，可以在后台执行现在 repair DataBase 的一些操作。如果那样，就解决了目前困扰我们的大问题。
+</code></pre>
+<h5 id="使用-mongodb-的优点">使用 MongoDB 的优点</h5>
+<pre><code>面向文件
+高性能
+高可用
+易扩展
+可分片
+对数据存储友好
+</code></pre>
+<h4 id="mongodb-成为优秀的-nosql-数据库的原因是什么">MongoDB 成为优秀的 NoSQL 数据库的原因是什么？</h4>
+<pre><code>1） 面向文件的
+2） 高性能
+3） 高可用性
+4） 易扩展性
+5） 丰富的查询语言
+</code></pre>
+<h4 id="分析器在-mongodb-中的作用是什么">分析器在 MongoDB 中的作用是什么？</h4>
+<p>MongoDB 中包括了一个可以显示数据库中每个操作性能特点的数据库分析器。通过这个分析器你可以找到比预期慢的查询 (或写操作); 利用这一信息，比如，可以确定是否需要添加索引。</p>
+<h4 id="怎么查看-mongodb-正在使用的链接">怎么查看 MongoDB 正在使用的链接？</h4>
+<p><code>db._adminCommand(connPoolStats);</code></p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+        <li><a href="#mongodb-是什么-应用场景及优缺点">MongoDB 是什么？ 应用场景及优缺点？</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+        <li><a href="#mongodb-是什么-应用场景及优缺点">MongoDB 是什么？ 应用场景及优缺点？</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>

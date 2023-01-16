@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>FedoraInputMethod - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="Tools, Input_Method" />
+
+
+<meta property="og:title" content="FedoraInputMethod" />
+<meta name="twitter:title" content="FedoraInputMethod" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/fedorainputmethod/" /><meta property="og:description" content="OS : Fedora Linux 36 (Workstation Edition) cat /etc/os-release NAME=&quot;Fedora Linux&quot; VERSION=&quot;36 (Workstation Edition)&quot; ID=fedora VERSION_ID=36 VERSION_CODENAME=&quot;&quot; PLATFORM_ID=&quot;platform:f36&quot; PRETTY_NAME=&quot;Fedora Linux 36 (Workstation Edition)&quot; ANSI_COLOR=&quot;0;38;2;60;110;180&quot; LOGO=fedora-logo-icon CPE_NAME=&quot;cpe:/o:fedoraproject:fedora:36&quot; HOME_URL=&quot;https://fedoraproject.org/&quot; DOCUMENTATION_URL=&quot;https://docs.fedoraproject.org/en-US/fedora/f36/system-administrators-guide/&quot; SUPPORT_URL=&quot;https://ask.fedoraproject.org/&quot; BUG_REPORT_URL=&quot;https://bugzilla.redhat.com/&quot; REDHAT_BUGZILLA_PRODUCT=&quot;Fedora&quot; REDHAT_BUGZILLA_PRODUCT_VERSION=36 REDHAT_SUPPORT_PRODUCT=&quot;Fedora&quot; REDHAT_SUPPORT_PRODUCT_VERSION=36 PRIVACY_POLICY_URL=&quot;https://fedoraproject.org/wiki/Legal:PrivacyPolicy&quot; SUPPORT_END=2023-05-16 VARIANT=&quot;Workstation Edition&quot; VARIANT_ID=workstation 官方的包管理器并没有 fcitx 相关的包，能不能自己编译安装没有测试。由于该版本的桌面环境是 gnome，内置了 ibus 框架，在安装使用较其" />
+<meta name="twitter:description" content="OS : Fedora Linux 36 (Workstation Edition) cat /etc/os-release NAME=&quot;Fedora Linux&quot; VERSION=&quot;36 (Workstation Edition)&quot; ID=fedora VERSION_ID=36 VERSION_CODENAME=&quot;&quot; PLATFORM_ID=&quot;platform:f36&quot; PRETTY_NAME=&quot;Fedora Linux 36 (Workstation Edition)&quot; ANSI_COLOR=&quot;0;38;2;60;110;180&quot; LOGO=fedora-logo-icon CPE_NAME=&quot;cpe:/o:fedoraproject:fedora:36&quot; HOME_URL=&quot;https://fedoraproject.org/&quot; DOCUMENTATION_URL=&quot;https://docs.fedoraproject.org/en-US/fedora/f36/system-administrators-guide/&quot; SUPPORT_URL=&quot;https://ask.fedoraproject.org/&quot; BUG_REPORT_URL=&quot;https://bugzilla.redhat.com/&quot; REDHAT_BUGZILLA_PRODUCT=&quot;Fedora&quot; REDHAT_BUGZILLA_PRODUCT_VERSION=36 REDHAT_SUPPORT_PRODUCT=&quot;Fedora&quot; REDHAT_SUPPORT_PRODUCT_VERSION=36 PRIVACY_POLICY_URL=&quot;https://fedoraproject.org/wiki/Legal:PrivacyPolicy&quot; SUPPORT_END=2023-05-16 VARIANT=&quot;Workstation Edition&quot; VARIANT_ID=workstation 官方的包管理器并没有 fcitx 相关的包，能不能自己编译安装没有测试。由于该版本的桌面环境是 gnome，内置了 ibus 框架，在安装使用较其" /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2023-01-04T22:01:47+08:00" /><meta property="article:modified_time" content="2023-01-04T22:01:47+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/fedorainputmethod/">FedoraInputMethod</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-01-04</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;439 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/tools">Tools</a>&nbsp;<a href="/tags/input_method">Input_Method</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h1 id="os--fedora-linux-36-workstation-edition">OS : Fedora Linux 36 (Workstation Edition)</h1>
+<p><code>cat /etc/os-release</code></p>
+<pre><code>NAME=&quot;Fedora Linux&quot;
+VERSION=&quot;36 (Workstation Edition)&quot;
+ID=fedora
+VERSION_ID=36
+VERSION_CODENAME=&quot;&quot;
+PLATFORM_ID=&quot;platform:f36&quot;
+PRETTY_NAME=&quot;Fedora Linux 36 (Workstation Edition)&quot;
+ANSI_COLOR=&quot;0;38;2;60;110;180&quot;
+LOGO=fedora-logo-icon
+CPE_NAME=&quot;cpe:/o:fedoraproject:fedora:36&quot;
+HOME_URL=&quot;https://fedoraproject.org/&quot;
+DOCUMENTATION_URL=&quot;https://docs.fedoraproject.org/en-US/fedora/f36/system-administrators-guide/&quot;
+SUPPORT_URL=&quot;https://ask.fedoraproject.org/&quot;
+BUG_REPORT_URL=&quot;https://bugzilla.redhat.com/&quot;
+REDHAT_BUGZILLA_PRODUCT=&quot;Fedora&quot;
+REDHAT_BUGZILLA_PRODUCT_VERSION=36
+REDHAT_SUPPORT_PRODUCT=&quot;Fedora&quot;
+REDHAT_SUPPORT_PRODUCT_VERSION=36
+PRIVACY_POLICY_URL=&quot;https://fedoraproject.org/wiki/Legal:PrivacyPolicy&quot;
+SUPPORT_END=2023-05-16
+VARIANT=&quot;Workstation Edition&quot;
+VARIANT_ID=workstation
+</code></pre>
+<p>官方的包管理器并没有 fcitx 相关的包，能不能自己编译安装没有测试。由于该版本的桌面环境是 gnome，内置了 ibus 框架，在安装使用较其他的要复杂一些。</p>
+<h3 id="安裝">安裝</h3>
+<pre><code>sudo dnf install fcitx5 fcitx5-rime im-chooser
+</code></pre>
+<p>Fedora 沒有內置的工具<code>im-config</code>，但是可以安装使用类似的工具<code>im-chooser</code>。</p>
+<p><a href="https://github.com/ksmail13/im-chooser" target="_blank">im-chooser</a> 安装后使用前有些步骤是必须的，不然会一直有异常，提示不支持当前桌面，开始时看的文章没有介绍，我还以为时工具太久没更新，跟不上gnome的升级造成的，后来去看了文档，做好准备工作后排除了异常。</p>
+<p><a href="https://fcitx-im.org/wiki/Setup_Fcitx_5#imsettings_.28Fedora.29" target="_blank"></a></p>
+<h3 id="修改默认为繁体的问题">修改默认为繁体的问题</h3>
+<p>查看默认的配置文件<code>cat ~/.local/share/fcitx5/rime/build/default.yaml</code>,</p>
+<p>这里只选取了重要部分</p>
+<pre><code>schema_list:
+    - schema: luna_pinyin
+    - schema: luna_pinyin_simp
+    - schema: luna_pinyin_fluency
+    - schema: bopomofo
+    - schema: bopomofo_tw
+    - schema: cangjie5
+    - schema: stroke
+    - schema: terra_pinyin
+</code></pre>
+<p>第一个便是默认的，第二个就是需要的简体，修改顺序就可以了，我对于其他的不是很需要，干脆把其他的直接给注释了。修改保存后重新加载配置文件就行了。</p>
+<p><a href="https://wiki.archlinuxcn.org/wzh/index.php?title=Fcitx5" target="_blank">fcitx5 wiki</a>，里面有很详细的安装，配置介绍，以及在一些软件上的使用问题解决方案。</p>
+<p>fcitx5 对 vim 支持的插件<a href="https://github.com/lilydjwg/fcitx.vim" target="_blank">fcitx.vim</a></p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#安裝">安裝</a></li>
+        <li><a href="#修改默认为繁体的问题">修改默认为繁体的问题</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#安裝">安裝</a></li>
+        <li><a href="#修改默认为繁体的问题">修改默认为繁体的问题</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>

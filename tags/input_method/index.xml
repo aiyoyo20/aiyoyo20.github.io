@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Input_Method on AI YOYO</title>
+    <link>/tags/input_method/</link>
+    <description>Recent content in Input_Method on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 08 Jan 2023 15:56:55 +0800</lastBuildDate><atom:link href="/tags/input_method/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>keyboard</title>
+      <link>/post/keyboard/</link>
+      <pubDate>Sun, 08 Jan 2023 15:56:55 +0800</pubDate>
+      
+      <guid>/post/keyboard/</guid>
+      <description>一些键盘知识及可选方案 PCB 板： 旧键盘的 PCB 板 网上的自打板 网上开源方案自己找人打印 键盘配列： 键位数量：104、84、78、61 等等。 键位占比：100%、75%、60℀ 。 键帽： 材质：PBT、ABS、POM 等。</description>
+    </item>
+    
+    <item>
+      <title>FedoraInputMethod</title>
+      <link>/post/fedorainputmethod/</link>
+      <pubDate>Wed, 04 Jan 2023 22:01:47 +0800</pubDate>
+      
+      <guid>/post/fedorainputmethod/</guid>
+      <description>OS : Fedora Linux 36 (Workstation Edition) cat /etc/os-release NAME=&amp;quot;Fedora Linux&amp;quot; VERSION=&amp;quot;36 (Workstation Edition)&amp;quot; ID=fedora VERSION_ID=36 VERSION_CODENAME=&amp;quot;&amp;quot; PLATFORM_ID=&amp;quot;platform:f36&amp;quot; PRETTY_NAME=&amp;quot;Fedora Linux 36 (Workstation Edition)&amp;quot; ANSI_COLOR=&amp;quot;0;38;2;60;110;180&amp;quot; LOGO=fedora-logo-icon CPE_NAME=&amp;quot;cpe:/o:fedoraproject:fedora:36&amp;quot; HOME_URL=&amp;quot;https://fedoraproject.org/&amp;quot; DOCUMENTATION_URL=&amp;quot;https://docs.fedoraproject.org/en-US/fedora/f36/system-administrators-guide/&amp;quot; SUPPORT_URL=&amp;quot;https://ask.fedoraproject.org/&amp;quot; BUG_REPORT_URL=&amp;quot;https://bugzilla.redhat.com/&amp;quot; REDHAT_BUGZILLA_PRODUCT=&amp;quot;Fedora&amp;quot; REDHAT_BUGZILLA_PRODUCT_VERSION=36 REDHAT_SUPPORT_PRODUCT=&amp;quot;Fedora&amp;quot; REDHAT_SUPPORT_PRODUCT_VERSION=36 PRIVACY_POLICY_URL=&amp;quot;https://fedoraproject.org/wiki/Legal:PrivacyPolicy&amp;quot; SUPPORT_END=2023-05-16 VARIANT=&amp;quot;Workstation Edition&amp;quot; VARIANT_ID=workstation 官方的包管理器并没有 fcitx 相关的包，能不能自己编译安装没有测试。由于该版本的桌面环境是 gnome，内置了 ibus 框架，在安装使用较其</description>
+    </item>
+    
+    <item>
+      <title>ManjaroInputMethod</title>
+      <link>/post/manjaroinputmethod/</link>
+      <pubDate>Mon, 02 Jan 2023 22:42:55 +0800</pubDate>
+      
+      <guid>/post/manjaroinputmethod/</guid>
+      <description>在 Manjaro-KDE 和 Manjaro-XFCE 正常配置。 fcitx 安装 sudo pacman -S --noconfirm fcitx-im kcm-fcitx fcitx-configtool 配置 fcitx sudo echo -e &amp;quot;export GTK_IM_MODULE=fcitx\nexport QT_IM_MODULE=fcitx\nexport XMODIFIERS=@im=fcitx&amp;quot;&amp;gt;&amp;gt;~/.xprofile googlepinyin sudo pacman -S fcitx-googlepinyin 重启后在状态栏找到键盘右键 -- config -- input method -- 添加后确认应用生效，默认的切换输入法快捷键为ctrl + 空格 可自行安装搜狗输入法，manjaro</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>flask - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="Python" />
+
+
+<meta property="og:title" content="flask" />
+<meta name="twitter:title" content="flask" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/flask/" /><meta property="og:description" content="路由 简单路由 @app.route(&#39;/hello/&#39;) def hello(): return &#39;Hello&#39; 带参数的路由 （1） @app.route(&#39;/hello/&lt;name&gt;&#39;) def hello(name): return &#39;Hello %s&#39; % name （2） ?key=value形式传参 上面我们接受参数使用的是path形式，下面我们来使用查询字符串的形式，即?key=value 如果有多个参数，则" />
+<meta name="twitter:description" content="路由 简单路由 @app.route(&#39;/hello/&#39;) def hello(): return &#39;Hello&#39; 带参数的路由 （1） @app.route(&#39;/hello/&lt;name&gt;&#39;) def hello(name): return &#39;Hello %s&#39; % name （2） ?key=value形式传参 上面我们接受参数使用的是path形式，下面我们来使用查询字符串的形式，即?key=value 如果有多个参数，则" /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2022-10-25T16:48:59+08:00" /><meta property="article:modified_time" content="2022-10-25T16:48:59+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/flask/">flask</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-10-25</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;2119 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/python">Python</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h2 id="路由">路由</h2>
+<h3 id="简单路由">简单路由</h3>
+<pre><code>@app.route('/hello/')
+def hello():
+    return 'Hello'
+
+</code></pre>
+<h3 id="带参数的路由">带参数的路由</h3>
+<h4 id="1">（1）</h4>
+<pre><code>@app.route('/hello/&lt;name&gt;')
+def hello(name):
+    return 'Hello %s' % name
+
+</code></pre>
+<h4 id="2-keyvalue形式传参">（2） ?key=value形式传参</h4>
+<p>上面我们接受参数使用的是path形式，下面我们来使用查询字符串的形式，即?key=value</p>
+<p>如果有多个参数，则用&amp;来拼接： ?key1=value1&amp;key2=value2</p>
+<pre><code>from flask import Flask, request
+
+
+@app.route('/d/')
+def d():
+    wd = request.args.get('wd')
+    return '您传递的参数是: {}'.format(wd)
+</code></pre>
+<h4 id="参数类型限制">参数类型限制</h4>
+<pre><code>@app.route('/user/&lt;int:user_id&gt;')
+def get_user(user_id):
+    return 'User ID: %d' % user_id
+</code></pre>
+<p>可以对参数限定数据类型,这样当我们传递的参数类型符合要求的时候才能正常访问，其他类型都会返回404</p>
+<p>类型可以设置提下几种：</p>
+<p>　　string: 默认的数据类型，接收没有任何斜杠&quot;\   /&ldquo;的文本</p>
+<p>　　int: 整数形</p>
+<p>　　float: 浮点型</p>
+<p>　　path: 和string类似，但是接受斜杠</p>
+<p>　　uuid: 只接受uuid字符串</p>
+<p>　　any: 可以指定多种路径，比如以下例子</p>
+<pre><code>@app.route('/&lt;any(article,blog):url_path&gt;/&lt;id&gt;/')
+def item(url_path, id):
+    if url_path == 'article':
+        return '文章详情：{}'.format(id)
+    else:
+        return '博客详情：{}'.format(id)
+</code></pre>
+<h5 id="自定义参数规则自定义路由参数转换器-也叫正则匹配路由参数">自定义参数规则/自定义路由参数转换器 （也叫正则匹配路由参数）</h5>
+<p>具体实现步骤为：</p>
+<ul>
+<li>导入转换器基类：在 Flask 中，所有的路由的匹配规则都是使用转换器对象进行记录</li>
+<li>自定义转换器：自定义类继承于转换器基类</li>
+<li>添加转换器到默认的转换器字典中</li>
+<li>使用自定义转换器实现自定义匹配规则</li>
+</ul>
+<h5 id="to_python">to_python</h5>
+<p>这个方法的返回值，将会传递到view函数中作为参数</p>
+<pre><code>class ListConveter(BaseConverter):
+    def to_python(self, value):     #这个value就是我们url的参数
+        return value.split(&quot;+&quot;)         #这个返回值,就是我们视图函数接收到的参数
+
+app.url_map.converters['list'] = ListConveter
+
+@app.route('/posts/&lt;list:boards&gt;')
+def posts(boards):   #这里的borads已经被list处理了，变成了列表
+    return str(borads)
+</code></pre>
+<h5 id="to_url">to_url</h5>
+<p>这个方法的返回值，将会在调用url_for函数的时候生成符合要求的url形式</p>
+<pre><code>class ListConveter(BaseConverter):
+    def to_python(self, value):
+        return value.split(&quot;+&quot;)
+
+    def to_url(self, value):
+        return '+'.join(value)
+
+app.url_map.converters['list'] = ListConveter
+
+@app.route('/')
+def hello_world():
+    return url_for('posts', boards=['a', 'b'])
+
+@app.route('/posts/&lt;list:boards&gt;')
+def posts(boards):
+    return str(boards)
+</code></pre>
+<h3 id="多url的路由">多url的路由</h3>
+<pre><code>@app.route('/')
+@app.route('/hello')
+@app.route('/hello/&lt;name&gt;')
+def hello(name=None):
+    if name is None:
+        name = 'World'
+    return 'Hello %s' % name
+</code></pre>
+<h3 id="http请求方法设置">HTTP请求方法设置</h3>
+<p>编号	方法	描述
+1	GET	将数据以未加密的形式发送到服务器，这最常用的方法。
+2	HEAD	与GET相同，但没有响应主体
+3	POST	用于将HTML表单数据发送到服务器。通过POST方法接收的数据不会被服务器缓存。
+4	PUT	用上传的内容替换目标资源的所有当前表示。
+5	DELETE	删除由URL给出的所有目标资源的所有表示默认情况下，Flask路由响应GET请求。 但是，可以通过为route()装饰器提供方法参数来更改此首选项。</p>
+<pre><code>@app.route('/login',methods = ['POST', 'GET'])
+def login():
+    if request.method == 'POST':
+        user = request.form['name']
+        return redirect(url_for('success',name = user))
+    else:
+        user = request.args.get('name')
+        return redirect(url_for('success',name = user))
+
+</code></pre>
+<h3 id="url_for">url_for</h3>
+<p>url_for()函数对于动态构建特定函数的URL非常有用。 该函数接受函数的名称作为第一个参数，并接受一个或多个关键字参数，每个参数对应于URL的变量部分。</p>
+<p>我们之前是通过url来找到对应的视图函数</p>
+<p>　　/     =&gt;    hello_world</p>
+<p>那么url_for则是通过视图函数找到url</p>
+<p>　　hello world  =&gt;  /</p>
+<pre><code>from flask import url_for
+
+@app.route('/')
+def hello_world():
+    return url_for('my_list')
+    # /list/
+
+@app.route('/list/')
+def my_list():
+    return 'list page'
+</code></pre>
+<pre><code>from flask import url_for
+
+@app.route('/')
+def hello_world():
+    return url_for('my_list', page_id=1)
+    # /list/1/
+
+
+@app.route('/list/&lt;page_id&gt;/')
+def my_list(page_id):
+    return 'list page'
+</code></pre>
+<pre><code># 如果url只配置了一个参数，而url_for设置了多个
+from flask import url_for
+
+@app.route('/')
+def hello_world():
+    return url_for('my_list', page_id=1, count=2)
+    # /list/1/?count=2
+
+
+@app.route('/list/&lt;page_id&gt;/')
+def my_list(page_id):
+    return 'list page'
+</code></pre>
+<h4 id="为什么要使用url_for呢">为什么要使用url_for呢？</h4>
+<p>当我们视图函数确定了，以后我们的url不管怎么变，只要通过url_for都能够正确地得到url，因为改变url的频率一般大于视图函数。</p>
+<p>url_for会自动处理特殊的字符</p>
+<h3 id="页面跳转和重定向">页面跳转和重定向</h3>
+<p>永久重定向301
+http的状态码是301，多用于旧网址被废弃了要转到一个新的网址确保用户的访问，比如京东的网站，你输入www.jingdong.com的时候，会被重定向到www.jd.com，因为jingdong.com这个网址已经被废弃了，被改成了jd.com，所以这种情况下应该使用永久重定向</p>
+<p>临时重定向302
+http的状态码是302，表示页面的临时性跳转。比如访问一个需要权限的网址，如果用户没有登录，应该重定向到登录页面，这种情况下，应该用临时重定向</p>
+<p>location表示需要重定向到的URL,应该配合url_for()函数来使用</p>
+<p>code表示采用哪种重定向，默认是302（临时重定向），也可以改成301来实现永久重定向</p>
+<pre><code>重定向到非本模块的路由地址
+
+@app.route(&quot;/&quot;)
+def index()
+retrun redirect(“www.baidu.om”)
+</code></pre>
+<pre><code>重定向到自身模块的路由地址(被跳转的视图函数不携带参数)
+@app.route(&quot;/&quot;)
+def index()
+retrun redirect(“www.baidu.om”)
+@app.route(&quot;/temp&quot;)
+def index()
+retrun redirect(url_for(“index”))
+</code></pre>
+<pre><code>重定向到自身模块的路由地址(被跳转的视图函数携带参数)
+@app.route(&quot;/index/int:user_id&quot;)
+def.index(user_id)
+retrun “用户的id是%s”%user_id
+
+@app.route(&quot;/temp&quot;)
+def.index(user_id)
+return redirect(url_for(“index”,user_id=999))
+</code></pre>
+<h2 id="模板">模板</h2>
+<h3 id="使用模板">使用模板</h3>
+<pre><code>from flask import Flask
+from flask import render_template
+
+app = Flask(__name__)
+
+@app.route('/hello')
+@app.route('/hello/&lt;name&gt;')
+def hello(name=None):
+    return render_template('hello.html', name=name)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', debug=True)
+</code></pre>
+<p>调用了render_template()方法来渲染模板。方法的第一个参数hello.html指向你想渲染的模板名称，第二个参数name是你要传到模板去的变量，变量可以传多个。</p>
+<h3 id="模板继承">模板继承</h3>
+<p>一般我们的网站虽然页面多，但是很多部分是重用的，比如页首，页脚，导航栏之类的。对于每个页面，都要写这些代码，很麻烦。Flask的Jinja2模板支持模板继承功能，省去了这些重复代码。让我们基于上面的例子，在”templates”目录下，创建一个名为”layout.html”的模板：</p>
+<p>&lt;!doctype html&gt;</p>
+<title>Hello Sample</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<div class="page">
+    {% block body %}
+    {% endblock %}
+</div>
+再修改之前的”hello.html”，把原来的代码定义在{% block body %}中，并在代码一开始”继承”上面的”layout.html”：
+<p>{% extends &ldquo;layout.html&rdquo; %}
+{% block body %}
+{% if name %}
+<h1>Hello {{ name }}!</h1>
+{% else %}
+<h1>Hello World!</h1>
+{% endif %}
+{% endblock %}</p>
+<h2 id="请求响应及会话">请求、响应及会话</h2>
+<h2 id="错误处理及消息闪现">错误处理及消息闪现</h2>
+<h2 id="数据库集成">数据库集成</h2>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#路由">路由</a>
+      <ul>
+        <li><a href="#简单路由">简单路由</a></li>
+        <li><a href="#带参数的路由">带参数的路由</a></li>
+        <li><a href="#多url的路由">多url的路由</a></li>
+        <li><a href="#http请求方法设置">HTTP请求方法设置</a></li>
+        <li><a href="#url_for">url_for</a></li>
+        <li><a href="#页面跳转和重定向">页面跳转和重定向</a></li>
+      </ul>
+    </li>
+    <li><a href="#模板">模板</a>
+      <ul>
+        <li><a href="#使用模板">使用模板</a></li>
+        <li><a href="#模板继承">模板继承</a></li>
+      </ul>
+    </li>
+    <li><a href="#请求响应及会话">请求、响应及会话</a></li>
+    <li><a href="#错误处理及消息闪现">错误处理及消息闪现</a></li>
+    <li><a href="#数据库集成">数据库集成</a></li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#路由">路由</a>
+      <ul>
+        <li><a href="#简单路由">简单路由</a></li>
+        <li><a href="#带参数的路由">带参数的路由</a></li>
+        <li><a href="#多url的路由">多url的路由</a></li>
+        <li><a href="#http请求方法设置">HTTP请求方法设置</a></li>
+        <li><a href="#url_for">url_for</a></li>
+        <li><a href="#页面跳转和重定向">页面跳转和重定向</a></li>
+      </ul>
+    </li>
+    <li><a href="#模板">模板</a>
+      <ul>
+        <li><a href="#使用模板">使用模板</a></li>
+        <li><a href="#模板继承">模板继承</a></li>
+      </ul>
+    </li>
+    <li><a href="#请求响应及会话">请求、响应及会话</a></li>
+    <li><a href="#错误处理及消息闪现">错误处理及消息闪现</a></li>
+    <li><a href="#数据库集成">数据库集成</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>

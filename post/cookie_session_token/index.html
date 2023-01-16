@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>cookie_session_token - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="FrontEnd" />
+
+
+<meta property="og:title" content="cookie_session_token" />
+<meta name="twitter:title" content="cookie_session_token" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/cookie_session_token/" /><meta property="og:description" content="Cookie 和 Session 的区别 安全性： Session 比 Cookie 安全，Session 是存储在服务器端的，Cookie 是存储在客户端的。 存取值的类型不同：Cookie 只支持存字符串数据，想要设置其他类型的数据，需要将其转换成字符串，Sess" />
+<meta name="twitter:description" content="Cookie 和 Session 的区别 安全性： Session 比 Cookie 安全，Session 是存储在服务器端的，Cookie 是存储在客户端的。 存取值的类型不同：Cookie 只支持存字符串数据，想要设置其他类型的数据，需要将其转换成字符串，Sess" /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2022-10-25T16:48:59+08:00" /><meta property="article:modified_time" content="2022-10-25T16:48:59+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/cookie_session_token/">cookie_session_token</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-10-25</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;2565 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/frontend">FrontEnd</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <p><a href="https://juejin.cn/post/6844904034181070861" target="_blank"></a></p>
+<p>Cookie 和 Session 的区别</p>
+<p>安全性： Session 比 Cookie 安全，Session 是存储在服务器端的，Cookie 是存储在客户端的。
+存取值的类型不同：Cookie 只支持存字符串数据，想要设置其他类型的数据，需要将其转换成字符串，Session 可以存任意数据类型。
+有效期不同： Cookie 可设置为长时间保持，比如我们经常使用的默认登录功能，Session 一般失效时间较短，客户端关闭（默认情况下）或者 Session 超时都会失效。
+存储大小不同： 单个 Cookie 保存的数据不能超过 4K，Session 可存储数据远高于 Cookie，但是当访问量过多，会占用过多的服务器资源。</p>
+<p>每一次请求都需要携带 token，需要把 token 放到 HTTP 的 Header 里
+基于 token 的用户认证是一种服务端无状态的认证方式，服务端不用存放 token 数据。用解析 token 的计算时间换取 session 的存储空间，从而减轻服务器的压力，减少频繁的查询数据库
+token 完全由应用管理，所以它可以避开同源策略</p>
+<p>Token 和 Session 的区别</p>
+<p>Session 是一种记录服务器和客户端会话状态的机制，使服务端有状态化，可以记录会话信息。而 Token 是令牌，访问资源接口（API）时所需要的资源凭证。Token 使服务端无状态化，不会存储会话信息。
+Session 和 Token 并不矛盾，作为身份认证 Token 安全性比 Session 好，因为每一个请求都有签名还能防止监听以及重放攻击，而 Session 就必须依赖链路层来保障通讯安全了。如果你需要实现有状态的会话，仍然可以增加 Session 来在服务器端保存一些状态。
+所谓 Session 认证只是简单的把 User 信息存储到 Session 里，因为 SessionID 的不可预测性，暂且认为是安全的。而 Token ，如果指的是 OAuth Token 或类似的机制的话，提供的是 认证 和 授权 ，认证是针对用户，授权是针对 App 。其目的是让某 App 有权利访问某用户的信息。这里的 Token 是唯一的。不可以转移到其它 App上，也不可以转到其它用户上。Session 只提供一种简单的认证，即只要有此 SessionID ，即认为有此 User 的全部权利。是需要严格保密的，这个数据应该只保存在站方，不应该共享给其它网站或者第三方 App。所以简单来说：如果你的用户数据可能需要和第三方共享，或者允许第三方调用 API 接口，用 Token 。如果永远只是自己的网站，自己的 App，用什么就无所谓了。</p>
+<p>Token 和 JWT 的区别
+相同：</p>
+<p>都是访问资源的令牌
+都可以记录用户的信息
+都是使服务端无状态化
+都是只有验证成功后，客户端才能访问服务端上受保护的资源</p>
+<p>区别：</p>
+<p>Token：服务端验证客户端发送过来的 Token 时，还需要查询数据库获取用户信息，然后验证 Token 是否有效。
+JWT： 将 Token 和 Payload 加密后存储于客户端，服务端只需要使用密钥解密进行校验（校验也是 JWT 自己实现的）即可，不需要查询或者减少查询数据库，因为 JWT 自包含了用户信息和加密的数据。</p>
+<p>使用 cookie 时需要考虑的问题</p>
+<p>因为存储在客户端，容易被客户端篡改，使用前需要验证合法性
+不要存储敏感数据，比如用户密码，账户余额
+使用 httpOnly 在一定程度上提高安全性
+尽量减少 cookie 的体积，能存储的数据量不能超过 4kb
+设置正确的 domain 和 path，减少数据传输
+cookie 无法跨域
+一个浏览器针对一个网站最多存 20 个Cookie，浏览器一般只允许存放 300 个Cookie
+移动端对 cookie 的支持不是很好，而 session 需要基于 cookie 实现，所以移动端常用的是 token</p>
+<p>使用 session 时需要考虑的问题</p>
+<p>将 session 存储在服务器里面，当用户同时在线量比较多时，这些 session 会占据较多的内存，需要在服务端定期的去清理过期的 session
+当网站采用集群部署的时候，会遇到多台 web 服务器之间如何做 session 共享的问题。因为 session 是由单个服务器创建的，但是处理用户请求的服务器不一定是那个创建 session 的服务器，那么该服务器就无法拿到之前已经放入到 session 中的登录凭证之类的信息了。
+当多个应用要共享 session 时，除了以上问题，还会遇到跨域问题，因为不同的应用可能部署的主机不一样，需要在各个应用做好 cookie 跨域的处理。
+sessionId 是存储在 cookie 中的，假如浏览器禁止 cookie 或不支持 cookie 怎么办？ 一般会把 sessionId 跟在 url 参数后面即重写 url，所以 session 不一定非得需要靠 cookie 实现
+移动端对 cookie 的支持不是很好，而 session 需要基于 cookie 实现，所以移动端常用的是 token</p>
+<p>使用 token 时需要考虑的问题</p>
+<p>如果你认为用数据库来存储 token 会导致查询时间太长，可以选择放在内存当中。比如 redis 很适合你对 token 查询的需求。
+token 完全由应用管理，所以它可以避开同源策略
+token 可以避免 CSRF 攻击(因为不需要 cookie 了)
+移动端对 cookie 的支持不是很好，而 session 需要基于 cookie 实现，所以移动端常用的是 token</p>
+<p>使用 JWT 时需要考虑的问题</p>
+<p>因为 JWT 并不依赖 Cookie 的，所以你可以使用任何域名提供你的 API 服务而不需要担心跨域资源共享问题（CORS）
+JWT 默认是不加密，但也是可以加密的。生成原始 Token 以后，可以用密钥再加密一次。
+JWT 不加密的情况下，不能将秘密数据写入 JWT。
+JWT 不仅可以用于认证，也可以用于交换信息。有效使用 JWT，可以降低服务器查询数据库的次数。
+JWT 最大的优势是服务器不再需要存储 Session，使得服务器认证鉴权业务可以方便扩展。但这也是 JWT 最大的缺点：由于服务器不需要存储 Session 状态，因此使用过程中无法废弃某个 Token 或者更改 Token 的权限。也就是说一旦 JWT 签发了，到期之前就会始终有效，除非服务器部署额外的逻辑。
+JWT 本身包含了认证信息，一旦泄露，任何人都可以获得该令牌的所有权限。为了减少盗用，JWT的有效期应该设置得比较短。对于一些比较重要的权限，使用时应该再次对用户进行认证。
+JWT 适合一次性的命令认证，颁发一个有效期极短的 JWT，即使暴露了危险也很小，由于每次操作都会生成新的 JWT，因此也没必要保存 JWT，真正实现无状态。
+为了减少盗用，JWT 不应该使用 HTTP 协议明码传输，要使用 HTTPS 协议传输。</p>
+<p>使用加密算法时需要考虑的问题</p>
+<p>绝不要以明文存储密码
+永远使用 哈希算法 来处理密码，绝不要使用 Base64 或其他编码方式来存储密码，这和以明文存储密码是一样的，使用哈希，而不要使用编码。编码以及加密，都是双向的过程，而密码是保密的，应该只被它的所有者知道， 这个过程必须是单向的。哈希正是用于做这个的，从来没有解哈希这种说法， 但是编码就存在解码，加密就存在解密。
+绝不要使用弱哈希或已被破解的哈希算法，像 MD5 或 SHA1 ，只使用强密码哈希算法。
+绝不要以明文形式显示或发送密码，即使是对密码的所有者也应该这样。如果你需要 “忘记密码” 的功能，可以随机生成一个新的 一次性的（这点很重要）密码，然后把这个密码发送给用户。</p>
+<p><a href="https://www.cnblogs.com/cxuanBlog/p/12635842.html" target="_blank"></a>
+禁用 Cookies，如何使用 Session ？
+如果禁用了 Cookies，服务器仍会将 sessionId 以 cookie 的方式发送给浏览器，但是，浏览器不再保存这个cookie (即sessionId) 了。
+如果想要继续使用 session，需要采用 URL 重写 的方式来实现，可以参考 <a href="https://www.cnblogs.com/Renyi-Fan/p/11012086.html" target="_blank">https://www.cnblogs.com/Renyi-Fan/p/11012086.html</a></p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents"></nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents"></nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>sublime_base - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="Tools, Sublime" />
+
+
+<meta property="og:title" content="sublime_base" />
+<meta name="twitter:title" content="sublime_base" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/sublime_base/" /><meta property="og:description" content="官网 插件： 插件的管理工具在 sublime 3 中的安装方式如下，sublime 4 可以通过 Ctrl&#43;Shift&#43;P 查找安装。 按 ctrl &#43; \ 或者View &gt; Show Console，打开 Console 一次性输入如下代码，回车： import urllib.request,os,hashlib; h = &#39;6f4c264a24d933ce70df5dedcf1dcaee&#39; &#43; &#39;ebe013ee18cced0ef93d5f746d80ef60&#39;; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &#39;http://packagecontrol.io/&#39;" />
+<meta name="twitter:description" content="官网 插件： 插件的管理工具在 sublime 3 中的安装方式如下，sublime 4 可以通过 Ctrl&#43;Shift&#43;P 查找安装。 按 ctrl &#43; \ 或者View &gt; Show Console，打开 Console 一次性输入如下代码，回车： import urllib.request,os,hashlib; h = &#39;6f4c264a24d933ce70df5dedcf1dcaee&#39; &#43; &#39;ebe013ee18cced0ef93d5f746d80ef60&#39;; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &#39;http://packagecontrol.io/&#39;" /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2022-12-26T15:06:52+08:00" /><meta property="article:modified_time" content="2022-12-26T15:06:52+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/sublime_base/">sublime_base</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-12-26</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;3521 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/tools">Tools</a>&nbsp;<a href="/tags/sublime">Sublime</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <p><a href="https://www.sublimetext.com/3" target="_blank">官网</a></p>
+<h2 id="插件">插件：</h2>
+<p>插件的管理工具在 sublime 3 中的安装方式如下，sublime 4 可以通过 <code>Ctrl+Shift+P</code> 查找安装。</p>
+<p>按 <code>ctrl + \</code> 或者<code>View &gt; Show Console</code>，打开 Console 一次性输入如下代码，回车：</p>
+<pre><code>import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+</code></pre>
+<p>为 Package Control 设置代理（不设置也可以正常使用，但是在安装插件及更新插件的时候可能会比较慢）</p>
+<p><code>Prefrences --&gt; Packages Settings  --&gt; Package Control  --&gt; Settngs</code> 增添下面的代码</p>
+<pre><code>{
+    // proxy setting
+    &quot;http_proxy&quot;:&quot;http://127.0.0.1:12333&quot;,
+    &quot;https_proxy&quot;:&quot;http://127.0.0.1:12333&quot;,
+}
+
+</code></pre>
+<h3 id="安装方法">安装方法：</h3>
+<h4 id="1自动安装">1、自动安装：</h4>
+<p><code>Ctrl+Shift+P</code> 打开命令行模式，输入 <code>Package Control: Install Package</code>中任意几个字母，会自动模糊匹配出来），然后回车选择：<code>Package Control: Install Package</code> 。搜索插件名称即可自动安装，注意留意底部的安装进程，如果安装失败的话可以选择手动下载安装。</p>
+<p>这种方法只能一次安装一个插件，<code>Package Control: Advanced Install Package</code> 可以一起性安装多个插件，每个插件使用<code>,</code>进行分隔，插件名不需要使用<code>'</code>、<code>&quot;</code>包裹，名字由多个单词如<code>HTML-CSS-JS Prettify</code>中间有空格也不需要。</p>
+<h4 id="2手动安装">2、手动安装</h4>
+<p>去 github 上或者你能找到的渠道下载相应的包。
+如果插件是打包好的话复制到 <code>Installed Packages</code>下，是文件目录的话复制到 <code>Packages</code> 文件夹下。</p>
+<h4 id="advancednewfile">AdvancedNewFile</h4>
+<p><a href="https://github.com/SublimeText/AdvancedNewFile" target="_blank">AdvancedNewFile</a>
+用 Sublime text 新建文件的快捷键是，ctrl+ N会新建一个名为untitled的文件，CTRL+S 保存，然后在弹出的 Finder 中填写真正需要的文件名，然后点击 Save 。可谓很是麻烦，而且如果需要新建多层次的文件夹，则需要转换到 Finder 进入到相应的工程目录下，一层一层新建，操作步骤十分繁琐而且费事。</p>
+<p>然而，如果用 AdvancedNewFile，一切将会变得十分简单。</p>
+<p>ctrl+ art + N 即新建，然后 sublime text 底部会弹出一个文本输入框，只要在里面输入文件名，或多层次的路径，然后回车即可。
+相应文件或多层次的路径就会立刻在工程目录下新建完成。
+另外再输入的时候也支持tab补全操作。</p>
+<h4 id="all-autocomplete">All Autocomplete</h4>
+<p><a href="https://github.com/alienhard/SublimeAllAutocomplete" target="_blank">AllAutocomplete</a>
+Sublime Text 默认的 Autocomplete 功能只考虑当前的文件，而 AllAutocomplete 插件会搜索所有打开的文件来寻找匹配的提示词。</p>
+<p>用此插件替换自带的Autocomplete在使用jedi进行语法补全的时候会有很大的延迟，而且全局搜索反而有时候引用到包外的变量，暂时不用了。</p>
+<h4 id="brackethighlighter">BracketHighlighter</h4>
+<p>括号以及标签层级显示，不用担心选中的代码属于哪个代码块，一目了然。
+<a href="https://packagecontrol.io/packages/BracketHighlighter" target="_blank">查看介绍</a></p>
+<h4 id="keymaps">Keymaps</h4>
+<p><a href="https://github.com/MiroHibler/sublime-keymaps" target="_blank">Keymaps</a></p>
+<blockquote>
+<p>Find a keymap for&hellip; and show all enabled keymaps in a Cheat Sheet.</p>
+</blockquote>
+<p>很有帮助，之前安装的插件只知道一些快捷键，不能完全发挥插件的作用，而且插件增多后加上自己的快捷键设置，有时候快捷键冲突而不能使用却一直找不出原因。</p>
+<p>sublime4 安装遇到的问题：</p>
+<p><img class="img-zoomable" src="images/keymaps.png" alt="keymaps" />
+</p>
+<p>但是能生效而且结果准确</p>
+<p>是使用sublime的插件管理器安装的，安装到了目录<code>~/.config/sublime-text/Installed\ Packages</code>下，而sublime对这个包的默认地址是<code>~/.config/sublime-text/Packages</code>下，但是如果在一个目录中找不到就会去另一个文件夹中寻找，所以出现了报错但仍然正常使用的情况，觉得别扭的话将其<code>~/.config/sublime-text/Installed\ Packages</code>下的<code>keymaps</code>解压移动到<code>~/.config/sublime-text/Packages</code>并删除<code>~/.config/sublime-text/Installed\ Packages</code>下的<code>keymaps</code>包即可</p>
+<h4 id="autofilename">AutoFileName</h4>
+<p>文件名自动补全</p>
+<p><code>IndexError</code>处理，将<code>autofilename.py</code>中的代码做个简单修改即可，其实就算报错也能正常使用，但是看着挺别扭，对这个异常的意见挺多，自己又懒得去细究先这样用着吧。</p>
+<pre><code>Open autofilename.py, using PackageResourceView. Go to line 162
+
+sel = view.sel()[0].a
+txt = view.substr(sublime.Region(sel-4,sel-3))
+if (self.showing_win_drives and txt == FileNameComplete.sep):
+    self.showing_win_drives = False
+    view.run_command('afn_delete_prefixed_slash')
+
+替换为
+
+try:
+    sel = view.sel()[0].a
+    txt = view.substr(sublime.Region(sel-4,sel-3))
+    if (self.showing_win_drives and txt == FileNameComplete.sep):
+        self.showing_win_drives = False
+        view.run_command('afn_delete_prefixed_slash')
+
+except IndexError:
+    pass
+
+</code></pre>
+<h4 id="packageresourceviewer">PackageResourceViewer</h4>
+<p>对安装的插件进行预览、编辑，压缩包形式的也可以，无需自己解压修改后再压缩。</p>
+<h4 id="findkeyconflicts">FindKeyConflicts</h4>
+<p>找出所有插件有冲突的快捷键</p>
+<h2 id="一些配置">一些配置</h2>
+<pre><code>{
+    // 主题、配色相关
+    &quot;theme&quot;: &quot;Material-Theme.sublime-theme&quot;, // 整体界面
+    &quot;color_scheme&quot;: &quot;Packages/Material Theme/schemes/Material-Theme.tmTheme&quot;, // 配色方案
+    // &quot;sidebar_no_icon&quot;: true,
+    &quot;sidebar_size_13&quot;: true,
+    &quot;sidebar_row_padding_medium&quot;: true,
+    &quot;folder_no_icon&quot;: true,
+    &quot;tabs_small&quot;: true,
+    &quot;tabs_padding_small&quot;: true,
+    &quot;tabs_padding_medium&quot;: true,
+    // &quot;tabs_label_not_italic&quot;: true,
+    &quot;status_bar_brighter&quot;: true,
+    &quot;color_inactive_tabs&quot;: true,
+
+    // &quot;gutter&quot;: false, // 显示行号边栏
+    // &quot;margin&quot;: 0, // 行号边栏和文字的间距
+    &quot;line_padding_top&quot;: 2, // 行的上间距
+    &quot;line_padding_bottom&quot;: 2, // 行的下间距
+    // &quot;draw_white_space&quot;: &quot;all&quot;, // 显示空白符
+    &quot;show_encoding&quot;: true, // 状态栏显示当前文件编码
+    &quot;always_show_minimap_viewport&quot;: true, // 右侧总是显示代码地图可视区域
+    // &quot;draw_minimap_border&quot;: true, // 显示可视区域部分的边框
+    // &quot;bold_folder_labels&quot;: true, // 左侧边栏文字加粗
+    &quot;indent_guide_options&quot;: [ &quot;draw_normal&quot;, &quot;draw_active&quot; ], // 制表位的对齐线
+    &quot;remember_open_files&quot;: true, // 记忆之前打开的文件
+    // &quot;overlay_scroll_bars&quot;: &quot;system&quot;,
+    &quot;dpi_scale&quot;: 1.0, // 高分屏必须调整此设置
+    &quot;show_full_path&quot;: true, // 标题栏显示打开文件的完整路径
+
+    // 编辑行为
+    &quot;default_encoding&quot;: &quot;UTF-8&quot;, // 默认编码格式
+    &quot;tab_size&quot;: 4,  // Tab键制表符宽度
+    &quot;translate_tabs_to_spaces&quot;: true, // 设为true时，缩进和遇到Tab键时使用空格替代
+    &quot;scroll_past_end&quot;: false, // 设置为false时，滚动到文本的最下方时，没有缓冲区
+    // &quot;highlight_modified_tabs&quot;: true, // 高亮内容有修改的标签
+    // &quot;find_selected_text&quot;: true, // 匹配选中的文本
+    &quot;trim_trailing_white_space_on_save&quot;: true, // 保存文件时是否删除每行结束后多余的空格
+    // &quot;ensure_newline_at_eof_on_save&quot;: false,  // 保存文件时光标是否在文件的最后向下换一行
+    // &quot;save_on_focus_lost&quot;: false, // 切换到其它文件标签或点击其它非本软件区域，文件是否自动保存
+    // &quot;auto_close_tags&quot;: true, // 自动闭合标签
+    // &quot;tab_completion&quot;: true,
+    // &quot;auto_complete&quot;: true, // 代码提示
+    // &quot;auto_complete_delay&quot;: 50, // 代码提示延迟显示
+    &quot;auto_complete_triggers&quot;: [ // 设置触发代码提醒的关键字
+        {
+            &quot;selector&quot;: &quot;text.html&quot;,
+            &quot;characters&quot;: &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.&lt;&quot;
+        },
+        {
+            &quot;selector&quot;: &quot;text.xml&quot;,
+            &quot;characters&quot;: &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.&lt;&quot;
+        },
+        {
+            &quot;selector&quot;: &quot;text.php&quot;,
+            &quot;characters&quot;: &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.&lt;&quot;
+        },
+        {
+            &quot;selector&quot;: &quot;text.css&quot;,
+            &quot;characters&quot;: &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.&lt;&quot;
+        },
+        {
+            &quot;selector&quot;: &quot;text.js&quot;,
+            &quot;characters&quot;: &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.&lt;&quot;
+        }
+    ],
+    // &quot;auto_match_enabled&quot;: true, // 自动匹配引号，括号等
+
+    // 光标样式
+    &quot;caret_style&quot;: &quot;smooth&quot;, // 光标闪动方式 &quot;smooth&quot;, &quot;phase&quot;, &quot;blink&quot;, &quot;wide&quot; and &quot;solid&quot;
+    &quot;caret_extra_bottom&quot;: 1,
+    &quot;caret_extra_top&quot;: 1,
+    &quot;caret_extra_width&quot;: 1,
+
+    // Word wrapping - follow PEP 8 recommendations
+    // &quot;rulers&quot;: [ 82, 92 ],
+    // &quot;wrap_width&quot;: 80, // 设置窗口内文字区域的宽度
+    &quot;word_wrap&quot;: false, // true | false | auto
+
+    // 禁止自动更新
+    &quot;update_check&quot;: false
+}
+</code></pre>
+<h2 id="破解">破解</h2>
+<h2 id="1">1、</h2>
+<p>2020-6-6 日测试可用。</p>
+<pre><code>sudo vim /etc/hosts  #添加如下内容到文件里面
+127.0..0.1 www.sublimetext.com
+127.0.0.1 license.sublimehq.com
+127.0.0.1 45.55.255.55
+127.0.0.1 45.55.41.223
+</code></pre>
+<p>注册码：</p>
+<pre><code>  ZYNGA INC.
+  50 User License
+  EA7E-811825
+  927BA117 84C9300F 4A0CCBC4 34A56B44
+  985E4562 59F2B63B CCCFF92F 0E646B83
+  0FD6487D 1507AE29 9CC4F9F5 0A6F32E3
+  0343D868 C18E2CD5 27641A71 25475648
+  309705B3 E468DDC4 1B766A18 7952D28C
+  E627DDBA 960A2153 69A2D98A C87C0607
+  45DC6049 8C04EC29 D18DFA40 442C680B
+  1342224D 44D90641 33A3B9F2 46AADB8F
+</code></pre>
+<p>由于这个是一个Sublime Text 2的验证码，注册成功后会弹出提示说这个注册码是Sublime Text 2的，是否要升级之类的，选择取消就好了，接下来就可以正常使用了。</p>
+<p>条件允许的情况下还是建议购买官方注册码。</p>
+<h2 id="2">2、</h2>
+<p>上面的方法在linux的时候可用，但是在 win 的时候不成功，找了另一个方法</p>
+<h3 id="改hosts">改hosts：</h3>
+<p>加上下面这段代码：</p>
+<pre><code>127.0.0.1    www.sublimetext.com
+127.0.0.1    sublimetext.com
+127.0.0.1    sublimehq.com
+127.0.0.1    license.sublimehq.com
+127.0.0.1    45.55.255.55
+127.0.0.1    45.55.41.223
+0.0.0.0     license.sublimehq.com
+</code></pre>
+<h3 id="输入注册码">输入注册码：</h3>
+<p>一定要改一下hosts在输入注册码，否则可能失败。<code>Help-&gt;enter license</code>,复制粘贴下列全部粘贴至打开的对话框。</p>
+<pre><code>----- BEGIN LICENSE -----
+Member J2TeaM
+Single User License
+EA7E-1011316
+D7DA350E 1B8B0760 972F8B60 F3E64036
+B9B4E234 F356F38F 0AD1E3B7 0E9C5FAD
+FA0A2ABE 25F65BD8 D51458E5 3923CE80
+87428428 79079A01 AA69F319 A1AF29A4
+A684C2DC 0B1583D4 19CBD290 217618CD
+5653E0A0 BACE3948 BB2EE45E 422D2C87
+DD9AF44B 99C49590 D2DBDEE1 75860FD2
+8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864
+------ END LICENSE ------
+</code></pre>
+<p>接下来应该是显示激活成功，激活成功后可将之前hosts文件添加内容删掉</p>
+<h2 id="快捷键">快捷键：</h2>
+<h3 id="默认快捷键">默认快捷键</h3>
+<pre><code>Ctrl+Shift+P：打开命令面板
+Ctrl+P：搜索项目中的文件
+Ctrl+G：跳转到第几行
+Ctrl+W：关闭当前打开文件
+Ctrl+Shift+W：关闭所有打开文件
+Ctrl+Shift+V：粘贴并格式化
+Ctrl+D：选择单词，重复可增加选择下一个相同的单词
+Ctrl+L：选择行，重复可依次增加选择下一行
+Ctrl+Shift+L：选择多行
+Ctrl+Shift+Enter：在当前行前插入新行
+Ctrl+X：删除当前行
+Ctrl+M：跳转到对应括号
+Ctrl+U：软撤销，撤销光标位置
+Ctrl+J：选择标签内容
+Ctrl+F：查找内容
+Ctrl+Shift+F：查找并替换
+Ctrl+H：替换
+Ctrl+R：前往 method
+Ctrl+N：新建窗口
+Ctrl+K+B：开关侧栏
+Ctrl+Shift+M：选中当前括号内容，重复可选着括号本身
+Ctrl+F2：设置/删除标记
+Ctrl+/：注释当前行
+Ctrl+Shift+/：当前位置插入注释
+Ctrl+Alt+/：块注释，并Focus到首行，写注释说明用的
+Ctrl+Shift+A：选择当前标签前后，修改标签用的
+F11：全屏
+Shift+F11：全屏免打扰模式，只编辑当前文件
+Alt+F3：选择所有相同的词
+Alt+.：闭合标签
+Alt+Shift+数字：分屏显示
+Alt+数字：切换打开第N个文件
+Shift+右键拖动：光标多不，用来更改或插入列内容
+鼠标的前进后退键可切换Tab文件
+按Ctrl，依次点击或选取，可需要编辑的多个位置
+按Ctrl+Shift+上下键，可替换行
+</code></pre>
+<h3 id="便携版本">便携版本</h3>
+<p>安装的时候选择一个比较容易找到的位置，默认的也可以，不过得去找到安装的位置，安装好之后先不要打开，在 Sublime Text 3 文件夹下新建一个  Data (注意大小写) 文件夹并删除原来的的 Sublime Text 3 配置文件夹，这时候启动安装插件就会在Data目录中了，也可以直接复制自己的配置文件到Data目录中，这个文件夹就可以复制进 u 盘随身带着了，但是依赖的 python、node、go 等需要在新设备上进行安装并修改相应 sublime 配置</p>
+<h2 id="问题">问题</h2>
+<h3 id="连续的输入gh或者gd会快速显示hd后消失">连续的输入<code>gh</code>或者<code>gd</code>会快速显示h、d后消失。</h3>
+<p>原因是godef定义的快捷键冲突了，更改快捷键或者慢速输入即可。</p>
+<h3 id="path-问题">path 问题</h3>
+<p>sublime 默认使用的是<code>bash</code>, 默认 path 路径为</p>
+<pre><code>/usr/local/bin
+/usr/local/sbin
+/usr/bin
+/usr/sbin
+</code></pre>
+<p>自己安装的一些软件不在默认 path 中，</p>
+<p>这时要么在<code>.bash_profile</code>中添加环境变量，但是设置后要重启系统才生效。</p>
+<p>要么创建其软链接在<code>/usr/local/bin</code>中，创建软链接的位置非强制但建议，这样在删除软件时更方便也不会和其他的系统软件混淆。</p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#插件">插件：</a>
+      <ul>
+        <li><a href="#安装方法">安装方法：</a></li>
+      </ul>
+    </li>
+    <li><a href="#一些配置">一些配置</a></li>
+    <li><a href="#破解">破解</a></li>
+    <li><a href="#1">1、</a></li>
+    <li><a href="#2">2、</a>
+      <ul>
+        <li><a href="#改hosts">改hosts：</a></li>
+        <li><a href="#输入注册码">输入注册码：</a></li>
+      </ul>
+    </li>
+    <li><a href="#快捷键">快捷键：</a>
+      <ul>
+        <li><a href="#默认快捷键">默认快捷键</a></li>
+        <li><a href="#便携版本">便携版本</a></li>
+      </ul>
+    </li>
+    <li><a href="#问题">问题</a>
+      <ul>
+        <li><a href="#连续的输入gh或者gd会快速显示hd后消失">连续的输入<code>gh</code>或者<code>gd</code>会快速显示h、d后消失。</a></li>
+        <li><a href="#path-问题">path 问题</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#插件">插件：</a>
+      <ul>
+        <li><a href="#安装方法">安装方法：</a></li>
+      </ul>
+    </li>
+    <li><a href="#一些配置">一些配置</a></li>
+    <li><a href="#破解">破解</a></li>
+    <li><a href="#1">1、</a></li>
+    <li><a href="#2">2、</a>
+      <ul>
+        <li><a href="#改hosts">改hosts：</a></li>
+        <li><a href="#输入注册码">输入注册码：</a></li>
+      </ul>
+    </li>
+    <li><a href="#快捷键">快捷键：</a>
+      <ul>
+        <li><a href="#默认快捷键">默认快捷键</a></li>
+        <li><a href="#便携版本">便携版本</a></li>
+      </ul>
+    </li>
+    <li><a href="#问题">问题</a>
+      <ul>
+        <li><a href="#连续的输入gh或者gd会快速显示hd后消失">连续的输入<code>gh</code>或者<code>gd</code>会快速显示h、d后消失。</a></li>
+        <li><a href="#path-问题">path 问题</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>

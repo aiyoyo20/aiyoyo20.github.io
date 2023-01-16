@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Editor on AI YOYO</title>
+    <link>/tags/editor/</link>
+    <description>Recent content in Editor on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Jan 2023 23:38:29 +0800</lastBuildDate><atom:link href="/tags/editor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Note_Editor_Compared</title>
+      <link>/post/note_editor_compared/</link>
+      <pubDate>Sat, 14 Jan 2023 23:38:29 +0800</pubDate>
+      
+      <guid>/post/note_editor_compared/</guid>
+      <description>陆陆续续使用了不少软件记录笔记，从最初的记事本，word 再到现在用过的各种 markdown 软件，各有特色，做个总结吧，希望对没有接触过的有个直观的了解。 有的软件是早期的时候使用的，所以可能会出现上面写的一些问题在下</description>
+    </item>
+    
+    <item>
+      <title>githubPage</title>
+      <link>/post/githubpage/</link>
+      <pubDate>Sat, 14 Jan 2023 00:13:07 +0800</pubDate>
+      
+      <guid>/post/githubpage/</guid>
+      <description>框架及实现语言 静态网站的生成框架挺多，这里举几个流行的。 框架 实现语言 Jekyll Ruby Hexo Node.js Hugo Go Pelican Python Middleman Ruby Metalsmith nodejs Wintersmith Nodejs Cactus Python+Django 之前使用过 Pelican，之所以使用它而不是其他的框架是考虑到自己使用的是 Python，如果有自定义</description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>/post/vim/</link>
+      <pubDate>Wed, 11 Jan 2023 00:16:08 +0800</pubDate>
+      
+      <guid>/post/vim/</guid>
+      <description>插件 插件管理器vim-plug curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 其他插件及配置 配置文件vimrc里面有详细的备注，就不一个个展开了。 快捷键设置 模式映射 使用h key-notation命令查看帮助信息,查看键盘符号的详细说明 notation meaning</description>
+    </item>
+    
+    <item>
+      <title>NeoVim</title>
+      <link>/post/neovim/</link>
+      <pubDate>Wed, 14 Dec 2022 19:13:22 +0800</pubDate>
+      
+      <guid>/post/neovim/</guid>
+      <description>有兴趣的可以去查下NeoVim项目的创作初衷，实际使用和Vim几乎是一样的，但NeoVim在某些方面是有独到之处的，发布的时间并没有很长，但是以及积累了大量用户，甚至从Vim转的也不少，插件系统几乎兼</description>
+    </item>
+    
+  </channel>
+</rss>

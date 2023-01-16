@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on AI YOYO</title>
+    <link>/tags/git/</link>
+    <description>Recent content in Git on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 13 Jan 2023 14:36:53 +0800</lastBuildDate><atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git_examples</title>
+      <link>/post/git_examples/</link>
+      <pubDate>Fri, 13 Jan 2023 14:36:53 +0800</pubDate>
+      
+      <guid>/post/git_examples/</guid>
+      <description>需求：有一个文件在两个月之前删除了，但是现在想看看里面的内容</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>/post/git/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/git/</guid>
+      <description>安装Git yay -S git 一、新建代码库 在当前目录新建一个Git代码库 $ git init 新建一个目录，将其初始化为Git代码库 $ git init [project-name] 下载一个项目和它的整个代码历史 $ git clone [url] 二、配置 Git的设置文件为.gitconfig，它</description>
+    </item>
+    
+  </channel>
+</rss>

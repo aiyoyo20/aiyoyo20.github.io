@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>InterviewQuestions on AI YOYO</title>
+    <link>/tags/interviewquestions/</link>
+    <description>Recent content in InterviewQuestions on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 09 Jan 2023 20:17:50 +0800</lastBuildDate><atom:link href="/tags/interviewquestions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>spider</title>
+      <link>/post/spider/</link>
+      <pubDate>Mon, 09 Jan 2023 20:17:50 +0800</pubDate>
+      
+      <guid>/post/spider/</guid>
+      <description>第五章 爬虫 一、常用库与模块 1. 试列出至少三种目前流行的大型数据库的名称: ____、____、____, 其中您最熟悉的是 ____, 从 ____ 年开始使用（考察对数据可的熟悉程度，同时考察你的工作年限注意和自己简历一致）。</description>
+    </item>
+    
+    <item>
+      <title>python_</title>
+      <link>/post/python_/</link>
+      <pubDate>Mon, 09 Jan 2023 19:38:13 +0800</pubDate>
+      
+      <guid>/post/python_/</guid>
+      <description>一、元类 1.Python 中类方法、类实例方法、静态方法有何区别？ 类方法：是类对象的方法，在定义时需要在上方使用 @classmethod 进行装饰，形参为 cls，表示类对象，类对象和实例对象都可调用； 类实例方法：是类实例化对象的方法，只有实</description>
+    </item>
+    
+    <item>
+      <title>python_base</title>
+      <link>/post/python_base/</link>
+      <pubDate>Mon, 09 Jan 2023 18:44:22 +0800</pubDate>
+      
+      <guid>/post/python_base/</guid>
+      <description>一、基础语法 1. 输入与输出 1.1 代码中要修改不可变数据会出现什么问题？抛出什么异常？ 代码不会正常运行，抛出 TypeError 异常。 1.2 a=1,b=2, 不用中间变量交换 a 和 b 的值？ 方法一： a = a + b b = a - b a = a - b 方法二： a = a ^ b b =</description>
+    </item>
+    
+    <item>
+      <title>非技术</title>
+      <link>/post/%E9%9D%9E%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Mon, 09 Jan 2023 18:20:09 +0800</pubDate>
+      
+      <guid>/post/%E9%9D%9E%E6%8A%80%E6%9C%AF/</guid>
+      <description>面试前的准备 首先我们要穿的得体，因为第一印象对一个面试官来说真的很重要，如果我们面试的时候都不能以一种非常认真的态度去对待，那么可想而知其实我们离面试成功的路渐行渐远，当然这只是说第一印象，并不能代表</description>
+    </item>
+    
+    <item>
+      <title>Shell</title>
+      <link>/post/shell/</link>
+      <pubDate>Mon, 09 Jan 2023 18:19:24 +0800</pubDate>
+      
+      <guid>/post/shell/</guid>
+      <description>第六章 shell 与自动化运维 使用变量的两种方法？各自适合的场景？区别？ 单双引号的区别？ $* 和 $@ 区别？ 字符串的只读、删除、长度输出 shell中命令替换的两种方式，以及有什么区别 变量的间接引用 文件按行处理的多种方式</description>
+    </item>
+    
+    <item>
+      <title>mysql</title>
+      <link>/post/mysql/</link>
+      <pubDate>Mon, 09 Jan 2023 18:18:47 +0800</pubDate>
+      
+      <guid>/post/mysql/</guid>
+      <description>Mysql 基本语句 1、from 子句组装来自不同数据源的数据； 2、where 子句基于指定的条件对记录行进行筛选； 3、group by 子句将数据划分为多个分组； 4、使用聚集函数进行计算； 5、使用 having 子句筛选分组； 6、计</description>
+    </item>
+    
+    <item>
+      <title>mongo</title>
+      <link>/post/mongo/</link>
+      <pubDate>Mon, 09 Jan 2023 18:07:25 +0800</pubDate>
+      
+      <guid>/post/mongo/</guid>
+      <description>数据库的一些基本操作命令（列举一些常用命令即可）？ MongoDB 的常见命令如下： db.help (); Help 查看命令提示 use yourDB; 切换 / 创建数据库 show dbs; 查询所有数据库 db.dropDatabase (); 删除当前使用数据库 db.getName (); 查看当前使用的数据库 db.version (); 当前 db 版本 db.addUser (&amp;quot;name&amp;quot;); 添加用户 db.addUser (&amp;quot;userName&amp;quot;,</description>
+    </item>
+    
+    <item>
+      <title>redis</title>
+      <link>/post/redis/</link>
+      <pubDate>Mon, 09 Jan 2023 17:40:42 +0800</pubDate>
+      
+      <guid>/post/redis/</guid>
+      <description>redis 是什么？ redis 是 nosql(也是个巨大的 map) 单线程，但是可处理 1 秒 10w 的并发（数据都在内存中） Redis 的全称是：Remote Dictionary.Server，本质上是一个 Key-Value 类型的内存数据库，很像memcache</description>
+    </item>
+    
+    <item>
+      <title>front_end</title>
+      <link>/post/front_end/</link>
+      <pubDate>Fri, 18 Nov 2022 23:24:59 +0800</pubDate>
+      
+      <guid>/post/front_end/</guid>
+      <description>第三章 前端 01 什么是防抖和节流，他们的应用场景有哪些? 在 Issue 中交流与讨论: 01 什么是防抖和节流，他们的应用场景有哪些 防抖 (debounce) 防抖，顾名思义，防止抖动，以免把一次事件误认为多次，敲键盘就是一个每天都会接触到的防</description>
+    </item>
+    
+    <item>
+      <title>dataStruct</title>
+      <link>/post/datastruct/</link>
+      <pubDate>Fri, 18 Nov 2022 23:04:49 +0800</pubDate>
+      
+      <guid>/post/datastruct/</guid>
+      <description>第十章 数据结构与算法 1. 算法的特征？ 1） 有穷性： 一个算法必须保证执行有限步骤之后结束； 2） 确切性： 算法的每一步骤必须有确切的定义； 3） 输入：一个算法有 0 个或多个输入,以刻画运算对象的初始情况,所谓 0 个输</description>
+    </item>
+    
+    <item>
+      <title>questions</title>
+      <link>/post/questions/</link>
+      <pubDate>Fri, 18 Nov 2022 23:03:36 +0800</pubDate>
+      
+      <guid>/post/questions/</guid>
+      <description>第十一章 企业真题实战 一、360 面试题 1. 请拿出 B 表中的 accd，(A 表中和 B 表中的一样的数据)？ select * from B inner join on B.name = A.name 2. a = &amp;lsquo;abbbccc&amp;rsquo;，用正则匹配为 abccc, 不管有多少 b，就出现一</description>
+    </item>
+    
+    <item>
+      <title>flask</title>
+      <link>/post/flask/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/flask/</guid>
+      <description>Flask框架的优点 Flask框架是一个短小精悍、可扩展性强的web框架。html Flask框架依赖组件 Flask依赖于werkzurg组件，实现wsgi使用的就是werkzurg。web Flask蓝</description>
+    </item>
+    
+    <item>
+      <title>MY</title>
+      <link>/post/my/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/my/</guid>
+      <description>python lambda 递归 阶乘 f = lambda n: f(n-1) * n if n&amp;gt;=2 else 1 序列乘积 a=[2,3,4] f = lambda n: f(n-1) * a[n] if n&amp;gt;=0 else 1 print(f(len(a))) 求和 f = lambda n: f(n-1) * n if n&amp;gt;=2 else 0 斐波那契数列 lambdafunc = lambda n : 1 if n == 1 or n == 2 else lambdafunc(n -1 ) + lambdafunc(n - 2)</description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>/post/test/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/test/</guid>
+      <description>第七章 测试 1. 禅道和 qc 的区别？ 都是缺陷管理工具。 A.QC 作为缺陷管理工具，QC 在缺陷管理方面，做的 相对完善。 提 bug 页面：填写内容可以根据测试需求，不断修改添加新的字段；以我上一家公司为例，在提 bug 过程中，有一下几</description>
+    </item>
+    
+    <item>
+      <title>web_framework</title>
+      <link>/post/web_framework/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/web_framework/</guid>
+      <description>第四章 WEB 框架 一、Flask 1. Flask 中正则 URL 的实现？ @app.route(&amp;lt;URL&amp;gt;) 中 URL 显式支持 string、int、float、path 4 种类型，隐式支持正则。 第一步：写正则类，继承 BaseConverter，将匹配到的值设置为 regex 的值</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>datatype-datail-and-deep-shallow-copy - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="Python" />
+
+
+<meta property="og:title" content="datatype-datail-and-deep-shallow-copy" />
+<meta name="twitter:title" content="datatype-datail-and-deep-shallow-copy" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/datatype-datail-and-deep-shallow-copy/" /><meta property="og:description" content="Int(整型) 标准的 Python 实现是用 C 语言编写的。这意味着每一个 Python 对象都是一个伪 C 语言结构体，该结构体不仅包含其值，还有其他信息。例如，当我们在 Python 中定义一个整型，例如 x = 10000 时，x 并不是一个“原生”整型，而是" />
+<meta name="twitter:description" content="Int(整型) 标准的 Python 实现是用 C 语言编写的。这意味着每一个 Python 对象都是一个伪 C 语言结构体，该结构体不仅包含其值，还有其他信息。例如，当我们在 Python 中定义一个整型，例如 x = 10000 时，x 并不是一个“原生”整型，而是" /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2022-10-25T16:48:59+08:00" /><meta property="article:modified_time" content="2022-10-25T16:48:59+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/datatype-datail-and-deep-shallow-copy/">datatype-datail-and-deep-shallow-copy</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-10-25</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;3082 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/python">Python</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h1 id="int整型">Int(整型)</h1>
+<p>标准的 Python 实现是用 C 语言编写的。这意味着每一个 Python 对象都是一个伪 C 语言结构体，该结构体不仅包含其值，还有其他信息。例如，当我们在 Python 中定义一个整型，例如 x = 10000 时，x 并不是一个“原生”整型，而是一个指针，指向一个 C 语言的复合结构体，结构体里包含了一些值
+查看 Python 3.4 的源代码，可以发现整型（长整型）的定义，如下所示（C 语言的宏经过扩展之后）：</p>
+<pre><code>struct _longobject {
+    long ob_refcnt;
+    PyTypeObject *ob_type;
+    size_t ob_size;
+    long ob_digit[1];
+};
+</code></pre>
+<p>Python 3.4 中的一个整型实际上包括 4 个部分。
+ob_refcnt 是一个引用计数，它帮助 Python 默默地处理内存的分配和回收。
+ob_type 将变量的类型编码。
+ob_size 指定接下来的数据成员的大小。
+ob_digit 包含我们希望 Python 变量表示的实际整型值。
+这意味着与 C 语言这样的编译语言中的整型相比，在 Python 中存储一个整型会有一些开销，
+两者的差异在于，C 语言整型本质上是对应某个内存位置的标签，里面存储的字节会编码成整型。而 Python 的整型其实是一个指针，指向包含这个 Python 对象所有信息的某个内存位置，其中包括可以转换成整型的字节。由于 Python 的整型结构体里面还包含了大量额外的信息，所以 Python 可以自由、动态地编码。但是，Python 类型中的这些额外信息也会成为负担，在多个对象组合的结构体中尤其明显。</p>
+<h1 id="str字符串">Str(字符串)</h1>
+<p>通过紧凑数组 实现字符串的存储。</p>
+<p>字符串数据在内存中是连续存放的，空间利用率高。</p>
+<p>原因是：每个字符的大小是固定的，因此一个字符串的大小也是固定的，可以分配一个固定大小的空间给字符串。</p>
+<p>同为序列类型，为什么列表采用引用数组，而字符串采用紧凑数据。
+虽然同为序列类型，但列表可以存储的元素类型是多种多样的，并且列表是可变的，无法预估内存空间，所以列表不能通过紧凑数组。</p>
+<h1 id="list列表">List(列表)</h1>
+<p>通过 引用数组 实现列表元素的存储
+列表中存储的并不是我们看到的元素的值，而是这些元素的地址
+列表所谓的连续，是在内存中连续存储元素的地址，而元素的值是在内存中分散存储的
+当访问到列表的某个元素时，是按照列表中存储的元素地址去找到元素的值</p>
+<p>直接赋值，是完完全全的没改变原列表的任何内容，就是原来的列表多了一个别名。</p>
+<p>浅拷贝，确实是把列表拷贝了一份，也就是把列表中存储的地址全部拷贝了一份给新列表，新列表拥有一份独立的地址信息。但这些地址指向的元素和原列表是同一份元素。总结，浅拷贝只是把地址重新拷贝了一份，他们指向的内容还是同一份内容。</p>
+<p>列表的切片也属于浅拷贝。</p>
+<pre><code>list_one = [1,2,3]
+list_c = list_one[:2]
+list_b = list_one[:]
+list_a = list(list_one)  # 等同于 list_one.copy()
+list_d = list_one.copy()
+print(list_one,id(list_one[0]))
+print(list_c,id(list_c[0]))
+print(list_b,id(list_b[0]))
+print(list_a,id(list_a[0]))
+print(list_d,id(list_d[0]))
+
+# [1, 2, 3] 139937584847152
+# [1, 2] 139937584847152
+# [1, 2, 3] 139937584847152
+# [1, 2, 3] 139937584847152
+# [1, 2, 3] 139937584847152
+</code></pre>
+<p>新增元素：</p>
+<pre><code>list_one = [1,2,3]
+print(list_one,id(list_one[0]))
+list_one.append(1)
+print(list_one,id(list_one[0]),id(list_one[3]))
+
+# [1, 2, 3] 139640997710128
+# [1, 2, 3, 1] 139640997710128 139640997710128
+</code></pre>
+<p>新增元素就是增加一个元素的地址。</p>
+<p>列表是 Python 中的标准可变多元素容器。可以创建一个整型值列表，一个字符串列表，因为 Python 的动态类型特性，甚至可以创建一个异构的列表。
+但是想拥有这种灵活性也是要付出一定代价的：为了获得这些灵活的类型，列表中的每一项必须包含各自的类型信息、引用计数和其他信息；也就是说，每一项都是一个完整的 Python 对象。来看一个特殊的例子，如果列表中的所有变量都是同一类型的，那么很多信息都会显得多余——将数据存储在固定类型的数组中应该会更高效。
+在实现层面，数组基本上包含一个指向连续数据块的指针。另一方面，Python 列表包含一个指向指针块的指针，这其中的每一个指针对应一个完整的 Python 对象（如前面看到的 Python 整型）。另外，列表的优势是灵活，因为每个列表元素是一个包含数据和类型信息的完整结构体，而且列表可以用任意类型的数据填充。固定类型的 NumPy 式数组缺乏这种灵活性，但是能更有效地存储和操作数据。</p>
+<h1 id="tuple元组">Tuple(元组)</h1>
+<p>tuple 本质上就是顺序表，不可修改不可扩容，只读；
+tuple 和 list 相似，本质也是一个数组，但是空间大小固定。不同于一般数组，Python 的 tuple 做了许多优化，来提升在程序中的效率。</p>
+<p>举个例子，为了提高效率，避免频繁的调用系统函数 free 和 malloc 向操作系统申请和释放空间，tuple 源文件中定义了一个 free_list：
+<code>static PyTupleObject *free_list[PyTuple_MAXSAVESIZE];</code>
+所有申请过的，小于一定大小的元组，在释放的时候会被放进这个 free_list 中以供下次使用。也就是说，如果以后需要再去创建同样的 tuple，Python 就可以直接从缓存中载入。</p>
+<p>当内部有缓存后，再次创建 元组时，会优先去缓存中获取，如果缓存中没有，则再开辟空间去存储元组。</p>
+<ol>
+<li>空元祖
+永远都用同一个。</li>
+<li>非空元组
+优先去缓存free_list中获取。</li>
+</ol>
+<pre><code>tuple_one = (1,2,3)
+tuple_two = (1,2,3)
+print(tuple_one,id(tuple_one))
+print(tuple_two,id(tuple_two))
+
+# (1, 2, 3) 140576284075712
+# (1, 2, 3) 140576284075712
+</code></pre>
+<h1 id="dict字典">Dict(字典)</h1>
+<p>通过稀疏数组 实现值的存储与访问</p>
+<ol>
+<li>
+<p>字典的创建过程
+1.创建一个散列表（稀疏数组，N &raquo;n，可以动态扩充）
+2.通过hash()计算键的散列值
+3.根据计算的散列值确定其在散列表中的位置（个别时候有哈希冲突，解决办法是开放寻址法 或 链接法 ）
+4.在该位置上存入值</p>
+</li>
+<li>
+<p>字典的访问过程
+1.计算要访问的键的散列值
+2.根据计算的散列值，按照一定的规则，确定其在散列表中的位置
+3.读取该位置上存储的值（存在则返回该值，不存在则报错 KeyError）</p>
+</li>
+</ol>
+<p>字典数据类型，以空间换时间，内存占用大，空间利用率低，但查找速度快（稀疏数组 N &raquo; n，否则会产生很多冲突，另外动态扩充也是）因为键在字典中显示的顺序，与实际计算出来的它在散列表中的存放位置，是两码事，因此字典表现为无序的</p>
+<h1 id="set集合">Set(集合)</h1>
+<p>python的内置集合类型有两种：</p>
+<pre><code>set(): 一种可变的、无序的、有限的集合，其元素是唯一的、不可变的（可哈希的）对象。
+frozenset(): 一种不可变的、可哈希的、无序的集合，其元素是唯一的，不可变的哈希对象。
+</code></pre>
+<p>CPython 中集合和字典非常相似。事实上，集合被实现为带有空值的字典，只有键才是实际的集合元素。此外，集合还利用这种没有值的映射做了其它的优化。</p>
+<p>由于这一点，可以快速的向集合中添加元素、删除元素、检查元素是否存在。平均时间复杂度为O(1),最坏的事件复杂度是O(n)。</p>
+<p>set 集合和 dict 一样也是基于散列表的，只是他的表元只包含值的引用而没有对键的引用，其他的和 dict 基本上是一致的。</p>
+<h1 id="可变对象与不可变对象">可变对象与不可变对象</h1>
+<p>当对象的值发生变化，但内存地址没有改变时，则说明是可变类型。
+当对象的值发生变化，内存地址也发生改变时，则说明是不可变类型。</p>
+<p>在引用不可变对象时，会寻找该对象是否被创建过，若该对象已创建，则变量会直接引用该对象，不会再申请新的内存空间。</p>
+<pre><code>以元组为例子：
+tuple_one = (1,2,3)
+tuple_two = (1,2,3)
+print(tuple_one,id(tuple_one))
+print(tuple_two,id(tuple_two))
+
+# (1, 2, 3) 140576284075712
+# (1, 2, 3) 140576284075712
+</code></pre>
+<h2 id="heading">+=</h2>
+<p>对于不可变对象实际是生成了一个新对象并赋值，而对于可变对象则是相当于在原来的对象上进行修改。</p>
+<pre><code>one = [1,2,3]
+print(one,id(one))
+one = one + [4]
+print(one,id(one))
+
+a = [1,2,3]
+print(a,id(a))
+a += [4]
+print(a,id(a))
+
+# [1, 2, 3] 140499252778496
+# [1, 2, 3, 4] 140499252779136
+# [1, 2, 3] 140499252778496
+# [1, 2, 3, 4] 140499252778496
+</code></pre>
+<h1 id="直接赋值深拷贝浅拷贝">直接赋值、深拷贝、浅拷贝</h1>
+<p>直接赋值：其实就是对象的引用（别名）。</p>
+<pre><code>tuple_one = (1,2,[3])
+tuple_two = tuple_one
+tuple_two[2].append(1)
+print(tuple_one,id(tuple_one))
+print(tuple_two,id(tuple_two))
+
+# (1, 2, [3, 1]) 140151642064320
+# (1, 2, [3, 1]) 140151642064320
+</code></pre>
+<p>浅拷贝(copy)：拷贝父对象，不会拷贝对象的内部的子对象。</p>
+<pre><code>import copy
+tuple_one = (1,2,[3])
+tuple_two = copy.copy(tuple_one)
+tuple_two[2].append(1)
+print(tuple_one,id(tuple_one))
+print(tuple_two,id(tuple_two))
+
+# (1, 2, [3, 1]) 140459377247872
+# (1, 2, [3, 1]) 140459377247872
+</code></pre>
+<p>深拷贝(deepcopy)： copy 模块的 deepcopy 方法，完全拷贝了父对象及其子对象。</p>
+<pre><code>import copy
+tuple_one = (1,2,[3])
+tuple_two = copy.deepcopy(tuple_one)
+tuple_two[2].append(1)
+print(tuple_one,id(tuple_one))
+print(tuple_two,id(tuple_two))
+
+# (1, 2, [3]) 139789956724224
+# (1, 2, [3, 1]) 139789955601472
+</code></pre>
+<h1 id="函数参数传递">函数参数传递</h1>
+<h2 id="值传递">值传递</h2>
+<p>不可变对象
+值传递，实际上就是将实际参数值的副本（复制品）传入函数，而参数本身不会受到任何影响。</p>
+<h2 id="引用传递">引用传递</h2>
+<p>如果实际参数的数据类型是可变对象（列表、字典），则函数参数的传递方式将采用引用传递方式。需要注意的是，引用传递方式的底层实现，采用的依然还是值传递的方式。</p>
+<pre><code>a = [1,2,3]
+def app(li):
+	li.append(4)
+print(a)
+app(a)
+print(a)
+
+# [1, 2, 3]
+# [1, 2, 3, 4]
+</code></pre>
+<h1 id="两个例子">两个例子：</h1>
+<p>一：</p>
+<pre><code>list_one = [[]]*3
+list_one[0].append(1)
+print(list_one)
+
+# [[1], [1], [1]]
+</code></pre>
+<p>原因：</p>
+<pre><code>list_one = [[]]*3
+for i in list_one:
+	print(id(i))
+
+# 140477489690112
+# 140477489690112
+# 140477489690112
+</code></pre>
+<p>二：</p>
+<pre><code>def append_to(element, to=[]):
+    to.append(element)
+    return to
+my_list = append_to(12)
+print(my_list)
+
+my_other_list = append_to(42)
+print(my_other_list)
+
+# [12]
+# [12, 42]
+</code></pre>
+<p>原因：在定义函数的时候，t默认参数 to 的值就被计算出来了。
+其类似于：</p>
+<pre><code>a = [1,2,3]
+def app(li):
+	li.append(4)
+print(a)
+app(a)
+print(a)
+
+# [1, 2, 3]
+# [1, 2, 3, 4]
+</code></pre>
+<p><a href="https://www.cnblogs.com/harrymore/p/10071632.html" target="_blank">python基本数据类型底层实现</a>
+<a href="https://blog.csdn.net/weixin_47073925/article/details/106648759" target="_blank">python的几种常见数据类型底层细节实现</a>
+<a href="http://c.biancheng.net/view/5360.html" target="_blank">Python列表和元组的底层实现</a>
+<a href="https://www.runoob.com/w3cnote/python-understanding-dict-copy-shallow-or-deep.html" target="_blank">Python 直接赋值、浅拷贝和深度拷贝解析</a></p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#heading">+=</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#值传递">值传递</a></li>
+    <li><a href="#引用传递">引用传递</a></li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#heading">+=</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#值传递">值传递</a></li>
+    <li><a href="#引用传递">引用传递</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on AI YOYO</title>
+    <link>/tags/docker/</link>
+    <description>Recent content in Docker on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 25 Oct 2022 16:48:59 +0800</lastBuildDate><atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker</title>
+      <link>/post/docker/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/docker/</guid>
+      <description>Docker安装、运行mysql 从docker hub的仓库中拉去mysql镜像 sudo docker pull mysql 查看镜像： docker images 2.运行一个mysql容器 docker run -p 3306:3306 &amp;ndash;name qmm-mysql -v ~/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=669988 -d mysql:5.6 //创建容器时，最后mysql:5.6表示mysq</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flask on AI YOYO</title>
+    <link>/tags/flask/</link>
+    <description>Recent content in Flask on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 25 Oct 2022 16:48:59 +0800</lastBuildDate><atom:link href="/tags/flask/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>flask</title>
+      <link>/post/flask/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/flask/</guid>
+      <description>Flask框架的优点 Flask框架是一个短小精悍、可扩展性强的web框架。html Flask框架依赖组件 Flask依赖于werkzurg组件，实现wsgi使用的就是werkzurg。web Flask蓝</description>
+    </item>
+    
+  </channel>
+</rss>

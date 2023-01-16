@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on AI YOYO</title>
+    <link>/tags/vim/</link>
+    <description>Recent content in Vim on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 11 Jan 2023 00:16:08 +0800</lastBuildDate><atom:link href="/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vim</title>
+      <link>/post/vim/</link>
+      <pubDate>Wed, 11 Jan 2023 00:16:08 +0800</pubDate>
+      
+      <guid>/post/vim/</guid>
+      <description>插件 插件管理器vim-plug curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 其他插件及配置 配置文件vimrc里面有详细的备注，就不一个个展开了。 快捷键设置 模式映射 使用h key-notation命令查看帮助信息,查看键盘符号的详细说明 notation meaning</description>
+    </item>
+    
+  </channel>
+</rss>

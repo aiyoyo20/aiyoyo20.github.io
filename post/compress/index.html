@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>compress - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="Tools" />
+
+
+<meta property="og:title" content="compress" />
+<meta name="twitter:title" content="compress" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/compress/" /><meta property="og:description" content="1. tar 参数 说明 -c 建立压缩档案 -x 解压 -t 查看内容 -r 向压缩归档文件末尾追加文件 -u 更新原压缩包中的文件 这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩" />
+<meta name="twitter:description" content="1. tar 参数 说明 -c 建立压缩档案 -x 解压 -t 查看内容 -r 向压缩归档文件末尾追加文件 -u 更新原压缩包中的文件 这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩" /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2023-01-08T15:18:04+08:00" /><meta property="article:modified_time" content="2023-01-08T15:18:04+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/compress/">compress</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-01-08</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;3002 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/tools">Tools</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h1 id="1-tar">1. tar</h1>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-c</td>
+<td>建立压缩档案</td>
+</tr>
+<tr>
+<td>-x</td>
+<td>解压</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>查看内容</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>向压缩归档文件末尾追加文件</td>
+</tr>
+<tr>
+<td>-u</td>
+<td>更新原压缩包中的文件</td>
+</tr>
+</tbody>
+</table>
+<p>这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩或解压档案时可选的。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-z</td>
+<td>有gzip属性的</td>
+</tr>
+<tr>
+<td>-j</td>
+<td>有bz2属性的</td>
+</tr>
+<tr>
+<td>-Z</td>
+<td>有compress属性的</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>显示所有过程</td>
+</tr>
+<tr>
+<td>-O</td>
+<td>将文件解开到标准输出</td>
+</tr>
+</tbody>
+</table>
+<p>参数-f是必须的<code>-f</code>: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。</p>
+<h2 id="11-tar">1.1. tar</h2>
+<p>严格来说，tar文件只是归档但并未压缩</p>
+<pre><code>tar -cvf test.tar test1.log test2.log #归档多个文件
+tar -cvf test.tar test/* &amp;emsp;[[归档test]]目录下所有文件
+tar -cvf test.tar *.log &amp;emsp;#归档所有以.log结尾的文件
+</code></pre>
+<!---->
+<pre><code>tar -xvf file.tar        //解压 tar包
+</code></pre>
+<hr>
+<h2 id="12-targz">1.2. tar.gz</h2>
+<pre><code>tar -zxvf file.tar.gz     //解压tar.gz
+</code></pre>
+<!---->
+<pre><code>tar -zcvf test.tar.gz file1 file2 [[打包，并以gzip]]压缩
+</code></pre>
+<h2 id="13-tarbz2">1.3. tar.bz2</h2>
+<pre><code>tar -jxvf test.tar.bz2 file1 file2 [[打包，并以bzip2]]压缩
+</code></pre>
+<!---->
+<pre><code>tar -jcvf test.tar.bz2 file1 file2 [[打包，并以bzip2]]压缩
+</code></pre>
+<h2 id="14-tarz">1.4. tar.Z</h2>
+<pre><code>tar -xZvf file.tar.Z    //解压tar.Z
+</code></pre>
+<!---->
+<pre><code>tar -cZvf file.tar.Z    //压缩tar.Z
+</code></pre>
+<h2 id="15-tarxz">1.5. tar.xz</h2>
+<pre><code>压缩tar.xz包
+先创建xxx.tar文件
+
+tar -cvf xxx.tar xxx
+再创建xxx.tar.xz文件
+
+xz -z xxx.tar
+如果要保留被压缩的文件，需要加上参数-k
+</code></pre>
+<!---->
+<pre><code>解压tar.xz包
+这是两层压缩，外面是xz压缩，里层是tar压缩，所以分两步实现解压。
+
+xz -d filename.tar.xz
+tar -xvf filename.tar.xz
+
+也可以直接解压
+tar -xvJf filename.tar.xz
+</code></pre>
+<h1 id="2-zipunzip">2. zip/unzip</h1>
+<p>zip和unzip命令主要用于处理zip包。记得linux默认也是没有的，需要额外安装。</p>
+<p>zip 功能说明：压缩文件。</p>
+<p>语　　法：<code>zip [-AcdDfFghjJKlLmoqrSTuvVwXyz$][-b &lt;工 作目录&gt;][-ll][-n &lt;字 尾字符串&gt;][-t &lt;日 期时间&gt;][-&lt;压 缩效率&gt;][压 缩文件][文件...][-i &lt;范本样式&gt;][-x &lt;范本样式&gt;]</code></p>
+<p>补充说明：zip是个使用广泛的压缩程序，文件经它压缩后会另外产生具 有&quot;.zip&quot;扩展名 的压缩文件。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-A</td>
+<td>调整可执行的自动解压缩文件。</td>
+</tr>
+<tr>
+<td>-b&lt;工作目录&gt;</td>
+<td>指定暂时存放文件的目录。</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>替每个被压缩的文件加上注释。</td>
+</tr>
+<tr>
+<td>-d</td>
+<td>从压缩文件内删除指定的文件。</td>
+</tr>
+<tr>
+<td>-D</td>
+<td>压缩文件内不建立目录名称。</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>此参数的效果和指定&quot;-u&quot;参 数类似，但不仅更新既有文件，如果某些文件原本不存在于压缩文件内，使用本参数会一并将其加入压缩文件中。</td>
+</tr>
+<tr>
+<td>-F</td>
+<td>尝试修复已损坏的压缩文件。</td>
+</tr>
+<tr>
+<td>-g</td>
+<td>将文件压缩后附加在既有的压缩文件之后，而非另行建立新的压缩文件。</td>
+</tr>
+<tr>
+<td>-h</td>
+<td>在线帮助。</td>
+</tr>
+<tr>
+<td>-i&lt;范本样式&gt;</td>
+<td>只压缩符合条件的文件。</td>
+</tr>
+<tr>
+<td>-j</td>
+<td>只保存文件名称及其内容，而不存放任何目录名称。</td>
+</tr>
+<tr>
+<td>-J</td>
+<td>删除压缩文件前面不必要的数据。</td>
+</tr>
+<tr>
+<td>-k</td>
+<td>使用MS-DOS兼容格 式的文件名称。</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>压缩文件时，把LF字符 置换成LF+CR字 符。</td>
+</tr>
+<tr>
+<td>-ll</td>
+<td>压缩文件时，把LF+CR字 符置换成LF字符。</td>
+</tr>
+<tr>
+<td>-L</td>
+<td>显示版权信息。</td>
+</tr>
+<tr>
+<td>-m</td>
+<td>将文件压缩并加入压缩文件后，删除原始文件，即把文件移到压缩文件中。</td>
+</tr>
+<tr>
+<td>-n&lt;字尾字符串&gt;</td>
+<td>不压缩具有特定字尾字符串的文件。</td>
+</tr>
+<tr>
+<td>-o</td>
+<td>以压缩文件内拥有最新更改时间的文件为准，将压缩文件的更改时间设成和该文件相同。</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>不显示指令执行过程。</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>递归处理，将指定目录下的所有文件和子目录一并处理。</td>
+</tr>
+<tr>
+<td>-S</td>
+<td>包含系统和隐藏文件。</td>
+</tr>
+<tr>
+<td>-t&lt;日期时间&gt;</td>
+<td>把压缩文件的日期设成指定的日期。</td>
+</tr>
+<tr>
+<td>-T</td>
+<td>检查备份文件内的每个文件是否正确无误。</td>
+</tr>
+<tr>
+<td>-u</td>
+<td>更换较新的文件到压缩文件内。</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>显示指令执行过程或显示版本信息。</td>
+</tr>
+<tr>
+<td>-V</td>
+<td>保存VMS操作系统的文 件属性。</td>
+</tr>
+<tr>
+<td>-w</td>
+<td>在文件名称里假如版本编号，本参数仅在VMS操 作系统下有效。</td>
+</tr>
+<tr>
+<td>-x&lt;范本样式&gt;</td>
+<td>压缩时排除符合条件的文件。</td>
+</tr>
+<tr>
+<td>-X</td>
+<td>不保存额外的文件属性。</td>
+</tr>
+<tr>
+<td>-y</td>
+<td>直接保存符号连接，而非该连接所指向的文件，本参数仅在UNIX之 类的系统下有效。</td>
+</tr>
+<tr>
+<td>-z</td>
+<td>替压缩文件加上注释。</td>
+</tr>
+<tr>
+<td>-$</td>
+<td>保存第一个被压缩文件所在磁盘的卷册名称。</td>
+</tr>
+<tr>
+<td>-&lt;压缩效率&gt;</td>
+<td>压缩效率是一个介于1-9的 数值。</td>
+</tr>
+</tbody>
+</table>
+<p>unzip 功 能说明：解压缩zip文 件</p>
+<p>语　　法：<code>unzip [-cflptuvz][-agCjLMnoqsVX][-P &lt;密 码&gt;][.zip文 件][文件][-d &lt;目录&gt;][-x &lt;文件&gt;] 或 unzip [-Z]</code></p>
+<p>补充说明：unzip为.zip压缩文件的解压缩程序。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-c</td>
+<td>将解压缩的结果显示到屏幕上，并对字符做适当的转换。</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>更新现有的文件。</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>显示压缩文件内所包含的文件。</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>与 -c 参数类似，会将解压缩的结果显示到屏幕上，但不会执行任 何的转换。</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>检查压缩文件是否正确。但不解压。</td>
+</tr>
+<tr>
+<td>-u</td>
+<td>与 -f 参数类似，但是除了更新现有的文件外，也会将压缩文件中 的其他文件解压缩到目录中。</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>执行是时显示详细的信息。或查看压缩文件目录，但不解压。</td>
+</tr>
+<tr>
+<td>-z</td>
+<td>仅显示压缩文件的备注文字。</td>
+</tr>
+<tr>
+<td>-a</td>
+<td>对文本文件进行必要的字符转换。</td>
+</tr>
+<tr>
+<td>-b</td>
+<td>不要对文本文件进行字符转换。</td>
+</tr>
+<tr>
+<td>-C</td>
+<td>压缩文件中的文件名称区分大小写。</td>
+</tr>
+<tr>
+<td>-j</td>
+<td>不处理压缩文件中原有的目录路径。</td>
+</tr>
+<tr>
+<td>-L</td>
+<td>将压缩文件中的全部文件名改为小写。</td>
+</tr>
+<tr>
+<td>-M</td>
+<td>将输出结果送到more程 序处理。</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>解压缩时不要覆盖原有的文件。</td>
+</tr>
+<tr>
+<td>-o</td>
+<td>不必先询问用户，unzip执行后覆盖原有文件。</td>
+</tr>
+<tr>
+<td>-P&lt;密码&gt;</td>
+<td>使用zip的密码选项。</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>执行时不显示任何信息。</td>
+</tr>
+<tr>
+<td>-s</td>
+<td>将文件名中的空白字符转换为底线字符。</td>
+</tr>
+<tr>
+<td>-V</td>
+<td>保留VMS的文件版本信 息。</td>
+</tr>
+<tr>
+<td>-X</td>
+<td>解压缩时同时回存文件原来的UID/GID。</td>
+</tr>
+<tr>
+<td>[.zip文件]</td>
+<td>指定.zip压缩文件。</td>
+</tr>
+<tr>
+<td>[文件]</td>
+<td>指定要处理.zip压缩文 件中的哪些文件。</td>
+</tr>
+<tr>
+<td>-d&lt;目录&gt;</td>
+<td>指定文件解压缩后所要存储的目录。</td>
+</tr>
+<tr>
+<td>-x&lt;文件&gt;</td>
+<td>指定不要处理.zip压 缩文件中的哪些文件。</td>
+</tr>
+<tr>
+<td>-Z</td>
+<td>unzip -Z 等于执行zipinfo指 令。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="21-压缩">2.1. 压缩</h2>
+<pre><code>zip test.zip filename # 压缩文件
+zip -r test.zip test/ # 打包test目录下的文件
+zip -rj test.zip test/ # 打包test目录下文件，且压缩包不带test目录
+</code></pre>
+<p>压缩时如果需要对压缩包进行加密，可使用-P参数：</p>
+<pre><code>zip -r test.zip test1 test -P 66666 # 使用密码66666加密
+</code></pre>
+<h2 id="22-解压">2.2. 解压</h2>
+<pre><code>unzip test.zips # 解压文件
+unzip -o test.zip -d dir # 将test.zip解压到dir目录
+</code></pre>
+<h2 id="23-jar包">2.3. jar包</h2>
+<p>jar包是java归档包，但同样可用unzip解压查看里面的文件：</p>
+<pre><code>unzip -o java.jar -d dir
+</code></pre>
+<h1 id="3-gzip">3. gzip</h1>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-k</td>
+<td>保留源文件</td>
+</tr>
+<tr>
+<td>-d</td>
+<td>解开压缩文件</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>递归处理，将指定目录下的所有文件及子目录一并处理</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>显示指令执行过程</td>
+</tr>
+</tbody>
+</table>
+<p>tar命令带有-z参数，并且打包成tar.gz文件时，便调用gzip进行了压缩。gzip对文本的压缩率约有60%~70%，压缩包文件常以gz为后缀。使用-k参数保留源文件：</p>
+<pre><code>gzip -k ./* [[当前目录下所有文件进行压缩，每个文件一个gz]]包
+gzip -rkv ./* 递归压缩
+</code></pre>
+<p>解压也很简单：</p>
+<pre><code>gzip -dv test.gz
+</code></pre>
+<h1 id="4-bzip2">4. bzip2</h1>
+<p>tar命令使用-j参数将文件打包为tar.bz2时，便调用了bzip2进行压缩。bzip2压缩或解压后，会将源文件删除。如果需要保留源文件，可使用-k参数:</p>
+<pre><code>bzip2 -zk test  [[压缩test]]文件
+bzip2 -dk test.bz2  #解压
+</code></pre>
+<h1 id="5-rarunrar">5. rar/unrar</h1>
+<p>rar和unrar命令并非linux发行版自带命令，需要另外安装。常见用法如下：</p>
+<pre><code>rar a test.tar test  [[将test文件压缩为test]].tar
+unrar e test.rar     [[解压test]].tar
+</code></pre>
+<h1 id="6-war">6. war</h1>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-c</td>
+<td>创建war包</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>显示过程信息</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>指定归档文件名</td>
+</tr>
+<tr>
+<td>-M</td>
+<td>不创建条目的清单文件</td>
+</tr>
+<tr>
+<td>-0</td>
+<td>这个是阿拉伯数字，只打包不压缩的意思</td>
+</tr>
+</tbody>
+</table>
+<pre><code>jar -xvf game.war # 解压war包并存储在当前目录下
+jar -cvf filename.war filename  压缩
+jar -cvfM0 game.war ./      # 把当前目录下的所有文件打包成game.war
+</code></pre>
+<h1 id="7-压缩率比较">7. 压缩率比较</h1>
+<blockquote>
+<p>压缩率一般来说：
+tar.bz2 &gt; tar.gz &gt; zip &gt; tar
+压缩率越高，压缩以及解压的时间也就越长。
+总结
+对文件进行压缩能够节省磁盘空间，进行网络传输时，也能节省带宽，但是需要注意的是，空间和时间是需要根据实际应用进行权衡的。</p>
+</blockquote>
+<p>参考：
+<a href="https://juejin.im/post/6844903923132694536#heading-18" target="_blank">看完这篇Linux下的解压缩你还不会吗？</a>
+<a href="https://www.cnblogs.com/nhdlb/p/11568991.html#_label2" target="_blank">Linux：linux下解压*压缩tar.xz、等文件方法</a></p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#11-tar">1.1. tar</a></li>
+    <li><a href="#12-targz">1.2. tar.gz</a></li>
+    <li><a href="#13-tarbz2">1.3. tar.bz2</a></li>
+    <li><a href="#14-tarz">1.4. tar.Z</a></li>
+    <li><a href="#15-tarxz">1.5. tar.xz</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-压缩">2.1. 压缩</a></li>
+    <li><a href="#22-解压">2.2. 解压</a></li>
+    <li><a href="#23-jar包">2.3. jar包</a></li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#11-tar">1.1. tar</a></li>
+    <li><a href="#12-targz">1.2. tar.gz</a></li>
+    <li><a href="#13-tarbz2">1.3. tar.bz2</a></li>
+    <li><a href="#14-tarz">1.4. tar.Z</a></li>
+    <li><a href="#15-tarxz">1.5. tar.xz</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-压缩">2.1. 压缩</a></li>
+    <li><a href="#22-解压">2.2. 解压</a></li>
+    <li><a href="#23-jar包">2.3. jar包</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>

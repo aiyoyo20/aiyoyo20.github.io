@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phone on AI YOYO</title>
+    <link>/tags/phone/</link>
+    <description>Recent content in Phone on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Jan 2023 16:45:29 +0800</lastBuildDate><atom:link href="/tags/phone/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android_soft</title>
+      <link>/post/android_soft/</link>
+      <pubDate>Tue, 03 Jan 2023 16:45:29 +0800</pubDate>
+      
+      <guid>/post/android_soft/</guid>
+      <description>局域网传输 Feem: 局域网文本传送 消息互传 (端对端传输，非开源产品，免费用户有广告，切到后台传输会被中断，但是有断点续传，优点感觉是可以整体传输文件夹吧) LANDrop: 端对端传输，对平台适配。不能消息通信。 开源软件。 Airdroid: 剪</description>
+    </item>
+    
+    <item>
+      <title>read</title>
+      <link>/post/read/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/read/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

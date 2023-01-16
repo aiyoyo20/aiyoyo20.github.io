@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sublime on AI YOYO</title>
+    <link>/tags/sublime/</link>
+    <description>Recent content in Sublime on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 26 Dec 2022 15:06:52 +0800</lastBuildDate><atom:link href="/tags/sublime/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sublime_base</title>
+      <link>/post/sublime_base/</link>
+      <pubDate>Mon, 26 Dec 2022 15:06:52 +0800</pubDate>
+      
+      <guid>/post/sublime_base/</guid>
+      <description>官网 插件： 插件的管理工具在 sublime 3 中的安装方式如下，sublime 4 可以通过 Ctrl+Shift+P 查找安装。 按 ctrl + \ 或者View &amp;gt; Show Console，打开 Console 一次性输入如下代码，回车： import urllib.request,os,hashlib; h = &#39;6f4c264a24d933ce70df5dedcf1dcaee&#39; + &#39;ebe013ee18cced0ef93d5f746d80ef60&#39;; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &#39;http://packagecontrol.io/&#39;</description>
+    </item>
+    
+    <item>
+      <title>sublime_frontEnd</title>
+      <link>/post/sublime_frontend/</link>
+      <pubDate>Mon, 26 Dec 2022 15:02:27 +0800</pubDate>
+      
+      <guid>/post/sublime_frontend/</guid>
+      <description>emmet： 前端神器。一个可以极大提高 web 开发者 HTML 和 CSS 工作效率的工具箱组件。 查看介绍 问题： 如下报错： 因为下载下来的 PyV8 的包是一个文件夹，按照正常情况是放在 packages 下的，但是安装之后一直无法使用，以为是快捷键冲突</description>
+    </item>
+    
+    <item>
+      <title>sublime_go</title>
+      <link>/post/sublime_go/</link>
+      <pubDate>Mon, 26 Dec 2022 15:01:23 +0800</pubDate>
+      
+      <guid>/post/sublime_go/</guid>
+      <description>Golang Build The official Sublime Text package for Go build system integration. 安装后需要配置后使用，比如 { &amp;quot;PATH&amp;quot;: &amp;quot;/opt/go/bin&amp;quot;, &amp;quot;GOPATH&amp;quot;: &amp;quot;/home/aiyoyo/go&amp;quot; } GoSublime 如果没法通过包管理器安装，可以选择下载安装 cd /~.config/sublime-text/Packages &amp;amp;&amp;amp; git clone https://margo.sh/GoSublime 依赖：go get golang.org/x/tools/cmd/goimports { &amp;quot;env&amp;quot;: { &amp;quot;GOPATH&amp;quot;: &amp;quot;/home/aiyoyo/go&amp;quot;, &amp;quot;GOROOT&amp;quot;: &amp;quot;/opt/go&amp;quot; } , &amp;quot;gscomplete_enabled&amp;quot;: true, &amp;quot;fmt_enabled&amp;quot;: true, &amp;quot;fmt_tab_indent&amp;quot;: false, &amp;quot;fmt_tab_width&amp;quot;: 4, &amp;quot;autocomplete_snippets&amp;quot;: true, &amp;quot;autocomplete_tests&amp;quot;: true, &amp;quot;autocomplete_builtins&amp;quot;: true, &amp;quot;autocomplete_closures&amp;quot;: true, &amp;quot;autocomplete_suggest_imports&amp;quot;: true, &amp;quot;calltips&amp;quot;: true, &amp;quot;use_named_imports&amp;quot;: true, &amp;quot;autoinst&amp;quot;: true, &amp;quot;ipc_timeout&amp;quot;:</description>
+    </item>
+    
+    <item>
+      <title>sublime_LSP</title>
+      <link>/post/sublime_lsp/</link>
+      <pubDate>Mon, 26 Dec 2022 15:01:12 +0800</pubDate>
+      
+      <guid>/post/sublime_lsp/</guid>
+      <description>设备信息 Linux VERSIONS ： Fedora release 36 (Thirty Six) Sublime VERSIONS： Sublime Text 4143 简介 1、各个插件的依赖，比如LSP-pylsp依赖python-lsp-server包，并不需要自己进行安装配置，只需要有基本的环境，比如go python rust node n</description>
+    </item>
+    
+    <item>
+      <title>sublime_markdown</title>
+      <link>/post/sublime_markdown/</link>
+      <pubDate>Mon, 26 Dec 2022 15:00:57 +0800</pubDate>
+      
+      <guid>/post/sublime_markdown/</guid>
+      <description>MarkdownPreview Markdown转HTML，提供在浏览器中的预览功能 LiveReload LiveReload 一个提供md/html等文档的实时刷新预览的的插件 ,插件安装后需要手动开启相应的功能并且需要在浏览器上安装相应插件。不过浏览器的预览不会随着 sublime</description>
+    </item>
+    
+    <item>
+      <title>sublime_python</title>
+      <link>/post/sublime_python/</link>
+      <pubDate>Mon, 26 Dec 2022 15:00:42 +0800</pubDate>
+      
+      <guid>/post/sublime_python/</guid>
+      <description>方案一 Virtualenv # 虚拟环境切换,需要 `virtualenv` 包支持，还可通过设置中的 `&amp;quot;virtualenv_directories&amp;quot;=[] // virtualenvwrapper $WORKON_HOME` 配置自己的虚拟环境目录，这样可调用在外设置的虚拟环境 Jedi - Python autocompletion # 语法补全，而且与 Virtualenv 无冲突，也可以手动配置虚拟环境，但麻烦些 AutoPEP8 # 快捷方式快速对</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MySQL on AI YOYO</title>
+    <link>/tags/mysql/</link>
+    <description>Recent content in MySQL on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 09 Jan 2023 18:18:47 +0800</lastBuildDate><atom:link href="/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql</title>
+      <link>/post/mysql/</link>
+      <pubDate>Mon, 09 Jan 2023 18:18:47 +0800</pubDate>
+      
+      <guid>/post/mysql/</guid>
+      <description>Mysql 基本语句 1、from 子句组装来自不同数据源的数据； 2、where 子句基于指定的条件对记录行进行筛选； 3、group by 子句将数据划分为多个分组； 4、使用聚集函数进行计算； 5、使用 having 子句筛选分组； 6、计</description>
+    </item>
+    
+  </channel>
+</rss>

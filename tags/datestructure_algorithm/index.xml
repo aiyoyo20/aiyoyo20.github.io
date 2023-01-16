@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DateStructure_Algorithm on AI YOYO</title>
+    <link>/tags/datestructure_algorithm/</link>
+    <description>Recent content in DateStructure_Algorithm on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 18 Nov 2022 23:04:49 +0800</lastBuildDate><atom:link href="/tags/datestructure_algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dataStruct</title>
+      <link>/post/datastruct/</link>
+      <pubDate>Fri, 18 Nov 2022 23:04:49 +0800</pubDate>
+      
+      <guid>/post/datastruct/</guid>
+      <description>第十章 数据结构与算法 1. 算法的特征？ 1） 有穷性： 一个算法必须保证执行有限步骤之后结束； 2） 确切性： 算法的每一步骤必须有确切的定义； 3） 输入：一个算法有 0 个或多个输入,以刻画运算对象的初始情况,所谓 0 个输</description>
+    </item>
+    
+  </channel>
+</rss>

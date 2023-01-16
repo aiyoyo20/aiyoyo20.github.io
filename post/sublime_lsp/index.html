@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>sublime_LSP - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="Tools, Sublime" />
+
+
+<meta property="og:title" content="sublime_LSP" />
+<meta name="twitter:title" content="sublime_LSP" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/sublime_lsp/" /><meta property="og:description" content="设备信息 Linux VERSIONS ： Fedora release 36 (Thirty Six) Sublime VERSIONS： Sublime Text 4143 简介 1、各个插件的依赖，比如LSP-pylsp依赖python-lsp-server包，并不需要自己进行安装配置，只需要有基本的环境，比如go python rust node n" />
+<meta name="twitter:description" content="设备信息 Linux VERSIONS ： Fedora release 36 (Thirty Six) Sublime VERSIONS： Sublime Text 4143 简介 1、各个插件的依赖，比如LSP-pylsp依赖python-lsp-server包，并不需要自己进行安装配置，只需要有基本的环境，比如go python rust node n" /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2022-12-26T15:01:12+08:00" /><meta property="article:modified_time" content="2022-12-26T15:01:12+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/sublime_lsp/">sublime_LSP</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-12-26</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;1325 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/tools">Tools</a>&nbsp;<a href="/tags/sublime">Sublime</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h4 id="设备信息">设备信息</h4>
+<p>Linux  VERSIONS ： Fedora release 36 (Thirty Six)
+Sublime  VERSIONS： Sublime Text 4143</p>
+<h4 id="简介">简介</h4>
+<p>1、各个插件的依赖，比如<code>LSP-pylsp</code>依赖<code>python-lsp-server</code>包，并不需要自己进行安装配置，只需要有基本的环境，比如<code>go python rust node npm</code>等，自己安装的无论设置不设置环境变量都不会被应用，依赖是在<code>~/.cache/sublime-text/Package Storage</code>相应的目录中。</p>
+<p>2、LSP 配置中的各个插件的 &ldquo;clients&rdquo; 不再需要自己写，也不再需要自己在配置中开启。</p>
+<p>3、安装后会自动安装依赖，打开输出台留意安装进程，有报错进行调整重启会重新尝试安装，直至安装成功，在各格式文件中自动开启适合的插件服务。</p>
+<p>4、安装后可以对各自的配置进行调整。</p>
+<h4 id="基本环境">基本环境</h4>
+<p><code>Python 3.10.7</code></p>
+<p><code>node v16.18.0</code></p>
+<p><code>npm 8.19.2</code>    换源，命令行<code>npm config set registry https://registry.npmjs.org/</code>设置后，查看源被改变，但是安装的时候并没有用，<code>npm install -g vscode-html-languageserver-bin --registry=https://registry.npm.taobao.org</code> 却可以，修改<code>~/.npmrc</code>文件中<code>registry=https://registry.npm.taobao.org/</code>可以不使用代理成功安装。</p>
+<p><code>go version go1.18 linux/amd64</code>  在设置了环境变量外部测试能找到命令，但是 sublime 中安装<code>LSP-gopls</code>一直报错<code>go binary could not be found in $PATH</code>,创建软连接在<code>/bin</code>或<code>/usr/bin</code>中即可。</p>
+<h4 id="插件">插件</h4>
+<h5 id="lsp">LSP</h5>
+<p>VERSIONS： 1.20.0</p>
+<h5 id="lsp-gopls">LSP-gopls</h5>
+<p>VERSION	1.2.3</p>
+<p>安装报错：
+<img class="img-zoomable" src="images/gopls_error.png" alt="gopls_error" />
+</p>
+<p>看了源码，安装命令没有问题，但是会指定一些参数，为了安装在<code>~/.cache/sublime-text/Package Storage/LSP-gopls/</code>目录下，会指定虚拟环境，因该是该虚拟环境与<code>GOPATH</code>冲突导致一直未安装成功。自己安装gopls后将相应的文件复制过去再添加一个<code>VERSION</code>文件写入版本号,例如<code>0.10.1</code>,重启即可。</p>
+<p><img class="img-zoomable" src="images/gopls_tree.png" alt="" />
+</p>
+<h5 id="lsp-json">LSP-json</h5>
+<p>VERSION	1.9.0</p>
+<h5 id="lsp-bash">LSP-bash</h5>
+<p>VERSION	1.1.5</p>
+<p>提示<code>change &quot;SHELLCHECK_PATH&quot; to &quot;shellchcek&quot;</code>，文件未正确添加<code>shabang</code>头导致.</p>
+<h5 id="lsp-pylsp">LSP-pylsp</h5>
+<p>VERSION	2.6.0</p>
+<p>下面的配置根据自己的喜好可进行调整
+LSP-pylsp.sublime-settings:</p>
+<pre><code>{
+    // &quot;command&quot;: [&quot;$server_path&quot;],
+    // &quot;env&quot;: {
+    //     &quot;PYTHONPATH&quot;: &quot;${sublime_py_files_dir}${pathsep}${packages}&quot;,
+    //     &quot;MYPYPATH&quot;: &quot;${sublime_py_files_dir}${pathsep}${packages}&quot;
+    // },
+    &quot;settings&quot;: {
+        // --- JEDI configuration ---------------------------------------------
+        &quot;pylsp.plugins.jedi.extra_paths&quot;: [&quot;$sublime_py_files_dir&quot;, &quot;$packages&quot;],
+        &quot;pylsp.plugins.jedi.environment&quot;: null,
+        &quot;pylsp.plugins.jedi.env_vars&quot;: null,
+        &quot;pylsp.plugins.jedi.auto_import_modules&quot;: [&quot;numpy&quot;],
+        &quot;pylsp.plugins.jedi_completion.enabled&quot;: true,
+        &quot;pylsp.plugins.jedi_completion.cache_for&quot;: [&quot;pandas&quot;, &quot;numpy&quot;, &quot;tensorflow&quot;, &quot;matplotlib&quot;],
+        &quot;pylsp.plugins.jedi_completion.eager&quot;: false,
+        &quot;pylsp.plugins.jedi_completion.fuzzy&quot;: true,
+        &quot;pylsp.plugins.jedi_completion.include_class_objects&quot;: false,
+        &quot;pylsp.plugins.jedi_completion.include_function_objects&quot;: false,
+        &quot;pylsp.plugins.jedi_completion.include_params&quot;: true,
+        &quot;pylsp.plugins.jedi_completion.resolve_at_most&quot;: 25,
+        &quot;pylsp.plugins.jedi_definition.enabled&quot;: true,
+        &quot;pylsp.plugins.jedi_definition.follow_builtin_imports&quot;: true,
+        &quot;pylsp.plugins.jedi_definition.follow_imports&quot;: true,
+        &quot;pylsp.plugins.jedi_hover.enabled&quot;: true,
+        &quot;pylsp.plugins.jedi_references.enabled&quot;: true,
+        &quot;pylsp.plugins.jedi_signature_help.enabled&quot;: true,
+        &quot;pylsp.plugins.jedi_symbols.all_scopes&quot;: true,
+        &quot;pylsp.plugins.jedi_symbols.enabled&quot;: true,
+        &quot;pylsp.plugins.jedi_symbols.include_import_symbols&quot;: true,
+        &quot;pylsp.rope.extensionModules&quot;: null,
+        &quot;pylsp.rope.ropeFolder&quot;: null,
+
+        // --- Linters --------------------------------------------------------
+        &quot;pylsp.configurationSources&quot;: [&quot;pycodestyle&quot;],
+        &quot;pylsp.plugins.flake8.enabled&quot;: false,
+        &quot;pylsp.plugins.pycodestyle.enabled&quot;: true,
+        &quot;pylsp.plugins.pydocstyle.enabled&quot;: false,
+        &quot;pylsp.plugins.pyflakes.enabled&quot;: false,
+        &quot;pylsp.plugins.pylint.enabled&quot;: false,
+        &quot;pylsp.plugins.pylsp_mypy.enabled&quot;: false,
+
+        // --- flake8 settings ---
+        &quot;pylsp.plugins.flake8.config&quot;: null,
+        &quot;pylsp.plugins.flake8.exclude&quot;: null,
+        &quot;pylsp.plugins.flake8.executable&quot;: &quot;flake8&quot;,
+        &quot;pylsp.plugins.flake8.filename&quot;: null,
+        &quot;pylsp.plugins.flake8.hangClosing&quot;: null,
+        &quot;pylsp.plugins.flake8.ignore&quot;: null,
+        &quot;pylsp.plugins.flake8.maxLineLength&quot;: null,
+        &quot;pylsp.plugins.flake8.perFileIgnores&quot;: null,
+        &quot;pylsp.plugins.flake8.select&quot;: null,
+
+        // --- mccabe settings ---
+        &quot;pylsp.plugins.mccabe.enabled&quot;: true,
+        &quot;pylsp.plugins.mccabe.threshold&quot;: 15,
+
+        // --- preload settings ---
+        &quot;pylsp.plugins.preload.enabled&quot;: true,
+        &quot;pylsp.plugins.preload.modules&quot;: null,
+
+        // --- pycodestyle settings ---
+        &quot;pylsp.plugins.pycodestyle.aggressive&quot;: null,
+        &quot;pylsp.plugins.pycodestyle.exclude&quot;: null,
+        &quot;pylsp.plugins.pycodestyle.filename&quot;: null,
+        &quot;pylsp.plugins.pycodestyle.hangClosing&quot;: null,
+        &quot;pylsp.plugins.pycodestyle.ignore&quot;: null,
+        &quot;pylsp.plugins.pycodestyle.maxLineLength&quot;: null,
+        &quot;pylsp.plugins.pycodestyle.select&quot;: null,
+
+        // --- pydocstyle settings ---
+        &quot;pylsp.plugins.pydocstyle.addIgnore&quot;: null,
+        &quot;pylsp.plugins.pydocstyle.addSelect&quot;: null,
+        &quot;pylsp.plugins.pydocstyle.convention&quot;: null,
+        &quot;pylsp.plugins.pydocstyle.ignore&quot;: null,
+        &quot;pylsp.plugins.pydocstyle.match&quot;: &quot;(?!test_).*\\.py&quot;,
+        &quot;pylsp.plugins.pydocstyle.matchDir&quot;: &quot;[^\\.].*&quot;,
+        &quot;pylsp.plugins.pydocstyle.select&quot;: null,
+
+        // --- pylint settings ---
+        &quot;pylsp.plugins.pylint.args&quot;: null,
+        &quot;pylsp.plugins.pylint.executable&quot;: &quot;&quot;,
+
+        // --- pylsp_mypy settings ---
+        &quot;pylsp.plugins.pylsp_mypy.dmypy&quot;: false,
+        &quot;pylsp.plugins.pylsp_mypy.live_mode&quot;: true,
+        &quot;pylsp.plugins.pylsp_mypy.strict&quot;: false,
+
+        // --- rope_completion settings ---
+        &quot;pylsp.plugins.rope_completion.eager&quot;: false,
+        &quot;pylsp.plugins.rope_completion.enabled&quot;: false,
+
+        // --- Formatters -----------------------------------------------------
+        // By default, autopep8 is enabled
+        &quot;pylsp.plugins.autopep8.enabled&quot;: true,
+        &quot;pylsp.plugins.yapf.enabled&quot;: false,
+        &quot;pylsp.plugins.pyls_isort.enabled&quot;: false,
+
+        // Enabling black disables the autopep8 and yapf plugins.
+        &quot;pylsp.plugins.pylsp_black.enabled&quot;: false,
+        &quot;pylsp.plugins.pylsp_black.cache_config&quot;: false,
+        &quot;pylsp.plugins.pylsp_black.line_length&quot;: 88,
+        &quot;pylsp.plugins.pylsp_black.preview&quot;: false,
+    },
+    &quot;selector&quot;: &quot;source.python&quot;,
+}
+</code></pre>
+<h5 id="lsp-pyright">LSP-pyright</h5>
+<p>VERSION	1.1.199</p>
+<p>不使用虚拟环境</p>
+<p>设置<code>python.pythonPath</code>可以使用虚拟环境中的 python，也就能实现对虚拟环境中的包引用和自动补全了。</p>
+<p>LSP-pyright.sublime-settings</p>
+<pre><code>{
+    &quot;settings&quot;: {
+        // Path to Python. Leave empty to attempt automatic resolution.
+        &quot;python.pythonPath&quot;: &quot;/home/aiyoyo/Documents/vir/flask_b/bin/python&quot;,
+        // Path to folder with a list of Virtual Environments.
+        // &quot;python.venvPath&quot;: &quot;/home/aiyoyo/Documents/vir&quot;,
+    }
+}
+</code></pre>
+<p>使用虚拟环境
+虚拟环境配置：name.sublime-project</p>
+<pre><code>{
+  &quot;folders&quot;: [
+    {
+      // &quot;folder_exclude_patterns&quot;: [&quot;Backup/&quot;],
+      &quot;path&quot;: &quot;.&quot;,
+    }
+  ],
+  &quot;settings&quot;: {
+    &quot;LSP&quot;: {
+      &quot;LSP-pyright&quot;: {
+        &quot;enabled&quot;: true,
+        &quot;settings&quot;: {
+          &quot;pyright.dev_environment&quot;: &quot;sublime_text_38&quot;,
+          // python 包的查找路径
+          &quot;python.analysis.extraPaths&quot;: [
+            &quot;/home/aiyoyo/Documents/vir/flask_b/lib/python3.8/site-packages&quot;,
+          ],
+          &quot;python.analysis.logLevel&quot;: &quot;Information&quot;,
+          &quot;python.venvPath&quot;: &quot;&quot;,
+        },
+      },
+    },
+  },
+  // 虚拟环境路径，最初可以不用指定,使用 `virtualenv`插件进行环境切换时会自动创建、切换，注释
+  &quot;virtualenv&quot;: &quot;/home/aiyoyo/Documents/vir/flask_b&quot;,
+}
+
+</code></pre>
+<p><code>Project &gt; Edit Project</code>会打开相应的项目配置文件编辑即可。为灰色则是没有项目配置文件，<code>Project &gt; Save Project As</code>会创建相应的文件，再去编辑即可。</p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>

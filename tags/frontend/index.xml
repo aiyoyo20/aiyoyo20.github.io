@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FrontEnd on AI YOYO</title>
+    <link>/tags/frontend/</link>
+    <description>Recent content in FrontEnd on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 18 Nov 2022 23:24:59 +0800</lastBuildDate><atom:link href="/tags/frontend/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>front_end</title>
+      <link>/post/front_end/</link>
+      <pubDate>Fri, 18 Nov 2022 23:24:59 +0800</pubDate>
+      
+      <guid>/post/front_end/</guid>
+      <description>第三章 前端 01 什么是防抖和节流，他们的应用场景有哪些? 在 Issue 中交流与讨论: 01 什么是防抖和节流，他们的应用场景有哪些 防抖 (debounce) 防抖，顾名思义，防止抖动，以免把一次事件误认为多次，敲键盘就是一个每天都会接触到的防</description>
+    </item>
+    
+    <item>
+      <title>cookie_session_token</title>
+      <link>/post/cookie_session_token/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/cookie_session_token/</guid>
+      <description>Cookie 和 Session 的区别 安全性： Session 比 Cookie 安全，Session 是存储在服务器端的，Cookie 是存储在客户端的。 存取值的类型不同：Cookie 只支持存字符串数据，想要设置其他类型的数据，需要将其转换成字符串，Sess</description>
+    </item>
+    
+    <item>
+      <title>HTTP协议</title>
+      <link>/post/http%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/http%E5%8D%8F%E8%AE%AE/</guid>
+      <description>HTTP协议 HTTP的特性 HTTP构建于TCP/IP协议之上，默认端口号是80 HTTP是无连接无状态的 HTTP报文 请求报文 HTTP 协议是以 ASCII 码传输，建立在 TCP/IP 协议之上的应用层规范。规范把 HTTP 请求分为三个部分：状</description>
+    </item>
+    
+    <item>
+      <title>udp&amp;tcp</title>
+      <link>/post/udptcp/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/udptcp/</guid>
+      <description>一、TCP/IP网络模型 计算机与网络设备要相互通信，双方就必须基于相同的方法。比如，如何探测到通信目标、由哪一边先发起通信、使用哪种语言进行通信、怎样结束通信等规则都需要事先确定。不同的硬件、操作系统</description>
+    </item>
+    
+    <item>
+      <title>跨域</title>
+      <link>/post/%E8%B7%A8%E5%9F%9F/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/%E8%B7%A8%E5%9F%9F/</guid>
+      <description>跨域 当一个请求url的协议、域名、端口三者之间的任意一个与当前页面url不同即为跨域。 跨域产生原因？ 出于浏览器的同源策略限制。 同源策略（Same Orgin Policy） 是一种约定，它是浏览器核心也最基本的安全</description>
+    </item>
+    
+  </channel>
+</rss>

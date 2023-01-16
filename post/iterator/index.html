@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>iterator - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="Python" />
+
+
+<meta property="og:title" content="iterator" />
+<meta name="twitter:title" content="iterator" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/iterator/" /><meta property="og:description" content="魔法方法介绍 object.iter(self) 此方法在需要为容器创建迭代器时被调用。此方法应该返回一个新的迭代器对象，它能够逐个迭代容器中的所有对象。对于映射，它应该逐个迭代容器中的键。 迭代器对象也需要实现此方法；它们需要返回对象自" />
+<meta name="twitter:description" content="魔法方法介绍 object.iter(self) 此方法在需要为容器创建迭代器时被调用。此方法应该返回一个新的迭代器对象，它能够逐个迭代容器中的所有对象。对于映射，它应该逐个迭代容器中的键。 迭代器对象也需要实现此方法；它们需要返回对象自" /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2022-10-25T16:48:59+08:00" /><meta property="article:modified_time" content="2022-10-25T16:48:59+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/iterator/">iterator</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-10-25</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;2274 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/python">Python</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h1 id="魔法方法介绍">魔法方法介绍</h1>
+<ol>
+<li>object.<strong>iter</strong>(self)
+此方法在需要为容器创建迭代器时被调用。此方法应该返回一个新的迭代器对象，它能够逐个迭代容器中的所有对象。对于映射，它应该逐个迭代容器中的键。</li>
+</ol>
+<p>迭代器对象也需要实现此方法；它们需要返回对象自身。</p>
+<ol start="2">
+<li>
+<p>object.<strong>reversed</strong>(self)
+此方法（如果存在）会被 reversed内置函数调用以实现逆向迭代。它应当返回一个新的以逆序逐个迭代容器内所有对象的迭代器对象。</p>
+</li>
+<li>
+<p>object.<strong>next</strong>()
+从容器中返回下一项。 如果已经没有项可返回，则会引发 StopIteration 异常。</p>
+</li>
+</ol>
+<h1 id="可迭代iterable">可迭代(Iterable)</h1>
+<p>如果一个对象具备有 <strong>iter</strong>()  或者 <strong>getitem</strong>() 其中任何一个魔术方法的话，这个对象就可以称为是可迭代的。
+其中，<strong>iter</strong>() 的作用是可以让 for 循环遍历，而 <strong>getitem</strong>()  方法可以让实例对象通过 [index] 索引的方式去访问实例中的元素。所以，List、Tuple、Dictionary、String 等数据类型都是可迭代的。</p>
+<h1 id="迭代器iterator">迭代器(Iterator)</h1>
+<p>如果一个对象同时有__iter__()和__next__()魔术方法的话，这个对象就可以称为是迭代器。
+<strong>iter</strong>() 的作用前面我们也提到过，是可以让for循环遍历。而 <strong>next</strong>()方法是让对象可以通过 next(实例对象) 的方式访问下一个元素。
+List、Tuple、Dictionary、String 等数据类型虽然是可迭代的，但都不是迭代器，因为他们都没有 next( )方法。</p>
+<p>一个迭代器(Iterator)对象不仅可以在 for 循环中使用，还可以通过内置函数 next() 函数进行调用。</p>
+<h1 id="如何判断可迭代iterable--迭代器iterator">如何判断可迭代(iterable) &amp; 迭代器(iterator)</h1>
+<p>借助Python中的isinstance(object, classinfo)函数来判断一个对象是否是一个已知类型。</p>
+<pre><code>from collections import Iterable  
+from collections import Iterator
+
+print(f&quot;List is 'Iterable': {isinstance([], Iterable)}&quot;)  
+print(f&quot;Tuple is 'Iterable': {isinstance((), Iterable)}&quot;)  
+print(f&quot;Dict is 'Iterable': {isinstance({}, Iterable)}&quot;)  
+print(f&quot;String is 'Iterable': {isinstance('', Iterable)}&quot;)
+
+print(&quot;=&quot;*25)
+
+print(f&quot;List is 'Iterator': {isinstance([], Iterator)}&quot;)  
+print(f&quot;Tuple is 'Iterator': {isinstance((), Iterator)}&quot;)  
+print(f&quot;Dict is 'Iterator': {isinstance({}, Iterator)}&quot;)  
+print(f&quot;String is 'Iterator': {isinstance('', Iterator)}&quot;)
+
+# 输出如下：
+# List is 'Iterable': True
+# Tuple is 'Iterable': True
+# Dict is 'Iterable': True
+# String is 'Iterable': True
+# =========================
+# List is 'Iterator': False
+# Tuple is 'Iterator': False
+# Dict is 'Iterator': False
+# String is 'Iterator': False
+</code></pre>
+<p>通过对定义的分析和比较我们得知：迭代器都是可迭代的（因为迭代器都包含__iter__()函数），但可迭代的不一定是迭代器（因为未必每个可迭代就包含__next__()方法）。</p>
+<h1 id="创建一个迭代器">创建一个迭代器</h1>
+<p>所以只要定义了一个类并在类中实现 <strong>iter</strong>() 和 <strong>next</strong>() 方法，那么这个类就可以当做是一个迭代器了。</p>
+<pre><code>from collections import Iterator
+
+class Data:  
+    def __init__(self, x):
+        self.x = x
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.x &gt;= 10:
+            raise StopIteration
+        else:
+            self.x += 1
+            return self.x
+
+data = Data(0)
+
+print(f&quot;data is 'Iterator': {isinstance(data, Iterator)}&quot;)
+# 输出如下：
+# data is 'Iterator': True
+</code></pre>
+<h1 id="for-循环本质">for 循环本质</h1>
+<p>for循环称为迭代器循环，in 后必须是可迭代的对象。</p>
+<pre><code>for i in 'hello':
+    print(i)
+</code></pre>
+<p>可以看作是：</p>
+<pre><code>s = 'hello'
+iter_s = s.__iter__()
+
+while True:
+    try:
+        print(iter_s.__next__())
+    except StopIteration:
+        break
+</code></pre>
+<p>更好的例子：</p>
+<pre><code>from collections import Iterator
+
+class Data:  
+    def __init__(self, x):
+        self.x = x
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.x &gt;= 10:
+            raise StopIteration
+        else:
+            self.x += 1
+            return self.x
+
+data = Data(0)
+
+for d in data:  
+    print(d)
+
+# 输出如下：
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+</code></pre>
+<p>但是在实际的 for 循环中不会引发异常，for 循环会将异常作为一个中断命令，从而停止循环。</p>
+<h1 id="无限迭代器">无限迭代器</h1>
+<p>迭代器对象中的项目不必都是可耗尽的，可以是无限迭代器(永远不会结束)。 处理这样的迭代器时一定要小心。</p>
+<pre><code>from collections import Iterator
+
+class Data:  
+    def __init__(self, x):
+        self.x = x
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        self.x += 1
+        return self.x
+
+data = Data(0)
+
+for d in data:  
+    print(d)
+</code></pre>
+<p>当迭代这些类型的无限迭代器时，请注意指定终止条件。</p>
+<h1 id="逆向迭代器">逆向迭代器</h1>
+<p>反向迭代仅仅当对象的大小可预先确定或者对象实现了 <strong>reversed</strong>() 的特殊方法时才能生效。</p>
+<pre><code>class  MyNumbers: 
+    
+    def __init__(self):
+        self.flag=True  
+        pass
+
+        
+    def __iter__(self):
+        self.a=0
+        return self
+    
+    def __reversed__(self):
+        self.a=0
+        self.flag=not self.flag
+        return self
+    
+    def __next__(self):
+        if self.flag:
+           x=self.a+1
+           if self.a&gt;=5:
+               raise StopIteration
+        else:
+           x=5-self.a
+           if self.a&gt;=5:
+               raise StopIteration
+        self.a+=1       
+        return x   
+            
+            
+myclass = MyNumbers()  
+myiter = iter(myclass)  
+print('iter-next')
+for  x  in  myiter: 
+    print(x)
+
+print('reversed-next')
+myrv=reversed(myclass)
+
+print(next(myrv))
+print(next(myrv))
+print(next(myrv))
+print(next(myrv))
+print(next(myrv))
+
+print('reversed-reversed')
+myrv=reversed(myclass)
+for i in myrv:
+    print(i)
+</code></pre>
+<p>本例中直接实现了iter和reversed 两种方法。主要设置一个标志位，通过__reversed__改变标志位来设置是正序输出还是反序输出，通过多次调用reversed可以进行反转。</p>
+<h1 id="可迭代对象转迭代器对象">可迭代对象转迭代器对象</h1>
+<p>List、Tuple、Dictionary、String 等数据类型虽然是可迭代的，但都不是迭代器。
+通过 iter() 方法可以将其转为迭代器对象。</p>
+<pre><code>from collections.abc import Iterable  
+from collections.abc import Iterator
+
+list_one = [1,2,3]
+print(isinstance(list_one,Iterable))
+print(isinstance(list_one,Iterator))
+it_list = iter(list_one)
+itr_list = list_one.__iter__()
+print(isinstance(it_list,Iterable))
+print(isinstance(it_list,Iterator))
+print(isinstance(itr_list,Iterable))
+print(isinstance(itr_list,Iterator))
+print(next(it_list))
+print(it_list.__next__())
+print(next(itr_list))
+print(itr_list.__next__())
+
+# True
+# False
+# True
+# True
+# True
+# True
+# 1
+# 2
+# 1
+# 2
+
+</code></pre>
+<p>iter(obj)      等同于 obj.<strong>iter</strong>()
+next(obje)  等同于 obje.<strong>next</strong>()</p>
+<h1 id="迭代器优缺点">迭代器优缺点：</h1>
+<ul>
+<li>优点：迭代器对象表示的是一个数据流，可以在需要时才去调用next来获取一个值；因而本身在内存中始终只保留一个值，对于内存占用小可以存放无限数据流。优于其他容器需要一次将所有元素都存放进内存，如：列表、集合、字典&hellip;等</li>
+<li>缺点：1.无法获取存放的元素长度，除非取完计数。2.只能向后取值，next()永远返回的是下一个值。取值不灵活，无法取出指定值(无法像字典的key,或列表的下标)，而且迭代器的生命周期是一次性的元素被迭代完则生命周期结束</li>
+</ul>
+<h1 id="生成对象为迭代器的函数">生成对象为迭代器的函数</h1>
+<p>enumerate() 、zip()、map()、filter() 生成的对象都为迭代器</p>
+<pre><code>from collections.abc import Iterator
+
+def add(x,y,z):
+    return x+1
+
+list1 = [1,2,3]
+list2 = [1,2,3]
+en = enumerate(list1)
+print(isinstance(en,Iterator))
+
+zi = zip(list1,list2)
+print(isinstance(zi,Iterator))
+
+ma = map(add,list1)
+print(isinstance(ma,Iterator))
+
+fi = filter(lambda x: x&gt;=2,list1)
+print(isinstance(fi,Iterator))
+
+# Ture
+# Ture
+# Ture
+# Ture
+</code></pre>
+<h2 id="zip---同时迭代多个序列">zip()  ： 同时迭代多个序列</h2>
+<p>同时迭代多个序列，每次分别从一个序列中取一个元素。
+zip(a, b) 会生成一个可返回元组 (x, y) 的迭代器，其中x来自a，y来自b。 一旦其中某个序列到底结尾，迭代宣告结束。 因此迭代长度跟参数中最短序列长度一致。</p>
+<pre><code>a = [1, 2, 3]
+b = ['w', 'x', 'y', 'z']
+for i in zip(a,b):
+...     print(i)
+...
+# (1, 'w')
+# (2, 'x')
+# (3, 'y')
+</code></pre>
+<p>拓展：如果希望得到的是最长序列，即没有值可以自动添加默认值的可以考虑使用 itertools.zip_longest() 函数来代替。</p>
+<pre><code>for i in zip_longest(a, b, fillvalue=0):
+    print(i)
+...
+# (1, 'w')
+# (2, 'x')
+# (3, 'y')
+# (0, 'z')
+</code></pre>
+<p>fillvalue 的值没有会默认为 None。</p>
+<h2 id="enumerate-序列上索引值迭代">enumerate() ：序列上索引值迭代</h2>
+<p>迭代一个序列的同时跟踪正在被处理的元素索引。
+为了按传统行号输出(行号从1开始)，你可以传递一个开始参数（默认从0开始）：</p>
+<pre><code>my_list = ['a', 'b', 'c']
+for idx, val in enumerate(my_list, 1):
+    print(idx, val)
+...
+# 1 a
+# 2 b
+# 3 c
+</code></pre>
+<p>enumerate() 函数返回的是一个 enumerate 对象实例， 它是一个迭代器，返回连续的包含一个计数和一个值的元组， 元组中的值通过在传入序列上调用 next() 返回。</p>
+<p><a href="http://anders.wang/python-iterable-iterator/" target="_blank">Python中的迭代器与可迭代</a>
+<a href="https://zhuanlan.zhihu.com/p/350948181" target="_blank">Python迭代器和反转迭代器的一点思考</a>
+<a href="https://www.yiibai.com/python/iterator.html" target="_blank">Python迭代器</a>
+<a href="https://python3-cookbook.readthedocs.io/zh_CN/latest/c04/p11_iterate_over_multiple_sequences_simultaneously.html" target="_blank">python3-cookbook</a></p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#zip---同时迭代多个序列">zip()  ： 同时迭代多个序列</a></li>
+    <li><a href="#enumerate-序列上索引值迭代">enumerate() ：序列上索引值迭代</a></li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#zip---同时迭代多个序列">zip()  ： 同时迭代多个序列</a></li>
+    <li><a href="#enumerate-序列上索引值迭代">enumerate() ：序列上索引值迭代</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>

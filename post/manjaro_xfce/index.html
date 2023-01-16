@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>Manjaro_Xfce - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="Linux" />
+
+
+<meta property="og:title" content="Manjaro_Xfce" />
+<meta name="twitter:title" content="Manjaro_Xfce" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/manjaro_xfce/" /><meta property="og:description" content="Manjaro_KDE的大多数内容都是可以应用到这上面来的。 之前的 manajaro-kde 为18版本，当时分区/boot/efi并没有出错，但是在这次的 manjaro-xfce-20.1 如此分区时安装到后期报错，大概看后解释说是因为先安装有 win10,w" />
+<meta name="twitter:description" content="Manjaro_KDE的大多数内容都是可以应用到这上面来的。 之前的 manajaro-kde 为18版本，当时分区/boot/efi并没有出错，但是在这次的 manjaro-xfce-20.1 如此分区时安装到后期报错，大概看后解释说是因为先安装有 win10,w" /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2022-12-26T14:46:31+08:00" /><meta property="article:modified_time" content="2022-12-26T14:46:31+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/manjaro_xfce/">Manjaro_Xfce</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-12-26</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;2128 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/linux">Linux</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <p><a href="Manjaro_KDE.md">Manjaro_KDE</a>的大多数内容都是可以应用到这上面来的。</p>
+<p>之前的 manajaro-kde 为18版本，当时分区<code>/boot/efi</code>并没有出错，但是在这次的 manjaro-xfce-20.1 如此分区时安装到后期报错，大概看后解释说是因为先安装有 win10,win10已经存在一个<code>/boot/efi</code>分区，因此造成冲突，将win10的分区挂载但是保持不格式化，然后分区<code>/boot</code>就可以了。
+美化什么的就不要有太多期望了，可操作性很小，但是其本身虽然是很轻巧的，但是从同图标到整体风格都刚刚好，没有任何粗糙的感觉。安装的东西过程大多相同，但也有些差异。
+代理的全局设置一直是一个很头疼的问题，以前在 ubuntu 没有解决，在 manjaro-kde 前期也一直在寻找合适的方法，后面在系统里面有设置全局代理解决了，但这个因为是轻量级所以没有了。</p>
+<h2 id="软件">软件</h2>
+<pre><code>yay -S geeqie # 开源看图软件
+yay -S ark # 解压缩，自带的 engrampa 解压速度快但是解压的类型很少
+</code></pre>
+<p>之前配置过zsh，为了方便留了文件，直接本地安装吧
+<a href="https://github.com/ohmyzsh/ohmyzsh" target="_blank">https://github.com/ohmyzsh/ohmyzsh</a>下载oh-my-zsh:</p>
+<pre><code>cp oh-my-zsh/ ~/.oh--my-zsh
+cp oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+</code></pre>
+<p>插件：
+<a href="https://github.com/wting/autojump" target="_blank">autojump:</a>
+<a href="https://github.com/zsh-users/zsh-autosuggestions" target="_blank">zsh-autosuggestions</a>
+<a href="https://github.com/zsh-users/zsh-syntax-highlighting" target="_blank">zsh-syntax-highlighting</a></p>
+<h4 id="qbittorrent">qbittorrent</h4>
+<p>能添加trackers的磁力下载器</p>
+<h4 id="liferea">liferea</h4>
+<p>rss 阅读器，重要的是可以配置代理，这样就可以添加一些墙外的源了。</p>
+<h2 id="问题">问题</h2>
+<h3 id="1appimages文件无法打开">1、.Appimages文件无法打开</h3>
+<p>不知道是不是动了什么东西，导致最开始能打开的 .Appimages 文件无法打开了，报错忘记截图了，大概意思是 linux 的 fuse 模块没有自动加载，</p>
+<pre><code>sudo vim /etc/rc.moudules
+添加 modprobe fuse
+</code></pre>
+<h3 id="2快捷方式">2、快捷方式</h3>
+<p>在一开始的时候 win 键盘可以正常使用，但是后来可能是更新了还是什么的，不起作用了，而且之前设置的 xfce4-terminal 下拉终端也 不起作用了，去快捷方式里面找，直接不见之前的一些设置了，而且重置也和最开始配置的那会不一样，最后查询了终于补齐了，但是有新的问题，比如调用文件夹的是<code>WIN + E</code> ，会先打开开始模块再打开文件夹，相当于是个bug吧，只能用右边的 WIN 键，但是不方便，只好改一个键。</p>
+<p>而且有两个设置快捷键的地方，都去改动一下。删除不需要的，以免是全局的影响了其他软件的使用
+<img class="img-zoomable" src="images/manjaro_keyboard.png" alt="pic_22 Keyboard" />
+</p>
+<h3 id="3pycharm--中-md-文件预览乱码--一些中文字体的不正常如门画等">3、pycharm  中 md 文件预览乱码 &amp; 一些中文字体的不正常(如门，画等)</h3>
+<p>方法来自<a href="http://panqiincs.me/2019/06/05/after-installing-manjaro/" target="_blank">http://panqiincs.me/2019/06/05/after-installing-manjaro/</a>，应该大多数linux都可以用吧</p>
+<pre><code>sudo pacman -S ttf-roboto noto-fonts ttf-dejavu
+# 文泉驿
+sudo pacman -S wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei
+# 思源字体
+sudo pacman -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
+</code></pre>
+<p>创建文件~/.config/fontconfig/fonts.conf，加入下面的配置：</p>
+<pre><code>&lt;?xml
+&lt;!DOCTYPE fontconfig SYSTEM &quot;fonts.dtd&quot;&gt;
+
+&lt;fontconfig&gt;
+
+    &lt;its:rules xmlns:its=&quot;http://www.w3.org/2005/11/its&quot; version=&quot;1.0&quot;&gt;
+        &lt;its:translateRule translate=&quot;no&quot; selector=&quot;/fontconfig/*[not(self::description)]&quot;/&gt;
+    &lt;/its:rules&gt;
+
+    &lt;description&gt;Manjaro Font Config&lt;/description&gt;
+
+    &lt;!-- Font directory list --&gt;
+    &lt;dir&gt;/usr/share/fonts&lt;/dir&gt;
+    &lt;dir&gt;/usr/local/share/fonts&lt;/dir&gt;
+    &lt;dir prefix=&quot;xdg&quot;&gt;fonts&lt;/dir&gt;
+    &lt;dir&gt;~/.fonts&lt;/dir&gt; &lt;!-- this line will be removed in the future --&gt;
+
+    &lt;!-- 自动微调 微调 抗锯齿 内嵌点阵字体 --&gt;
+    &lt;match target=&quot;font&quot;&gt;
+        &lt;edit name=&quot;autohint&quot;&gt; &lt;bool&gt;false&lt;/bool&gt; &lt;/edit&gt;
+        &lt;edit name=&quot;hinting&quot;&gt; &lt;bool&gt;true&lt;/bool&gt; &lt;/edit&gt;
+        &lt;edit name=&quot;antialias&quot;&gt; &lt;bool&gt;true&lt;/bool&gt; &lt;/edit&gt;
+        &lt;edit name=&quot;embeddedbitmap&quot; mode=&quot;assign&quot;&gt; &lt;bool&gt;false&lt;/bool&gt; &lt;/edit&gt;
+    &lt;/match&gt;
+
+    &lt;!-- 英文默认字体使用 Roboto 和 Noto Serif ,终端使用 DejaVu Sans Mono. --&gt;
+    &lt;match&gt;
+        &lt;test qual=&quot;any&quot; name=&quot;family&quot;&gt;
+            &lt;string&gt;serif&lt;/string&gt;
+        &lt;/test&gt;
+        &lt;edit name=&quot;family&quot; mode=&quot;prepend&quot; binding=&quot;strong&quot;&gt;
+            &lt;string&gt;Noto Serif&lt;/string&gt;
+        &lt;/edit&gt;
+    &lt;/match&gt;
+    &lt;match target=&quot;pattern&quot;&gt;
+        &lt;test qual=&quot;any&quot; name=&quot;family&quot;&gt;
+            &lt;string&gt;sans-serif&lt;/string&gt;
+        &lt;/test&gt;
+        &lt;edit name=&quot;family&quot; mode=&quot;prepend&quot; binding=&quot;strong&quot;&gt;
+            &lt;string&gt;Roboto&lt;/string&gt;
+        &lt;/edit&gt;
+    &lt;/match&gt;
+    &lt;match target=&quot;pattern&quot;&gt;
+        &lt;test qual=&quot;any&quot; name=&quot;family&quot;&gt;
+            &lt;string&gt;monospace&lt;/string&gt;
+        &lt;/test&gt;
+        &lt;edit name=&quot;family&quot; mode=&quot;prepend&quot; binding=&quot;strong&quot;&gt;
+            &lt;string&gt;DejaVu Sans Mono&lt;/string&gt;
+        &lt;/edit&gt;
+    &lt;/match&gt;
+
+    &lt;!-- 中文默认字体使用思源宋体,不使用 Noto Sans CJK SC 是因为这个字体会在特定情况下显示片假字. --&gt;
+    &lt;match&gt;
+        &lt;test name=&quot;lang&quot; compare=&quot;contains&quot;&gt;
+            &lt;string&gt;zh&lt;/string&gt;
+        &lt;/test&gt;
+        &lt;test name=&quot;family&quot;&gt;
+            &lt;string&gt;serif&lt;/string&gt;
+        &lt;/test&gt;
+        &lt;edit name=&quot;family&quot; mode=&quot;prepend&quot;&gt;
+            &lt;string&gt;Source Han Serif CN&lt;/string&gt;
+        &lt;/edit&gt;
+    &lt;/match&gt;
+    &lt;match&gt;
+        &lt;test name=&quot;lang&quot; compare=&quot;contains&quot;&gt;
+            &lt;string&gt;zh&lt;/string&gt;
+        &lt;/test&gt;
+        &lt;test name=&quot;family&quot;&gt;
+            &lt;string&gt;sans-serif&lt;/string&gt;
+        &lt;/test&gt;
+        &lt;edit name=&quot;family&quot; mode=&quot;prepend&quot;&gt;
+            &lt;string&gt;Source Han Sans CN&lt;/string&gt;
+        &lt;/edit&gt;
+    &lt;/match&gt;
+    &lt;match&gt;
+        &lt;test name=&quot;lang&quot; compare=&quot;contains&quot;&gt;
+            &lt;string&gt;zh&lt;/string&gt;
+        &lt;/test&gt;
+        &lt;test name=&quot;family&quot;&gt;
+            &lt;string&gt;monospace&lt;/string&gt;
+        &lt;/test&gt;
+        &lt;edit name=&quot;family&quot; mode=&quot;prepend&quot;&gt;
+            &lt;string&gt;Noto Sans Mono CJK SC&lt;/string&gt;
+        &lt;/edit&gt;
+    &lt;/match&gt;
+
+    &lt;!-- 把Linux没有的中文字体映射到已有字体，这样当这些字体未安装时会有替代字体 --&gt;
+    &lt;match target=&quot;pattern&quot;&gt;
+        &lt;test qual=&quot;any&quot; name=&quot;family&quot;&gt;
+            &lt;string&gt;SimHei&lt;/string&gt;
+        &lt;/test&gt;
+        &lt;edit name=&quot;family&quot; mode=&quot;assign&quot; binding=&quot;same&quot;&gt;
+            &lt;string&gt;Source Han Sans CN&lt;/string&gt;
+        &lt;/edit&gt;
+    &lt;/match&gt;
+    &lt;match target=&quot;pattern&quot;&gt;
+        &lt;test qual=&quot;any&quot; name=&quot;family&quot;&gt;
+            &lt;string&gt;SimSun&lt;/string&gt;
+        &lt;/test&gt;
+        &lt;edit name=&quot;family&quot; mode=&quot;assign&quot; binding=&quot;same&quot;&gt;
+            &lt;string&gt;Source Han Serif CN&lt;/string&gt;
+        &lt;/edit&gt;
+    &lt;/match&gt;
+    &lt;match target=&quot;pattern&quot;&gt;
+        &lt;test qual=&quot;any&quot; name=&quot;family&quot;&gt;
+            &lt;string&gt;SimSun-18030&lt;/string&gt;
+        &lt;/test&gt;
+        &lt;edit name=&quot;family&quot; mode=&quot;assign&quot; binding=&quot;same&quot;&gt;
+            &lt;string&gt;Source Han Serif CN&lt;/string&gt;
+        &lt;/edit&gt;
+    &lt;/match&gt;
+
+    &lt;!-- Load local system customization file --&gt;
+    &lt;include ignore_missing=&quot;yes&quot;&gt;conf.d&lt;/include&gt;
+    &lt;!-- Font cache directory list --&gt;
+    &lt;cachedir&gt;/var/cache/fontconfig&lt;/cachedir&gt;
+    &lt;cachedir prefix=&quot;xdg&quot;&gt;fontconfig&lt;/cachedir&gt;
+    &lt;!-- will be removed in the future --&gt;
+    &lt;cachedir&gt;~/.fontconfig&lt;/cachedir&gt;
+
+    &lt;config&gt;
+        &lt;!-- Rescan in every 30s when FcFontSetList is called --&gt;
+        &lt;rescan&gt; &lt;int&gt;30&lt;/int&gt; &lt;/rescan&gt;
+    &lt;/config&gt;
+
+&lt;/fontconfig&gt;
+</code></pre>
+<h3 id="4fcitx-googlepinyin-也就是谷歌输入法打不出顿号">4、fcitx-googlepinyin 也就是谷歌输入法打不出顿号</h3>
+<p>前一次在 pycharm 编辑的时候记得就出现了，但是自己当时只不过是当作是一些小问题，没准重启能够解决，但是今天在编辑markdown文本的时候，迫切的需要，但是已经明确切换到中文输入法状态下，点击回车键上的反斜杠“\”，出来的还是反斜杆，一直查不出什么原因，无论是重启还是修改一些配置，最终在网上找到了解决方法。</p>
+<p>使用中英文标点切换快捷键（ctrl+.）[ 以前不知道这个快捷键]</p>
+<p>估计是在pycharm使用快捷方式时不小心给触碰到了导致的。</p>
+<h3 id="5qv2ray代理突然无法使用">5、Qv2ray代理突然无法使用</h3>
+<p>以前在代理失效时会有类似的情况，但是在更换了手机上测试可以使用的代理，确定其端口没有被占用，使用的网络没有问题，其 v2ray 启动成功 等等等等之后，还是无法使用代理。</p>
+<p>最后想到自己在前一晚切换到 Win 环境下，而那时 Win 的时间被自己修改过，回想起自己最初使用 Linux 时候由于没有配置时间导致其使用斗鱼无法使用，于是乎去修改了自己的时间，重启代理，问题就解决了。</p>
+<h3 id="6vim进入后行不会根据屏幕自动换行以及左侧目录栏显示异常">6、vim进入后行不会根据屏幕自动换行，以及左侧目录栏显示异常</h3>
+<p>关闭重新进入vim即可，估计是插件为完全加载的原因</p>
+<h3 id="7failed-to-register-appimage-in-appimagelauncherfs-could-not-open-map-file">7、Failed to register AppImage in AppImageLauncherFS: could not open map file</h3>
+<p>起因是双击打开了一个appimage文件，在设备了设置了appimagelauncher管理，然后退出后通过命令行启动，可能就无法通过appimagelauncher管理了，但是文件又关联了appimagelauncer，就冲突了，设备重启了下就解决了。</p>
+<h3 id="8无故卡死">8、无故卡死</h3>
+<p>没有解决！！！
+安装了某个软件自启动一段时间后导致卡死？
+系统不断的升级某个驱动、库、依赖不兼容导致卡死？
+硬件老化导致的问题？</p>
+<p>而且有的软件本应在状态栏的显示不显示，实际应用未退出。
+基于 arch，一些软件没有兼容到，无法安装，或者是不方便安装。
+为了更好的开发，暂时换了系统。</p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#软件">软件</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#问题">问题</a>
+      <ul>
+        <li><a href="#1appimages文件无法打开">1、.Appimages文件无法打开</a></li>
+        <li><a href="#2快捷方式">2、快捷方式</a></li>
+        <li><a href="#3pycharm--中-md-文件预览乱码--一些中文字体的不正常如门画等">3、pycharm  中 md 文件预览乱码 &amp; 一些中文字体的不正常(如门，画等)</a></li>
+        <li><a href="#4fcitx-googlepinyin-也就是谷歌输入法打不出顿号">4、fcitx-googlepinyin 也就是谷歌输入法打不出顿号</a></li>
+        <li><a href="#5qv2ray代理突然无法使用">5、Qv2ray代理突然无法使用</a></li>
+        <li><a href="#6vim进入后行不会根据屏幕自动换行以及左侧目录栏显示异常">6、vim进入后行不会根据屏幕自动换行，以及左侧目录栏显示异常</a></li>
+        <li><a href="#7failed-to-register-appimage-in-appimagelauncherfs-could-not-open-map-file">7、Failed to register AppImage in AppImageLauncherFS: could not open map file</a></li>
+        <li><a href="#8无故卡死">8、无故卡死</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#软件">软件</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#问题">问题</a>
+      <ul>
+        <li><a href="#1appimages文件无法打开">1、.Appimages文件无法打开</a></li>
+        <li><a href="#2快捷方式">2、快捷方式</a></li>
+        <li><a href="#3pycharm--中-md-文件预览乱码--一些中文字体的不正常如门画等">3、pycharm  中 md 文件预览乱码 &amp; 一些中文字体的不正常(如门，画等)</a></li>
+        <li><a href="#4fcitx-googlepinyin-也就是谷歌输入法打不出顿号">4、fcitx-googlepinyin 也就是谷歌输入法打不出顿号</a></li>
+        <li><a href="#5qv2ray代理突然无法使用">5、Qv2ray代理突然无法使用</a></li>
+        <li><a href="#6vim进入后行不会根据屏幕自动换行以及左侧目录栏显示异常">6、vim进入后行不会根据屏幕自动换行，以及左侧目录栏显示异常</a></li>
+        <li><a href="#7failed-to-register-appimage-in-appimagelauncherfs-could-not-open-map-file">7、Failed to register AppImage in AppImageLauncherFS: could not open map file</a></li>
+        <li><a href="#8无故卡死">8、无故卡死</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>

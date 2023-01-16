@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CompanyQuestionSet on AI YOYO</title>
+    <link>/tags/companyquestionset/</link>
+    <description>Recent content in CompanyQuestionSet on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 18 Nov 2022 23:03:36 +0800</lastBuildDate><atom:link href="/tags/companyquestionset/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>questions</title>
+      <link>/post/questions/</link>
+      <pubDate>Fri, 18 Nov 2022 23:03:36 +0800</pubDate>
+      
+      <guid>/post/questions/</guid>
+      <description>第十一章 企业真题实战 一、360 面试题 1. 请拿出 B 表中的 accd，(A 表中和 B 表中的一样的数据)？ select * from B inner join on B.name = A.name 2. a = &amp;lsquo;abbbccc&amp;rsquo;，用正则匹配为 abccc, 不管有多少 b，就出现一</description>
+    </item>
+    
+  </channel>
+</rss>

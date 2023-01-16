@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>built-in-functions - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="Python" />
+
+
+<meta property="og:title" content="built-in-functions" />
+<meta name="twitter:title" content="built-in-functions" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/built-in-functions/" /><meta property="og:description" content="map() map()函数语法： map(function,iterable,&hellip;) 参数: function&ndash;函数 iterable&ndash;一个或多个序列 返回值 Python2.x返回列表。 Python3.x返回迭代器对象。 传很多个iterable" />
+<meta name="twitter:description" content="map() map()函数语法： map(function,iterable,&hellip;) 参数: function&ndash;函数 iterable&ndash;一个或多个序列 返回值 Python2.x返回列表。 Python3.x返回迭代器对象。 传很多个iterable" /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2022-10-25T16:48:59+08:00" /><meta property="article:modified_time" content="2022-10-25T16:48:59+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/built-in-functions/">built-in-functions</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-10-25</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;2575 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/python">Python</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h2 id="map">map()</h2>
+<p>map()函数语法：
+map(function,iterable,&hellip;)</p>
+<p>参数:
+function&ndash;函数
+iterable&ndash;一个或多个序列</p>
+<p>返回值
+Python2.x返回列表。
+Python3.x返回迭代器对象。</p>
+<p>传很多个iterable，如果有额外的iterable参数，并行的从这些参数中取元素，并调用function。如果一个iterable参数比另外的iterable参数要短，将以长度最小的为基准。</p>
+<pre><code>def add(x):
+    return x+1
+
+list1=[1,2,3]
+    res=map(add,list1)
+    print(list(res))
+
+# [2,3,4]
+</code></pre>
+<pre><code>from collections.abc importIterator
+
+defadd(x,y,z):
+    return x,y,z
+
+list1=[1,2,3]
+list2=[1,2,3,4]
+list3=[1,2,3,4,5]
+res=map(add,list1,list2,list3)
+print(list(res))
+print(isinstance(res,Iterator))
+
+# [(1,1,1),(2,2,2),(3,3,3)]
+# True
+</code></pre>
+<h2 id="filter">filter()</h2>
+<p>语法：
+filter(function,iterable)</p>
+<p>参数：
+function&ndash;判断函数。
+iterable&ndash;可迭代对象。</p>
+<p>返回值：
+返回迭代器对象。</p>
+<p>filter()函数用于过滤序列，过滤掉不符合条件的元素，返回由符合条件元素组成的新列表。</p>
+<p>该接收两个参数，第一个为函数，第二个为序列，序列的每个元素作为参数传递给函数进行判断，然后返回True或False，最后将返回True的元素放到新列表中。</p>
+<pre><code>defis_odd(n):
+    returnn%2==1
+
+newlist=filter(is_odd,[1,2,3,4,5,6,7,8,9,10])
+print(newlist)
+# [1,3,5,7,9]
+</code></pre>
+<h2 id="reduce">reduce()</h2>
+<p>函数语法：
+reduce(function,sequence[,initial])</p>
+<p>参数:
+function有两个参数的函数，必需参数
+sequencetuple，list，dictionary，string等可迭代物，必需参数
+initial初始值，可选参数</p>
+<p>返回值：
+reduce的工作过程是：在迭代sequence(tuple，list，dictionary，string等可迭代物)的过程中，首先把前两个元素传给函数参数，函数加工后，然后把得到的结果和第三个元素作为两个参数传给函数参数，函数加工后得到的结果又和第四个元素作为两个参数传给函数参数，依次类推。如果传入了initial值，那么首先传的就不是sequence的第一个和第二个元素，而是initial值和第一个元素。经过这样的累计计算之后合并序列到一个单一返回值。</p>
+<pre><code>defadd(x,y):
+    return x+y
+
+from functools import reduce
+print(reduce(add,[1,2,3,4]))
+# 10
+</code></pre>
+<p>##zip()
+语法：
+zip([iterable,&hellip;])</p>
+<p>参数说明：
+iterabl&ndash;一个或多个迭代对象;</p>
+<p>返回值：
+返回一个迭代器对象。</p>
+<p>zip()函数用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的对象，这样做的好处是节约了不少的内存。</p>
+<p>我们可以使用list()转换来输出列表。</p>
+<p>如果各个迭代器的元素个数不一致，则返回列表长度与最短的对象相同，利用*号操作符，可以将元组解压为列表。</p>
+<pre><code>a=[1,2,3]
+b=[4,5,6]
+c=[4,5,6,7,8]
+
+print(list(zip(a,b,c)))
+print(list(zip(a,c)))#元素个数与最短的列表一致
+a1,a2=zip(*zip(a,b))#与zip相反，zip(*)可理解为解压，返回二维矩阵式
+print(*zip(a,b))
+print(list(a2))
+
+# [(1,4,4),(2,5,5),(3,6,6)]
+# [(1,4),(2,5),(3,6)]
+# (1,4)(2,5)(3,6)
+# [4,5,6]
+</code></pre>
+<h2 id="enumrate">enumrate()</h2>
+<p>语法：
+enumerate(sequence,[start=0])</p>
+<p>参数：
+sequence&ndash;一个序列、迭代器或其他支持迭代对象。
+start&ndash;下标起始位置。</p>
+<p>返回值：
+返回enumerate(枚举)对象。为迭代器对象。</p>
+<pre><code>a=[1,2,3]
+print(list(enumerate(a)))
+print(list(enumerate(a,2)))
+
+# [(0,1),(1,2),(2,3)]
+# [(2,1),(3,2),(4,3)]
+</code></pre>
+<h2 id="pow">pow()</h2>
+<p>语法：
+pow(x,y[,z])
+函数是计算x的y次方，如果z在存在，则再对结果进行取模，其结果等效于pow(x,y)%z</p>
+<p>注意：pow()通过内置的方法直接调用，内置方法会把参数作为整型，而math模块则会把参数转换为float。</p>
+<p>参数：
+x&ndash;数值表达式。
+y&ndash;数值表达式。
+z&ndash;数值表达式。</p>
+<p>返回值：
+返回xy（x的y次方）的值。</p>
+<pre><code>print(pow(4,2))
+print(pow(4,2,3))
+
+# 16
+# 1
+</code></pre>
+<h2 id="max--min">max() , min()</h2>
+<p>max和min函数的使用介绍：
+对可迭代对象元素进行比较，找到最大值 max(iterable,*[,default=obj,key=func])
+对传入的多个参数进行比较，找到最小值 max(arg1,arg2,<em>args,</em>[,key=func])</p>
+<p>简单使用</p>
+<pre><code>list_a=[1,2,3,5,8]
+print(max(list_a))
+</code></pre>
+<p>带默认参数</p>
+<pre><code>#如果设定default，当传入的对象为空时则返回default值而不会引发错误
+list_a=[]
+print(max(list_a,default=1))
+</code></pre>
+<p>带key
+key应当传入一个可调用对象，一般传入的是函数。指定key之后，max函数就会根据key处理后的元素进行比较</p>
+<pre><code># 需求1：比如下面的情况，每种水果的价格信息都是以字典的形式存放的列表中，要找到最贵的水果和最便宜的水果
+
+fruit_shop=[
+{'name':'apple','price':5.68},
+{'name':'orange','price':4.22},
+{'name':'banana','price':2.65},
+{'name':'berries','price':10.75}]
+
+cheap=min(fruit_shop,key=lambdas:s['price'])
+expensive=max(fruit_shop,key=lambdas:s['price'])
+print('最便宜的水果是:',cheap)
+print('最贵的水果是:',expensive)
+# 最便宜的水果是:{'name':'banana','price':2.65}
+# 最贵的水果是:{'name':'berries','price':10.75}
+
+
+# 需求2：找到列表中出现次数最多的元素。
+
+lt=[2,2,3,1,2,2,1,8,5]
+max(set(lt),key=lt.count)
+</code></pre>
+<h2 id="sorted">sorted</h2>
+<p>sorted(iterable,*,key=None,reverse=False)
+必需参数为一个可迭代对象
+key指定带有单个参数的函数，用于从iterable的每个元素中提取用于比较的键(例如key=str.lower)。默认值为None(直接比较元素)。</p>
+<p>reverse为一个布尔值。如果设为True，则每个列表元素将按反向顺序比较进行排序。</p>
+<p>返回为一个列表新对象，不会改变原来的对象。</p>
+<p>排序保证是稳定的。这意味着当多个记录具有相同的键值时，将保留其原始顺序</p>
+<pre><code>list_num=[2,4,8,1,10]
+print(sorted(list_num))
+# [1,2,4,8,10]
+print(sorted(list_num,reverse=True))
+# [10,8,4,2,1]
+
+dict_one={2:12,1:23}
+print(sorted(dict_one))
+# [1,2]字典的排序默认为为键进行排序
+# 可先转为元组，即可对键或值排序
+print(sorted(dict_one.items(),key=lambdax:x[0]))#对键进行排序
+# [(1,23),(2,12)]
+print(sorted(dict_one.items(),key=lambdax:x[1]))#对值进行排序
+# [(2,12),(1,23)]
+
+## 多重排序
+</code></pre>
+<h1 id="考虑如下情况">考虑如下情况</h1>
+<h1 id="212123213133">[(2,12),(1,23)，(2,13),(1,33)]</h1>
+<h1 id="先按照0号位的排序有相同的再按照1号位的排序">先按照0号位的排序，有相同的再按照1号位的排序</h1>
+<p>test=[(2,12),(1,23),(2,13),(1,33)]
+print(sorted(test,key=lambdax:(x[0],x[1])))</p>
+<h1 id="123133212213">[(1,23),(1,33),(2,12),(2,13)]</h1>
+<h1 id="有多重的话也是类似的lambda函数后的元组指定多个即可">有多重的话也是类似的，lambda函数后的元组指定多个即可</h1>
+<pre><code>
+## 使用Operator模块函数
+</code></pre>
+<h1 id="例子可简化为">例子可简化为</h1>
+<p>from operator import itemgetter
+print(sorted(dict_one.items(),key=itemgetter(1)))#对值进行排序</p>
+<h1 id="212123">[(2,12),(1,23)]</h1>
+<p>print(sorted(test,key=itemgetter(0,1)))</p>
+<h1 id="123133212213-1">[(1,23),(1,33),(2,12),(2,13)]</h1>
+<pre><code>
+## next()
+`next(iterator[,default])`
+
+iterator--可迭代对象
+default--可选,如果不设置，又没有下一个元素则会触发StopIteration异常,设置后则会抛出默认值。
+
+## iter()
+
+iter函数有两种用法，一种是传一个参数，一种是传两个参数。返回的结果都是返回一个iterator对象。
+
+`i1=iter(itr,'c')`,这个意思是说，返回itr的iterator，而且在之后的迭代之中，迭代到'c'就立马停止（并不会输出c）。对这个itr有什么要求呢？这个itr在这里必须是callable的，即要实现**call**函数
+
+for循环的话就会输出c之前的数据，使用next()的话到c就会抛出StopIteration异常。
+
+## print()
+print()可以输出多种类型的数据，并且搭配特殊字符可以实现格式化输出。
+
+seq 参数
+print(1,2,3,4,5,6)#123456
+print(1,2,3,4,5,6,sep=&quot;:&quot;)#1:2:3:4:5:6
+
+end 参数
+print(1,2,3,4,5,6,end=&quot;;&quot;)#123456;
+print(1,2,3,4,5,6,sep=&quot;:&quot;,end=&quot;;&quot;)#1:2:3:4:5:6;
+
+## isinstance()
+isinstance 可以接收一个元组,判断是否是多个类型中的一个就非常方便
+</code></pre>
+<p>isinstance(1.3, (float, int))
+isinstance(&ldquo;1.3&rdquo;, (float, int, str))</p>
+<pre><code></code></pre>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#map">map()</a></li>
+    <li><a href="#filter">filter()</a></li>
+    <li><a href="#reduce">reduce()</a></li>
+    <li><a href="#enumrate">enumrate()</a></li>
+    <li><a href="#pow">pow()</a></li>
+    <li><a href="#max--min">max() , min()</a></li>
+    <li><a href="#sorted">sorted</a></li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#map">map()</a></li>
+    <li><a href="#filter">filter()</a></li>
+    <li><a href="#reduce">reduce()</a></li>
+    <li><a href="#enumrate">enumrate()</a></li>
+    <li><a href="#pow">pow()</a></li>
+    <li><a href="#max--min">max() , min()</a></li>
+    <li><a href="#sorted">sorted</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>

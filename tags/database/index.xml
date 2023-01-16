@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DataBase on AI YOYO</title>
+    <link>/tags/database/</link>
+    <description>Recent content in DataBase on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 25 Oct 2022 16:48:59 +0800</lastBuildDate><atom:link href="/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>101个MySQL优化提示</title>
+      <link>/post/101%E4%B8%AAmysql%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/101%E4%B8%AAmysql%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA/</guid>
+      <description>MySQL 服务器硬件和操作系统调节: 拥有足够的物理内存来把整个InnoDB文件加载到内存中——在内存中访问文件时的速度要比在硬盘中访问时快的多。 不惜一切代价避免使用Swap交换分区 – 交换时是从硬盘读取的，它的</description>
+    </item>
+    
+    <item>
+      <title>MySQL优化插入数据速度</title>
+      <link>/post/mysql%E4%BC%98%E5%8C%96%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE%E9%80%9F%E5%BA%A6/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/mysql%E4%BC%98%E5%8C%96%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE%E9%80%9F%E5%BA%A6/</guid>
+      <description>MySQL优化插入数据速度 在 MySQL 中，向数据表插入数据时，索引、唯一性检查、数据大小是影响插入速度的主要因素。本节将介绍优化插入数据速度的几种方法。 根据不同情况，可以分别进行优化。 对于 MyISAM 引擎的表，常见的优</description>
+    </item>
+    
+  </channel>
+</rss>

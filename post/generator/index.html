@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>generator - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="Python" />
+
+
+<meta property="og:title" content="generator" />
+<meta name="twitter:title" content="generator" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/generator/" /><meta property="og:description" content="yield 关键字初识 先看一个简单例子： def yie(): n = 1 yield n print(n) n &#43;= 1 yield n print(n) n &#43;= 1 yield n print(n) a = yie() one = next(a) print(f&#39;one {one}&#39;) two = next(a) print(f&#39;two {two}&#39;) thr = next(a) print(f&#39;thr {thr}&#39;) # one 1 # 1 # two 2 # 2 # thr 3 当调用时，遇到 yield 关键字时函数和遇到 return 用类似的结果，返回一个值，但不同" />
+<meta name="twitter:description" content="yield 关键字初识 先看一个简单例子： def yie(): n = 1 yield n print(n) n &#43;= 1 yield n print(n) n &#43;= 1 yield n print(n) a = yie() one = next(a) print(f&#39;one {one}&#39;) two = next(a) print(f&#39;two {two}&#39;) thr = next(a) print(f&#39;thr {thr}&#39;) # one 1 # 1 # two 2 # 2 # thr 3 当调用时，遇到 yield 关键字时函数和遇到 return 用类似的结果，返回一个值，但不同" /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2023-01-13T23:04:36+08:00" /><meta property="article:modified_time" content="2023-01-13T23:04:36+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/generator/">generator</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-01-13</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;5089 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/python">Python</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h1 id="yield-关键字初识">yield 关键字初识</h1>
+<p>先看一个简单例子：</p>
+<pre><code>def yie():
+    n = 1
+    yield n
+    print(n)
+    n += 1
+    yield n
+    print(n)
+    n += 1
+    yield n
+    print(n)
+
+
+a = yie()
+one = next(a)
+print(f'one  {one}')
+two = next(a)
+print(f'two  {two}')
+thr = next(a)
+print(f'thr  {thr}')
+
+# one  1
+# 1
+# two  2
+# 2
+# thr  3
+</code></pre>
+<p>当调用时，遇到 yield 关键字时函数和遇到 return 用类似的结果，返回一个值，但不同的是并没有退出函数，当下一次运行时，继续函数里后面的代码。
+同时我们取值的方式比较特殊，通过 next() 去取对象的值，而这应该是属于迭代器的方法。</p>
+<h1 id="生成器函数generator-function">生成器函数（generator function）</h1>
+<p>如果函数包含至少一个 yield语句 (它可能包含其他 yield 或 return 语句)，那么它将成为一个生成器函数。</p>
+<p>生成器函数与正常函数的差异下面列出的是生成器函数与正常函数的区别 ：
+当被调用时，它返回一个对象(迭代器)，但不会立即开始执行。
+<strong>iter</strong>() 和 <strong>next</strong>() 之类的方法将自动实现。所以可以使用 next() 迭代项目。
+一旦函数遇到 yield，该函数将被暂停，并将该控制权交给调用者。局部变量及其状态在连续调用之间被记住。
+最后，当函数终止时，StopIteration会在进一步的调用时自动引发。</p>
+<p>上面例子中定义的 yie() 函数便是一个生成器函数。</p>
+<h1 id="生成器generator">生成器（generator）</h1>
+<p>而生成器即是生成器函数被调用后产生的对象。
+如例子中的 a 便是一个生成器。
+在每个调用之间函数会保持住变量n的值。与正常函数不同，当函数产生时，局部变量不会被销毁。 此外，生成器对象只能重复一次。
+要重新启动该过程，需要使用类似于 a = yie() 的方法创建另一个生成器对象。</p>
+<p>并且支持 for 循环遍历。</p>
+<h1 id="生成器推导式">生成器推导式</h1>
+<p>使用生成器表达式，可以轻松创建简单的生成器。 它使构建生成器变得容易。
+与 lambda 函数一样创建一个匿名函数，生成器表达式创建一个匿名生成函数。生成器表达式的语法与 Python 中的列表解析类似。 但方圆 [] 替换为圆括号 ()。
+列表推导和生成器表达式之间的主要区别是：列表推导产生整个列表，生成器表达式一次生成一个项目。
+它们是处理方式是懒惰的，只有在被要求时才能生产项目。 因此，生成器表达式的存储器效率高于等效列表的值。</p>
+<pre><code>ge = (i for i in range(10))
+print(type(ge))
+
+# &lt;class 'generator'&gt;
+</code></pre>
+<h1 id="yield-from">yield from</h1>
+<p>语法：
+yield from generator</p>
+<p>yield from 后面可以跟的可以是“ 生成器 、元组、 列表、range（）函数产生的序列等可迭代对象”
+简单地说，yield from  generator 。实际上就是返回另外一个生成器。而yield只是返回一个元素。从这个层面来说，有下面的等价关系：yield from iterable本质上等于 for item in iterable: yield item 。</p>
+<h2 id="todo">TODO</h2>
+<p>深入的看着有点晕，暂时放放吧，留两个链接
+<a href="https://blog.csdn.net/qq" target="_blank">https://blog.csdn.net/qq</a>_27825451/article/details/85244237
+<a href="https://www.cnblogs.com/wongbingming/p/9085268.html" target="_blank">https://www.cnblogs.com/wongbingming/p/9085268.html</a></p>
+<h1 id="生成器专属方法-sendthrowclose">生成器专属方法 send、throw、close</h1>
+<h2 id="send-方法详解">send 方法详解</h2>
+<p>generator.send(value)</p>
+<p>作用：向生成器发送一个值，随后恢复执行。
+value 参数是 send 方法向生成器发送的值，这个值会作为当前所在的 yield 表达式的结果。
+随后生成器恢复执行，直到下一个 yield，把它后面的值作为 send 方法的结果返回。</p>
+<p>如果恢复执行后再也没有 yield 语句，生成器退出，并抛出 StopIteration 异常。</p>
+<p>如果一开始使用 send 启动生成器，必须使用 None 作为参数，因为一开始没有可以接收值的 yield 表达式。</p>
+<pre><code>def gen():
+    for i in range(2):
+        x = yield i
+        print('x:', x)
+
+a = gen()
+for _ in a:
+    print(_)
+
+# 0
+# x: None
+# 1
+# x: None
+</code></pre>
+<p>不同于 return，yield 的值是可以进行赋值操作的，但是由于其特性，赋值在正常i情况下都为空。
+如上面的例子，<code>x = yield i</code> 等式是从右向左的，当遇到 yield 时就抛出值，而下一次调用时才进行赋值，这时值已经不存在的，便为 None 了。</p>
+<pre><code>def gen():
+    for i in range(2):
+        x = yield i
+        print('x:', x)
+
+a = gen()
+print(a.send(None)) # a.send(None) 等同于 next(a)
+print(a.send(3))
+
+# 0
+# x: 3
+# 1
+</code></pre>
+<p>这便是 send() 的用法，能够在使用生成器的使用根据需要传递值进去。</p>
+<h2 id="throw-方法详解">throw 方法详解</h2>
+<p>generator.throw(type[, value[, traceback]])</p>
+<p>作用：在生成器暂停的地方抛出类型为 type 的异常，并返回下一个 yield 的返回值。
+如果生成器函数没有捕获并处理传入的异常，或者说抛出了另一个异常，那么该异常会被传递给调用方。
+如果生成器退出时还没有 yield 新值，则会抛出 StopIteration 异常。</p>
+<h3 id="第一种情况捕获并处理传入的异常得到下一个-yield-的返回值">（第一种情况：捕获并处理传入的异常，得到下一个 yield 的返回值。</h3>
+<pre><code>def gen():
+    n = 0
+    while True:
+        try:
+            yield n
+            n += 1
+        except ZeroDivisionError:
+            print('捕获到了 ZeroDivisionError')
+            print('此时的 n 为：%s' % n)
+
+g = gen()
+ret = next(g)
+print('第一次 yield 的返回值：%s' % ret)
+ret = g.throw(ZeroDivisionError)
+print(ret)
+
+# 第一次 yield 的返回值：0
+# 捕获到了 ZeroDivisionError
+# 此时的 n 为：0
+# 0
+
+</code></pre>
+<p>第一次调用时遇到 yield ,抛出值，第二次调用时接受到了异常，跳过了 n + 1，所以n保持为 0。
+如果通过 throw 传入的异常被捕获的话，生成器能够恢复执行直到下一个 yield。</p>
+<p>（1 如果捕获不准确的话</p>
+<pre><code>def gen():
+    for i in range(5):
+        try:
+            yield i
+        except Exception as e:
+            print(e)
+
+a = gen()
+b = next(a) # a.send(None) 等同于 next(a)
+print(b)
+c = a.throw(ZeroDivisionError)
+print(c)
+d = next(a) # a.send(None) 等同于 next(a)
+print(d)
+
+# 0
+#   (这样是捕获不到异常的，所以为空)
+# 1
+# 2
+</code></pre>
+<p>后面的可以继续执行，捕获不到异常应该是throw的异常没有继承 excaption。</p>
+<p>（2 甚至于不做捕获</p>
+<pre><code>def gen():
+    for i in range(5):
+        try:
+            print('try')
+            yield i
+        except:
+            print('error')
+
+a = gen()
+b = next(a) # a.send(None) 等同于 next(a)
+print(b)
+c = a.throw(ZeroDivisionError)
+print(c)
+d = next(a) # a.send(None) 等同于 next(a)
+print(d)
+
+# try
+# 0
+# error
+# try
+# 1
+# try
+# 2
+# error
+# try
+# Exception ignored in: &lt;generator object gen at 0x7fb5827ec2e0&gt;
+# RuntimeError: generator ignored GeneratorExit
+</code></pre>
+<p>后续的依旧能执行，但每次执行完如果后续没有继续取值会多执行一次抛出生成器退出异常。</p>
+<h3 id="第二种情况没有捕获并处理-throw-传入的异常异常会回传给调用方">（第二种情况：没有捕获并处理 throw 传入的异常，异常会回传给调用方</h3>
+<pre><code>import sys
+
+def gen():
+    n = 0
+    while True:
+        yield n
+        n += 1
+
+g = gen()
+ret1 = next(g)
+print('第一次 yield 的返回值：%s' % ret1)
+try:
+    ret2 = g.throw(ZeroDivisionError)  # ret2 并没有收到任何值
+except ZeroDivisionError:
+    print('调用方捕获到 ZeroDivisionError 异常')
+    print(sys.exc_info())
+
+# 第一次 yield 的返回值：0
+# 调用方捕获到 ZeroDivisionError 异常
+# (&lt;class 'ZeroDivisionError'&gt;, ZeroDivisionError(), &lt;traceback object at 0x7fd771bcf5c0&gt;)
+</code></pre>
+<p>这个比较容易理解，类似于将 异常 yield 回来了
+而对于已经通过抛出异常而退出的生成器再使用 next(g) 会持续抛出 StopIteration 异常。</p>
+<h3 id="第三种情况生成器退出时没有-yield-新值会抛出-stopiteration-异常">（第三种情况：生成器退出时没有 yield 新值，会抛出 StopIteration 异常。</h3>
+<pre><code>def gen():
+    try:
+        # 注意是在当前暂停的 yield 处抛出异常
+        # 所以要在这里捕获
+        yield 1
+    except Exception as e:
+        print(f'在生成器内部捕获了异常{e.args}')
+        # print(e.args)
+
+    # yield 2
+
+g = gen()
+print(next(g))
+g.throw(TypeError, '类型错误')
+
+# 1
+# 在生成器内部捕获了异常('类型错误',)
+# Traceback (most recent call last):
+#   File &quot;/home/fiki/Documents/PycharmProjects/thread_yy.py&quot;, line 54, in &lt;module&gt;
+#     g.throw(TypeError, '类型错误')
+# StopIteration
+</code></pre>
+<p>内部捕获到了异常，但是由于没有可迭代的了，又抛出 StopIteration 给显式覆盖了。</p>
+<h2 id="生成器的-close-方法">生成器的 close 方法</h2>
+<p>generator.close()</p>
+<p>作用：在生成器函数暂停的地方抛出一个 GeneratorExit 异常。
+这并不等价于 generator.throw(GeneratorExit)，后面会说原因。
+如果生成器抛出 StopIteration 异常（不管是由于正常退出还是因为该生成器已经关闭），或者抛出 GeneratorExit 异常（不捕获该异常即可），close 方法不传递该异常，直接返回到调用方。而生成器抛出的其他异常会传递给调用方。
+GeneratorExit 异常的产生意味着生成器对象的生命周期已经结束，因此生成器方法后续语句中不能再有 yield，否则会产生 RuntimeError。（而 throw 方法是期待一个 yield 返回值的，如果没有，则会抛出 StopIteration 异常。）
+对于已经正常退出或者因为异常退出的生成器对象，close 方法不会进行任何操作</p>
+<h3 id="第一种情况">（第一种情况：</h3>
+<p>不捕获 GeneratorExit 异常，close 方法返回调用方，不传递该异常。</p>
+<pre><code>def gen():
+    yield 1
+    yield 2
+
+g = gen()
+print(next(g))
+g.close()
+print(next(g))
+
+# 1
+# Traceback (most recent call last):
+#   File &quot;/home/fiki/Documents/PycharmProjects/thread_yy.py&quot;, line 50, in &lt;module&gt;
+#     print(next(g))
+# StopIteration
+</code></pre>
+<p>注意：对已经关闭的生成器对象使用 next 会抛出 StopIteration 异常。</p>
+<h3 id="第二种情况">（第二种情况：</h3>
+<p>生成器自然退出抛出 StopIteration 异常，该异常不会传递给调用方，close 方法正常返回。</p>
+<pre><code>def gen():
+    try:
+        yield 1
+    except GeneratorExit:
+        print('捕获到GeneratorExit')
+    print('生成器函数结束了')
+
+g = gen()
+print(next(g))
+g.close()
+&gt; 1
+&gt; 捕获到GeneratorExit
+&gt; 生成器函数结束了
+</code></pre>
+<h3 id="第三种情况">（第三种情况：</h3>
+<p>在 GeneratorExit 抛出后还有 yield 语句，会产生 RuntimeError。另外生成器对象被垃圾回收时，解释器会自动调用该对象的 close 方法（PEP 342），这意味着最好不要在相应的 except 和 finally 中写 yield 语句，否则不知道什么时候就会抛出 RuntimeError 异常。</p>
+<pre><code>def gen():
+    try:
+        yield 1
+    except GeneratorExit:
+        print('捕获到 GeneratorExit')
+        print('尝试在 GeneratorExit 产生后 yield 一个值')
+        yield 2
+
+    print('生成器结束')
+
+
+g = gen()
+next(g)
+g.close()
+&quot;&quot;&quot;
+捕获到 GeneratorExit
+尝试在 GeneratorExit 产生后 yield 一个值
+Traceback (most recent call last):
+  File &quot;test.py&quot;, line 14, in &lt;module&gt;
+    g.close()
+RuntimeError: generator ignored GeneratorExit
+&quot;&quot;&quot;
+
+</code></pre>
+<p>一种防止抛出 RuntimeError 的安全生成器写法：设置一个布尔标识。</p>
+<pre><code>def safegen():
+    yield 'so far so good'
+    closed = False
+    try:
+        yield 'yay'
+    except GeneratorExit:
+        closed = True
+        raise
+    finally:
+        if not closed:
+            yield 'boo'
+</code></pre>
+<h3 id="第四种情况">（第四种情况：</h3>
+<p>对已经关闭的生成器对象调用 close() 方法，不会进行任何操作。</p>
+<pre><code>def gen():
+    yield 1
+    print('我不会被执行')
+    print('因为在 yield 1 就抛出了 GeneratorExit 异常')
+    print('未经捕获的 GeneratorExit 异常不会传递')
+    print('返回执行权给 close 的调用方')
+
+g = gen()
+g.close()
+g.close()
+g.close()  # 多次调用 close，什么效果都没有
+</code></pre>
+<p>补充：GeneratorExit 异常只有在生成器对象被激活后，才有可能产生。</p>
+<h1 id="生成器优点">生成器优点</h1>
+<h2 id="1-容易实现">1. 容易实现</h2>
+<p>与其迭代器类相比，发生器可以以清晰简洁的方式实现。
+以下是使用迭代器类来实现2的幂次序的例子。</p>
+<pre><code>class PowTwo:
+    def __init__(self, max = 0):
+        self.max = max
+
+    def __iter__(self):
+        self.n = 0
+        return self
+
+    def __next__(self):
+        if self.n &gt; self.max:
+            raise StopIteration
+
+        result = 2 ** self.n
+        self.n += 1
+        return result
+</code></pre>
+<p>上面代码有点长，可以使用一个生成器函数实现同样的功能。</p>
+<pre><code>def PowTwoGen(max = 0):
+    n = 0
+    while n &lt; max:
+        yield 2 ** n
+        n += 1
+</code></pre>
+<p>因为，生成器自动跟踪的细节，它更简洁，更干净。</p>
+<h2 id="2内存高效">2.内存高效</h2>
+<p>返回序列的正常函数将在返回结果之前会在内存中的创建整个序列。如果序列中的项目数量非常大，这可是要消耗内存的。
+序列的生成器实现是内存友好的，并且是推荐使用的，因为它一次仅产生一个项目。</p>
+<h2 id="3-表示无限流">3. 表示无限流</h2>
+<p>生成器是表示无限数据流的绝佳媒介。 无限流不能存储在内存中，由于生成器一次只能生成一个项目，因此可以表示无限数据流。
+以下示例可以生成所有偶数(至少在理论上)。</p>
+<pre><code>def all_even():
+    n = 0
+    while True:
+        yield n
+        n += 2
+</code></pre>
+<h2 id="4管道生成器">4.管道生成器</h2>
+<p>生成器可用于管理一系列操作，下面使用一个例子说明。
+假设我们有一个快餐连锁店的日志文件。 日志文件有一列(第4列)，用于跟踪每小时销售的比萨饼数量，我们想算出在5年内销售的总萨饼数量。
+假设一切都是字符串，不可用的数字标记为“N / A”。 这样做的生成器实现可以如下。</p>
+<pre><code>with open('sells.log') as file:
+    pizza_col = (line[3] for line in file)
+    per_hour = (int(x) for x in pizza_col if x != 'N/A')
+    print(&quot;Total pizzas sold = &quot;,sum(per_hour))
+</code></pre>
+<p>这种管道的方式是更高效和易于阅读的。</p>
+<h1 id="判断生成器生成器函数">判断生成器、生成器函数</h1>
+<p>我们可以用inspect类里的isgeneratorfunction类方法判断是否是一个生成器函数，以及使用 isgenerator类方法判断是否是一个生成器。</p>
+<pre><code>from inspect import isgeneratorfunction, isgenerator
+
+print(f'fibonacci is a generator function: {isgeneratorfunction(fibonacci)}')
+print(f'fib is a generator: {isgenerator(fib)}')
+</code></pre>
+<h1 id="应用生成器的场景与好处">应用生成器的场景与好处</h1>
+<p>生成器可用于产生数据流，而且并不立刻产生返回值，而是等到被需要的时候才会产生返回值，相当于一个主动拉取的过程(pull)，比如现在有一个日志文件，每行产生一条记录，对于每一条记录，不同部门的人可能处理方式不同，但是我们可以提供一个公用的、按需生成的数据流。
+还有做爬虫的时候，爬取大量数据的时候如果使用生成器每次需要的时候执行输出也可以大大降低资源的消耗。
+使用生成器的好处当然不仅限于此，让我们来看一下下面的例子，我们打算读取小说《三国演义》的所有文字内容，如果直接对文件对象调用 read() 方法，会导致不可预测的内存占用。好的方法是利用固定长度的缓冲区来不断读取文件内容。而且同时通过 yield来执行每次输出，就可以轻松实现文件读取。</p>
+<pre><code>from pathlib import Path
+
+file = Path('三国演义.txt')
+
+def read_file(fpath):
+   BLOCK_SIZE = 1024
+   with file.open(encoding='GB18030') as f:
+       while True:
+           block_content = f.read(BLOCK_SIZE)
+           if block_content:
+               yield block_content
+           else:
+               return
+
+for c in read_file(file):
+    print(c)
+</code></pre>
+<h4 id="yield-与递归产生的异常分析">yield 与递归产生的异常分析</h4>
+<p>最初的异常代码：</p>
+<pre><code>from config import frontMatter, noteDir, ignoreFile
+import os
+
+
+def getFile(filePath):
+    files = os.listdir(filePath)
+    for fi in files:
+        fi_d = os.path.join(filePath, fi)
+
+        if os.path.isdir(fi_d):
+            getFile(fi_d)
+        else:
+            fileName = os.path.join(filePath, fi_d)
+
+            if &quot;.md&quot; in fileName:
+                print(fileName)
+                yield fileName
+</code></pre>
+<p>就是一个简单的递归输出文件的函数，如果把<code>yield</code>的语句注释，正常<code>print</code>是可以正常输出的，但是使用<code>yield</code>语句就只能得到一个输出。通过添加<code>print</code>的方式发现整个函数的流程和使用<code>print</code>是一样的，但就是没有输出。</p>
+<p>解释之前，先来看<code>yield</code> 的几个特性。</p>
+<ol>
+<li><code>yield</code>可以看作加强版本的<code>return</code>，会抛出结果，但是不会退出函数。</li>
+<li>函数中只要有<code>yield</code>关键字，这个函数就成了生成器函数，调用这个函数会得到一个生成器。并且这与<code>yield</code>语句是否被执行无关，如果是增加了判断语句，但是有<code>yield</code>的分支一直未被执行，这个函数也是生成器函数。</li>
+<li>生成器需要使用<code>next()</code>函数来迭代，或者是通过循环语句来迭代。生成器函数被调用一次就是一个生成器，所以调用的是一次调用多次迭代，如果使用<code>next(funcName())</code>是创建了多个生成器，且只迭代了里面的第一个结果。</li>
+<li>抛出结果后保留函数的状态，下一次使用<code>next()</code>函数调用时或循环迭代时从保留的状态恢复继续向后执行。</li>
+</ol>
+<p>上面的代码将其用另一个类似变量、代码量简化的的替换。实际这个代码有问题，假如正常执行的话，多次之后传入的参数将为空列表，但是空列表取<code>[1:]</code>是可行的，最后会超出递归限制而报错。</p>
+<pre><code>def yieldNumberList(numberList):
+    yield numberList[0]
+    yieldNumberList(numberList[1:])
+
+if __name__ == '__main__':
+    numberList = [1,2,3,4]
+
+    for number in yieldNumberList(numberList):
+        print(number)
+
+# 1
+</code></pre>
+<p>代码的实际运行并没有像想象中那样逐个数字打印，只有第一个输出了。</p>
+<p>实际上后续的代码也完完整整的走过一遍了的，但是在递归的时候，<code>yieldNumberList([1:])</code>该语句并不是单单纯的函数了，而是一个生成器，这里创建了一个生成器，但是没有对其进行迭代，而后续的生成器中的生成器也是同理，也就是该生成器实际是一个多重生成器，但是只迭代出了第一重。</p>
+<p>改进</p>
+<pre><code>def yieldNumberList(numberList):
+    yield numberList[0]
+    yield from yieldNumberList(numberList[1:])
+
+if __name__ == '__main__':
+    numberList = [1,2,3,4]
+
+    for number in yieldNumberList(numberList):
+        print(number)
+
+# 1
+</code></pre>
+<h4 id="参考">参考</h4>
+<p><a href="https://www.yiibai.com/python/generator.html#article-start" target="_blank">Python生成器</a></p>
+<p><a href="https://blog.csdn.net/qq_27825451/article/details/85244237" target="_blank">python协程系列（三）——yield from原理详解</a></p>
+<p><a href="https://juejin.cn/post/6992917747973750821" target="_blank">Python 生成器与它的 send，throw，close 方法</a></p>
+<p><a href="http://anders.wang/python-yield/" target="_blank">用yield关键字创建生成器</a></p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#todo">TODO</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#send-方法详解">send 方法详解</a></li>
+    <li><a href="#throw-方法详解">throw 方法详解</a>
+      <ul>
+        <li><a href="#第一种情况捕获并处理传入的异常得到下一个-yield-的返回值">（第一种情况：捕获并处理传入的异常，得到下一个 yield 的返回值。</a></li>
+        <li><a href="#第二种情况没有捕获并处理-throw-传入的异常异常会回传给调用方">（第二种情况：没有捕获并处理 throw 传入的异常，异常会回传给调用方</a></li>
+        <li><a href="#第三种情况生成器退出时没有-yield-新值会抛出-stopiteration-异常">（第三种情况：生成器退出时没有 yield 新值，会抛出 StopIteration 异常。</a></li>
+      </ul>
+    </li>
+    <li><a href="#生成器的-close-方法">生成器的 close 方法</a>
+      <ul>
+        <li><a href="#第一种情况">（第一种情况：</a></li>
+        <li><a href="#第二种情况">（第二种情况：</a></li>
+        <li><a href="#第三种情况">（第三种情况：</a></li>
+        <li><a href="#第四种情况">（第四种情况：</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#1-容易实现">1. 容易实现</a></li>
+    <li><a href="#2内存高效">2.内存高效</a></li>
+    <li><a href="#3-表示无限流">3. 表示无限流</a></li>
+    <li><a href="#4管道生成器">4.管道生成器</a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#todo">TODO</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#send-方法详解">send 方法详解</a></li>
+    <li><a href="#throw-方法详解">throw 方法详解</a>
+      <ul>
+        <li><a href="#第一种情况捕获并处理传入的异常得到下一个-yield-的返回值">（第一种情况：捕获并处理传入的异常，得到下一个 yield 的返回值。</a></li>
+        <li><a href="#第二种情况没有捕获并处理-throw-传入的异常异常会回传给调用方">（第二种情况：没有捕获并处理 throw 传入的异常，异常会回传给调用方</a></li>
+        <li><a href="#第三种情况生成器退出时没有-yield-新值会抛出-stopiteration-异常">（第三种情况：生成器退出时没有 yield 新值，会抛出 StopIteration 异常。</a></li>
+      </ul>
+    </li>
+    <li><a href="#生成器的-close-方法">生成器的 close 方法</a>
+      <ul>
+        <li><a href="#第一种情况">（第一种情况：</a></li>
+        <li><a href="#第二种情况">（第二种情况：</a></li>
+        <li><a href="#第三种情况">（第三种情况：</a></li>
+        <li><a href="#第四种情况">（第四种情况：</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#1-容易实现">1. 容易实现</a></li>
+    <li><a href="#2内存高效">2.内存高效</a></li>
+    <li><a href="#3-表示无限流">3. 表示无限流</a></li>
+    <li><a href="#4管道生成器">4.管道生成器</a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>

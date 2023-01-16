@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on AI YOYO</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Jan 2023 23:38:29 +0800</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Note_Editor_Compared</title>
+      <link>/post/note_editor_compared/</link>
+      <pubDate>Sat, 14 Jan 2023 23:38:29 +0800</pubDate>
+      
+      <guid>/post/note_editor_compared/</guid>
+      <description>陆陆续续使用了不少软件记录笔记，从最初的记事本，word 再到现在用过的各种 markdown 软件，各有特色，做个总结吧，希望对没有接触过的有个直观的了解。 有的软件是早期的时候使用的，所以可能会出现上面写的一些问题在下</description>
+    </item>
+    
+    <item>
+      <title>githubPage</title>
+      <link>/post/githubpage/</link>
+      <pubDate>Sat, 14 Jan 2023 00:13:07 +0800</pubDate>
+      
+      <guid>/post/githubpage/</guid>
+      <description>框架及实现语言 静态网站的生成框架挺多，这里举几个流行的。 框架 实现语言 Jekyll Ruby Hexo Node.js Hugo Go Pelican Python Middleman Ruby Metalsmith nodejs Wintersmith Nodejs Cactus Python+Django 之前使用过 Pelican，之所以使用它而不是其他的框架是考虑到自己使用的是 Python，如果有自定义</description>
+    </item>
+    
+    <item>
+      <title>generator</title>
+      <link>/post/generator/</link>
+      <pubDate>Fri, 13 Jan 2023 23:04:36 +0800</pubDate>
+      
+      <guid>/post/generator/</guid>
+      <description>yield 关键字初识 先看一个简单例子： def yie(): n = 1 yield n print(n) n += 1 yield n print(n) n += 1 yield n print(n) a = yie() one = next(a) print(f&#39;one {one}&#39;) two = next(a) print(f&#39;two {two}&#39;) thr = next(a) print(f&#39;thr {thr}&#39;) # one 1 # 1 # two 2 # 2 # thr 3 当调用时，遇到 yield 关键字时函数和遇到 return 用类似的结果，返回一个值，但不同</description>
+    </item>
+    
+    <item>
+      <title>Git_examples</title>
+      <link>/post/git_examples/</link>
+      <pubDate>Fri, 13 Jan 2023 14:36:53 +0800</pubDate>
+      
+      <guid>/post/git_examples/</guid>
+      <description>需求：有一个文件在两个月之前删除了，但是现在想看看里面的内容</description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>/post/vim/</link>
+      <pubDate>Wed, 11 Jan 2023 00:16:08 +0800</pubDate>
+      
+      <guid>/post/vim/</guid>
+      <description>插件 插件管理器vim-plug curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 其他插件及配置 配置文件vimrc里面有详细的备注，就不一个个展开了。 快捷键设置 模式映射 使用h key-notation命令查看帮助信息,查看键盘符号的详细说明 notation meaning</description>
+    </item>
+    
+    <item>
+      <title>myShell</title>
+      <link>/post/myshell/</link>
+      <pubDate>Mon, 09 Jan 2023 21:39:39 +0800</pubDate>
+      
+      <guid>/post/myshell/</guid>
+      <description>查找并过滤出自己 markdown 笔记项目下的所有图片名 find . -name images | xargs ls -l | grep -E &amp;quot;rw&amp;quot; | tr -s &amp;quot; &amp;quot; | cut -d &amp;quot; &amp;quot; -f 9 过滤出文件中所有使用的图片名 find . -name &amp;quot;*md&amp;quot; | xargs cat | sed -n &#39;s/.*images\/\(.*png\).*/\1/p&#39; 这里有个陷阱，find 命令查找的内容名并不会自动转义，比如空格</description>
+    </item>
+    
+    <item>
+      <title>spider</title>
+      <link>/post/spider/</link>
+      <pubDate>Mon, 09 Jan 2023 20:17:50 +0800</pubDate>
+      
+      <guid>/post/spider/</guid>
+      <description>第五章 爬虫 一、常用库与模块 1. 试列出至少三种目前流行的大型数据库的名称: ____、____、____, 其中您最熟悉的是 ____, 从 ____ 年开始使用（考察对数据可的熟悉程度，同时考察你的工作年限注意和自己简历一致）。</description>
+    </item>
+    
+    <item>
+      <title>python_</title>
+      <link>/post/python_/</link>
+      <pubDate>Mon, 09 Jan 2023 19:38:13 +0800</pubDate>
+      
+      <guid>/post/python_/</guid>
+      <description>一、元类 1.Python 中类方法、类实例方法、静态方法有何区别？ 类方法：是类对象的方法，在定义时需要在上方使用 @classmethod 进行装饰，形参为 cls，表示类对象，类对象和实例对象都可调用； 类实例方法：是类实例化对象的方法，只有实</description>
+    </item>
+    
+    <item>
+      <title>python_base</title>
+      <link>/post/python_base/</link>
+      <pubDate>Mon, 09 Jan 2023 18:44:22 +0800</pubDate>
+      
+      <guid>/post/python_base/</guid>
+      <description>一、基础语法 1. 输入与输出 1.1 代码中要修改不可变数据会出现什么问题？抛出什么异常？ 代码不会正常运行，抛出 TypeError 异常。 1.2 a=1,b=2, 不用中间变量交换 a 和 b 的值？ 方法一： a = a + b b = a - b a = a - b 方法二： a = a ^ b b =</description>
+    </item>
+    
+    <item>
+      <title>非技术</title>
+      <link>/post/%E9%9D%9E%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Mon, 09 Jan 2023 18:20:09 +0800</pubDate>
+      
+      <guid>/post/%E9%9D%9E%E6%8A%80%E6%9C%AF/</guid>
+      <description>面试前的准备 首先我们要穿的得体，因为第一印象对一个面试官来说真的很重要，如果我们面试的时候都不能以一种非常认真的态度去对待，那么可想而知其实我们离面试成功的路渐行渐远，当然这只是说第一印象，并不能代表</description>
+    </item>
+    
+    <item>
+      <title>Shell</title>
+      <link>/post/shell/</link>
+      <pubDate>Mon, 09 Jan 2023 18:19:24 +0800</pubDate>
+      
+      <guid>/post/shell/</guid>
+      <description>第六章 shell 与自动化运维 使用变量的两种方法？各自适合的场景？区别？ 单双引号的区别？ $* 和 $@ 区别？ 字符串的只读、删除、长度输出 shell中命令替换的两种方式，以及有什么区别 变量的间接引用 文件按行处理的多种方式</description>
+    </item>
+    
+    <item>
+      <title>mysql</title>
+      <link>/post/mysql/</link>
+      <pubDate>Mon, 09 Jan 2023 18:18:47 +0800</pubDate>
+      
+      <guid>/post/mysql/</guid>
+      <description>Mysql 基本语句 1、from 子句组装来自不同数据源的数据； 2、where 子句基于指定的条件对记录行进行筛选； 3、group by 子句将数据划分为多个分组； 4、使用聚集函数进行计算； 5、使用 having 子句筛选分组； 6、计</description>
+    </item>
+    
+    <item>
+      <title>mongo</title>
+      <link>/post/mongo/</link>
+      <pubDate>Mon, 09 Jan 2023 18:07:25 +0800</pubDate>
+      
+      <guid>/post/mongo/</guid>
+      <description>数据库的一些基本操作命令（列举一些常用命令即可）？ MongoDB 的常见命令如下： db.help (); Help 查看命令提示 use yourDB; 切换 / 创建数据库 show dbs; 查询所有数据库 db.dropDatabase (); 删除当前使用数据库 db.getName (); 查看当前使用的数据库 db.version (); 当前 db 版本 db.addUser (&amp;quot;name&amp;quot;); 添加用户 db.addUser (&amp;quot;userName&amp;quot;,</description>
+    </item>
+    
+    <item>
+      <title>redis</title>
+      <link>/post/redis/</link>
+      <pubDate>Mon, 09 Jan 2023 17:40:42 +0800</pubDate>
+      
+      <guid>/post/redis/</guid>
+      <description>redis 是什么？ redis 是 nosql(也是个巨大的 map) 单线程，但是可处理 1 秒 10w 的并发（数据都在内存中） Redis 的全称是：Remote Dictionary.Server，本质上是一个 Key-Value 类型的内存数据库，很像memcache</description>
+    </item>
+    
+    <item>
+      <title>Proxy</title>
+      <link>/post/proxy/</link>
+      <pubDate>Sun, 08 Jan 2023 23:21:02 +0800</pubDate>
+      
+      <guid>/post/proxy/</guid>
+      <description>proxy protocol Shadowsocks（SS） ShadowsocksR（SSR） V2Ray VrayX Trojan Trojan-Go 详细的就不累赘了，我了解的也不是很完全，墙内目前也有些介绍，但是只要能翻出去，资料就很多了。这里给出几篇文章，里面有详细介绍</description>
+    </item>
+    
+    <item>
+      <title>keyboard</title>
+      <link>/post/keyboard/</link>
+      <pubDate>Sun, 08 Jan 2023 15:56:55 +0800</pubDate>
+      
+      <guid>/post/keyboard/</guid>
+      <description>一些键盘知识及可选方案 PCB 板： 旧键盘的 PCB 板 网上的自打板 网上开源方案自己找人打印 键盘配列： 键位数量：104、84、78、61 等等。 键位占比：100%、75%、60℀ 。 键帽： 材质：PBT、ABS、POM 等。</description>
+    </item>
+    
+    <item>
+      <title>compress</title>
+      <link>/post/compress/</link>
+      <pubDate>Sun, 08 Jan 2023 15:18:04 +0800</pubDate>
+      
+      <guid>/post/compress/</guid>
+      <description>1. tar 参数 说明 -c 建立压缩档案 -x 解压 -t 查看内容 -r 向压缩归档文件末尾追加文件 -u 更新原压缩包中的文件 这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩</description>
+    </item>
+    
+    <item>
+      <title>DesktopEnvironment</title>
+      <link>/post/desktopenvironment/</link>
+      <pubDate>Thu, 05 Jan 2023 19:04:05 +0800</pubDate>
+      
+      <guid>/post/desktopenvironment/</guid>
+      <description>陆陆续续使用了不少 linux 发行版的不同桌面环境，对几个常见的桌面环境也算是有了些使用心得，简单记录一下。 KDE 基于 Qt，桌面环境提供了丰富的可选项，可直接通过图形化的方式配置、调整自己的桌面样式、配色。DIY 自</description>
+    </item>
+    
+    <item>
+      <title>Fedora</title>
+      <link>/post/fedora/</link>
+      <pubDate>Thu, 05 Jan 2023 15:24:52 +0800</pubDate>
+      
+      <guid>/post/fedora/</guid>
+      <description>OS : Fedora Linux 36 (Workstation Edition) cat /etc/os-release NAME=&amp;quot;Fedora Linux&amp;quot; VERSION=&amp;quot;36 (Workstation Edition)&amp;quot; ID=fedora VERSION_ID=36 VERSION_CODENAME=&amp;quot;&amp;quot; PLATFORM_ID=&amp;quot;platform:f36&amp;quot; PRETTY_NAME=&amp;quot;Fedora Linux 36 (Workstation Edition)&amp;quot; ANSI_COLOR=&amp;quot;0;38;2;60;110;180&amp;quot; LOGO=fedora-logo-icon CPE_NAME=&amp;quot;cpe:/o:fedoraproject:fedora:36&amp;quot; HOME_URL=&amp;quot;https://fedoraproject.org/&amp;quot; DOCUMENTATION_URL=&amp;quot;https://docs.fedoraproject.org/en-US/fedora/f36/system-administrators-guide/&amp;quot; SUPPORT_URL=&amp;quot;https://ask.fedoraproject.org/&amp;quot; BUG_REPORT_URL=&amp;quot;https://bugzilla.redhat.com/&amp;quot; REDHAT_BUGZILLA_PRODUCT=&amp;quot;Fedora&amp;quot; REDHAT_BUGZILLA_PRODUCT_VERSION=36 REDHAT_SUPPORT_PRODUCT=&amp;quot;Fedora&amp;quot; REDHAT_SUPPORT_PRODUCT_VERSION=36 PRIVACY_POLICY_URL=&amp;quot;https://fedoraproject.org/wiki/Legal:PrivacyPolicy&amp;quot; SUPPORT_END=2023-05-16 VARIANT=&amp;quot;Workstation Edition&amp;quot; VARIANT_ID=workstation 输入法 默认的是ibus框架，直接进入输入法配置添加了Intelligent Pinyin ，每次配置 fcitx 挺麻烦，这次使用发现挺好的。 虽然麻</description>
+    </item>
+    
+    <item>
+      <title>FedoraInputMethod</title>
+      <link>/post/fedorainputmethod/</link>
+      <pubDate>Wed, 04 Jan 2023 22:01:47 +0800</pubDate>
+      
+      <guid>/post/fedorainputmethod/</guid>
+      <description>OS : Fedora Linux 36 (Workstation Edition) cat /etc/os-release NAME=&amp;quot;Fedora Linux&amp;quot; VERSION=&amp;quot;36 (Workstation Edition)&amp;quot; ID=fedora VERSION_ID=36 VERSION_CODENAME=&amp;quot;&amp;quot; PLATFORM_ID=&amp;quot;platform:f36&amp;quot; PRETTY_NAME=&amp;quot;Fedora Linux 36 (Workstation Edition)&amp;quot; ANSI_COLOR=&amp;quot;0;38;2;60;110;180&amp;quot; LOGO=fedora-logo-icon CPE_NAME=&amp;quot;cpe:/o:fedoraproject:fedora:36&amp;quot; HOME_URL=&amp;quot;https://fedoraproject.org/&amp;quot; DOCUMENTATION_URL=&amp;quot;https://docs.fedoraproject.org/en-US/fedora/f36/system-administrators-guide/&amp;quot; SUPPORT_URL=&amp;quot;https://ask.fedoraproject.org/&amp;quot; BUG_REPORT_URL=&amp;quot;https://bugzilla.redhat.com/&amp;quot; REDHAT_BUGZILLA_PRODUCT=&amp;quot;Fedora&amp;quot; REDHAT_BUGZILLA_PRODUCT_VERSION=36 REDHAT_SUPPORT_PRODUCT=&amp;quot;Fedora&amp;quot; REDHAT_SUPPORT_PRODUCT_VERSION=36 PRIVACY_POLICY_URL=&amp;quot;https://fedoraproject.org/wiki/Legal:PrivacyPolicy&amp;quot; SUPPORT_END=2023-05-16 VARIANT=&amp;quot;Workstation Edition&amp;quot; VARIANT_ID=workstation 官方的包管理器并没有 fcitx 相关的包，能不能自己编译安装没有测试。由于该版本的桌面环境是 gnome，内置了 ibus 框架，在安装使用较其</description>
+    </item>
+    
+    <item>
+      <title>Android_soft</title>
+      <link>/post/android_soft/</link>
+      <pubDate>Tue, 03 Jan 2023 16:45:29 +0800</pubDate>
+      
+      <guid>/post/android_soft/</guid>
+      <description>局域网传输 Feem: 局域网文本传送 消息互传 (端对端传输，非开源产品，免费用户有广告，切到后台传输会被中断，但是有断点续传，优点感觉是可以整体传输文件夹吧) LANDrop: 端对端传输，对平台适配。不能消息通信。 开源软件。 Airdroid: 剪</description>
+    </item>
+    
+    <item>
+      <title>ManjaroInputMethod</title>
+      <link>/post/manjaroinputmethod/</link>
+      <pubDate>Mon, 02 Jan 2023 22:42:55 +0800</pubDate>
+      
+      <guid>/post/manjaroinputmethod/</guid>
+      <description>在 Manjaro-KDE 和 Manjaro-XFCE 正常配置。 fcitx 安装 sudo pacman -S --noconfirm fcitx-im kcm-fcitx fcitx-configtool 配置 fcitx sudo echo -e &amp;quot;export GTK_IM_MODULE=fcitx\nexport QT_IM_MODULE=fcitx\nexport XMODIFIERS=@im=fcitx&amp;quot;&amp;gt;&amp;gt;~/.xprofile googlepinyin sudo pacman -S fcitx-googlepinyin 重启后在状态栏找到键盘右键 -- config -- input method -- 添加后确认应用生效，默认的切换输入法快捷键为ctrl + 空格 可自行安装搜狗输入法，manjaro</description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>/post/windows/</link>
+      <pubDate>Mon, 26 Dec 2022 21:07:50 +0800</pubDate>
+      
+      <guid>/post/windows/</guid>
+      <description>[toc] Win10 win10配置 一、系统安装 WinPE安装比较直观、简单的，过程先放放吧，忘记了 激活： 二、软件 看图 Honeyview(蜂蜜浏览器) 搭配bandizip看图简直不要太爽，唯一不足的是只能作为一款纯看图</description>
+    </item>
+    
+    <item>
+      <title>sublime_base</title>
+      <link>/post/sublime_base/</link>
+      <pubDate>Mon, 26 Dec 2022 15:06:52 +0800</pubDate>
+      
+      <guid>/post/sublime_base/</guid>
+      <description>官网 插件： 插件的管理工具在 sublime 3 中的安装方式如下，sublime 4 可以通过 Ctrl+Shift+P 查找安装。 按 ctrl + \ 或者View &amp;gt; Show Console，打开 Console 一次性输入如下代码，回车： import urllib.request,os,hashlib; h = &#39;6f4c264a24d933ce70df5dedcf1dcaee&#39; + &#39;ebe013ee18cced0ef93d5f746d80ef60&#39;; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &#39;http://packagecontrol.io/&#39;</description>
+    </item>
+    
+    <item>
+      <title>Youtube-dl</title>
+      <link>/post/youtube-dl/</link>
+      <pubDate>Mon, 26 Dec 2022 15:05:40 +0800</pubDate>
+      
+      <guid>/post/youtube-dl/</guid>
+      <description>安装及使用： 项目地址https://github.com/ytdl-org/youtube-dl 具体的安装方式去看挑选一个适合且可用的即可，我在这使用的是 pip 安装 pip3 install youtube-dl 最简单的使用 youtube-dl url即可下载，但是</description>
+    </item>
+    
+    <item>
+      <title>sublime_frontEnd</title>
+      <link>/post/sublime_frontend/</link>
+      <pubDate>Mon, 26 Dec 2022 15:02:27 +0800</pubDate>
+      
+      <guid>/post/sublime_frontend/</guid>
+      <description>emmet： 前端神器。一个可以极大提高 web 开发者 HTML 和 CSS 工作效率的工具箱组件。 查看介绍 问题： 如下报错： 因为下载下来的 PyV8 的包是一个文件夹，按照正常情况是放在 packages 下的，但是安装之后一直无法使用，以为是快捷键冲突</description>
+    </item>
+    
+    <item>
+      <title>sublime_go</title>
+      <link>/post/sublime_go/</link>
+      <pubDate>Mon, 26 Dec 2022 15:01:23 +0800</pubDate>
+      
+      <guid>/post/sublime_go/</guid>
+      <description>Golang Build The official Sublime Text package for Go build system integration. 安装后需要配置后使用，比如 { &amp;quot;PATH&amp;quot;: &amp;quot;/opt/go/bin&amp;quot;, &amp;quot;GOPATH&amp;quot;: &amp;quot;/home/aiyoyo/go&amp;quot; } GoSublime 如果没法通过包管理器安装，可以选择下载安装 cd /~.config/sublime-text/Packages &amp;amp;&amp;amp; git clone https://margo.sh/GoSublime 依赖：go get golang.org/x/tools/cmd/goimports { &amp;quot;env&amp;quot;: { &amp;quot;GOPATH&amp;quot;: &amp;quot;/home/aiyoyo/go&amp;quot;, &amp;quot;GOROOT&amp;quot;: &amp;quot;/opt/go&amp;quot; } , &amp;quot;gscomplete_enabled&amp;quot;: true, &amp;quot;fmt_enabled&amp;quot;: true, &amp;quot;fmt_tab_indent&amp;quot;: false, &amp;quot;fmt_tab_width&amp;quot;: 4, &amp;quot;autocomplete_snippets&amp;quot;: true, &amp;quot;autocomplete_tests&amp;quot;: true, &amp;quot;autocomplete_builtins&amp;quot;: true, &amp;quot;autocomplete_closures&amp;quot;: true, &amp;quot;autocomplete_suggest_imports&amp;quot;: true, &amp;quot;calltips&amp;quot;: true, &amp;quot;use_named_imports&amp;quot;: true, &amp;quot;autoinst&amp;quot;: true, &amp;quot;ipc_timeout&amp;quot;:</description>
+    </item>
+    
+    <item>
+      <title>sublime_LSP</title>
+      <link>/post/sublime_lsp/</link>
+      <pubDate>Mon, 26 Dec 2022 15:01:12 +0800</pubDate>
+      
+      <guid>/post/sublime_lsp/</guid>
+      <description>设备信息 Linux VERSIONS ： Fedora release 36 (Thirty Six) Sublime VERSIONS： Sublime Text 4143 简介 1、各个插件的依赖，比如LSP-pylsp依赖python-lsp-server包，并不需要自己进行安装配置，只需要有基本的环境，比如go python rust node n</description>
+    </item>
+    
+    <item>
+      <title>sublime_markdown</title>
+      <link>/post/sublime_markdown/</link>
+      <pubDate>Mon, 26 Dec 2022 15:00:57 +0800</pubDate>
+      
+      <guid>/post/sublime_markdown/</guid>
+      <description>MarkdownPreview Markdown转HTML，提供在浏览器中的预览功能 LiveReload LiveReload 一个提供md/html等文档的实时刷新预览的的插件 ,插件安装后需要手动开启相应的功能并且需要在浏览器上安装相应插件。不过浏览器的预览不会随着 sublime</description>
+    </item>
+    
+    <item>
+      <title>sublime_python</title>
+      <link>/post/sublime_python/</link>
+      <pubDate>Mon, 26 Dec 2022 15:00:42 +0800</pubDate>
+      
+      <guid>/post/sublime_python/</guid>
+      <description>方案一 Virtualenv # 虚拟环境切换,需要 `virtualenv` 包支持，还可通过设置中的 `&amp;quot;virtualenv_directories&amp;quot;=[] // virtualenvwrapper $WORKON_HOME` 配置自己的虚拟环境目录，这样可调用在外设置的虚拟环境 Jedi - Python autocompletion # 语法补全，而且与 Virtualenv 无冲突，也可以手动配置虚拟环境，但麻烦些 AutoPEP8 # 快捷方式快速对</description>
+    </item>
+    
+    <item>
+      <title>Tampermonkey_script</title>
+      <link>/post/tampermonkey_script/</link>
+      <pubDate>Mon, 26 Dec 2022 14:59:47 +0800</pubDate>
+      
+      <guid>/post/tampermonkey_script/</guid>
+      <description>脚本的使用是在安装了 Tampermonkey 的基础上 all-search 全搜 一个搜索引擎快捷跳转菜单, 支持图形界面自定义 除了支持谷歌、百度、duck搜索等搜索引擎外，还支持图片、翻译、开发工具（github）等的快速跳转 BaiduMonkeyW 改善百度的搜索结果</description>
+    </item>
+    
+    <item>
+      <title>Chrome_extensions</title>
+      <link>/post/chrome_extensions/</link>
+      <pubDate>Mon, 26 Dec 2022 14:59:36 +0800</pubDate>
+      
+      <guid>/post/chrome_extensions/</guid>
+      <description>Adblock AdGuard AdBlocker 屏蔽广告 Bookmark Sidebar 收藏夹侧边栏显示，且打开可设置为在新标签打开 原来的收藏夹在上面会占用一定的空间，且如果一直显示有时候在给别人展示的时候，会比较尴尬，快捷键去打开也比较麻烦 Clear history, Cache &amp;amp; Cookies for Chrome 每次进入 Setting 去清</description>
+    </item>
+    
+    <item>
+      <title>webResource</title>
+      <link>/post/webresource/</link>
+      <pubDate>Mon, 26 Dec 2022 14:51:04 +0800</pubDate>
+      
+      <guid>/post/webresource/</guid>
+      <description>tools shellcheck bash-language-server 的语法检查工具，这个网站可以在线进行语法检查，而且会给出一些修改建议，有的能运行但是不符合其检查要求的可以根据相应的提示去跳转到相应的介绍，有详细的实例介绍，可以对照着修改，慢慢就能养成好习惯，</description>
+    </item>
+    
+    <item>
+      <title>shell_practive</title>
+      <link>/post/shell_practive/</link>
+      <pubDate>Mon, 26 Dec 2022 14:49:55 +0800</pubDate>
+      
+      <guid>/post/shell_practive/</guid>
+      <description>（1）请按照这样的日期格式（xxxx-xx-xx）每日生成一个文件，例如今天生成的文件为2017-07-05.log， 并且把磁盘的使用情况写到到这个文件中，（不用考虑cron，仅仅写脚本即可）！ #! /bin/bash d=`date</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>/post/ubuntu/</link>
+      <pubDate>Mon, 26 Dec 2022 14:49:27 +0800</pubDate>
+      
+      <guid>/post/ubuntu/</guid>
+      <description>questions Failed to load module &amp;ldquo;xapp-gtk3-module&amp;rdquo; Installing xapp installs the missing modules and removes the warning sudo apt install xapp 某个命令平时能正常使用，加sudo或者进入root用户显示命令未找到 以node，npm为例，自己下载了包解压到/opt并且在当前用户.bashrc文件配置了环境</description>
+    </item>
+    
+    <item>
+      <title>shell_question</title>
+      <link>/post/shell_question/</link>
+      <pubDate>Mon, 26 Dec 2022 14:49:14 +0800</pubDate>
+      
+      <guid>/post/shell_question/</guid>
+      <description>数组作为函数参数的问题 ` #!/bin/bash urlOne=&amp;ldquo;https://raw.githubusercontent.com/ngosang/trackerslist/master/&#34; arrayOne=(&amp;ldquo;trackers_all.txt&amp;rdquo; &amp;ldquo;trackers_all_http.txt&amp;rdquo; &amp;ldquo;trackers_all_https.txt&amp;rdquo; &amp;ldquo;trackers_all_ip.txt&amp;rdquo; &amp;ldquo;trackers_all_udp.txt&amp;rdquo; &amp;ldquo;trackers_all_ws.txt&amp;rdquo; &amp;ldquo;trackers_best.txt&amp;rdquo; &amp;ldquo;trackers_best_ip.txt&amp;rdquo;) function getTracker(){ array=$2 echo ${array[]} for i in ${array[]} do url=&amp;quot;${1}${i}&amp;rdquo; echo &amp;ldquo;wget $url&amp;rdquo; done } getTracker ${urlOne} &amp;ldquo;${arrayOne[]}&amp;rdquo; ` 因为不是只传一个数组，要考虑其他参数的情况，而且数组不一定在最前最后，即尽量不在函数内使用&amp;quot;$@&amp;quot</description>
+    </item>
+    
+    <item>
+      <title>Server_Selection</title>
+      <link>/post/server_selection/</link>
+      <pubDate>Mon, 26 Dec 2022 14:48:27 +0800</pubDate>
+      
+      <guid>/post/server_selection/</guid>
+      <description>国外和国内性价比比较高的云服务器对比： 一、国外性价比较高的云服务器的厂商 1、google云 官网：https://cloud.google.com/ 优势：注册即送300美元的免费试用赠金，有效期是1年 创</description>
+    </item>
+    
+    <item>
+      <title>other</title>
+      <link>/post/other/</link>
+      <pubDate>Mon, 26 Dec 2022 14:46:44 +0800</pubDate>
+      
+      <guid>/post/other/</guid>
+      <description>wget -m -e robots=off -k -E &amp;quot;https://python3webspider.cuiqingcai.com/&amp;quot; wget整站抓取、网站抓取功能；下载整个网站；下载网站到本地 wget -r -p -np -k -E http://www.xxx.com 抓取整站 wget -l 1 -p -np -k http://www.xxx.com 抓取第一级 -r 递归抓取 -k 抓取之后修正链接，适合本地浏览 wget -m -e robots=off -k -E &amp;quot;http://www.abc.net/&amp;quot; 可以将全站下载以本地的当</description>
+    </item>
+    
+    <item>
+      <title>Manjaro_Xfce</title>
+      <link>/post/manjaro_xfce/</link>
+      <pubDate>Mon, 26 Dec 2022 14:46:31 +0800</pubDate>
+      
+      <guid>/post/manjaro_xfce/</guid>
+      <description>Manjaro_KDE的大多数内容都是可以应用到这上面来的。 之前的 manajaro-kde 为18版本，当时分区/boot/efi并没有出错，但是在这次的 manjaro-xfce-20.1 如此分区时安装到后期报错，大概看后解释说是因为先安装有 win10,w</description>
+    </item>
+    
+    <item>
+      <title>Manjaro_Proxy</title>
+      <link>/post/manjaro_proxy/</link>
+      <pubDate>Mon, 26 Dec 2022 14:45:41 +0800</pubDate>
+      
+      <guid>/post/manjaro_proxy/</guid>
+      <description>一、（图形化软件）Qv2ray 全平台： linux、win 、mac 都可有可使用的版本 是开源的的第三方图形化界面，可以直接使用v2ray，在而且在添加插件后可使用 ssr、torjan 等其他，现在在使用的就</description>
+    </item>
+    
+    <item>
+      <title>Manjaro_KDE</title>
+      <link>/post/manjaro_kde/</link>
+      <pubDate>Mon, 26 Dec 2022 14:44:54 +0800</pubDate>
+      
+      <guid>/post/manjaro_kde/</guid>
+      <description>！！！ 如何选择manajro 现在有 Xfce 、GNOME 和 KDE Plasma 作为默认桌面环境的3个版本，桌面环境差异不是很大，主要差异为如果按照桌面的轻量级排序 Xfce &amp;gt; GNOME &amp;gt; KDE Plasma 。 Xfce 是最轻量的，比较老的电脑可以选择这个。 GNOME 是以前</description>
+    </item>
+    
+    <item>
+      <title>linux_ShellDeep</title>
+      <link>/post/linux_shelldeep/</link>
+      <pubDate>Mon, 26 Dec 2022 14:43:37 +0800</pubDate>
+      
+      <guid>/post/linux_shelldeep/</guid>
+      <description>使用变量 使用一个定义过的变量，只要在变量名前面加美元符号$即可. 变量名外面的花括号{ }是可选的，加不加都行，加花括号是为了帮助解释器识别变量的边界. 单引号和双引号的区别 以单引号&amp;rsquo; &amp;lsqu</description>
+    </item>
+    
+    <item>
+      <title>linux_command</title>
+      <link>/post/linux_command/</link>
+      <pubDate>Mon, 26 Dec 2022 14:04:32 +0800</pubDate>
+      
+      <guid>/post/linux_command/</guid>
+      <description>grep grep （global search regular expression(RE) and print out the line,全面搜索正则表达式并把行打印出来）是一种强大的文本搜索工具，它能使用正则表达式搜索文本，并把匹配的行打印出来。 Unix 的 grep 家族包括 grep、egrep 和 fgrep。</description>
+    </item>
+    
+    <item>
+      <title>Kali</title>
+      <link>/post/kali/</link>
+      <pubDate>Mon, 26 Dec 2022 13:06:25 +0800</pubDate>
+      
+      <guid>/post/kali/</guid>
+      <description>kali的一些默认账户密码 https://www.kali.org/docs/introduction/default-credentials/ Kali changed to a non-root user policy by default since the release of 2020.1. This means: During the installation of amd64 and i386 images, it will prompt you for a standard user account to be created. Any default operating system credentials used during Live Boot, or pre-created image (like Virtual Machines &amp;amp; ARM) will be: User: kali Password: kali Vagrant image (based on their policy): Username: vagrant Password: vagrant Amazon EC2: User: kali Password: &amp;lt;ssh key&amp;gt; Default Tool Credentials Some tools shipped with Kali, will use</description>
+    </item>
+    
+    <item>
+      <title>NeoVim</title>
+      <link>/post/neovim/</link>
+      <pubDate>Wed, 14 Dec 2022 19:13:22 +0800</pubDate>
+      
+      <guid>/post/neovim/</guid>
+      <description>有兴趣的可以去查下NeoVim项目的创作初衷，实际使用和Vim几乎是一样的，但NeoVim在某些方面是有独到之处的，发布的时间并没有很长，但是以及积累了大量用户，甚至从Vim转的也不少，插件系统几乎兼</description>
+    </item>
+    
+    <item>
+      <title>model_itertools</title>
+      <link>/post/model_itertools/</link>
+      <pubDate>Fri, 18 Nov 2022 23:39:24 +0800</pubDate>
+      
+      <guid>/post/model_itertools/</guid>
+      <description>itertools 标准化了一个快速、高效利用内存的核心工具集，这些工具本身或组合都很有用。它们一起形成了“迭代器代数”，这使得在纯 Python 中有可能创建简洁又高效的专用工具。 无穷迭代器： count() itertools.count(start=0, step=1) 可以设置两个参数，第一个参数为起</description>
+    </item>
+    
+    <item>
+      <title>front_end</title>
+      <link>/post/front_end/</link>
+      <pubDate>Fri, 18 Nov 2022 23:24:59 +0800</pubDate>
+      
+      <guid>/post/front_end/</guid>
+      <description>第三章 前端 01 什么是防抖和节流，他们的应用场景有哪些? 在 Issue 中交流与讨论: 01 什么是防抖和节流，他们的应用场景有哪些 防抖 (debounce) 防抖，顾名思义，防止抖动，以免把一次事件误认为多次，敲键盘就是一个每天都会接触到的防</description>
+    </item>
+    
+    <item>
+      <title>dataStruct</title>
+      <link>/post/datastruct/</link>
+      <pubDate>Fri, 18 Nov 2022 23:04:49 +0800</pubDate>
+      
+      <guid>/post/datastruct/</guid>
+      <description>第十章 数据结构与算法 1. 算法的特征？ 1） 有穷性： 一个算法必须保证执行有限步骤之后结束； 2） 确切性： 算法的每一步骤必须有确切的定义； 3） 输入：一个算法有 0 个或多个输入,以刻画运算对象的初始情况,所谓 0 个输</description>
+    </item>
+    
+    <item>
+      <title>questions</title>
+      <link>/post/questions/</link>
+      <pubDate>Fri, 18 Nov 2022 23:03:36 +0800</pubDate>
+      
+      <guid>/post/questions/</guid>
+      <description>第十一章 企业真题实战 一、360 面试题 1. 请拿出 B 表中的 accd，(A 表中和 B 表中的一样的数据)？ select * from B inner join on B.name = A.name 2. a = &amp;lsquo;abbbccc&amp;rsquo;，用正则匹配为 abccc, 不管有多少 b，就出现一</description>
+    </item>
+    
+    <item>
+      <title>101个MySQL优化提示</title>
+      <link>/post/101%E4%B8%AAmysql%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/101%E4%B8%AAmysql%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA/</guid>
+      <description>MySQL 服务器硬件和操作系统调节: 拥有足够的物理内存来把整个InnoDB文件加载到内存中——在内存中访问文件时的速度要比在硬盘中访问时快的多。 不惜一切代价避免使用Swap交换分区 – 交换时是从硬盘读取的，它的</description>
+    </item>
+    
+    <item>
+      <title>Aria2</title>
+      <link>/post/aria2/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/aria2/</guid>
+      <description>1. 简介： linux 中拥有大量的下载工具，不过没有一个像迅雷那样在windows中文世界中占有统治地位。 对于一般 linux 用户常用的下载工具，比如gnome和kde等桌面环境中自带的 utorrent 或 ktorrent ， 自身下载速度不快，还有着占用</description>
+    </item>
+    
+    <item>
+      <title>built-in-functions</title>
+      <link>/post/built-in-functions/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/built-in-functions/</guid>
+      <description>map() map()函数语法： map(function,iterable,&amp;hellip;) 参数: function&amp;ndash;函数 iterable&amp;ndash;一个或多个序列 返回值 Python2.x返回列表。 Python3.x返回迭代器对象。 传很多个iterable</description>
+    </item>
+    
+    <item>
+      <title>cookie_session_token</title>
+      <link>/post/cookie_session_token/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/cookie_session_token/</guid>
+      <description>Cookie 和 Session 的区别 安全性： Session 比 Cookie 安全，Session 是存储在服务器端的，Cookie 是存储在客户端的。 存取值的类型不同：Cookie 只支持存字符串数据，想要设置其他类型的数据，需要将其转换成字符串，Sess</description>
+    </item>
+    
+    <item>
+      <title>CP_1_阻塞非阻塞、异步同步、并行并发</title>
+      <link>/post/cp_1_%E9%98%BB%E5%A1%9E%E9%9D%9E%E9%98%BB%E5%A1%9E%E5%BC%82%E6%AD%A5%E5%90%8C%E6%AD%A5%E5%B9%B6%E8%A1%8C%E5%B9%B6%E5%8F%91/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/cp_1_%E9%98%BB%E5%A1%9E%E9%9D%9E%E9%98%BB%E5%A1%9E%E5%BC%82%E6%AD%A5%E5%90%8C%E6%AD%A5%E5%B9%B6%E8%A1%8C%E5%B9%B6%E5%8F%91/</guid>
+      <description>1. 阻塞，非阻塞 首先，阻塞这个词来自操作系统的线程/进程的状态模型中，如下图： 进程状态： 一个线程/进程经历的5个状态，创建，就绪，运行，阻塞，终止。各个状态的转换条件如上图，其中有个阻塞状态，就是说当线</description>
+    </item>
+    
+    <item>
+      <title>CP_2_进程</title>
+      <link>/post/cp_2_%E8%BF%9B%E7%A8%8B/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/cp_2_%E8%BF%9B%E7%A8%8B/</guid>
+      <description>概念 进程就是操作系统中执行的一个程序，操作系统以进程为单位分配存储空间，每个进程都有自己的地址空间、数据栈以及其他用于跟踪进程执行的辅助数据，操作系统管理所有进程的执行，为它们合理的分配资源。进程可以</description>
+    </item>
+    
+    <item>
+      <title>CP_3_线程</title>
+      <link>/post/cp_3_%E7%BA%BF%E7%A8%8B/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/cp_3_%E7%BA%BF%E7%A8%8B/</guid>
+      <description>概念 一个进程还可以拥有多个并发的执行线索，简单的说就是拥有多个可以获得CPU调度的执行单元，这就是所谓的线程。由于线程在同一个进程下，它们可以共享相同的上下文，因此相对于进程而言，线程间的信息共享和通</description>
+    </item>
+    
+    <item>
+      <title>CP_4_协程</title>
+      <link>/post/cp_4_%E5%8D%8F%E7%A8%8B/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/cp_4_%E5%8D%8F%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>datatype-datail-and-deep-shallow-copy</title>
+      <link>/post/datatype-datail-and-deep-shallow-copy/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/datatype-datail-and-deep-shallow-copy/</guid>
+      <description>Int(整型) 标准的 Python 实现是用 C 语言编写的。这意味着每一个 Python 对象都是一个伪 C 语言结构体，该结构体不仅包含其值，还有其他信息。例如，当我们在 Python 中定义一个整型，例如 x = 10000 时，x 并不是一个“原生”整型，而是</description>
+    </item>
+    
+    <item>
+      <title>decorator</title>
+      <link>/post/decorator/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/decorator/</guid>
+      <description>闭包 1、闭包的定义：在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间创建关联关系。在给定函数被多次</description>
+    </item>
+    
+    <item>
+      <title>descriptors</title>
+      <link>/post/descriptors/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/descriptors/</guid>
+      <description>:</description>
+    </item>
+    
+    <item>
+      <title>design-patterns_singleton</title>
+      <link>/post/design-patterns_singleton/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/design-patterns_singleton/</guid>
+      <description>装饰器实现 函数装饰器实现单例模式 def singleton(cls): __instance = {} # 创建一个字典用来保存被装饰类的实例对象 _instance = {} def _singleton(*args, **kwargs): # 判断这个类有没有创建过对象，没有新创建一个，有则返回之前创建的 if not cls in _instance: _instance[cls] = cls(*args, **kwargs) return _instance[cls] return _singleton @singleton class A(object): def __init__(self, a=0): self.a =</description>
+    </item>
+    
+    <item>
+      <title>development_envirnment</title>
+      <link>/post/development_envirnment/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/development_envirnment/</guid>
+      <description>operating environment 系统：manjaro-xfce-20.2 IDE：Pycharm 个人看法： 系统的话当然是Mac最好了，但是价格摆在那。 没有的话在 Linux 和 Win更推崇使用 Linux，能够对电脑有一个更好的了解，熟悉命令之</description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>/post/docker/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/docker/</guid>
+      <description>Docker安装、运行mysql 从docker hub的仓库中拉去mysql镜像 sudo docker pull mysql 查看镜像： docker images 2.运行一个mysql容器 docker run -p 3306:3306 &amp;ndash;name qmm-mysql -v ~/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=669988 -d mysql:5.6 //创建容器时，最后mysql:5.6表示mysq</description>
+    </item>
+    
+    <item>
+      <title>errors-and-exceptions</title>
+      <link>/post/errors-and-exceptions/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/errors-and-exceptions/</guid>
+      <description>语法错误 基本由编程不规范造成的，如括号、引号的不匹配，缩进的不正确，二值比较符号写成赋值，冒号的缺少等等造成语句的编译异常。 异常 在语法完全正确的情况下，程序也可能出现不能正常运行的情况。这种情况称之为</description>
+    </item>
+    
+    <item>
+      <title>flask</title>
+      <link>/post/flask/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/flask/</guid>
+      <description>Flask框架的优点 Flask框架是一个短小精悍、可扩展性强的web框架。html Flask框架依赖组件 Flask依赖于werkzurg组件，实现wsgi使用的就是werkzurg。web Flask蓝</description>
+    </item>
+    
+    <item>
+      <title>flask</title>
+      <link>/post/flask/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/flask/</guid>
+      <description>路由 简单路由 @app.route(&#39;/hello/&#39;) def hello(): return &#39;Hello&#39; 带参数的路由 （1） @app.route(&#39;/hello/&amp;lt;name&amp;gt;&#39;) def hello(name): return &#39;Hello %s&#39; % name （2） ?key=value形式传参 上面我们接受参数使用的是path形式，下面我们来使用查询字符串的形式，即?key=value 如果有多个参数，则</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>/post/git/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/git/</guid>
+      <description>安装Git yay -S git 一、新建代码库 在当前目录新建一个Git代码库 $ git init 新建一个目录，将其初始化为Git代码库 $ git init [project-name] 下载一个项目和它的整个代码历史 $ git clone [url] 二、配置 Git的设置文件为.gitconfig，它</description>
+    </item>
+    
+    <item>
+      <title>HTTP协议</title>
+      <link>/post/http%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/http%E5%8D%8F%E8%AE%AE/</guid>
+      <description>HTTP协议 HTTP的特性 HTTP构建于TCP/IP协议之上，默认端口号是80 HTTP是无连接无状态的 HTTP报文 请求报文 HTTP 协议是以 ASCII 码传输，建立在 TCP/IP 协议之上的应用层规范。规范把 HTTP 请求分为三个部分：状</description>
+    </item>
+    
+    <item>
+      <title>iterator</title>
+      <link>/post/iterator/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/iterator/</guid>
+      <description>魔法方法介绍 object.iter(self) 此方法在需要为容器创建迭代器时被调用。此方法应该返回一个新的迭代器对象，它能够逐个迭代容器中的所有对象。对于映射，它应该逐个迭代容器中的键。 迭代器对象也需要实现此方法；它们需要返回对象自</description>
+    </item>
+    
+    <item>
+      <title>magic_mothods</title>
+      <link>/post/magic_mothods/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/magic_mothods/</guid>
+      <description>11.1. 简介 本指南归纳于我的几个月的博客，主题是 魔法方法 。 什么是魔法方法呢？它们在面向对象的Python的处处皆是。它们是一些可以让你对类添加“魔法”的特殊方法。 它们经常是两个下划线包围来命名的（比如 init ， lt</description>
+    </item>
+    
+    <item>
+      <title>model_functools</title>
+      <link>/post/model_functools/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/model_functools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>model_lxml</title>
+      <link>/post/model_lxml/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/model_lxml/</guid>
+      <description>基本使用 1、读取文本解析节点 from lxml import etree text=&#39;&#39;&#39; &amp;lt;div&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li class=&amp;quot;item-0&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;link1.html&amp;quot;&amp;gt;第一个&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;item-1&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;link2.html&amp;quot;&amp;gt;second item&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;item-0&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;link5</description>
+    </item>
+    
+    <item>
+      <title>model_pillow</title>
+      <link>/post/model_pillow/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/model_pillow/</guid>
+      <description>Pillow 调整大小 按宽度缩放 这是一个使用 Pillow 模块来调整图片大小的基本脚本： from PIL import Image basewidth = 300 img = Image.open(&#39;fullsized_image.jpg&#39;) wpercent = (basewidth / float(img.size[0])) hsize = int((float(img.size[1]) * float(wpercent))) img = img.resize((basewidth, hsize), Image.ANTIALIAS) img.save(&#39;resized_image.jpg&#39;) 这几行 Python 代码使用 Pillow 将一张图片 （fullsized_image.jpg） 调整为 300 像素的</description>
+    </item>
+    
+    <item>
+      <title>model_scrapy</title>
+      <link>/post/model_scrapy/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/model_scrapy/</guid>
+      <description>scrapy 简介 下图显示了Scrapy架构及其组件的概述，以及系统内部发生的数据流的概要（以红色箭头显示）。下面提供了这些组件的简要说明以及有关它们的详细信息的链接。数据流也描述如下。 Scrapy中的数据流由执</description>
+    </item>
+    
+    <item>
+      <title>model_selenium</title>
+      <link>/post/model_selenium/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/model_selenium/</guid>
+      <description>支持多种类型浏览器，以chrome为例 基本使用 from selenium import webdriver driver = webdriver.Chrome() driver.get(&#39;http://www.baidu.com&#39;) print(driver.page_source) driver.close() # 关闭当前窗口 driver.quit() # 关闭浏览器 查找元素 # 单个元素,有多个结果会取第一个 from selenium import webdriver browser = webdriver.Chrome() browser.get(&#39;https://www.taobao.com&#39;) input_first = browser.find_element_by_id(&#39;q&#39;) input_second = browser.find_element_by_css_selector(&#39;#q&#39;) input_third = browser.find_element_by_xpath(&#39;//*[@id=&amp;quot;q&amp;quot;]&#39;) print(input_first,input_second,input_third) browser.close() # 常用的查找方法 find_element_by_name find_element_by_xpath find_element_by_link_text find_element_by_partial_link_text find_element_by_tag_name find_element_by_class_name</description>
+    </item>
+    
+    <item>
+      <title>MY</title>
+      <link>/post/my/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/my/</guid>
+      <description>python lambda 递归 阶乘 f = lambda n: f(n-1) * n if n&amp;gt;=2 else 1 序列乘积 a=[2,3,4] f = lambda n: f(n-1) * a[n] if n&amp;gt;=0 else 1 print(f(len(a))) 求和 f = lambda n: f(n-1) * n if n&amp;gt;=2 else 0 斐波那契数列 lambdafunc = lambda n : 1 if n == 1 or n == 2 else lambdafunc(n -1 ) + lambdafunc(n - 2)</description>
+    </item>
+    
+    <item>
+      <title>MySQL优化插入数据速度</title>
+      <link>/post/mysql%E4%BC%98%E5%8C%96%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE%E9%80%9F%E5%BA%A6/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/mysql%E4%BC%98%E5%8C%96%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE%E9%80%9F%E5%BA%A6/</guid>
+      <description>MySQL优化插入数据速度 在 MySQL 中，向数据表插入数据时，索引、唯一性检查、数据大小是影响插入速度的主要因素。本节将介绍优化插入数据速度的几种方法。 根据不同情况，可以分别进行优化。 对于 MyISAM 引擎的表，常见的优</description>
+    </item>
+    
+    <item>
+      <title>questions</title>
+      <link>/post/questions/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/questions/</guid>
+      <description>#!/usr/bin/env python3 Author: aiyoyo🍉 1、可变类型陷阱 l = [] a = [] for i in range(10): a.append(i) l.append(a) print(l) l = [] a = {&#39;num&#39;: 0} for i in range(10): a[&#39;num&#39;] = i l.append(a) print(l) print(a) 都是类似的，每次新增的都是同一个对象，并在其后进行了修改，导致之前的也被修改（覆盖）。 2、lambda 陷</description>
+    </item>
+    
+    <item>
+      <title>queues-stacks</title>
+      <link>/post/queues-stacks/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/queues-stacks/</guid>
+      <description>Python中栈、队列和优先级队列的实现 栈(Stack) 栈是一种LIFO(后进先出)的数据结构，有入栈(push)、出栈(pop)两种操作，且只能操作栈顶元素。 1、list list是Python内置的</description>
+    </item>
+    
+    <item>
+      <title>read</title>
+      <link>/post/read/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/read/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recurrence</title>
+      <link>/post/recurrence/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/recurrence/</guid>
+      <description>递归 def normal_recursion(n): if n == 1: return 1 else: return n + normal_recursion(n-1) normal_recursion(5) 5 + normal_recursion(4) 5 + 4 + normal_recursion(3) 5 + 4 + 3 + normal_recursion(2) 5 + 4 + 3 + 2 + normal_recursion(1) 5 + 4 + 3 + 3 5 + 4 + 6 5 + 10 15 线性递归，每深入一层，就会产生新的局部变量，必须创建新的调用栈, 随着递归深度的增加, 创建</description>
+    </item>
+    
+    <item>
+      <title>spider-introduce</title>
+      <link>/post/spider-introduce/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/spider-introduce/</guid>
+      <description>网络数据采集是指通过网络爬虫或网站公开 API 等方式从网站上获取数据信息。该方法可以将非结构化数据从网页中抽取出来，将其存储为统一的本地数据文件，并以结构化的方式存储。它支持图片、音频、视频等文件或附件的采</description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>/post/test/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/test/</guid>
+      <description>第七章 测试 1. 禅道和 qc 的区别？ 都是缺陷管理工具。 A.QC 作为缺陷管理工具，QC 在缺陷管理方面，做的 相对完善。 提 bug 页面：填写内容可以根据测试需求，不断修改添加新的字段；以我上一家公司为例，在提 bug 过程中，有一下几</description>
+    </item>
+    
+    <item>
+      <title>udp&amp;tcp</title>
+      <link>/post/udptcp/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/udptcp/</guid>
+      <description>一、TCP/IP网络模型 计算机与网络设备要相互通信，双方就必须基于相同的方法。比如，如何探测到通信目标、由哪一边先发起通信、使用哪种语言进行通信、怎样结束通信等规则都需要事先确定。不同的硬件、操作系统</description>
+    </item>
+    
+    <item>
+      <title>web_framework</title>
+      <link>/post/web_framework/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/web_framework/</guid>
+      <description>第四章 WEB 框架 一、Flask 1. Flask 中正则 URL 的实现？ @app.route(&amp;lt;URL&amp;gt;) 中 URL 显式支持 string、int、float、path 4 种类型，隐式支持正则。 第一步：写正则类，继承 BaseConverter，将匹配到的值设置为 regex 的值</description>
+    </item>
+    
+    <item>
+      <title>跨域</title>
+      <link>/post/%E8%B7%A8%E5%9F%9F/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/%E8%B7%A8%E5%9F%9F/</guid>
+      <description>跨域 当一个请求url的协议、域名、端口三者之间的任意一个与当前页面url不同即为跨域。 跨域产生原因？ 出于浏览器的同源策略限制。 同源策略（Same Orgin Policy） 是一种约定，它是浏览器核心也最基本的安全</description>
+    </item>
+    
+    <item>
+      <title>这部纪录片告诉你,穷人是如何把下一代教育成持续贫穷的</title>
+      <link>/post/%E8%BF%99%E9%83%A8%E7%BA%AA%E5%BD%95%E7%89%87%E5%91%8A%E8%AF%89%E4%BD%A0%E7%A9%B7%E4%BA%BA%E6%98%AF%E5%A6%82%E4%BD%95%E6%8A%8A%E4%B8%8B%E4%B8%80%E4%BB%A3%E6%95%99%E8%82%B2%E6%88%90%E6%8C%81%E7%BB%AD%E8%B4%AB%E7%A9%B7%E7%9A%84/</link>
+      <pubDate>Mon, 11 Apr 2022 21:16:44 +0800</pubDate>
+      
+      <guid>/post/%E8%BF%99%E9%83%A8%E7%BA%AA%E5%BD%95%E7%89%87%E5%91%8A%E8%AF%89%E4%BD%A0%E7%A9%B7%E4%BA%BA%E6%98%AF%E5%A6%82%E4%BD%95%E6%8A%8A%E4%B8%8B%E4%B8%80%E4%BB%A3%E6%95%99%E8%82%B2%E6%88%90%E6%8C%81%E7%BB%AD%E8%B4%AB%E7%A9%B7%E7%9A%84/</guid>
+      <description>今天是周末，按照惯例小川一般都会推送些相对轻松的内容。但是昨晚小川偶尔发现这部拍摄差不多十年前，反思中国贫困阶层教育问题的纪录片《父亲》时，触动很深，无论如何也想要第一时间分享推荐给大家。 我一直都有个</description>
+    </item>
+    
+    <item>
+      <title>我们应该怎样学英语</title>
+      <link>/post/%E6%88%91%E4%BB%AC%E5%BA%94%E8%AF%A5%E6%80%8E%E6%A0%B7%E5%AD%A6%E8%8B%B1%E8%AF%AD/</link>
+      <pubDate>Sun, 10 Apr 2022 13:38:06 +0800</pubDate>
+      
+      <guid>/post/%E6%88%91%E4%BB%AC%E5%BA%94%E8%AF%A5%E6%80%8E%E6%A0%B7%E5%AD%A6%E8%8B%B1%E8%AF%AD/</guid>
+      <description>有很多人反对学英语，理由是，从小到大我们学了那么多年的英语，还是学 得不怎么样，不如不学。这个理由是经不起推敲的。如果英语很重要，却没学好， 那么应该是要想方设法尽量学好，而不是说干脆不学了，那不是因噎废</description>
+    </item>
+    
+  </channel>
+</rss>

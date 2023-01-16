@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NeoVim on AI YOYO</title>
+    <link>/tags/neovim/</link>
+    <description>Recent content in NeoVim on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 14 Dec 2022 19:13:22 +0800</lastBuildDate><atom:link href="/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NeoVim</title>
+      <link>/post/neovim/</link>
+      <pubDate>Wed, 14 Dec 2022 19:13:22 +0800</pubDate>
+      
+      <guid>/post/neovim/</guid>
+      <description>有兴趣的可以去查下NeoVim项目的创作初衷，实际使用和Vim几乎是一样的，但NeoVim在某些方面是有独到之处的，发布的时间并没有很长，但是以及积累了大量用户，甚至从Vim转的也不少，插件系统几乎兼</description>
+    </item>
+    
+  </channel>
+</rss>

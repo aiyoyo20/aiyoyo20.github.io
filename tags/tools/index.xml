@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on AI YOYO</title>
+    <link>/tags/tools/</link>
+    <description>Recent content in Tools on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Jan 2023 23:38:29 +0800</lastBuildDate><atom:link href="/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Note_Editor_Compared</title>
+      <link>/post/note_editor_compared/</link>
+      <pubDate>Sat, 14 Jan 2023 23:38:29 +0800</pubDate>
+      
+      <guid>/post/note_editor_compared/</guid>
+      <description>陆陆续续使用了不少软件记录笔记，从最初的记事本，word 再到现在用过的各种 markdown 软件，各有特色，做个总结吧，希望对没有接触过的有个直观的了解。 有的软件是早期的时候使用的，所以可能会出现上面写的一些问题在下</description>
+    </item>
+    
+    <item>
+      <title>githubPage</title>
+      <link>/post/githubpage/</link>
+      <pubDate>Sat, 14 Jan 2023 00:13:07 +0800</pubDate>
+      
+      <guid>/post/githubpage/</guid>
+      <description>框架及实现语言 静态网站的生成框架挺多，这里举几个流行的。 框架 实现语言 Jekyll Ruby Hexo Node.js Hugo Go Pelican Python Middleman Ruby Metalsmith nodejs Wintersmith Nodejs Cactus Python+Django 之前使用过 Pelican，之所以使用它而不是其他的框架是考虑到自己使用的是 Python，如果有自定义</description>
+    </item>
+    
+    <item>
+      <title>Git_examples</title>
+      <link>/post/git_examples/</link>
+      <pubDate>Fri, 13 Jan 2023 14:36:53 +0800</pubDate>
+      
+      <guid>/post/git_examples/</guid>
+      <description>需求：有一个文件在两个月之前删除了，但是现在想看看里面的内容</description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>/post/vim/</link>
+      <pubDate>Wed, 11 Jan 2023 00:16:08 +0800</pubDate>
+      
+      <guid>/post/vim/</guid>
+      <description>插件 插件管理器vim-plug curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 其他插件及配置 配置文件vimrc里面有详细的备注，就不一个个展开了。 快捷键设置 模式映射 使用h key-notation命令查看帮助信息,查看键盘符号的详细说明 notation meaning</description>
+    </item>
+    
+    <item>
+      <title>Proxy</title>
+      <link>/post/proxy/</link>
+      <pubDate>Sun, 08 Jan 2023 23:21:02 +0800</pubDate>
+      
+      <guid>/post/proxy/</guid>
+      <description>proxy protocol Shadowsocks（SS） ShadowsocksR（SSR） V2Ray VrayX Trojan Trojan-Go 详细的就不累赘了，我了解的也不是很完全，墙内目前也有些介绍，但是只要能翻出去，资料就很多了。这里给出几篇文章，里面有详细介绍</description>
+    </item>
+    
+    <item>
+      <title>keyboard</title>
+      <link>/post/keyboard/</link>
+      <pubDate>Sun, 08 Jan 2023 15:56:55 +0800</pubDate>
+      
+      <guid>/post/keyboard/</guid>
+      <description>一些键盘知识及可选方案 PCB 板： 旧键盘的 PCB 板 网上的自打板 网上开源方案自己找人打印 键盘配列： 键位数量：104、84、78、61 等等。 键位占比：100%、75%、60℀ 。 键帽： 材质：PBT、ABS、POM 等。</description>
+    </item>
+    
+    <item>
+      <title>compress</title>
+      <link>/post/compress/</link>
+      <pubDate>Sun, 08 Jan 2023 15:18:04 +0800</pubDate>
+      
+      <guid>/post/compress/</guid>
+      <description>1. tar 参数 说明 -c 建立压缩档案 -x 解压 -t 查看内容 -r 向压缩归档文件末尾追加文件 -u 更新原压缩包中的文件 这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩</description>
+    </item>
+    
+    <item>
+      <title>FedoraInputMethod</title>
+      <link>/post/fedorainputmethod/</link>
+      <pubDate>Wed, 04 Jan 2023 22:01:47 +0800</pubDate>
+      
+      <guid>/post/fedorainputmethod/</guid>
+      <description>OS : Fedora Linux 36 (Workstation Edition) cat /etc/os-release NAME=&amp;quot;Fedora Linux&amp;quot; VERSION=&amp;quot;36 (Workstation Edition)&amp;quot; ID=fedora VERSION_ID=36 VERSION_CODENAME=&amp;quot;&amp;quot; PLATFORM_ID=&amp;quot;platform:f36&amp;quot; PRETTY_NAME=&amp;quot;Fedora Linux 36 (Workstation Edition)&amp;quot; ANSI_COLOR=&amp;quot;0;38;2;60;110;180&amp;quot; LOGO=fedora-logo-icon CPE_NAME=&amp;quot;cpe:/o:fedoraproject:fedora:36&amp;quot; HOME_URL=&amp;quot;https://fedoraproject.org/&amp;quot; DOCUMENTATION_URL=&amp;quot;https://docs.fedoraproject.org/en-US/fedora/f36/system-administrators-guide/&amp;quot; SUPPORT_URL=&amp;quot;https://ask.fedoraproject.org/&amp;quot; BUG_REPORT_URL=&amp;quot;https://bugzilla.redhat.com/&amp;quot; REDHAT_BUGZILLA_PRODUCT=&amp;quot;Fedora&amp;quot; REDHAT_BUGZILLA_PRODUCT_VERSION=36 REDHAT_SUPPORT_PRODUCT=&amp;quot;Fedora&amp;quot; REDHAT_SUPPORT_PRODUCT_VERSION=36 PRIVACY_POLICY_URL=&amp;quot;https://fedoraproject.org/wiki/Legal:PrivacyPolicy&amp;quot; SUPPORT_END=2023-05-16 VARIANT=&amp;quot;Workstation Edition&amp;quot; VARIANT_ID=workstation 官方的包管理器并没有 fcitx 相关的包，能不能自己编译安装没有测试。由于该版本的桌面环境是 gnome，内置了 ibus 框架，在安装使用较其</description>
+    </item>
+    
+    <item>
+      <title>ManjaroInputMethod</title>
+      <link>/post/manjaroinputmethod/</link>
+      <pubDate>Mon, 02 Jan 2023 22:42:55 +0800</pubDate>
+      
+      <guid>/post/manjaroinputmethod/</guid>
+      <description>在 Manjaro-KDE 和 Manjaro-XFCE 正常配置。 fcitx 安装 sudo pacman -S --noconfirm fcitx-im kcm-fcitx fcitx-configtool 配置 fcitx sudo echo -e &amp;quot;export GTK_IM_MODULE=fcitx\nexport QT_IM_MODULE=fcitx\nexport XMODIFIERS=@im=fcitx&amp;quot;&amp;gt;&amp;gt;~/.xprofile googlepinyin sudo pacman -S fcitx-googlepinyin 重启后在状态栏找到键盘右键 -- config -- input method -- 添加后确认应用生效，默认的切换输入法快捷键为ctrl + 空格 可自行安装搜狗输入法，manjaro</description>
+    </item>
+    
+    <item>
+      <title>sublime_base</title>
+      <link>/post/sublime_base/</link>
+      <pubDate>Mon, 26 Dec 2022 15:06:52 +0800</pubDate>
+      
+      <guid>/post/sublime_base/</guid>
+      <description>官网 插件： 插件的管理工具在 sublime 3 中的安装方式如下，sublime 4 可以通过 Ctrl+Shift+P 查找安装。 按 ctrl + \ 或者View &amp;gt; Show Console，打开 Console 一次性输入如下代码，回车： import urllib.request,os,hashlib; h = &#39;6f4c264a24d933ce70df5dedcf1dcaee&#39; + &#39;ebe013ee18cced0ef93d5f746d80ef60&#39;; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &#39;http://packagecontrol.io/&#39;</description>
+    </item>
+    
+    <item>
+      <title>Youtube-dl</title>
+      <link>/post/youtube-dl/</link>
+      <pubDate>Mon, 26 Dec 2022 15:05:40 +0800</pubDate>
+      
+      <guid>/post/youtube-dl/</guid>
+      <description>安装及使用： 项目地址https://github.com/ytdl-org/youtube-dl 具体的安装方式去看挑选一个适合且可用的即可，我在这使用的是 pip 安装 pip3 install youtube-dl 最简单的使用 youtube-dl url即可下载，但是</description>
+    </item>
+    
+    <item>
+      <title>sublime_frontEnd</title>
+      <link>/post/sublime_frontend/</link>
+      <pubDate>Mon, 26 Dec 2022 15:02:27 +0800</pubDate>
+      
+      <guid>/post/sublime_frontend/</guid>
+      <description>emmet： 前端神器。一个可以极大提高 web 开发者 HTML 和 CSS 工作效率的工具箱组件。 查看介绍 问题： 如下报错： 因为下载下来的 PyV8 的包是一个文件夹，按照正常情况是放在 packages 下的，但是安装之后一直无法使用，以为是快捷键冲突</description>
+    </item>
+    
+    <item>
+      <title>sublime_go</title>
+      <link>/post/sublime_go/</link>
+      <pubDate>Mon, 26 Dec 2022 15:01:23 +0800</pubDate>
+      
+      <guid>/post/sublime_go/</guid>
+      <description>Golang Build The official Sublime Text package for Go build system integration. 安装后需要配置后使用，比如 { &amp;quot;PATH&amp;quot;: &amp;quot;/opt/go/bin&amp;quot;, &amp;quot;GOPATH&amp;quot;: &amp;quot;/home/aiyoyo/go&amp;quot; } GoSublime 如果没法通过包管理器安装，可以选择下载安装 cd /~.config/sublime-text/Packages &amp;amp;&amp;amp; git clone https://margo.sh/GoSublime 依赖：go get golang.org/x/tools/cmd/goimports { &amp;quot;env&amp;quot;: { &amp;quot;GOPATH&amp;quot;: &amp;quot;/home/aiyoyo/go&amp;quot;, &amp;quot;GOROOT&amp;quot;: &amp;quot;/opt/go&amp;quot; } , &amp;quot;gscomplete_enabled&amp;quot;: true, &amp;quot;fmt_enabled&amp;quot;: true, &amp;quot;fmt_tab_indent&amp;quot;: false, &amp;quot;fmt_tab_width&amp;quot;: 4, &amp;quot;autocomplete_snippets&amp;quot;: true, &amp;quot;autocomplete_tests&amp;quot;: true, &amp;quot;autocomplete_builtins&amp;quot;: true, &amp;quot;autocomplete_closures&amp;quot;: true, &amp;quot;autocomplete_suggest_imports&amp;quot;: true, &amp;quot;calltips&amp;quot;: true, &amp;quot;use_named_imports&amp;quot;: true, &amp;quot;autoinst&amp;quot;: true, &amp;quot;ipc_timeout&amp;quot;:</description>
+    </item>
+    
+    <item>
+      <title>sublime_LSP</title>
+      <link>/post/sublime_lsp/</link>
+      <pubDate>Mon, 26 Dec 2022 15:01:12 +0800</pubDate>
+      
+      <guid>/post/sublime_lsp/</guid>
+      <description>设备信息 Linux VERSIONS ： Fedora release 36 (Thirty Six) Sublime VERSIONS： Sublime Text 4143 简介 1、各个插件的依赖，比如LSP-pylsp依赖python-lsp-server包，并不需要自己进行安装配置，只需要有基本的环境，比如go python rust node n</description>
+    </item>
+    
+    <item>
+      <title>sublime_markdown</title>
+      <link>/post/sublime_markdown/</link>
+      <pubDate>Mon, 26 Dec 2022 15:00:57 +0800</pubDate>
+      
+      <guid>/post/sublime_markdown/</guid>
+      <description>MarkdownPreview Markdown转HTML，提供在浏览器中的预览功能 LiveReload LiveReload 一个提供md/html等文档的实时刷新预览的的插件 ,插件安装后需要手动开启相应的功能并且需要在浏览器上安装相应插件。不过浏览器的预览不会随着 sublime</description>
+    </item>
+    
+    <item>
+      <title>sublime_python</title>
+      <link>/post/sublime_python/</link>
+      <pubDate>Mon, 26 Dec 2022 15:00:42 +0800</pubDate>
+      
+      <guid>/post/sublime_python/</guid>
+      <description>方案一 Virtualenv # 虚拟环境切换,需要 `virtualenv` 包支持，还可通过设置中的 `&amp;quot;virtualenv_directories&amp;quot;=[] // virtualenvwrapper $WORKON_HOME` 配置自己的虚拟环境目录，这样可调用在外设置的虚拟环境 Jedi - Python autocompletion # 语法补全，而且与 Virtualenv 无冲突，也可以手动配置虚拟环境，但麻烦些 AutoPEP8 # 快捷方式快速对</description>
+    </item>
+    
+    <item>
+      <title>Tampermonkey_script</title>
+      <link>/post/tampermonkey_script/</link>
+      <pubDate>Mon, 26 Dec 2022 14:59:47 +0800</pubDate>
+      
+      <guid>/post/tampermonkey_script/</guid>
+      <description>脚本的使用是在安装了 Tampermonkey 的基础上 all-search 全搜 一个搜索引擎快捷跳转菜单, 支持图形界面自定义 除了支持谷歌、百度、duck搜索等搜索引擎外，还支持图片、翻译、开发工具（github）等的快速跳转 BaiduMonkeyW 改善百度的搜索结果</description>
+    </item>
+    
+    <item>
+      <title>Chrome_extensions</title>
+      <link>/post/chrome_extensions/</link>
+      <pubDate>Mon, 26 Dec 2022 14:59:36 +0800</pubDate>
+      
+      <guid>/post/chrome_extensions/</guid>
+      <description>Adblock AdGuard AdBlocker 屏蔽广告 Bookmark Sidebar 收藏夹侧边栏显示，且打开可设置为在新标签打开 原来的收藏夹在上面会占用一定的空间，且如果一直显示有时候在给别人展示的时候，会比较尴尬，快捷键去打开也比较麻烦 Clear history, Cache &amp;amp; Cookies for Chrome 每次进入 Setting 去清</description>
+    </item>
+    
+    <item>
+      <title>NeoVim</title>
+      <link>/post/neovim/</link>
+      <pubDate>Wed, 14 Dec 2022 19:13:22 +0800</pubDate>
+      
+      <guid>/post/neovim/</guid>
+      <description>有兴趣的可以去查下NeoVim项目的创作初衷，实际使用和Vim几乎是一样的，但NeoVim在某些方面是有独到之处的，发布的时间并没有很长，但是以及积累了大量用户，甚至从Vim转的也不少，插件系统几乎兼</description>
+    </item>
+    
+    <item>
+      <title>Aria2</title>
+      <link>/post/aria2/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/aria2/</guid>
+      <description>1. 简介： linux 中拥有大量的下载工具，不过没有一个像迅雷那样在windows中文世界中占有统治地位。 对于一般 linux 用户常用的下载工具，比如gnome和kde等桌面环境中自带的 utorrent 或 ktorrent ， 自身下载速度不快，还有着占用</description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>/post/docker/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/docker/</guid>
+      <description>Docker安装、运行mysql 从docker hub的仓库中拉去mysql镜像 sudo docker pull mysql 查看镜像： docker images 2.运行一个mysql容器 docker run -p 3306:3306 &amp;ndash;name qmm-mysql -v ~/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=669988 -d mysql:5.6 //创建容器时，最后mysql:5.6表示mysq</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>/post/git/</link>
+      <pubDate>Tue, 25 Oct 2022 16:48:59 +0800</pubDate>
+      
+      <guid>/post/git/</guid>
+      <description>安装Git yay -S git 一、新建代码库 在当前目录新建一个Git代码库 $ git init 新建一个目录，将其初始化为Git代码库 $ git init [project-name] 下载一个项目和它的整个代码历史 $ git clone [url] 二、配置 Git的设置文件为.gitconfig，它</description>
+    </item>
+    
+  </channel>
+</rss>

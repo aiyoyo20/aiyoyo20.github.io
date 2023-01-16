@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chrome on AI YOYO</title>
+    <link>/tags/chrome/</link>
+    <description>Recent content in Chrome on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 26 Dec 2022 14:59:47 +0800</lastBuildDate><atom:link href="/tags/chrome/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tampermonkey_script</title>
+      <link>/post/tampermonkey_script/</link>
+      <pubDate>Mon, 26 Dec 2022 14:59:47 +0800</pubDate>
+      
+      <guid>/post/tampermonkey_script/</guid>
+      <description>脚本的使用是在安装了 Tampermonkey 的基础上 all-search 全搜 一个搜索引擎快捷跳转菜单, 支持图形界面自定义 除了支持谷歌、百度、duck搜索等搜索引擎外，还支持图片、翻译、开发工具（github）等的快速跳转 BaiduMonkeyW 改善百度的搜索结果</description>
+    </item>
+    
+    <item>
+      <title>Chrome_extensions</title>
+      <link>/post/chrome_extensions/</link>
+      <pubDate>Mon, 26 Dec 2022 14:59:36 +0800</pubDate>
+      
+      <guid>/post/chrome_extensions/</guid>
+      <description>Adblock AdGuard AdBlocker 屏蔽广告 Bookmark Sidebar 收藏夹侧边栏显示，且打开可设置为在新标签打开 原来的收藏夹在上面会占用一定的空间，且如果一直显示有时候在给别人展示的时候，会比较尴尬，快捷键去打开也比较麻烦 Clear history, Cache &amp;amp; Cookies for Chrome 每次进入 Setting 去清</description>
+    </item>
+    
+  </channel>
+</rss>

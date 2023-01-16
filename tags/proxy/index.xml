@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Proxy on AI YOYO</title>
+    <link>/tags/proxy/</link>
+    <description>Recent content in Proxy on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 08 Jan 2023 23:21:02 +0800</lastBuildDate><atom:link href="/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Proxy</title>
+      <link>/post/proxy/</link>
+      <pubDate>Sun, 08 Jan 2023 23:21:02 +0800</pubDate>
+      
+      <guid>/post/proxy/</guid>
+      <description>proxy protocol Shadowsocks（SS） ShadowsocksR（SSR） V2Ray VrayX Trojan Trojan-Go 详细的就不累赘了，我了解的也不是很完全，墙内目前也有些介绍，但是只要能翻出去，资料就很多了。这里给出几篇文章，里面有详细介绍</description>
+    </item>
+    
+  </channel>
+</rss>

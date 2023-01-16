@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>model_selenium - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="Python" />
+
+
+<meta property="og:title" content="model_selenium" />
+<meta name="twitter:title" content="model_selenium" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/model_selenium/" /><meta property="og:description" content="支持多种类型浏览器，以chrome为例 基本使用 from selenium import webdriver driver = webdriver.Chrome() driver.get(&#39;http://www.baidu.com&#39;) print(driver.page_source) driver.close() # 关闭当前窗口 driver.quit() # 关闭浏览器 查找元素 # 单个元素,有多个结果会取第一个 from selenium import webdriver browser = webdriver.Chrome() browser.get(&#39;https://www.taobao.com&#39;) input_first = browser.find_element_by_id(&#39;q&#39;) input_second = browser.find_element_by_css_selector(&#39;#q&#39;) input_third = browser.find_element_by_xpath(&#39;//*[@id=&quot;q&quot;]&#39;) print(input_first,input_second,input_third) browser.close() # 常用的查找方法 find_element_by_name find_element_by_xpath find_element_by_link_text find_element_by_partial_link_text find_element_by_tag_name find_element_by_class_name" />
+<meta name="twitter:description" content="支持多种类型浏览器，以chrome为例 基本使用 from selenium import webdriver driver = webdriver.Chrome() driver.get(&#39;http://www.baidu.com&#39;) print(driver.page_source) driver.close() # 关闭当前窗口 driver.quit() # 关闭浏览器 查找元素 # 单个元素,有多个结果会取第一个 from selenium import webdriver browser = webdriver.Chrome() browser.get(&#39;https://www.taobao.com&#39;) input_first = browser.find_element_by_id(&#39;q&#39;) input_second = browser.find_element_by_css_selector(&#39;#q&#39;) input_third = browser.find_element_by_xpath(&#39;//*[@id=&quot;q&quot;]&#39;) print(input_first,input_second,input_third) browser.close() # 常用的查找方法 find_element_by_name find_element_by_xpath find_element_by_link_text find_element_by_partial_link_text find_element_by_tag_name find_element_by_class_name" /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2022-10-25T16:48:59+08:00" /><meta property="article:modified_time" content="2022-10-25T16:48:59+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/model_selenium/">model_selenium</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-10-25</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;1847 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/python">Python</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <p>支持多种类型浏览器，以chrome为例</p>
+<p>基本使用</p>
+<pre><code>from selenium import webdriver
+
+driver = webdriver.Chrome()
+driver.get('http://www.baidu.com')
+print(driver.page_source)
+driver.close()  # 关闭当前窗口
+driver.quit()  # 关闭浏览器
+</code></pre>
+<p>查找元素</p>
+<pre><code># 单个元素,有多个结果会取第一个
+from selenium import webdriver
+browser = webdriver.Chrome()
+browser.get('https://www.taobao.com')
+input_first = browser.find_element_by_id('q')
+input_second = browser.find_element_by_css_selector('#q')
+input_third = browser.find_element_by_xpath('//*[@id=&quot;q&quot;]')
+print(input_first,input_second,input_third)
+browser.close()
+# 常用的查找方法
+find_element_by_name
+find_element_by_xpath
+find_element_by_link_text
+find_element_by_partial_link_text
+find_element_by_tag_name
+find_element_by_class_name
+find_element_by_css_selector
+# 也可以使用通用的方法
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+browser = webdriver.Chrome()
+browser.get('https://www.taobao.com')
+input_first = browser.find_element(BY.ID,'q')#第一个参数传入名称，第二个传入具体的参数
+print(input_first)
+browser.close()
+# 多个元素，elements多个s
+input_first = browser.find_elements_by_id('q')
+</code></pre>
+<p>四、元素交互操作-搜索框传入关键词进行自动搜索</p>
+<pre><code>from selenium import webdriver
+import time
+browser = webdriver.Chrome()
+browser.get('https://www.taobao.com')
+input = browser.find_element_by_id('q')#找到搜索框
+input.send_keys('iPhone')#传送入关键词
+time.sleep(5)
+input.clear()#清空搜索框
+input.send_keys('男士内裤')
+button = browser.find_element_by_class_name('btn-search')#找到搜索按钮
+button.click()
+</code></pre>
+<p>五、交互动作，驱动浏览器进行动作，模拟拖拽动作，将动作附加到动作链中串行执行
+from selenium import webdriver
+from selenium.webdriver import ActionChains#引入动作链</p>
+<p>browser = webdriver.Chrome()
+url = &lsquo;<a href="http://www.runoob.com/try/try.php?filename=jqueryui-api-droppable%27" target="_blank">http://www.runoob.com/try/try.php?filename=jqueryui-api-droppable'</a>
+browser.get(url)
+browser.switch_to.frame(&lsquo;iframeResult&rsquo;)#切换到iframeResult框架
+source = browser.find_element_by_css_selector(&rsquo;#draggable&rsquo;)#找到被拖拽对象
+target = browser.find_element_by_css_selector(&rsquo;#droppable&rsquo;)#找到目标
+actions = ActionChains(browser)#声明actions对象
+actions.drag_and_drop(source, target)
+actions.perform()#执行动作</p>
+<h1 id="更多操作-httpselenium-pythonreadthedocsioapihtmlmodule-seleniumwebdrivercommonaction_chains">更多操作: <a href="http://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.common.action_chains" target="_blank">http://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.common.action_chains</a></h1>
+<p>Python 复制
+详细文档</p>
+<p>执行JavaScript
+有些动作可能没有提供api，比如进度条下拉，这时，我们可以通过代码执行JavaScript</p>
+<pre><code>from selenium import webdriver
+browser = webdriver.Chrome()
+browser.get('https://www.zhihu.com/explore')
+browser.execute_script('window.scrollTo(0, document.body.scrollHeight)')
+browser.execute_script('alert(&quot;To Bottom&quot;)')
+</code></pre>
+<p>获取元素信息
+获取属性</p>
+<pre><code>from selenium import webdriver
+from selenium.webdriver import ActionChains
+
+browser = webdriver.Chrome()
+url = 'https://www.zhihu.com/explore'
+browser.get(url)
+logo = browser.find_element_by_id('zh-top-link-logo')#获取网站logo
+print(logo)
+print(logo.get_attribute('class'))
+browser.close()
+Python 复制
+获取文本值
+from selenium import webdriver
+browser = webdriver.Chrome()
+url = 'https://www.zhihu.com/explore'
+browser.get(url)
+input = browser.find_element_by_class_name('zu-top-add-question')
+print(input.text)#input.text文本值
+browser.close()
+</code></pre>
+<p>获取id，位置，标签名，大小</p>
+<pre><code>from selenium import webdriver
+browser = webdriver.Chrome()
+url = 'https://www.zhihu.com/explore'
+browser.get(url)
+input = browser.find_element_by_class_name('zu-top-add-question')
+print(input.id)#获取id
+print(input.location)#获取位置
+print(input.tag_name)#获取标签名
+print(input.size)#获取大小
+browser.close()
+</code></pre>
+<p>Frame操作
+frame相当于独立的网页，如果在父类网frame查找子类的，则必须切换到子类的frame，子类如果查找父类也需要先切换</p>
+<pre><code>from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
+
+browser = webdriver.Chrome()
+url = 'http://www.runoob.com/try/try.php?filename=jqueryui-api-droppable'
+browser.get(url)
+browser.switch_to.frame('iframeResult')
+source = browser.find_element_by_css_selector('#draggable')
+print(source)
+try:
+    logo = browser.find_element_by_class_name('logo')
+except NoSuchElementException:
+    print('NO LOGO')
+browser.switch_to.parent_frame()
+logo = browser.find_element_by_class_name('logo')
+print(logo)
+print(logo.text)
+</code></pre>
+<p>等待
+隐式等待
+当使用了隐式等待执行测试的时候，如果 WebDriver没有在 DOM中找到元素，将继续等待，超出设定时间后则抛出找不到元素的异常,
+换句话说，当查找元素或元素并没有立即出现的时候，隐式等待将等待一段时间再查找 DOM，默认的时间是0</p>
+<pre><code>from selenium import webdriver
+
+browser = webdriver.Chrome()
+browser.implicitly_wait(10)#等待十秒加载不出来就会抛出异常，10秒内加载出来正常返回
+browser.get('https://www.zhihu.com/explore')
+input = browser.find_element_by_class_name('zu-top-add-question')
+print(input)
+</code></pre>
+<p>显式等待
+指定一个等待条件，和一个最长等待时间，程序会判断在等待时间内条件是否满足，如果满足则返回，如果不满足会继续等待，超过时间就会抛出异常</p>
+<pre><code>from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+browser = webdriver.Chrome()
+browser.get('https://www.taobao.com/')
+wait = WebDriverWait(browser, 10)
+input = wait.until(EC.presence_of_element_located((By.ID, 'q')))
+button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '.btn-search')))
+print(input, button)
+</code></pre>
+<pre><code>expected_conditions
+title_is 标题是某内容
+title_contains 标题包含某内容
+presence_of_element_located 元素加载出，传入定位元组，如(By.ID, 'p')
+visibility_of_element_located 元素可见，传入定位元组
+visibility_of 可见，传入元素对象
+presence_of_all_elements_located 所有元素加载出
+text_to_be_present_in_element 某个元素文本包含某文字
+text_to_be_present_in_element_value 某个元素值包含某文字
+frame_to_be_available_and_switch_to_it frame加载并切换
+invisibility_of_element_located 元素不可见
+element_to_be_clickable 元素可点击
+staleness_of 判断一个元素是否仍在DOM，可判断页面是否已经刷新
+element_to_be_selected 元素可选择，传元素对象
+element_located_to_be_selected 元素可选择，传入定位元组
+element_selection_state_to_be 传入元素对象以及状态，相等返回True，否则返回False
+element_located_selection_state_to_be 传入定位元组以及状态，相等返回True，否则返回False
+alert_is_present 是否出现Alert
+
+</code></pre>
+<p>前进后退-实现浏览器的前进后退以浏览不同的网页</p>
+<pre><code>import time
+from selenium import webdriver
+
+browser = webdriver.Chrome()
+browser.get('https://www.baidu.com/')
+browser.get('https://www.taobao.com/')
+browser.get('https://www.python.org/')
+browser.back()
+time.sleep(1)
+browser.forward()
+browser.close()
+</code></pre>
+<p>Cookies</p>
+<pre><code>from selenium import webdriver
+
+browser = webdriver.Chrome()
+browser.get('https://www.zhihu.com/explore')
+print(browser.get_cookies())
+browser.add_cookie({'name': 'name', 'domain': 'www.zhihu.com', 'value': 'germey'})
+print(browser.get_cookies())
+browser.delete_all_cookies()
+print(browser.get_cookies())
+</code></pre>
+<p>选项卡管理 增加浏览器窗口</p>
+<pre><code>import time
+from selenium import webdriver
+
+browser = webdriver.Chrome()
+browser.get('https://www.baidu.com')
+browser.execute_script('window.open()')
+print(browser.window_handles)
+browser.switch_to_window(browser.window_handles[1])
+browser.get('https://www.taobao.com')
+time.sleep(1)
+browser.switch_to_window(browser.window_handles[0])
+browser.get('http://www.fishc.com')
+</code></pre>
+<p>十四、异常处理</p>
+<pre><code>from selenium import webdriver
+
+browser = webdriver.Chrome()
+browser.get('https://www.baidu.com')
+browser.find_element_by_id('hello')
+
+from selenium import webdriver
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
+
+browser = webdriver.Chrome()
+try:
+    browser.get('https://www.baidu.com')
+except TimeoutException:
+    print('Time Out')
+try:
+    browser.find_element_by_id('hello')
+except NoSuchElementException:
+    print('No Element')
+finally:
+</code></pre>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents"></nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents"></nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>

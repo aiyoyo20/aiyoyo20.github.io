@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>vim - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="Tools, Editor, Vim" />
+
+
+<meta property="og:title" content="vim" />
+<meta name="twitter:title" content="vim" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/vim/" /><meta property="og:description" content="插件 插件管理器vim-plug curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 其他插件及配置 配置文件vimrc里面有详细的备注，就不一个个展开了。 快捷键设置 模式映射 使用h key-notation命令查看帮助信息,查看键盘符号的详细说明 notation meaning" />
+<meta name="twitter:description" content="插件 插件管理器vim-plug curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 其他插件及配置 配置文件vimrc里面有详细的备注，就不一个个展开了。 快捷键设置 模式映射 使用h key-notation命令查看帮助信息,查看键盘符号的详细说明 notation meaning" /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2023-01-11T00:16:08+08:00" /><meta property="article:modified_time" content="2023-01-11T00:16:08+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/vim/">vim</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-01-11</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;1208 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/tools">Tools</a>&nbsp;<a href="/tags/editor">Editor</a>&nbsp;<a href="/tags/vim">Vim</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h2 id="插件">插件</h2>
+<h3 id="插件管理器vim-plug">插件管理器vim-plug</h3>
+<p><code>curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</code></p>
+<h3 id="其他插件及配置">其他插件及配置</h3>
+<p>配置文件<a href="./vimrc">vimrc</a>里面有详细的备注，就不一个个展开了。</p>
+<h2 id="快捷键设置">快捷键设置</h2>
+<p><a href="images/vim_mapping.png">模式映射</a>
+使用<code>h key-notation</code>命令查看帮助信息,查看键盘符号的详细说明</p>
+<table>
+<thead>
+<tr>
+<th>notation</th>
+<th>meaning</th>
+<th>equivalent</th>
+<th>decimal</th>
+<th>value(s)~</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;Nul&gt;</td>
+<td>zero</td>
+<td>CTRL-@</td>
+<td>0</td>
+<td>(stored as 10)*&lt;Nul&gt;</td>
+</tr>
+<tr>
+<td>&lt;BS&gt;</td>
+<td>backspace</td>
+<td>CTRL-H</td>
+<td>8</td>
+<td>*backspace*</td>
+</tr>
+<tr>
+<td>&lt;Tab&gt;</td>
+<td>tab</td>
+<td>CTRL-I</td>
+<td>9</td>
+<td>*tab* *Tab*</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>*linefeed*</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;NL&gt;</td>
+<td>linefeed</td>
+<td>CTRL-J</td>
+<td>10</td>
+<td>(used for &lt;Nul&gt;)</td>
+</tr>
+<tr>
+<td>&lt;CR&gt;</td>
+<td>carriage return</td>
+<td>CTRL-M</td>
+<td>13</td>
+<td>*carriage-return*</td>
+</tr>
+<tr>
+<td>&lt;Return&gt;</td>
+<td>same as <CR></td>
+<td></td>
+<td></td>
+<td>*&lt;Return&gt;*</td>
+</tr>
+<tr>
+<td>&lt;Enter&gt;</td>
+<td>same as <CR></td>
+<td></td>
+<td></td>
+<td>*&lt;Enter&gt;*</td>
+</tr>
+<tr>
+<td>&lt;Esc&gt;</td>
+<td>escape</td>
+<td>CTRL-[</td>
+<td>27</td>
+<td>*escape* *&lt;Esc&gt;*</td>
+</tr>
+<tr>
+<td>&lt;Space&gt;</td>
+<td>space</td>
+<td></td>
+<td>32</td>
+<td>*space*</td>
+</tr>
+<tr>
+<td>&lt;lt&gt;</td>
+<td>less-than</td>
+<td>&lt;</td>
+<td>60</td>
+<td>*<lt>*</td>
+</tr>
+<tr>
+<td>&lt;Bslash&gt;</td>
+<td>backslash</td>
+<td>\</td>
+<td>92</td>
+<td>*backslash* *&lt;Bslash&gt;*</td>
+</tr>
+<tr>
+<td>&lt;Bar&gt;</td>
+<td>vertical bar</td>
+<td>\</td>
+<td>124</td>
+<td>*&lt;Bar&gt;*</td>
+</tr>
+<tr>
+<td>&lt;Del&gt;</td>
+<td>delete</td>
+<td></td>
+<td>127</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>使用 <code>:map</code> 命令，可以列出所有键盘映射,使用<code>:map!</code>命令，则只列出插入和命令行模式的映射。而<code>:imap</code>，<code>:vmap</code>，<code>:omap</code>，<code>:nmap</code>命令则只是列出相应模式下的映射</p>
+<h3 id="markdown-previewnvim-问题">markdown-preview.nvim 问题</h3>
+<p>原来的 markdown-preview.vim 插件在文件较大时会导致 vim 卡死。
+需要yarn 环境对包进行编译安装。成功后才能正常使用。如果安装后执行预览命令无反映，可以检查环境后自行<code>cd ~/.vim/plugged/markdown-preview.nvim/app &amp; yarn install</code> 编译安装试试。</p>
+<h3 id="内容显示异常">内容显示异常</h3>
+<p>vim 打开文件有时内容排序混乱，行内容中部有横穿的直线，
+可视化目录及标题栏异常等问题可以先尝试退出重新载入，有时候时插件未加载完全或者配置内容加载错误导致的。
+在文本中有一个键&quot;&lt;Del&gt;&quot;,被错误的识别造成后面的内容全被增加了删除线。</p>
+<h3 id="indentline-造成的-markdown-问题">indentLine 造成的 markdown 问题</h3>
+<h4 id="输入号看不见其他编辑器打开能看见">输入*号看不见，其他编辑器打开能看见</h4>
+<p>indentLine 插件的配置造成的，要么根据官方文档调整配置，要么使用其他的类似插件。</p>
+<h4 id="python-的-if-__name__--__main__-变成-if-name--main光标移动到该行变正常">python 的 <code>if __name__ == &quot;__main__&quot;</code> 变成 <code>if name == &quot;main&quot;</code>，光标移动到该行变正常</h4>
+<p>包括上面的问题，设置项有个特殊参<code>let g:markdown_syntax_conceal=0</code>,加上就好了。</p>
+<h3 id="lsp-的-bash-问题">lsp 的 bash 问题</h3>
+<p>出现&quot;SHELLCHECK_PATH&quot; 或 &ldquo;shellchcek&rdquo;，原因是 shell 文本中没有shebang（hashbang）头导致的。</p>
+<h3 id="插件-fcitxvim-与-python-虚拟环境-与-vim-的使用">插件 fcitx.vim 与 python 虚拟环境 与 vim 的使用</h3>
+<p>fcitx.vim 使用了 python3 和自带的库<code>dbus-python</code>，具体的功能没有细看，但是这个库是在主环境中的，如果使用虚拟环境，而又没有安装这个库，使用虚拟环境的目的就是为了得到纯净环境，好调试，所以也不可能创建一个虚拟环境便去安装一次这个库。而且试着安装了一下，没成功，看错误日志好像并不是纯 python 包，下载下来后有编译或是其他操作，所以基本不用考虑自己安装了。</p>
+<p>没有安装这个库倒是不会影响该 vim 插件的使用，但是在启用的时候加载插件会调动这个库，没有 python 就会抛出异常。</p>
+<p>尝试使用<code>vim-virtualenv</code>，在 vim 中切换环境后，使用<code>!python %</code>运行输出版本的脚本版本改变了，但是在 vim 中直接<code>:python3 import sys; print(sys.version)</code>，版本还是基本环境的版本，而且这种方法对使用<code>vim-lsp</code>补全不起效果，无法使用虚拟环境的库进行补全。</p>
+<p>这个问题最后还是在官方插件文档找到了解决方法：插件默认会使用 Python 3 并通过 D-Bus 来切换输入法状态。</p>
+<p>如果是使用 <code>fcitx5</code> 输入法，可以通过 <code>fcitx5-remote</code> 来切换。</p>
+<p>设置参数后不使用 dbus 就不会使用 python 基本就不会有这个问题。</p>
+<pre><code>Plug 'lilydjwg/fcitx.vim'
+let g:fcitx5_remote = '/usr/bin/fcitx5-remote'  &quot; 命令的地址
+let g:fcitx5_rime = 1  &quot; 使用 rime 输入法需设置
+</code></pre>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#插件">插件</a>
+      <ul>
+        <li><a href="#插件管理器vim-plug">插件管理器vim-plug</a></li>
+        <li><a href="#其他插件及配置">其他插件及配置</a></li>
+      </ul>
+    </li>
+    <li><a href="#快捷键设置">快捷键设置</a>
+      <ul>
+        <li><a href="#markdown-previewnvim-问题">markdown-preview.nvim 问题</a></li>
+        <li><a href="#内容显示异常">内容显示异常</a></li>
+        <li><a href="#indentline-造成的-markdown-问题">indentLine 造成的 markdown 问题</a></li>
+        <li><a href="#lsp-的-bash-问题">lsp 的 bash 问题</a></li>
+        <li><a href="#插件-fcitxvim-与-python-虚拟环境-与-vim-的使用">插件 fcitx.vim 与 python 虚拟环境 与 vim 的使用</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#插件">插件</a>
+      <ul>
+        <li><a href="#插件管理器vim-plug">插件管理器vim-plug</a></li>
+        <li><a href="#其他插件及配置">其他插件及配置</a></li>
+      </ul>
+    </li>
+    <li><a href="#快捷键设置">快捷键设置</a>
+      <ul>
+        <li><a href="#markdown-previewnvim-问题">markdown-preview.nvim 问题</a></li>
+        <li><a href="#内容显示异常">内容显示异常</a></li>
+        <li><a href="#indentline-造成的-markdown-问题">indentLine 造成的 markdown 问题</a></li>
+        <li><a href="#lsp-的-bash-问题">lsp 的 bash 问题</a></li>
+        <li><a href="#插件-fcitxvim-与-python-虚拟环境-与-vim-的使用">插件 fcitx.vim 与 python 虚拟环境 与 vim 的使用</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>

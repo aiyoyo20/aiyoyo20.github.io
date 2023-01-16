@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Redis on AI YOYO</title>
+    <link>/tags/redis/</link>
+    <description>Recent content in Redis on AI YOYO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 09 Jan 2023 17:40:42 +0800</lastBuildDate><atom:link href="/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>redis</title>
+      <link>/post/redis/</link>
+      <pubDate>Mon, 09 Jan 2023 17:40:42 +0800</pubDate>
+      
+      <guid>/post/redis/</guid>
+      <description>redis 是什么？ redis 是 nosql(也是个巨大的 map) 单线程，但是可处理 1 秒 10w 的并发（数据都在内存中） Redis 的全称是：Remote Dictionary.Server，本质上是一个 Key-Value 类型的内存数据库，很像memcache</description>
+    </item>
+    
+  </channel>
+</rss>

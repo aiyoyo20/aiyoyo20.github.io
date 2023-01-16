@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>keyboard - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="Tools, Input_Method" />
+
+
+<meta property="og:title" content="keyboard" />
+<meta name="twitter:title" content="keyboard" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/keyboard/" /><meta property="og:description" content="一些键盘知识及可选方案 PCB 板： 旧键盘的 PCB 板 网上的自打板 网上开源方案自己找人打印 键盘配列： 键位数量：104、84、78、61 等等。 键位占比：100%、75%、60℀ 。 键帽： 材质：PBT、ABS、POM 等。" />
+<meta name="twitter:description" content="一些键盘知识及可选方案 PCB 板： 旧键盘的 PCB 板 网上的自打板 网上开源方案自己找人打印 键盘配列： 键位数量：104、84、78、61 等等。 键位占比：100%、75%、60℀ 。 键帽： 材质：PBT、ABS、POM 等。" /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2023-01-08T15:56:55+08:00" /><meta property="article:modified_time" content="2023-01-08T15:56:55+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/keyboard/">keyboard</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-01-08</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;2428 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/tools">Tools</a>&nbsp;<a href="/tags/input_method">Input_Method</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h3 id="一些键盘知识及可选方案">一些键盘知识及可选方案</h3>
+<pre><code>PCB 板：
+    旧键盘的 PCB 板
+    网上的自打板
+    网上开源方案自己找人打印
+键盘配列：
+    键位数量：104、84、78、61 等等。
+    键位占比：100%、75%、60℀ 。
+键帽：
+    材质：PBT、ABS、POM 等。
+    配色：单一颜色、混搭主题配色。
+    高度标准：
+        原厂键帽、OEM、SA、DSA、XDA、DCS 等
+        不太常见，但已经成为标准的还有 MIX、G20 等。
+    印刷方式：
+        正刻：字符刻到键帽正面朝上的方式，最常见的类型
+        同刻，是阴刻 or 蚀刻，字符会凹陷，一般来说字符和键帽同色
+        侧刻，把字符刻到键帽侧面、面朝人的方向，字在正对你身体的那一面
+        无刻，就是键帽上完全没有字符
+    印刷方式：
+        1、镭雕：激光蚀刻技术， 使用激光刻字技术在键帽上进行激光烧灼，烧出黑色的凹槽。因刻写的笔画有点状也有线条状，仔细看印刷的笔画就会很容易发觉凹陷下去的并有烧焦痕迹的笔画。激光蚀刻出来的字迹颜色交淡，摸起来能够感觉到文字部分的刻痕。寿命长、成本低，最为常见
+        2、丝印：丝网印刷技术，将一个特制的丝网覆盖在空白的键盘上，其中有字迹的地方被镂空，然后将油墨从上面刮过，这样在镂空的部分就会印上字迹
+        3、热升华：通过高温将固态油墨印进键帽的内部。固体树脂类油墨（颜料）会在高温之下升华然后渗透进入键帽材质中，在光泽上以及牢固性上更出色，字符很不容易磨损
+        4、镂空字体：最大的优点就是其本身自带的透光效果。常见于背光键盘，键帽表面易磨损
+        5、二色成型： 利用模具将两种不同颜色的材质混合在一起，利用两种塑料颜色来显示字符，字符颜色十分的鲜艳，耐用能很好的保证键帽手感，字符不易磨损，成本较高
+        6、UV覆膜：原理和丝印差不多，多了一道UV的工艺，字符上有一层薄薄的塑料膜，相较于丝印来说，字符的寿命要稍微长一些
+        7、类肤涂层喷墨：将半透明的键帽素材喷黑，然后将需要显示的字体留白。类肤涂层键帽的字体大多比较好看，类肤涂层的手感也较为优异，问题是容易脏
+        8、双色注塑：原理方面就是采用二色的模具，通过注塑机一次成型，相对来说工艺比较简单，成本也比较低，字符大多为开口
+    字符类型：
+        传统英文、日文、韩文、精灵文
+轴体 ：
+    黑轴、红轴、茶轴、青轴。
+    国产轴、品牌轴、个人作坊定制轴。
+    三脚轴、五脚轴。
+轴安装方式：
+    热插拔:
+        套筒
+        热插拔底座
+    焊接轴。
+灯：
+    安装方式：
+        热插拔
+        焊接
+    灯位：
+        上、下灯位。
+    灯光：
+        有灯：单色灯、RGB 灯、可编程。
+        无灯。
+    灯体：
+        贴片灯。
+        灯珠。
+连接方式：
+    有线、键线分离。
+    无线：
+        2.4G:
+            品牌厂固件
+            罗技键盘拆卸固件
+            私人固件。
+        蓝牙。
+    多模。
+线：
+    接口：
+        Mini-USB、Micro-USB、Type-C、PS/2。
+    形状：
+        直线
+        螺旋线
+外壳：
+    老键盘外壳
+    根据品牌键盘自己用其他材料（亚克力板、金属、木头、其他材料）复刻的、
+    完全自定义的外壳（这就需要搭配想对应的 PCB 板了）
+定位板：
+    PC定位板：
+        搭配4f线性轴手感较为舒适，材质较软，回弹很舒服，搭配强段落轴会稍微吸收缓解触底段落感，要注意一点就是安装需要稍微精心一点，不然很容易划伤表面，个人最喜欢的搭配。
+    PC半钢定位板：
+        字母区由于无钢，心理上有些感觉不稳，但实际上没有什么影响，相比PC手感更软一些，安装上比起PC要稍麻烦一些，个人不太喜欢。
+    碳纤维定位板：
+        整体手感依然偏软，但比PC手感要硬一些，回弹有力但不震手，定制价格较便宜，个人第二选择。
+    FR4定位板：
+        手感比PC和碳纤维要硬，主观感觉回弹上力度要大一些，尤其在墨玉黑大键上，声音也偏亮，个人不是很喜欢，但很多大佬喜欢，而且定制价格不贵，个人建议可以入手尝试。
+    铝合金定位板：
+        手感较为均衡，和碳纤维感觉很像，但不知为何感觉比碳纤维回弹要软，声音也偏闷一些，个人推荐第三选择。
+    黄铜定位板：
+        手感比较硬，感觉上就是一个字，震，由于gasket结构的特殊加上黄铜定位板的重量，导致这种震手感觉被放大，个人不是很推荐，适合习武之人搭配类HP等段落轴使用。
+    卡纸定位板：
+        卡纸定位板是突发奇想试试新材料X宝随便找的商家切的，实际上十分悲剧，由于卡纸边缘过于柔软，导致轴体不容易卡紧，且拔出轴体后很容易损伤定位板，整体手感偏软，弹性一般，也有可能是我安装不到位导致的，价格十分低廉，个人不推荐。
+    榉木层板定位板：
+        与卡纸定位板一样都是突发奇想的搞活定位板，整体回弹较强，声音也相对较为清脆，实际使用比卡纸要强，但是味道实在太大，接受不了，价格十分低廉，个人也不推荐。
+外观：
+    喷漆
+    贴纸
+    原皮
+电池：
+    传统电池
+    锂电池
+    钮扣电池
+其他配件：
+    消音棉
+    键盘托
+    防尘盖
+    喷漆（这个种类也多）
+    贴纸
+    数据线
+    接口小板
+</code></pre>
+<h3 id="个人经验">个人经验</h3>
+<p>自己客制化并不会省钱，无论是买现成套件还是自己买基础配件。这些还都是在不考虑组装工具的情况下。</p>
+<p>电烙铁买一定要买好一点的，那些便宜的小瓦数的，表面很容易氧化，然后就失去作用了，小瓦数的有的用的锡料熔点高，根本就融化不了。</p>
+<p>空心针也是，买盒装的比如4种标准的一盒，实际能用且会使用到的只有一种，质量不好的不小心就折了，也废了。</p>
+<p>吸锡器，便宜的那种铝加塑料的，密封性不好，简单来说就是没用。</p>
+<p>剪线键盘，大多数的质量都很差，无论是什么轴，起码都要换掉一半以上。电路板一般都还好或者能抢救。期待使用原装键帽不现实。</p>
+<p>拆解非热插拔的轴很麻烦，两三个小时是常事，带灯的化更甚，甚至感觉单是拔键帽都很麻烦。</p>
+<p>焊接并不容易，实际焊接的点很小，不熟练完全操作不来，焊点的美观就别想了。如果是接口小板这类小零件要多备几个，不小心烫坏不是不可能。</p>
+<p>自己尝试了三四把键盘，状况百出，最后只有一把情况好点的，换了几个轴，改了 Type-C 键线分离。其他的喷漆瑕疵，漆不匀，起泡，拆灯、轴弄断引脚，工具报废，实在弄不下去最后连同工具、配件打包便宜卖了。</p>
+<h3 id="keyboard-layout">keyboard layout</h3>
+<p>留做备用，换洗键后安装的时候有个对照。
+<img class="img-zoomable" src="./images/61keys.png" alt="61 keys" />
+</p>
+<p><img class="img-zoomable" src="./images/78keys.png" alt="78 keys" />
+</p>
+<p><img class="img-zoomable" src="./images/84keys.png" alt="84 keys" />
+</p>
+<p><img class="img-zoomable" src="./images/87keys.png" alt="87 keys" />
+</p>
+<p><img class="img-zoomable" src="./images/104keys.png" alt="104 keys" />
+</p>
+<p>一个可以设置键盘布局的网站  : <a href="http://www.keyboard-layout-editor.com/" target="_blank">keyboard-layout-editor</a></p>
+<p>自己有 json 文件可自己导入（比如<a href="./images/78keyboard-layout.json">78keys</a>），页面不好调整，换成 json 模式调整会方便些。</p>
+<p><a href="https://baijiahao.baidu.com/s?id=1729690993744669106&amp;wfr=spider&amp;for=pc" target="_blank">机械键盘键帽知识普及 OEM和原厂键帽有什么区别</a></p>
+<p><a href="https://www.zfrontier.com/app/flow/4okzKBndN774" target="_blank">【科普】配列、键帽高度以及常见的键帽倍数识别</a></p>
+<p><a href="https://www.zhihu.com/question/322898445" target="_blank">有哪些跟机械键盘相关的「黑话」和术语？</a></p>
+<p><a href="https://blog.csdn.net/SmallTeddy/article/details/120331949" target="_blank">客制化键盘各部件介绍（客制化入门必看）</a></p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#一些键盘知识及可选方案">一些键盘知识及可选方案</a></li>
+        <li><a href="#个人经验">个人经验</a></li>
+        <li><a href="#keyboard-layout">keyboard layout</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#一些键盘知识及可选方案">一些键盘知识及可选方案</a></li>
+        <li><a href="#个人经验">个人经验</a></li>
+        <li><a href="#keyboard-layout">keyboard layout</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>

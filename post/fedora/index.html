@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.93.3" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
+<title>Fedora - AI YOYO</title>
+
+
+<meta name="author" content="会讲笑话的咸鱼王" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="Linux" />
+
+
+<meta property="og:title" content="Fedora" />
+<meta name="twitter:title" content="Fedora" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/fedora/" /><meta property="og:description" content="OS : Fedora Linux 36 (Workstation Edition) cat /etc/os-release NAME=&quot;Fedora Linux&quot; VERSION=&quot;36 (Workstation Edition)&quot; ID=fedora VERSION_ID=36 VERSION_CODENAME=&quot;&quot; PLATFORM_ID=&quot;platform:f36&quot; PRETTY_NAME=&quot;Fedora Linux 36 (Workstation Edition)&quot; ANSI_COLOR=&quot;0;38;2;60;110;180&quot; LOGO=fedora-logo-icon CPE_NAME=&quot;cpe:/o:fedoraproject:fedora:36&quot; HOME_URL=&quot;https://fedoraproject.org/&quot; DOCUMENTATION_URL=&quot;https://docs.fedoraproject.org/en-US/fedora/f36/system-administrators-guide/&quot; SUPPORT_URL=&quot;https://ask.fedoraproject.org/&quot; BUG_REPORT_URL=&quot;https://bugzilla.redhat.com/&quot; REDHAT_BUGZILLA_PRODUCT=&quot;Fedora&quot; REDHAT_BUGZILLA_PRODUCT_VERSION=36 REDHAT_SUPPORT_PRODUCT=&quot;Fedora&quot; REDHAT_SUPPORT_PRODUCT_VERSION=36 PRIVACY_POLICY_URL=&quot;https://fedoraproject.org/wiki/Legal:PrivacyPolicy&quot; SUPPORT_END=2023-05-16 VARIANT=&quot;Workstation Edition&quot; VARIANT_ID=workstation 输入法 默认的是ibus框架，直接进入输入法配置添加了Intelligent Pinyin ，每次配置 fcitx 挺麻烦，这次使用发现挺好的。 虽然麻" />
+<meta name="twitter:description" content="OS : Fedora Linux 36 (Workstation Edition) cat /etc/os-release NAME=&quot;Fedora Linux&quot; VERSION=&quot;36 (Workstation Edition)&quot; ID=fedora VERSION_ID=36 VERSION_CODENAME=&quot;&quot; PLATFORM_ID=&quot;platform:f36&quot; PRETTY_NAME=&quot;Fedora Linux 36 (Workstation Edition)&quot; ANSI_COLOR=&quot;0;38;2;60;110;180&quot; LOGO=fedora-logo-icon CPE_NAME=&quot;cpe:/o:fedoraproject:fedora:36&quot; HOME_URL=&quot;https://fedoraproject.org/&quot; DOCUMENTATION_URL=&quot;https://docs.fedoraproject.org/en-US/fedora/f36/system-administrators-guide/&quot; SUPPORT_URL=&quot;https://ask.fedoraproject.org/&quot; BUG_REPORT_URL=&quot;https://bugzilla.redhat.com/&quot; REDHAT_BUGZILLA_PRODUCT=&quot;Fedora&quot; REDHAT_BUGZILLA_PRODUCT_VERSION=36 REDHAT_SUPPORT_PRODUCT=&quot;Fedora&quot; REDHAT_SUPPORT_PRODUCT_VERSION=36 PRIVACY_POLICY_URL=&quot;https://fedoraproject.org/wiki/Legal:PrivacyPolicy&quot; SUPPORT_END=2023-05-16 VARIANT=&quot;Workstation Edition&quot; VARIANT_ID=workstation 输入法 默认的是ibus框架，直接进入输入法配置添加了Intelligent Pinyin ，每次配置 fcitx 挺麻烦，这次使用发现挺好的。 虽然麻" /><meta property="og:image" content="/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="/img/og.png" /><meta property="article:published_time" content="2023-01-05T15:24:52+08:00" /><meta property="article:modified_time" content="2023-01-05T15:24:52+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="/">AI YOYO</a>
+            
+            <span class="title-sub">个人日常学习、生活分享</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="/post/fedora/">Fedora</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-01-05</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;2218 words</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/linux">Linux</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h1 id="os--fedora-linux-36-workstation-edition">OS : Fedora Linux 36 (Workstation Edition)</h1>
+<p><code>cat /etc/os-release</code></p>
+<pre><code>NAME=&quot;Fedora Linux&quot;
+VERSION=&quot;36 (Workstation Edition)&quot;
+ID=fedora
+VERSION_ID=36
+VERSION_CODENAME=&quot;&quot;
+PLATFORM_ID=&quot;platform:f36&quot;
+PRETTY_NAME=&quot;Fedora Linux 36 (Workstation Edition)&quot;
+ANSI_COLOR=&quot;0;38;2;60;110;180&quot;
+LOGO=fedora-logo-icon
+CPE_NAME=&quot;cpe:/o:fedoraproject:fedora:36&quot;
+HOME_URL=&quot;https://fedoraproject.org/&quot;
+DOCUMENTATION_URL=&quot;https://docs.fedoraproject.org/en-US/fedora/f36/system-administrators-guide/&quot;
+SUPPORT_URL=&quot;https://ask.fedoraproject.org/&quot;
+BUG_REPORT_URL=&quot;https://bugzilla.redhat.com/&quot;
+REDHAT_BUGZILLA_PRODUCT=&quot;Fedora&quot;
+REDHAT_BUGZILLA_PRODUCT_VERSION=36
+REDHAT_SUPPORT_PRODUCT=&quot;Fedora&quot;
+REDHAT_SUPPORT_PRODUCT_VERSION=36
+PRIVACY_POLICY_URL=&quot;https://fedoraproject.org/wiki/Legal:PrivacyPolicy&quot;
+SUPPORT_END=2023-05-16
+VARIANT=&quot;Workstation Edition&quot;
+VARIANT_ID=workstation
+</code></pre>
+<h2 id="输入法">输入法</h2>
+<p>默认的是ibus框架，直接进入输入法配置添加了<code>Intelligent Pinyin </code>，每次配置 fcitx 挺麻烦，这次使用发现挺好的。</p>
+<p>虽然麻烦但是后面还是换成了 fcitx5，但是不要卸载 ibus，ibus 是 gnome 内置的，可能会导致桌面系统崩溃。</p>
+<p>换的原因是有时候会卡键，按一下后面连续输出该键的字母，敲击其他的键才会停下。</p>
+<h2 id="看图软件">看图软件</h2>
+<h3 id="geeqie">geeqie</h3>
+<p>还可以，但是系统的暗色主题不生效</p>
+<h3 id="gwenview">gwenview</h3>
+<p>还行，系统暗色主题下菜单栏会模糊化看不清字。</p>
+<h3 id="gthumb">gThumb</h3>
+<p>毕竟是 gnome 自己出的，主题适配很好，使用起来感觉也很棒。</p>
+<h2 id="gnome-extensions">gnome-extensions</h2>
+<h4 id="clipboard">Clipboard</h4>
+<p>Clipboard Indicator
+设置更为丰富，但是感觉不是很需要这些设置
+亮点是有个星标功能，可能对着重的进行标记，会将优先级提到最前
+对于常用的或者可以作为临时备忘录之类的</p>
+<p>Clipman
+可以快速将复制的内容转为二维码。</p>
+<p>Gnome Clipboard
+问题：系统 suspend 后内容会消失</p>
+<h4 id="proxy-switcher">Proxy Switcher</h4>
+<p>在状态栏快速设置系统代理的切换，不必再一步步进入设置去开启关闭</p>
+<h2 id="问题">问题</h2>
+<h3 id="安装问题">安装问题</h3>
+<p>安装时选择了自主分区，但是一直提示一个 “biosboot error”，就是要创建一个新的<code>/boot/efi</code> 分区，无法像其他系统一样通过挂载现有的分区就行。千万不要创建类型biosboot的分区，那样重启时会什么启动项都读取不到，而直接进入bios或者从u盘启动。</p>
+<h3 id="grub2-问题">grub2 问题</h3>
+<p>manjaro的是grub管理，至少之前安装的是，安装的fedora是grub2管理，在前期是明确有两个系统的启动项的，但是后面因为grub2的分辨率问题更新了grub2,回头发现grub文件夹没了，自然也就无法启动了，资料也都备份了，新系统使用了一天也没有发现什么不合适的地方，就没有作引导的修复。也不太确定问题是不是两个grub的冲突导致的，但是如果下次遇到两个不同版本grub的系统，还是最好资料备份及引导修复重建合并的准备吧。</p>
+<h4 id="update-grub-命令">update-grub 命令</h4>
+<p>在 grub2 中不存在 update-grub 命令了，而 update-grub 实际也是二次包装的，<code>grub2-mkconfig -o /boot/grub2/grub.cfg</code>可实现相同的效果,更改 grub2 配置的文件还是<code>/etc/default/grub</code></p>
+<h4 id="分辨率问题">分辨率问题</h4>
+<p>启动页面选择引导的分辨率模糊，被放大了，字体模糊，文字行超出显示屏，大概确定是分辨的问题，但是后期因为被查找到的资料的误导及自己经验不足失败了很多次。
+过程
+1、调小分辨率，既然有这种情况，那估计是默认的分辨率大于自己的显示器分辨率或者判断错了自己的分辨率导致分辨率不对，尝试指定GRUB_GFXMODE为自己的<code>1366x768</code>，无效
+2、自己的分辨率不被支持，某个 grub 资料说是一些分辨率不被支持，通过命令<code>vbeinfo</code> or <code>videoinfo</code>可以查看适配的分辨率。无赖进入 grub 命令行查看（非系统命令行），grub2 不存在这些命令，查文档也没有看到说有替换的。那尝试改为普遍支持的 <code>640x480</code>等等。无效。
+3、在grub.cfg的构建文件中做修改，即<code>/etc/grub.d/00_header</code>，也无效。
+4、尝试对grub.cfg 的分辨率的更改的所有操作都无效。一直没有去查看 grub.cfg 文件中的分辨率最初为什么，更改后为什么，或者有没有被修改，而是通过不断重启看有没有改变。想想简直哭死。<code>/etc/grub.d/00_header</code>文件中的构建过程是建立在一个判断结构下的。对比查看其与<code>/etc/default/grub</code>，又往这方面查。 <code> /etc/default/grub</code>中<code>GRUB_TERMINAL_OUTPUT=console</code>是被注释着的，也就是模式是console，但是 gfx 相关的操作生效的前提是应该为<code>GRUB_TERMINAL_OUTPUT=&quot;gfxterm&quot;</code>。</p>
+<h3 id="nautilus-文件管理排序文件文件夹变混合排序">Nautilus 文件管理排序，文件、文件夹变混合排序</h3>
+<p>个性化设置可以更改，包括要显示的内容，用户、创建时间，类型等等等等。</p>
+<h3 id="sublime-3-主题异常">sublime 3 主题异常</h3>
+<p>Gnome version : GNOME Shell 42.0</p>
+<p>在换了系统后继续在就像使用原来的 sublime 3 时,在对 Fedora 系统设置了全局暗色主题的前提下，原本的暗色主题设置在标题栏无效。侧边栏和编辑区正常。尝试切换其他主题也是同样的结果。sublime 4 使用正常，尝试将 sublime 4 的默认主题包替换过去也没效果。查了一下可能是一些 gnome 的设置项参数在新版本调整导致的。</p>
+<p>近期在vscode相同异常上看到vscode对标题栏有特有的设置，查看了；<code>sublime 3、4</code> 的配置，<code>sublime 4 </code>新增加了<code>&quot;themed_title_bar&quot;: true,</code>,这个会对其有影响，而<code>sublime 3</code>没有类似的，可能也就无法通过简单设置去解决这个问题了。</p>
+<h3 id="状态栏不显示有后台运行的应用图标">状态栏不显示有后台运行的应用图标</h3>
+<p>Fedora 相对于 Ubuntu 桌面更简介，一些配置是没有的，可以通过添加 gnome-extensions 来扩充、补全自己的需求。</p>
+<p>添加<code>AppIndicator and KStatusNotifierItem Support</code>插件可解决问题。</p>
+<h3 id="vscode-标题栏白色标题栏颜色不随主题更换变化">vscode 标题栏白色（标题栏颜色不随主题更换变化）</h3>
+<p>打开设置，<code>Title Bar Style</code>,<code>native</code>更改为<code>custom</code></p>
+<h3 id="软件崩溃">软件崩溃</h3>
+<p>在使用软件时界面常常崩溃，然后弹出提示页面无响应，有时候弹窗自动消失恢复，有时候整个软件崩溃，更有甚整个桌面系统崩溃，回到登陆界面。主要是 Chrome 浏览器引起的次数居多，可能不是 chrome,查的时候看到较早的版本有人是使用 firefox 经常有类似的问题，可能是内存资源的占用、gpu 驱动方面的问题吧，暂时没解决。</p>
+<p>后面进行了一次整体升级，这个问题就没出现了。</p>
+<h3 id="窗口切换问题">窗口切换问题</h3>
+<p>使用默认的快捷键切换窗口的使用，同个应用开启的多个窗口会被认为是一个，切换到的是最新使用的。这并不是快捷键的问题，而是整个系统的设计。</p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a>.</p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#输入法">输入法</a></li>
+    <li><a href="#看图软件">看图软件</a>
+      <ul>
+        <li><a href="#geeqie">geeqie</a></li>
+        <li><a href="#gwenview">gwenview</a></li>
+        <li><a href="#gthumb">gThumb</a></li>
+      </ul>
+    </li>
+    <li><a href="#gnome-extensions">gnome-extensions</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#问题">问题</a>
+      <ul>
+        <li><a href="#安装问题">安装问题</a></li>
+        <li><a href="#grub2-问题">grub2 问题</a></li>
+        <li><a href="#nautilus-文件管理排序文件文件夹变混合排序">Nautilus 文件管理排序，文件、文件夹变混合排序</a></li>
+        <li><a href="#sublime-3-主题异常">sublime 3 主题异常</a></li>
+        <li><a href="#状态栏不显示有后台运行的应用图标">状态栏不显示有后台运行的应用图标</a></li>
+        <li><a href="#vscode-标题栏白色标题栏颜色不随主题更换变化">vscode 标题栏白色（标题栏颜色不随主题更换变化）</a></li>
+        <li><a href="#软件崩溃">软件崩溃</a></li>
+        <li><a href="#窗口切换问题">窗口切换问题</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/aria2/">Aria2</a>
+            </span>
+            
+            <span>
+                <a href="/tags/chrome/">Chrome</a>
+            </span>
+            
+            <span>
+                <a href="/tags/companyquestionset/">CompanyQuestionSet</a>
+            </span>
+            
+            <span>
+                <a href="/tags/database/">DataBase</a>
+            </span>
+            
+            <span>
+                <a href="/tags/datestructure_algorithm/">DateStructure_Algorithm</a>
+            </span>
+            
+            <span>
+                <a href="/tags/docker/">Docker</a>
+            </span>
+            
+            <span>
+                <a href="/tags/editor/">Editor</a>
+            </span>
+            
+            <span>
+                <a href="/tags/flask/">Flask</a>
+            </span>
+            
+            <span>
+                <a href="/tags/frontend/">FrontEnd</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">Git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/images/">images</a>
+            </span>
+            
+            <span>
+                <a href="/tags/input_method/">Input_Method</a>
+            </span>
+            
+            <span>
+                <a href="/tags/interviewquestions/">InterviewQuestions</a>
+            </span>
+            
+            <span>
+                <a href="/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mongodb/">MongoDB</a>
+            </span>
+            
+            <span>
+                <a href="/tags/mysql/">MySQL</a>
+            </span>
+            
+            <span>
+                <a href="/tags/neovim/">NeoVim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/other/">Other</a>
+            </span>
+            
+            <span>
+                <a href="/tags/others/">Others</a>
+            </span>
+            
+            <span>
+                <a href="/tags/phone/">Phone</a>
+            </span>
+            
+            <span>
+                <a href="/tags/proxy/">Proxy</a>
+            </span>
+            
+            <span>
+                <a href="/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/tags/redis/">Redis</a>
+            </span>
+            
+            <span>
+                <a href="/tags/sublime/">Sublime</a>
+            </span>
+            
+            <span>
+                <a href="/tags/thought/">Thought</a>
+            </span>
+            
+            <span>
+                <a href="/tags/tools/">Tools</a>
+            </span>
+            
+            <span>
+                <a href="/tags/vim/">Vim</a>
+            </span>
+            
+            <span>
+                <a href="/tags/windows/">Windows</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#输入法">输入法</a></li>
+    <li><a href="#看图软件">看图软件</a>
+      <ul>
+        <li><a href="#geeqie">geeqie</a></li>
+        <li><a href="#gwenview">gwenview</a></li>
+        <li><a href="#gthumb">gThumb</a></li>
+      </ul>
+    </li>
+    <li><a href="#gnome-extensions">gnome-extensions</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#问题">问题</a>
+      <ul>
+        <li><a href="#安装问题">安装问题</a></li>
+        <li><a href="#grub2-问题">grub2 问题</a></li>
+        <li><a href="#nautilus-文件管理排序文件文件夹变混合排序">Nautilus 文件管理排序，文件、文件夹变混合排序</a></li>
+        <li><a href="#sublime-3-主题异常">sublime 3 主题异常</a></li>
+        <li><a href="#状态栏不显示有后台运行的应用图标">状态栏不显示有后台运行的应用图标</a></li>
+        <li><a href="#vscode-标题栏白色标题栏颜色不随主题更换变化">vscode 标题栏白色（标题栏颜色不随主题更换变化）</a></li>
+        <li><a href="#软件崩溃">软件崩溃</a></li>
+        <li><a href="#窗口切换问题">窗口切换问题</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2023
+                <a href="/">会讲笑话的咸鱼王</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
+
+
+
+</body>
+
+</html>
